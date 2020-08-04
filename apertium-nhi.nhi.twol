@@ -1,0 +1,17 @@
+Alphabet
+ 
+ A B D E F G H I J K L M N O P R S T U W Y Z
+ a b d e f g h i j k l m n o p r s t u w y z
+ %{o%}:o 
+  %>:%>  ;
+
+Sets
+
+Vow   = A E I O U 
+        a e i o u ;
+
+Rules 
+
+"Remove suffix vowel with vowel-ending stem"
+i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+
