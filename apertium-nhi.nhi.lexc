@@ -23,6 +23,7 @@ LEXICON Subj
 ! pl1: n-S-me / n-poss-S-huan
 
 %<s_sg1%>:n%> Nominal ;
+              Nominal ;
 
 LEXICON Nominal
 
@@ -86,6 +87,7 @@ cozamalotl:cozamalo TlSuff ;             !"arcoiris"
 ichpocaconetl:ichpocacone TlSuff ;       !"girl baby"
 quichconetl:quichcone TlSuff ;           !"male baby"
 coyotl:coyo TlSuff ;                     !"coyote"
+itl:i TlSuff ;                           !"frijol"
 
 tochtli:toch TliSuff;        !"conejo"
 itzcuintli:itzcuin TliSuff;  !"perro"
