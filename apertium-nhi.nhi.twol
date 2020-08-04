@@ -1,8 +1,9 @@
 Alphabet
  
- A B D E F G H I J K L M N O P R S T U W Y Z
- a b d e f g h i j k l m n o p r s t u w y z
- %{o%}:o 
+ A B C D E F G H I J K L M N O P R S T U W Y Z
+ a b c d e f g h i j k l m n o p r s t u w y z
+ %{o%}:o  
+ %{i%}:i %{i%}:0
   %>:%>  ;
 
 Sets
@@ -10,8 +11,29 @@ Sets
 Vow   = A E I O U 
         a e i o u ;
 
+Cns   = b c d f g h j k l m n p r s t w y z ;
+
 Rules 
 
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+"Epenthesis of {i} before vowels"
+%{i%}:i <=> _ %>: :Vow ;
+
+"Nasal assimilation"
+n:0 <=> _ %>: m ; 
+
+"Nasal elision"
+n:0 <=> _ %>: h u a n ;
+
+"Vowel deletion"
+i:0 <=> %{o%}: %>: _ Cns ; 
+
+"Possessive nasal assimilation"
+m:n <=> i _ %>: [ c | t | n | s | y ] ;
+
+! TODO:
+!define DeleteIAfterReflexiveO i -> 0 || o "^" SuffixFlags _ Cons Cons ;
+!define PossVEnding a -> a u h, o -> o u h, i -> i u h, e -> e u h || _ "^" ("@D.PL@") PossFlags .#. ;
+!!xi                             W @D.PL@@R.poss@
+!define WrewritePt1 W -> u h  || Vowels* _ "^" NominalFlags* .#. ;
+!define WrewritePt2 W -> h u i || _ NominalFlags* "^" t l .#. ;
 
