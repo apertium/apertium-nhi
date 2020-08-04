@@ -37,6 +37,8 @@ LEXICON Poss
 
 LEXICON PossessedEndings
 
+# ;
+
 LEXICON TlSuff
 !0:0 UnpossessedEndings ;
 %<n%>:%> PossessedEndings ;
