@@ -18,6 +18,8 @@ Multichar_Symbols
 
 %<pro%>                                  ! Pronombre
 
+%<dim%>                                  ! Diminutivo
+
 %<p1%>
 %<p2%>
 %<p3%>
@@ -98,48 +100,69 @@ LEXICON Nominals
 ! pueden llevar posesión
                                                    Nouns ; 
 
-LEXICON Plural
+LEXICON PlainPlural
 
 @D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>me                # ; ! Las casas
-@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@%>huan        # ; ! Sus casas
 @D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>me          # ; ! Ellos son las casas
+
+LEXICON PossPlural
+
+@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@%>huan        # ; ! Sus casas
 @R.Px.Pl@@R.Sa.Pl@%<pl%>:@R.Px.Pl@@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
 
+LEXICON Plural 
+                                                   PossPlural ;
+                                                   PlainPlural ;
+LEXICON Diminutivo
+
+%<dim%>:%>tzin                                     # ; 
+@D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis
+%<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
+%<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
+
+LEXICON Deriv 
+                                                   Diminutivo ; 
 LEXICON TlSuff
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
 
 LEXICON ItlSuff
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>itl                     # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
 
 LEXICON TliSuff
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
 
 LEXICON LiSuff
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
 %<n%>:                                             # ;
 %<n%>:%>li                                         Plural ;
+%<n%>:                                             Deriv ;
 
 LEXICON InSuff
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>in                      # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
 
 LEXICON NoSuff
 
 @D.Px@%<n%>%<abs%>:@D.Px@                          # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
 
 !LEXICON Rel 
 !
@@ -160,7 +183,7 @@ yeh%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
 
 LEXICON Determinantes 
 
-in:in DET ; ! "a" 
+in:in                                           DET ; ! "a" 
 
 LEXICON Pronombres 
 
