@@ -5,6 +5,8 @@ Multichar_Symbols
 %<n%>                                    ! Sustantivo
 %<v%>                                    ! Verbo
 %<adj%>                                  ! Adjetivo
+%<det%>                                  ! Determinante
+%<prn%>                                  ! Pronombre
 
 %<tv%>                                   ! Transitivo
 %<iv%>                                   ! Intransitivo
@@ -50,6 +52,9 @@ Multichar_Symbols
 LEXICON Root
 
 Sujeto ;
+
+Pronombres ;
+Determinantes ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -123,7 +128,23 @@ LEXICON NoSuff
 !+tlan%<n%>%<loc%>:%>tlan # ; ! FIXME: Orth
 !+yan%<n%>%<loc%>:%>yan # ; ! FIXME: Orth
 
+LEXICON DET
+
+%<det%>: # ; 
+
+LEXICON Personales 
+
+yeh%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ; 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Determinantes 
+
+in:in DET ; ! "a" 
+
+LEXICON Pronombres 
+
+Personales ; 
 
 !LEXICON Relacionales 
 !
