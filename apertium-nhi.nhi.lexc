@@ -1,126 +1,182 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 Multichar_Symbols
 
-%<n%>
+%<n%>                                    ! Sustantivo
+%<v%>                                    ! Verbo
+%<adj%>                                  ! Adjetivo
 
-%<abs%>
-%<pl%>
+%<tv%>                                   ! Transitivo
+%<iv%>                                   ! Intransitivo
 
-%<px1sg%>
+%<pl%>                                   ! Plural
+
+%<abs%>                                  ! Absolutivo
+
+%<px1sg%>                                ! Posesivo (1ra singular)
 %<px2sg%>
 %<px3sg%>
 %<px1pl%>
 %<px2pl%>
 %<px3pl%>
 
-%<s_sg1%>
-%<s_sg2%>
+%<s_sg1%>                                ! Marcador de sujeto (1ra singular)
+%<s_sg2%>                                ! Marcador de sujeto (2da singular)
 %<s_sg3%>
 %<s_pl1%>
 %<s_pl2%>
 %<s_pl3%>
 
-%<sent%>
+%<sent%>                                 ! Final de frase
 
-%{o%}                 ! o 
-%{i%}                 ! i / 0
+%{o%}                                    ! o 
+%{i%}                                    ! i / 0
+
+%>                                       ! Frontera de morfema
+
+@P.Px.Sg@                                ! Posesivo singular
+@R.Px.Sg@
+@P.Px.Pl@                                ! Posesivo plural
+@R.Px.Pl@
+@D.Px@                                   ! Ninguna posesión
+@P.Sa.Sg@                                ! Sujeto singular
+@R.Sa.Sg@
+@P.Sa.Pl@                                ! Sujeto plural
+@R.Sa.Pl@
+@D.Sa@                                   ! Ningún sujeto 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
 
-Subj ;
-Poss ;
+Sujeto ;
 
-LEXICON Subj 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Sujeto
 
 ! sg1: n-
 ! pl1: n-S-me / n-poss-S-huan
 
-%<s_sg1%>:n%{i%}%> Nominal ;
-                   Nominal ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>               Predicate ;
+@P.Sa.Sg@%<s_sg2%>:@P.Sa.Sg@t%{i%}%>               Predicate ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                       Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@n%{i%}%>               Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@t%{i%}%>               Predicate ;
+@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                       Predicate ;
+                                                   Predicate ;
 
-LEXICON Nominal
+LEXICON Predicate
+! Después del sujeto viene o una posesivo o un nominal
+                                                   Possession ; 
+                                                   Nominals ; 
+LEXICON Possession 
 
-Poss ; 
-Nouns ; 
+@P.Px.Sg@%<px1sg%>:@P.Px.Sg@n%{o%}%>               Nominals ;
+@P.Px.Sg@%<px2sg%>:@P.Px.Sg@m%{o%}%>               Nominals ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
+@P.Px.Pl@%<px1pl%>:@P.Px.Pl@t%{o%}%>               Nominals ;
+@P.Px.Pl@%<px2pl%>:@P.Px.Pl@nim%{o%}%>             Nominals ;
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ;
 
-LEXICON Poss 
+LEXICON Nominals 
+! Sustantivos, sustantivos relacionales y otras categorias que
+! pueden llevar posesión
+                                                   Nouns ; 
 
-%<px1sg%>:n%{o%}%> Nouns ;
-%<px2sg%>:m%{o%}%> Nouns ;
-%<px3sg%>:i%>  Nouns ;
+LEXICON Plural
 
-LEXICON PossessedEndings
-
-# ;
+@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>me                # ; ! Las casas
+@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@%>huan        # ; ! Sus casas
+@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>me          # ; ! Ellos son las casas
+@R.Px.Pl@@R.Sa.Pl@%<pl%>:@R.Px.Pl@@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
 
 LEXICON TlSuff
-!0:0 UnpossessedEndings ;
-%<n%>:%> PossessedEndings ;
-%<n%>%<abs%>:%>tl # ;
+
+%<n%>%<abs%>:%>tl                                  # ;
+%<n%>:                                             Plural ;
 
 LEXICON TliSuff
-!0:0 UnpossessedEndings ;
-%<n%>:%> PossessedEndings ;
-%<n%>%<abs%>:%>tli # ;
+
+%<n%>%<abs%>:%>tli                                 # ;
+%<n%>:                                             Plural ;
 
 LEXICON LiSuff
-!0:0 UnpossessedEndings ;
-%<n%>:%> PossessedEndings ;
-%<n%>%<abs%>:%>li # ;
+
+%<n%>%<abs%>:%>li                                  # ;
+%<n%>:%>li                                         Plural ;
 
 LEXICON InSuff
-!0:0 UnpossessedEndings ;
-%<n%>:%> PossessedEndings ;
-%<n%>%<abs%>:%>in # ;
+
+%<n%>%<abs%>:%>in                                  # ;
+%<n%>:                                             Plural ;
 
 LEXICON NoSuff
-!0:0 UnpossessedEndings ;
-%<n%>:%> PossessedEndings ;
-%<n%>%<abs%>: # ;
+
+%<n%>%<abs%>:                                      # ;
+%<n%>:                                             Plural ;
+
+!LEXICON Rel 
+!
+!+co%<n%>%<loc%>:%>co # ; ! FIXME: Orth
+!+pan%<n%>%<loc%>:%>pan # ; ! FIXME: Orth
+!+tlan%<n%>%<loc%>:%>tlan # ; ! FIXME: Orth
+!+yan%<n%>%<loc%>:%>yan # ; ! FIXME: Orth
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!LEXICON Relacionales 
+!
+!kxi:kxi Rel ; ! FIXME: Orth
+!nacas:nacas Rel ; ! FIXME: Orth
+!jti:jti Rel ; ! FIXME: Orth
 
 LEXICON Nouns
-amatl:ama TlSuff ;                       !"papel/libro"
-zihuatl:zihua TlSuff ;                    !"woman"
-oquichtl:oquich TlSuff ;                 !"male"
-tlacatl:tlaca TlSuff ;                   !"man"
-tototl:toto TlSuff ;                     !"pajaro"
-ihuitl:ihui TlSuff ;                     !"gallina"
-tipetl:tipe TlSuff ;                     !"cerro"
-cacalotl:cacalo TlSuff ;                 !"cuervo"
-tapalcatihuilotl:tapalcatihuilo TlSuff ; !"contenedor de agua"
-tiquitl:tiqui TlSuff ;                   !"trabajo"
-tlaltitl:tlalti TlSuff ;                 !"earth rock"
-atl:a TlSuff ;                           !"agua"
-nacatl:naca TlSuff ;                     !"carne"
-ichcatl:ichca TlSuff ;                   !"borrego"
-tipoztl:tipoz TlSuff ;                   !"carro/algo metalico"
-yolotl:yolo TlSuff ;                     !"corazon"
-conetl:cone TlSuff ;                     !"bebe"
-cozamalotl:cozamalo TlSuff ;             !"arcoiris"
-ichpocaconetl:ichpocacone TlSuff ;       !"girl baby"
-quichconetl:quichcone TlSuff ;           !"male baby"
-coyotl:coyo TlSuff ;                     !"coyote"
-itl:i TlSuff ;                           !"frijol"
 
-tochtli:toch TliSuff;        !"conejo"
-itzcuintli:itzcuin TliSuff;  !"perro"
-pahtli:pah TliSuff;          !"medicina"
-poctli:poc TliSuff;          !"humo"
-metztli:metz TliSuff;        !"luna"
-mixtli:mix TliSuff ;          !"nube
+amatl:ama                                       TlSuff ; !"papel, libro"
+zihuatl:zihua                                   TlSuff ; !"woman"
+oquichtl:oquich                                 TlSuff ; !"male"
+tlacatl:tlaca                                   TlSuff ; !"man"
+tototl:toto                                     TlSuff ; !"pajaro"
+ihuitl:ihui                                     TlSuff ; !"gallina"
+tipetl:tipe                                     TlSuff ; !"cerro"
+cacalotl:cacalo                                 TlSuff ; !"cuervo"
+tapalcatihuilotl:tapalcatihuilo                 TlSuff ; !"contenedor de agua"
+tiquitl:tiqui                                   TlSuff ; !"trabajo"
+tlaltitl:tlalti                                 TlSuff ; !"earth rock"
+atl:a                                           TlSuff ; !"agua"
+altepetl:altepe                                 TlSuff ; !"ciudad, altepetl"
+nacatl:naca                                     TlSuff ; !"carne"
+ichcatl:ichca                                   TlSuff ; !"borrego"
+tipoztl:tipoz                                   TlSuff ; !"carro/algo metalico"
+yolotl:yolo                                     TlSuff ; !"corazon"
+conetl:cone                                     TlSuff ; !"bebe"
+cozamalotl:cozamalo                             TlSuff ; !"arcoiris"
+ichpocaconetl:ichpocacone                       TlSuff ; !"girl baby"
+quichconetl:quichcone                           TlSuff ; !"male baby"
+coyotl:coyo                                     TlSuff ; !"coyote"
+itl:i                                           TlSuff ; !"frijol"
 
-calli:cal LiSuff ; ! "casa"
-zitlalli:zitlal LiSuff ; ! ""
+tochtli:toch                                    TliSuff ; !"conejo"
+itzcuintli:itzcuin                              TliSuff ; !"perro"
+pahtli:pah                                      TliSuff ; !"medicina"
+poctli:poc                                      TliSuff ; !"humo"
+metztli:metz                                    TliSuff ; !"luna"
+mixtli:mix                                      TliSuff ; !"nube
 
-chapolin:chapol InSuff ;   !"chapulín"
-tamazolin:tamazol InSuff ; !"rana"
-ayotachin:ayotoch InSuff ; !"armadillo"
+calli:cal                                       LiSuff ; !"casa"
+zitlalli:zitlal                                 LiSuff ; !""
 
-tempil:tempil NoSuff ;           !"pico"
-mahtlapal:mahtlapal NoSuff ;     !"ala"
-tonal:tonal NoSuff ;             !"day/sun"
-caxtil:caxtil NoSuff ;           !"gallina"
-patox:patox NoSuff ;             !"pato"
-ixtololo:ixtololo NoSuff ;       !"ojo"
-tlapitlanil:tlapitlanil NoSuff ; !"rayo"
+chapolin:chapol                                 InSuff ; !"chapulín"
+tamazolin:tamazol                               InSuff ; !"rana"
+ayotachin:ayotoch                               InSuff ; !"armadillo"
+
+tempil:tempil                                   NoSuff ; !"pico"
+mahtlapal:mahtlapal                             NoSuff ; !"ala"
+tonal:tonal                                     NoSuff ; !"día, sol"
+caxtil:caxtil                                   NoSuff ; !"gallina"
+patox:patox                                     NoSuff ; !"pato"
+ixtololo:ixtololo                               NoSuff ; !"ojo"
+tlapitlanil:tlapitlanil                         NoSuff ; !"rayo"
 
 

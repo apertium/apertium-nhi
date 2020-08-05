@@ -15,8 +15,8 @@ Cns   = b c d f g h j k l m n p r s t w y z ;
 
 Rules 
 
-"Epenthesis of {i} before vowels"
-%{i%}:i <=> _ %>: :Vow ;
+"Epenthesis of {i} before consonants"
+%{i%}:i <=> _ %>: :Cns ;
 
 "Nasal assimilation"
 n:0 <=> _ %>: m ; 
