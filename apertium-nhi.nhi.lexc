@@ -12,8 +12,15 @@ Multichar_Symbols
 %<iv%>                                   ! Intransitivo
 
 %<pl%>                                   ! Plural
+%<sg%>                                   ! Singular
 
 %<abs%>                                  ! Absolutivo
+
+%<pro%>                                  ! Pronombre
+
+%<p1%>
+%<p2%>
+%<p3%>
 
 %<px1sg%>                                ! Posesivo (1ra singular)
 %<px2sg%>
