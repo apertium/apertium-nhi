@@ -40,6 +40,8 @@ Multichar_Symbols
 
 %{o%}                                    ! o 
 %{i%}                                    ! i / 0
+%{h%}                                    ! h / u
+%{u%}                                    ! u / h
 
 %>                                       ! Frontera de morfema
 
@@ -105,27 +107,38 @@ LEXICON Plural
 
 LEXICON TlSuff
 
-%<n%>%<abs%>:%>tl                                  # ;
+@D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+
+LEXICON ItlSuff
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>itl                     # ;
+%<n%>:                                             # ;
 %<n%>:                                             Plural ;
 
 LEXICON TliSuff
 
-%<n%>%<abs%>:%>tli                                 # ;
+@D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
+%<n%>:                                             # ;
 %<n%>:                                             Plural ;
 
 LEXICON LiSuff
 
-%<n%>%<abs%>:%>li                                  # ;
+@D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
+%<n%>:                                             # ;
 %<n%>:%>li                                         Plural ;
 
 LEXICON InSuff
 
-%<n%>%<abs%>:%>in                                  # ;
+@D.Px@%<n%>%<abs%>:@D.Px@%>in                      # ;
+%<n%>:                                             # ;
 %<n%>:                                             Plural ;
 
 LEXICON NoSuff
 
-%<n%>%<abs%>:                                      # ;
+@D.Px@%<n%>%<abs%>:@D.Px@                          # ;
+%<n%>:                                             # ;
 %<n%>:                                             Plural ;
 
 !LEXICON Rel 
@@ -161,50 +174,52 @@ Personales ;
 
 LEXICON Nouns
 
-amatl:ama                                       TlSuff ; !"papel, libro"
-zihuatl:zihua                                   TlSuff ; !"woman"
-oquichtl:oquich                                 TlSuff ; !"male"
-tlacatl:tlaca                                   TlSuff ; !"man"
-tototl:toto                                     TlSuff ; !"pajaro"
-ihuitl:ihui                                     TlSuff ; !"gallina"
-tipetl:tipe                                     TlSuff ; !"cerro"
-cacalotl:cacalo                                 TlSuff ; !"cuervo"
-tapalcatihuilotl:tapalcatihuilo                 TlSuff ; !"contenedor de agua"
-tiquitl:tiqui                                   TlSuff ; !"trabajo"
-tlaltitl:tlalti                                 TlSuff ; !"earth rock"
-atl:a                                           TlSuff ; !"agua"
-altepetl:altepe                                 TlSuff ; !"ciudad, altepetl"
-nacatl:naca                                     TlSuff ; !"carne"
-ichcatl:ichca                                   TlSuff ; !"borrego"
-tipoztl:tipoz                                   TlSuff ; !"carro/algo metalico"
-yolotl:yolo                                     TlSuff ; !"corazon"
-conetl:cone                                     TlSuff ; !"bebe"
-cozamalotl:cozamalo                             TlSuff ; !"arcoiris"
-ichpocaconetl:ichpocacone                       TlSuff ; !"girl baby"
-quichconetl:quichcone                           TlSuff ; !"male baby"
-coyotl:coyo                                     TlSuff ; !"coyote"
-itl:i                                           TlSuff ; !"frijol"
+amatl:ama                                       TlSuff ; ! "papel, libro"
+zihuatl:zihua                                   TlSuff ; ! "woman"
+oquichtl:oquich                                 TlSuff ; ! "male"
+tlacatl:tlaca                                   TlSuff ; ! "man"
+tototl:toto                                     TlSuff ; ! "pajaro"
+ihuitl:ihui                                     TlSuff ; ! "gallina"
+tipetl:tipe                                     TlSuff ; ! "cerro"
+cacalotl:cacalo                                 TlSuff ; ! "cuervo"
+tapalcatihuilotl:tapalcatihuilo                 TlSuff ; ! "contenedor de agua"
+tiquitl:tiqui                                   TlSuff ; ! "trabajo"
+tlaltitl:tlalti                                 TlSuff ; ! "earth rock"
+atl:a                                           TlSuff ; ! "agua"
+altepetl:altepe                                 TlSuff ; ! "ciudad, altepetl"
+nacatl:naca                                     TlSuff ; ! "carne"
+ichcatl:ichca                                   TlSuff ; ! "borrego"
+tipoztl:tipoz                                   TlSuff ; ! "carro/algo metalico"
+yolotl:yolo                                     TlSuff ; ! "corazon"
+conetl:cone                                     TlSuff ; ! "bebe"
+cozamalotl:cozamalo                             TlSuff ; ! "arcoiris"
+ichpocaconetl:ichpocacone                       TlSuff ; ! "girl baby"
+quichconetl:quichcone                           TlSuff ; ! "male baby"
+coyotl:coyo                                     TlSuff ; ! "coyote"
+itl:i                                           TlSuff ; ! "frijol"
 
-tochtli:toch                                    TliSuff ; !"conejo"
-itzcuintli:itzcuin                              TliSuff ; !"perro"
-pahtli:pah                                      TliSuff ; !"medicina"
-poctli:poc                                      TliSuff ; !"humo"
-metztli:metz                                    TliSuff ; !"luna"
-mixtli:mix                                      TliSuff ; !"nube
+tochtli:toch                                    TliSuff ; ! "conejo"
+itzcuintli:itzcuin                              TliSuff ; ! "perro"
+pahtli:pah                                      TliSuff ; ! "medicina"
+poctli:poc                                      TliSuff ; ! "humo"
+metztli:metz                                    TliSuff ; ! "luna"
+mixtli:mix                                      TliSuff ; ! "nube
 
-calli:cal                                       LiSuff ; !"casa"
-zitlalli:zitlal                                 LiSuff ; !""
+calli:cal                                       LiSuff ; ! "casa"
+zitlalli:zitlal                                 LiSuff ; ! ""
 
-chapolin:chapol                                 InSuff ; !"chapulín"
-tamazolin:tamazol                               InSuff ; !"rana"
-ayotachin:ayotoch                               InSuff ; !"armadillo"
+chapolin:chapol                                 InSuff ; ! "chapulín"
+tamazolin:tamazol                               InSuff ; ! "rana"
+ayotachin:ayotoch                               InSuff ; ! "armadillo"
 
-tempil:tempil                                   NoSuff ; !"pico"
-mahtlapal:mahtlapal                             NoSuff ; !"ala"
-tonal:tonal                                     NoSuff ; !"día, sol"
-caxtil:caxtil                                   NoSuff ; !"gallina"
-patox:patox                                     NoSuff ; !"pato"
-ixtololo:ixtololo                               NoSuff ; !"ojo"
-tlapitlanil:tlapitlanil                         NoSuff ; !"rayo"
+tempil:tempil                                   NoSuff ; ! "pico"
+mahtlapal:mahtlapal                             NoSuff ; ! "ala"
+tonal:tonal                                     NoSuff ; ! "día, sol"
+caxtil:caxtil                                   NoSuff ; ! "gallina"
+patox:patox                                     NoSuff ; ! "pato"
+ixtololo:ixtololo                               NoSuff ; ! "ojo"
+tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
 
 
+xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
+caxitl:cax                                      ItlSuff ; ! "plato"

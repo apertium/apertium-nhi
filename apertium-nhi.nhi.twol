@@ -4,6 +4,8 @@ Alphabet
  a b c d e f g h i j k l m n o p r s t u w y z
  %{o%}:o  
  %{i%}:i %{i%}:0
+ %{h%}:h %{h%}:u
+ %{u%}:u %{u%}:h
   %>:%>  ;
 
 Sets
@@ -36,4 +38,15 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !!xi                             W @D.PL@@R.poss@
 !define WrewritePt1 W -> u h  || Vowels* _ "^" NominalFlags* .#. ;
 !define WrewritePt2 W -> h u i || _ NominalFlags* "^" t l .#. ;
+
+"Metathesis of -{h}{u} for {h}"
+%{u%}:h <=>  _ %{h%}: %>: i t l ;
+
+!@ x i {u}:h {h}:u >:> i t l
+!@ x i {u}:h {h}:u >:> i t l 
+!@ n {o}:o >:> x i {u}:u {h}:h 
+
+"Metathesis of -{h}{u} for {u}"
+%{h%}:u <=> %{u%}:h _ ; 
+
 
