@@ -9,6 +9,22 @@
     </pipeline>
   </mode>
 
+  <mode name="nhi-nhi_SEP" install="yes">
+    <pipeline>
+      <program name="hfst-proc -N 1">
+        <file name="nhi-nhi_SEP.autoconv.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="nhi_SEP-phone" install="yes">
+    <pipeline>
+      <program name="hfst-proc -w -N 1">
+        <file name="nhi_SEP.autophon.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
   <mode name="nhi-phone" install="yes">
     <pipeline>
       <program name="hfst-proc -w -N 1">
