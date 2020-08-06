@@ -4,6 +4,7 @@
 
 LANG1=nhi
 BASENAME=apertium-$(LANG1)
+VAR1=SEP
 
 TARGETS_COMMON =			\
 	$(LANG1).automorf.hfst		\
@@ -11,6 +12,8 @@ TARGETS_COMMON =			\
 	$(LANG1).automorf.att.gz	\
 	$(LANG1).autogen.hfst		\
 	$(LANG1).autophon.hfst		\
+	$(LANG1).autophon_$(VAR1).hfst		\
+	$(LANG1)-$(LANG1)_$(VAR1).autoconv.hfst \
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autoseg.hfst		\
@@ -50,11 +53,23 @@ TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(L
 .deps/nhi.phon.hfst: apertium-nhi.nhi.phon
 	hfst-lexc apertium-nhi.nhi.phon -o $@
 
+.deps/nhi.phon_$(VAR1).hfst: apertium-nhi.nhi_$(VAR1).phon
+	hfst-lexc apertium-nhi.nhi_$(VAR1).phon -o $@
+
 .deps/nhi.spellrelax.hfst: apertium-nhi.nhi.spellrelax 
 	hfst-regexp2fst -S -o $@ < $<
 
+.deps/nhi-nhi_$(VAR1).phon.hfst: .deps/nhi.phon.hfst .deps/nhi.phon_$(VAR1).hfst
+	hfst-invert .deps/nhi.phon_$(VAR1).hfst | hfst-compose -1 .deps/nhi.phon.hfst -2 - -o $@
+
+$(LANG1)-$(LANG1)_$(VAR1).autoconv.hfst: .deps/nhi-nhi_$(VAR1).phon.hfst
+	hfst-fst2fst -w $< -o $@
+
 $(LANG1).autophon.hfst: .deps/nhi.phon.hfst
-	hfst-fst2fst -w .deps/nhi.phon.hfst -o nhi.autophon.hfst
+	hfst-fst2fst -w $< -o $@
+
+$(LANG1).autophon_$(VAR1).hfst: .deps/nhi.phon_$(VAR1).hfst
+	hfst-fst2fst -w $< -o $@
 
 $(LANG1).automorf.hfst: .deps/nhi.mor.hfst .deps/nhi.spellrelax.hfst
 	hfst-invert $< |  hfst-compose -F -1 - -2 .deps/nhi.spellrelax.hfst  | hfst-invert | hfst-fst2fst -w -o $@
