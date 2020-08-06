@@ -77,8 +77,8 @@ LEXICON Sujeto
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>               Predicate ;
 @P.Sa.Sg@%<s_sg2%>:@P.Sa.Sg@t%{i%}%>               Predicate ;
 @P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                       Predicate ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@n%{i%}%>               Predicate ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@t%{i%}%>               Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>               Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>               Predicate ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                       Predicate ;
                                                    Predicate ;
 
@@ -175,9 +175,28 @@ LEXICON DET
 
 %<det%>: # ; 
 
-LEXICON Personales 
+LEXICON Personales
+!
+! Formas cortas de los pronombres personales singulares.
+!
+nehuatl%<prn%>%<pro%>%<p1%>%<sg%>:neh # ;
+tehuatl%<prn%>%<pro%>%<p2%>%<sg%>:teh # ;
+yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
 
-yeh%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ; 
+!
+! Formas largas de los pronombres personales singulares.
+!
+nehuatl%<prn%>%<pro%>%<p1%>%<sg%>:nehuatl # ;
+tehuatl%<prn%>%<pro%>%<p2%>%<sg%>:tehuatl # ;
+yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yehuatl # ;
+
+!
+! Pronombres personales plurales.
+!
+tehuan%<prn%>%<pro%>%<p1%>%<pl%>:tehuan # ;
+nimehuan%<prn%>%<pro%>%<p2%>%<pl%>:nimehuan # ;
+yehuan%<prn%>%<pro%>%<p3%>%<pl%>:yehuan # ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -198,26 +217,26 @@ Personales ;
 LEXICON Nouns
 
 amatl:ama                                       TlSuff ; ! "papel, libro"
-zihuatl:zihua                                   TlSuff ; ! "woman"
-oquichtl:oquich                                 TlSuff ; ! "male"
-tlacatl:tlaca                                   TlSuff ; ! "man"
-tototl:toto                                     TlSuff ; ! "pajaro"
+zihuatl:zihua                                   TlSuff ; ! "mujer"
+oquichtl:oquich                                 TlSuff ; ! "varón"
+tlacatl:tlaca                                   TlSuff ; ! "hombre"
+tototl:toto                                     TlSuff ; ! "pájaro"
 ihuitl:ihui                                     TlSuff ; ! "gallina"
 tipetl:tipe                                     TlSuff ; ! "cerro"
 cacalotl:cacalo                                 TlSuff ; ! "cuervo"
 tapalcatihuilotl:tapalcatihuilo                 TlSuff ; ! "contenedor de agua"
 tiquitl:tiqui                                   TlSuff ; ! "trabajo"
-tlaltitl:tlalti                                 TlSuff ; ! "earth rock"
+tlaltitl:tlalti                                 TlSuff ; ! "piedra de tierra"
 atl:a                                           TlSuff ; ! "agua"
 altepetl:altepe                                 TlSuff ; ! "ciudad, altepetl"
 nacatl:naca                                     TlSuff ; ! "carne"
 ichcatl:ichca                                   TlSuff ; ! "borrego"
-tipoztl:tipoz                                   TlSuff ; ! "carro/algo metalico"
+tipoztl:tipoz                                   TlSuff ; ! "carro/algo metálico"
 yolotl:yolo                                     TlSuff ; ! "corazon"
 conetl:cone                                     TlSuff ; ! "bebe"
 cozamalotl:cozamalo                             TlSuff ; ! "arcoiris"
-ichpocaconetl:ichpocacone                       TlSuff ; ! "girl baby"
-quichconetl:quichcone                           TlSuff ; ! "male baby"
+ichpocaconetl:ichpocacone                       TlSuff ; ! "bebé niña"
+quichconetl:quichcone                           TlSuff ; ! "bebé niño"
 coyotl:coyo                                     TlSuff ; ! "coyote"
 itl:i                                           TlSuff ; ! "frijol"
 
@@ -229,11 +248,11 @@ metztli:metz                                    TliSuff ; ! "luna"
 mixtli:mix                                      TliSuff ; ! "nube
 
 calli:cal                                       LiSuff ; ! "casa"
-zitlalli:zitlal                                 LiSuff ; ! ""
+zitlalli:zitlal                                 LiSuff ; ! "estrella"
 
 chapolin:chapol                                 InSuff ; ! "chapulín"
 tamazolin:tamazol                               InSuff ; ! "rana"
-ayotachin:ayotoch                               InSuff ; ! "armadillo"
+ayotochin:ayotoch                               InSuff ; ! "armadillo"
 
 tempil:tempil                                   NoSuff ; ! "pico"
 mahtlapal:mahtlapal                             NoSuff ; ! "ala"
