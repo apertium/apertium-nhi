@@ -44,7 +44,7 @@ LEXICON Graphs
 m:m  Loop ;
 n:n  Loop ;
 l:l  Loop ;
-h:h  Loop ;
+!h:h  Loop ;
 p:p  Loop ;
 t:t  Loop ;
 x:ʃ  Loop ;

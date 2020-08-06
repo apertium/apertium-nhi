@@ -65,6 +65,9 @@ $ echo "Yeh in tlacatl" | apertium -d . nhi-phone
 
 $ echo "Yeh in tlacatl" | apertium -d . nhi-segmenter
 ^Yeh/Yeh$ ^in/in$ ^tlacatl/tlaca>tl$
+
+$ echo "ce tlahcuilolli tleh campa niitztoc" | apertium -d . nhi-nhi_SEP
+^ce/se$ ^tlahcuilolli/tlajkuiloli$ ^tleh/tlej$ ^campa/kampa$ ^niitztoc/niitstok$
 ```
 
 Files and data
