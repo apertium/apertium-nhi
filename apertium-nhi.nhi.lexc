@@ -69,6 +69,7 @@ Sujeto ;
 
 Pronombres ;
 Determinantes ;
+Puntuación ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -268,3 +269,15 @@ tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
 
 xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
 caxitl:cax                                      ItlSuff ; ! "plato"
+
+LEXICON Puntuación
+
+.%<sent%>:. # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%¡%<sent%>:%¡ # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+…%<sent%>:… # ;
+
