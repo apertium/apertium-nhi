@@ -1,0 +1,57 @@
+! Grapheme to phoneme convertor for the ACK orthography.
+! Weights are used to favour longer matches.
+Multichar_Symbols
+
+%>
+
+LEXICON Root
+
+Trigraphs ;
+
+LEXICON Loop 
+
+Trigraphs "weight: 0.0" ;
+# ;
+
+LEXICON Trigraphs 
+
+que:ke Digraphs "weight: 0.0" ;
+qui:ki Digraphs "weight: 0.0" ;
+       Digraphs "weight: 0.6" ;
+
+LEXICON Digraphs
+
+za:sa Graphs   "weight: 0.0" ;
+zo:so Graphs  "weight: 0.0" ;
+ce:se Graphs  "weight: 0.0" ;
+ci:si Graphs  "weight: 0.0" ;
+ca:ka Graphs  "weight: 0.0" ;
+co:ko Graphs  "weight: 0.0" ;
+cu:ku Graphs  "weight: 0.0" ;
+tz:ts Graphs  "weight: 0.0" ;
+ch:tʃ Graphs  "weight: 0.0" ;
+tl:tɬ Graphs  "weight: 0.0" ;
+ll:l  Graphs  "weight: 0.0" ;
+      Graphs  "weight: 1.0" ;
+
+LEXICON Graphs 
+m:m  Loop ;
+n:n  Loop ;
+p:p  Loop ;
+t:t  Loop ;
+x:ʃ  Loop ;
+r:r  Loop ;
+h:h  Loop ;
+l:l  Loop ;
+y:j  Loop ;
+z:s  Loop ;
+g:g  Loop ;
+c:k  Loop ;
+
+a:a  Loop ;
+e:e  Loop ;
+i:i  Loop ;
+o:o  Loop ;
+u:u  Loop ;
+     Loop ;
+
