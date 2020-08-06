@@ -6,32 +6,43 @@ Multichar_Symbols
 
 LEXICON Root
 
-Trigraphs ;
+Tetragraphs ;
 
 LEXICON Loop 
 
-Trigraphs "weight: 0.0" ;
-# ;
+        Tetragraphs "weight: 0.0" ;
+n:n̥     # "weight: 0.0" ; 
+        # ;
+
+LEXICON Tetragraphs 
+
+cqui:hki Loop "weight: 0.0" ;
+         Trigraphs "weight: 0.3" ;
 
 LEXICON Trigraphs 
 
-que:ke Digraphs "weight: 0.0" ;
-qui:ki Digraphs "weight: 0.0" ;
-       Digraphs "weight: 0.6" ;
+que:ke   Loop "weight: 0.0" ;
+qui:ki   Loop "weight: 0.0" ;
+cua:kʷa  Loop "weight: 0.0" ;
+hua:wa   Loop "weight: 0.0" ;
+         Digraphs "weight: 0.6" ;
 
 LEXICON Digraphs
 
-za:sa Graphs   "weight: 0.0" ;
-zo:so Graphs  "weight: 0.0" ;
-ce:se Graphs  "weight: 0.0" ;
-ci:si Graphs  "weight: 0.0" ;
-ca:ka Graphs  "weight: 0.0" ;
-co:ko Graphs  "weight: 0.0" ;
-cu:ku Graphs  "weight: 0.0" ;
-tz:ts Graphs  "weight: 0.0" ;
-ch:tʃ Graphs  "weight: 0.0" ;
-tl:tɬ Graphs  "weight: 0.0" ;
-ll:l  Graphs  "weight: 0.0" ;
+za:sa Loop   "weight: 0.0" ;
+zo:so Loop  "weight: 0.0" ;
+ce:se Loop  "weight: 0.0" ;
+ci:si Loop  "weight: 0.0" ;
+ca:ka Loop  "weight: 0.0" ;
+co:ko Loop  "weight: 0.0" ;
+cu:ku Loop  "weight: 0.0" ;
+tz:ts Loop  "weight: 0.0" ;
+ch:tʃ Loop  "weight: 0.0" ;
+tl:tɬ Loop  "weight: 0.0" ;
+lt:ɬt Loop  "weight: 0.0" ;
+tt:ht Loop  "weight: 0.0" ;
+ll:l  Loop  "weight: 0.0" ;
+uh:h  Loop  "weight: 0.0" ;
       Graphs  "weight: 1.0" ;
 
 LEXICON Graphs 
