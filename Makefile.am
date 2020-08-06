@@ -86,7 +86,7 @@ $(LANG1).rlx.bin: apertium-nhi.nhi.rlx
 $(LANG1).autogen.att.gz: .deps/$(LANG1).gen.hfst
 	hfst-fst2txt $< | gzip -9 -c > $@
 
-$(LANG1).automorf.att.gz: .deps/$(LANG1).mor.hfst nhi.spellrelax.hfst
+$(LANG1).automorf.att.gz: .deps/$(LANG1).mor.hfst .deps/nhi.spellrelax.hfst
 	hfst-invert $< |  hfst-compose -F -1 - -2 .deps/nhi.spellrelax.hfst  | hfst-invert | hfst-fst2txt | gzip -9 -c > $@
 
 $(LANG1).autoseg.att.gz: .deps/$(LANG1).seg.hfst
