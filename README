@@ -1,12 +1,12 @@
-Central Nahuatl: `apertium-nhn`
+Western Sierra (Zacatlán-Ahuacatlán-Tepetzintla) Nahuatl: `apertium-nhi`
 ===============================================================================
 
-This is an Apertium monolingual language package for nhn. What
+This is an Apertium monolingual language package for nhi. What
 you can use this language package for:
 
-* Morphological analysis of nhn
-* Morphological generation of nhn
-* Part-of-speech tagging of nhn
+* Morphological analysis of nhi
+* Morphological generation of nhi
+* Part-of-speech tagging of nhi
 
 Requirements
 -------------------------------------------------------------------------------
@@ -54,28 +54,28 @@ If you are in the source directory after running make, the following
 commands should work:
 
 ```console
-$ echo "TODO: test sentence" | apertium -d . nhn-morph
+$ echo "TODO: test sentence" | apertium -d . nhi-morph
 TODO: test analysis result
 
-$ echo "TODO: test sentence" | apertium -d . nhn-tagger
+$ echo "TODO: test sentence" | apertium -d . nhi-tagger
 TODO: test tagger result
 ```
 
 Files and data
 -------------------------------------------------------------------------------
 
-* [`apertium-nhn.nhn.lexc`](apertium-nhn.nhn.lexc) - Morphotactic dictionary
-* [`apertium-nhn.nhn.twol`](apertium-nhn.nhn.twol) - Morphophonological rules
-* [`apertium-nhn.nhn.rlx`](apertium-nhn.nhn.rlx) - Constraint Grammar disambiguation rules
-* [`apertium-nhn.post-nhn.dix`](apertium-nhn.post-nhn.dix) - Post-generator
-* [`nhn.prob`](nhn.prob) - Tagger model
+* [`apertium-nhi.nhi.lexc`](apertium-nhi.nhi.lexc) - Morphotactic dictionary
+* [`apertium-nhi.nhi.twol`](apertium-nhi.nhi.twol) - Morphophonological rules
+* [`apertium-nhii.nhi.rlx`](apertium-nhi.nhi.rlx) - Constraint Grammar disambiguation rules
+* [`apertium-nhi.post-nhi.dix`](apertium-nhi.post-nhi.dix) - Post-generator
+* [`nhi.prob`](nhi.prob) - Tagger model
 * [`modes.xml`](modes.xml) - Translation modes
 
 For more information
 -------------------------------------------------------------------------------
 
 * http://wiki.apertium.org/wiki/Installation
-* http://wiki.apertium.org/wiki/apertium-nhn
+* http://wiki.apertium.org/wiki/apertium-nhi
 * http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
 
 Help and support
