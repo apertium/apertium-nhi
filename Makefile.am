@@ -2,8 +2,6 @@
 ## Makefile for apertium-nhi
 ###############################################################################
 
-RELEASE=0.1
-VERSION=0.1.0
 LANG1=nhi
 BASENAME=apertium-$(LANG1)
 
@@ -12,53 +10,72 @@ TARGETS_COMMON =			\
 	$(LANG1).automorf.bin		\
 	$(LANG1).automorf.att.gz	\
 	$(LANG1).autogen.hfst		\
+	$(LANG1).autophon.hfst		\
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
-	$(LANG1).prob                   \
+	$(LANG1).autoseg.hfst		\
+	$(LANG1).autoseg.bin		\
+	$(LANG1).prob		\
 	$(LANG1).rlx.bin
 
-# This include defines goals for install-modes, .deps/.d, autobil.prefixes and .mode files:
+TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(LANG1).phon.hfst
+
+# This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
 
 ###############################################################################
-## nhi transducer
-###############################################################################
 
-.deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol .deps/.d
+# nimahtlapaltzin:<s_sg1>mahtlapal<n><dim>
+.deps/nhi.mor.hfst: .deps/nhi.gen.hfst .deps/nhi.mor.twol.hfst
+	hfst-compose-intersect -1 .deps/nhi.gen.hfst -2 .deps/nhi.mor.twol.hfst | hfst-minimise | hfst-invert -o $@
+
+# amatl<n><dim><pl>:ama>tzi>tzin
+.deps/nhi.gen.hfst: .deps/nhi.lexc.hfst .deps/nhi.twol.hfst
+	hfst-compose-intersect -1 .deps/nhi.lexc.hfst -2 .deps/nhi.twol.hfst | hfst-minimise  -o $@
+
+.deps/nhi.twol.hfst: apertium-nhi.nhi.twol
 	hfst-twolc $< -o $@
 
-.deps/$(LANG1).mor.twol.hfst: $(BASENAME).$(LANG1).mor.twol .deps/.d
-	hfst-twolc $< -o $@
+# <px2sg>metztli<n><pl>:m{o}>metz>huan
+.deps/nhi.lexc.hfst: apertium-nhi.nhi.lexc .deps/.d
+	hfst-lexc -A --Werror $< -o $@
 
-.deps/$(LANG1).RL.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
-	cat $< | grep -v 'Dir/LR' > $@
+.deps/nhi.mor.twol.hfst: apertium-nhi.nhi.mor.twol
+	hfst-twolc apertium-nhi.nhi.mor.twol -o .deps/nhi.mor.twol.hfst
 
-.deps/$(LANG1).LR.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
-	cat $< | grep -v 'Dir/RL' > $@
+# notipehuan:no>tipe>huan
+.deps/nhi.seg.hfst: .deps/nhi.mor.hfst .deps/nhi.gen.hfst
+	hfst-compose -1 .deps/nhi.mor.hfst -2 .deps/nhi.gen.hfst -o .deps/nhi.seg.hfst 
 
-.deps/$(LANG1).RL.lexc.hfst: .deps/$(LANG1).RL.lexc
-	hfst-lexc --Werror $< -o $@ -v
+.deps/nhi.phon.hfst: apertium-nhi.nhi.phon
+	hfst-lexc apertium-nhi.nhi.phon -o $@
 
-.deps/$(LANG1).LR.lexc.hfst: .deps/$(LANG1).LR.lexc
-	hfst-lexc --Werror $< -o $@ -v
+.deps/nhi.spellrelax.hfst: apertium-nhi.nhi.spellrelax 
+	hfst-regexp2fst -S -o $@ < $<
 
-.deps/$(LANG1).RL.hfst: .deps/$(LANG1).RL.lexc.hfst .deps/$(LANG1).twol.hfst
-	hfst-compose-intersect -1 .deps/$(LANG1).RL.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
+$(LANG1).autophon.hfst: .deps/nhi.phon.hfst
+	hfst-fst2fst -w .deps/nhi.phon.hfst -o nhi.autophon.hfst
 
-.deps/$(LANG1).LR.hfst: .deps/$(LANG1).LR.lexc.hfst .deps/$(LANG1).twol.hfst
-	hfst-compose-intersect -1 .deps/$(LANG1).LR.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
+$(LANG1).automorf.hfst: .deps/nhi.mor.hfst .deps/nhi.spellrelax.hfst
+	hfst-invert $< |  hfst-compose -F -1 - -2 .deps/nhi.spellrelax.hfst  | hfst-invert | hfst-fst2fst -w -o $@
 
-$(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
-	hfst-compose-intersect -1 $< -2 .deps/$(LANG1).mor.twol.hfst | hfst-fst2fst -w $< -o $@
+$(LANG1).autogen.hfst: .deps/nhi.gen.hfst
+	hfst-fst2fst -w $< -o $@
 
-$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/$(LANG1).mor.twol.hfst
-	hfst-compose-intersect -1 $< -2 .deps/$(LANG1).mor.twol.hfst | hfst-invert | hfst-fst2fst -w -o $@
+$(LANG1).autoseg.hfst: .deps/nhi.seg.hfst 
+	hfst-fst2fst -w $< -o $@
 
-$(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
-	hfst-fst2txt $< | gzip -9 -c -n > $@
+$(LANG1).rlx.bin: apertium-nhi.nhi.rlx
+	cg-comp $< $@
 
-$(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
-	hfst-fst2txt $< | gzip -9 -c -n > $@
+$(LANG1).autogen.att.gz: .deps/$(LANG1).gen.hfst
+	hfst-fst2txt $< | gzip -9 -c > $@
+
+$(LANG1).automorf.att.gz: .deps/$(LANG1).mor.hfst nhi.spellrelax.hfst
+	hfst-invert $< |  hfst-compose -F -1 - -2 .deps/nhi.spellrelax.hfst  | hfst-invert | hfst-fst2txt | gzip -9 -c > $@
+
+$(LANG1).autoseg.att.gz: .deps/$(LANG1).seg.hfst
+	hfst-fst2txt $< | gzip -9 -c > $@
 
 $(LANG1).autogen.bin: $(LANG1).autogen.att.gz .deps/.d
 	zcat < $< > .deps/$(LANG1).autogen.att
@@ -68,63 +85,12 @@ $(LANG1).automorf.bin: $(LANG1).automorf.att.gz .deps/.d
 	zcat < $< > .deps/$(LANG1).automorf.att
 	lt-comp lr .deps/$(LANG1).automorf.att $@
 
-###############################################################################
-## Debugging transducers (for testvoc)
-###############################################################################
+$(LANG1).autoseg.bin: $(LANG1).autoseg.att.gz .deps/.d
+	zcat < $< > .deps/$(LANG1).autoseg.att
+	lt-comp lr .deps/$(LANG1).autoseg.att $@
 
-debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG1).lexc.hfst
-
-.deps/$(LANG1).LR-debug.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
-	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG1).LR-debug.lexc
-	hfst-lexc --Werror .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst -v
-	hfst-compose-intersect -1 .deps/$(LANG1).LR-debug.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
-
-.deps/$(LANG1).lexc.hfst: .deps/$(LANG1).RL.lexc.hfst
-	hfst-fst2fst -w -i $< -o $@
-
-###############################################################################
-## Disambiguation rules
-###############################################################################
-
-$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
-	$(CGCOMP) $< $@
-
-###############################################################################
-## Spell checker
-###############################################################################
-
-$(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
-	rm -f $@
-	zip -j $@ .deps/acceptor.default.hfst .deps/errmodel.default.hfst speller/index.xml
-
-.deps/errmodel.default.hfst: .deps/words.default.hfst .deps/strings.default.hfst
-	python dev/editdist.py -v -s -d 1 -e '@0@' -i speller/editdist.default.txt -a .deps/acceptor.default.hfst \
-	| hfst-txt2fst  -e '@0@' -o .deps/editdist.default.hfst
-	hfst-disjunct .deps/strings.default.hfst .deps/editdist.default.hfst \
-	| hfst-minimise | hfst-repeat -f 1 -t 2 -o .deps/editstrings.default.hfst
-	hfst-disjunct .deps/words.default.hfst .deps/editstrings.default.hfst \
-	| hfst-fst2fst  -f olw -o $@
-
-.deps/words.default.hfst: speller/words.default.txt
-	grep -v -e "^#" -e "^$$" $< | hfst-strings2fst  -j -o $@
-
-.deps/strings.default.hfst: speller/strings.default.txt .deps/anystar.hfst
-	grep -v -e "^#" -e "^$$" $< | hfst-strings2fst  -j | hfst-concatenate .deps/anystar.hfst - |\
-	hfst-concatenate - .deps/anystar.hfst -o $@
-
-.deps/anystar.hfst:
-	echo "?*;" | hfst-regexp2fst -S -o $@
-
-.deps/acceptor.default.hfst: $(LANG1).autogen.hfst
-	cat $< | hfst-fst2fst -t | hfst-project  --project=lower | hfst-minimise |hfst-fst2fst  -f olw -o $@
-
-
-###############################################################################
-## Unigram tagger
-###############################################################################
-
-$(LANG1).prob: corpus/$(LANG1).tagged
-	apertium-tagger -s 0 -u 2 $@ $<
+$(LANG1).prob: $(BASENAME).$(LANG1).tagged $(LANG1).rlx.bin
+	cat $< | cg-proc $(LANG1).rlx.bin | apertium-tagger -s 0 -u 2 $@ /dev/stdin
 
 ###############################################################################
 ## Distribution
@@ -132,8 +98,9 @@ $(LANG1).prob: corpus/$(LANG1).tagged
 
 EXTRA_DIST=$(BASENAME).$(LANG1).lexc		\
 		$(BASENAME).$(LANG1).twol	\
+		$(BASENAME).$(LANG1).phon \
+		$(BASENAME).$(LANG1).spellrelax \
 		$(BASENAME).$(LANG1).rlx	\
-		$(LANG1).prob			\
 		modes.xml
 
 ###############################################################################
@@ -152,7 +119,7 @@ if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
 endif # HAVE_HFSTOSPELL
 
-apertium_nhi_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
+apertium_nhi_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS) 
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
@@ -160,25 +127,17 @@ pkgconfig_DATA = $(BASENAME).pc
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local: install-modes
-	test -d $(DESTDIR)$(apertium_nhi_srcdir) || mkdir -p $(DESTDIR)$(apertium_nhi_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_nhi_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_nhi_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_nhi_srcdir)
+
 
 ###############################################################################
 ## Cleanup
 ###############################################################################
 
-CLEANFILES = $(TARGETS_COMMON)
+CLEANFILES = $(TARGETS_COMMON) $(TARGETS_INTERMEDIATE)
 clean-local:
 	-rm -rf .deps modes
 
 ###############################################################################
-## Test
-###############################################################################
-
-test: all
-	echo "TODO test sentence" | apertium -d . nhi-morph | tee .test-mt
-	@echo "TODO test analysis results" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt

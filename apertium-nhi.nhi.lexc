@@ -16,6 +16,8 @@ Multichar_Symbols
 
 %<abs%>                                  ! Absolutivo
 
+%<loc%>                                  ! Locativo
+
 %<pro%>                                  ! Pronombre proclítico
 %<pers%>                                 ! Personal, forma larga
 

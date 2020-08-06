@@ -1,62 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
 
-  <mode name="nhi-twol" install="yes">
-    <pipeline>
-      <program name="hfst-strings2fst -S"/>
-      <program name="hfst-compose-intersect">
-        <file name=".deps/nhi.twol.hfst"/>
-      </program>
-      <program name="hfst-fst2strings"/>
-    </pipeline>
-  </mode>
-
   <mode name="nhi-morph" install="yes">
     <pipeline>
+      <program name="sed &quot;s/['’]/ʼ/g&quot;"/>
       <program name="hfst-proc -w">
         <file name="nhi.automorf.hfst"/>
       </program>
     </pipeline>
   </mode>
 
-  <mode name="nhi-lexc" install="yes">
+  <mode name="nhi-phone" install="yes">
     <pipeline>
-      <program name="hfst-lookup">
-        <file name=".deps/nhi.LR.lexc.hfst"/>
+      <program name="sed &quot;s/['’]/ʼ/g&quot;"/>
+      <program name="hfst-proc -w -N 1">
+        <file name="nhi.autophon.hfst"/>
       </program>
     </pipeline>
   </mode>
 
-  <mode name="nhi-gener" install="yes">
+  <mode name="nhi-segmenter" install="yes">
     <pipeline>
-      <program name="hfst-proc -g">
-        <file name="nhi.autogen.hfst"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="nhi-tagger" install="yes">
-    <pipeline>
-      <program name="hfst-proc -w">
-        <file name="nhi.automorf.hfst"/>
-      </program>
-      <program name="cg-proc -w">
-        <file name="nhi.rlx.bin"/>
+      <program name="sed &quot;s/['’]/ʼ/g&quot;"/>
+      <program name="hfst-proc">
+        <file name="nhi.autoseg.hfst"/>
       </program>
     </pipeline>
   </mode>
 
   <mode name="nhi-disam" install="yes">
     <pipeline>
+      <program name="sed &quot;s/['’]/ʼ/g&quot;"/>
       <program name="hfst-proc -w">
         <file name="nhi.automorf.hfst"/>
       </program>
-      <program name="cg-conv -a"/>
+      <program name="cg-conv -a -l"/>
       <program name="vislcg3 --trace --grammar">
         <file name="nhi.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
 
-</modes>
+  <mode name="nhi-tagger" install="yes">
+    <pipeline>
+      <program name="sed &quot;s/['’]/ʼ/g&quot;"/>
+      <program name="hfst-proc -w">
+        <file name="nhi.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -1 -n">
+        <file name="nhi.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
 
+
+</modes>
