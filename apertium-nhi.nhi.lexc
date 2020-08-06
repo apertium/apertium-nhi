@@ -16,7 +16,8 @@ Multichar_Symbols
 
 %<abs%>                                  ! Absolutivo
 
-%<pro%>                                  ! Pronombre
+%<pro%>                                  ! Pronombre proclítico
+%<pers%>                                 ! Personal, forma larga
 
 %<dim%>                                  ! Diminutivo
 
@@ -186,16 +187,16 @@ yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
 !
 ! Formas largas de los pronombres personales singulares.
 !
-nehuatl%<prn%>%<pro%>%<p1%>%<sg%>:nehuatl # ;
-tehuatl%<prn%>%<pro%>%<p2%>%<sg%>:tehuatl # ;
-yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yehuatl # ;
+nehuatl%<prn%>%<pers%>%<p1%>%<sg%>:nehuatl # ;
+tehuatl%<prn%>%<pers%>%<p2%>%<sg%>:tehuatl # ;
+yehuatl%<prn%>%<pers%>%<p3%>%<sg%>:yehuatl # ;
 
 !
 ! Pronombres personales plurales.
 !
-tehuan%<prn%>%<pro%>%<p1%>%<pl%>:tehuan # ;
-nimehuan%<prn%>%<pro%>%<p2%>%<pl%>:nimehuan # ;
-yehuan%<prn%>%<pro%>%<p3%>%<pl%>:yehuan # ;
+tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
+nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
+yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
