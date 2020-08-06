@@ -1,12 +1,12 @@
 Western Sierra (Zacatlán-Ahuacatlán-Tepetzintla) Nahuatl: `apertium-nhi`
 ===============================================================================
 
-This is an Apertium monolingual language package for nhi. What
-you can use this language package for:
+This is an Apertium monolingual language package for Western Sierra Nahuatl. 
+What you can use this language package for:
 
-* Morphological analysis of nhi
-* Morphological generation of nhi
-* Part-of-speech tagging of nhi
+* Morphological analysis of Western Sierra Nahautl
+* Morphological generation of Western Sierra Nahautl
+* Part-of-speech tagging of Western Sierra Nahautl
 
 Requirements
 -------------------------------------------------------------------------------
@@ -54,20 +54,28 @@ If you are in the source directory after running make, the following
 commands should work:
 
 ```console
-$ echo "TODO: test sentence" | apertium -d . nhi-morph
-TODO: test analysis result
+$ echo "Yeh in tlacatl" | apertium -d . nhi-morph
+^Yeh/yehuatl<prn><pro><p3><sg>$ ^in/in<det>$ ^tlacatl/tlacatl<n><abs>/<s_pl3>tlacatl<n><abs>/<s_sg3>tlacatl<n><abs>$
 
-$ echo "TODO: test sentence" | apertium -d . nhi-tagger
-TODO: test tagger result
+$ echo "Yeh in tlacatl" | apertium -d . nhi-tagger
+^yehuatl<prn><pro><p3><sg>$ ^in<det>$ ^tlacatl<n><abs>$
+
+$ echo "Yeh in tlacatl" | apertium -d . nhi-phone
+^Yeh/jeh$ ^in/in$ ^tlacatl/tɬakatɬ$
+
+$ echo "Yeh in tlacatl" | apertium -d . nhi-segmenter
+^Yeh/Yeh$ ^in/in$ ^tlacatl/tlaca>tl$
 ```
 
 Files and data
 -------------------------------------------------------------------------------
 
 * [`apertium-nhi.nhi.lexc`](apertium-nhi.nhi.lexc) - Morphotactic dictionary
+* [`apertium-nhi.nhi.phon`](apertium-nhi.nhi.phon) - Grapheme to phoneme convertor
 * [`apertium-nhi.nhi.twol`](apertium-nhi.nhi.twol) - Morphophonological rules
-* [`apertium-nhii.nhi.rlx`](apertium-nhi.nhi.rlx) - Constraint Grammar disambiguation rules
-* [`apertium-nhi.post-nhi.dix`](apertium-nhi.post-nhi.dix) - Post-generator
+* [`apertium-nhi.nhi.spellrelax`](apertium-nhi.nhi.spellrelax) - Spelling relaxation rules 
+* [`apertium-nhi.nhi.rlx`](apertium-nhi.nhi.rlx) - Constraint Grammar disambiguation rules
+* [`apertium-nhi.nhi.tagged`](apertium-nhi.nhi.tagged) - Tagged corpus
 * [`nhi.prob`](nhi.prob) - Tagger model
 * [`modes.xml`](modes.xml) - Translation modes
 
@@ -76,7 +84,6 @@ For more information
 
 * http://wiki.apertium.org/wiki/Installation
 * http://wiki.apertium.org/wiki/apertium-nhi
-* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
 
 Help and support
 -------------------------------------------------------------------------------
