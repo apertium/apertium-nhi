@@ -1,4 +1,4 @@
-! Grapheme to phoneme convertor for the IDIEZ orthography.
+! Grapheme to phoneme convertor for the ACK orthography.
 ! Weights are used to favour longer matches.
 Multichar_Symbols
 
@@ -31,8 +31,8 @@ LEXICON Digraphs
 
 za:sa Loop   "weight: 0.0" ;
 zo:so Loop  "weight: 0.0" ;
-se:se Loop  "weight: 0.0" ;
-si:si Loop  "weight: 0.0" ;
+ce:se Loop  "weight: 0.0" ;
+ci:si Loop  "weight: 0.0" ;
 ca:ka Loop  "weight: 0.0" ;
 co:ko Loop  "weight: 0.0" ;
 cu:ku Loop  "weight: 0.0" ;

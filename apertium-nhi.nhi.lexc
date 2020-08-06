@@ -120,13 +120,14 @@ LEXICON Plural
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
-@D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis
+@D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
 %<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
 
 LEXICON Deriv 
                                                    Diminutivo ; 
 LEXICON TlSuff
+! <s_pl3><px3sg>tipoztl<n> <-- BAD
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
 %<n%>:                                             # ;
