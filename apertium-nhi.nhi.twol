@@ -1,11 +1,12 @@
 Alphabet
  
- A B C D E F G H I J K L M N O P R S T U W Y Z
- a b c d e f g h i j k l m n o p r s t u w y z
+ A B C D E F G H I J K L M N O P R S T U W X Y Z
+ a b c d e f g h i j k l m n o p r s t u w x y z
  %{o%}:o  
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u
  %{u%}:u %{u%}:h
+ %{uh%}:0 %{uh%}:uh
   %>:%>  ;
 
 Sets
@@ -13,7 +14,7 @@ Sets
 Vow   = A E I O U 
         a e i o u ;
 
-Cns   = b c d f g h j k l m n p r s t w y z ;
+Cns   = b c d f g h j k l m n p r s t w x y z ;
 
 Rules 
 
@@ -25,19 +26,22 @@ n:0 <=> _ %>: m ;
 
 "Nasal elision"
 n:0 <=> _ %>: h u a n ;
+!@ n {o}:o >:> i:0 t z c u i n:0 >:> h u a n
 
+!
+! TODO: define two-char affricates and search for those first
+!
 "Vowel deletion"
-i:0 <=> %{o%}: %>: _ Cns ; 
+i:0 <=> %{o%}: %>: _ Cns Cns; 
+
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
+!@ i m:n > c a l l i
 
-! TODO:
-!define DeleteIAfterReflexiveO i -> 0 || o "^" SuffixFlags _ Cons Cons ;
-!define PossVEnding a -> a u h, o -> o u h, i -> i u h, e -> e u h || _ "^" ("@D.PL@") PossFlags .#. ;
-!!xi                             W @D.PL@@R.poss@
-!define WrewritePt1 W -> u h  || Vowels* _ "^" NominalFlags* .#. ;
-!define WrewritePt2 W -> h u i || _ NominalFlags* "^" t l .#. ;
+"Possessive ending [w] after vowel"
+%{uh%}:0 <=> Cns _;
+!@ n o >:> t i p o z {uh}:0
 
 "Metathesis of -{h}{u} for {h}"
 %{u%}:h <=>  _ %{h%}: %>: i t l ;
