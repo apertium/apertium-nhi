@@ -55,11 +55,13 @@ Multichar_Symbols
 @P.Px.Pl@                                ! Posesivo plural
 @R.Px.Pl@
 @D.Px@                                   ! Ninguna posesión
+@R.Px@
 @P.Sa.Sg@                                ! Sujeto singular
 @R.Sa.Sg@
 @P.Sa.Pl@                                ! Sujeto plural
 @R.Sa.Pl@
-@D.Sa@                                   ! Ningún sujeto 
+@D.Sa@                                   ! Ningún sujeto
+@D.Sa.Pl@ 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -111,8 +113,8 @@ LEXICON PlainPlural
 
 LEXICON PossPlural
 
-@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@%>huan        # ; ! Sus casas
-@R.Px.Pl@@R.Sa.Pl@%<pl%>:@R.Px.Pl@@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
+@D.Sa@%<pl%>:@D.Sa@%>huan        # ; ! Sus casas
+@R.Sa.Pl@%<pl%>:@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
 
 LEXICON Plural 
                                                    PossPlural ;
@@ -120,52 +122,49 @@ LEXICON Plural
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
-@D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
+%<dim%>%<abs%>:%>tzin%>tli                         # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
-%<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
 
 LEXICON Deriv 
                                                    Diminutivo ; 
 LEXICON TlSuff
-! <s_pl3><px3sg>tipoztl<n> <-- BAD
-
-@D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
-%<n%>:                                             # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tl    # ;
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON ItlSuff
 
-@D.Px@%<n%>%<abs%>:@D.Px@%>itl                     # ;
-%<n%>:                                             # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>itl   # ;
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON TliSuff
 
-@D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
-%<n%>:                                             # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tli   # ;
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON LiSuff
 
-@D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
-%<n%>:                                             # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>li    # ;
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
 %<n%>:%>li                                         Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON InSuff
 
-@D.Px@%<n%>%<abs%>:@D.Px@%>in                      # ;
-%<n%>:                                             # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>in    # ;
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON NoSuff
 
-@D.Px@%<n%>%<abs%>:@D.Px@                          # ;
-%<n%>:                                             # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>      # ;
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 

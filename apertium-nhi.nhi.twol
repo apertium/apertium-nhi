@@ -6,8 +6,8 @@ Alphabet
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u
  %{u%}:u %{u%}:h
- %{uh%}:0 %{uh%}:uh
-  %>:%>  ;
+ %>:%>  ;
+
 
 Sets
 
@@ -15,6 +15,10 @@ Vow   = A E I O U
         a e i o u ;
 
 Cns   = b c d f g h j k l m n p r s t w x y z ;
+
+Definitions
+
+TwoCnsCombo = [t l Cns | t z Cns | c h Cns | c c | c l |c m | c n | c p | c t | c x | c y | c z | h c | h h | h l | h m | h n | h p | h t | h x | h y | h z | l c | l h | l l | l m | l n | l p | l t | l x | l y | l z | m c | m h | m l | m m | m n | m p | m t | m x | m y | m z | n c | n h | n l | n m | n n | n p | n t | n x | n y | n z | p c | p h | p l | p m | p n | p p | p t | p x | p y | p z | t c | t h | t m | t n | t p | t t | t x | t y | x c | x h | x l | x m | x n | x p | x t | x x | x y | x z | y c | y h | y l | y m | y n | y p | y t | y x | y y | y z | z c | z h | z l | z m | z n | z p | z t | z x | z y | z z] ;
 
 Rules 
 
@@ -28,20 +32,25 @@ n:0 <=> _ %>: m ;
 n:0 <=> _ %>: h u a n ;
 !@ n {o}:o >:> i:0 t z c u i n:0 >:> h u a n
 
-!
-! TODO: define two-char affricates and search for those first
-!
 "Vowel deletion"
-i:0 <=> %{o%}: %>: _ Cns Cns; 
+i:0 <=> %{o%}: %>: _ TwoCnsCombo ;
 
+!"Vowel permanence"
+!i:0 /<= %{o%}: %>: _ [t l | t s | c h] Vow;
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
-!@ i m:n > c a l l i
+!@ i m:n >: c a l
 
 "Possessive ending [w] after vowel"
-%{uh%}:0 <=> Cns _;
-!@ n o >:> t i p o z {uh}:0
+%{u%}:0 <=> %>: _ %{h%}: ;
+
+"Possessive ending [w] after vowel second component"
+%{h%}:0 <=> %>: %{u%}: _ ;
+ 
+!@ n o >:> t i p o z >:> {u}:0 {h}:0
+
+
 
 "Metathesis of -{h}{u} for {h}"
 %{u%}:h <=>  _ %{h%}: %>: i t l ;
