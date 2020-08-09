@@ -32,8 +32,8 @@ n:0 <=> _ %>: m ;
 n:0 <=> _ %>: h u a n ;
 !@ n {o}:o >:> i:0 t z c u i n:0 >:> h u a n
 
-"Vowel deletion"
-i:0 <=> %{o%}: %>: _ TwoCnsCombo ;
+"/i/ deletion"
+i:0 <=> %{o%}: %>: _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z Cns | c h Cns] ;
 !@ n {o}:o >:> i t z i n
 !@ n {o}:o >:> i:0 t z c u i n
 
