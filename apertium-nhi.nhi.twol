@@ -34,9 +34,8 @@ n:0 <=> _ %>: h u a n ;
 
 "Vowel deletion"
 i:0 <=> %{o%}: %>: _ TwoCnsCombo ;
-
-!"Vowel permanence"
-!i:0 /<= %{o%}: %>: _ [t l | t s | c h] Vow;
+!@ n {o}:o >:> i t z i n
+!@ n {o}:o >:> i:0 t z c u i n
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
