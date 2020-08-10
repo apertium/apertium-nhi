@@ -62,6 +62,7 @@ Multichar_Symbols
 @R.Sa.Pl@
 @D.Sa@                                   ! Ningún sujeto
 @D.Sa.Pl@ 
+@D.Sa.Sg@
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -78,7 +79,7 @@ Puntuación ;
 LEXICON Sujeto
 
 ! sg1: n-
-! pl1: n-S-me / n-poss-S-huan
+! pl1: t-S-me / t-poss-S-huan
 
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>               Predicate ;
 @P.Sa.Sg@%<s_sg2%>:@P.Sa.Sg@t%{i%}%>               Predicate ;
@@ -91,8 +92,8 @@ LEXICON Sujeto
 LEXICON Predicate
 ! Después del sujeto viene o una posesivo o un nominal
                                                    Possession ; 
-                                                   Nominals ; 
-LEXICON Possession 
+                                                   Nominals ;
+LEXICON Possession
 
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@n%{o%}%>               Nominals ;
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@m%{o%}%>               Nominals ;
@@ -104,7 +105,8 @@ LEXICON Possession
 LEXICON Nominals 
 ! Sustantivos, sustantivos relacionales y otras categorias que
 ! pueden llevar posesión
-                                                   Nouns ; 
+                                                   Nouns ;
+                                                   Adj ;
 
 LEXICON PlainPlural
 
@@ -221,7 +223,7 @@ Personales ;
 LEXICON Nouns
 
 amatl:ama                                       TlSuff ; ! "papel, libro"
-zihuatl:zihua                                   TlSuff ; ! "mujer"
+cihuatl:cihua                                   TlSuff ; ! "mujer"
 oquichtl:oquich                                 TlSuff ; ! "varón"
 tlacatl:tlaca                                   TlSuff ; ! "hombre"
 tototl:toto                                     TlSuff ; ! "pájaro"
@@ -243,6 +245,9 @@ ichpocaconetl:ichpocacone                       TlSuff ; ! "bebé niña"
 quichconetl:quichcone                           TlSuff ; ! "bebé niño"
 coyotl:coyo                                     TlSuff ; ! "coyote"
 itl:i                                           TlSuff ; ! "frijol"
+tihmahtl:tihlmah                                TlSuff ; ! "ropa/prenda"
+ticactl:ticac                                   TlSuff ; ! "zapato"
+
 
 tochtli:toch                                    TliSuff ; ! "conejo"
 itzcuintli:itzcuin                              TliSuff ; ! "perro"
@@ -252,7 +257,7 @@ metztli:metz                                    TliSuff ; ! "luna"
 mixtli:mix                                      TliSuff ; ! "nube
 
 calli:cal                                       LiSuff ; ! "casa"
-zitlalli:zitlal                                 LiSuff ; ! "estrella"
+citlalli:citlal                                 LiSuff ; ! "estrella"
 
 chapolin:chapol                                 InSuff ; ! "chapulín"
 tamazolin:tamazol                               InSuff ; ! "rana"
@@ -269,6 +274,27 @@ tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
 
 xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
 caxitl:cax                                      ItlSuff ; ! "plato"
+chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
+
+
+LEXICON Adj
+iztac:izta               AdjCont ; !"blancx"  #TODO: i-deletion no ocurre aquí p.ej. "no+iztac" => noiztac, *noztac
+tomahuac:tomahua         AdjCont ; !"gordx"
+pitzahuac:pitzahua       AdjCont ; !"delgadx"
+chicactic:chicacti       AdjCont ; !"durx"
+papatztic:papatzti       AdjCont ; !"suave"
+xaxacuachtic:xaxacuachti AdjCont ; !"suave"
+
+LEXICON AdjCont
+
+! Parece haber muchas restricciones para combinar adj+nomimal
+!
+! #:%>c            Nouns ;       !propiedad+nominal
+!
+
+%<adj%>:%>c            Diminutivo ;
+@D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que     # ;
+
 
 LEXICON Puntuación
 

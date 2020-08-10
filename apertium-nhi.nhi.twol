@@ -16,10 +16,6 @@ Vow   = A E I O U
 
 Cns   = b c d f g h j k l m n p r s t w x y z ;
 
-Definitions
-
-TwoCnsCombo = [t l Cns | t z Cns | c h Cns | c c | c l |c m | c n | c p | c t | c x | c y | c z | h c | h h | h l | h m | h n | h p | h t | h x | h y | h z | l c | l h | l l | l m | l n | l p | l t | l x | l y | l z | m c | m h | m l | m m | m n | m p | m t | m x | m y | m z | n c | n h | n l | n m | n n | n p | n t | n x | n y | n z | p c | p h | p l | p m | p n | p p | p t | p x | p y | p z | t c | t h | t m | t n | t p | t t | t x | t y | x c | x h | x l | x m | x n | x p | x t | x x | x y | x z | y c | y h | y l | y m | y n | y p | y t | y x | y y | y z | z c | z h | z l | z m | z n | z p | z t | z x | z y | z z] ;
-
 Rules 
 
 "Epenthesis of {i} before consonants"
