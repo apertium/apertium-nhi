@@ -1,4 +1,4 @@
-
+cd ..
 head=`grep -nH 'LEXICON Root' apertium-nhi.nhi.lexc  | cut -f2 -d':'`
 
 for tag in `cat apertium-nhi.nhi.lexc | grep -o '%<[^>]\+%>' | sort -u`;  do

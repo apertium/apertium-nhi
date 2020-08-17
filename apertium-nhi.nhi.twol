@@ -38,10 +38,10 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ i m:n >: c a l
 
 "Possessive ending [w] after vowel"
-%{u%}:0 <=> %>: _ %{h%}: ;
+%{u%}:0 <=> Cns %>: _ %{h%}: ;
 
 "Possessive ending [w] after vowel second component"
-%{h%}:0 <=> %>: %{u%}: _ ;
+%{h%}:0 <=> Cns %>: %{u%}: _ ;
  
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 

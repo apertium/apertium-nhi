@@ -23,6 +23,8 @@ Multichar_Symbols
 
 %<dim%>                                  ! Diminutivo
 
+%<hon%>                                  ! Honorifico
+
 %<p1%>
 %<p2%>
 %<p3%>
@@ -60,6 +62,8 @@ Multichar_Symbols
 @R.Sa.Sg@
 @P.Sa.Pl@                                ! Sujeto plural
 @R.Sa.Pl@
+@P.Sa.2@                                 ! Sujeto es 2da persona (necesario para el honorífico)
+@R.Sa.2@
 @D.Sa@                                   ! Ningún sujeto
 @D.Sa.Pl@ 
 @D.Sa.Sg@
@@ -81,16 +85,17 @@ LEXICON Sujeto
 ! sg1: n-
 ! pl1: t-S-me / t-poss-S-huan
 
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>               Predicate ;
-@P.Sa.Sg@%<s_sg2%>:@P.Sa.Sg@t%{i%}%>               Predicate ;
-@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                       Predicate ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>               Predicate ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>               Predicate ;
-@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                       Predicate ;
-                                                   Predicate ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>                  Predicate ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@t%{i%}%>  Predicate ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>                  Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>                  Predicate ;
+@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
+                                                      Predicate ;
 
 LEXICON Predicate
 ! Después del sujeto viene o una posesivo o un nominal
+@R.Sa.2@:@R.Sa.2@                                  Honorific ;
                                                    Possession ; 
                                                    Nominals ;
 LEXICON Possession
@@ -107,6 +112,11 @@ LEXICON Nominals
 ! pueden llevar posesión
                                                    Nouns ;
                                                    Adj ;
+
+LEXICON Honorific !TODO: add i -> honorific vowel harmony in .twolc file.
+%<hon%>:on%>                   Possession ;
+%<hon%>:on%>                   Nominals ;
+
 
 LEXICON PlainPlural
 
@@ -270,7 +280,7 @@ caxtil:caxtil                                   NoSuff ; ! "gallina"
 patox:patox                                     NoSuff ; ! "pato"
 ixtololo:ixtololo                               NoSuff ; ! "ojo"
 tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
-
+icxi:icxi                                       NoSuff ; ! "pie"
 
 xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
 caxitl:cax                                      ItlSuff ; ! "plato"
@@ -279,31 +289,36 @@ chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
 
 LEXICON Adj
 iztac:izta               AdjCont ; !"blancx"  #TODO: i-deletion no ocurre aquí p.ej. "no+iztac" => noiztac, *noztac
+xopiyahuac:xopiyahua     AdjCont ; !"verde"
+tliltic:tlilti           AdjCont ; !"negrx"
+chichiltic:chichilti     AdjCont ; !"rojx"
+nixtic:nixti             AdjCont ; !"gris"
+
+
 tomahuac:tomahua         AdjCont ; !"gordx"
 pitzahuac:pitzahua       AdjCont ; !"delgadx"
 chicactic:chicacti       AdjCont ; !"durx"
 papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
+tzatzayactic:tzatzayacti AdjCont ; !"rotx"
+
+
 
 LEXICON AdjCont
-
-! Parece haber muchas restricciones para combinar adj+nomimal
-!
-! #:%>c            Nouns ;       !propiedad+nominal
-!
-
-%<adj%>:%>c            Diminutivo ;
-@D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que     # ;
+%<adj%>:c                               Diminutivo ;
+@R.Sa.Sg@%<adj%>:@R.Sa.Sg@c             #;
+@D.Sa@%<adj%>:@D.Sa@c                   #;
+@D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
 
 
 LEXICON Puntuación
 
-.%<sent%>:. # ;
+.%<sent%>:.   # ;
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
 %¡%<sent%>:%¡ # ;
-,%<cm%>:, # ;
+,%<cm%>:,     # ;
 %?%<sent%>:%? # ;
-…%<sent%>:… # ;
+…%<sent%>:…   # ;
 
