@@ -113,11 +113,11 @@ LEXICON Verb
                                                      VerbalSubject ;
 
 LEXICON VerbalSubject
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>                  Object ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@t%{i%}%>  Object ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Object ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Object ;
 @P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Object ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>                  Object ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>                  Object ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
                                                       Object ;
 
@@ -127,33 +127,33 @@ LEXICON NominalSubject
 ! sg1: n-
 ! pl1: t-S-me / t-poss-S-huan
 
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>                  Predicate ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@t%{i%}%>  Predicate ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Predicate ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
 @P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>                  Predicate ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>                  Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Predicate ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
                                                       Predicate ;
 
 LEXICON Predicate
-@R.Sa.2@:@R.Sa.2@                                  Honorific ;
-                                                   Possession ;
-                                                   Nominals ;
+@R.Sa.2@:@R.Sa.2@                                     Honorific ;
+                                                      Possession ;
+                                                      Nominals ;
 
 LEXICON Object
 
-0:0                                                    IntransitiveDirectional ;
+0:0                                                         IntransitiveDirectional ;
 
 @P.DOBJ.FILLED@%<do_sg1%>:@P.DOBJ.FILLED@nech%>             TransitiveDirectional ;
 @P.DOBJ.FILLED@%<do_sg2%>:@P.DOBJ.FILLED@mitz%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_sg3%>:@P.DOBJ.FILLED@%{q%}%{U%}%{i%}%>  TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_sg3%>:@P.DOBJ.FILLED@%{q%}%{u%}%{i%}%>  TransitiveDirectional ;
 @P.DOBJ.FILLED@%<do_pl1%>:@P.DOBJ.FILLED@tech%>             TransitiveDirectional ;
 @P.DOBJ.FILLED@%<do_pl2%>:@P.DOBJ.FILLED@mech%>             TransitiveDirectional ;
 @P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@qui%{m%}%>         TransitiveDirectional ;
 
 %<io_sg1%>:nech%>                                    DirectObject ;
 %<io_sg2%>:mitz%>                                    DirectObject ;
-%<io_sg3%>:%{q%}%{U%}%{i%}%>                         DirectObject ;
+%<io_sg3%>:%{q%}%{u%}%{i%}%>                         DirectObject ;
 %<io_pl1%>:tech%>                                    DirectObject ;
 %<io_pl2%>:mech%>                                    DirectObject ;
 %<io_pl3%>:quim%>                                    DirectObject ;

@@ -36,6 +36,20 @@ i:0 <=> %{o%}: %>: _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z Cns | c
 !@ n {o}:o >:> i t z i n
 !@ n {o}:o >:> i:0 t z c u i n
 
+"i-deletion after /k/"
+%{i%}:0 <=> [ Vow | .#. ] >* %{q%}: %{u%}: _ ;
+!@ a >:> {q}:q {u}:u {i}:0
+!@ {q}:q {u}:u {i}:0
+
+"u-deletion after /k/"
+%{u%}:0 <=> [ Vow | .#. ] >* %{q%}: _ %{i%}: ;
+!@ a >:> {q}:q {u}:0 {i}:0
+!@ {q}:q {u}:0 {i}:0
+
+"/k/ as c"
+%{q%}:c <=> [ Vow | .#. ] >* _ %{u%}: %{i%}: ;
+!@ a >:> {q}:c {u}:0 {i}:0
+!@ {q}:c {u}:0 {i}:0
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
