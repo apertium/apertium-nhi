@@ -69,6 +69,8 @@ Multichar_Symbols
 %{i%}                                    ! i / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
+%{q%}
+%{U%}
 
 %>                                       ! Frontera de morfema
 
@@ -88,8 +90,10 @@ Multichar_Symbols
 @D.Sa.Pl@ 
 @D.Sa.Sg@
 @U.Obj.Incorp@                            ! objecto es sustantivo incorporado
+
 @P.DOBJ.FILLED@
 @D.DOBJ@
+
 @P.PST.ON@                          ! tiempo pasado
 @R.PST@
 @D.PST@
@@ -140,24 +144,24 @@ LEXICON Object
 
 0:0                                                    IntransitiveDirectional ;
 
-@P.DOBJ.FILLED@%<do_sg1%>:@P.DOBJ.FILLED@nech%>        TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_sg2%>:@P.DOBJ.FILLED@mitz%>        TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_sg3%>:@P.DOBJ.FILLED@%{Q%}%{U%}%>  TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_pl1%>:@P.DOBJ.FILLED@tech%>        TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_pl2%>:@P.DOBJ.FILLED@mech%>        TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@qui%{m%}%>    TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_sg1%>:@P.DOBJ.FILLED@nech%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_sg2%>:@P.DOBJ.FILLED@mitz%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_sg3%>:@P.DOBJ.FILLED@%{q%}%{U%}%{i%}%>  TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_pl1%>:@P.DOBJ.FILLED@tech%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_pl2%>:@P.DOBJ.FILLED@mech%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@qui%{m%}%>         TransitiveDirectional ;
 
 %<io_sg1%>:nech%>                                    DirectObject ;
 %<io_sg2%>:mitz%>                                    DirectObject ;
-%<io_sg3%>:%{Q%}%{U%}%>                              DirectObject ;
+%<io_sg3%>:%{q%}%{U%}%{i%}%>                         DirectObject ;
 %<io_pl1%>:tech%>                                    DirectObject ;
 %<io_pl2%>:mech%>                                    DirectObject ;
-%<io_pl3%>:qui%{m%}%>                                DirectObject ;
+%<io_pl3%>:quim%>                                    DirectObject ;
 
 
 LEXICON DirectObject
-@P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   BitransitiveDirectional ;
-                                                    BitransitiveDirectional ;
+@P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@in%>   BitransitiveDirectional ;
+                                                BitransitiveDirectional ;
 
 LEXICON IntransitiveDirectional
 %<hon%>:on%>                                         IntransitiveVerbStem ;
@@ -183,42 +187,113 @@ LEXICON BitransitiveIndefiniteObject
                                                    BitransitiveVerbStem ;
 
 
-LEXICON IntransitiveVerbStem
-cochi:cochi%> Base1Suffix ;
-!cochi:coch%>  Base2Suffix ;
-!cochi:cochi%> Base3Suffix ;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Continuation Verb Endings
+!--------------------------
+! * PresentTense
+! * Imperfect
+!   (In classical nahuatl, this is the same as PresentTense base (Base 1). In
+!    nhi, verbs ending in 'ia' or 'oa' drop the first of those two ('i' and
+!    'o', respectively), as is done in Base 1 in classical Nahuatl.
+!    for eg:
+!       ilhuia, "contar/decir"
+!       classical:      o-ni-mitz-ilhuia-ya
+!       western sierra: o-ni-mitz-ilhua-ya
+!       "Yo te (lo) decía"
 
-quiza:quiza%> Base1Suffix ;
-!quiza:quiz%>  Base2Suffix ;
-!quiza:quiza%> Base3Suffix ;
+! * Base2Suffixes
+!       * Preterite
+!       * Pluperfect
+
+! * Base3Suffixes
+!       * Future
+!       * Counterfactual
+!       * Optative
+!       * SuffixalDirectional
+
+
+LEXICON IntransitiveVerbStem
+cochi:cochi%>  PresentTense ;
+cochi:cochi%>  Imperfect ;
+cochi:coch%>   Base2Suffixes ;
+cochi:cochi%>  Base3Suffixes ;
+
+quiza:quiza%>  PresentTense ;
+quiza:quiza%>  Imperfect ;
+!quiza:quiz%>  Base2Suffixes ;
+!quiza:quiza%> Base3Suffixes ;
 
 
 LEXICON TransitiveVerbStem
-itta:itta%>     Base1Suffix ;
-!itta:itta%>     Base2Suffix ;
-!itta:itta%>     Base3Suffix ;
+itta:itta%>     PresentTense ;
+itta:itta%>     Imperfect ;
+itta:itta%>     Base2Suffixes ;
+itta:itta%>     Base3Suffixes ;
 
-tlalia:tlalia%> Base1Suffix ;
-!tlalia:tlalih%> Base2Suffix ;
-!tlalia:tlali%>  Base3Suffix ;
+tlalia:tlalia%> PresentTense ;
+tlalia:tlala%>  Imperfect ;
+tlalia:tlali%>  Base2Suffixes ;
+tlalia:tlali%>  Base3Suffixes ;
 
 
 LEXICON BitransitiveVerbStem
-maca:maca%> Base1Suffix ;
-!maca:maca%> Base2Suffix ;
-!maca:maca%> Base3Suffix ;
+maca:maca%> PresentTense ;
+maca:maca%> Imperfect ;
+maca:maca%> Base2Suffixes ;
+maca:maca%> Base3Suffixes ;
 
-LEXICON Base1Suffix
-@D.PST@:@D.PST@ PresentTense ;
-@R.PST@:@R.PST@ Imperfect ;
+ilhuia:ilhuia%> PresentTense ;
+ilhuia:ilhua%>  Imperfect ;
+ilhuia:ilhuih%> Base2Suffixes ;
+ilhuia:ilhui%>  Base3Suffixes ;
 
+
+!
+!
+!
+!!!!!!!!!!!!!!!!!!!!!
+LEXICON Base2Suffixes
+              Preterite ;
+              Pluperfect ;
+
+LEXICON Base3Suffixes
+              Future ;
+              Counterfactual ;
+              Optative ;
+              ! TODO Suffixal Directionals (Perfective/Imperfective/Optative)
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PresentTense
 @D.PST@%<pres%>:@D.PST@0  # ;
 @R.Sa.Pl@@D.PST@%<pres%>:@R.Sa.Pl@@D.PST@ # ;
 
 LEXICON Imperfect
-@R.Sa.Pl@%<ipfv%>:@R.Sa.Pl@ya  # ;
+@D.Sa.Pl@@R.PST@%<ipfv%>:@D.Sa.Pl@@R.PST@ya  # ;
 @R.Sa.Pl@%<ipfv%>:@R.Sa.Pl@yah # ;
+
+LEXICON Preterite
+@D.Sa.Pl@%<Pret%>:@D.Sa.Pl@%{c%}  # ;
+@R.Sa.Pl@%<Pret%>:@R.Sa.Pl@que # ;
+
+LEXICON Pluperfect
+@D.Sa.Pl@%<Plup%>:@D.Sa.Pl@ca   # ;
+@R.Sa.Pl@%<Plup%>:@R.Sa.Pl@cah  # ;
+
+LEXICON Future
+@D.PST@@D.Sa.Pl@%<Fut%>:@D.PST@@D.Sa.Pl@z    # ;
+@D.PST@@R.Sa.Pl@%<Fut%>:@D.PST@@R.Sa.Pl@zque # ;
+
+LEXICON Counterfactual
+@D.PST@@D.Sa.Pl@%<Cfact%>:@D.PST@@D.Sa.Pl@zquia # ;
+@D.PST@@R.Sa.Pl@%<Cfact%>:@D.PST@@R.Sa.Pl@zquiah # ;
+
+LEXICON Optative
+@D.PST@@D.Sa.Pl@:@D.PST@@D.Sa.Pl@0   # ;
+@D.PST@@R.Sa.Pl@:@D.PST@@R.Sa.Pl@can # ;
+
+
+
 
 LEXICON Possession
 
@@ -248,8 +323,8 @@ LEXICON PlainPlural
 
 LEXICON PossPlural
 
-@D.Sa@%<pl%>:@D.Sa@%>huan        # ; ! Sus casas
-@R.Sa.Pl@%<pl%>:@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
+@R.Px@@D.Sa.Pl@%<pl%>:@R.Px@@D.Sa.Pl@%>huan        # ; ! Sus casas
+@R.Px@@R.Sa.Pl@%<pl%>:@R.Px@@R.Sa.Pl@%>huan        # ; ! Ellos son sus casas
 
 LEXICON Plural 
                                                    PossPlural ;
