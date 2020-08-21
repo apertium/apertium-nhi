@@ -43,25 +43,25 @@ Multichar_Symbols
 %<s_pl2%>
 %<s_pl3%>
 
-%<do_sg1%>                               ! Marcador de objeto directo (1ra singular)
-%<do_sg2%>                               ! Marcador de objeto directo (2da singular)
-%<do_sg3%>
-%<do_pl1%>
-%<do_pl2%>
-%<do_pl3%>
+%<o_sg1%>                               ! Marcador de objeto directo (1ra singular)
+%<o_sg2%>                               ! Marcador de objeto directo (2da singular)
+%<o_sg3%>
+%<o_pl1%>
+%<o_pl2%>
+%<o_pl3%>
 
-%<io_sg1%>                               ! Marcador de objeto indirecto (1ra singular)
-%<io_sg2%>                               ! Marcador de objeto indirecto (2da singular)
-%<io_sg3%>
-%<io_pl1%>
-%<io_pl2%>
-%<io_pl3%>
+%<i_sg1%>                               ! Marcador de objeto indirecto (1ra singular)
+%<i_sg2%>                               ! Marcador de objeto indirecto (2da singular)
+%<i_sg3%>
+%<i_pl1%>
+%<i_pl2%>
+%<i_pl3%>
 
-%<indef_do_persona_sg3%>
-%<indef_do_cosa_sg3%>
+%<o_aa3%>
+%<o_nn3%>
 
 %<pret%>
-%<dir_toward%>                           ! direccional hacia el locutor
+%<all%>                           ! direccional hacia el locutor
 
 %<sent%>                                 ! Final de frase
 
@@ -144,46 +144,46 @@ LEXICON Object
 
 0:0                                                         IntransitiveDirectional ;
 
-@P.DOBJ.FILLED@%<do_sg1%>:@P.DOBJ.FILLED@nech%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_sg2%>:@P.DOBJ.FILLED@mitz%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_sg3%>:@P.DOBJ.FILLED@%{q%}%{u%}%{i%}%>  TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_pl1%>:@P.DOBJ.FILLED@tech%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_pl2%>:@P.DOBJ.FILLED@mech%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@qui%{m%}%>         TransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_sg1%>:@P.DOBJ.FILLED@nech%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_sg2%>:@P.DOBJ.FILLED@mitz%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@%{q%}%{u%}%{i%}%>  TransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_pl1%>:@P.DOBJ.FILLED@tech%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_pl2%>:@P.DOBJ.FILLED@mech%>             TransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@qui%{m%}%>         TransitiveDirectional ;
 
-%<io_sg1%>:nech%>                                    DirectObject ;
-%<io_sg2%>:mitz%>                                    DirectObject ;
-%<io_sg3%>:%{q%}%{u%}%{i%}%>                         DirectObject ;
-%<io_pl1%>:tech%>                                    DirectObject ;
-%<io_pl2%>:mech%>                                    DirectObject ;
-%<io_pl3%>:quim%>                                    DirectObject ;
+%<i_sg1%>:nech%>                                    DirectObject ;
+%<i_sg2%>:mitz%>                                    DirectObject ;
+%<i_sg3%>:%{q%}%{u%}%{i%}%>                         DirectObject ;
+%<i_pl1%>:tech%>                                    DirectObject ;
+%<i_pl2%>:mech%>                                    DirectObject ;
+%<i_pl3%>:quim%>                                    DirectObject ;
 
 
 LEXICON DirectObject
-@P.DOBJ.FILLED@%<do_pl3%>:@P.DOBJ.FILLED@in%>   BitransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@in%>   BitransitiveDirectional ;
                                                 BitransitiveDirectional ;
 
 LEXICON IntransitiveDirectional
 %<hon%>:on%>                                         IntransitiveVerbStem ;
-%<dir_toward%>:hual%>                                IntransitiveVerbStem ;
+%<all%>:hual%>                                IntransitiveVerbStem ;
                                                      IntransitiveVerbStem ;
 LEXICON TransitiveDirectional
 %<hon%>:on%>                                         TransitiveIndefiniteObject ;  ! "away from" directional is used exclusively as an honorific marker
-%<dir_toward%>:hual%>                                TransitiveIndefiniteObject ;
+%<all%>:hual%>                                TransitiveIndefiniteObject ;
                                                      TransitiveIndefiniteObject ;
 LEXICON BitransitiveDirectional
 %<hon%>:on%>                                       BitransitiveIndefiniteObject ;
-%<dir_toward%>:hual%>                              BitransitiveIndefiniteObject ;
+%<all%>:hual%>                              BitransitiveIndefiniteObject ;
                                                    BitransitiveIndefiniteObject ;
                                                    BitransitiveVerbStem ;
 
 LEXICON TransitiveIndefiniteObject
-@D.DOBJ@%<indef_do_persona_sg3%>:@D.DOBJ@te%>      TransitiveVerbStem ;
-@D.DOBJ@%<indef_do_cosa_sg3%>:@D.DOBJ@tla%>        TransitiveVerbStem ;
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>      TransitiveVerbStem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>        TransitiveVerbStem ;
                                                    TransitiveVerbStem ;
 LEXICON BitransitiveIndefiniteObject
-@D.DOBJ@%<indef_do_persona_sg3%>:@D.DOBJ@te%>      BitransitiveVerbStem ;
-@D.DOBJ@%<indef_do_cosa_sg3%>:@D.DOBJ@tla%>        BitransitiveVerbStem ;
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>      BitransitiveVerbStem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>        BitransitiveVerbStem ;
                                                    BitransitiveVerbStem ;
 
 
