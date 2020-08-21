@@ -142,7 +142,7 @@ LEXICON Predicate
 
 LEXICON Object
 
-0:0                                                         IntransitiveDirectional ;
+0:0                                                        IntransitiveDirectional ;
 
 @P.DOBJ.FILLED@%<o_sg1%>:@P.DOBJ.FILLED@nech%>             TransitiveDirectional ;
 @P.DOBJ.FILLED@%<o_sg2%>:@P.DOBJ.FILLED@mitz%>             TransitiveDirectional ;
@@ -156,34 +156,34 @@ LEXICON Object
 %<i_sg3%>:%{q%}%{u%}%{i%}%>                         DirectObject ;
 %<i_pl1%>:tech%>                                    DirectObject ;
 %<i_pl2%>:mech%>                                    DirectObject ;
-%<i_pl3%>:quim%>                                    DirectObject ;
+%<i_pl3%>:qui%{m%}%>                                DirectObject ;
 
 
 LEXICON DirectObject
-@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@in%>   BitransitiveDirectional ;
-                                                BitransitiveDirectional ;
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   BitransitiveDirectional ;
+                                                   BitransitiveDirectional ;
 
 LEXICON IntransitiveDirectional
-%<hon%>:on%>                                         IntransitiveVerbStem ;
-%<all%>:hual%>                                IntransitiveVerbStem ;
-                                                     IntransitiveVerbStem ;
+%<hon%>:on%>                                       IntransitiveVerbStem ;
+%<all%>:hual%>                                     IntransitiveVerbStem ;
+                                                   IntransitiveVerbStem ;
 LEXICON TransitiveDirectional
-%<hon%>:on%>                                         TransitiveIndefiniteObject ;  ! "away from" directional is used exclusively as an honorific marker
-%<all%>:hual%>                                TransitiveIndefiniteObject ;
-                                                     TransitiveIndefiniteObject ;
+%<hon%>:on%>                                       TransitiveIndefiniteObject ;  ! "away from" directional is used exclusively as an honorific marker
+%<all%>:hual%>                                     TransitiveIndefiniteObject ;
+                                                   TransitiveIndefiniteObject ;
 LEXICON BitransitiveDirectional
 %<hon%>:on%>                                       BitransitiveIndefiniteObject ;
-%<all%>:hual%>                              BitransitiveIndefiniteObject ;
+%<all%>:hual%>                                     BitransitiveIndefiniteObject ;
                                                    BitransitiveIndefiniteObject ;
                                                    BitransitiveVerbStem ;
 
 LEXICON TransitiveIndefiniteObject
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>      TransitiveVerbStem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>        TransitiveVerbStem ;
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TransitiveVerbStem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TransitiveVerbStem ;
                                                    TransitiveVerbStem ;
 LEXICON BitransitiveIndefiniteObject
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>      BitransitiveVerbStem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>        BitransitiveVerbStem ;
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     BitransitiveVerbStem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    BitransitiveVerbStem ;
                                                    BitransitiveVerbStem ;
 
 
@@ -266,7 +266,7 @@ LEXICON Base3Suffixes
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PresentTense
 @D.PST@%<pres%>:@D.PST@0  # ;
-@R.Sa.Pl@@D.PST@%<pres%>:@R.Sa.Pl@@D.PST@ # ;
+@R.Sa.Pl@@D.PST@%<pres%>:@R.Sa.Pl@@D.PST@h # ;
 
 LEXICON Imperfect
 @D.Sa.Pl@@R.PST@%<ipfv%>:@D.Sa.Pl@@R.PST@ya  # ;
@@ -313,7 +313,6 @@ LEXICON Nominals
 LEXICON Honorific !TODO: add i -> honorific vowel harmony in .twolc file.
 %<hon%>:on%>                   Possession ;
 %<hon%>:on%>                   Nominals ;
-%<hon%>:on%>                   IntransitiveVerbStem ;
 
 
 LEXICON PlainPlural
