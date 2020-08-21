@@ -9,6 +9,7 @@ Multichar_Symbols
 %<prn%>                                  ! Pronombre
 
 %<tv%>                                   ! Transitivo
+%<tv2%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
 
 %<pl%>                                   ! Plural
@@ -213,39 +214,39 @@ LEXICON BitransitiveIndefiniteObject
 
 
 LEXICON IntransitiveVerbStem
-cochi:cochi%>  PresentTense ;
-cochi:cochi%>  Imperfect ;
-cochi:coch%>   Base2Suffixes ;
-cochi:cochi%>  Base3Suffixes ;
+cochi%<v%>%<iv%>:cochi%>  PresentTense ;
+cochi%<v%>%<iv%>:cochi%>  Imperfect ;
+cochi%<v%>%<iv%>:coch%>   Base2Suffixes ;
+cochi%<v%>%<iv%>:cochi%>  Base3Suffixes ;
 
-quiza:quiza%>  PresentTense ;
-quiza:quiza%>  Imperfect ;
-!quiza:quiz%>  Base2Suffixes ;
-!quiza:quiza%> Base3Suffixes ;
+quiza%<v%>%<iv%>:quiza%>  PresentTense ;
+quiza%<v%>%<iv%>:quiza%>  Imperfect ;
+!quiza%<v%>%<iv%>:quiz%>  Base2Suffixes ;
+!quiza%<v%>%<iv%>:quiza%> Base3Suffixes ;
 
 
 LEXICON TransitiveVerbStem
-itta:itta%>     PresentTense ;
-itta:itta%>     Imperfect ;
-itta:itta%>     Base2Suffixes ;
-itta:itta%>     Base3Suffixes ;
+itta%<v%>%<tv%>:itta%>     PresentTense ;
+itta%<v%>%<tv%>:itta%>     Imperfect ;
+itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
+itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
 
-tlalia:tlalia%> PresentTense ;
-tlalia:tlala%>  Imperfect ;
-tlalia:tlali%>  Base2Suffixes ;
-tlalia:tlali%>  Base3Suffixes ;
+tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
+tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
+tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
+tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
 
 
 LEXICON BitransitiveVerbStem
-maca:maca%> PresentTense ;
-maca:maca%> Imperfect ;
-maca:maca%> Base2Suffixes ;
-maca:maca%> Base3Suffixes ;
+maca%<v%>%<tv2%>:maca%> PresentTense ;
+maca%<v%>%<tv2%>:maca%> Imperfect ;
+maca%<v%>%<tv2%>:maca%> Base2Suffixes ;
+maca%<v%>%<tv2%>:maca%> Base3Suffixes ;
 
-ilhuia:ilhuia%> PresentTense ;
-ilhuia:ilhua%>  Imperfect ;
-ilhuia:ilhuih%> Base2Suffixes ;
-ilhuia:ilhui%>  Base3Suffixes ;
+ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
+ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
+ilhuia%<v%>%<tv2%>:ilhuih%> Base2Suffixes ;
+ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
 
 
 !
