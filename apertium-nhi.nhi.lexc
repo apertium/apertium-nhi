@@ -70,9 +70,9 @@ Multichar_Symbols
 %{i%}                                    ! i / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
+%{m%}                                    ! m / n
 %{q%}
-%{U%}
-
+%{c%}
 %>                                       ! Frontera de morfema
 
 @P.Px.Sg@                                ! Posesivo singular
@@ -120,7 +120,7 @@ LEXICON VerbalSubject
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
-                                                      Object ;
+                                                      IV-Dir ;
 
 
 LEXICON NominalSubject
@@ -142,51 +142,82 @@ LEXICON Predicate
                                                       Nominals ;
 
 LEXICON Object
-
-0:0                                                        IntransitiveDirectional ;
-
-@P.DOBJ.FILLED@%<o_sg1%>:@P.DOBJ.FILLED@nech%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<o_sg2%>:@P.DOBJ.FILLED@mitz%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@%{q%}%{u%}%{i%}%>  TransitiveDirectional ;
-@P.DOBJ.FILLED@%<o_pl1%>:@P.DOBJ.FILLED@tech%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<o_pl2%>:@P.DOBJ.FILLED@mech%>             TransitiveDirectional ;
-@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@qui%{m%}%>         TransitiveDirectional ;
-
-%<i_sg1%>:nech%>                                    DirectObject ;
-%<i_sg2%>:mitz%>                                    DirectObject ;
-%<i_sg3%>:%{q%}%{u%}%{i%}%>                         DirectObject ;
-%<i_pl1%>:tech%>                                    DirectObject ;
-%<i_pl2%>:mech%>                                    DirectObject ;
-%<i_pl3%>:qui%{m%}%>                                DirectObject ;
+!@P.DOBJ.FILLED@:@P.DOBJ.FILLED@                       TV-DOBJ ;
+!                                                      TV-REFL-Dir ;
+!                                                      BTV-IOBJ ;
+@P.DOBJ.FILLED@@R.Sa.Pl@:@P.DOBJ.FILLED@@R.Sa.Pl@      BTV-REFL-DOBJ ;
 
 
-LEXICON DirectObject
-@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   BitransitiveDirectional ;
-                                                   BitransitiveDirectional ;
+!LEXICON BTV-IOBJ
+!%<i_sg1%>:nech%>                                    BTV-DOBJ ;
+!%<i_sg2%>:mitz%>                                    BTV-DOBJ ;
+!%<i_sg3%>:%{q%}%{u%}%{i%}%>                         BTV-DOBJ ;
+!%<i_pl1%>:tech%>                                    BTV-DOBJ ;
+!%<i_pl2%>:mech%>                                    BTV-DOBJ ;
+!%<i_pl3%>:qui%{m%}%>                                BTV-DOBJ ;
 
-LEXICON IntransitiveDirectional
-%<hon%>:on%>                                       IntransitiveVerbStem ;
-%<all%>:hual%>                                     IntransitiveVerbStem ;
-                                                   IntransitiveVerbStem ;
-LEXICON TransitiveDirectional
-%<hon%>:on%>                                       TransitiveIndefiniteObject ;  ! "away from" directional is used exclusively as an honorific marker
-%<all%>:hual%>                                     TransitiveIndefiniteObject ;
-                                                   TransitiveIndefiniteObject ;
-LEXICON BitransitiveDirectional
-%<hon%>:on%>                                       BitransitiveIndefiniteObject ;
-%<all%>:hual%>                                     BitransitiveIndefiniteObject ;
-                                                   BitransitiveIndefiniteObject ;
-                                                   BitransitiveVerbStem ;
+!LEXICON BTV-DOBJ
+!@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   BTV-Dir ;
 
-LEXICON TransitiveIndefiniteObject
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TransitiveVerbStem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TransitiveVerbStem ;
-                                                   TransitiveVerbStem ;
-LEXICON BitransitiveIndefiniteObject
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     BitransitiveVerbStem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    BitransitiveVerbStem ;
-                                                   BitransitiveVerbStem ;
+!LEXICON BTV-Dir
+!%<hon%>:on%>                                       BTV-Indef-Obj ;
+!%<all%>:hual%>                                     BTV-Indef-Obj ;
+!                                                   BTV-Indef-Obj ;
 
+LEXICON BTV-REFL-DOBJ
+!%<o_sg1%>:nech%>                                    BTV-Refl-Dir ;
+!%<o_sg2%>:mitz%>                                    BTV-Refl-Dir ;
+%<o_sg3%>:%{q%}%{u%}%{i%}%>                          BTV-Refl-Dir ;
+!%<o_pl1%>:tech%>                                    BTV-Refl-Dir ;
+!%<o_pl2%>:mech%>                                    BTV-Refl-Dir ;
+!%<o_pl3%>:qui%{m%}%>                                BTV-Refl-Dir ;
+
+LEXICON BTV-Refl-Dir
+!%<hon%>:on%>                                       BTV-Refl ;
+!%<all%>:hual%>                                     BTV-Refl ;
+                                                    BTV-Refl ;
+
+LEXICON BTV-Refl
+%<refl%>:mo%>                                      BTV-Indef-Obj ;
+
+
+LEXICON BTV-Indef-Obj
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     BTV-Stem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    BTV-Stem ;
+                                                   BTV-Stem ;
+
+!LEXICON TV-DOBJ
+!%<o_sg1%>:nech%>             TV-Dir ;
+!%<o_sg2%>:mitz%>             TV-Dir ;
+!%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
+!%<o_pl1%>:tech%>             TV-Dir ;
+!%<o_pl2%>:mech%>             TV-Dir ;
+!%<o_pl3%>:qui%{m%}%>         TV-Dir ;
+
+
+!LEXICON TV-Dir
+!%<hon%>:on%>                                       TV-Indef-Obj ;
+!%<all%>:hual%>                                     TV-Indef-Obj ;
+!                                                   TV-Indef-Obj ;
+
+!LEXICON TV-REFL-Dir
+!%<hon%>:on%>                                       TV-Refl ;
+!%<all%>:hual%>                                     TV-Refl ;
+!                                                   TV-Refl ;
+
+!LEXICON TV-Refl
+!%<refl%>:mo%>                                      TV-Stem ;
+
+
+!LEXICON TV-Indef-Obj
+!@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV-Stem ;
+!@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV-Stem ;
+!                                                   TV-Stem ;
+
+LEXICON IV-Dir
+%<hon%>:on%>                                       IV-Stem ;
+%<all%>:hual%>                                     IV-Stem ;
+                                                   IV-Stem ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Continuation Verb Endings
@@ -213,7 +244,7 @@ LEXICON BitransitiveIndefiniteObject
 !       * SuffixalDirectional
 
 
-LEXICON IntransitiveVerbStem
+LEXICON IV-Stem
 cochi%<v%>%<iv%>:cochi%>  PresentTense ;
 cochi%<v%>%<iv%>:cochi%>  Imperfect ;
 cochi%<v%>%<iv%>:coch%>   Base2Suffixes ;
@@ -225,19 +256,19 @@ quiza%<v%>%<iv%>:quiza%>  Imperfect ;
 !quiza%<v%>%<iv%>:quiza%> Base3Suffixes ;
 
 
-LEXICON TransitiveVerbStem
-itta%<v%>%<tv%>:itta%>     PresentTense ;
-itta%<v%>%<tv%>:itta%>     Imperfect ;
-itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
-itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
+!LEXICON TV-Stem
+!itta%<v%>%<tv%>:itta%>     PresentTense ;
+!itta%<v%>%<tv%>:itta%>     Imperfect ;
+!itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
+!itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
 
-tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
-tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
-tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
-tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
+!tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
+!tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
+!tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
+!tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
 
 
-LEXICON BitransitiveVerbStem
+LEXICON BTV-Stem
 maca%<v%>%<tv2%>:maca%> PresentTense ;
 maca%<v%>%<tv2%>:maca%> Imperfect ;
 maca%<v%>%<tv2%>:maca%> Base2Suffixes ;
@@ -266,7 +297,7 @@ LEXICON Base3Suffixes
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PresentTense
-@D.PST@%<pres%>:@D.PST@0  # ;
+@D.PST@%<pres%>:@D.PST@ # ;
 @R.Sa.Pl@@D.PST@%<pres%>:@R.Sa.Pl@@D.PST@h # ;
 
 LEXICON Imperfect

@@ -1,14 +1,15 @@
 Alphabet
  
- A B C D E F G H I J K L M N O P R S T U W X Y Z
- a b c d e f g h i j k l m n o p r s t u w x y z
+ A B C D E F G H I J K L M N O P Q R S T U W X Y Z
+ a b c d e f g h i j k l m n o p q r s t u w x y z
  %{o%}:o  
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u
  %{u%}:u %{u%}:h
+ %{u%}:0
  %{q%}:q %{q%}:c
- %{U%}:u %{U%}:0
  %{m%}:m %{m%}:n
+ %{c%}:c %{c%}:0
  %>:%>  ;
 
 
@@ -19,10 +20,7 @@ Vow   = A E I O U
 
 Cns   = b c d f g h j k l m n p q r s t w x y z ;
 
-Rules 
-
-"Epenthesis of {i} before consonants"
-%{i%}:i <=> _ %>: :Cns ;
+Rules
 
 "Nasal assimilation"
 n:0 <=> _ %>: m ; 
@@ -36,30 +34,24 @@ i:0 <=> %{o%}: %>: _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z Cns | c
 !@ n {o}:o >:> i t z i n
 !@ n {o}:o >:> i:0 t z c u i n
 
-"i-deletion after /k/"
-%{i%}:0 <=> [ Vow | .#. ] >* %{q%}: %{u%}: _ ;
-!@ a >:> {q}:q {u}:u {i}:0
-!@ {q}:q {u}:u {i}:0
+"'q' -> 'c' in /k/ between a V and a C "
+%{q%}:c <=> Vow >:> _ %{u%}: %{i%}: >:> Cns ;
 
-"u-deletion after /k/"
-%{u%}:0 <=> [ Vow | .#. ] >* %{q%}: _ %{i%}: ;
-!@ a >:> {q}:q {u}:0 {i}:0
-!@ {q}:q {u}:0 {i}:0
+"u -> 0 in /k/ between V and C"
+%{u%}:0 <=> Vow >:> %{q%}: _ %{i%}: >:> Cns ;
 
-"/k/ as c"
-%{q%}:c <=> [ Vow | .#. ] >* _ %{u%}: %{i%}: ;
-!@ a >:> {q}:c {u}:0 {i}:0
-!@ {q}:c {u}:0 {i}:0
+"i -> 0 in /k/ between V and C"
+%{i%}:0 <=> Vow >:> %{q%}: %{u%}: _ >:> [Cns | i] ;
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ i m:n >: c a l
 
 "Possessive ending [w] after vowel"
-%{u%}:0 <=> Cns %>: _ %{h%}: ;
+%{u%}:0 <= Cns %>: _ %{h%}: .#. ;
 
 "Possessive ending [w] after vowel second component"
-%{h%}:0 <=> Cns %>: %{u%}: _ ;
+%{h%}:0 <=> Cns %>: %{u%}: _ .#. ;
  
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 
