@@ -2,9 +2,8 @@ Alphabet
  
  A B C D E F G H I J K L M N O P Q R S T U W X Y Z
  a b c d e f g h i j k l m n o p q r s t u w x y z
- %{o%}:o  
- %{i%}:i %{i%}:0
- %{h%}:h %{h%}:u
+ %{i%}:i %{i%}:0 %{i%}:e
+ %{h%}:h %{h%}:u %{H%}:0 %{H%}:h
  %{u%}:u %{u%}:h
  %{u%}:0
  %{q%}:q %{q%}:c
@@ -23,16 +22,16 @@ Cns   = b c d f g h j k l m n p q r s t w x y z ;
 Rules
 
 "Nasal assimilation"
-n:0 <=> _ %>: m ; 
+n:0 <=> _ %>: m e ;
 
 "Nasal elision"
 n:0 <=> _ %>: h u a n ;
-!@ n {o}:o >:> i:0 t z c u i n:0 >:> h u a n
+!@ n o >:> i:0 t z c u i n:0 >:> h u a n
 
 "/i/ deletion"
-i:0 <=> %{o%}: %>: _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z Cns | c h Cns] ;
-!@ n {o}:o >:> i t z i n
-!@ n {o}:o >:> i:0 t z c u i n
+i:0 <=> o >:> _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z Cns | c h Cns] ;
+!@ n o >:> i t z i n
+!@ n o >:> i:0 t z c u i n
 
 "'q' -> 'c' in /k/ between a V and a C "
 %{q%}:c <=> Vow >:> _ %{u%}: %{i%}: >:> Cns ;
@@ -47,20 +46,37 @@ i:0 <=> %{o%}: %>: _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z Cns | c
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ i m:n >: c a l
 
+"delete preterite 'c' ending when preceded by a cons"
+%{c%}:0 <=> [Cns: | %{H%}: ] >:> _ .#. ;
+
+!@ i l h u {i}:e {H}:0 >:> {c}:0
+
+"delete h before preterite plural que"
+%{H%}:0 <=> _ >:> q u e .#. ;
+
 "Possessive ending [w] after vowel"
-%{u%}:0 <= Cns %>: _ %{h%}: .#. ;
+%{u%}:0 <=> Cns %>: _ %{h%}: .#. ;
 
 "Possessive ending [w] after vowel second component"
-%{h%}:0 <=> Cns %>: %{u%}: _ .#. ;
+%{h%}:0 <=> Cns %>: %{u%}:0 _ .#. ;
  
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 
+"i->e present plural"
+i:e <=> Cns _ >:> {H}: .#. ;
+
+"i->e pret sg"
+%{i%}:e <=> _ %{H%}: >:> %{c%}: .#. ;
+
+"h->0 pret sg"
+%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;
+
 "Metathesis of -{h}{u} for {h}"
-%{u%}:h <=>  _ %{h%}: %>: i t l ;
+%{u%}:h <=  _ %{h%}: %>: i t l ;
 
 !@ x i {u}:h {h}:u >:> i t l
 !@ x i {u}:h {h}:u >:> i t l 
-!@ n {o}:o >:> x i {u}:u {h}:h 
+!@ n o >:> x i {u}:u {h}:h
 
 "Metathesis of -{h}{u} for {u}"
 %{h%}:u <=> %{u%}:h _ ; 

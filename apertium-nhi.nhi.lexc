@@ -26,7 +26,14 @@ Multichar_Symbols
 
 %<hon%>                                  ! Honorifico
 
-%<pres%>
+
+%<pres%>   ! tiempo presente
+%<pret%>   ! pretérito
+%<impf%>   ! imperfectivo
+%<fut%>    ! futuro
+%<plu%>    ! pluscuamperfecto
+%<opt%>    ! optativo
+
 
 %<p1%>
 %<p2%>
@@ -63,7 +70,6 @@ Multichar_Symbols
 %<o_aa3%>
 %<o_nn3%>
 
-%<pret%>
 %<all%>                           ! direccional hacia el locutor
 
 %<sent%>                                 ! Final de frase
@@ -72,6 +78,7 @@ Multichar_Symbols
 %{i%}                                    ! i / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
+%{H%}
 %{m%}                                    ! m / n
 %{q%}
 %{c%}
@@ -89,10 +96,11 @@ Multichar_Symbols
 @R.Sa.Pl@
 @P.Sa.2@                                 ! Sujeto es 2da persona (necesario para el honorífico)
 @R.Sa.2@
+@P.Sa.3@
+@D.Sa.3@
 @D.Sa@                                   ! Ningún sujeto
 @D.Sa.Pl@ 
 @D.Sa.Sg@
-@U.Obj.Incorp@                            ! objecto es sustantivo incorporado
 
 @P.DOBJ.FILLED@
 @D.DOBJ@
@@ -100,6 +108,12 @@ Multichar_Symbols
 @P.PST.ON@                          ! tiempo pasado
 @R.PST@
 @D.PST@
+
+@U.APPL.ON@
+
+@P.Opt.ON@
+@R.Opt@
+@D.Opt@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
@@ -111,6 +125,11 @@ Puntuación ;
 Verb ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!
+! Verbs
+!
 LEXICON Verb
 @P.PST.ON@:@P.PST.ON@o%>                             VerbalSubject ;
                                                      VerbalSubject ;
@@ -118,103 +137,81 @@ LEXICON Verb
 LEXICON VerbalSubject
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Object ;
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Object ;
-@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Object ;
+@P.Sa.Sg@@P.Sa.3@%<s_sg3%>:@P.Sa.Sg@@P.Sa.3@          Object ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
-                                                      IV-Dir ;
 
-
-LEXICON NominalSubject
-
-! sg1: n-
-! pl1: t-S-me / t-poss-S-huan
-
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Predicate ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
-@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Predicate ;
-@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
-                                                      Predicate ;
-
-LEXICON Predicate
-@R.Sa.2@:@R.Sa.2@                                     Honorific ;
-                                                      Possession ;
-                                                      Nominals ;
+@P.Sa.Sg@@P.Opt.ON@%<s_sg2%>:@P.Sa.Sg@@P.Opt.ON@xi%>  Object ;
+@P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@xi%>  Object ;
 
 LEXICON Object
-!@P.DOBJ.FILLED@:@P.DOBJ.FILLED@                       TV-DOBJ ;
-!                                                      TV-REFL-Dir ;
-!                                                      BTV-IOBJ ;
-@P.DOBJ.FILLED@@R.Sa.Pl@:@P.DOBJ.FILLED@@R.Sa.Pl@      BTV-REFL-DOBJ ;
+                                                       IV-Dir ;
+@P.DOBJ.FILLED@:@P.DOBJ.FILLED@                        TV-DOBJ ;
+                                                       TV2-IOBJ ;
+
+LEXICON TV2-IOBJ
+!
+! Regular bitransitive construction
+! (first obj is iobj, second is dobj and optional)
+! e.g. ni-mitz-in-maca "te los doy", ni-mitz-maca "te (lo) doy".
+!
+
+%<i_sg1%>:nech%>                                    TV2-DOBJ ;
+%<i_sg2%>:mitz%>                                    TV2-DOBJ ;
+%<i_sg3%>:%{q%}%{u%}%{i%}%>                         TV2-DOBJ ;
+%<i_pl1%>:tech%>                                    TV2-DOBJ ;
+%<i_pl2%>:mech%>                                    TV2-DOBJ ;
+%<i_pl3%>:qui%{m%}%>                                TV2-DOBJ ;
+
+LEXICON TV2-DOBJ
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Dir ;
+                                                   TV2-Dir ;
+
+LEXICON TV2-Dir
+%<hon%>:on%>                                       TV2-Refl ;
+%<all%>:hual%>                                     TV2-Refl ;
+                                                   TV2-Refl ;
+
+LEXICON TV2-Refl
+@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Indef-Obj ;
+TV2-Indef-Obj ;
 
 
-!LEXICON BTV-IOBJ
-!%<i_sg1%>:nech%>                                    BTV-DOBJ ;
-!%<i_sg2%>:mitz%>                                    BTV-DOBJ ;
-!%<i_sg3%>:%{q%}%{u%}%{i%}%>                         BTV-DOBJ ;
-!%<i_pl1%>:tech%>                                    BTV-DOBJ ;
-!%<i_pl2%>:mech%>                                    BTV-DOBJ ;
-!%<i_pl3%>:qui%{m%}%>                                BTV-DOBJ ;
-
-!LEXICON BTV-DOBJ
-!@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   BTV-Dir ;
-
-!LEXICON BTV-Dir
-!%<hon%>:on%>                                       BTV-Indef-Obj ;
-!%<all%>:hual%>                                     BTV-Indef-Obj ;
-!                                                   BTV-Indef-Obj ;
-
-LEXICON BTV-REFL-DOBJ
-!%<o_sg1%>:nech%>                                    BTV-Refl-Dir ;
-!%<o_sg2%>:mitz%>                                    BTV-Refl-Dir ;
-%<o_sg3%>:%{q%}%{u%}%{i%}%>                          BTV-Refl-Dir ;
-!%<o_pl1%>:tech%>                                    BTV-Refl-Dir ;
-!%<o_pl2%>:mech%>                                    BTV-Refl-Dir ;
-!%<o_pl3%>:qui%{m%}%>                                BTV-Refl-Dir ;
-
-LEXICON BTV-Refl-Dir
-!%<hon%>:on%>                                       BTV-Refl ;
-!%<all%>:hual%>                                     BTV-Refl ;
-                                                    BTV-Refl ;
-
-LEXICON BTV-Refl
-%<refl%>:mo%>                                      BTV-Indef-Obj ;
+LEXICON TV2-Indef-Obj
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV2-Stem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV2-Stem ;
+                                   TV2-Stem ;
 
 
-LEXICON BTV-Indef-Obj
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     BTV-Stem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    BTV-Stem ;
-                                                   BTV-Stem ;
+LEXICON TV-DOBJ
+%<o_sg1%>:nech%>             TV-Dir ;
+%<o_sg2%>:mitz%>             TV-Dir ;
+%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
 
-!LEXICON TV-DOBJ
-!%<o_sg1%>:nech%>             TV-Dir ;
-!%<o_sg2%>:mitz%>             TV-Dir ;
-!%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
-!%<o_pl1%>:tech%>             TV-Dir ;
-!%<o_pl2%>:mech%>             TV-Dir ;
-!%<o_pl3%>:qui%{m%}%>         TV-Dir ;
+! With 3sg obj (and not 3 sbj, and not honorific ), the object prrefix can be
+! omitted optionally. eg "ni-0-piya" "yo lo tengo".
+@D.Sa.3@%<o_sg3_om%>:@D.Sa.3@   TV-Refl ;
 
-
-!LEXICON TV-Dir
-!%<hon%>:on%>                                       TV-Indef-Obj ;
-!%<all%>:hual%>                                     TV-Indef-Obj ;
-!                                                   TV-Indef-Obj ;
-
-!LEXICON TV-REFL-Dir
-!%<hon%>:on%>                                       TV-Refl ;
-!%<all%>:hual%>                                     TV-Refl ;
-!                                                   TV-Refl ;
-
-!LEXICON TV-Refl
-!%<refl%>:mo%>                                      TV-Stem ;
+%<o_pl1%>:tech%>             TV-Dir ;
+%<o_pl2%>:mech%>             TV-Dir ;
+%<o_pl3%>:qui%{m%}%>         TV-Dir ;
 
 
-!LEXICON TV-Indef-Obj
-!@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV-Stem ;
-!@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV-Stem ;
-!                                                   TV-Stem ;
+LEXICON TV-Dir
+%<hon%>:on%>                                       TV-Refl ;
+%<all%>:hual%>                                     TV-Refl ;
+                                                   TV-Refl ;
+
+LEXICON TV-Refl
+@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Indef-Obj ;
+                                                              TV-Indef-Obj ;
+
+
+LEXICON TV-Indef-Obj
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV-Stem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV-Stem ;
+                                                   TV-Stem ;
 
 LEXICON IV-Dir
 %<hon%>:on%>                                       IV-Stem ;
@@ -254,23 +251,36 @@ cochi%<v%>%<iv%>:cochi%>  Base3Suffixes ;
 
 quiza%<v%>%<iv%>:quiza%>  PresentTense ;
 quiza%<v%>%<iv%>:quiza%>  Imperfect ;
-!quiza%<v%>%<iv%>:quiz%>  Base2Suffixes ;
-!quiza%<v%>%<iv%>:quiza%> Base3Suffixes ;
+quiza%<v%>%<iv%>:quiz%>   Base2Suffixes ;
+quiza%<v%>%<iv%>:quiza%>  Base3Suffixes ;
 
+choca%<v%>%<iv%>:choca%>  PresentTense ;
+choca%<v%>%<iv%>:choca%>  Imperfect ;
+choca%<v%>%<iv%>:choca%>  Base2Suffixes ;
+choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
 
-!LEXICON TV-Stem
-!itta%<v%>%<tv%>:itta%>     PresentTense ;
-!itta%<v%>%<tv%>:itta%>     Imperfect ;
-!itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
-!itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
+LEXICON TV-Stem
+itta%<v%>%<tv%>:itta%>     PresentTense ;
+itta%<v%>%<tv%>:itta%>     Imperfect ;
+itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
+itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
 
-!tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
-!tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
-!tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
-!tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
+tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
+tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
+tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
+tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
 
+ihtoa%<v%>%<tv%>:ihtoa%> PresentTense ;
+ihtoa%<v%>%<tv%>:ihtoa%>  Imperfect ;
+ihtoa%<v%>%<tv%>:ihtoh%>  Base2Suffixes ;
+ihtoa%<v%>%<tv%>:ihto%>  Base3Suffixes ;
 
-LEXICON BTV-Stem
+piya%<v%>%<tv%>:piya%> PresentTense ;
+piya%<v%>%<tv%>:piya%>  Imperfect ;
+piya%<v%>%<tv%>:pix%>  Base2Suffixes ;
+piya%<v%>%<tv%>:piya%>  Base3Suffixes ;
+
+LEXICON TV2-Stem
 maca%<v%>%<tv2%>:maca%> PresentTense ;
 maca%<v%>%<tv2%>:maca%> Imperfect ;
 maca%<v%>%<tv2%>:maca%> Base2Suffixes ;
@@ -278,14 +288,9 @@ maca%<v%>%<tv2%>:maca%> Base3Suffixes ;
 
 ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
 ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
-ilhuia%<v%>%<tv2%>:ilhuih%> Base2Suffixes ;
+ilhuia%<v%>%<tv2%>:ilhu%{i%}%{H%}%> Base2Suffixes ;
 ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
 
-
-!
-!
-!
-!!!!!!!!!!!!!!!!!!!!!
 LEXICON Base2Suffixes
               Preterite ;
               Pluperfect ;
@@ -294,39 +299,61 @@ LEXICON Base3Suffixes
               Future ;
               Counterfactual ;
               Optative ;
+              !Applicative ;
               ! TODO Suffixal Directionals (Perfective/Imperfective/Optative)
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PresentTense
-@D.PST@%<pres%>:@D.PST@ # ;
-@R.Sa.Pl@@D.PST@%<pres%>:@R.Sa.Pl@@D.PST@h # ;
+@D.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@D.Sa.Pl@@D.PST@@D.Opt@ # ;
+@R.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@R.Sa.Pl@@D.PST@@D.Opt@h # ;
 
 LEXICON Imperfect
-@D.Sa.Pl@@R.PST@%<ipfv%>:@D.Sa.Pl@@R.PST@ya  # ;
-@R.Sa.Pl@%<ipfv%>:@R.Sa.Pl@yah # ;
+@D.Sa.Pl@@R.PST@@D.Opt@%<impf%>:@D.Sa.Pl@@R.PST@@D.Opt@ya  # ;
+@R.Sa.Pl@@R.PST@@D.Opt@%<impf%>:@R.Sa.Pl@@R.PST@@D.Opt@yah # ;
 
 LEXICON Preterite
-@D.Sa.Pl@%<Pret%>:@D.Sa.Pl@%{c%}  # ;
-@R.Sa.Pl@%<Pret%>:@R.Sa.Pl@que # ;
+@D.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@D.Sa.Pl@@D.Opt@@R.PST@%{c%}  # ;
+@R.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@R.Sa.Pl@@D.Opt@@R.PST@que # ;
 
 LEXICON Pluperfect
-@D.Sa.Pl@%<Plup%>:@D.Sa.Pl@ca   # ;
-@R.Sa.Pl@%<Plup%>:@R.Sa.Pl@cah  # ;
+@D.Sa.Pl@@D.Opt@%<plu%>:@D.Sa.Pl@@D.Opt@ca   # ;
+@R.Sa.Pl@@D.Opt@%<plu%>:@R.Sa.Pl@@D.Opt@cah  # ;
 
 LEXICON Future
-@D.PST@@D.Sa.Pl@%<Fut%>:@D.PST@@D.Sa.Pl@z    # ;
-@D.PST@@R.Sa.Pl@%<Fut%>:@D.PST@@R.Sa.Pl@zque # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zque # ;
 
 LEXICON Counterfactual
-@D.PST@@D.Sa.Pl@%<Cfact%>:@D.PST@@D.Sa.Pl@zquia # ;
-@D.PST@@R.Sa.Pl@%<Cfact%>:@D.PST@@R.Sa.Pl@zquiah # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<Cfact%>:@D.PST@@D.Sa.Pl@@D.Opt@zquia # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<Cfact%>:@D.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
 
 LEXICON Optative
-@D.PST@@D.Sa.Pl@:@D.PST@@D.Sa.Pl@0   # ;
-@D.PST@@R.Sa.Pl@:@D.PST@@R.Sa.Pl@can # ;
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
+
+!LEXICON Applicative
 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Nominals
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON NominalSubject
+! sg1: n-
+! pl1: t-S-me / t-poss-S-huan
+
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Predicate ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Predicate ;
+@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
+                                                      Predicate ;
+
+LEXICON Predicate
+@R.Sa.2@:@R.Sa.2@                                     Honorific ;
+                                                      Possession ;
+                                                      Nominals ;
 
 
 LEXICON Possession
@@ -372,42 +399,42 @@ LEXICON Deriv
                                                    Diminutivo ; 
 LEXICON TlSuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tl    # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON ItlSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>itl   # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>i%{u%}%{h%}  # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON TliSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tli   # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON LiSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>li    # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:%>li                                         Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON InSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>in    # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON NoSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>      # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
