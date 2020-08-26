@@ -135,6 +135,8 @@ LEXICON Verb
                                                      VerbalSubject ;
 
 LEXICON VerbalSubject
+                                                      IrregularVerbs ;
+
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Object ;
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Object ;
 @P.Sa.Sg@@P.Sa.3@%<s_sg3%>:@P.Sa.Sg@@P.Sa.3@          Object ;
@@ -217,6 +219,39 @@ LEXICON IV-Dir
 %<hon%>:on%>                                       IV-Stem ;
 %<all%>:hual%>                                     IV-Stem ;
                                                    IV-Stem ;
+LEXICON IrregularVerbs
+                  Ca ;
+
+LEXICON Ca ! estar
+@D.PST@:@D.PST@ CaPres ;
+@R.PST@:@R.PST@ CaImpf ;
+@D.PST@:@D.PST@ CaFut ;
+
+
+LEXICON CaPres
+%<s_sg1%>ca%<v%>m%<iv%>%<pres%>:nica # ;
+%<s_sg2%>ca%<v%>%<iv%>%<pres%>:tica # ;
+%<s_sg3%>ca%<v%>%<iv%>%<pres%>:catci # ;
+%<s_pl1%>ca%<v%>%<iv%>%<pres%>:ticate # ;
+%<s_pl2%>ca%<v%>%<iv%>%<pres%>:nicate # ;
+%<s_pl3%>ca%<v%>%<iv%>%<pres%>:cate # ;
+
+LEXICON CaImpf
+%<s_sg1%>ca%<v%>%<iv%>%<impf%>:nicatca # ;
+%<s_sg2%>ca%<v%>%<iv%>%<impf%>:ticacta # ;
+%<s_sg3%>ca%<v%>%<iv%>%<impf%>:catca # ;
+%<s_pl1%>ca%<v%>%<iv%>%<impf%>:ticatca # ;
+%<s_pl2%>ca%<v%>%<iv%>%<impf%>:nicatca # ;
+%<s_pl3%>ca%<v%>%<iv%>%<impf%>:catca # ;
+
+
+LEXICON CaFut
+%<s_sg1%>ca%<v%>%<iv%>%<fut%>:ni%>izqui # ;
+%<s_sg2%>ca%<v%>%<iv%>%<fut%>:ti%>izqui # ;
+%<s_sg3%>ca%<v%>%<iv%>%<fut%>:izqui # ;
+%<s_pl1%>ca%<v%>%<iv%>%<fut%>:ti%>izque # ;
+%<s_pl2%>ca%<v%>%<iv%>%<fut%>:ni%>izque # ;
+%<s_pl3%>ca%<v%>%<iv%>%<fut%>:izque # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Continuation Verb Endings
@@ -280,6 +315,11 @@ piya%<v%>%<tv%>:piya%>  Imperfect ;
 piya%<v%>%<tv%>:pix%>  Base2Suffixes ;
 piya%<v%>%<tv%>:piya%>  Base3Suffixes ;
 
+pactia%<v%>%<tv%>:pactia%> PresentTense ;
+pactia%<v%>%<tv%>:pacta%>  Imperfect ;
+pactia%<v%>%<tv%>:pacti%{H%}%>  Base2Suffixes ;
+pactia%<v%>%<tv%>:pactiam%>  Base3Suffixes ;
+
 LEXICON TV2-Stem
 maca%<v%>%<tv2%>:maca%> PresentTense ;
 maca%<v%>%<tv2%>:maca%> Imperfect ;
@@ -299,7 +339,7 @@ LEXICON Base3Suffixes
               Future ;
               Counterfactual ;
               Optative ;
-              !Applicative ;
+              Applicative ;
               ! TODO Suffixal Directionals (Perfective/Imperfective/Optative)
 
 
@@ -331,8 +371,8 @@ LEXICON Optative
 @D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
 @D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
 
-!LEXICON Applicative
-
+LEXICON Applicative
+%<appl%>:lia # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Nominals
