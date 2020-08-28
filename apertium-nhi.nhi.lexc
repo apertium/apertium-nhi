@@ -149,6 +149,12 @@ LEXICON VerbalSubject
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Object ;
 @P.Sa.Sg@@P.Sa.3@%<s_sg3%>:@P.Sa.Sg@@P.Sa.3@          Object ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
+
+!
+! ce- subj prefix is 1pl but takes singular subject tense/aspect agreement.
+!
+@P.Sa.Sg@%<s_pl1%>:@P.Sa.Sg@ce%>                      Object ;
+
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
 
@@ -229,29 +235,35 @@ LEXICON IV-Dir
                                                    IV-Stem ;
 LEXICON IrregularVerbs
                   Ca ;
+                  Yo ;
 
 LEXICON Ca ! estar
 @D.PST@:@D.PST@ CaPres ;
 @R.PST@:@R.PST@ CaImpf ;
 @D.PST@:@D.PST@ CaFut ;
 
+LEXICON Yo ! ir
+@D.PST@:@D.PST@ YoPres ;
+@R.PST@:@R.PST@ YoPret ;
+@R.PST@:@R.PST@ YoImpf ;
+@D.PST@:@D.PST@ YoFut ;
+
 
 LEXICON CaPres
-%<s_sg1%>ca%<v%>m%<iv%>%<pres%>:nica # ;
-%<s_sg2%>ca%<v%>%<iv%>%<pres%>:tica # ;
+%<s_sg1%>ca%<v%>m%<iv%>%<pres%>:ni%>ca # ;
+%<s_sg2%>ca%<v%>%<iv%>%<pres%>:ti%>ca # ;
 %<s_sg3%>ca%<v%>%<iv%>%<pres%>:catci # ;
-%<s_pl1%>ca%<v%>%<iv%>%<pres%>:ticate # ;
-%<s_pl2%>ca%<v%>%<iv%>%<pres%>:nicate # ;
+%<s_pl1%>ca%<v%>%<iv%>%<pres%>:ti%>cate # ;
+%<s_pl2%>ca%<v%>%<iv%>%<pres%>:ni%>cate # ;
 %<s_pl3%>ca%<v%>%<iv%>%<pres%>:cate # ;
 
 LEXICON CaImpf
-%<s_sg1%>ca%<v%>%<iv%>%<impf%>:nicatca # ;
-%<s_sg2%>ca%<v%>%<iv%>%<impf%>:ticacta # ;
+%<s_sg1%>ca%<v%>%<iv%>%<impf%>:ni%>catca # ;
+%<s_sg2%>ca%<v%>%<iv%>%<impf%>:ti%>cacta # ;
 %<s_sg3%>ca%<v%>%<iv%>%<impf%>:catca # ;
-%<s_pl1%>ca%<v%>%<iv%>%<impf%>:ticatca # ;
-%<s_pl2%>ca%<v%>%<iv%>%<impf%>:nicatca # ;
+%<s_pl1%>ca%<v%>%<iv%>%<impf%>:ti%>catca # ;
+%<s_pl2%>ca%<v%>%<iv%>%<impf%>:ni%>catca # ;
 %<s_pl3%>ca%<v%>%<iv%>%<impf%>:catca # ;
-
 
 LEXICON CaFut
 %<s_sg1%>ca%<v%>%<iv%>%<fut%>:ni%>izqui # ;
@@ -260,6 +272,38 @@ LEXICON CaFut
 %<s_pl1%>ca%<v%>%<iv%>%<fut%>:ti%>izque # ;
 %<s_pl2%>ca%<v%>%<iv%>%<fut%>:ni%>izque # ;
 %<s_pl3%>ca%<v%>%<iv%>%<fut%>:izque # ;
+
+LEXICON YoPres
+%<s_sg1%>yo%<v%>%<iv%>%<pres%>:ni%>yo # ;
+%<s_sg2%>yo%<v%>%<iv%>%<pres%>:ti%>yo # ;
+%<s_sg3%>yo%<v%>%<iv%>%<pres%>:yohue # ;
+%<s_pl1%>yo%<v%>%<iv%>%<pres%>:ti%>yohue # ;
+%<s_pl2%>yo%<v%>%<iv%>%<pres%>:ni%>yohue # ;
+%<s_pl3%>yo%<v%>%<iv%>%<pres%>:yohue # ;
+
+LEXICON YoPret
+%<s_sg1%>yo%<v%>%<iv%>%<pret%>:ni%>ya # ;
+%<s_sg2%>yo%<v%>%<iv%>%<pret%>:ti%>ya # ;
+%<s_sg3%>yo%<v%>%<iv%>%<pret%>:ya # ;
+%<s_pl1%>yo%<v%>%<iv%>%<pret%>:ti%>yahque # ;
+%<s_pl2%>yo%<v%>%<iv%>%<pret%>:ni%>yahque # ;
+%<s_pl3%>yo%<v%>%<iv%>%<pret%>:yahque # ;
+
+LEXICON YoImpf
+%<s_sg1%>yo%<v%>%<iv%>%<impf%>:ni%>yaya # ;
+%<s_sg2%>yo%<v%>%<iv%>%<impf%>:ti%>yaya # ;
+%<s_sg3%>yo%<v%>%<iv%>%<impf%>:yaya # ;
+%<s_pl1%>yo%<v%>%<iv%>%<impf%>:ti%>yaya # ;
+%<s_pl2%>yo%<v%>%<iv%>%<impf%>:ni%>yaya # ;
+%<s_pl3%>yo%<v%>%<iv%>%<impf%>:yaya # ;
+
+LEXICON YoFut
+%<s_sg1%>yo%<v%>%<iv%>%<fut%>:ni%>yaz # ;
+%<s_sg2%>yo%<v%>%<iv%>%<fut%>:ti%>yaz # ;
+%<s_sg3%>yo%<v%>%<iv%>%<fut%>:yaz # ;
+%<s_pl1%>yo%<v%>%<iv%>%<fut%>:ti%>yazque # ;
+%<s_pl2%>yo%<v%>%<iv%>%<fut%>:ni%>yazque # ;
+%<s_pl3%>yo%<v%>%<iv%>%<fut%>:yazque # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Continuation Verb Endings
@@ -287,53 +331,82 @@ LEXICON CaFut
 
 
 LEXICON IV-Stem
+! dormir
 cochi%<v%>%<iv%>:cochi%>  PresentTense ;
 cochi%<v%>%<iv%>:cochi%>  Imperfect ;
 cochi%<v%>%<iv%>:coch%>   Base2Suffixes ;
 cochi%<v%>%<iv%>:cochi%>  Base3Suffixes ;
 
+! salir
 quiza%<v%>%<iv%>:quiza%>  PresentTense ;
 quiza%<v%>%<iv%>:quiza%>  Imperfect ;
 quiza%<v%>%<iv%>:quiz%>   Base2Suffixes ;
 quiza%<v%>%<iv%>:quiza%>  Base3Suffixes ;
 
+! llorar
 choca%<v%>%<iv%>:choca%>  PresentTense ;
 choca%<v%>%<iv%>:choca%>  Imperfect ;
 choca%<v%>%<iv%>:choca%>  Base2Suffixes ;
 choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
 
 LEXICON TV-Stem
+! ver
 itta%<v%>%<tv%>:itta%>     PresentTense ;
 itta%<v%>%<tv%>:itta%>     Imperfect ;
 itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
 itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
 
+! poner
 tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
 tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
 tlalia%<v%>%<tv%>:tlal%{i%}%{H%}%>  Base2Suffixes ;
 tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
 
+! decir
 ihtoa%<v%>%<tv%>:ihtoa%> PresentTense ;
 ihtoa%<v%>%<tv%>:ihtoa%>  Imperfect ;
 ihtoa%<v%>%<tv%>:ihtoh%>  Base2Suffixes ;
 ihtoa%<v%>%<tv%>:ihto%>  Base3Suffixes ;
 
+! tener
 piya%<v%>%<tv%>:piya%> PresentTense ;
 piya%<v%>%<tv%>:piya%>  Imperfect ;
 piya%<v%>%<tv%>:pix%>  Base2Suffixes ;
 piya%<v%>%<tv%>:piya%>  Base3Suffixes ;
 
+! gustar
 pactia%<v%>%<tv%>:pactia%> PresentTense ;
 pactia%<v%>%<tv%>:pacta%>  Imperfect ;
 pactia%<v%>%<tv%>:pact%{i%}%{H%}%>  Base2Suffixes ;
 pactia%<v%>%<tv%>:pacti%>  Base3Suffixes ;
 
+! recordar
+ihlnamiqui%<v%>%<tv%>:ihlnamiqui%> PresentTense ;
+ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  Imperfect ;
+ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  Base2Suffixes ;
+ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  Base3Suffixes ;
+
+! apoyar
+palehuia%<v%>%<tv%>:palehuia%> PresentTense ;
+palehuia%<v%>%<tv%>:palehua%> Imperfect ;
+palehuia%<v%>%<tv%>:palehu%{i%}%{H%}%> Base2Suffixes ;
+palehuia%<v%>%<tv%>:palehui%> Base3Suffixes ;
+
+! sacar
+quixtia%<v%>%<tv%>:quixtia%>  PresentTense;
+quixtia%<v%>%<tv%>:quixta%>  Imperfect;
+quixtia%<v%>%<tv%>:quixt%{i%}%{H%}%>  Base2Suffixes;
+quixtia%<v%>%<tv%>:quixti%>  Base3Suffixes;
+
+
 LEXICON TV2-Stem
+! dar
 maca%<v%>%<tv2%>:maca%> PresentTense ;
 maca%<v%>%<tv2%>:maca%> Imperfect ;
 maca%<v%>%<tv2%>:maca%> Base2Suffixes ;
 maca%<v%>%<tv2%>:maca%> Base3Suffixes ;
 
+! decir
 ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
 ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
 ilhuia%<v%>%<tv2%>:ilhu%{i%}%{H%}%> Base2Suffixes ;
@@ -409,6 +482,7 @@ LEXICON Possession
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@n%{o%}%>               Nominals ;
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@m%{o%}%>               Nominals ;
 @P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@ni%>                    Nominals ;
 @P.Px.Pl@%<px1pl%>:@P.Px.Pl@t%{o%}%>               Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@nim%{o%}%>             Nominals ;
 @P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ;
@@ -610,6 +684,8 @@ xopiyahuac:xopiyahua     AdjCont ; !"verde"
 tliltic:tlilti           AdjCont ; !"negrx"
 chichiltic:chichilti     AdjCont ; !"rojx"
 nixtic:nixti             AdjCont ; !"gris"
+tzotzocotzi:tzotzocotzi  AdjCont ; !"pequeñitx"
+tzocotzi:tzocotzi        AdjCont ; !"pequeñx"
 
 
 tomahuac:tomahua         AdjCont ; !"gordx"
@@ -634,7 +710,9 @@ LEXICON Adverbios
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
 entonces:entonces            Adv ; 
 pues:pues                    Adv ; 
-bueno:bueno                  Adv ; 
+bueno:bueno                  Adv ;
+
+xa:xa                        Adv ; ! quizás
 
 LEXICON Puntuación
 
