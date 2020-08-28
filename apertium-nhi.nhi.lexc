@@ -310,7 +310,7 @@ itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
 
 tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
 tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
-tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
+tlalia%<v%>%<tv%>:tlal%{i%}%{H%}%>  Base2Suffixes ;
 tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
 
 ihtoa%<v%>%<tv%>:ihtoa%> PresentTense ;
@@ -325,8 +325,8 @@ piya%<v%>%<tv%>:piya%>  Base3Suffixes ;
 
 pactia%<v%>%<tv%>:pactia%> PresentTense ;
 pactia%<v%>%<tv%>:pacta%>  Imperfect ;
-pactia%<v%>%<tv%>:pacti%{H%}%>  Base2Suffixes ;
-pactia%<v%>%<tv%>:pactiam%>  Base3Suffixes ;
+pactia%<v%>%<tv%>:pact%{i%}%{H%}%>  Base2Suffixes ;
+pactia%<v%>%<tv%>:pacti%>  Base3Suffixes ;
 
 LEXICON TV2-Stem
 maca%<v%>%<tv2%>:maca%> PresentTense ;
