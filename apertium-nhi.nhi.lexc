@@ -7,8 +7,12 @@ Multichar_Symbols
 %<adj%>                                  ! Adjetivo
 %<det%>                                  ! Determinante
 %<prn%>                                  ! Pronombre
+%<adv%>                                  ! Adverbio
+%<np%>                                   ! Nombre propio
+%<cnjsub%>                               ! Coordinación subordinada
 
 %<tv%>                                   ! Transitivo
+%<tv2%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
 
 %<pl%>                                   ! Plural
@@ -18,12 +22,23 @@ Multichar_Symbols
 
 %<loc%>                                  ! Locativo
 
+%<top%>                                  ! Topónimo
+
 %<pro%>                                  ! Pronombre proclítico
 %<pers%>                                 ! Personal, forma larga
 
 %<dim%>                                  ! Diminutivo
 
 %<hon%>                                  ! Honorifico
+
+
+%<pres%>   ! tiempo presente
+%<pret%>   ! pretérito
+%<impf%>   ! imperfectivo
+%<fut%>    ! futuro
+%<plu%>    ! pluscuamperfecto
+%<opt%>    ! optativo
+
 
 %<p1%>
 %<p2%>
@@ -43,13 +58,35 @@ Multichar_Symbols
 %<s_pl2%>
 %<s_pl3%>
 
+%<o_sg1%>                               ! Marcador de objeto directo (1ra singular)
+%<o_sg2%>                               ! Marcador de objeto directo (2da singular)
+%<o_sg3%>
+%<o_pl1%>
+%<o_pl2%>
+%<o_pl3%>
+
+%<i_sg1%>                               ! Marcador de objeto indirecto (1ra singular)
+%<i_sg2%>                               ! Marcador de objeto indirecto (2da singular)
+%<i_sg3%>
+%<i_pl1%>
+%<i_pl2%>
+%<i_pl3%>
+
+%<o_aa3%>
+%<o_nn3%>
+
+%<all%>                           ! direccional hacia el locutor
+
 %<sent%>                                 ! Final de frase
 
 %{o%}                                    ! o 
 %{i%}                                    ! i / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
-
+%{H%}
+%{m%}                                    ! m / n
+%{q%}
+%{c%}
 %>                                       ! Frontera de morfema
 
 @P.Px.Sg@                                ! Posesivo singular
@@ -64,40 +101,309 @@ Multichar_Symbols
 @R.Sa.Pl@
 @P.Sa.2@                                 ! Sujeto es 2da persona (necesario para el honorífico)
 @R.Sa.2@
+@P.Sa.3@
+@D.Sa.3@
 @D.Sa@                                   ! Ningún sujeto
 @D.Sa.Pl@ 
 @D.Sa.Sg@
 
+@P.DOBJ.FILLED@
+@D.DOBJ@
+
+@P.PST.ON@                          ! tiempo pasado
+@R.PST@
+@D.PST@
+
+@U.APPL.ON@
+
+@P.Opt.ON@
+@R.Opt@
+@D.Opt@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
 
-Sujeto ;
-
+NominalSubject ;
+Miscellaneous ; 
 Pronombres ;
 Determinantes ;
+Propios ;
+Adverbios ;
 Puntuación ;
+Verb ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Sujeto
 
+!
+! Verbs
+!
+LEXICON Verb
+@P.PST.ON@:@P.PST.ON@o%>                             VerbalSubject ;
+                                                     VerbalSubject ;
+
+LEXICON VerbalSubject
+                                                      IrregularVerbs ;
+
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Object ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Object ;
+@P.Sa.Sg@@P.Sa.3@%<s_sg3%>:@P.Sa.Sg@@P.Sa.3@          Object ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
+@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
+
+@P.Sa.Sg@@P.Opt.ON@%<s_sg2%>:@P.Sa.Sg@@P.Opt.ON@xi%>  Object ;
+@P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@xi%>  Object ;
+
+LEXICON Object
+                                                       IV-Dir ;
+@P.DOBJ.FILLED@:@P.DOBJ.FILLED@                        TV-DOBJ ;
+                                                       TV2-IOBJ ;
+
+LEXICON TV2-IOBJ
+!
+! Regular bitransitive construction
+! (first obj is iobj, second is dobj and optional)
+! e.g. ni-mitz-in-maca "te los doy", ni-mitz-maca "te (lo) doy".
+!
+
+%<i_sg1%>:nech%>                                    TV2-DOBJ ;
+%<i_sg2%>:mitz%>                                    TV2-DOBJ ;
+%<i_sg3%>:%{q%}%{u%}%{i%}%>                         TV2-DOBJ ;
+%<i_pl1%>:tech%>                                    TV2-DOBJ ;
+%<i_pl2%>:mech%>                                    TV2-DOBJ ;
+%<i_pl3%>:qui%{m%}%>                                TV2-DOBJ ;
+
+LEXICON TV2-DOBJ
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Dir ;
+                                                   TV2-Dir ;
+
+LEXICON TV2-Dir
+%<hon%>:on%>                                       TV2-Refl ;
+%<all%>:hual%>                                     TV2-Refl ;
+                                                   TV2-Refl ;
+
+LEXICON TV2-Refl
+@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Indef-Obj ;
+TV2-Indef-Obj ;
+
+
+LEXICON TV2-Indef-Obj
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV2-Stem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV2-Stem ;
+                                   TV2-Stem ;
+
+
+LEXICON TV-DOBJ
+%<o_sg1%>:nech%>             TV-Dir ;
+%<o_sg2%>:mitz%>             TV-Dir ;
+%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
+
+! With 3sg obj (and not 3 sbj, and not honorific ), the object prrefix can be
+! omitted optionally. eg "ni-0-piya" "yo lo tengo".
+@D.Sa.3@%<o_sg3_om%>:@D.Sa.3@   TV-Refl ;
+
+%<o_pl1%>:tech%>             TV-Dir ;
+%<o_pl2%>:mech%>             TV-Dir ;
+%<o_pl3%>:qui%{m%}%>         TV-Dir ;
+
+
+LEXICON TV-Dir
+%<hon%>:on%>                                       TV-Refl ;
+%<all%>:hual%>                                     TV-Refl ;
+                                                   TV-Refl ;
+
+LEXICON TV-Refl
+@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Indef-Obj ;
+                                                              TV-Indef-Obj ;
+
+
+LEXICON TV-Indef-Obj
+@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV-Stem ;
+@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV-Stem ;
+                                                   TV-Stem ;
+
+LEXICON IV-Dir
+%<hon%>:on%>                                       IV-Stem ;
+%<all%>:hual%>                                     IV-Stem ;
+                                                   IV-Stem ;
+LEXICON IrregularVerbs
+                  Ca ;
+
+LEXICON Ca ! estar
+@D.PST@:@D.PST@ CaPres ;
+@R.PST@:@R.PST@ CaImpf ;
+@D.PST@:@D.PST@ CaFut ;
+
+
+LEXICON CaPres
+%<s_sg1%>ca%<v%>m%<iv%>%<pres%>:nica # ;
+%<s_sg2%>ca%<v%>%<iv%>%<pres%>:tica # ;
+%<s_sg3%>ca%<v%>%<iv%>%<pres%>:catci # ;
+%<s_pl1%>ca%<v%>%<iv%>%<pres%>:ticate # ;
+%<s_pl2%>ca%<v%>%<iv%>%<pres%>:nicate # ;
+%<s_pl3%>ca%<v%>%<iv%>%<pres%>:cate # ;
+
+LEXICON CaImpf
+%<s_sg1%>ca%<v%>%<iv%>%<impf%>:nicatca # ;
+%<s_sg2%>ca%<v%>%<iv%>%<impf%>:ticacta # ;
+%<s_sg3%>ca%<v%>%<iv%>%<impf%>:catca # ;
+%<s_pl1%>ca%<v%>%<iv%>%<impf%>:ticatca # ;
+%<s_pl2%>ca%<v%>%<iv%>%<impf%>:nicatca # ;
+%<s_pl3%>ca%<v%>%<iv%>%<impf%>:catca # ;
+
+
+LEXICON CaFut
+%<s_sg1%>ca%<v%>%<iv%>%<fut%>:ni%>izqui # ;
+%<s_sg2%>ca%<v%>%<iv%>%<fut%>:ti%>izqui # ;
+%<s_sg3%>ca%<v%>%<iv%>%<fut%>:izqui # ;
+%<s_pl1%>ca%<v%>%<iv%>%<fut%>:ti%>izque # ;
+%<s_pl2%>ca%<v%>%<iv%>%<fut%>:ni%>izque # ;
+%<s_pl3%>ca%<v%>%<iv%>%<fut%>:izque # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Continuation Verb Endings
+!--------------------------
+! * PresentTense
+! * Imperfect
+!   (In classical nahuatl, this is the same as PresentTense base (Base 1). In
+!    nhi, verbs ending in 'ia' or 'oa' drop the first of those two ('i' and
+!    'o', respectively), as is done in Base 1 in classical Nahuatl.
+!    for eg:
+!       ilhuia, "contar/decir"
+!       classical:      o-ni-mitz-ilhuia-ya
+!       western sierra: o-ni-mitz-ilhua-ya
+!       "Yo te (lo) decía"
+
+! * Base2Suffixes
+!       * Preterite
+!       * Pluperfect
+
+! * Base3Suffixes
+!       * Future
+!       * Counterfactual
+!       * Optative
+!       * SuffixalDirectional
+
+
+LEXICON IV-Stem
+cochi%<v%>%<iv%>:cochi%>  PresentTense ;
+cochi%<v%>%<iv%>:cochi%>  Imperfect ;
+cochi%<v%>%<iv%>:coch%>   Base2Suffixes ;
+cochi%<v%>%<iv%>:cochi%>  Base3Suffixes ;
+
+quiza%<v%>%<iv%>:quiza%>  PresentTense ;
+quiza%<v%>%<iv%>:quiza%>  Imperfect ;
+quiza%<v%>%<iv%>:quiz%>   Base2Suffixes ;
+quiza%<v%>%<iv%>:quiza%>  Base3Suffixes ;
+
+choca%<v%>%<iv%>:choca%>  PresentTense ;
+choca%<v%>%<iv%>:choca%>  Imperfect ;
+choca%<v%>%<iv%>:choca%>  Base2Suffixes ;
+choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
+
+LEXICON TV-Stem
+itta%<v%>%<tv%>:itta%>     PresentTense ;
+itta%<v%>%<tv%>:itta%>     Imperfect ;
+itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
+itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
+
+tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
+tlalia%<v%>%<tv%>:tlala%>  Imperfect ;
+tlalia%<v%>%<tv%>:tlali%>  Base2Suffixes ;
+tlalia%<v%>%<tv%>:tlali%>  Base3Suffixes ;
+
+ihtoa%<v%>%<tv%>:ihtoa%> PresentTense ;
+ihtoa%<v%>%<tv%>:ihtoa%>  Imperfect ;
+ihtoa%<v%>%<tv%>:ihtoh%>  Base2Suffixes ;
+ihtoa%<v%>%<tv%>:ihto%>  Base3Suffixes ;
+
+piya%<v%>%<tv%>:piya%> PresentTense ;
+piya%<v%>%<tv%>:piya%>  Imperfect ;
+piya%<v%>%<tv%>:pix%>  Base2Suffixes ;
+piya%<v%>%<tv%>:piya%>  Base3Suffixes ;
+
+pactia%<v%>%<tv%>:pactia%> PresentTense ;
+pactia%<v%>%<tv%>:pacta%>  Imperfect ;
+pactia%<v%>%<tv%>:pacti%{H%}%>  Base2Suffixes ;
+pactia%<v%>%<tv%>:pactiam%>  Base3Suffixes ;
+
+LEXICON TV2-Stem
+maca%<v%>%<tv2%>:maca%> PresentTense ;
+maca%<v%>%<tv2%>:maca%> Imperfect ;
+maca%<v%>%<tv2%>:maca%> Base2Suffixes ;
+maca%<v%>%<tv2%>:maca%> Base3Suffixes ;
+
+ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
+ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
+ilhuia%<v%>%<tv2%>:ilhu%{i%}%{H%}%> Base2Suffixes ;
+ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
+
+LEXICON Base2Suffixes
+              Preterite ;
+              Pluperfect ;
+
+LEXICON Base3Suffixes
+              Future ;
+              Counterfactual ;
+              Optative ;
+              Applicative ;
+              ! TODO Suffixal Directionals (Perfective/Imperfective/Optative)
+
+
+LEXICON PresentTense
+@D.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@D.Sa.Pl@@D.PST@@D.Opt@ # ;
+@R.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@R.Sa.Pl@@D.PST@@D.Opt@h # ;
+
+LEXICON Imperfect
+@D.Sa.Pl@@R.PST@@D.Opt@%<impf%>:@D.Sa.Pl@@R.PST@@D.Opt@ya  # ;
+@R.Sa.Pl@@R.PST@@D.Opt@%<impf%>:@R.Sa.Pl@@R.PST@@D.Opt@yah # ;
+
+LEXICON Preterite
+@D.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@D.Sa.Pl@@D.Opt@@R.PST@%{c%}  # ;
+@R.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@R.Sa.Pl@@D.Opt@@R.PST@que # ;
+
+LEXICON Pluperfect
+@D.Sa.Pl@@D.Opt@%<plu%>:@D.Sa.Pl@@D.Opt@ca   # ;
+@R.Sa.Pl@@D.Opt@%<plu%>:@R.Sa.Pl@@D.Opt@cah  # ;
+
+LEXICON Future
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zque # ;
+
+LEXICON Counterfactual
+@D.PST@@D.Sa.Pl@@D.Opt@%<Cfact%>:@D.PST@@D.Sa.Pl@@D.Opt@zquia # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<Cfact%>:@D.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
+
+LEXICON Optative
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
+
+LEXICON Applicative
+%<appl%>:lia # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Nominals
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON NominalSubject
 ! sg1: n-
 ! pl1: t-S-me / t-poss-S-huan
 
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>                  Predicate ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@t%{i%}%>  Predicate ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Predicate ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
 @P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>                  Predicate ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>                  Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Predicate ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
                                                       Predicate ;
 
 LEXICON Predicate
-! Después del sujeto viene o una posesivo o un nominal
-@R.Sa.2@:@R.Sa.2@                                  Honorific ;
-                                                   Possession ; 
-                                                   Nominals ;
+@R.Sa.2@:@R.Sa.2@                                     Honorific ;
+                                                      Possession ;
+                                                      Nominals ;
+
+
 LEXICON Possession
 
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@n%{o%}%>               Nominals ;
@@ -125,8 +431,8 @@ LEXICON PlainPlural
 
 LEXICON PossPlural
 
-@D.Sa@%<pl%>:@D.Sa@%>huan        # ; ! Sus casas
-@R.Sa.Pl@%<pl%>:@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
+@R.Px@@D.Sa.Pl@%<pl%>:@R.Px@@D.Sa.Pl@%>huan        # ; ! Sus casas
+@R.Px@@R.Sa.Pl@%<pl%>:@R.Px@@R.Sa.Pl@%>huan        # ; ! Ellos son sus casas
 
 LEXICON Plural 
                                                    PossPlural ;
@@ -141,42 +447,42 @@ LEXICON Deriv
                                                    Diminutivo ; 
 LEXICON TlSuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tl    # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON ItlSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>itl   # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>i%{u%}%{h%}  # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON TliSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tli   # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON LiSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>li    # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:%>li                                         Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON InSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>in    # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON NoSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>      # ;
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@%>%{u%}%{h%}               # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
@@ -213,8 +519,19 @@ tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
 nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
 yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
+LEXICON Adv 
+
+%<adv%>: # ; 
+
+LEXICON NP-Top 
+
+%<np%>%<top%>: # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Miscellaneous
+
+porque%<cnjsub%>:porque # ; 
 
 LEXICON Determinantes 
 
@@ -302,6 +619,9 @@ papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
 tzatzayactic:tzatzayacti AdjCont ; !"rotx"
 
+LEXICON Propios
+
+México:México            NP-Top ; 
 
 
 LEXICON AdjCont
@@ -310,6 +630,11 @@ LEXICON AdjCont
 @D.Sa@%<adj%>:@D.Sa@c                   #;
 @D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
 
+LEXICON Adverbios 
+! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
+entonces:entonces            Adv ; 
+pues:pues                    Adv ; 
+bueno:bueno                  Adv ; 
 
 LEXICON Puntuación
 

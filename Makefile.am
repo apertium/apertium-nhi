@@ -75,7 +75,7 @@ $(LANG1).automorf.hfst: .deps/nhi.mor.hfst .deps/nhi.spellrelax.hfst
 	hfst-invert $< |  hfst-compose -F -1 - -2 .deps/nhi.spellrelax.hfst  | hfst-invert | hfst-fst2fst -w -o $@
 
 $(LANG1).autogen.hfst: .deps/nhi.gen.hfst
-	hfst-fst2fst -w $< -o $@
+	hfst-compose-intersect -1 .deps/nhi.gen.hfst -2 .deps/nhi.mor.twol.hfst | hfst-fst2fst -w -o $@
 
 $(LANG1).autoseg.hfst: .deps/nhi.seg.hfst 
 	hfst-fst2fst -w $< -o $@
