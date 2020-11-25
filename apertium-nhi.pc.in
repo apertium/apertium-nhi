@@ -1,8 +1,7 @@
 prefix=@prefix@
 exec_prefix=${prefix}
-srcdir=@datarootdir@/apertium/apertium-nhn
+srcdir=@datarootdir@/apertium/apertium-nhi
 
-Name: apertium-nhn
-Description: Finite-state morphological transducer and constraint grammar for nhn 
+Name: apertium-nhi
+Description: Finite-state morphological transducer and constraint grammar for nhi
 Version: @VERSION@
-
