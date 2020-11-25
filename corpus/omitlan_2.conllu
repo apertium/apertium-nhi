@@ -1,12 +1,21 @@
+# sent_id = omitlan_2:1
+# text = Neh notoca Mariana.
+# text[spa] = Me llamo Mariana.
+1	Neh	neh	PRON	_	_	2	nsubj	2:nsubj	_
+2	notoca	toca	VERB	_	_	0	root	0:root	_
+3	Mariana	Mariana	PROPN	_	_	2	_	_	_
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
 # sent_id = omitlan_2:2
 # text = Neh oniyol ich ce altipetl itoca Omitlán, quihtozniqui lugar de huesos.
-# text[spa] = partial
+# text[spa] = Vivo en un pueblo que se llama Omitlán, que significa lugar de huesos.
+# labels = partial
 1	Neh	neh	PRON	_	_	3	nsubj	3:nsubj	_
 2-3	niyolo	_	_	_	_	_	_	_	_
-2	o	yol	AUX	_	_	3	aux	3:aux	_
-3	niyol	_	VERB	_	_	_	_	_	_
-4	ich	_	_	_	_	_	_	_	_
-5	ce	ce	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	3	aux	3:aux	_
+3	niyol	yol	VERB	_	_	0	root	0:root	_
+4	ich	_	ADP	_	_	6	case	6:case	_
+5	ce	ce	DET	_	_	6	det	6:det	_
 6	altipetl	altipetl	NOUN	_	_	_	_	_	_
 7	itoca	toca	VERB	_	_	_	_	_	_
 8	Omitlán	Omitlán	PROPN	_	_	7	_	7	_
