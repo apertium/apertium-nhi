@@ -3,7 +3,7 @@
 # text[spa] = Mi mamá antes nos daba botas para que no nos mojaran los pies.
 # text[eng] = My mom used to give us boots in order to not get our feet wet.
 # labels = incorporation
-1	Nomama	mama	NOUN	_	_	2	nsubj	2:nsubj	_
+1	Nomama	mama	NOUN	_	Number[psor]=Sing|Person[psor]=1	2	nsubj	2:nsubj	_
 2	otechinmacaya	maca	VERB	_	_	0	root	0:root	_
 3	ciqui	ciqui	DET	_	_	4	det	4:det	_
 4	botas	bota	NOUN	_	Number=Plur	2	obj	2:obj	_
