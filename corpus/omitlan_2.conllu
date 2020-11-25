@@ -3,14 +3,16 @@
 # text[spa] = Mi mamá antes nos daba botas para que no nos mojaran los pies.
 # text[eng] = My mom used to give us boots in order to not get our feet wet.
 # labels = incorporation
-1	Nomama	mama	NOUN	_	Number[psor]=Sing|Person[psor]=1	2	nsubj	2:nsubj	_
-2	otechinmacaya	maca	VERB	_	_	0	root	0:root	_
-3	ciqui	ciqui	DET	_	_	4	det	4:det	_
-4	botas	bota	NOUN	_	Number=Plur	2	obj	2:obj	_
-5	para	para	SCONJ	_	_	8	mark	8:mark	_
-6	amo	amo	ADV	_	_	8	advmod	8:advmod	_
-7	mo	mo	AUX	_	_	8	aux	8:aux	_
-8	ceicxipalti	icxipalti	VERB	palti	_	2	advcl	2:advcl	_
-8.1	icxi	icxi	NOUN	_	_	_	_	8:obj	_
-9	.	.	PUNCT	_	_	2	punct	2:punct	_
+1	Nomama	mama	NOUN	_	Number[psor]=Sing|Person[psor]=1	3	nsubj	3:nsubj	_
+2-3	otechinmacaya	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	3	aux	3:aux	_
+3	techinmacaya	maca	VERB	_	Aspect=Perf|Number[iobj]=Plur|Person[iobj]=1|Number[obj]=Plur|Person[obj]=3|Number[subj]=Sing|Person[subj]=3|Valency=3	0	root	0:root	_
+4	ciqui	ciqui	DET	_	_	5	det	5:det	_
+5	botas	bota	NOUN	_	Number=Plur	3	obj	3:obj	_
+6	para	para	SCONJ	_	_	9	mark	9:mark	_
+7	amo	amo	ADV	_	_	9	advmod	9:advmod	_
+8	mo	mo	AUX	_	_	9	aux	9:aux	_
+9	ceicxipalti	icxipalti	VERB	palti	_	3	advcl	3:advcl	_
+9.1	icxi	icxi	NOUN	_	_	_	_	9:obj	_
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
 
