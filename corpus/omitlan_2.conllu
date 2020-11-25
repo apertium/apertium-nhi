@@ -2,7 +2,7 @@
 # text = Neh notoca Mariana.
 # text[spa] = Me llamo Mariana.
 # labels = partial
-1	Neh	neh	PRON	_	_	2	_	_	_
+1	Neh	neh	PRON	_	_	2	_	2	_
 2	notoca	toca	NOUN	_	_	0	root	0:root	_
 3	Mariana	Mariana	PROPN	_	_	2	nsubj	2:nsubj	_
 4	.	.	PUNCT	_	_	2	punct	2:punct	_
@@ -11,55 +11,59 @@
 # text = Neh oniyol ich ce altipetl itoca Omitlán, quihtozniqui lugar de huesos.
 # text[spa] = Vivo en un pueblo que se llama Omitlán, que quiere decir lugar de huesos.
 # labels = partial
-1	Neh	neh	PRON	_	_	3	nsubj	_	_
+1	Neh	neh	PRON	_	_	3	nsubj	3:nsubj	_
 2-3	niyolo	_	_	_	_	_	_	_	_
-2	o	o	AUX	_	_	3	aux	_	_
-3	niyol	yol	VERB	yol	_	0	root	_	_
+2	o	o	AUX	_	_	3	aux	3:aux	_
+3	niyol	yol	VERB	yol	_	0	root	0:root	_
 4	ich	tich	NOUN	_	_	_	_	_	_
-5	ce	ce	DET	_	_	6	det	_	_
-6	altipetl	altipetl	NOUN	_	_	3	obl	_	_
+5	ce	ce	DET	_	_	6	det	6:det	_
+6	altipetl	altipetl	NOUN	_	_	3	obl	3:obl	_
 7	itoca	toca	NOUN	_	_	_	_	_	_
 8	Omitlán	Omitlán	PROPN	_	_	_	_	_	_
-9	,	,	PUNCT	_	_	10	punct	_	_
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
 10-11	quihtozniqui	_	_	_	_	_	_	_	_
-10	quihtoz	quihtoa	VERB	quihtoa	_	8	_	_	_
-11	niqui	niqui	AUX	_	_	10	aux	_	_
-12	lugar	lugar	NOUN	_	_	10	_	_	_
-13	de	de	ADP	_	_	14	case	_	_
-14	huesos	huesos	NOUN	_	_	12	nmod	_	_
-15	.	.	PUNCT	_	_	3	punct	_	_
+10	quihtoz	quihtoa	VERB	quihtoa	_	8	_	8	_
+11	niqui	niqui	AUX	_	_	10	aux	10:aux	_
+12	lugar	lugar	NOUN	_	_	10	_	10	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	huesos	huesos	NOUN	_	_	12	nmod	12:nmod	_
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
 
 # sent_id = omitlan_2:4
 # text = Huan opiyaya otitlapiyaya ich ce lugar que itoca Cohtla , huan occe lugar que itoca Zaloncuatlauhco .
 # text[spa] = 
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
-2	opiyaya	_	VERB	_	_	_	_	_	_
-3	otitlapiyaya	VERB	_	_	_	_	_	_	_
-4	ich	tich	NOUN	_	_	_	_	_	_
-5	ce	ce	DET	_	_	_	_	_	_
-6	lugar	lugar	NOUN	_	_	_	_	_	_
-7	que	que	PRON	_	_	_	_	_	_
-8	itoca	toca	NOUN	_	_	_	_	_	_
-9	Cohtla	Cohtla	PROPN	_	_	_	_	_	_
-10	,	,	PUNCT	_	_	_	_	_	_
-11	huan	huan	CCONJ	_	_	_	_	_	_
-12	occe	occe	_	_	_	_	_	_	_
-13	lugar	lugar	NOUN	_	_	_	_	_	_
-14	que	que	PRON	_	_	_	_	_	_
-15	itoca	toca	NOUN	_	_	_	_	_	_
-16	Zaloncuatlauhco	Zaloncuatlauhco	PROPN	_	_	_	_	_	_
-17	.	.	PUNCT	_	_	_	_	_	_
+2-3	opiyaya	_	_	_	_	_	_	_	_
+2	o	_	AUX	_	_	_	_	_	_
+3	piyaya	_	VERB	_	_	_	_	_	_
+4-5	otitlapiyaya	_	_	_	_	_	_	_	_
+4	o	VERB	AUX	_	_	_	_	_	_
+5	titlapiyaya	_	VERB	_	_	_	_	_	_
+6	ich	tich	NOUN	_	_	_	_	_	_
+7	ce	ce	DET	_	_	8	det	8:det	_
+8	lugar	lugar	NOUN	_	_	_	_	_	_
+9	que	que	PRON	_	_	_	_	_	_
+10	itoca	toca	NOUN	_	_	_	_	_	_
+11	Cohtla	Cohtla	PROPN	_	_	_	_	_	_
+12	,	,	PUNCT	_	_	_	_	_	_
+13	huan	huan	CCONJ	_	_	_	_	_	_
+14	occe	occe	_	_	_	_	_	_	_
+15	lugar	lugar	NOUN	_	_	_	_	_	_
+16	que	que	PRON	_	_	_	_	_	_
+17	itoca	toca	NOUN	_	_	_	_	_	_
+18	Zaloncuatlauhco	Zaloncuatlauhco	PROPN	_	_	_	_	_	_
+19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = omitlan_2:5
 # text = Huan niquihlnamiqui a veces oquiyuhhuiya .
 # text[spa] = 
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	niquihlnamiqui	_	VERB	_	_	_	_	_	_
-3	a	a	ADP	_	_	_	_	_	_
+3	a	a	ADP	_	_	4	case	4:case	_
 4	veces	vez	NOUN	_	_	_	_	_	_
 5	oquiyuhhuiya	_	VERB	_	_	_	_	_	_
-6	.	.	PUNCT	_	_	_	punct	_	_
+6	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = omitlan_2:6
 # text = Huan otiyaya ohcón otitlapiyayah .
@@ -68,7 +72,7 @@
 2	otiyaya	_	VERB	_	_	_	_	_	_
 3	ohcón	_	_	_	_	_	_	_	_
 4	otitlapiyayah	_	VERB	_	_	_	_	_	_
-5	.	.	PUNCT	_	_	_	punct	_	_
+5	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = omitlan_2:7
 # text = Nomama otechinmacaya ciqui botas para amo mo ceicxipalti.
@@ -91,25 +95,37 @@
 # sent_id = omitlan_2:8
 # text = Pero nochipa opaltia tocxihuan a veces ocalaquiya atl ichin tobotas huan omocatquiya cimi chistoso cuando otinihnimiyah omocaquiya xa queme otimiguixtayah.
 # text[spa] = 
-1	Pero	_	CCONJ	_	_	_	_	_	_
-2	nochipa	_	_	_	_	_	_	_	_
-3	opaltia	paltia	VERB	_	_	_	_	_	_
-4	tocxihuan	icxi	NOUN	_	_	_	_	_	_
-5	a	a	ADP	_	_	_	_	_	_
-6	veces	vez	NOUN	_	_	_	_	_	_
-7	ocalaquiya	_	VERB	_	_	_	_	_	_
-8	atl	atl	NOUN	_	_	_	_	_	_
-9	ichin	_	NOUN	_	_	_	_	_	_
-10	tobotas	bota	NOUN	_	_	_	_	_	_
-11	huan	_	CCONJ	_	_	_	_	_	_
-12	omocatquiya	_	VERB	_	_	_	_	_	_
-13	cimi	_	_	_	_	_	_	_	_
-14	chistoso	ADJ	_	_	_	_	_	_	_
-15	cuando	_	SCONJ	_	_	_	_	_	_
-16	otinihnimiyah	_	VERB	_	_	_	_	_	_
-17	omocaquiya	_	VERB	_	_	_	_	_	_
-18	xa	_	_	_	_	_	_	_	_
-19	queme	_	_	_	_	_	_	_	_
-20	otimiguixtayah	_	VERB	_	_	_	_	_	_
-21	.	_	_	_	_	_	_	_	_
+1	Pero	_	CCONJ	_	_	4	cc	4:cc	_
+2	nochipa	_	ADV	_	_	4	advmod	4:advmod	_
+3-4	opaltia	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	_	_	_
+4	paltia	paltia	VERB	_	_	0	root	0:root	_
+5	tocxihuan	icxi	NOUN	_	_	_	_	_	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	veces	vez	NOUN	_	_	_	_	_	_
+8-9	ocalaquiya	_	_	_	_	_	_	_	_
+8	o	_	AUX	_	_	_	_	_	_
+9	calaquiya	_	VERB	_	_	_	_	_	_
+10	atl	atl	NOUN	_	_	_	_	_	_
+11	ichin	_	NOUN	_	_	_	_	_	_
+12	tobotas	bota	NOUN	_	_	_	_	_	_
+13	huan	_	CCONJ	_	_	_	_	_	_
+14-15	omocatquiya	_	_	_	_	_	_	_	_
+14	o	_	AUX	_	_	_	_	_	_
+15	mocatquiya	_	VERB	_	_	_	_	_	_
+16	cimi	_	_	_	_	_	_	_	_
+17	chistoso	ADJ	ADJ	_	_	_	_	_	_
+18	cuando	_	SCONJ	_	_	_	_	_	_
+19-20	otinihnimiyah	_	_	_	_	_	_	_	_
+19	o	_	AUX	_	_	_	_	_	_
+20	tinihnimiyah	_	VERB	_	_	_	_	_	_
+21-22	omocaquiya	_	_	_	_	_	_	_	_
+21	o	_	AUX	_	_	_	_	_	_
+22	mocaquiya	_	VERB	_	_	_	_	_	_
+23	xa	_	_	_	_	_	_	_	_
+24	queme	_	_	_	_	_	_	_	_
+25-26	otimiguixtayah	_	_	_	_	_	_	_	_
+25	o	_	AUX	_	_	_	_	_	_
+26	timiguixtayah	_	VERB	_	_	_	_	_	_
+27	.	_	PUNCT	_	_	_	_	_	_
 
