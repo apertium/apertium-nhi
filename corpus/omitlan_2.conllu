@@ -29,6 +29,28 @@
 14	huesos	huesos	NOUN	_	_	12	nmod	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
+# sent_id = omitlan_2:4
+# text = Huan opiyaya otitlapiyaya ich ce lugar que itoca Cohtla , huan occe lugar que itoca Zaloncuatlauhco .
+# text[spa] = 
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	opiyaya	_	VERB	_	_	_	_	_	_
+3	otitlapiyaya	VERB	_	_	_	_	_	_	_
+4	ich	tich	NOUN	_	_	_	_	_	_
+5	ce	ce	DET	_	_	_	_	_	_
+6	lugar	lugar	NOUN	_	_	_	_	_	_
+7	que	que	PRON	_	_	_	_	_	_
+8	itoca	toca	NOUN	_	_	_	_	_	_
+9	Cohtla	Cohtla	PROPN	_	_	_	_	_	_
+10	,	,	PUNCT	_	_	_	_	_	_
+11	huan	huan	CCONJ	_	_	_	_	_	_
+12	occe	occe	_	_	_	_	_	_	_
+13	lugar	lugar	NOUN	_	_	_	_	_	_
+14	que	que	PRON	_	_	_	_	_	_
+15	itoca	toca	NOUN	_	_	_	_	_	_
+16	Zaloncuatlauhco	Zaloncuatlauhco	PROPN	_	_	_	_	_	_
+17	.	.	PUNCT	_	_	_	_	_	_
+
 # sent_id = omitlan_2:7
 # text = Nomama otechinmacaya ciqui botas para amo mo ceicxipalti.
 # text[spa] = Mi mamá antes nos daba botas para que no nos mojaran los pies.
