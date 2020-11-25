@@ -34,6 +34,7 @@ Multichar_Symbols
 
 %<pres%>   ! tiempo presente
 %<pret%>   ! pretérito
+%<perf%>   ! perfectivo
 %<impf%>   ! imperfectivo
 %<fut%>    ! futuro
 %<plu%>    ! pluscuamperfecto
@@ -141,7 +142,7 @@ Verb ;
 !
 LEXICON Verb
 @P.PST.ON@:@P.PST.ON@o%>                             VerbalSubject ;
-@P.PST.ON@:@P.PST.ON@yo%>                            VerbalSubject ; ! "ya+past"
+@P.PST.ON@:@P.PST.ON@y%>o%>                           VerbalSubject ; ! "ya+past"
 
                                                      VerbalSubject ;
 
@@ -358,7 +359,7 @@ choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
 ! trabajar
 tiquiti%<v%>%<iv%>:tiquiti%>  PresentTense;
 tiquiti%<v%>%<iv%>:tiquiti%>  Imperfect;
-tiquiti%<v%>%<iv%>:tiquit%>   Durative;
+tiquiti%<v%>%<iv%>:tiqui%>   Durative;
 tiquiti%<v%>%<iv%>:tiquit%>   Base2Suffixes;
 tiquiti%<v%>%<iv%>:tiquiti%>  Base3Suffixes;
 
@@ -477,7 +478,7 @@ LEXICON Base3Suffixes
 
 LEXICON PresentTense
 @D.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@D.Sa.Pl@@D.PST@@D.Opt@ # ;
-@R.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@R.Sa.Pl@@D.PST@@D.Opt@h # ;
+@R.Sa.Pl@@D.PST@@D.Opt@%<pres%>:@R.Sa.Pl@@D.PST@@D.Opt@%{H%} # ;
 
 LEXICON Durative
 @D.Sa.Pl@@D.PST@@D.Opt@%<pres%>%<dur%>:@D.Sa.Pl@@D.PST@@D.Opt@toc # ;
@@ -485,6 +486,9 @@ LEXICON Durative
 
 @D.Sa.Pl@@R.PST@@D.Opt@%<pst%>%<dur%>:@D.Sa.Pl@@R.PST@@D.Opt@to%>ya # ;
 @R.Sa.Pl@@R.PST@@D.Opt@%<pst%>%<dur%>:@R.Sa.Pl@@R.PST@@D.Opt@to%>yah # ;
+
+@D.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@D.Sa.Pl@@D.PST@@D.Opt@to%>z # ;
+@R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zque # ;
 
 LEXICON Imperfect
 @D.Sa.Pl@@R.PST@@D.Opt@%<impf%>:@D.Sa.Pl@@R.PST@@D.Opt@ya  # ;

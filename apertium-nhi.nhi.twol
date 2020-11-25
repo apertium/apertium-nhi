@@ -63,7 +63,10 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 
 "i->e present plural"
-i:e <=> Cns _ >:> {H}: .#. ;
+i:e <=> Cns _ >:> %{H%}: .#. ;
+
+"drop h after i->e in present plura"
+%{H%}:0 <=> Cns i >:> _ .#. ;
 
 "i->e pret sg"
 %{i%}:e <=> _ %{H%}: >:> %{c%}: .#. ;
