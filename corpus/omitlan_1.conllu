@@ -1,0 +1,128 @@
+# sent_id = omitlan_1:1
+# text = Neh niquihtoz ce historia cuando onicatca nitzotzocotzi xa onipiyaya xa queme mahctlactl xihuitl.
+# text[spa] = 
+# labels = partial
+1	Neh	neh	PRON	_	_	2	_	_	_
+2	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+3	ce	ce	DET	_	_	4	det	_	_
+4	historia	historia	NOUN	_	_	2	_	_	_
+5	cuando	cuando	SCONJ	_	_	7	_	_	_
+6-7	onicatca	_	_	_	_	_	_	_	_
+6	o	o	AUX	_	_	7	aux	_	_
+7	nicatca	_	_	_	_	2	_	_	_
+8	nitzotzocotzi	_	VERB	_	_	_	_	_	_
+9	xa	_	_	_	_	_	_	_	_
+10-11	onipiyaya	_	_	_	_	_	_	_	_
+10	o	o	AUX	_	_	11	aux	_	_
+11	nipiyaya	_	VERB	_	_	_	_	_	_
+12	xa	_	_	_	_	_	_	_	_
+13	queme	_	_	_	_	_	_	_	_
+14	mahctlactl	_	NOUN	_	_	_	_	_	_
+15	xihuitl	xihuitl	NOUN	_	_	_	_	_	_
+16	.	.	PUNCT	_	_	_	_	_	_
+
+# sent_id = omitlan_1:2
+# text = Neh niquihlnamiqui oniyaya escuela pero quemazá acmo oniniquiya niyaz porque nocompañeros ohuihuitzcaya de neh porque amo onicpiyaya cualli ticactl o cualli tihlmahtl huan onipinahuiya.
+# text[spa] = 
+# labels = partial
+1	Neh	neh	PRON	_	_	_	_	_	_
+2	niquihlnamiqui	_	_	_	_	_	_	_	_
+3-4	oniyaya	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	_	_	_
+4	niyaya	_	VERB	_	_	_	_	_	_
+5	escuela	escuela	NOUN	_	_	_	_	_	_
+6	pero	pero	CCONJ	_	_	_	_	_	_
+7	quemazá	_	_	_	_	_	_	_	_
+8	acmo	_	_	_	_	_	_	_	_
+9-10	oniniquiya	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	_	_	_
+10	niniquiya	_	VERB	_	_	_	_	_	_
+11	niyaz	_	_	_	_	_	_	_	_
+12	porque	porque	SCONJ	_	_	_	_	_	_
+13	nocompañeros	compañero	NOUN	_	_	_	_	_	_
+14-15	ohuihuitzcaya	_	_	_	_	_	_	_	_
+14	o	o	AUX	_	_	_	_	_	_
+15	huihuitzcaya	_	VERB	_	_	_	_	_	_
+16	de	_	_	_	_	_	_	_	_
+17	neh	neh	PRON	_	_	_	_	_	_
+18	porque	porque	SCONJ	_	_	_	_	_	_
+19	amo	_	_	_	_	_	_	_	_
+20-21	onicpiyaya	_	_	_	_	_	_	_	_
+20	o	o	AUX	_	_	_	_	_	_
+21	nicpiyaya	_	VERB	_	_	_	_	_	_
+22	cualli	_	_	_	_	_	_	_	_
+23	ticactl	ticatl	NOUN	_	_	_	_	_	_
+24	o	_	_	_	_	_	_	_	_
+25	cualli	_	_	_	_	_	_	_	_
+26	tihlmahtl	tihlmatl	NOUN	_	_	_	_	_	_
+27	huan	_	CCONJ	_	_	_	_	_	_
+28-29	onipinahuiya	_	_	_	_	_	_	_	_
+28	o	o	AUX	_	_	_	_	_	_
+29	nipinahuiya	_	VERB	_	_	_	_	_	_
+30	.	.	PUNCT	_	_	_	_	_	_
+
+# sent_id = omitlan_1:3
+# text = Acmo oniniquiya niyaz in escuela.
+# text[spa] = 
+# label = partial
+1	Acmo	_	_	_	_	_	_	_	_
+2-3	oniniquiya	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	_	_	_
+3	niniquiya	niqui	VERB	_	_	_	_	_	_
+4	niyaz	_	VERB	_	_	_	_	_	_
+5	in	_	DET	_	_	_	_	_	_
+6	escuela	_	NOUN	_	_	_	_	_	_
+7	.	_	PUNCT	_	_	_	_	_	_
+
+
+# sent_id = omitlan_1:11
+# text = Onicquixte noprimaria, nosecundaria, huan nobachiller.
+# text[spa] = 
+# labels = partial
+1-2	Onicquixte	_	_	_	_	_	_	_	_
+1	O	o	AUX	_	_	2	aux	2:aux	_
+2	nicquixte	_	VERB	_	_	0	root	0:root	_
+3	noprimaria	primaria	NOUN	_	_	2	_	_	_
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	nosecundaria	secundaria	NOUN	_	_	3	conj	3:conj	_
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	huan	huan	CCONJ	_	_	8	cc	8:cc	_
+8	nobachiller	bachiller	NOUN	_	_	3	conj	3:conj	_
+9	.	.	PUNCT	_	_	2	punct	2:punct	_	
+
+# sent_id = omitlan_1:15
+# text = Entonces cuando neh onipiyaya veinte años , oniquinmacic ciqui compañeras de trabajo otiyahque para Sonora , huan ompa onechilhuique que ompa motiyaca para Estados Unidos .
+# text[spa] = 
+# labels = partial
+1	Entonces	entonces	ADV	_	_	_	_	_	_
+2	cuando	cuando	SCONJ	_	_	_	_	_	_
+3	neh	neh	PRON	_	_	_	_	_	_
+4-5	onipiyaya	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	5	_	_	_
+5	nipiyaya	_	VERB	_	_	_	_	_	_
+6	veinte	veinte	NUM	_	_	7	_	_	_
+7	años	año	NOUN	_	_	_	_	_	_
+8	,	,	PUNCT	_	_	_	_	_	_
+9-10	oniquinmacic	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	10	_	_	_
+10	niquinmacic	_	VERB	_	_	_	_	_	_
+11	ciqui	ciqui	DET	_	_	_	_	_	_
+12	compañeras	compañera	NOUN	_	_	_	_	_	_
+13	de	de	ADP	_	_	_	_	_	_
+14	trabajo	trabajo	NOUN	_	_	_	_	_	_
+15-16	otiyahque	_	_	_	_	_	_	_	_
+15	o	o	AUX	_	_	16	_	_	_
+16	tiyahque	_	VERB	_	_	_	_	_	_
+17	para	para	ADP	_	_	18	_	_	_
+18	Sonora	Sonora	PROPN	_	_	_	_	_	_
+19	,	,	PUNCT	_	_	_	_	_	_
+20	huan	huan	CCONJ	_	_	_	_	_	_
+21	ompa	_	_	_	_	_	_	_	_
+22	onechilhuique	_	_	_	_	_	_	_	_
+23	que	_	_	_	_	_	_	_	_
+24	ompa	_	_	_	_	_	_	_	_
+25	motiyaca	_	_	_	_	_	_	_	_
+26	para	para	ADP	_	_	_	_	_	_
+27	Estados	_	_	_	_	_	_	_	_
+28	Unidos	_	_	_	_	_	_	_	_
+29	.	.	_	_	_	_	_	_	_
