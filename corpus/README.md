@@ -1,0 +1,1 @@
+"Tiquitini" used by permission, ©2005, SIL International
