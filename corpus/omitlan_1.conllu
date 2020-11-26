@@ -89,3 +89,40 @@
 7	huan	huan	CCONJ	_	_	8	cc	8:cc	_
 8	nobachiller	bachiller	NOUN	_	_	3	conj	3:conj	_
 9	.	.	PUNCT	_	_	2	punct	2:punct	_	
+
+# sent_id = omitlan_1:15
+# text = Entonces cuando neh onipiyaya veinte años , oniquinmacic ciqui compañeras de trabajo otiyahque para Sonora , huan ompa onechilhuique que ompa motiyaca para Estados Unidos .
+# text[spa] = 
+# labels = partial
+1	Entonces	entonces	ADV	_	_	_	_	_	_
+2	cuando	cuando	SCONJ	_	_	_	_	_	_
+3	neh	neh	PRON	_	_	_	_	_	_
+4-5	onipiyaya	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	5	_	_	_
+5	nipiyaya	_	VERB	_	_	_	_	_	_
+6	veinte	veinte	NUM	_	_	7	_	_	_
+7	años	año	NOUN	_	_	_	_	_	_
+8	,	,	PUNCT	_	_	_	_	_	_
+9-10	oniquinmacic	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	10	_	_	_
+10	niquinmacic	_	VERB	_	_	_	_	_	_
+11	ciqui	ciqui	DET	_	_	_	_	_	_
+12	compañeras	compañera	NOUN	_	_	_	_	_	_
+13	de	de	ADP	_	_	_	_	_	_
+14	trabajo	trabajo	NOUN	_	_	_	_	_	_
+15-16	otiyahque	_	_	_	_	_	_	_	_
+15	o	o	AUX	_	_	16	_	_	_
+16	tiyahque	_	VERB	_	_	_	_	_	_
+17	para	para	ADP	_	_	18	_	_	_
+18	Sonora	Sonora	PROPN	_	_	_	_	_	_
+19	,	,	PUNCT	_	_	_	_	_	_
+20	huan	huan	CCONJ	_	_	_	_	_	_
+21	ompa	_	_	_	_	_	_	_	_
+22	onechilhuique	_	_	_	_	_	_	_	_
+23	que	_	_	_	_	_	_	_	_
+24	ompa	_	_	_	_	_	_	_	_
+25	motiyaca	_	_	_	_	_	_	_	_
+26	para	para	ADP	_	_	_	_	_	_
+27	Estados	_	_	_	_	_	_	_	_
+28	Unidos	_	_	_	_	_	_	_	_
+29	.	.	_	_	_	_	_	_	_
