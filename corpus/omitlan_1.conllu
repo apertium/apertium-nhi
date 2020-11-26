@@ -74,3 +74,18 @@
 6	escuela	_	NOUN	_	_	_	_	_	_
 7	.	_	PUNCT	_	_	_	_	_	_
 
+
+# sent_id = omitlan_1:11
+# text = Onicquixte noprimaria, nosecundaria, huan nobachiller.
+# text[spa] = 
+# labels = partial
+1-2	Onicquixte	_	_	_	_	_	_	_	_
+1	O	o	AUX	_	_	2	aux	2:aux	_
+2	nicquixte	_	VERB	_	_	0	root	0:root	_
+3	noprimaria	primaria	NOUN	_	_	2	_	_	_
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	nosecundaria	secundaria	NOUN	_	_	3	conj	3:conj	_
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	huan	huan	CCONJ	_	_	8	cc	8:cc	_
+8	nobachiller	bachiller	NOUN	_	_	3	conj	3:conj	_
+9	.	.	PUNCT	_	_	2	punct	2:punct	_	
