@@ -7,7 +7,7 @@ def categorise(token):
 	if token.lower() in ['neh', 'yeh']:
 			# form, lemma, upos, deprel
 		return (token, token.lower(), 'PRON', '_')
-	if token in '.,:;()[]?!"“”':
+	if token in '—.,:;()[]?!¡¿"“”':
 		return (token, token, 'PUNCT', 'PUNCT')
 	if token.lower() in ['huan', 'pero']:
 		return (token, token.lower(), 'CCONJ', '_')
@@ -23,7 +23,7 @@ def clean(line):
 	return o
 
 # Maybe better to do this another way?
-perfective_exclusion = ['Omitlán', 'Occiqui', 'occe', 'oc', 'o', 'ohcon', 'ohcón', 'ome', 'ompa']
+perfective_exclusion = ['omitlán', 'occiqui', 'occe', 'oc', 'o', 'ohcon', 'ohcón', 'ome', 'ompa']
 
 for line in sys.stdin.readlines():
 	line = line.strip()
@@ -42,7 +42,7 @@ for line in sys.stdin.readlines():
 
 		(token, lemma, upos, deprel) = categorise(token)
 
-		if token[0].lower() == 'o' and token not in perfective_exclusion:
+		if token[0].lower() == 'o' and token.lower() not in perfective_exclusion:
 			print('%d-%d\t%s\t_\t_\t_\t_\t_\t_\t_\t_' % (idx+1, idx+2, token))
 			print('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx+1, token[0], 'o', 'AUX', xpos, feats, head, 'aux', deprels, misc))
 			print('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx+2, token[1:], lemma, 'VERB', xpos, feats, head, deprel, deprels, misc))
