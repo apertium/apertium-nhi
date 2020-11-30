@@ -113,15 +113,15 @@
 # sent_id = omitlan_2:6
 # text = Huan otiyaya ohcón otitlapiyayah .
 # text[spa] = E íbamos así a cuidar.
-1	Huan	huan	CCONJ	_	_	_	_	_	_
+1	Huan	huan	CCONJ	_	_	3	cc	3:cc	_
 2-3	otiyaya	_	_	_	_	_	_	_	_
-2	o	o	AUX	_	_	_	_	_	_
-3	tiyaya	yo	VERB	_	_	_	_	_	_
-4	ohcón	ohcón	ADV	_	_	_	_	_	_
-4-5	otitlapiyayah	_	_	_	_	_	_	_	_
-4	o	o	AUX	_	_	_	_	_	_
-5	titlapiyayah	piya	VERB	_	_	_	_	_	_
-6	.	.	PUNCT	_	_	_	_	_	_
+2	o	o	AUX	_	_	3	aux	3:aux	_
+3	tiyaya	yo	VERB	_	_	0	root	0:root	_
+4	ohcón	ohcón	ADV	_	_	6	advmod	6:advmod	_
+5-6	otitlapiyayah	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	6	aux	6:aux	_
+6	titlapiyayah	piya	VERB	_	_	3	parataxis:agr	3:parataxis:agr	_
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
 
 # sent_id = omitlan_2:7
 # text = Nomama otechinmacaya ciqui botas para amo mo ceicxipalti.
@@ -430,7 +430,7 @@
 1	Tlen	tleno	SCONJ	_	_	5	mark	5:mark	_
 2-3	oticatcah	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	3	aux	3:aux	_
-3	ticatcah	ca	VERB	_	_	5	cop	5:cop	_
+3	ticatcah	ca	AUX	_	_	5	cop	5:cop	_
 4	oc	oc	AUX	_	_	5	aux	5:aux	_
 5	titzocotzitzih	tzocotzi	ADJ	_	_	0	root	0:root	_
 
@@ -444,7 +444,7 @@
 4	cachi	cachi	ADV	_	_	_	_	_	_
 5-6	ocatca	_	_	_	_	_	_	_	_
 5	o	o	AUX	_	_	_	aux	_	_
-6	catca	ca	VERB	_	_	_	_	_	_
+6	catca	ca	AUX	_	_	_	_	_	_
 7	huehhueyen	hueyi	ADJ	_	_	_	_	_	_
 
 # sent_id = omitlan_2:24
