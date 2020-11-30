@@ -1,0 +1,511 @@
+# sent_id = omitlan_2:1
+# text = Neh notoca Mariana.
+# text[spa] = Me llamo Mariana.
+# labels = partial
+1	Neh	neh	PRON	_	_	2	_	2	_
+2	notoca	toca	NOUN	_	_	0	root	0:root	_
+3	Mariana	Mariana	PROPN	_	_	2	nsubj	2:nsubj	_
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = omitlan_2:2
+# text = Neh oniyol ich ce altipetl itoca Omitlán, quihtozniqui lugar de huesos.
+# text[spa] = Vivo en un pueblo que se llama Omitlán, que quiere decir lugar de huesos.
+# labels = partial
+1	Neh	neh	PRON	_	_	3	nsubj	3:nsubj	_
+2-3	niyolo	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	3	aux	3:aux	_
+3	niyol	yol	VERB	yol	_	0	root	0:root	_
+4	ich	tich	NOUN	_	_	_	_	_	_
+5	ce	ce	DET	_	_	6	det	6:det	_
+6	altipetl	altipetl	NOUN	_	_	3	obl	3:obl	_
+7	itoca	toca	NOUN	_	_	_	_	_	_
+8	Omitlán	Omitlán	PROPN	_	_	_	_	_	_
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10-11	quihtozniqui	_	_	_	_	_	_	_	_
+10	quihtoz	quihtoa	VERB	_	_	8	_	8	_
+11	niqui	niqui	AUX	_	_	10	aux	10:aux	_
+12	lugar	lugar	NOUN	_	_	10	_	10	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	huesos	huesos	NOUN	_	_	12	nmod	12:nmod	_
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+# sent_id = omitlan_2:3
+# text = Bueno neh niquihtoz ce historia cuando neh onipiyaya mactlactl xihuitl huan nicpiya ce nocni yeh itoca Darío, yeh ocpiyaya chicueyi xihuitl huan niquihlnamiqui otiquimpiyayah mique ichcame, xa queme ce caxtol.
+# text[spa] = Bueno yo voy a contar una historia cuando tenía diez años y tengo un hermano que se llama Darío, él tenía ocho años y recuerdo que teníamos muchos borregos, quizás como quince.
+# labels = partial
+1	Bueno	bueno	ADV	_	_	_	_	_	_
+2	neh	neh	PRON	_	_	_	_	_	_
+3	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+4	ce	ce	DET	_	_	_	_	_	_
+5	historia	historia	NOUN	_	_	_	_	_	_
+6	cuando	cuando	SCONJ	_	_	_	_	_	_
+7	neh	neh	PRON	_	_	_	_	_	_
+8-9	onipiyaya	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	nipiyaya	piya	VERB	_	_	_	_	_	_
+10	mactlactl	mactlactl	NUM	_	_	_	_	_	_
+11	xihuitl	xihuitl	NOUN	_	_	_	_	_	_
+12	huan	huan	CCONJ	_	_	_	_	_	_
+13	nicpiya	piya	VERB	_	_	_	_	_	_
+14	ce	ce	DET	_	_	_	_	_	_
+15	nocni	icni	NOUN	_	_	_	_	_	_
+16	yeh	yeh	PRON	_	_	_	_	_	_
+17	itoca	toca	NOUN	_	_	_	_	_	_
+18	Darío	Darío	PROPN	_	_	_	_	_	_
+19	,	,	PUNCT	_	_	_	PUNCT	_	_
+20	yeh	yeh	PRON	_	_	_	_	_	_
+21-22	ocpiyaya	_	_	_	_	_	_	_	_
+21	o	o	AUX	_	_	_	aux	_	_
+22	cpiyaya	piya	VERB	_	_	_	_	_	_
+23	chichueyi	chichueyi	NUM	_	_	_	_	_	_
+24	xihuitl	xihuitl	NOUN	_	_	_	_	_	_
+25	huan	huan	CCONJ	_	_	_	_	_	_
+26	niquihlnamiqui	ihlnamiqui	VERB	_	_	_	_	_	_
+27-28	otiquimpiyayah	_	-	_	_	_	_	_	_
+27	o	o	AUX	_	_	_	aux	_	_
+28	tiquimpiyayah	piya	VERB	_	_	_	_	_	_
+29	mique	miac	DET	_	_	_	_	_	_
+30	ichcame	ichcatl	NOUN	_	_	_	_	_	_
+31	,	,	PUNCT	_	_	_	PUNCT	_	_
+32	xa	xa	ADV	_	_	_	_	_	_
+33	queme	queme	INTJ	_	_	_	_	_	_
+34	ce	ce	DET	_	_	_	_	_	_
+35	caxtol	caxtol	NUM	_	_	_	_	_	_
+36	.	.	PUNCT	_	_	_	PUNCT	_	_
+
+# sent_id = omitlan_2:4
+# text = Huan otiyayah otitlapiyaya ich ce lugar que itoca Cohtla , huan occe lugar que itoca Zaloncuatlauhco .
+# text[spa] = Y ibamos a cuidar en un lugar que se llama Cohtla, y otro lugar que se llama Zaloncuatlauhco .
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2-3	opiyaya	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	_	_	_
+3	piyaya	piya	VERB	_	_	_	_	_	_
+4-5	otitlapiyaya	_	_	_	_	_	_	_	_
+4	o	VERB	AUX	_	_	_	_	_	_
+5	titlapiyaya	tlapiya	VERB	_	_	_	_	_	_
+6	ich	tich	NOUN	_	_	_	_	_	_
+7	ce	ce	DET	_	_	8	det	8:det	_
+8	lugar	lugar	NOUN	_	_	_	_	_	_
+9	que	que	PRON	_	_	_	_	_	_
+10	itoca	toca	NOUN	_	_	_	_	_	_
+11	Cohtla	Cohtla	PROPN	_	_	_	_	_	_
+12	,	,	PUNCT	_	_	_	_	_	_
+13	huan	huan	CCONJ	_	_	_	_	_	_
+14	occe	occe	_	_	_	_	_	_	_
+15	lugar	lugar	NOUN	_	_	_	_	_	_
+16	que	que	PRON	_	_	_	_	_	_
+17	itoca	toca	NOUN	_	_	_	_	_	_
+18	Zaloncuatlauhco	Zaloncuatlauhco	PROPN	_	_	_	_	_	_
+19	.	.	PUNCT	_	_	_	_	_	_
+
+# sent_id = omitlan_2:5
+# text = Huan niquihlnamiqui a veces oquiyohuiya .
+# text[spa] = Y recuerdo a veces llovía .
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	niquihlnamiqui	ihlnamiqui	VERB	_	_	_	_	_	_
+3	a	a	ADP	_	_	4	case	4:case	_
+4	veces	vez	NOUN	_	_	_	_	_	_
+5-6	oquiyohuiya	_   _	_	_	_	_	_	_
+5   o	o	AUX _	_	_	_	_	_
+6   quiyohuiya quiyohui   VERB    _	_	_	_	_	_
+7	.	.	PUNCT	_	_	_	_	_	_
+
+# sent_id = omitlan_2:6
+# text = Huan otiyaya ohcón otitlapiyayah .
+# text[spa] = E íbamos así a cuidar.
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2-3	otiyaya	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	_	_	_
+3	tiyaya	yo	VERB	_	_	_	_	_	_
+4	ohcón	ohcón	ADV	_	_	_	_	_	_
+4-5	otitlapiyayah	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	_	_	_
+5	titlapiyayah	piya	VERB	_	_	_	_	_	_
+6	.	.	PUNCT	_	_	_	_	_	_
+
+# sent_id = omitlan_2:7
+# text = Nomama otechinmacaya ciqui botas para amo mo ceicxipalti.
+# text[spa] = Mi mamá antes nos daba botas para que no nos mojaran los pies.
+# text[eng] = My mom used to give us boots in order to not get our feet wet.
+# labels = partial incorporation
+1	Nomama	mama	NOUN	_	Number[psor]=Sing|Person[psor]=1	3	nsubj	3:nsubj	_
+2-3	otechinmacaya	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	Aspect=Perf	3	aux	3:aux	_
+3	techinmacaya	maca	VERB	maca	Number[iobj]=Plur|Person[iobj]=1|Number[obj]=Plur|Person[obj]=3|Number[subj]=Sing|Person[subj]=3|Valency=3	0	root	0:root	_
+4	ciqui	ciqui	DET	_	_	5	det	5:det	_
+5	botas	bota	NOUN	_	Number=Plur	3	obj	3:obj	_
+6	para	para	SCONJ	_	_	9	mark	9:mark	_
+7	amo	amo	ADV	_	_	9	advmod	9:advmod	_
+8	mo	mo	AUX	_	_	9	aux	9:aux	_
+9	ceicxipalti	icxipalti	VERB	paltia	Valency=1	3	advcl	3:advcl	_
+9.1	icxi	icxi	NOUN	_	_	_	_	9:obj	_
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = omitlan_2:8
+# text = Pero nochipa opaltiya tocxihuan a veces ocalaquiya atl ichin tobotas huan omocatquiya cimi chistoso cuando otinihnimiyah omocaquiya xa queme otimiguixtayah
+# text[spa] = Pero siempre se mojaban nuestros pies a veces se metía agua en nuestras botas y se escuchaba muy chistoso cuando caminábamos quizá como si echáran pedos.
+# labels = partial
+1	Pero	pero	CCONJ	_	_	_	_	_	_
+2	nochipa	nnochipa	ADV	_	_	_	_	_	_
+3-4	opaltiya	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	paltia	palti	VERB	_	_	_	_	_	_
+5	tocxihuan	icxi	NOUN	_	_	_	_	_	_
+6	a	a	ADP	_	_	_	_	_	_
+7	veces	vez	NOUN	_	_	_	_	_	_
+8-9	ocalaquiya	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	calaquiya	calaqui	VERB	_	_	_	_	_	_
+10	atl	atl	NOUN	_	_	_	_	_	_
+11	ich	tich	NOUN	_	_	_	_	_	_
+12	in	in	DET	_	_	_	_	_	_
+13	tobotas	bota	NOUN	_	_	_	_	_	_
+14	huan	huan	CCONJ	_	_	_	_	_	_
+15-16	omocaquiya	_	_	_	_	_	_	_	_
+15	o	o	AUX	_	_	_	aux	_	_
+16	mocaquiya	caqui	VERB	_	_	_	_	_	_
+17	cimi	cimi	ADV	_	_	_	_	_	_
+18	chistoso	chistoso	ADJ	_	_	_	_	_	_
+19	cuando	cuando	SCONJ	_	_	_	_	_	_
+20-21	otinihnimiyah	_	_	_	_	_	_	_	_
+20	o	o	AUX	_	_	_	aux	_	_
+21	tinihnimiyah	nihnimi	VERB	_	_	_	_	_	_
+22-23	omocaquiya	_	_	_	_	_	_	_	_
+22	o	o	AUX	_	_	_	aux	_	_
+23	mocaquiya	caqui	VERB	_	_	_	_	_	_
+24	xa	xa	ADV	_	_	_	_	_	_
+25	queme	queme	ADV	_	_	_	_	_	_
+26-27	otimiguixtayah	_	_	_	_	_	_	_	_
+26	o	o	AUX	_	_	_	aux	_	_
+27	timiguixtayah	miguixi	VERB	_	_	_	_	_	_
+
+# sent_id = omitlan_2:9
+# text = Pero bueno.
+# text[spa] = Pero bueno.
+# labels = partial
+1	Pero	pero	CCONJ	_	_	_	_	_	_
+2	bueno	bueno	ADV	_	_	_	_	_	_
+3	.	.	PUNCT	_	_	_	PUNCT	_	_
+
+# sent_id = omitlan_2:10
+# text = Huan neh niquihlnamiqui cuando nomama omocahuaya sin tomen
+# text[spa] = Y yo recuerdo cuando mi mamá quedaba sin dinero
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	neh	neh	PRON	_	_	_	_	_	_
+3	niquihlnamiqui	ihlnamiqui	VERB	_	_	_	_	_	_
+4	cuando	cuando	SCONJ	_	_	_	_	_	_
+5	nomama	mama	NOUN	_	_	_	_	_	_
+6-7	omocahuaya	_	_	_	_	_	_	_	_
+6	o	o	AUX	_	_	_	aux	_	_
+7	mocahuaya	cahua	VERB	_	_	_	_	_	_
+8	sin	sin	ADP	_	_	_	_	_	_
+9	tomen	tomen	NOUN	_	_	_	_	_	_
+
+# sent_id = omitlan_2:11
+# text = Entonces yeh ocnamacaya ce ichcatl o ome o cana hasta yeyi
+# text[spa] = 
+# labels = partial
+1	Entonces	entonces	ADV	_	_	_	_	_	_
+2	yeh	yeh	PRON	_	_	_	_	_	_
+3-4	ocnamacaya	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	cnamacaya	namaca	VERB	_	_	_	_	_	_
+5	ce	ce	NUM	_	_	_	_	_	_
+6	ichcatl	ichcatl	NOUN	_	_	_	_	_	_
+7	o	o	CCONJ	_	_	_	_	_	_
+8	ome	ome	NUM	_	_	_	_	_	_
+9	o	o	CCONJ	_	_	_	_	_	_
+10	cana	cana	ADV	_	_	_	_	_	_
+11	hasta	hasta	ADP	_	_	_	_	_	_
+12	yeyi	yeyi	NUM	_	_	_	_	_	_
+
+# sent_id = omitlan_2:12
+# text = Huan neh niquihlnamiqui onicualaniya cimi
+# text[spa] = Y yo recuerdo que me enjoaba mucho
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	neh	neh	PRON	_	_	_	_	_	_
+3	niquihlnamiqui	ihnamiqui	VERB	_	_	_	_	_	_
+4-5	onicualaniya	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	nicualaniya  cualani  VERB	_	_	_	_	_	_
+6	cimi	cimi	ADV	_	_	_	_	_	_
+
+# sent_id = omitlan_2:13
+# text = Oniquihlhuaya “ Queye tocomonamaca in ichcame ? Amo xocomonamaca neh niquintlazohtla, mejor nochipa mo cequimpiya . ”
+# text[spa] = Le decía " Porqué vende los borregos ? No lo venda yo los amo, mejor siempre hay que tenerlos . "
+# labels = partial
+1-2	Oniquihlhuaya	_	_	_	_	_	_	_	_
+1	O	o	AUX	_	_	_	aux	_	_
+2	niquihlhuaya	ihluia	VERB	_	_	_	_	_	_
+3	“	“	PUNCT	_	_	_	_	_	_
+4	Queye	queye	_	_	_	_	_	_	_
+5	tocomonamaca	namaca	VERB	_	_	_	_	_	_
+6	in	in	DET	_	_	_	_	_	_
+7	ichcame	ichcatl	NOUN	_	_	_	_	_	_
+8	?	?	PUNCT	_	_	_	_	_	_
+9	Amo	amo	ADV	_	_	_	_	_	_
+10	xocomonamaca	namaca	VERB	_	_	_	_	_	_
+11	neh	neh	PRON	_	_	_	_	_	_
+12	niquintlazohtla	tlazohtla	VERB	_	_	_	_	_	_
+13	,	,	PUNCT	_	_	_	PUNCT	_	_
+14	mejor	mejor	SCONJ	_	_	_	_	_	_
+15	nochipa	nocchipa	ADV	_	_	_	_	_	_
+16	mo	mo	PART	_	_	_	_	_	_
+17	cequimpiya	piya	VERB	_	_	_	_	_	_
+18	.	.	PUNCT	_	_	_	_	_	_
+19	”	“	PUNCT	_	_	_	_	_	_
+
+
+# sent_id = omitlan_2:14
+# text = Pero nomama onechihlhuaya “ Ay Mariana pero queni titlacuazque ? Acmo tipiyah tomen . Mejor quema mo moquinhuicacan in ichcame , huan neh ohcón nimitzincohuiliz ciqui moticachuan , o mas ce mopaleta o tla teh tleno tiquilehuiz nihuiliz nimitzcohuiz . ”
+# text[spa] = Pero mi mamá me decía " Ay Mariana pero como vamos a comer ? Ya no tenemos dinero . Mejor sí que se lleven los borregos , y yo así te puedo comprar unos zapatos  , o una paleta o lo que a tí se te antoje voy a poder comprartelo ."
+# labels = partial
+1	Pero	pero	CCONJ	_	_	_	_	_	_
+2	nomama	mama	NOUN	_	_	_	_	_	_
+3-4	onechihlhuaya	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	nechihlhuaya	ihluia	VERB	_	_	_	_	_	_
+5	“	“   PUNCT	_	_	_	_	_	_
+6	Ay	ay	INTJ	_	_	_	_	_	_
+7	Mariana	mariana	PROPN	_	_	_	_	_	_
+8	pero	pero	CCONJ	_	_	_	_	_	_
+9	queni	queni	ADV	_	_	_	_	_	_
+10	titlacuazque	cua	VERB	_	_	_	_	_	_
+11	?	?	PUNCT	_	_	_	_	_	_
+12	Acmo	acmo	ADV	_	_	_	_	_	_
+13	tipiyah	piya	VERB	_	_	_	_	_	_
+14	tomen	tomen	NOUN	_	_	_	_	_	_
+15	.	.	PUNCT	_	_	_	PUNCT	_	_
+16	Mejor	mejor	SCONJ	_	_	_	_	_	_
+17	quema	quema	INTJ	_	_	_	_	_	_
+18	moquinhuicaca	huica	VERB	_	_	_	_	_	_
+19	in	in	DET	_	_	_	_	_	_
+20	ichcame	ichcatl	NOUN	_	_	_	_	_	_
+21	,	,	PUNCT	_	_	_	PUNCT	_	_
+22	huan	huan	CCONJ	_	_	_	_	_	_
+23	neh	neh	PRON	_	_	_	_	_	_
+24	ohcón	_	_	_	_	_	_	_	_
+25	nimitzincohuiliz	cohua	VERB	_	_	_	_	_	_
+26	ciqui	ciqui	DET	_	_	_	_	_	_
+27	moticachuan	ticactl	NOUN	_	_	_	_	_	_
+28	,	,	PUNCT	_	_	_	PUNCT	_	_
+29	o	o	SCONJ	_	_	_	_	_	_
+30	mas	mas	ADP	_	_	_	_	_	_
+31	ce	ce	DET	_	_	_	_	_	_
+32	mopaleta	paleta	NOUN	_	_	_	_	_	_
+33	o	o	SCONJ	_	_	_	_	_	_
+34	tla	tla	SCONJ	_	_	_	_	_	_
+35	teh	teh	PRON	_	_	_	_	_	_
+36	tleno	tleno	PRON	_	_	_	_	_	_
+37	tiquilehuiz	ilehuia	VERB	_	_	_	_	_	_
+38	nihuiliz	huili	VERB	_	_	_	_	_	_
+39	nimitzcohuiz	cohui	VERB	_	_	_	_	_	_
+40	.	.	PUNCT	_	_	_	_	_	_
+41	”	”	PUNCT	_	_	_	_	_	_
+
+# sent_id = omitlan_2:15
+# text = Pero neh queme onicualaniya, huan neh onichocaya porque cimi oniquintlazohtlaya ichcame.
+# text[spa] = Pero yo como que me enojaba, y yo lloraba porque quería mucho a los borregos.
+# labels = partial
+1	Pero	pero	CCONJ	_	_	_	_	_	_
+2	neh	neh	PRON	_	_	_	_	_	_
+3	queme	queme	INTJ	_	_	_	_	_	_
+4-5	onicualaniya	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	nicualaniya	cualani	VERB	_	_	_	_	_	_
+6	,	,	PUNCT	_	_	_	PUNCT	_	_
+7	huan	huan	CCONJ	_	_	_	_	_	_
+8	neh	neh	PRON	_	_	_	_	_	_
+9-10	onichocaya	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	nichocaya	choca	VERB	_	_	_	_	_	_
+11	porque	porque	SCONJ	_	_	_	_	_	_
+12	cimi	cimi	ADV	_	_	_	_	_	_
+13-14	oniquintlazohtlaya	_	_	_	_	_	_	_	_
+13	o	o	AUX	_	_	_	aux	_	_
+14	niquintlazohtlaya	tlazohtla	VERB	_	_	_	_	_	_
+15	ichcame	ichcatl	NOUN	_	_	_	_	_	_
+16	.	.	PUNCT	_	_	_	PUNCT	_	_
+
+# sent_id = omitlan_2:16
+# text = Huan por eso amo oniniquiya nomama oquinamacani pero yeh oquinamacac.
+# text[spa] = Y por eso no quería que mi mamá los vendiera, pero ella los vendió.
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	por	por	ADP	_	_	_	_	_	_
+3	eso	ese	PRON	_	_	_	_	_	_
+4	amo	amo	ADV	_	_	_	_	_	_
+5-6	oniniquiya	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	niniquiya	niqui	VERB	_	_	_	_	_	_
+7	nomama	mama	NOUN	_	_	_	_	_	_
+8-9	oquinamacani	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	quinamacani	namaca	VERB	_	_	_	_	_	_
+10	pero	pero	CCONJ	_	_	_	_	_	_
+11	yeh	yeh	PRON	_	_	_	_	_	_
+12-13	oquinamacac	_	_	_	_	_	_	_	_
+12	o	o	AUX	_	_	_	aux	_	_
+13	quinamacac	namaca	VERB	_	_	_	_	_	_
+14	.	.	PUNCT	_	_	_	PUNCT	_	_
+
+# sent_id = omitlan_2:17
+# text = Pero hasta axan que neh ya nicpiya ome caxtol huan ome xihuitl
+# text[spa] = Pero hasta ahora que yo tengo treinta y dos años
+# labels = partial
+1	Pero	pero	CCONJ	_	_	_	_	_	_
+2	hasta	hasta	ADP	_	_	_	_	_	_
+3	axan	axan	ADv	_	_	_	_	_	_
+4	que	que	SCONJ	_	_	_	_	_	_
+5	neh	neh	PRON	_	_	_	_	_	_
+6	ya	ya	ADV	_	_	_	_	_	_
+7	nicpiya	piya	VERB	_	_	_	_	_	_
+8	ome	ome	NUM	_	_	_	_	_	_
+9	caxtol	caxtol	NUM	_	_	_	_	_	_
+10	huan	huan	CCONJ	_	_	_	_	_	_
+11	ome	ome	NUM	_	_	_	_	_	_
+12	xihuitl	xihuitl	NOUN	_	_	_	_	_	_
+
+# sent_id = omitlan_2:18
+# text = Hasta yeh neh niquentenderoa que nomama queni oquimachilaya porque
+# text[spa] = Hasta yo entiendo como se sentía mi mamá porque
+# labels = partial
+1	Hasta	hasta	ADP	_	_	_	_	_	_
+2	yeh	yeh	PRON	_	_	_	_	_	_
+3	neh	neh	PRON	_	_	_	_	_	_
+4	niquentenderoa	entenderoa	VERB	_	_	_	_	_	_
+5	que	que	SCONJ	_	_	_	_	_	_
+6	nomama	mama	NOUN	_	_	_	_	_	_
+7	queni	queni	ADV	_	_	_	_	_	_
+8-9	oquimachilaya	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	quimachilaya	machilia	VERB	_	_	_	_	_	_
+10	porque	porque	SCONJ	_	_	_	_	_	_
+
+# sent_id = omitlan_2:19
+# text = Porque nopapa ya cimi otlahuanaya acmo ocpalehuaya
+# text[spa] = Porque mi papá ya tomaba mucho ya no la ayudaba
+# labels = partial
+1	Porque	porque	SCONJ	_	_	_	_	_	_
+2	nopapa	papa	NOUN	_	_	_	_	_	_
+3	ya	ya	ADV	_	_	_	_	_	_
+4	cimi	cimi	ADV	_	_	_	_	_	_
+5-6	otlahuanaya	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	tlahuanaya	huana	VERB	_	_	_	_	_	_
+7	acmo	acmo	ADP	_	_	_	_	_	_
+8-9	ocpalehuaya	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	cpalehuaya	palehuia	VERB	_	_	_	_	_	_
+
+# sent_id = omitlan_2:20
+# text = Entonces in yeh por eso oquinpiyaya ichcame
+# text[spa] = Entonces por eso ella tenía borregos
+# labels = partial
+1	Entonces	entonces	ADV	_	_	_	_	_	_
+2	in	in	DET	_	_	_	_	_	_
+3	yeh	yeh	PRON	_	_	_	_	_	_
+4	por	por	ADP	_	_	_	_	_	_
+5	eso	ese	PRON	_	_	_	_	_	_
+6-7	oquinpiyaya	_	_	_	_	_	_	_	_
+6	o	o	AUX	_	_	_	aux	_	_
+7	quinpiyaya	piya	VERB	_	_	_	_	_	_
+8	ichcame	ichcatl	NOUN	_	_	_	_	_	_
+
+# sent_id = omitlan_2:21
+# text = Para ohcon techmanteneroz tehuan tiomen
+# text[spa] = Para así mantenernos a nosotros dos
+# labels = partial
+1	Para	para	ADP	_	_	_	_	_	_
+2	ohcon	ohcón	ADV	_	_	_	_	_	_
+3	techmanteneroz	manteneroa	VERB	_	_	_	_	_	_
+4	tehuan	tehuan	PRON	_	_	_	_	_	_
+5	tiomen	ome	NOUN	_	_	_	_	_	_
+
+# sent_id = omitlan_2:22
+# text = Tlen oticatcah oc titzocotzitzih
+# text[spa] = Que estábamos aun pequeñitos
+# labels = partial
+1	Tlen	tleno	SCONJ	_	_	_	_	_	_
+2-3	oticatcah	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	ticatcah	ca	VERB	_	_	_	_	_	_
+4	oc	oc	AUX	_	_	_	_	_	_
+5	titzocotzitzih	tzocotzi	ADJ	_	_	_	_	_	_
+
+# sent_id = omitlan_2:23
+# text = Occiqui nocnihuan pues cachi ocatca huehhueyen
+# text[spa] = Mis otros hermanos pues estaban mas grandes
+# labels = partial
+1	Occiqui	-	_	_	_	_	_	_	_
+2	nocnihuan	icni	NOUN	_	_	_	_	_	_
+3	pues	pues	ADV	_	_	_	_	_	_
+4	cachi	cachi	ADV	_	_	_	_	_	_
+5-6	ocatca	ca	VERB	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	catca	ca	VERB	_	_	_	_	_	_
+7	huehhueyen	hueyi	ADJ	_	_	_	_	_	_
+
+# sent_id = omitlan_2:24
+# text = Yeh oyaya a Mexico yotiquitiya
+# text[spa] = Iban a Mexico ya trabajaban
+# labels = partial
+1	Yeh	yeh	PRON	_	_	_	_	_	_
+2-3	oyaya	yo	VERB	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	yaya	yo	VERB	_	_	_	_	_	_
+4	a	a	ADP	_	_	_	_	_	_
+5	Mexico	mexico	PROPN	_	_	_	_	_	_
+6	yotiquitiya	tiquiti	VERB	_	_	_	_	_	_
+
+# sent_id = omitlan_2:25
+# text = Yotiquitiya para inpihlhuan o para incal
+# text[spa] = Ya trabajaban para sus hijos o para sus casas
+# labels = partial
+1	Yotiquitiya	tiquiti	VERB	_	_	_	_	_	_
+2	para	para	ADP	_	_	_	_	_	_
+3	inpihlhuan	pilli	NOUN	_	_	_	_	_	_
+4	o	o	SCONJ	_	_	_	_	_	_
+5	para	para	ADP	_	_	_	_	_	_
+6	incal	calli	NOUN	_	_	_	_	_	_
+
+# sent_id = omitlan_2:26
+# text = Ahorita nochten quimpiya incalhuan
+# text[spa] = Ahorita todos tienen sus casas
+# labels = partial
+1	Ahorita	ahora	ADV	_	_	_	_	_	_
+2	nochten	nochi	DET	_	_	_	_	_	_
+3	quimpiya	piya	VERB	_	_	_	_	_	_
+4	incalhuan	calli	NOUN	_	_	_	_	_	_
+
+# sent_id = omitlan_2:27
+# text = Bueno za ye nin oniniquiya niquihtoz
+# text[spa] = Bueno solo esto quería decir
+# labels = partial
+1	Bueno	bueno	ADV	_	_	_	_	_	_
+2	za	_	_	_	_	_	_	_	_
+3	ye	_	_	_	_	_	_	_	_
+4	nin	nin	PRON	_	_	_	_	_	_
+5-6	oniniquiya	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	niniquiya	niniqui	VERB	_	_	_	_	_	_
+7	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
+
+# sent_id = omitlan_2:28
+# text = Huan cana occe tonal niquihtoz occe historia a ver tla mitzpactiya
+# text[spa] = Y quizás otro día contaré otra historia a ver si te gusta
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	cana	cana	ADV	_	_	_	_	_	_
+3	occe	occe	DET	_	_	_	_	_	_
+4	tonal	tonal	NOUN	_	_	_	_	_	_
+5	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
+6	occe	occe	DET	_	_	_	_	_	_
+7	historia	historia	NOUN	_	_	_	_	_	_
+8	a	_	_	_	_	_	_	_	_
+9	ver	ver	VERB	_	_	_	_	_	_
+10	tla	tla	SCONJ	_	_	_	_	_	_
+11	mitzpactiya	pactiya	VERB	_	_	_	_	_	_
+
