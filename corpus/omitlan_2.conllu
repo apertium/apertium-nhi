@@ -33,12 +33,12 @@
 # text[spa] = Bueno yo voy a contar una historia cuando tenía diez años y tengo un hermano que se llama Darío, él tenía ocho años y recuerdo que teníamos muchos borregos, quizás como quince.
 # labels = partial
 1	Bueno	bueno	ADV	_	_	_	_	_	_
-2	neh	neh	PRON	_	_	_	_	_	_
+2	neh	nehuatl	PRON	_	_	_	_	_	_
 3	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
 4	ce	ce	DET	_	_	_	_	_	_
 5	historia	historia	NOUN	_	_	_	_	_	_
 6	cuando	cuando	SCONJ	_	_	_	_	_	_
-7	neh	neh	PRON	_	_	_	_	_	_
+7	neh	nehuatl	PRON	_	_	_	_	_	_
 8-9	onipiyaya	_	_	_	_	_	_	_	_
 8	o	o	AUX	_	_	_	aux	_	_
 9	nipiyaya	piya	VERB	_	_	_	_	_	_
@@ -48,11 +48,11 @@
 13	nicpiya	piya	VERB	_	_	_	_	_	_
 14	ce	ce	DET	_	_	_	_	_	_
 15	nocni	icni	NOUN	_	_	_	_	_	_
-16	yeh	yeh	PRON	_	_	_	_	_	_
+16	yeh	yehuatl	PRON	_	_	_	_	_	_
 17	itoca	toca	NOUN	_	_	_	_	_	_
 18	Darío	Darío	PROPN	_	_	_	_	_	_
 19	,	,	PUNCT	_	_	_	PUNCT	_	_
-20	yeh	yeh	PRON	_	_	_	_	_	_
+20	yeh	yehuatl	PRON	_	_	_	_	_	_
 21-22	ocpiyaya	_	_	_	_	_	_	_	_
 21	o	o	AUX	_	_	_	aux	_	_
 22	cpiyaya	piya	VERB	_	_	_	_	_	_
@@ -192,7 +192,7 @@
 # text[spa] = Y yo recuerdo cuando mi mamá quedaba sin dinero
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
-2	neh	neh	PRON	_	_	_	_	_	_
+2	neh	nehuatl	PRON	_	_	_	_	_	_
 3	niquihlnamiqui	ihlnamiqui	VERB	_	_	_	_	_	_
 4	cuando	cuando	SCONJ	_	_	_	_	_	_
 5	nomama	mama	NOUN	_	_	_	_	_	_
@@ -207,7 +207,7 @@
 # text[spa] = 
 # labels = partial
 1	Entonces	entonces	ADV	_	_	_	_	_	_
-2	yeh	yeh	PRON	_	_	_	_	_	_
+2	yeh	yehuatl	PRON	_	_	_	_	_	_
 3-4	ocnamacaya	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
 4	cnamacaya	namaca	VERB	_	_	_	_	_	_
@@ -225,7 +225,7 @@
 # text[spa] = Y yo recuerdo que me enjoaba mucho
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
-2	neh	neh	PRON	_	_	_	_	_	_
+2	neh	nehuatl	PRON	_	_	_	_	_	_
 3	niquihlnamiqui	ihnamiqui	VERB	_	_	_	_	_	_
 4-5	onicualaniya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
@@ -247,7 +247,7 @@
 8	?	?	PUNCT	_	_	_	_	_	_
 9	Amo	amo	ADV	_	_	_	_	_	_
 10	xocomonamaca	namaca	VERB	_	_	_	_	_	_
-11	neh	neh	PRON	_	_	_	_	_	_
+11	neh	nehuatl	PRON	_	_	_	_	_	_
 12	niquintlazohtla	tlazohtla	VERB	_	_	_	_	_	_
 13	,	,	PUNCT	_	_	_	PUNCT	_	_
 14	mejor	mejor	SCONJ	_	_	_	_	_	_
@@ -285,7 +285,7 @@
 20	ichcame	ichcatl	NOUN	_	_	_	_	_	_
 21	,	,	PUNCT	_	_	_	PUNCT	_	_
 22	huan	huan	CCONJ	_	_	_	_	_	_
-23	neh	neh	PRON	_	_	_	_	_	_
+23	neh	nehuatluatl	PRON	_	_	_	_	_	_
 24	ohcón	_	_	_	_	_	_	_	_
 25	nimitzincohuiliz	cohua	VERB	_	_	_	_	_	_
 26	ciqui	ciqui	DET	_	_	_	_	_	_
@@ -297,7 +297,7 @@
 32	mopaleta	paleta	NOUN	_	_	_	_	_	_
 33	o	o	SCONJ	_	_	_	_	_	_
 34	tla	tla	SCONJ	_	_	_	_	_	_
-35	teh	teh	PRON	_	_	_	_	_	_
+35	teh	tehuatl	PRON	_	_	_	_	_	_
 36	tleno	tleno	PRON	_	_	_	_	_	_
 37	tiquilehuiz	ilehuia	VERB	_	_	_	_	_	_
 38	nihuiliz	huili	VERB	_	_	_	_	_	_
@@ -310,14 +310,14 @@
 # text[spa] = Pero yo como que me enojaba, y yo lloraba porque quería mucho a los borregos.
 # labels = partial
 1	Pero	pero	CCONJ	_	_	_	_	_	_
-2	neh	neh	PRON	_	_	_	_	_	_
+2	neh	nehuatluatl	PRON	_	_	_	_	_	_
 3	queme	queme	INTJ	_	_	_	_	_	_
 4-5	onicualaniya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
 5	nicualaniya	cualani	VERB	_	_	_	_	_	_
 6	,	,	PUNCT	_	_	_	PUNCT	_	_
 7	huan	huan	CCONJ	_	_	_	_	_	_
-8	neh	neh	PRON	_	_	_	_	_	_
+8	neh	nehuatluatl	PRON	_	_	_	_	_	_
 9-10	onichocaya	_	_	_	_	_	_	_	_
 9	o	o	AUX	_	_	_	aux	_	_
 10	nichocaya	choca	VERB	_	_	_	_	_	_
@@ -345,7 +345,7 @@
 8	o	o	AUX	_	_	_	aux	_	_
 9	quinamacani	namaca	VERB	_	_	_	_	_	_
 10	pero	pero	CCONJ	_	_	_	_	_	_
-11	yeh	yeh	PRON	_	_	_	_	_	_
+11	yeh	yehuatl	PRON	_	_	_	_	_	_
 12-13	oquinamacac	_	_	_	_	_	_	_	_
 12	o	o	AUX	_	_	_	aux	_	_
 13	quinamacac	namaca	VERB	_	_	_	_	_	_
@@ -359,7 +359,7 @@
 2	hasta	hasta	ADP	_	_	_	_	_	_
 3	axan	axan	ADv	_	_	_	_	_	_
 4	que	que	SCONJ	_	_	_	_	_	_
-5	neh	neh	PRON	_	_	_	_	_	_
+5	neh	nehuatl	PRON	_	_	_	_	_	_
 6	ya	ya	ADV	_	_	_	_	_	_
 7	nicpiya	piya	VERB	_	_	_	_	_	_
 8	ome	ome	NUM	_	_	_	_	_	_
@@ -373,8 +373,8 @@
 # text[spa] = Hasta yo entiendo como se sentía mi mamá porque
 # labels = partial
 1	Hasta	hasta	ADP	_	_	_	_	_	_
-2	yeh	yeh	PRON	_	_	_	_	_	_
-3	neh	neh	PRON	_	_	_	_	_	_
+2	yeh	yehuatl	PRON	_	_	_	_	_	_
+3	neh	nehuatl	PRON	_	_	_	_	_	_
 4	niquentenderoa	entenderoa	VERB	_	_	_	_	_	_
 5	que	que	SCONJ	_	_	_	_	_	_
 6	nomama	mama	NOUN	_	_	_	_	_	_
@@ -406,7 +406,7 @@
 # labels = partial
 1	Entonces	entonces	ADV	_	_	_	_	_	_
 2	in	in	DET	_	_	_	_	_	_
-3	yeh	yeh	PRON	_	_	_	_	_	_
+3	yeh	yehuatl	PRON	_	_	_	_	_	_
 4	por	por	ADP	_	_	_	_	_	_
 5	eso	ese	PRON	_	_	_	_	_	_
 6-7	oquinpiyaya	_	_	_	_	_	_	_	_
