@@ -2,7 +2,7 @@
 # text = Neh notoca Mariana.
 # text[spa] = Me llamo Mariana.
 # labels = partial
-1	Neh	neh	PRON	_	_	2	_	2	_
+1	Neh	neh	PRON	_	_	2	dislocated	2:dislocated	_
 2	notoca	toca	NOUN	_	_	0	root	0:root	_
 3	Mariana	Mariana	PROPN	_	_	2	nsubj	2:nsubj	_
 4	.	.	PUNCT	_	_	2	punct	2:punct	_
@@ -106,8 +106,8 @@
 3	a	a	ADP	_	_	4	case	4:case	_
 4	veces	vez	NOUN	_	_	_	_	_	_
 5-6	oquiyohuiya	_   _	_	_	_	_	_	_
-5   o	o	AUX _	_	_	_	_	_
-6   quiyohuiya quiyohui   VERB    _	_	_	_	_	_
+5	o	o	AUX _	_	_	_	_	_
+6	quiyohuiya quiyohui   VERB    _	_	_	_	_	_
 7	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = omitlan_2:6
@@ -182,10 +182,10 @@
 # sent_id = omitlan_2:9
 # text = Pero bueno.
 # text[spa] = Pero bueno.
-# labels = partial
-1	Pero	pero	CCONJ	_	_	_	_	_	_
-2	bueno	bueno	ADV	_	_	_	_	_	_
-3	.	.	PUNCT	_	_	_	PUNCT	_	_
+# labels = complete 
+1	Pero	pero	CCONJ	_	_	2	cc	2:cc	_
+2	bueno	bueno	ADV	_	_	0	root	0:root	_
+3	.	.	PUNCT	_	_	2	punct	2:punct	_
 
 # sent_id = omitlan_2:10
 # text = Huan neh niquihlnamiqui cuando nomama omocahuaya sin tomen
@@ -230,10 +230,10 @@
 4-5	onicualaniya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
 5	nicualaniya  cualani  VERB	_	_	_	_	_	_
-6	cimi	cimi	ADV	_	_	_	_	_	_
+6	cimi	cimi	ADV	_	_	_	advmod	_	_
 
 # sent_id = omitlan_2:13
-# text = Oniquihlhuaya “ Queye tocomonamaca in ichcame ? Amo xocomonamaca neh niquintlazohtla, mejor nochipa mo cequimpiya . ”
+# text = Oniquihlhuaya “Queye tocomonamaca in ichcame? Amo xocomonamaca neh niquintlazohtla, mejor nochipa mo cequimpiya.”
 # text[spa] = Le decía " Porqué vende los borregos ? No lo venda yo los amo, mejor siempre hay que tenerlos . "
 # labels = partial
 1-2	Oniquihlhuaya	_	_	_	_	_	_	_	_
@@ -257,30 +257,29 @@
 18	.	.	PUNCT	_	_	_	_	_	_
 19	”	“	PUNCT	_	_	_	_	_	_
 
-
 # sent_id = omitlan_2:14
-# text = Pero nomama onechihlhuaya “ Ay Mariana pero queni titlacuazque ? Acmo tipiyah tomen . Mejor quema mo moquinhuicacan in ichcame , huan neh ohcón nimitzincohuiliz ciqui moticachuan , o mas ce mopaleta o tla teh tleno tiquilehuiz nihuiliz nimitzcohuiz . ”
+# text = Pero nomama onechihlhuaya “Ay Mariana pero queni titlacuazque? Acmo tipiyah tomen. Mejor quema mo moquinhuicacan in ichcame, huan neh ohcón nimitzincohuiliz ciqui moticachuan, o mas ce mopaleta o tla teh tleno tiquilehuiz nihuiliz nimitzcohuiz.”
 # text[spa] = Pero mi mamá me decía " Ay Mariana pero como vamos a comer ? Ya no tenemos dinero . Mejor sí que se lleven los borregos , y yo así te puedo comprar unos zapatos  , o una paleta o lo que a tí se te antoje voy a poder comprartelo ."
 # labels = partial
 1	Pero	pero	CCONJ	_	_	_	_	_	_
 2	nomama	mama	NOUN	_	_	_	_	_	_
 3-4	onechihlhuaya	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
-4	nechihlhuaya	ihluia	VERB	_	_	_	_	_	_
+4	nechihlhuaya	ihluia	VERB	_	_	0	root	_	_
 5	“	“   PUNCT	_	_	_	_	_	_
 6	Ay	ay	INTJ	_	_	_	_	_	_
-7	Mariana	mariana	PROPN	_	_	_	_	_	_
+7	Mariana	Mariana	PROPN	_	_	_	_	_	_
 8	pero	pero	CCONJ	_	_	_	_	_	_
 9	queni	queni	ADV	_	_	_	_	_	_
 10	titlacuazque	cua	VERB	_	_	_	_	_	_
 11	?	?	PUNCT	_	_	_	_	_	_
 12	Acmo	acmo	ADV	_	_	_	_	_	_
-13	tipiyah	piya	VERB	_	_	_	_	_	_
+13	tipiyah	piya	VERB	_	_	4	parataxis	_	_
 14	tomen	tomen	NOUN	_	_	_	_	_	_
 15	.	.	PUNCT	_	_	_	PUNCT	_	_
 16	Mejor	mejor	SCONJ	_	_	_	_	_	_
 17	quema	quema	INTJ	_	_	_	_	_	_
-18	moquinhuicaca	huica	VERB	_	_	_	_	_	_
+18	moquinhuicaca	huica	VERB	_	_	4	parataxis	_	_
 19	in	in	DET	_	_	_	_	_	_
 20	ichcame	ichcatl	NOUN	_	_	_	_	_	_
 21	,	,	PUNCT	_	_	_	PUNCT	_	_
@@ -357,7 +356,7 @@
 # labels = partial
 1	Pero	pero	CCONJ	_	_	_	_	_	_
 2	hasta	hasta	ADP	_	_	_	_	_	_
-3	axan	axan	ADv	_	_	_	_	_	_
+3	axan	axan	ADV	_	_	_	_	_	_
 4	que	que	SCONJ	_	_	_	_	_	_
 5	neh	nehuatl	PRON	_	_	_	_	_	_
 6	ya	ya	ADV	_	_	_	_	_	_
@@ -439,11 +438,11 @@
 # text = Occiqui nocnihuan pues cachi ocatca huehhueyen
 # text[spa] = Mis otros hermanos pues estaban mas grandes
 # labels = partial
-1	Occiqui	-	_	_	_	_	_	_	_
+1	Occiqui	_	DET	_	_	_	_	_	_
 2	nocnihuan	icni	NOUN	_	_	_	_	_	_
 3	pues	pues	ADV	_	_	_	_	_	_
 4	cachi	cachi	ADV	_	_	_	_	_	_
-5-6	ocatca	ca	VERB	_	_	_	_	_	_
+5-6	ocatca	_	_	_	_	_	_	_	_
 5	o	o	AUX	_	_	_	aux	_	_
 6	catca	ca	VERB	_	_	_	_	_	_
 7	huehhueyen	hueyi	ADJ	_	_	_	_	_	_
@@ -453,11 +452,11 @@
 # text[spa] = Iban a Mexico ya trabajaban
 # labels = partial
 1	Yeh	yeh	PRON	_	_	_	_	_	_
-2-3	oyaya	yo	VERB	_	_	_	_	_	_
+2-3	oyaya	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
 3	yaya	yo	VERB	_	_	_	_	_	_
 4	a	a	ADP	_	_	_	_	_	_
-5	Mexico	mexico	PROPN	_	_	_	_	_	_
+5	Mexico	Mexico	PROPN	_	_	_	_	_	_
 6	yotiquitiya	tiquiti	VERB	_	_	_	_	_	_
 
 # sent_id = omitlan_2:25
@@ -482,7 +481,7 @@
 
 # sent_id = omitlan_2:27
 # text = Bueno za ye nin oniniquiya niquihtoz
-# text[spa] = Bueno solo esto quería decir
+# text[spa] = Bueno sólo esto quería decir
 # labels = partial
 1	Bueno	bueno	ADV	_	_	_	_	_	_
 2	za	_	_	_	_	_	_	_	_
@@ -504,7 +503,7 @@
 5	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
 6	occe	occe	DET	_	_	_	_	_	_
 7	historia	historia	NOUN	_	_	_	_	_	_
-8	a	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	_	_	_	_
 9	ver	ver	VERB	_	_	_	_	_	_
 10	tla	tla	SCONJ	_	_	_	_	_	_
 11	mitzpactiya	pactiya	VERB	_	_	_	_	_	_
