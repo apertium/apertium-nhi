@@ -68,16 +68,16 @@
 # text = Huehca yoyaya, ihcuac ocualitac ce tapalcatihuilotl ica atl.
 # text[spa] = 
 # labels = partial
-1	Huehca	_	_	_	_	_	_	_	_
-2	yoyaya	_	_	_	_	_	_	_	_
+1	Huehca	huehca	ADV	_	_	_	_	_	_
+2	yoyaya	yaya	VERB	_	_	_	_	_	_
 3	,	,	PUNCT	_	_	_	punct	_	_
 4	ihcuac	_	_	_	_	_	_	_	_
 5-6	ocualitac	_	_	_	_	_	_	_	_
 5	o	o	AUX	_	_	_	aux	_	_
 6	cualitac	_	VERB	_	_	_	_	_	_
 7	ce	ce	DET	_	_	_	_	_	_
-8	tapalcatihuilotl	_	_	_	_	_	_	_	_
-9	ica	_	_	_	_	_	_	_	_
+8	tapalcatihuilotl	tapalcatihuilotl	NOUN	_	_	_	_	_	Cmpnd=tapalca#tihuilotl
+9	ica	ca	NOUN	_	_	_	_	_	_
 10	atl	atl	NOUN	_	_	_	_	_	_
 11	.	.	PUNCT	_	_	_	punct	_	_
 
