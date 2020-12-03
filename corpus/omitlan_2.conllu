@@ -146,7 +146,7 @@
 # text[spa] = Pero siempre se mojaban nuestros pies a veces se metía agua en nuestras botas y se escuchaba muy chistoso cuando caminábamos quizá como si echáran pedos.
 # labels = partial
 1	Pero	pero	CCONJ	_	_	_	_	_	_
-2	nochipa	nnochipa	ADV	_	_	_	_	_	_
+2	nochipa	nochipa	ADV	_	_	_	_	_	_
 3-4	opaltiya	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
 4	paltia	palti	VERB	_	_	_	_	_	_
