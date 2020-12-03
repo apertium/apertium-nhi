@@ -508,16 +508,16 @@
 
 # sent_id = tiquitini:28
 # text = Ihcuacon ce ichpocaconetl oyahtoya atlitiu.
-# text[spa] = 
-# labels = partial
-1	Ihcuacon	ihcuacon	ADV	_	_	_	advmod	_	_
+# text[spa] = Entonces una niñita iba a beber agua.
+# labels = partial check-control
+1	Ihcuacon	ihcuacon	ADV	_	_	5	advmod	_	_
 2	ce	ce	DET	_	_	3	det	_	_
-3	ichpocaconetl	ichpocaconetl	NOUN	_	_	_	_	_	Cmpnd=ichpoca#conetl
+3	ichpocaconetl	ichpocaconetl	NOUN	_	_	5	nsubj	_	Cmpnd=ichpoca#conetl
 4-5	oyahtoya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	5	aux	_	_
-5	yahtoya	_	VERB	_	_	0	root	_	_
-6	atlitiu	_	_	_	_	_	_	_	_
-7	.	.	PUNCT	_	_	_	punct	_	_
+5	yahtoya	yahto	VERB	_	_	0	root	_	_
+6	atlitiu	atli	VERB	_	_	5	xcomp	_	_
+7	.	.	PUNCT	_	_	5	punct	_	_
 
 # sent_id = tiquitini:29
 # text = Ihcuac oquitac nicancah cacalotl, cimi ocmotetzahui.
