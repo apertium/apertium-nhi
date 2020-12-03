@@ -11,9 +11,9 @@ def categorise(token):
 		return (token, token, 'PUNCT', 'PUNCT')
 	if token.lower() in ['huan', 'pero']:
 		return (token, token.lower(), 'CCONJ', '_')
-	if token.lower() in ['porque']:
+	if token.lower() in ['porque', 'tla']:
 		return (token, token.lower(), 'SCONJ', '_')
-	if token.lower() in ['pues', 'entonces', 'bueno']:
+	if token.lower() in ['pues', 'entonces', 'bueno', 'ahora', 'ahorita', 'ohcón', 'ohcon', 'cana', 'acmo']:
 		return (token, token.lower(), 'ADV', '_')
 
 	return (token, '_', '_', '_')
