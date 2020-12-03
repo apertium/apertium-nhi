@@ -437,13 +437,13 @@
 3-4	opolihuia	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
 4	polihuia	polihui	VERB	_	_	_	_	_	_
-5	occiqui	_	_	_	_	_	_	_	_
+5	occiqui	occiqui	_	_	_	_	_	_	_
 6	para	para	SCONJ	_	_	_	_	_	_
 7	que	que	SCONJ	_	_	_	_	_	_
 8	yeh	yeh	PRON	_	_	_	_	_	_
 9	amo	amo	ADV	_	_	_	_	_	_
 10	pancalaquic	pancalaqui	VERB	_	_	_	_	_	_
-11	itch	_	_	_	_	_	_	_	_
+11	itch	tich	NOUN	_	_	_	_	_	_
 12	in	in	DET	_	_	_	_	_	_
 13	atl	atl	NOUN	_	_	_	_	_	_
 14	.	.	PUNCT	_	_	_	punct	_	_
