@@ -15,7 +15,7 @@
 10	o	o	AUX	_	_	_	aux	_	_
 11	quintemoto	_	VERB	_	_	_	_	_	_
 12	ciqui	ciqui	DET	_	_	_	_	_	_
-13	chacaltzitzin	_	_	_	_	_	_	_	_
+13	chacaltzitzin	chalcaltzin	NOUN	chacalin	_	_	_	_	_
 14	,	,	PUNCT	_	_	_	punct	_	_
 15	para	para	SCONJ	_	_	_	_	_	_
 16	ica	ca	NOUN	_	_	_	_	_	_
@@ -31,7 +31,7 @@
 3-4	opeu	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
 4	peu	_	VERB	_	_	_	_	_	_
-5	amiqui	_	_	_	_	_	_	_	_
+5	amiqui	amiqui	VERB	_	_	_	_	_	_
 6	.	.	PUNCT	_	_	_	punct	_	_
 
 # sent_id = tiquitini:3
