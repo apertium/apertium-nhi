@@ -106,8 +106,8 @@
 3	a	a	ADP	_	_	4	case	4:case	_
 4	veces	vez	NOUN	_	_	_	_	_	_
 5-6	oquiyohuiya	_   _	_	_	_	_	_	_
-5	o	o	AUX _	_	_	_	_	_
-6	quiyohuiya quiyohui   VERB    _	_	_	_	_	_
+5	o	o	AUX	_	_	_	_	_	_
+6	quiyohuiya quiyohui   VERB	_	_	_	_	_	_
 7	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = omitlan_2:6
@@ -137,7 +137,7 @@
 6	para	para	SCONJ	_	_	9	mark	9:mark	_
 7	amo	amo	ADV	_	_	9	advmod	9:advmod	_
 8	mo	mo	AUX	_	_	9	aux	9:aux	_
-9	ceicxipalti	icxipalti	VERB	paltia	Valency=1	3	advcl	3:advcl	_
+9	ceicxipalti	icxipalti	VERB	paltia	Valency=1	3	advcl	3:advcl	Cmpnd=icxi#palti
 9.1	icxi	icxi	NOUN	_	_	_	_	9:obj	_
 10	.	.	PUNCT	_	_	3	punct	3:punct	_
 
@@ -146,7 +146,7 @@
 # text[spa] = Pero siempre se mojaban nuestros pies a veces se metía agua en nuestras botas y se escuchaba muy chistoso cuando caminábamos quizá como si echáran pedos.
 # labels = partial
 1	Pero	pero	CCONJ	_	_	_	_	_	_
-2	nochipa	nnochipa	ADV	_	_	_	_	_	_
+2	nochipa	nochipa	ADV	_	_	_	_	_	_
 3-4	opaltiya	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
 4	paltia	palti	VERB	_	_	_	_	_	_
