@@ -1,0 +1,619 @@
+# sent_id = tiquitini:1
+# text = Ce cualcan itich in tlapohual de mayo ce cacalotl oquintemoto ciqui chacaltzitzin, para ica tlacuaz.
+# text[spa] = 
+# labels = partial
+1	Ce	ce	DET	_	_	_	_	_	_
+2	cualcan	cualcan	ADV	_	_	_	_	_	_
+3	itich	tich	NOUN	_	_	_	_	_	_
+4	in	in	DET	_	_	_	_	_	_
+5	tlapohual	tlapohualli	NOUN	_	_	_	_	_	_
+6	de	de	ADP	_	_	_	_	_	_
+7	mayo	mayo	NOUN	_	_	_	_	_	_
+8	ce	ce	DET	_	_	_	_	_	_
+9	cacalotl	cacalotl	NOUN	_	_	_	_	_	_
+10-11	oquintemoto	_	_	_	_	_	_	_	_
+10	o	o	AUX	_	_	_	aux	_	_
+11	quintemoto	_	VERB	_	_	_	_	_	_
+12	ciqui	ciqui	DET	_	_	_	_	_	_
+13	chacaltzitzin	_	_	_	_	_	_	_	_
+14	,	,	PUNCT	_	_	_	punct	_	_
+15	para	para	SCONJ	_	_	_	_	_	_
+16	ica	ca	NOUN	_	_	_	_	_	_
+17	tlacuaz	tlacua	VERB	_	_	_	_	_	_
+18	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:2
+# text = Ihcuac yotlamitlacuah opeu amiqui.
+# text[spa] = 
+# labels = partial
+1	Ihcuac	_	_	_	_	_	_	_	_
+2	yotlamitlacuah	_	_	_	_	_	_	_	_
+3-4	opeu	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	peu	_	VERB	_	_	_	_	_	_
+5	amiqui	_	_	_	_	_	_	_	_
+6	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:3
+# text = Yeh icmatoc nic ohueh cahciz atl.
+# text[spa] = 
+# labels = partial
+1	Yeh	yeh	PRON	_	_	_	_	_	_
+2	icmatoc	_	_	_	_	_	_	_	_
+3	nic	_	_	_	_	_	_	_	_
+4-5	ohueh	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	hueh	_	VERB	_	_	_	_	_	_
+6	cahciz	_	_	_	_	_	_	_	_
+7	atl	atl	NOUN	_	_	_	_	_	_
+8	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:4
+# text = Oyah opatlantah octemoto atl.
+# text[spa] = 
+# labels = partial
+1-2	Oyah	_	_	_	_	_	_	_	_
+1	O	o	AUX	_	_	_	aux	_	_
+2	yah	_	VERB	_	_	_	_	_	_
+3-4	opatlantah	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	patlantah	patlani	VERB	_	_	_	_	_	_
+5-6	octemoto	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	ctemoto	_	VERB	_	_	_	_	_	_
+7	atl	atl	NOUN	_	_	_	_	_	_
+8	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:5
+# text = Huehca yoyaya, ihcuac ocualitac ce tapalcatihuilotl ica atl.
+# text[spa] = 
+# labels = partial
+1	Huehca	_	_	_	_	_	_	_	_
+2	yoyaya	_	_	_	_	_	_	_	_
+3	,	,	PUNCT	_	_	_	punct	_	_
+4	ihcuac	_	_	_	_	_	_	_	_
+5-6	ocualitac	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	cualitac	_	VERB	_	_	_	_	_	_
+7	ce	ce	DET	_	_	_	_	_	_
+8	tapalcatihuilotl	_	_	_	_	_	_	_	_
+9	ica	_	_	_	_	_	_	_	_
+10	atl	atl	NOUN	_	_	_	_	_	_
+11	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:6
+# text = Ica mic paquiliztli ohualah icah nicancah atl.
+# text[spa] = 
+# labels = partial
+1	Ica	_	_	_	_	_	_	_	_
+2	mic	_	_	_	_	_	_	_	_
+3	paquiliztli	_	_	_	_	_	_	_	_
+4-5	ohualah	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	hualah	_	VERB	_	_	_	_	_	_
+6	icah	_	_	_	_	_	_	_	_
+7	nicancah	_	_	_	_	_	_	_	_
+8	atl	atl	NOUN	_	_	_	_	_	_
+9	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:7
+# text = Ihcuac ompa oahcito otlaocox, porque oquitac de que in atl cimi huehcatlan huan amo huili atli.
+# text[spa] = 
+# labels = partial
+1	Ihcuac	_	_	_	_	_	_	_	_
+2	ompa	ompa	ADV	_	_	_	_	_	_
+3-4	oahcito	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	ahcito	_	VERB	_	_	_	_	_	_
+5-6	otlaocox	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	tlaocox	_	VERB	_	_	_	_	_	_
+7	,	,	PUNCT	_	_	_	punct	_	_
+8	porque	porque	SCONJ	_	_	_	_	_	_
+9-10	oquitac	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	quitac	_	VERB	_	_	_	_	_	_
+11	de	de	ADP	_	_	_	_	_	_
+12	que	_	_	_	_	_	_	_	_
+13	in	_	_	_	_	_	_	_	_
+14	atl	atl	NOUN	_	_	_	_	_	_
+15	cimi	_	_	_	_	_	_	_	_
+16	huehcatlan	_	_	_	_	_	_	_	_
+17	huan	huan	CCONJ	_	_	_	_	_	_
+18	amo	amo	ADV	_	_	_	_	_	_
+19	huili	_	_	_	_	_	_	_	_
+20	atli	_	_	_	_	_	_	_	_
+21	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:8
+# text = Icompa yoixihcataya, nic cimi ocniquia atliz.
+# text[spa] = 
+# labels = partial
+1	Icompa	_	_	_	_	_	_	_	_
+2	yoixihcataya	_	_	_	_	_	_	_	_
+3	,	,	PUNCT	_	_	_	punct	_	_
+4	nic	_	_	_	_	_	_	_	_
+5	cimi	_	_	_	_	_	_	_	_
+6-7	ocniquia	_	_	_	_	_	_	_	_
+6	o	o	AUX	_	_	_	aux	_	_
+7	cniquia	_	VERB	_	_	_	_	_	_
+8	atliz	_	_	_	_	_	_	_	_
+9	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:9
+# text = Nicancah cacalotl ocmotlahtlanih:
+# text[spa] = 
+# labels = partial
+1	Nicancah	_	_	_	_	_	_	_	_
+2	cacalotl	cacalotl	NOUN	_	_	_	_	_	_
+3-4	ocmotlahtlanih	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	cmotlahtlanih	_	VERB	_	_	_	_	_	_
+5	:	:	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:10
+# text = “¿Quenih inchihuaz para natliz?”
+# text[spa] = 
+# labels = partial
+1	“	“	PUNCT	_	_	_	punct	_	_
+2	¿	¿	PUNCT	_	_	_	punct	_	_
+3	Quenih	_	_	_	_	_	_	_	_
+4	inchihuaz	_	_	_	_	_	_	_	_
+5	para	para	SCONJ	_	_	_	_	_	_
+6	natliz	_	_	_	_	_	_	_	_
+7	?	?	PUNCT	_	_	_	punct	_	_
+8	”	”	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:11
+# text = Zan tipitzin oquihtoh:
+# text[spa] = 
+# labels = partial
+1	Zan	zan	ADV	_	_	_	_	_	_
+2	tipitzin	_	_	_	_	_	_	_	_
+3-4	oquihtoh	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	quihtoh	_	VERB	_	_	_	_	_	_
+5	:	:	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:12
+# text = — ¡Ah! ¡Ya inmati tlenoh inchihuaz!
+# text[spa] = 
+# labels = partial
+1	—	—	PUNCT	_	_	_	punct	_	_
+2	¡	¡	PUNCT	_	_	_	punct	_	_
+3	Ah	_	_	_	_	_	_	_	_
+4	!	!	PUNCT	_	_	_	punct	_	_
+5	¡	¡	PUNCT	_	_	_	punct	_	_
+6	Ya	_	_	_	_	_	_	_	_
+7	inmati	_	_	_	_	_	_	_	_
+8	tlenoh	_	_	_	_	_	_	_	_
+9	inchihuaz	_	_	_	_	_	_	_	_
+10	!	!	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:13
+# text = Zatepan oyah canic oquimahcic in chacalimeh, huan ica nitempil oquian ce tlaltitl hueyihtzin.
+# text[spa] = 
+# labels = partial
+1	Zatepan	_	_	_	_	_	_	_	_
+2-3	oyah	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	yah	_	VERB	_	_	_	_	_	_
+4	canic	_	_	_	_	_	_	_	_
+5-6	oquimahcic	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	quimahcic	_	VERB	_	_	_	_	_	_
+7	in	_	_	_	_	_	_	_	_
+8	chacalimeh	_	_	_	_	_	_	_	_
+9	,	,	PUNCT	_	_	_	punct	_	_
+10	huan	huan	CCONJ	_	_	_	_	_	_
+11	ica	_	_	_	_	_	_	_	_
+12	nitempil	_	_	_	_	_	_	_	_
+13-14	oquian	_	_	_	_	_	_	_	_
+13	o	o	AUX	_	_	_	aux	_	_
+14	quian	_	VERB	_	_	_	_	_	_
+15	ce	_	_	_	_	_	_	_	_
+16	tlaltitl	tlaltitl	NOUN	_	_	_	_	_	_
+17	hueyihtzin	_	_	_	_	_	_	_	_
+18	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:14
+# text = Nicanca tlaltitl ocuicac canic icchayotihtoc in atl.
+# text[spa] = 
+# labels = partial
+1	Nicanca	_	_	_	_	_	_	_	_
+2	tlaltitl	tlaltitl	NOUN	_	_	_	_	_	_
+3-4	ocuicac	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	cuicac	_	VERB	_	_	_	_	_	_
+5	canic	_	_	_	_	_	_	_	_
+6	icchayotihtoc	_	_	_	_	_	_	_	_
+7	in	in	DET	_	_	_	_	_	_
+8	atl	atl	NOUN	_	_	_	_	_	_
+9	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:15
+# text = Ompa oahcic, huan ica mic tlamalhuil ocpantalih in tlaltlitl, ohcon para amo motlaachoponiliz.
+# text[spa] = 
+# labels = partial
+1	Ompa	_	_	_	_	_	_	_	_
+2-3	oahcic	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	ahcic	_	VERB	_	_	_	_	_	_
+4	,	,	PUNCT	_	_	_	punct	_	_
+5	huan	huan	CCONJ	_	_	_	_	_	_
+6	ica	_	_	_	_	_	_	_	_
+7	mic	_	_	_	_	_	_	_	_
+8	tlamalhuil	_	_	_	_	_	_	_	_
+9-10	ocpantalih	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	cpantalih	_	VERB	_	_	_	_	_	_
+11	in	_	_	_	_	_	_	_	_
+12	tlaltlitl	_	_	_	_	_	_	_	_
+13	,	,	PUNCT	_	_	_	punct	_	_
+14	ohcon	ohcón	ADV	_	_	_	_	_	_
+15	para	_	_	_	_	_	_	_	_
+16	amo	amo	ADV	_	_	_	_	_	_
+17	motlaachoponiliz	_	VERB	_	_	_	_	_	_
+18	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:16
+# text = — Axan occipa manioh — ohcon ocmoilhuih.
+# text[spa] = 
+# labels = partial
+1	—	—	PUNCT	_	_	_	punct	_	_
+2	Axan	_	_	_	_	_	_	_	_
+3-4	occipa	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	ccipa	_	VERB	_	_	_	_	_	_
+5	manioh	_	_	_	_	_	_	_	_
+6	—	—	PUNCT	_	_	_	punct	_	_
+7	ohcon	ohcón	ADV	_	_	_	_	_	_
+8-9	ocmoilhuih	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	cmoilhuih	_	VERB	_	_	_	_	_	_
+10	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:17
+# text = Ihcuacon ocachi ya tona chicahuac, huan yeh ohcon ocmotiquitaya tiquitic.
+# text[spa] = 
+# labels = partial
+1	Ihcuacon	_	_	_	_	_	_	_	_
+2-3	ocachi	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	cachi	_	VERB	_	_	_	_	_	_
+4	ya	_	_	_	_	_	_	_	_
+5	tona	_	_	_	_	_	_	_	_
+6	chicahuac	_	_	_	_	_	_	_	_
+7	,	,	PUNCT	_	_	_	punct	_	_
+8	huan	huan	CCONJ	_	_	_	_	_	_
+9	yeh	yeh	PRON	_	_	_	_	_	_
+10	ohcon	ohcón	ADV	_	_	_	_	_	_
+11-12	ocmotiquitaya	_	_	_	_	_	_	_	_
+11	o	o	AUX	_	_	_	aux	_	_
+12	cmotiquitaya	_	VERB	_	_	_	_	_	_
+13	tiquitic	_	_	_	_	_	_	_	_
+14	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:18
+# text = Nichan ocnextilihqueh de que amoqueman mactlahcolcahua ce tiquitl.
+# text[spa] = 
+# labels = partial
+1	Nichan	_	_	_	_	_	_	_	_
+2-3	ocnextilihqueh	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	cnextilihqueh	_	VERB	_	_	_	_	_	_
+4	de	de	ADP	_	_	_	_	_	_
+5	que	_	_	_	_	_	_	_	_
+6	amoqueman	_	_	_	_	_	_	_	_
+7	mactlahcolcahua	_	_	_	_	_	_	_	_
+8	ce	_	_	_	_	_	_	_	_
+9	tiquitl	_	_	_	_	_	_	_	_
+10	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:19
+# text = Amati tleca ihcuac oahcia icah in atl oquitaya ocachi tzocotzitzin in tlaltitl, amo ocmatia tleca.
+# text[spa] = 
+# labels = partial
+1	Amati	_	_	_	_	_	_	_	_
+2	tleca	_	_	_	_	_	_	_	_
+3	ihcuac	_	_	_	_	_	_	_	_
+4-5	oahcia	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	ahcia	_	VERB	_	_	_	_	_	_
+6	icah	_	_	_	_	_	_	_	_
+7	in	_	_	_	_	_	_	_	_
+8	atl	atl	NOUN	_	_	_	_	_	_
+9-10	oquitaya	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	quitaya	_	VERB	_	_	_	_	_	_
+11-12	ocachi	_	_	_	_	_	_	_	_
+11	o	o	AUX	_	_	_	aux	_	_
+12	cachi	_	VERB	_	_	_	_	_	_
+13	tzocotzitzin	_	_	_	_	_	_	_	_
+14	in	_	_	_	_	_	_	_	_
+15	tlaltitl	tlaltitl	NOUN	_	_	_	_	_	_
+16	,	,	PUNCT	_	_	_	punct	_	_
+17	amo	amo	ADV	_	_	_	_	_	_
+18-19	ocmatia	_	_	_	_	_	_	_	_
+18	o	o	AUX	_	_	_	aux	_	_
+19	cmatia	_	VERB	_	_	_	_	_	_
+20	tleca	_	_	_	_	_	_	_	_
+21	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:20
+# text = Tlen quemah ocmatia, nic ocpiayaya de que ihcihuiz ocachi.
+# text[spa] = 
+# labels = partial
+1	Tlen	_	_	_	_	_	_	_	_
+2	quemah	_	_	_	_	_	_	_	_
+3-4	ocmatia	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	cmatia	_	VERB	_	_	_	_	_	_
+5	,	,	PUNCT	_	_	_	punct	_	_
+6	nic	_	_	_	_	_	_	_	_
+7-8	ocpiayaya	_	_	_	_	_	_	_	_
+7	o	o	AUX	_	_	_	aux	_	_
+8	cpiayaya	_	VERB	_	_	_	_	_	_
+9	de	de	ADP	_	_	_	_	_	_
+10	que	_	_	_	_	_	_	_	_
+11	ihcihuiz	_	_	_	_	_	_	_	_
+12-13	ocachi	_	_	_	_	_	_	_	_
+12	o	o	AUX	_	_	_	aux	_	_
+13	cachi	_	VERB	_	_	_	_	_	_
+14	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:21
+# text = — ¡Ah!, ¡cimi yonciyau! — octohuaya —, pero icpia que intlacamatic tlen onechilhuihqueh notahuan:
+# text[spa] = 
+# labels = partial
+1	—	—	PUNCT	_	_	_	punct	_	_
+2	¡	¡	PUNCT	_	_	_	punct	_	_
+3	Ah	_	_	_	_	_	_	_	_
+4	!	!	PUNCT	_	_	_	punct	_	_
+5	,	,	PUNCT	_	_	_	punct	_	_
+6	¡	¡	PUNCT	_	_	_	punct	_	_
+7	cimi	_	_	_	_	_	_	_	_
+8	yonciyau	_	_	_	_	_	_	_	_
+9	!	!	PUNCT	_	_	_	punct	_	_
+10	—	—	PUNCT	_	_	_	punct	_	_
+11-12	octohuaya	_	_	_	_	_	_	_	_
+11	o	o	AUX	_	_	_	aux	_	_
+12	ctohuaya	_	VERB	_	_	_	_	_	_
+13	—	—	PUNCT	_	_	_	punct	_	_
+14	,	,	PUNCT	_	_	_	punct	_	_
+15	pero	pero	CCONJ	_	_	_	_	_	_
+16	icpia	_	_	_	_	_	_	_	_
+17	que	_	_	_	_	_	_	_	_
+18	intlacamatic	_	_	_	_	_	_	_	_
+19	tlen	_	_	_	_	_	_	_	_
+20-21	onechilhuihqueh	_	_	_	_	_	_	_	_
+20	o	o	AUX	_	_	_	aux	_	_
+21	nechilhuihqueh	_	VERB	_	_	_	_	_	_
+22	notahuan	_	_	_	_	_	_	_	_
+23	:	:	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:22
+# text = “¡Amo queman ixtlahcolcahua ce tiquitl!”
+# text[spa] = 
+# labels = partial
+1	“	“	PUNCT	_	_	_	punct	_	_
+2	¡	¡	PUNCT	_	_	_	punct	_	_
+3	Amo	amo	ADV	_	_	_	_	_	_
+4	queman	_	_	_	_	_	_	_	_
+5	ixtlahcolcahua	_	_	_	_	_	_	_	_
+6	ce	ce	DET	_	_	_	_	_	_
+7	tiquitl	tiquitl	NOUN	_	_	_	_	_	_
+8	!	!	PUNCT	_	_	_	punct	_	_
+9	”	”	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:23
+# text = Oquilnamic. Ohcon omocuicuipaya micpa, huan ya mic tlaltitl tlen yoczazacaya.
+# text[spa] = 
+# labels = partial
+1-2	Oquilnamic	_	_	_	_	_	_	_	_
+1	O	o	AUX	_	_	_	aux	_	_
+2	quilnamic	_	VERB	_	_	_	_	_	_
+3	.	.	PUNCT	_	_	_	punct	_	_
+4	Ohcon	ohcón	ADV	_	_	_	_	_	_
+5-6	omocuicuipaya	_	_	_	_	_	_	_	_
+5	o	o	AUX	_	_	_	aux	_	_
+6	mocuicuipaya	_	VERB	_	_	_	_	_	_
+7	micpa	_	_	_	_	_	_	_	_
+8	,	,	PUNCT	_	_	_	punct	_	_
+9	huan	huan	CCONJ	_	_	_	_	_	_
+10	ya	_	_	_	_	_	_	_	_
+11	mic	_	_	_	_	_	_	_	_
+12	tlaltitl	tlaltitl	NOUN	_	_	_	_	_	_
+13	tlen	_	_	_	_	_	_	_	_
+14	yoczazacaya	_	_	_	_	_	_	_	_
+15	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:24
+# text = Pero oc opolihuia occiqui para que yeh amo pancalaquic itch in atl.
+# text[spa] = 
+# labels = partial
+1	Pero	pero	CCONJ	_	_	_	_	_	_
+2	oc	oc	ADV	_	_	_	_	_	_
+3-4	opolihuia	_	_	_	_	_	_	_	_
+3	o	o	AUX	_	_	_	aux	_	_
+4	polihuia	polihui	VERB	_	_	_	_	_	_
+5	occiqui	_	_	_	_	_	_	_	_
+6	para	para	SCONJ	_	_	_	_	_	_
+7	que	que	SCONJ	_	_	_	_	_	_
+8	yeh	yeh	PRON	_	_	_	_	_	_
+9	amo	amo	ADV	_	_	_	_	_	_
+10	pancalaquic	pancalaqui	VERB	_	_	_	_	_	_
+11	itch	_	_	_	_	_	_	_	_
+12	in	in	DET	_	_	_	_	_	_
+13	atl	atl	NOUN	_	_	_	_	_	_
+14	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:25
+# text = Cimi yociyau, huan ya iccocohua nitempil, nic itic in tlaltitl.
+# text[spa] = 
+# labels = partial
+1	Cimi	_	_	_	_	_	_	_	_
+2	yociyau	_	_	_	_	_	_	_	_
+3	,	,	PUNCT	_	_	_	punct	_	_
+4	huan	huan	CCONJ	_	_	_	_	_	_
+5	ya	_	_	_	_	_	_	_	_
+6	iccocohua	_	_	_	_	_	_	_	_
+7	nitempil	_	_	_	_	_	_	_	_
+8	,	,	PUNCT	_	_	_	punct	_	_
+9	nic	_	_	_	_	_	_	_	_
+10	itic	_	_	_	_	_	_	_	_
+11	in	_	_	_	_	_	_	_	_
+12	tlaltitl	tlaltitl	NOUN	_	_	_	_	_	_
+13	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:26
+# text = Yotlaocox, huan icompa yacniqui tzahtzic, ihcuac opeu icyolhuia:
+# text[spa] = 
+# labels = partial
+1	Yotlaocox	_	_	_	_	_	_	_	_
+2	,	,	PUNCT	_	_	_	punct	_	_
+3	huan	huan	CCONJ	_	_	_	_	_	_
+4	icompa	_	_	_	_	_	_	_	_
+5	yacniqui	_	_	_	_	_	_	_	_
+6	tzahtzic	_	_	_	_	_	_	_	_
+7	,	,	PUNCT	_	_	_	punct	_	_
+8	ihcuac	_	_	_	_	_	_	_	_
+9-10	opeu	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	peu	_	VERB	_	_	_	_	_	_
+11	icyolhuia	_	_	_	_	_	_	_	_
+12	:	:	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:27
+# text = “¡Quemah inhuili!, ¡inhuili quemah!, ¡quemah inhuili!...”
+# text[spa] = 
+# labels = partial
+1	“	“	PUNCT	_	_	_	punct	_	_
+2	¡	¡	PUNCT	_	_	_	punct	_	_
+3	Quemah	_	_	_	_	_	_	_	_
+4	inhuili	_	_	_	_	_	_	_	_
+5	!	!	PUNCT	_	_	_	punct	_	_
+6	,	,	PUNCT	_	_	_	punct	_	_
+7	¡	¡	PUNCT	_	_	_	punct	_	_
+8	inhuili	_	_	_	_	_	_	_	_
+9	quemah	_	_	_	_	_	_	_	_
+10	!	!	PUNCT	_	_	_	punct	_	_
+11	,	,	PUNCT	_	_	_	punct	_	_
+12	¡	¡	PUNCT	_	_	_	punct	_	_
+13	quemah	_	_	_	_	_	_	_	_
+14	inhuili	_	_	_	_	_	_	_	_
+15	!	!	PUNCT	_	_	_	punct	_	_
+16	...	...	PUNCT	_	_	_	punct	_	_
+17	”	”	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:28
+# text = Ihcuacon ce ichpocaconetl oyahtoya atlitiu.
+# text[spa] = 
+# labels = partial
+1	Ihcuacon	_	_	_	_	_	_	_	_
+2	ce	ce	_	_	_	_	_	_	_
+3	ichpocaconetl	ichpocaconetl	NOUN	_	_	_	_	_	_
+4-5	oyahtoya	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	yahtoya	_	VERB	_	_	_	_	_	_
+6	atlitiu	_	_	_	_	_	_	_	_
+7	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:29
+# text = Ihcuac oquitac nicancah cacalotl, cimi ocmotetzahui.
+# text[spa] = 
+# labels = partial
+1	Ihcuac	_	_	_	_	_	_	_	_
+2-3	oquitac	_	_	_	_	_	_	_	_
+2	o	o	AUX	_	_	_	aux	_	_
+3	quitac	_	VERB	_	_	_	_	_	_
+4	nicancah	_	_	_	_	_	_	_	_
+5	cacalotl	cacalotl	NOUN	_	_	_	_	_	_
+6	,	,	PUNCT	_	_	_	punct	_	_
+7	cimi	_	_	_	_	_	_	_	_
+8-9	ocmotetzahui	_	_	_	_	_	_	_	_
+8	o	o	AUX	_	_	_	aux	_	_
+9	cmotetzahui	_	VERB	_	_	_	_	_	_
+10	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:30
+# text = Huan como nicancah cimi cualli conetl, amo ocyolhuih icmohmohtic o iccuiliz in atl.
+# text[spa] = 
+# labels = partial
+1	Huan	huan	CCONJ	_	_	_	_	_	_
+2	como	_	_	_	_	_	_	_	_
+3	nicancah	_	_	_	_	_	_	_	_
+4	cimi	cimi	_	_	_	_	_	_	_
+5	cualli	cualli	_	_	_	_	_	_	_
+6	conetl	conetl	NOUN	_	_	_	_	_	_
+7	,	,	PUNCT	_	_	_	punct	_	_
+8	amo	amo	ADV	_	_	_	_	_	_
+9-10	ocyolhuih	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	cyolhuih	_	VERB	_	_	_	_	_	_
+11	icmohmohtic	_	_	_	_	_	_	_	_
+12	o	_	_	_	_	_	_	_	_
+13	iccuiliz	_	_	_	_	_	_	_	_
+14	in	in	DET	_	_	_	_	_	_
+15	atl	atl	NOUN	_	_	_	_	_	_
+16	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:31
+# text = Zatepan de que otonalmic huan omociyautih oahcic in hora tlen yeh cimi occhixtoya.
+# text[spa] = 
+# labels = partial
+1	Zatepan	zatepan	ADV	_	_	_	_	_	_
+2	de	de	ADP	_	_	_	_	_	_
+3	que	_	_	_	_	_	_	_	_
+4-5	otonalmic	_	_	_	_	_	_	_	_
+4	o	o	AUX	_	_	_	aux	_	_
+5	tonalmic	_	VERB	_	_	_	_	_	_
+6	huan	huan	CCONJ	_	_	_	_	_	_
+7-8	omociyautih	_	_	_	_	_	_	_	_
+7	o	o	AUX	_	_	_	aux	_	_
+8	mociyautih	_	VERB	_	_	_	_	_	_
+9-10	oahcic	_	_	_	_	_	_	_	_
+9	o	o	AUX	_	_	_	aux	_	_
+10	ahcic	_	VERB	_	_	_	_	_	_
+11	in	in	_	_	_	_	_	_	_
+12	hora	hora	NOUN	_	_	_	_	_	_
+13	tlen	tlen	_	_	_	_	_	_	_
+14	yeh	yeh	PRON	_	_	_	_	_	_
+15	cimi	_	_	_	_	_	_	_	_
+16-17	occhixtoya	_	_	_	_	_	_	_	_
+16	o	o	AUX	_	_	_	aux	_	_
+17	cchixtoya	_	VERB	_	_	_	_	_	_
+18	.	.	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:32
+# text = ¡Atliz! Ohcon ayic oquilcau nin tlahtol:
+# text[spa] = 
+# labels = partial
+1	¡	¡	PUNCT	_	_	_	punct	_	_
+2	Atliz	_	_	_	_	_	_	_	_
+3	!	!	PUNCT	_	_	_	punct	_	_
+4	Ohcon	ohcón	ADV	_	_	_	_	_	_
+5	ayic	_	_	_	_	_	_	_	_
+6-7	oquilcau	_	_	_	_	_	_	_	_
+6	o	o	AUX	_	_	_	aux	_	_
+7	quilcau	_	VERB	_	_	_	_	_	_
+8	nin	_	_	_	_	_	_	_	_
+9	tlahtol	_	_	_	_	_	_	_	_
+10	:	:	PUNCT	_	_	_	punct	_	_
+
+# sent_id = tiquitini:33
+# text = “¡Quemah inhuili!, ¡inhuili quemah!”
+# text[spa] = 
+# labels = partial
+1	“	“	PUNCT	_	_	_	punct	_	_
+2	¡	¡	PUNCT	_	_	_	punct	_	_
+3	Quemah	_	_	_	_	_	_	_	_
+4	inhuili	_	_	_	_	_	_	_	_
+5	!	!	PUNCT	_	_	_	punct	_	_
+6	,	,	PUNCT	_	_	_	punct	_	_
+7	¡	¡	PUNCT	_	_	_	punct	_	_
+8	inhuili	_	_	_	_	_	_	_	_
+9	quemah	_	_	_	_	_	_	_	_
+10	!	!	PUNCT	_	_	_	punct	_	_
+11	”	”	PUNCT	_	_	_	punct	_	_
+
