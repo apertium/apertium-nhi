@@ -512,7 +512,7 @@
 # labels = complete check-control
 1	Ihcuacon	ihcuacon	ADV	_	_	5	advmod	5:advmod	_
 2	ce	ce	DET	_	_	3	det	3:det	_
-3	ichpocaconetl	ichpocaconetl	NOUN	_	_	5	nsubj	5:nsubj	Cmpnd=ichpoca#conetl
+3	ichpocaconetl	ichpocaconetl	NOUN	_	_	5	nsubj	5:nsubj|6:nsubj	Cmpnd=ichpoca#conetl
 4-5	oyahtoya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	5	aux	5:aux	_
 5	yahtoya	yahto	VERB	_	_	0	root	0:root	_
