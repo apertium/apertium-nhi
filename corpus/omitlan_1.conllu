@@ -496,7 +496,7 @@
 
 # sent_id = omitlan_1:23
 # text = Huan cuando onipiyaya veintinueve años oniquihtoh, “Neh niyaz in escuela.
-# text[spa] = Y cuando tenía veintinueve años dije, "yo voy a ir a la escuela. 
+# text[spa] = Y cuando tenía veintinueve años dije, "yo voy a ir a la escuela.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	cuando	cuando	ADV	_	_	_	_	_	_
@@ -544,50 +544,50 @@
 6	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:26
-# text = Niquihlnamiqui desde onicatca neh tzotzocotzi, notahhuan cuando oyaya ich in campo otiquitiya oquitlachupahuilaya cintli, itl, o occiqui cositas huan yehhuan nochipa neh onechilhuaya que cimi ociyuhque.
-# text[spa] = 
+# text = Niquihlnamiqui desde onicatca neh tzotzocotzi, notahhuan cuando oyaya ich in campo otiquitiya oquitlachupahuilaya cintli, itl, o occiqui cositas huan yehhuan nochipa neh onechilhuaya que cimi ociyohque.
+# text[spa] = Me acuerdo desde que yo era pequeña, mis padres cuando iban en el campo trabajaban limpiando la milpa, frijol, o otras cosas y ellos siempre me decían que se cansaron mucho.
 # labels = partial
-1	Niquihlnamiqui	_	_	_	_	_	_	_	_
-2	desde	_	_	_	_	_	_	_	_
+1	Niquihlnamiqui	quihlnamiqui	VERB	_	_	_	_	_	_
+2	desde	desde	ADP	_	_	_	_	_	_
 3-4	onicatca	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
-4	nicatca	_	VERB	_	_	_	_	_	_
+4	nicatca	ca	VERB	_	_	_	_	_	_
 5	neh	neh	PRON	_	_	_	_	_	_
-6	tzotzocotzi	_	_	_	_	_	_	_	_
+6	tzotzocotzi	tzotocotzi	ADJ	_	_	_	_	_	_
 7	,	,	PUNCT	_	_	_	PUNCT	_	_
-8	notahhuan	_	_	_	_	_	_	_	_
-9	cuando	_	_	_	_	_	_	_	_
+8	notahhuan	tata	NOUN	_	_	_	_	_	_
+9	cuando	cuando	ADV	_	_	_	_	_	_
 10-11	oyaya	_	_	_	_	_	_	_	_
 10	o	o	AUX	_	_	_	aux	_	_
-11	yaya	_	VERB	_	_	_	_	_	_
-12	ich	_	_	_	_	_	_	_	_
-13	in	_	_	_	_	_	_	_	_
-14	campo	_	_	_	_	_	_	_	_
+11	yaya	ya	VERB	_	_	_	_	_	_
+12	ich	tich	NOUN	_	_	_	_	_	_
+13	in	in	DET	_	_	_	_	_	_
+14	campo	campo	NOUN	_	_	_	_	_	_
 15-16	otiquitiya	_	_	_	_	_	_	_	_
 15	o	o	AUX	_	_	_	aux	_	_
-16	tiquitiya	_	VERB	_	_	_	_	_	_
+16	tiquitiya	tiquiti	VERB	_	_	_	_	_	_
 17-18	oquitlachupahuilaya	_	_	_	_	_	_	_	_
 17	o	o	AUX	_	_	_	aux	_	_
-18	quitlachupahuilaya	_	VERB	_	_	_	_	_	_
-19	cintli	_	_	_	_	_	_	_	_
+18	quitlachupahuilaya	chupahuilia	VERB	_	_	_	_	_	_
+19	cintli	cintli	NOUN	_	_	_	_	_	_
 20	,	,	PUNCT	_	_	_	PUNCT	_	_
-21	itl	_	_	_	_	_	_	_	_
+21	itl	itl	NOUN	_	_	_	_	_	_
 22	,	,	PUNCT	_	_	_	PUNCT	_	_
-23	o	_	_	_	_	_	_	_	_
-24	occiqui	_	_	_	_	_	_	_	_
-25	cositas	_	_	_	_	_	_	_	_
+23	o	o	CCONJ	_	_	_	_	_	_
+24	occiqui	ciqui	DET	_	_	_	_	_	_
+25	cositas	cosa	NOUN	_	_	_	_	_	_
 26	huan	huan	CCONJ	_	_	_	_	_	_
-27	yehhuan	_	_	_	_	_	_	_	_
-28	nochipa	_	_	_	_	_	_	_	_
+27	yehhuan	yehhuan	PRON	_	_	_	_	_	_
+28	nochipa	nochi	ADV	_	_	_	_	_	_
 29	neh	neh	PRON	_	_	_	_	_	_
 30-31	onechilhuaya	_	_	_	_	_	_	_	_
 30	o	o	AUX	_	_	_	aux	_	_
-31	nechilhuaya	_	VERB	_	_	_	_	_	_
-32	que	_	_	_	_	_	_	_	_
-33	cimi	_	_	_	_	_	_	_	_
+31	nechilhuaya	ilhuia	VERB	_	_	_	_	_	_
+32	que	que	ADP	_	_	_	_	_	_
+33	cimi	cimi	ADV	_	_	_	_	_	_
 34-35	ociyuhque	_	_	_	_	_	_	_	_
 34	o	o	AUX	_	_	_	aux	_	_
-35	ciyuhque	_	VERB	_	_	_	_	_	_
+35	ciyohque	ciyohui	VERB	_	_	_	_	_	_
 36	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:27
@@ -613,64 +613,62 @@
 
 # sent_id = omitlan_1:28
 # text = Huan yeh noyohqui oquipactaya huan nomama noyohqui.
-# text[spa] = 
+# text[spa] = Y también a mi mamá le gustaba también.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	yeh	yeh	PRON	_	_	_	_	_	_
 3	noyohqui	_	_	_	_	_	_	_	_
 4-5	oquipactaya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
-5	quipactaya	_	VERB	_	_	_	_	_	_
+5	quipactaya	pactia	VERB	_	_	_	_	_	_
 6	huan	huan	CCONJ	_	_	_	_	_	_
-7	nomama	_	_	_	_	_	_	_	_
-8	noyohqui	_	_	_	_	_	_	_	_
+7	nomama	mama	_	_	_	_	_	_	_
+8	noyohqui	noyohqui	ADV	_	_	_	_	_	_
 9	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:29
 # text = Entonces oniquihtoh, “ Pues, axan nica in Estados Unidos cachi cate oportunidades para in tehhuan. ”
-# text[spa] = 
+# text[spa] = Entonces dije, "Pues, ahora estoy en Estados Unidos hay más oportunidades para nosotros."
 # labels = partial
 1	Entonces	entonces	ADV	_	_	_	_	_	_
 2-3	oniquihtoh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	niquihtoh	_	VERB	_	_	_	_	_	_
+3	niquihtoh	quihtoa	VERB	_	_	_	_	_	_
 4	,	,	PUNCT	_	_	_	PUNCT	_	_
 5	“	“	PUNCT	_	_	_	PUNCT	_	_
 6	Pues	pues	ADV	_	_	_	_	_	_
 7	,	,	PUNCT	_	_	_	PUNCT	_	_
-8	axan	_	_	_	_	_	_	_	_
-9	nica	_	_	_	_	_	_	_	_
-10	in	_	_	_	_	_	_	_	_
-11	Estados	_	_	_	_	_	_	_	_
-12	Unidos	_	_	_	_	_	_	_	_
-13	cachi	_	_	_	_	_	_	_	_
-14	cate	_	_	_	_	_	_	_	_
-15-16	oportunidades	_	_	_	_	_	_	_	_
-15	o	o	AUX	_	_	_	aux	_	_
-16	portunidades	_	VERB	_	_	_	_	_	_
-17	para	_	_	_	_	_	_	_	_
-18	in	_	_	_	_	_	_	_	_
-19	tehhuan	_	_	_	_	_	_	_	_
-20	.	.	PUNCT	_	_	_	PUNCT	_	_
-21	”	”	PUNCT	_	_	_	PUNCT	_	_
+8	axan	axan	ADV	_	_	_	_	_	_
+9	nica	ca		VERB	_	_	_	_	_
+10	in	in	DET	_	_	_	_	_	_
+11	Estados	Estados	PROPN	_	_	_	_	_	_
+12	Unidos	Unidos	PROPN	_	_	_	_	_	_
+13	cachi	cachi	ADV	_	_	_	_	_	_
+14	cate	ca	VERB	_	_	_	_	_	_
+15	oportunidades	oportunidad	NOUN	_	_	_	_	_	_
+16	para	para	ADP	_	_	_	_	_	_
+17	in	in	DET	_	_	_	_	_	_
+18	tehhuan	tehhuan	PRON	_	_	_	_	_	_
+19	.	.	PUNCT	_	_	_	PUNCT	_	_
+20	”	”	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:30
 # text = Huan pues oniya in escuela huan notlacauh noyohqui onechpalehue.
-# text[spa] = 
+# text[spa] = Y pues fui a la escuela y mi esposo también me apoyó.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	pues	pues	ADV	_	_	_	_	_	_
 3-4	oniya	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
-4	niya	_	VERB	_	_	_	_	_	_
-5	in	_	_	_	_	_	_	_	_
-6	escuela	_	_	_	_	_	_	_	_
+4	niya	ya	VERB	_	_	_	_	_	_
+5	in	in	DET	_	_	_	_	_	_
+6	escuela	escuela	NOUN	_	_	_	_	_	_
 7	huan	huan	CCONJ	_	_	_	_	_	_
-8	notlacauh	_	_	_	_	_	_	_	_
-9	noyohqui	_	_	_	_	_	_	_	_
+8	notlacauh	tlacatl	NOUN	_	_	_	_	_	_
+9	noyohqui	noyohqui	ADV	_	_	_	_	_	_
 10-11	onechpalehue	_	_	_	_	_	_	_	_
 10	o	o	AUX	_	_	_	aux	_	_
-11	nechpalehue	_	VERB	_	_	_	_	_	_
+11	nechpalehue	palehuia	VERB	_	_	_	_	_	_
 12	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:31
