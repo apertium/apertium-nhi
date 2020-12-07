@@ -382,7 +382,7 @@
 4-5	onimatiya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
 5	nimatiya	mati	VERB	_	_	_	_	_	_
-6	tleno	_	_	_	_	_	_	_	_
+6	tleno	tleno	SCONJ	_	_	_	_	_	_
 7	nicchihuaz	chihua	VERB	_	_	_	_	_	_
 8	mox	mox	PART	_	_	_	_	_	_
 9	nimocahuaz	cahua	VERB	_	_	_	_	_	_
@@ -600,11 +600,11 @@
 4-5	oniquilhuaya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
 5	niquilhuaya	_	VERB	_	_	_	_	_	_
-6	nopapa	_	_	_	_	_	_	_	_
+6	nopapa	papa	NOUN	_	_	_	_	_	_
 7	,	,	PUNCT	_	_	_	PUNCT	_	_
 8	“	“	PUNCT	_	_	_	PUNCT	_	_
 9	Pues	pues	ADV	_	_	_	_	_	_
-10	xonhuiqui	_	_	_	_	_	_	_	_
+10	xonhuiqui	huala	VERB	_	_	_	_	_	_
 11	,	,	PUNCT	_	_	_	PUNCT	_	_
 12	nomotzonpahpachoz	_	_	_	_	_	_	_	_
 13	nomoztonsobaroz	_	_	_	_	_	_	_	_
@@ -673,69 +673,69 @@
 
 # sent_id = omitlan_1:31
 # text = Quihtoa, “ Quema xiyo in escuela, cachi cualli para in teh, huan neh nimitzpalehuiz.
-# text[spa] = 
+# text[spa] = Dice, "Sí vé a la escuela, es mejor para tí, y yo te voy a apoyar.
 # labels = partial
-1	Quihtoa	_	_	_	_	_	_	_	_
+1	Quihtoa	ihtoa	VERB	_	_	_	_	_	_
 2	,	,	PUNCT	_	_	_	PUNCT	_	_
 3	“	“	PUNCT	_	_	_	PUNCT	_	_
 4	Quema	_	_	_	_	_	_	_	_
-5	xiyo	_	_	_	_	_	_	_	_
-6	in	_	_	_	_	_	_	_	_
-7	escuela	_	_	_	_	_	_	_	_
+5	xiyo	yo	VERB	_	_	_	_	_	_
+6	in	in	DET	_	_	_	_	_	_
+7	escuela	escuela	NOUN	_	_	_	_	_	_
 8	,	,	PUNCT	_	_	_	PUNCT	_	_
-9	cachi	_	_	_	_	_	_	_	_
-10	cualli	_	_	_	_	_	_	_	_
-11	para	_	_	_	_	_	_	_	_
-12	in	_	_	_	_	_	_	_	_
-13	teh	_	_	_	_	_	_	_	_
+9	cachi	cachi	ADV	_	_	_	_	_	_
+10	cualli	cualli	ADJ	_	_	_	_	_	_
+11	para	para	ADP	_	_	_	_	_	_
+12	in	in	DET	_	_	_	_	_	_
+13	teh	tehuatl	PRON	_	_	_	_	_	_
 14	,	,	PUNCT	_	_	_	PUNCT	_	_
 15	huan	huan	CCONJ	_	_	_	_	_	_
 16	neh	neh	PRON	_	_	_	_	_	_
-17	nimitzpalehuiz	_	_	_	_	_	_	_	_
+17	nimitzpalehuiz	palehuia	VERB	_	_	_	_	_	_
 18	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:32
 # text = Timopalehuizque para teh xiquestudiaroz. ”
-# text[spa] = 
+# text[spa] = Nos vamos a apoyar para que tú estudies."
 # labels = partial
-1	Timopalehuizque	_	_	_	_	_	_	_	_
-2	para	_	_	_	_	_	_	_	_
-3	teh	_	_	_	_	_	_	_	_
-4	xiquestudiaroz	_	_	_	_	_	_	_	_
+1	Timopalehuizque	palehuia	VERB	_	_	_	_	_	_
+2	para	para	ADP	_	_	_	_	_	_
+3	teh	tehuatl	PRON	_	_	_	_	_	_
+4	xiquestudiaroz	estudiaroa	VERB	_	_	_	_	_	_
 5	.	.	PUNCT	_	_	_	PUNCT	_	_
 6	”	”	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:33
 # text = Huan milahuac oniya in escuela cuando onipiyaya ome caxtol xihuitl, huan yeh onechyolchicahuato otiquitato in escuela a ver queni catqui para amo monimopolo, entonces yeh oya nohuan.
-# text[spa] = 
+# text[spa] = Y de veras yo iba a la escuela cuando tenía treinta años, y él me fue a acompañar a ver la escuela a ver cómo está para que no me perdiera, entonces él fue conmigo.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
-2	milahuac	_	_	_	_	_	_	_	_
+2	milahuac	milahuac	ADV	_	_	_	_	_	_
 3-4	oniya	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
-4	niya	_	VERB	_	_	_	_	_	_
-5	in	_	_	_	_	_	_	_	_
-6	escuela	_	_	_	_	_	_	_	_
-7	cuando	_	_	_	_	_	_	_	_
+4	niya	yo	VERB	_	_	_	_	_	_
+5	in	in	DET	_	_	_	_	_	_
+6	escuela	escuela	NOUN	_	_	_	_	_	_
+7	cuando	cuando	ADV	_	_	_	_	_	_
 8-9	onipiyaya	_	_	_	_	_	_	_	_
 8	o	o	AUX	_	_	_	aux	_	_
-9	nipiyaya	_	VERB	_	_	_	_	_	_
-10	ome	_	_	_	_	_	_	_	_
-11	caxtol	_	_	_	_	_	_	_	_
-12	xihuitl	_	_	_	_	_	_	_	_
+9	nipiyaya	piya	VERB	_	_	_	_	_	_
+10	ome	ome	NUM	_	_	_	_	_	_
+11	caxtol	caxtol	NUM	_	_	_	_	_	_
+12	xihuitl	xihuuitl	NOUN	_	_	_	_	_	_
 13	,	,	PUNCT	_	_	_	PUNCT	_	_
 14	huan	huan	CCONJ	_	_	_	_	_	_
 15	yeh	yeh	PRON	_	_	_	_	_	_
 16-17	onechyolchicahuato	_	_	_	_	_	_	_	_
 16	o	o	AUX	_	_	_	aux	_	_
-17	nechyolchicahuato	_	VERB	_	_	_	_	_	_
+17	nechyolchicahuato	yolchicahua	VERB	_	_	_	_	_	_
 18-19	otiquitato	_	_	_	_	_	_	_	_
 18	o	o	AUX	_	_	_	aux	_	_
-19	tiquitato	_	VERB	_	_	_	_	_	_
-20	in	_	_	_	_	_	_	_	_
-21	escuela	_	_	_	_	_	_	_	_
-22	a	_	_	_	_	_	_	_	_
-23	ver	_	_	_	_	_	_	_	_
+19	tiquitato	tiquiti	VERB	_	_	_	_	_	_
+20	in	in	DET	_	_	_	_	_	_
+21	escuela	escuela	NOUN	_	_	_	_	_	_
+22	a	a	ADP	_	_	_	_	_	_
+23	ver	ver	VERB	_	_	_	_	_	_
 24	queni	_	_	_	_	_	_	_	_
 25	catqui	_	_	_	_	_	_	_	_
 26	para	_	_	_	_	_	_	_	_
@@ -752,72 +752,76 @@
 
 # sent_id = omitlan_1:34
 # text = Bueno, huan ompa neh onimihcuiloto, huan ompa yonimomachtito ome xihuitl huan yeyi tlapohual, huan ompa yonechmacaque nochten noamahuan.
-# text[spa] = 
+# text[spa] = Bueno, y ahí me inscribí, y ahí ___ dos años y tres meses, y ahí ya me dieron todos mis papeles.
 # labels = partial
 1	Bueno	bueno	ADV	_	_	_	_	_	_
 2	,	,	PUNCT	_	_	_	PUNCT	_	_
 3	huan	huan	CCONJ	_	_	_	_	_	_
-4	ompa	_	_	_	_	_	_	_	_
+4	ompa	ompa	ADV	_	_	_	_	_	_
 5	neh	neh	PRON	_	_	_	_	_	_
 6-7	onimihcuiloto	_	_	_	_	_	_	_	_
 6	o	o	AUX	_	_	_	aux	_	_
 7	nimihcuiloto	_	VERB	_	_	_	_	_	_
 8	,	,	PUNCT	_	_	_	PUNCT	_	_
 9	huan	huan	CCONJ	_	_	_	_	_	_
-10	ompa	_	_	_	_	_	_	_	_
-11	yonimomachtito	_	_	_	_	_	_	_	_
-12	ome	_	_	_	_	_	_	_	_
-13	xihuitl	_	_	_	_	_	_	_	_
-14	huan	huan	CCONJ	_	_	_	_	_	_
-15	yeyi	_	_	_	_	_	_	_	_
-16	tlapohual	_	_	_	_	_	_	_	_
-17	,	,	PUNCT	_	_	_	PUNCT	_	_
-18	huan	huan	CCONJ	_	_	_	_	_	_
-19	ompa	_	_	_	_	_	_	_	_
-20	yonechmacaque	_	_	_	_	_	_	_	_
-21	nochten	_	_	_	_	_	_	_	_
-22	noamahuan	_	_	_	_	_	_	_	_
-23	.	.	PUNCT	_	_	_	PUNCT	_	_
+10	ompa	ompa	ADV	_	_	_	_	_	_
+11-12	yonimomachtito	_	_	_	_	_	_	_	_
+11	yo	yo	AUX	_	_	_	_	_	_
+12	nimomachtito	machtia	VERB	_	_	_	_	_	_
+13	ome	ome	NUM	_	_	_	_	_	_
+14	xihuitl	xihuitl	NOUN	_	_	_	_	_	_
+15	huan	huan	CCONJ	_	_	_	_	_	_
+16	yeyi	yeyi	NUM	_	_	_	_	_	_
+17	tlapohual	tlaphoual	NOUN	_	_	_	_	_	_
+18	,	,	PUNCT	_	_	_	PUNCT	_	_
+20	huan	huan	CCONJ	_	_	_	_	_	_
+21	ompa	ompa	ADV	_	_	_	_	_	_
+22-23	yonechmacaque	_	_	_	_	_	_	_	_
+22	yo	yo	AUX	_	_	_	_	_	_
+22	nechmacaque	maca	VERB	_	_	_	_	_	_
+23	nochten	nochi	ADV	_	_	_	_	_	_
+24	noamahuan	amatl	NOUN	_	_	_	_	_	_
+25	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:35
 # text = Ya nicpiya nolicencia.
-# text[spa] = 
+# text[spa] = Ya tengo mi licencia.
 # labels = partial
-1	Ya	_	_	_	_	_	_	_	_
-2	nicpiya	_	_	_	_	_	_	_	_
-3	nolicencia	_	_	_	_	_	_	_	_
+1	Ya	ya	ADV	_	_	_	_	_	_
+2	nicpiya	piya	VERB	_	_	_	_	_	_
+3	nolicencia	licencia	NOUN	_	_	_	_	_	_
 4	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:36
 # text = Axan ya nitiquitoc de masajista.
-# text[spa] = 
+# text[spa] = Ahora ya estoy trabajando de masajista.
 # labels = partial
-1	Axan	_	_	_	_	_	_	_	_
-2	ya	_	_	_	_	_	_	_	_
-3	nitiquitoc	_	_	_	_	_	_	_	_
-4	de	_	_	_	_	_	_	_	_
-5	masajista	_	_	_	_	_	_	_	_
+1	Axan	axan	ADV	_	_	_	_	_	_
+2	ya	ya	ADV	_	_	_	_	_	_
+3	nitiquitoc	tiquiti	VERB	_	_	_	_	_	_
+4	de	de	ADP	_	_	_	_	_	_
+5	masajista	masajista	NOUN	_	_	_	_	_	_
 6	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:37
 # text = Yaqui nipiya xa queme ce semana de milahuac ya nitiquitoc.
-# text[spa] = 
+# text[spa] = Casi tengo quizás como una semana de veras ya trabajando.
 # labels = partial
-1	Yaqui	_	_	_	_	_	_	_	_
-2	nipiya	_	_	_	_	_	_	_	_
-3	xa	_	_	_	_	_	_	_	_
-4	queme	_	_	_	_	_	_	_	_
-5	ce	_	_	_	_	_	_	_	_
-6	semana	_	_	_	_	_	_	_	_
-7	de	_	_	_	_	_	_	_	_
-8	milahuac	_	_	_	_	_	_	_	_
-9	ya	_	_	_	_	_	_	_	_
-10	nitiquitoc	_	_	_	_	_	_	_	_
+1	Yaqui	yaqui	ADV	_	_	_	_	_	_
+2	nipiya	piya	VERB	_	_	_	_	_	_
+3	xa	xa	ADV	_	_	_	_	_	_
+4	queme	queme	ADV	_	_	_	_	_	_
+5	ce	ce	NUM	_	_	_	_	_	_
+6	semana	semana	NOUN	_	_	_	_	_	_
+7	de	de	ADP	_	_	_	_	_	_
+8	milahuac	milahuac	ADV	_	_	_	_	_	_
+9	ya	ya	ADV	_	_	_	_	_	_
+10	nitiquitoc	tiquiti	VERB	_	_	_	_	_	_
 11	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:38
 # text = Huan niniqui niquihtoz nin palabras, queme cimi nica niyolpactoc porque nochten tlen oninimilaya nimachilia ya que nicpiya, pues ya nitiquitoc de masajista.
-# text[spa] = 
+# text[spa] = Y quiero decir estas palabras, como estoy muy feliz porque....
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	niniqui	niqui	VERB	_	_	_	_	_	_
@@ -832,7 +836,7 @@
 10.1	yol	yolotl	NOUN	_	_	_	_	_	_
 11	porque	porque	SCONJ	_	_	_	_	_	_
 12	nochten	nochi	ADV	_	_	_	_	_	_
-13	tlen	_	_	_	_	_	_	_	_
+13	tlen	tleno	SCONJ	_	_	_	_	_	_
 14-15	oninimilaya	_	_	_	_	_	_	_	_
 14	o	o	AUX	_	_	_	aux	_	_
 15	ninimilaya	nimilia	VERB	_	_	_	_	_	_
@@ -850,7 +854,7 @@
 
 # sent_id = omitlan_1:39
 # text = Huan cimi niyolpactoc campa neh nica cimi cerquita de nochan.
-# text[spa] = 
+# text[spa] = Y estoy muy feliz donde yo estoy muy cerquita de mi casa.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	cimi	cimi	ADV	_	_	_	_	_	_
@@ -867,7 +871,7 @@
 
 # sent_id = omitlan_1:40
 # text = Niyo huan nihuitz niquitaqui notzcuin.
-# text[spa] = 
+# text[spa] = Voy y vengo para ver nuestro perro.
 # labels = partial
 1	Niyo	yo	VERB	_	_	_	_	_	_
 2	huan	huan	CCONJ	_	_	_	_	_	_
@@ -878,7 +882,7 @@
 
 # sent_id = omitlan_1:41
 # text = O! Milahuac neh nicpiya ce itzcuintli, itoca Cooper.
-# text[spa] = 
+# text[spa] = O! De veras yo tengo un perrito, se llama Cooper.
 # labels = partial
 1	O	o	INTJ	_	_	_	_	_	_
 2	!	!	PUNCT	_	_	_	PUNCT	_	_
@@ -931,54 +935,54 @@
 
 # sent_id = omitlan_1:46
 # text = Queye ticpiyah nin itzcuintli?
-# text[spa] = 
+# text[spa] = Porqué tenemos este perro?
 # labels = partial
 1	Queye	_	_	_	_	_	_	_	_
-2	ticpiyah	_	_	_	_	_	_	_	_
-3	nin	_	_	_	_	_	_	_	_
-4	itzcuintli	_	_	_	_	_	_	_	_
+2	ticpiyah	piya	VERB	_	_	_	_	_	_
+3	nin	nin	DET	_	_	_	_	_	_
+4	itzcuintli	itzcuintli	NOUN	_	_	_	_	_	_
 5	?	?	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:47
 # text = Por notlahuical.
-# text[spa] = 
+# text[spa] = Por mi esposo.
 # labels = partial
-1	Por	_	_	_	_	_	_	_	_
-2	notlahuical	_	_	_	_	_	_	_	_
+1	Por	por	ADP	_	_	_	_	_	_
+2	notlahuical	tlahuical	NOUN	_	_	_	_	_	_
 3	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:48
-# text = Yeh oquihtoh, “ Chuhue mo cequitta ce itzcuintli, zan mo cequita amo cecualicaz. ”
-# text[spa] = 
+# text = Yeh oquihtoh, “ Chuhue mo cequita ce itzcuintli, zan mo cequita amo cecualicaz. ”
+# text[spa] = Dijo, "Vámonos veamos un perro, sólo veamoslo no lo vamos a llevar."
 # labels = partial
 1	Yeh	yeh	PRON	_	_	_	_	_	_
 2-3	oquihtoh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	quihtoh	_	VERB	_	_	_	_	_	_
+3	quihtoh	ihtoa	VERB	_	_	_	_	_	_
 4	,	,	PUNCT	_	_	_	PUNCT	_	_
 5	“	“	PUNCT	_	_	_	PUNCT	_	_
-6	Chuhue	_	_	_	_	_	_	_	_
-7	mo	_	_	_	_	_	_	_	_
-8	cequitta	_	_	_	_	_	_	_	_
-9	ce	_	_	_	_	_	_	_	_
-10	itzcuintli	_	_	_	_	_	_	_	_
+6	Chuhue	yo	VERB	_	_	_	_	_	_
+7	mo	mo	PART	_	_	_	_	_	_
+8	cequitta	itta	VERB	_	_	_	_	_	_
+9	ce	ce	DET	_	_	_	_	_	_
+10	itzcuintli	itzcuintli	NOUN	_	_	_	_	_	_
 11	,	,	PUNCT	_	_	_	PUNCT	_	_
-12	zan	_	_	_	_	_	_	_	_
-13	mo	_	_	_	_	_	_	_	_
-14	cequita	_	_	_	_	_	_	_	_
+12	zan	zan	ADV	_	_	_	_	_	_
+13	mo	mo	PART	_	_	_	_	_	_
+14	cequitta	itta	VERB	_	_	_	_	_	_
 15	amo	_	_	_	_	_	_	_	_
-16	cecualicaz	_	_	_	_	_	_	_	_
+16	cecualicaz	cualica	VERB	_	_	_	_	_	_
 17	.	.	PUNCT	_	_	_	PUNCT	_	_
 18	”	”	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:49
 # text = Huan oniquihtoh “ milahuac? ”
-# text[spa] = 
+# text[spa] = Y dije "de veras?"
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2-3	oniquihtoh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	niquihtoh	_	VERB	_	_	_	_	_	_
+3	niquihtoh	ihtoa	VERB	_	_	_	_	_	_
 4	“	“	PUNCT	_	_	_	PUNCT	_	_
 5	milahuac	_	_	_	_	_	_	_	_
 6	?	?	PUNCT	_	_	_	PUNCT	_	_
@@ -1071,30 +1075,30 @@
 # text = Nochipa nochi yohualme cochi tohuan.
 # text[spa] = Siempre todas las noches duerme con nosotros.
 # labels = partial
-1	Nochipa	_	_	_	_	_	_	_	_
-2	nochi	_	_	_	_	_	_	_	_
-3	yohualme	_	_	_	_	_	_	_	_
-4	cochi	_	_	_	_	_	_	_	_
+1	Nochipa	nochipa	ADV	_	_	_	_	_	_
+2	nochi	nochi	ADP	_	_	_	_	_	_
+3	yohualme	yohual	NOUN	_	_	_	_	_	_
+4	cochi	cochi	VERB	_	_	_	_	_	_
 5	tohuan	_	_	_	_	_	_	_	_
 6	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:56
 # text = Hasta quemazá nimachilia que acmo niaqui ich in cama porque yeh nochipa cochi tohuan.
-# text[spa] = 
+# text[spa] = Hasta a veces siento que ya no cabemos en la cama porque él siempre duerme con nosotros.
 # labels = partial
-1	Hasta	_	_	_	_	_	_	_	_
-2	quemazá	_	_	_	_	_	_	_	_
-3	nimachilia	_	_	_	_	_	_	_	_
-4	que	_	_	_	_	_	_	_	_
-5	acmo	_	_	_	_	_	_	_	_
-6	niaqui	_	_	_	_	_	_	_	_
-7	ich	_	_	_	_	_	_	_	_
-8	in	_	_	_	_	_	_	_	_
-9	cama	_	_	_	_	_	_	_	_
+1	Hasta	hasta	ADV	_	_	_	_	_	_
+2	quemazá	quemazá	ADV	_	_	_	_	_	_
+3	nimachilia	machilia	VERB	_	_	_	_	_	_
+4	que	que	SCONJ	_	_	_	_	_	_
+5	acmo	acmo	ADV	_	_	_	_	_	_
+6	niaqui	aqui	VERB	_	_	_	_	_	_
+7	ich	tich	NOUN	_	_	_	_	_	_
+8	in	in	DET	_	_	_	_	_	_
+9	cama	cama	NOUN	_	_	_	_	_	_
 10	porque	porque	SCONJ	_	_	_	_	_	_
 11	yeh	yeh	PRON	_	_	_	_	_	_
-12	nochipa	_	_	_	_	_	_	_	_
-13	cochi	_	_	_	_	_	_	_	_
+12	nochipa	nochipa	ADV	_	_	_	_	_	_
+13	cochi	cochi	VERB	_	_	_	_	_	_
 14	tohuan	_	_	_	_	_	_	_	_
 15	.	.	PUNCT	_	_	_	PUNCT	_	_
 
