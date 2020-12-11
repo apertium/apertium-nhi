@@ -898,22 +898,22 @@
 
 # sent_id = omitlan_1:42
 # text = Xamo Cooper?
-# text[spa] = 
+# text[spa] = Verdad Cooper?
 # labels = partial
-1	Xamo	_	_	_	_	_	_	_	_
+1	Xamo	xamo	INTJ	_	_	_	_	_	_
 2	Cooper	Cooper	PROPN	_	_	_	_	_	_
 3	?	?	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:43
 # text = Tinechcactoc?
-# text[spa] = 
+# text[spa] = Me estás escuchando?
 # labels = partial
 1	Tinechcactoc	caqui	VERB	_	_	_	_	_	_
 2	?	?	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:44
 # text = Yeh nica huitztoc notzcuin, quema.
-# text[spa] = 
+# text[spa] = Está aquí acostado mi perro, sí.
 # labels = partial
 1	Yeh	yeh	PRON	_	_	_	_	_	_
 2	nica	nica	ADV	_	_	_	_	_	_
@@ -925,7 +925,7 @@
 
 # sent_id = omitlan_1:45
 # text = Niquihtoz neh de notzcuin.
-# text[spa] = 
+# text[spa] = Voy a contar de mi perro.
 # labels = partial
 1	Niquihtoz	quihtoa	VERB	_	_	_	_	_	_
 2	neh	neh	PRON	_	_	_	_	_	_
@@ -937,7 +937,7 @@
 # text = Queye ticpiyah nin itzcuintli?
 # text[spa] = Porqué tenemos este perro?
 # labels = partial
-1	Queye	_	_	_	_	_	_	_	_
+1	Queye	queye	ADV	_	_	_	_	_	_
 2	ticpiyah	piya	VERB	_	_	_	_	_	_
 3	nin	nin	DET	_	_	_	_	_	_
 4	itzcuintli	itzcuintli	NOUN	_	_	_	_	_	_
@@ -970,7 +970,7 @@
 12	zan	zan	ADV	_	_	_	_	_	_
 13	mo	mo	PART	_	_	_	_	_	_
 14	cequitta	itta	VERB	_	_	_	_	_	_
-15	amo	_	_	_	_	_	_	_	_
+15	amo	amo	ADV	_	_	_	_	_	_
 16	cecualicaz	cualica	VERB	_	_	_	_	_	_
 17	.	.	PUNCT	_	_	_	PUNCT	_	_
 18	”	”	PUNCT	_	_	_	PUNCT	_	_
@@ -984,53 +984,53 @@
 2	o	o	AUX	_	_	_	aux	_	_
 3	niquihtoh	ihtoa	VERB	_	_	_	_	_	_
 4	“	“	PUNCT	_	_	_	PUNCT	_	_
-5	milahuac	_	_	_	_	_	_	_	_
+5	milahuac	milahuac	_	_	_	_	_	_	_
 6	?	?	PUNCT	_	_	_	PUNCT	_	_
 7	”	”	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:50
 # text = Huan oquihtoh notlahuical “ quema. ”
-# text[spa] = 
+# text[spa] = Y mi esposo dijo "sí."
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2-3	oquihtoh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	quihtoh	_	VERB	_	_	_	_	_	_
-4	notlahuical	_	_	_	_	_	_	_	_
+3	quihtoh	quihtoa	VERB	_	_	_	_	_	_
+4	notlahuical	tlahuical	NOUN	_	_	_	_	_	_
 5	“	“	PUNCT	_	_	_	PUNCT	_	_
-6	quema	_	_	_	_	_	_	_	_
+6	quema	quema	INTJ	_	_	_	_	_	_
 7	.	.	PUNCT	_	_	_	PUNCT	_	_
 8	”	”	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:51
 # text = Huan yeh zan onechcahcayau porque otiyahque campa ocatca itzcuime huan otictlazohtlaque huan oticualicaque nin itzcuintzintli.
-# text[spa] = 
+# text[spa] = Y él sólo me estaba engañano porque fuimos donde habían perros y quisimos y llevamos este perrito.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	yeh	yeh	PRON	_	_	_	_	_	_
-3	zan	_	_	_	_	_	_	_	_
+3	zan	zan	ADV	_	_	_	_	_	_
 4-5	onechcahcayau	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
-5	nechcahcayau	_	VERB	_	_	_	_	_	_
+5	nechcahcayau	cahcayahua	VERB	_	_	_	_	_	_
 6	porque	porque	SCONJ	_	_	_	_	_	_
 7-8	otiyahque	_	_	_	_	_	_	_	_
 7	o	o	AUX	_	_	_	aux	_	_
-8	tiyahque	_	VERB	_	_	_	_	_	_
-9	campa	_	_	_	_	_	_	_	_
+8	tiyahque	yo	VERB	_	_	_	_	_	_
+9	campa	campa	ADV	_	_	_	_	_	_
 10-11	ocatca	_	_	_	_	_	_	_	_
 10	o	o	AUX	_	_	_	aux	_	_
-11	catca	_	VERB	_	_	_	_	_	_
-12	itzcuime	_	_	_	_	_	_	_	_
+11	catca	ca	VERB	_	_	_	_	_	_
+12	itzcuime	itzcuintli	_	_	_	_	_	_	_
 13	huan	huan	CCONJ	_	_	_	_	_	_
 14-15	otictlazohtlaque	_	_	_	_	_	_	_	_
 14	o	o	AUX	_	_	_	aux	_	_
-15	tictlazohtlaque	_	VERB	_	_	_	_	_	_
+15	tictlazohtlaque	tlazohtla	VERB	_	_	_	_	_	_
 16	huan	huan	CCONJ	_	_	_	_	_	_
 17-18	oticualicaque	_	_	_	_	_	_	_	_
 17	o	o	AUX	_	_	_	aux	_	_
-18	ticualicaque	_	VERB	_	_	_	_	_	_
-19	nin	_	_	_	_	_	_	_	_
-20	itzcuintzintli	_	_	_	_	_	_	_	_
+18	ticualicaque	cualica	VERB	_	_	_	_	_	_
+19	nin	nin	DET	_	_	_	_	_	_
+20	itzcuintzintli	itzcuintli	NOUN	_	_	_	_	_	_
 21	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:52
@@ -1053,22 +1053,22 @@
 
 # sent_id = omitlan_1:54
 # text = Axan nican ticpixtoque in itzcuintli yeh cimi tictlazohtlah notlahuical huan neh timachiliah xa toconeuh.
-# text[spa] = 
+# text[spa] = Ahora aquí tenemos perro lo amamos mucho mi esposo y yo sentimos como si fuera nuestro bebé.
 # labels = partial
-1	Axan	_	_	_	_	_	_	_	_
-2	nican	_	_	_	_	_	_	_	_
-3	ticpixtoque	_	_	_	_	_	_	_	_
-4	in	_	_	_	_	_	_	_	_
-5	itzcuintli	_	_	_	_	_	_	_	_
+1	Axan	axan	ADV	_	_	_	_	_	_
+2	nican	nican	ADV	_	_	_	_	_	_
+3	ticpixtoque	piya	VERB	_	_	_	_	_	_
+4	in	in	DET	_	_	_	_	_	_
+5	itzcuintli	itzcuintli	NOUN	_	_	_	_	_	_
 6	yeh	yeh	PRON	_	_	_	_	_	_
-7	cimi	_	_	_	_	_	_	_	_
-8	tictlazohtlah	_	_	_	_	_	_	_	_
-9	notlahuical	_	_	_	_	_	_	_	_
+7	cimi	cimi	ADV	_	_	_	_	_	_
+8	tictlazohtlah	tlazohtla	VERB	_	_	_	_	_	_
+9	notlahuical	tlahuical	NOUN	_	_	_	_	_	_
 10	huan	huan	CCONJ	_	_	_	_	_	_
 11	neh	neh	PRON	_	_	_	_	_	_
-12	timachiliah	_	_	_	_	_	_	_	_
-13	xa	_	_	_	_	_	_	_	_
-14	toconeuh	_	_	_	_	_	_	_	_
+12	timachiliah	machilia	VERB	_	_	_	_	_	_
+13	xa	xa	ADV	_	_	_	_	_	_
+14	toconeuh	conetl	NOUN	_	_	_	_	_	_
 15	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:55
@@ -1137,37 +1137,37 @@
 
 # sent_id = omitlan_1:60
 # text = Bueno za ye oniniquiya niquihtoz nin ce historia y occiqui historias cana niquihtoz cana occe tonal, pero axan za ye nin.
-# text[spa] = 
+# text[spa] = Bueno sólo quería contar esta historia y otras historias quizás cuente otro día, pero ahora soló esto.
 # labels = partial
 1	Bueno	bueno	ADV	_	_	_	_	_	_
 2	za	_	_	_	_	_	_	_	_
 3	ye	_	_	_	_	_	_	_	_
 4-5	oniniquiya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
-5	niniquiya	_	VERB	_	_	_	_	_	_
-6	niquihtoz	_	_	_	_	_	_	_	_
-7	nin	_	_	_	_	_	_	_	_
-8	ce	_	_	_	_	_	_	_	_
-9	historia	_	_	_	_	_	_	_	_
-10	y	_	_	_	_	_	_	_	_
-11	occiqui	_	_	_	_	_	_	_	_
-12	historias	_	_	_	_	_	_	_	_
+5	niniquiya	niqui	VERB	_	_	_	_	_	_
+6	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+7	nin	nin	DET	_	_	_	_	_	_
+8	ce	ce	NUM	_	_	_	_	_	_
+9	historia	historia	NOUN	_	_	_	_	_	_
+10	y	y	CCONJ	_	_	_	_	_	_
+11	occiqui	ciqui	DET	_	_	_	_	_	_
+12	historias	historia	NOUN	_	_	_	_	_	_
 13	cana	cana	ADV	_	_	_	_	_	_
-14	niquihtoz	_	_	_	_	_	_	_	_
+14	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
 15	cana	cana	ADV	_	_	_	_	_	_
-16	occe	_	_	_	_	_	_	_	_
-17	tonal	_	_	_	_	_	_	_	_
+16	occe	ce	DET	_	_	_	_	_	_
+17	tonal	tonal	NOUN	_	_	_	_	_	_
 18	,	,	PUNCT	_	_	_	PUNCT	_	_
 19	pero	pero	CCONJ	_	_	_	_	_	_
-20	axan	_	_	_	_	_	_	_	_
+20	axan	axan	ADV	_	_	_	_	_	_
 21	za	_	_	_	_	_	_	_	_
 22	ye	_	_	_	_	_	_	_	_
-23	nin	_	_	_	_	_	_	_	_
+23	nin	nin	PRON	_	_	_	_	_	_
 24	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:61
 # text = Timotah.
-# text[spa] = 
+# text[spa] = Nos vemos.
 # labels = partial
 1	Timotah	itta	VERB	_	_	_	_	_	_
 2	.	.	PUNCT	_	_	_	PUNCT	_	_
