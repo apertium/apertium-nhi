@@ -1,6 +1,6 @@
 # sent_id = omitlan_1:1
 # text = Neh niquihtoz ce historia cuando onicatca nitzotzocotzi xa onipiyaya xa queme mahctlactl xihuitl.
-# text[spa] = Voy a contar una historia de cuando estaba chiquita quizás tenía quuizás como diez años.
+# text[spa] = Voy a contar una historia de cuando estaba chiquita quizás tenía quizás como diez años.
 # labels = partial
 1	Neh	neh	PRON	_	_	_	_	_	_
 2	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
@@ -243,7 +243,7 @@
 # labels = partial
 1-2	Onicquixte	_	_	_	_	_	_	_	_
 1	O	o	AUX	_	_	_	aux	_	_
-2	nicquixte	quuixtia	VERB	_	_	_	_	_	_
+2	nicquixte	quixtia	VERB	_	_	_	_	_	_
 3	noprimaria	primaria	NOUN	_	_	_	_	_	_
 4	,	,	PUNCT	_	_	_	PUNCT	_	_
 5	nosecundaria	secundaria	NOUN	_	_	_	_	_	_
@@ -722,7 +722,7 @@
 9	nipiyaya	piya	VERB	_	_	_	_	_	_
 10	ome	ome	NUM	_	_	_	_	_	_
 11	caxtol	caxtol	NUM	_	_	_	_	_	_
-12	xihuitl	xihuuitl	NOUN	_	_	_	_	_	_
+12	xihuitl	xihuitl	NOUN	_	_	_	_	_	_
 13	,	,	PUNCT	_	_	_	PUNCT	_	_
 14	huan	huan	CCONJ	_	_	_	_	_	_
 15	yeh	yeh	PRON	_	_	_	_	_	_
