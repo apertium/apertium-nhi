@@ -15,7 +15,7 @@
 10	o	o	AUX	_	_	_	aux	_	_
 11	quintemoto	temoa	VERB	_	_	_	_	_	_
 12	ciqui	ciqui	DET	_	_	_	_	_	_
-13	chacaltzitzin	chalcalli	NOUN	chacalin	in	DET	_	_	_
+13	chacaltzitzin	chacalin	NOUN	_	_	_	_	_	_
 14	,	,	PUNCT	_	_	_	punct	_	_
 15	para	para	SCONJ	_	_	_	_	_	_
 16	ica	ca	NOUN	_	_	_	_	_	_
@@ -203,7 +203,7 @@
 5	o	o	AUX	_	_	_	aux	_	_
 6	quimahcic	ahci	VERB	_	_	_	_	_	_
 7	in	in	DET	_	_	_	_	_	_
-8	chacalimeh	chacali	NOUN	_	_	_	_	_	_
+8	chacalimeh	chacalin	NOUN	_	_	_	_	_	_
 9	,	,	PUNCT	_	_	_	punct	_	_
 10	huan	huan	CCONJ	_	_	_	_	_	_
 11	ica	ca	NOUN	_	_	_	_	_	_
@@ -515,7 +515,7 @@
 
 # sent_id = tiquitini:29
 # text = Ihcuac oquitac nicancah cacalotl, cimi ocmotetzahui.
-# text[spa] = 
+# text[spa] =
 # labels = partial
 1	Ihcuac	Ihcuac	ADV	_	_	_	_	_	_
 2-3	oquitac	_	_	_	_	_	_	_	_
