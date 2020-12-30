@@ -9,6 +9,8 @@ Alphabet
  %{q%}:q %{q%}:c
  %{m%}:m %{m%}:n
  %{c%}:c %{c%}:0
+ %{e%}:e %{e%}:0
+ %{z%}:z %{z%}:c
  %>:%>  ;
 
 
@@ -20,6 +22,12 @@ Vow   = A E I O U
 Cns   = b c d f g h j k l m n p q r s t w x y z ;
 
 Rules
+
+"z->c when in plural for spanish nouns e.g. vez -> veces"
+%{z%}:c <=> _ >:> %{e%}: s ;
+
+"Plural Spanish Nouns"
+%{e%}:0 <=> Vow >:> _ s ;
 
 "Nasal assimilation"
 n:0 <=> _ %>: m e ;

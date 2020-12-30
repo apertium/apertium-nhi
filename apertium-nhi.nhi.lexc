@@ -89,6 +89,9 @@ Multichar_Symbols
 %{m%}                                    ! m / n
 %{q%}
 %{c%}
+%{s%}                                    ! para plural español
+%{z%}                                    ! z/c
+
 %>                                       ! Frontera de morfema
 
 @P.Px.Sg@                                ! Posesivo singular
@@ -573,6 +576,12 @@ LEXICON PossPlural
 LEXICON Plural 
                                                    PossPlural ;
                                                    PlainPlural ;
+
+LEXICON EsPlural ! TODO: implement underlying %{s%} -> (s, es) twol rule.
+@D.Sa@%<pl%>:@D.Sa@%>%{e%}s                # ; ! Las casas
+@R.Sa.Pl@%<pl%>:@R.Sa.Pl@%>%{e%}s          # ; ! Ellos son las casas
+
+
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
@@ -620,6 +629,11 @@ LEXICON NoSuff
 @D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+
+LEXICON EsSuff
+
+@D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
+%<n%>:                                             EsPlural ;
 
 !LEXICON Rel 
 !
@@ -760,6 +774,36 @@ yohual:yohual                                   NoSuff ; ! "noche"
 caxitl:cax                                      ItlSuff ; ! "plato"
 chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
 xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
+
+año:año                                         EsSuff ;
+bachiller:bachiller                             EsSuff ;
+bota:bota                                       EsSuff ;
+cama:cama                                       EsSuff ;
+campo:campo                                     EsSuff ;
+clase:clase                                     EsSuff ;
+compañero:compañero                             EsSuff ;
+compañera:compañera                             EsSuff ;
+cosa:cosa                                       EsSuff ;
+escuela:escuela                                 EsSuff ;
+historia:historia                               EsSuff ;
+hora:hora                                       EsSuff ;
+hueso:hueso                                     EsSuff ;
+licencia:licencia                               EsSuff ;
+lugar:lugar                                     EsSuff ;
+mamá:mamá                                       EsSuff ;
+masaje:masaje                                   EsSuff ;
+masajista:masajista                             EsSuff ;
+oportunidad:oportunidad                         EsSuff ;
+palabra:palabra                                 EsSuff ;
+paleta:paleta                                   EsSuff ;
+papá:papá                                       EsSuff ;
+primaria:primaria                               EsSuff ;
+raza:raza                                       EsSuff ;
+secundaria:secundaria                           EsSuff ;
+semana:semana                                   EsSuff ;
+tarea:tarea                                     EsSuff ;
+trabajo:trabajo                                 EsSuff ;
+vez:vez                                         EsSuff ;
 
 
 
