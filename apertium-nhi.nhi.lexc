@@ -362,7 +362,7 @@ choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
 ! trabajar
 tiquiti%<v%>%<iv%>:tiquiti%>  PresentTense;
 tiquiti%<v%>%<iv%>:tiquiti%>  Imperfect;
-tiquiti%<v%>%<iv%>:tiqui%>   Durative;
+tiquiti%<v%>%<iv%>:tiquit%>   Durative;
 tiquiti%<v%>%<iv%>:tiquit%>   Base2Suffixes;
 tiquiti%<v%>%<iv%>:tiquiti%>  Base3Suffixes;
 
@@ -407,13 +407,13 @@ pactia%<v%>%<tv%>:pacti%>           Base3Suffixes ;
 ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  PresentTense ;
 ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  Imperfect ;
 ihlnamiqui%<v%>%<tv%>:ihlnamic%>    Durative ;
-ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  Base2Suffixes ;
+ihlnamiqui%<v%>%<tv%>:ihlnamic%>  Base2Suffixes ;
 ihlnamiqui%<v%>%<tv%>:ihlnamiqui%>  Base3Suffixes ;
 
 ! apoyar
 palehuia%<v%>%<tv%>:palehuia%>         PresentTense ;
 palehuia%<v%>%<tv%>:palehua%>          Imperfect ;
-palehuia%<v%>%<tv%>:palehui%>          Durative ;
+palehuia%<v%>%<tv%>:paleuh%>          Durative ;
 palehuia%<v%>%<tv%>:palehu%{i%}%{H%}%> Base2Suffixes ;
 palehuia%<v%>%<tv%>:palehui%>          Base3Suffixes ;
 
@@ -427,13 +427,14 @@ quixtia%<v%>%<tv%>:quixti%>           Base3Suffixes;
 ! querer
 niqui%<v%>%<tv%>:niqui%>  PresentTense;
 niqui%<v%>%<tv%>:niqui%>  Imperfect;
-niqui%<v%>%<tv%>:niqui%>  Durative;
+niqui%<v%>%<tv%>:nic%>  Durative;
+niqui%<v%>%<tv%>:nic%>  Base2Suffixes;
 niqui%<v%>%<tv%>:niqui%>  Base3Suffixes;
 
 ! saber
 mati%<v%>%<tv%>:mati%>  PresentTense;
 mati%<v%>%<tv%>:mati%>  Imperfect;
-mati%<v%>%<tv%>:matz%>  Durative;
+mati%<v%>%<tv%>:mat%>  Durative;
 mati%<v%>%<tv%>:mat%>  Base2Suffixes;
 mati%<v%>%<tv%>:mati%>  Base3Suffixes;
 
@@ -448,8 +449,15 @@ tlazohtla%<v%>%<tv%>:tlazohtla%>  Base3Suffixes;
 chihua%<v%>%<tv%>:chihua%>  PresentTense;
 chihua%<v%>%<tv%>:chihua%>  Imperfect;
 chihua%<v%>%<tv%>:chiuh%>   Durative;
-chihua%<v%>%<tv%>:chihua%>  Base2Suffixes;
+chihua%<v%>%<tv%>:chiuh%>  Base2Suffixes;
 chihua%<v%>%<tv%>:chihua%>  Base3Suffixes;
+
+! encontrar
+ahci%<v%>%<tv%>:ahci%>  PresentTense;
+ahci%<v%>%<tv%>:ahci%>  Imperfect;
+ahci%<v%>%<tv%>:ahci%>  Durative;
+ahci%<v%>%<tv%>:ahci%>  Base2Suffixes;
+ahci%<v%>%<tv%>:ahci%>  Base3Suffixes;
 
 
 LEXICON TV2-Stem
