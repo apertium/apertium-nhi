@@ -1,6 +1,10 @@
 import re
 from typing import List, Union
 
+iv = [('amiqui', 'tener sed'), ('aprenderoa', 'aprender'), ('aqui', 'caber'), ('atli', 'tomar agua'), ('calaqui', 'entrar'), ('ciyohui', 'cansarse'), ('chanchihua', 'vivir (en un lugar)'), ('chiya', 'esperar'), ('cualania', 'estar enojado'), ('cochzoloni', 'roncar'), ('huala', 'venir'),  ('huihuitzca', 'reir'), ('huili', 'poder'), ('huitzi', 'venir'), ('huitzca', 'sonreir'), ('ihcihui', 'apurarse'), ('miguixi', 'echar pedo'), ('mohmohtia', 'tener miedo'), ('motetzahuia', 'soprenderse'), ('nihnimi', 'caminar'), ('panoa', 'pasar'), ('patlani', 'volar'), ('pehua', 'empezar'), ('pinahui', 'tener pena'), ('tlamitlacua', 'terminar de comer'), ('tonalmiqui', 'tener calor'), ('tlacoya', 'ponerse triste'), ('tlaixmati', 'aprender/conocer'),  ('tzahtzi', 'gritar'), ('yoli', 'nacer'), ('yolpaqui', 'estar contenta')]
+
+tv = [('cahcayahua', 'engañar'), ('cahua', 'dejar'), ('caxiti', 'alcanzar'), ('chupahuilia', 'limpiar'), ('cocohua', 'doler'), ('cohua', 'doler'), ('cua', 'consumir'), ('cuica', 'llevar'), ('cuicuipa', 'darle vuelta a algo'),('cuilia', 'quitar'), ('cuiloa', 'escribir'), ('ehua', 'levantar'), ('entenderoa', 'entender'), ('estudiaroa', 'estudiar'), ('hualita', 'visitar'), ('huica', 'llevar'), ('icxipalti', 'mojar los pies'), ('ihtoa', 'decir'), ('ilcahua', 'olvidar'), ('ilehuia', 'anotojar'), ('leeroa', 'leer'), ('machilia', 'saber algo de alguien, entender'), ('machtia', 'estudiar'), ('mactlahcolcahua', 'dejar a la mitad'), ('mandaroa', 'mandar'), ('manteneroa', 'mantener'), ('namaca', 'vender'), ('nextilia', 'enseñar'), ('nimilia', 'pensar'), ('palti', 'mojar'), ('pancalaqui', 'meter  algo hasta abajo'), ('pantlali', 'poner en algo'), ('quixtia', 'sacar'), ('temoa', 'buscar'), ('tlacamati', 'obedecer'), ('tlahcolcahua', 'hacer a medias'), ('tlahtlanih', 'preguntar'), ('tlani', 'ganar'), ('tlazaloa', 'aprender'), ('tlazohtla', 'amar'), ('yolchicahua', 'acompañar'), ('yolhuia', 'preguntar'), ('zazaca', 'acarrear')]
+
 
 class VerbalStem(object):
     def __init__(self, stem: str, transitive: bool = False, es: bool = False):
@@ -61,7 +65,7 @@ class VerbalStem(object):
 
         base2 = self.base2
         if base2.endswith('%{i%}%{H%}'):
-            return base2[:-10]
+            return base2[:-10] + 'ih'
         if base2.endswith('t'):
             return base2[:-1]
         else:
@@ -98,19 +102,24 @@ class VerbalStem(object):
             return stem
 
         elif stem.endswith('hua'):
-            if self.trans:
-                if stem[-4] in self.vowels:
-                    return "{}uh".format(stem[:-3])
-                else:
-                    return stem[:-3]
-            else:
-                return stem
+            return "{}uh".format(stem[:-3])
 
         elif stem[-2:] in ('ma', 'mi'):
             return "{}n".format(stem[:-2])
 
         elif stem.endswith('ya'):
             return "{}x".format(stem[:-2])
+
+        #
+        # TODO: calaqui and pancalaqui can be iv and tv, and its transitivity impacts stem
+        # TODO: formation: when iv, dur is 'calac' and base2 is 'calac'
+        # TODO:            when tv, dur is 'calaqui' and base2 is 'calaque'
+        #
+        if stem.endswith('qui'):
+            if self.trans:
+                return stem[:-1] + "%{i%}%{H%}"
+            else:
+                return stem[:-3] + 'c'
 
         elif stem[-1] in ('a', 'i'):
             #
@@ -125,7 +134,7 @@ class VerbalStem(object):
             # dropped.
             #
             elif prev_two_graphemes in self.rewritable_multi_char_cons:
-                return (stem[:-2] +
+                return (stem[:-3] +
                         self.rewritable_multi_char_cons[prev_two_graphemes])
 
             elif stem[-2] in self.cons and stem[-3] in self.vowels:
@@ -147,17 +156,18 @@ class VerbalStem(object):
 
 
 def generate_stem_lexical_entries(canonical: str,
-                                  transitivity: str = 'iv') -> List[str]:
+                                  transitivity: str = 'iv',
+                                  gloss: str = '') -> List[str]:
     if transitivity not in ('iv', 'tv', 'tv2'):
         raise KeyError("`transitivity` must be either iv (intransitive), tv "
                        "(transitive), or tv2 (bitransitive)")
 
-    stem = VerbalStem(canonical)
+    stem = VerbalStem(canonical, transitive=transitivity.startswith('t'))
     all_stems = [stem.present, stem.imperfect, stem.durative_base, stem.base2,
                  stem.base3]
     cont_lexicons = ["PresentTense", "Imperfect", "Durative", "Base2Suffixes",
                      "Base3Suffixes"]
-
+    gloss_line = [f'!{gloss}']
     lexical_entries = [
         "{}%<v%>%<{}%>:{}%>  {};".format(canonical,
                                          transitivity,
@@ -165,4 +175,4 @@ def generate_stem_lexical_entries(canonical: str,
                                          cont_lexicons[i])
         for i, stem in enumerate(all_stems)
     ]
-    return lexical_entries
+    return gloss_line + lexical_entries

@@ -14,7 +14,7 @@
 1	Neh	neh	PRON	_	_	3	nsubj	3:nsubj	_
 2-3	niyolo	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	3	aux	3:aux	_
-3	niyol	yol	VERB	yol	_	0	root	0:root	_
+3	niyol	yoli	VERB	yol	_	0	root	0:root	_
 4	ich	tich	NOUN	_	_	_	_	_	_
 5	ce	ce	DET	_	_	6	det	6:det	_
 6	altipetl	altipetl	NOUN	_	_	3	obl	3:obl	_
@@ -22,7 +22,7 @@
 8	Omitlán	Omitlán	PROPN	_	_	_	_	_	_
 9	,	,	PUNCT	_	_	10	punct	10:punct	_
 10-11	quihtozniqui	_	_	_	_	_	_	_	_
-10	quihtoz	quihtoa	VERB	_	_	8	_	8	_
+10	quihtoz	ihtoa	VERB	_	_	8	_	8	_
 11	niqui	niqui	AUX	_	_	10	aux	10:aux	_
 12	lugar	lugar	NOUN	_	_	10	_	10	_
 13	de	de	ADP	_	_	14	case	14:case	_
@@ -34,7 +34,7 @@
 # labels = partial
 1	Bueno	bueno	ADV	_	_	_	_	_	_
 2	neh	nehuatl	PRON	_	_	_	_	_	_
-3	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+3	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
 4	ce	ce	DET	_	_	_	_	_	_
 5	historia	historia	NOUN	_	_	_	_	_	_
 6	cuando	cuando	SCONJ	_	_	_	_	_	_
@@ -226,7 +226,7 @@
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	neh	nehuatl	PRON	_	_	_	_	_	_
-3	niquihlnamiqui	ihnamiqui	VERB	_	_	_	_	_	_
+3	niquihlnamiqui	ihlnamiqui	VERB	_	_	_	_	_	_
 4-5	onicualaniya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
 5	nicualaniya  cualani  VERB	_	_	_	_	_	_
@@ -238,7 +238,7 @@
 # labels = partial
 1-2	Oniquihlhuaya	_	_	_	_	_	_	_	_
 1	O	o	AUX	_	_	_	aux	_	_
-2	niquihlhuaya	ihluia	VERB	_	_	_	_	_	_
+2	niquilhuaya	ilhuia	VERB	_	_	_	_	_	_
 3	“	“	PUNCT	_	_	_	_	_	_
 4	Queye	queye	ADV	_	_	_	_	_	_
 5	tocomonamaca	namaca	VERB	_	_	_	_	_	_

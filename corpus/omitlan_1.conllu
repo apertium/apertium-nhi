@@ -133,7 +133,7 @@
 1	Teh	tehuat	PRON	_	_	_	_	_	_
 2	xiyo	yo	VERB	_	_	_	_	_	_
 3	,	,	PUNCT	_	_	_	PUNCT	_	_
-4	ximonechtili	nechtili	VERB	_	_	_	_	_	_
+4	ximonechtili	nechtilia	VERB	_	_	_	_	_	_
 5	queni	queni	ADV	_	_	_	_	_	_
 6	titlacuiloz	cuiloa	VERB	_	_	_	_	_	_
 7	,	,	PUNCT	_	_	_	PUNCT	_	_
@@ -188,7 +188,7 @@
 6	in	in	DET	_	_	_	_	_	_
 7	escuela	escuela	NOUN	_	_	_	_	_	_
 8	para	para	ADP	_	_	_	_	_	_
-9	xitlazalo	tazaloa	VERB	_	_	_	_	_	_
+9	xitlazalo	tlazaloa	VERB	_	_	_	_	_	_
 10	para	para	ADP	_	_	_	_	_	_
 11	teh	tehuatl	PRON	_	_	_	_	_	_
 12	huan	huan	CCONJ	_	_	_	_	_	_
@@ -323,7 +323,7 @@
 15	cetiquitiz	tiquiti	VERB	_	_	_	_	_	_
 16	ompa	ompa	ADV	_	_	_	_	_	_
 17	ye	_	_	_	_	_	_	_	_
-18	motlani	tani	VERB	_	_	_	_	_	_
+18	motlani	tlani	VERB	_	_	_	_	_	_
 19	cimi	cimi	ADV	_	_	_	_	_	_
 20	tzocopintzi	tzocopintzi	ADJ	_	_	_	_	_	_
 21	tomen	tomen	NOUN	_	_	_	_	_	_
@@ -412,7 +412,7 @@
 2	entonces	entonces	ADV	_	_	_	_	_	_
 3-4	oniquihtoh	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
-4	niquihtoh	quihtoa	VERB	_	_	_	_	_	_
+4	niquihtoh	ihtoa	VERB	_	_	_	_	_	_
 5	“	“	PUNCT	_	_	_	PUNCT	_	_
 6	pues	pues	ADV	_	_	_	_	_	_
 7	quema	_	_	_	_	_	_	_	_
@@ -507,7 +507,7 @@
 6	años	año	NOUN	_	_	_	_	_	_
 7-8	oniquihtoh	_	_	_	_	_	_	_	_
 7	o	o	AUX	_	_	_	aux	_	_
-8	niquihtoh	quihtoa	VERB	_	_	_	_	_	_
+8	niquihtoh	ihtoa	VERB	_	_	_	_	_	_
 9	,	,	PUNCT	_	_	_	PUNCT	_	_
 10	“	“	PUNCT	_	_	_	PUNCT	_	_
 11	Neh	neh	PRON	_	_	_	_	_	_
@@ -547,7 +547,7 @@
 # text = Niquihlnamiqui desde onicatca neh tzotzocotzi, notahhuan cuando oyaya ich in campo otiquitiya oquitlachupahuilaya cintli, itl, o occiqui cositas huan yehhuan nochipa neh onechilhuaya que cimi ociyohque.
 # text[spa] = Me acuerdo desde que yo era pequeña, mis padres cuando iban en el campo trabajaban limpiando la milpa, frijol, o otras cosas y ellos siempre me decían que se cansaron mucho.
 # labels = partial
-1	Niquihlnamiqui	quihlnamiqui	VERB	_	_	_	_	_	_
+1	Niquihlnamiqui	ihlnamiqui	VERB	_	_	_	_	_	_
 2	desde	desde	ADP	_	_	_	_	_	_
 3-4	onicatca	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
@@ -633,7 +633,7 @@
 1	Entonces	entonces	ADV	_	_	_	_	_	_
 2-3	oniquihtoh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	niquihtoh	quihtoa	VERB	_	_	_	_	_	_
+3	niquihtoh	ihtoa	VERB	_	_	_	_	_	_
 4	,	,	PUNCT	_	_	_	PUNCT	_	_
 5	“	“	PUNCT	_	_	_	PUNCT	_	_
 6	Pues	pues	ADV	_	_	_	_	_	_
@@ -825,7 +825,7 @@
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2	niniqui	niqui	VERB	_	_	_	_	_	_
-3	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+3	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
 4	nin	nin	DET	_	_	_	_	_	_
 5	palabras	palabra	NOUN	_	_	_	_	_	_
 6	,	,	PUNCT	_	_	_	PUNCT	_	_
@@ -876,7 +876,7 @@
 1	Niyo	yo	VERB	_	_	_	_	_	_
 2	huan	huan	CCONJ	_	_	_	_	_	_
 3	nihuitz	huitz	VERB	_	_	_	_	_	_
-4	niquitaqui	quitta	VERB	_	_	_	_	_	_
+4	niquitaqui	itta	VERB	_	_	_	_	_	_
 5	notzcuin	itzcuintli	NOUN	_	_	_	_	_	_
 6	.	.	PUNCT	_	_	_	PUNCT	_	_
 
@@ -927,7 +927,7 @@
 # text = Niquihtoz neh de notzcuin.
 # text[spa] = Voy a contar de mi perro.
 # labels = partial
-1	Niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+1	Niquihtoz	ihtoa	VERB	_	_	_	_	_	_
 2	neh	neh	PRON	_	_	_	_	_	_
 3	de	de	ADP	_	_	_	_	_	_
 4	notzcuin	itzcuintli	NOUN	_	_	_	_	_	_
@@ -952,7 +952,7 @@
 3	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:48
-# text = Yeh oquihtoh, “ Chuhue mo cequita ce itzcuintli, zan mo cequita amo cecualicaz. ”
+# text = Yeh oquihtoh, “ Chuhue mo cequita ce itzcuintli, zan mo cequita amo cechualicaz. ”
 # text[spa] = Dijo, "Vámonos veamos un perro, sólo veamoslo no lo vamos a llevar."
 # labels = partial
 1	Yeh	yeh	PRON	_	_	_	_	_	_
@@ -971,7 +971,7 @@
 13	mo	mo	PART	_	_	_	_	_	_
 14	cequitta	itta	VERB	_	_	_	_	_	_
 15	amo	amo	ADV	_	_	_	_	_	_
-16	cecualicaz	cualica	VERB	_	_	_	_	_	_
+16	cechualicaz	hualica	VERB	_	_	_	_	_	_
 17	.	.	PUNCT	_	_	_	PUNCT	_	_
 18	”	”	PUNCT	_	_	_	PUNCT	_	_
 
@@ -995,7 +995,7 @@
 1	Huan	huan	CCONJ	_	_	_	_	_	_
 2-3	oquihtoh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	quihtoh	quihtoa	VERB	_	_	_	_	_	_
+3	quihtoh	ihtoa	VERB	_	_	_	_	_	_
 4	notlahuical	tlahuical	NOUN	_	_	_	_	_	_
 5	“	“	PUNCT	_	_	_	PUNCT	_	_
 6	quema	quema	INTJ	_	_	_	_	_	_
@@ -1003,7 +1003,7 @@
 8	”	”	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:51
-# text = Huan yeh zan onechcahcayau porque otiyahque campa ocatca itzcuime huan otictlazohtlaque huan oticualicaque nin itzcuintzintli.
+# text = Huan yeh zan onechcahcayau porque otiyahque campa ocatca itzcuime huan otictlazohtlaque huan otichualicaque nin itzcuintzintli.
 # text[spa] = Y él sólo me estaba engañano porque fuimos donde habían perros y quisimos y llevamos este perrito.
 # labels = partial
 1	Huan	huan	CCONJ	_	_	_	_	_	_
@@ -1026,9 +1026,9 @@
 14	o	o	AUX	_	_	_	aux	_	_
 15	tictlazohtlaque	tlazohtla	VERB	_	_	_	_	_	_
 16	huan	huan	CCONJ	_	_	_	_	_	_
-17-18	oticualicaque	_	_	_	_	_	_	_	_
+17-18	otichualicaque	_	_	_	_	_	_	_	_
 17	o	o	AUX	_	_	_	aux	_	_
-18	ticualicaque	cualica	VERB	_	_	_	_	_	_
+18	tichualicaque	hualica	VERB	_	_	_	_	_	_
 19	nin	nin	DET	_	_	_	_	_	_
 20	itzcuintzintli	itzcuintli	NOUN	_	_	_	_	_	_
 21	.	.	PUNCT	_	_	_	PUNCT	_	_
@@ -1145,7 +1145,7 @@
 4-5	oniniquiya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	_	aux	_	_
 5	niniquiya	niqui	VERB	_	_	_	_	_	_
-6	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+6	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
 7	nin	nin	DET	_	_	_	_	_	_
 8	ce	ce	NUM	_	_	_	_	_	_
 9	historia	historia	NOUN	_	_	_	_	_	_
@@ -1153,7 +1153,7 @@
 11	occiqui	ciqui	DET	_	_	_	_	_	_
 12	historias	historia	NOUN	_	_	_	_	_	_
 13	cana	cana	ADV	_	_	_	_	_	_
-14	niquihtoz	quihtoa	VERB	_	_	_	_	_	_
+14	niquihtoz	ihtoa	VERB	_	_	_	_	_	_
 15	cana	cana	ADV	_	_	_	_	_	_
 16	occe	ce	DET	_	_	_	_	_	_
 17	tonal	tonal	NOUN	_	_	_	_	_	_

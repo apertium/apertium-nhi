@@ -54,7 +54,7 @@
 # labels = partial
 1-2	Oyah	_	_	_	_	_	_	_	_
 1	O	o	AUX	_	_	_	aux	_	_
-2	yah	ya	VERB	_	_	_	_	_	_
+2	yah	yo	VERB	_	_	_	_	_	_
 3-4	opatlantah	_	_	_	_	_	_	_	_
 3	o	o	AUX	_	_	_	aux	_	_
 4	patlantah	patlani	VERB	_	_	_	_	_	_
@@ -69,7 +69,7 @@
 # text[spa] = Iba lejos, y luego vio una jarra con agua.
 # labels = partial
 1	Huehca	huehca	ADV	_	_	_	_	_	_
-2	yoyaya	ya	VERB	_	_	_	_	_	_
+2	yoyaya	yo	VERB	_	_	_	_	_	_
 3	,	,	PUNCT	_	_	_	punct	_	_
 4	ihcuac	ihcuac	ADV	_	_	_	_	_	_
 5-6	ochualitac	_	_	_	_	_	_	_	_
@@ -197,7 +197,7 @@
 1	Zatepan	zatepan	ADV	_	_	_	_	_	_
 2-3	oyah	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	yah	ya	VERB	_	_	_	_	_	_
+3	yah	yo	VERB	_	_	_	_	_	_
 4	canic	cani	ADV	_	_	_	_	_	_
 5-6	oquimahcic	_	_	_	_	_	_	_	_
 5	o	o	AUX	_	_	_	aux	_	_
@@ -210,7 +210,7 @@
 12	nitempil	tempil	NOUN	_	_	_	_	_	_
 13-14	oquian	_	_	_	_	_	_	_	_
 13	o	o	AUX	_	_	_	aux	_	_
-14	quian	quehua	VERB	_	_	_	_	_	_
+14	quian	ehua	VERB	_	_	_	_	_	_
 15	ce	ce	NUM	_	_	_	_	_	_
 16	tlaltitl	tlaltitl	NOUN	_	_	_	_	_	_
 17	hueyihtzin	hueyi	ADJ	_	_	_	_	_	_
@@ -286,7 +286,7 @@
 9	ohcon	ohcón	ADV	_	_	_	_	_	_
 10-11	ocmotiquitaya	_	_	_	_	_	_	_	_
 10	o	o	AUX	_	_	_	aux	_	_
-11	cmotiquitaya	tiquitia	VERB	_	_	_	_	_	_
+11	cmotiquitaya	itta	VERB	_	_	_	_	_	_
 12	tiquitiz	tiquiti	VERB	_	_	_	_	_	_
 13	.	.	PUNCT	_	_	_	punct	_	_
 
@@ -297,11 +297,11 @@
 1	Nichan	chantli	NOUN	_	_	_	_	_	_
 2-3	ocnextilihqueh	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	_	aux	_	_
-3	cnextilihqueh	nextili	VERB	_	_	_	_	_	_
+3	cnextilihqueh	nextilia	VERB	_	_	_	_	_	_
 4	de	de	ADP	_	_	_	_	_	_
 5	que	que	SCONJ	_	_	_	_	_	_
 6	amoqueman	amoqueman	ADV	_	_	_	_	_	_
-7	mactlahcolcahua	mactahcolcahua	VERB	_	_	_	_	_	_
+7	mactlahcolcahua	mactlahcolcahua	VERB	_	_	_	_	_	_
 8	ce	ce	DET	_	_	_	_	_	_
 9	tiquitl	tiquitl	NOUN	_	_	_	_	_	_
 10	.	.	PUNCT	_	_	_	punct	_	_
@@ -509,7 +509,7 @@
 3	ichpocaconetl	ichpocaconetl	NOUN	_	_	5	nsubj	5:nsubj|6:nsubj	Cmpnd=ichpoca#conetl
 4-5	oyahtoya	_	_	_	_	_	_	_	_
 4	o	o	AUX	_	_	5	aux	5:aux	_
-5	yahtoya	yahto	VERB	_	_	0	root	0:root	_
+5	yahtoya	yah	VERB	_	_	0	root	0:root	_
 6	atlitiu	atli	VERB	_	_	5	xcomp	5:xcomp	_
 7	.	.	PUNCT	_	_	5	punct	5:punct	_
 
