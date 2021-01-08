@@ -171,6 +171,7 @@ LEXICON VerbalSubject
 LEXICON Object
                                                        IV-Dir ;
 @P.DOBJ.FILLED@:@P.DOBJ.FILLED@                        TV-DOBJ ;
+TV-Refl ;
                                                        TV2-IOBJ ;
 
 LEXICON TV2-IOBJ
@@ -204,7 +205,7 @@ TV2-Indef-Obj ;
 LEXICON TV2-Indef-Obj
 @D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV2-Stem ;
 @D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV2-Stem ;
-                                   TV2-Stem ;
+@R.DOBJ@:@R.DOBJ@                                  TV2-Stem ;
 
 
 LEXICON TV-DOBJ
@@ -212,7 +213,7 @@ LEXICON TV-DOBJ
 %<o_sg2%>:mitz%>             TV-Dir ;
 %<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
 
-! With 3sg obj (and not 3 sbj, and not honorific ), the object prrefix can be
+! With 3sg obj (and not 3 sbj, and not honorific ), the object prefix can be
 ! omitted optionally. eg "ni-0-piya" "yo lo tengo".
 @D.Sa.3@%<o_sg3_om%>:@D.Sa.3@   TV-Refl ;
 
@@ -720,7 +721,7 @@ ahci%<v%>%<tv%>:ahci%>  Durative;
 ahci%<v%>%<tv%>:ahci%>  Base2Suffixes;
 ahci%<v%>%<tv%>:ahci%>  Base3Suffixes;
 
-! encontrar - alternancia
+! encontrar - alternancia ortográfica
 ahci%<v%>%<tv%>:aci%>  PresentTense;
 ahci%<v%>%<tv%>:aci%>  Imperfect;
 ahci%<v%>%<tv%>:aci%>  Durative;
@@ -742,6 +743,12 @@ cahua%<v%>%<tv%>:cauh%>  Durative;
 cahua%<v%>%<tv%>:cauh%>  Base2Suffixes;
 cahua%<v%>%<tv%>:cahua%>  Base3Suffixes;
 
+!escuchar
+caqui%<v%>%<tv%>:caqui%>  PresentTense;
+caqui%<v%>%<tv%>:caqui%>  Imperfect;
+caqui%<v%>%<tv%>:cac%>  Durative;
+caqui%<v%>%<tv%>:cac%>  Base2Suffixes;
+caqui%<v%>%<tv%>:caqui%>  Base3Suffixes;
 
 !alcanzar
 caxiti%<v%>%<tv%>:caxiti%>  PresentTense;
@@ -1188,7 +1195,7 @@ LEXICON Plural
                                                    PossPlural ;
                                                    PlainPlural ;
 
-LEXICON EsPlural ! TODO: implement underlying %{s%} -> (s, es) twol rule.
+LEXICON EsPlural
 @D.Sa@%<pl%>:@D.Sa@%>%{e%}s                # ; ! Las casas
 @R.Sa.Pl@%<pl%>:@R.Sa.Pl@%>%{e%}s          # ; ! Ellos son las casas
 
@@ -1196,8 +1203,8 @@ LEXICON EsPlural ! TODO: implement underlying %{s%} -> (s, es) twol rule.
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
-%<dim%>%<abs%>:%>tzin%>tli                         # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
-%<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
+%<dim%>%<abs%>:%>tzin%>tli                         # ;
+%<dim%>%<pl%>:%>tzi%>tzin                          # ;
 
 LEXICON Deriv 
                                                    Diminutivo ; 
@@ -1333,6 +1340,7 @@ itl:i                                           TlSuff ; ! "frijol"
 nacatl:naca                                     TlSuff ; ! "carne"
 oquichtl:oquich                                 TlSuff ; ! "varón"
 quichconetl:quichcone                           TlSuff ; ! "bebé niño"
+paquiliztl:paquiliz                             TlSuff ; ! "felicidad"
 tapalcatihuilotl:tapalcatihuilo                 TlSuff ; ! "contenedor de agua"
 ticactl:ticac                                   TlSuff ; ! "zapato"
 tihmahtl:tihlmah                                TlSuff ; ! "ropa/prenda"
@@ -1351,6 +1359,7 @@ itzcuintli:itzcuin                              TliSuff ; ! "perro"
 metztli:metz                                    TliSuff ; ! "luna"
 mixtli:mix                                      TliSuff ; ! "nube
 pahtli:pah                                      TliSuff ; ! "medicina"
+paquiliztli:paquiliz                            TliSuff ; ! "felicidad"
 poctli:poc                                      TliSuff ; ! "humo"
 tahtli:tah                                      TliSuff ; ! "papá"
 tochtli:toch                                    TliSuff ; ! "conejo"
@@ -1371,15 +1380,20 @@ icni:icni                                       NoSuff ; ! "hermanx"
 icxi:icxi                                       NoSuff ; ! "pie"
 ixtololo:ixtololo                               NoSuff ; ! "ojo"
 mahtlapal:mahtlapal                             NoSuff ; ! "ala"
+mama:mama                                       NoSuff ; ! "mamá"
+papa:papa                                       NoSuff ; ! "papá"
 patox:patox                                     NoSuff ; ! "pato"
 tempil:tempil                                   NoSuff ; ! "pico"
 tlahuical:tlahuical                             NoSuff ; ! "esposo"
 tlahtol:tlahtol                                 NoSuff ; ! "palabra"
+tlamahuil:tlamahuil                             NoSuff ; ! ""
 tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
+tlapohual:tlapohual                             NoSuff ; ! "mes"
 tooca:tooca                                     NoSuff ; ! "nombre"
 toca:toca                                       NoSuff ; ! "nombre"
 tomen:tomen                                     NoSuff ; ! "dinero"
 tonal:tonal                                     NoSuff ; ! "día, sol"
+tona:tona                                       NoSuff ; ! "día, sol"
 yohual:yohual                                   NoSuff ; ! "noche"
 
 caxitl:cax                                      ItlSuff ; ! "plato"
@@ -1429,7 +1443,7 @@ pitzahuac:pitzahua       AdjCont ; !"delgadx"
 chicactic:chicacti       AdjCont ; !"durx"
 papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
-tzatzayactic:tzatzayacti AdjCont ; !"rotx"
+tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
 
 tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
 tzocotzi:tzocotzi        Adj ; !"pequeñx"
