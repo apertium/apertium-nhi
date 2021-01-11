@@ -1,10 +1,6 @@
 import re
 from typing import List, Union
 
-iv = [('amiqui', 'tener sed'), ('aprenderoa', 'aprender'), ('aqui', 'caber'), ('atli', 'tomar agua'), ('calaqui', 'entrar'), ('ciyohui', 'cansarse'), ('chanchihua', 'vivir (en un lugar)'), ('chiya', 'esperar'), ('cualania', 'estar enojado'), ('cochzoloni', 'roncar'), ('huala', 'venir'),  ('huihuitzca', 'reir'), ('huili', 'poder'), ('huitzi', 'venir'), ('huitzca', 'sonreir'), ('ihcihui', 'apurarse'), ('miguixi', 'echar pedo'), ('mohmohtia', 'tener miedo'), ('motetzahuia', 'soprenderse'), ('nihnimi', 'caminar'), ('panoa', 'pasar'), ('patlani', 'volar'), ('pehua', 'empezar'), ('pinahui', 'tener pena'), ('tlamitlacua', 'terminar de comer'), ('tonalmiqui', 'tener calor'), ('tlacoya', 'ponerse triste'), ('tlaixmati', 'aprender/conocer'),  ('tzahtzi', 'gritar'), ('yoli', 'nacer'), ('yolpaqui', 'estar contenta')]
-
-tv = [('cahcayahua', 'engañar'), ('cahua', 'dejar'), ('caxiti', 'alcanzar'), ('chupahuilia', 'limpiar'), ('cocohua', 'doler'), ('cohua', 'doler'), ('cua', 'consumir'), ('cuica', 'llevar'), ('cuicuipa', 'darle vuelta a algo'),('cuilia', 'quitar'), ('cuiloa', 'escribir'), ('ehua', 'levantar'), ('entenderoa', 'entender'), ('estudiaroa', 'estudiar'), ('hualita', 'visitar'), ('huica', 'llevar'), ('icxipalti', 'mojar los pies'), ('ihtoa', 'decir'), ('ilcahua', 'olvidar'), ('ilehuia', 'anotojar'), ('leeroa', 'leer'), ('machilia', 'saber algo de alguien, entender'), ('machtia', 'estudiar'), ('mactlahcolcahua', 'dejar a la mitad'), ('mandaroa', 'mandar'), ('manteneroa', 'mantener'), ('namaca', 'vender'), ('nextilia', 'enseñar'), ('nimilia', 'pensar'), ('palti', 'mojar'), ('pancalaqui', 'meter  algo hasta abajo'), ('pantlali', 'poner en algo'), ('quixtia', 'sacar'), ('temoa', 'buscar'), ('tlacamati', 'obedecer'), ('tlahcolcahua', 'hacer a medias'), ('tlahtlanih', 'preguntar'), ('tlani', 'ganar'), ('tlazaloa', 'aprender'), ('tlazohtla', 'amar'), ('yolchicahua', 'acompañar'), ('yolhuia', 'preguntar'), ('zazaca', 'acarrear')]
-
 
 class VerbalStem(object):
     def __init__(self, stem: str, transitive: bool = False, es: bool = False):
