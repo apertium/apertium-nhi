@@ -277,30 +277,28 @@
 16	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:13
-# text = Pero de nochten tlen otiochoque zan ye neh oniquestudiaro hasta cuando onipiyaya dieciocho años.
+# text = Pero de nochten tlen tiochoque zan ye neh oniquestudiaro hasta cuando onipiyaya dieciocho años.
 # text[spa] = Pero de todos que éramos ocho solo yo estudié hasta cuando tenía dieciocho años.
 # labels = partial
 1	Pero	pero	CCONJ	_	_	_	_	_	_
 2	de	de	ADP	_	_	_	_	_	_
 3	nochten	nochi	NOUN	_	_	_	_	_	_
 4	tlen	tleno	SCONJ	_	_	_	_	_	_
-5-6	otiochoque	_	_	_	_	_	_	_	_
-5	o	o	AUX	_	_	_	aux	_	_
-6	tiochoque	_	_	_	_	_	_	_	_
-7	zan	zan	ADV	_	_	_	_	_	_
-8	ye	ye	PART	_	_	_	_	_	_
-9	neh	neh	PRON	_	_	_	_	_	_
-10-11	oniquestudiaro	_	_	_	_	_	_	_	_
-10	o	o	AUX	_	_	_	aux	_	_
-11	niquestudiaro	estudiaroa	VERB	_	_	_	_	_	_
-12	hasta	hasta	ADP	_	_	_	_	_	_
-13	cuando	cuando	ADV	_	_	_	_	_	_
-14-15	onipiyaya	_	_	_	_	_	_	_	_
-14	o	o	AUX	_	_	_	aux	_	_
-15	nipiyaya	piya	VERB	_	_	_	_	_	_
-16	dieciocho	dieciocho	NUM	_	_	_	_	_	_
-17	años	año	NOUN	_	_	_	_	_	_
-18	.	.	PUNCT	_	_	_	PUNCT	_	_
+5	tiochoque	_	_	_	_	_	_	_	_
+6	zan	zan	ADV	_	_	_	_	_	_
+7	ye	ye	PART	_	_	_	_	_	_
+8	neh	neh	PRON	_	_	_	_	_	_
+9-10	oniquestudiaro	_	_	_	_	_	_	_	_
+11	o	o	AUX	_	_	_	aux	_	_
+12	niquestudiaro	estudiaroa	VERB	_	_	_	_	_	_
+13	hasta	hasta	ADP	_	_	_	_	_	_
+14	cuando	cuando	ADV	_	_	_	_	_	_
+15-16	onipiyaya	_	_	_	_	_	_	_	_
+17	o	o	AUX	_	_	_	aux	_	_
+18	nipiyaya	piya	VERB	_	_	_	_	_	_
+19	dieciocho	dieciocho	NUM	_	_	_	_	_	_
+20	años	año	NOUN	_	_	_	_	_	_
+21	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:14
 # text = Pero como a veces México es cimi difícil como para ompa cechanchihuaz o para cetiquitiz ompa ye motlani cimi tzocopintzi tomen, huan nochi patiyo.
@@ -606,8 +604,8 @@
 9	Pues	pues	ADV	_	_	_	_	_	_
 10	xonhuiqui	huala	VERB	_	_	_	_	_	_
 11	,	,	PUNCT	_	_	_	PUNCT	_	_
-12	nomotzonpahpachoz	_	_	_	_	_	_	_	_
-13	nomoztonsobaroz	_	_	_	_	_	_	_	_
+12	nomotzonpahpachoz	_	VERB	_	_	_	_	_	_
+13	nomoztonsobaroz	_	_	VERB	_	_	_	_	_
 14	.	.	PUNCT	_	_	_	PUNCT	_	_
 15	”	”	PUNCT	_	_	_	PUNCT	_	_
 
@@ -695,13 +693,13 @@
 18	.	.	PUNCT	_	_	_	PUNCT	_	_
 
 # sent_id = omitlan_1:32
-# text = Timopalehuizque para teh xiquestudiaroz. ”
+# text = Timopalehuizque para teh tiquestudiaroz. ”
 # text[spa] = Nos vamos a apoyar para que tú estudies."
 # labels = partial
 1	Timopalehuizque	palehuia	VERB	_	_	_	_	_	_
 2	para	para	ADP	_	_	_	_	_	_
 3	teh	tehuatl	PRON	_	_	_	_	_	_
-4	xiquestudiaroz	estudiaroa	VERB	_	_	_	_	_	_
+4	tiquestudiaroz	estudiaroa	VERB	_	_	_	_	_	_
 5	.	.	PUNCT	_	_	_	PUNCT	_	_
 6	”	”	PUNCT	_	_	_	PUNCT	_	_
 

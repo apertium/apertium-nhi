@@ -12,7 +12,7 @@
 # text[spa] = Vivo en un pueblo que se llama Omitlán, que quiere decir lugar de huesos.
 # labels = partial
 1	Neh	neh	PRON	_	_	3	nsubj	3:nsubj	_
-2-3	niyolo	_	_	_	_	_	_	_	_
+2-3	oniyol	_	_	_	_	_	_	_	_
 2	o	o	AUX	_	_	3	aux	3:aux	_
 3	niyol	yoli	VERB	yol	_	0	root	0:root	_
 4	ich	tich	NOUN	_	_	_	_	_	_

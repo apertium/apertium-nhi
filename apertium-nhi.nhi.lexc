@@ -6,6 +6,7 @@ Multichar_Symbols
 %<v%>                                    ! Verbo
 %<adj%>                                  ! Adjetivo
 %<det%>                                  ! Determinante
+%<num%>                                  ! Número
 %<prn%>                                  ! Pronombre
 %<adv%>                                  ! Adverbio
 %<np%>                                   ! Nombre propio
@@ -83,6 +84,7 @@ Multichar_Symbols
 
 %{o%}                                    ! o 
 %{i%}                                    ! i / 0
+%{e%}                                    ! e / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
 %{H%}
@@ -205,7 +207,8 @@ TV2-Indef-Obj ;
 LEXICON TV2-Indef-Obj
 @D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV2-Stem ;
 @D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV2-Stem ;
-@R.DOBJ@:@R.DOBJ@                                  TV2-Stem ;
+!@R.DOBJ@:@R.DOBJ@                                  TV2-Stem ;
+TV2-Stem ;
 
 
 LEXICON TV-DOBJ
@@ -363,7 +366,7 @@ choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
 ! trabajar
 tiquiti%<v%>%<iv%>:tiquiti%>  PresentTense;
 tiquiti%<v%>%<iv%>:tiquiti%>  Imperfect;
-tiquiti%<v%>%<iv%>:tiquit%>   Durative;
+tiquiti%<v%>%<iv%>:tiqui%>   Durative;
 tiquiti%<v%>%<iv%>:tiquit%>   Base2Suffixes;
 tiquiti%<v%>%<iv%>:tiquiti%>  Base3Suffixes;
 
@@ -373,14 +376,6 @@ amiqui%<v%>%<iv%>:amiqui%>  Imperfect;
 amiqui%<v%>%<iv%>:amic%>  Durative;
 amiqui%<v%>%<iv%>:amic%>  Base2Suffixes;
 amiqui%<v%>%<iv%>:amiqui%>  Base3Suffixes;
-
-
-!aprender
-aprenderoa%<v%>%<iv%>:aprenderoa%>  PresentTense;
-aprenderoa%<v%>%<iv%>:aprenderoa%>  Imperfect;
-aprenderoa%<v%>%<iv%>:aprenderoh%>  Durative;
-aprenderoa%<v%>%<iv%>:aprenderoh%>  Base2Suffixes;
-aprenderoa%<v%>%<iv%>:aprendero%>  Base3Suffixes;
 
 
 !caber
@@ -616,6 +611,13 @@ yolpaqui%<v%>%<iv%>:yolpaqui%>  Base3Suffixes;
 
 
 LEXICON TV-Stem
+!aprender
+aprenderoa%<v%>%<tv%>:aprenderoa%>  PresentTense;
+aprenderoa%<v%>%<tv%>:aprenderoa%>  Imperfect;
+aprenderoa%<v%>%<tv%>:aprenderoh%>  Durative;
+aprenderoa%<v%>%<tv%>:aprenderoh%>  Base2Suffixes;
+aprenderoa%<v%>%<tv%>:aprendero%>  Base3Suffixes;
+
 ! ver
 itta%<v%>%<tv%>:itta%>     PresentTense ;
 itta%<v%>%<tv%>:itta%>     Imperfect ;
@@ -1251,7 +1253,7 @@ LEXICON NoSuff
 LEXICON EsSuff
 
 @D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
-%<n%>:                                             EsPlural ;
+%<n%>:0                                             EsPlural ;
 
 !LEXICON Rel 
 !
@@ -1304,6 +1306,24 @@ huan%<cnj%>:huan # ;
 
 amo%<neg%>:amo # ;
 quema%<afirm%>:quema # ;
+
+ce%<det%>:ce # ; ! un(o)
+occe%<det%>:occe # ;  ! otro
+yeyi%<num%>:yeyi # ; ! tres
+yeyen%<num%>%<pl%>:yeyen # ; ! tres (plural)
+caxtol%<num%>:caxtol # ; ! quince
+ciqui%<det%>:ciqui # ; ! unos
+diecioochoo%<num%>:dieciocho # ;
+mahctlactl%<num%>:mahctlactl # ; ! diez
+nahuen%<num%>%<pl%>:nahuen # ; ! cuatro (plural)
+ome%<num%>:ome # ; ! dos
+veinte%<num%>:veinte # ;
+veintinueve%<num%>:veintinueve # ;
+que%<sconj%>:que # ;
+tleno%<sconj%>:tleno # ; ! que
+tlen%<sconj%>:tlen # ; ! que
+para%<sconj%>:para # ; ! que
+mox%<part%>:mox # ; ! marcador interrogativo
 
 
 LEXICON Determinantes 
@@ -1447,6 +1467,9 @@ tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
 
 tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
 tzocotzi:tzocotzi        Adj ; !"pequeñx"
+patiyo:patiyo            Adj ; !"carx"
+cualli:cualli            Adj ; !"buenx"
+cuali:cuali            Adj ; !"buenx"
 
 LEXICON Propios
 
@@ -1474,6 +1497,29 @@ ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
 xa:xa                        Adv ; ! quizás
 cana:cana                    Adv ; ! quizás
+ya:ya                        Adv ;
+zan:zan                      Adv ; ! solo
+yaqui:yaqui                  Adv ; ! apenas
+casi:casi                    Adv ;
+cachi:cachi                  Adv ; ! más
+campa:campa                  Adv ; ! donde
+amayic:amayic                Adv ; ! nunca
+cuando:cuando                Adv ;
+hasta:hasta                  Adv ;
+mejor:mejor                  Adv ;
+milahuac:milahuac            Adv ; !de verdad
+nican:nican                  Adv ; ! aquí
+nochi:nochi                  Adv ; ! todo
+nochipa:nochipa              Adv ; ! siempre
+nochten:nochten              Adv ; ! todos
+ohcón:ohcón                  Adv ; ! así
+ompa:ompa                    Adv ; ! allá
+quemazá:quemazá              Adv ; ! a veces
+queme:queme                  Adv ; ! como
+quemen:quemen                  Adv ; ! como
+queni:queni                  Adv ; ! como
+quen:quen                    Adv ; ! como
+
 
 LEXICON Puntuación
 

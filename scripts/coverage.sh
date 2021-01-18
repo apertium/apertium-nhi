@@ -6,8 +6,8 @@
 cd ..
 
 #"corpus/tiquitini_ACK.txt corpus/omitlan_1.txt corpus/omitlan_2.txt"
-PATH_TO_CORPUS=corpus/tiquitini_ACK.txt
-
+PATH_TO_CORPUS=corpus/omitlan_2_verbs.txt
+echo $PATH_TO_CORPUS
 NUM_WORDS=$(cat $PATH_TO_CORPUS | wc -w)
 NUM_UNIQUE_WORDS=$(for word in $(cat $PATH_TO_CORPUS); do echo "$word"; done | sort -u | wc -w)
 MATCHED=$(for word in $(cat $PATH_TO_CORPUS); do echo "$word"; done | apertium -d . nhi-morph | grep -v '*')
