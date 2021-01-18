@@ -93,6 +93,7 @@ Multichar_Symbols
 %{c%}
 %{s%}                                    ! para plural español
 %{z%}                                    ! z/c
+%{e%}
 
 %>                                       ! Frontera de morfema
 
