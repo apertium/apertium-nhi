@@ -28,6 +28,7 @@
 13	de	de	ADP	_	_	14	case	14:case	_
 14	huesos	huesos	NOUN	_	_	12	nmod	12:nmod	_
 15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
 # sent_id = omitlan_2:3
 # text = Bueno neh niquihtoz ce historia cuando neh onipiyaya mactlactl xihuitl huan nicpiya ce nocni yeh itoca Darío, yeh ocpiyaya chicueyi xihuitl huan niquihlnamiqui otiquimpiyayah mique ichcame, xa queme ce caxtol.
 # text[spa] = Bueno yo voy a contar una historia cuando tenía diez años y tengo un hermano que se llama Darío, él tenía ocho años y recuerdo que teníamos muchos borregos, quizás como quince.

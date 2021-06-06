@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium nhi], [0.1.0], [ftyers@prompsit.com], [apertium-nhi], [http://wiki.apertium.org/wiki/Apertium-nhi])
+AC_INIT([Apertium nhi], [0.1.0], [ftyers@prompsit.com], [apertium-nhi], [https://wiki.apertium.org/wiki/Apertium-nhi])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
