@@ -1138,6 +1138,11 @@ LEXICON Optative
 @D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
 @D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
 
+LEXICON DirectionToward
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
+! TODO: continue with perfective and optative...
+
 LEXICON Applicative
 %<appl%>:lia # ;
 
@@ -1206,7 +1211,7 @@ LEXICON EsPlural
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
-%<dim%>%<abs%>:%>tzin%>tli                         # ;
+%<dim%>%<abs%>@D.Px@:@D.Px@%>tzin%>tli             # ;
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;
 
 LEXICON Deriv 
@@ -1449,7 +1454,7 @@ secundaria:secundaria                           EsSuff ;
 semana:semana                                   EsSuff ;
 tarea:tarea                                     EsSuff ;
 trabajo:trabajo                                 EsSuff ;
-vez:vez                                         EsSuff ;
+vez:ve%{z%}                                     EsSuff ;
 
 
 
