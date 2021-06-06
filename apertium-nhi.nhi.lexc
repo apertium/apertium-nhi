@@ -1097,6 +1097,7 @@ LEXICON Base3Suffixes
               Counterfactual ;
               Optative ;
               Applicative ;
+              DirectionToward ;
               ! TODO Suffixal Directionals (Perfective/Imperfective/Optative)
 
 
@@ -1141,7 +1142,13 @@ LEXICON Optative
 LEXICON DirectionToward
 @D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
 @D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
-! TODO: continue with perfective and optative...
+
+@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<all%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<all%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
+
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<all%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<all%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
+
 
 LEXICON Applicative
 %<appl%>:lia # ;
@@ -1261,7 +1268,7 @@ LEXICON EsSuff
 @D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
 %<n%>:0                                             EsPlural ;
 
-!LEXICON Rel 
+!LEXICON Rel
 !
 !+co%<n%>%<loc%>:%>co # ; ! FIXME: Orth
 !+pan%<n%>%<loc%>:%>pan # ; ! FIXME: Orth
