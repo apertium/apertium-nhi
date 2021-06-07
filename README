@@ -54,17 +54,17 @@ If you are in the source directory after running make, the following
 commands should work:
 
 ```console
-$ echo "Yeh in tlacatl" | apertium -d . nhi-morph
-^Yeh/yehuatl<prn><pro><p3><sg>$ ^in/in<det>$ ^tlacatl/tlacatl<n><abs>/<s_pl3>tlacatl<n><abs>/<s_sg3>tlacatl<n><abs>$
+$  echo "teh ticochiz" | apertium -d . nhi-morph
+^teh/tehuatl<prn><pers><p2><sg>$ ^ticochiz/<s_sg2>cochi<v><iv><fut>$^./.<sent>$
 
-$ echo "Yeh in tlacatl" | apertium -d . nhi-tagger
-^yehuatl<prn><pro><p3><sg>$ ^in<det>$ ^tlacatl<n><abs>$
+$ echo "teh ticochiz" | apertium -d . nhi-tagger
+^tehuatl<prn><pers><p2><sg>$ ^cochi<v><iv><fut><s_sg2>$^.<sent>$
 
 $ echo "Yeh in tlacatl" | apertium -d . nhi-phone
 ^Yeh/jeh$ ^in/in$ ^tlacatl/tɬakatɬ$
 
-$ echo "Yeh in tlacatl" | apertium -d . nhi-segmenter
-^Yeh/Yeh$ ^in/in$ ^tlacatl/tlaca>tl$
+$ echo "teh ticochiz" | apertium -d . nhi-segmenter
+^teh/teh$ ^ticochiz/ti>cochi>z$^./.$
 
 $ echo "ce tlahcuilolli tleh campa niitztoc" | apertium -d . nhi-nhi_SEP
 ^ce/se$ ^tlahcuilolli/tlajkuiloli$ ^tleh/tlej$ ^campa/kampa$ ^niitztoc/niitstok$
