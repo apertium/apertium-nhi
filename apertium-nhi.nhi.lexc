@@ -1314,8 +1314,8 @@ LEXICON NP-Top
 LEXICON Miscellaneous
 
 porque%<cnjsub%>:porque # ;
-y%<cnj%>:y # ;
-huan%<cnj%>:huan # ;
+y%<cnjcoo%>:y # ;
+huan%<cnjcoo%>:huan # ;
 
 amo%<neg%>:amo # ;
 quema%<afirm%>:quema # ;
@@ -1332,10 +1332,10 @@ nahuen%<num%>%<pl%>:nahuen # ; ! cuatro (plural)
 ome%<num%>:ome # ; ! dos
 veinte%<num%>:veinte # ;
 veintinueve%<num%>:veintinueve # ;
-que%<sconj%>:que # ;
-tleno%<sconj%>:tleno # ; ! que
-tlen%<sconj%>:tlen # ; ! que
-para%<sconj%>:para # ; ! que
+que%<cnjsub%>:que # ;
+tleno%<cnjsub%>:tleno # ; ! que
+tlen%<cnjsub%>:tlen # ; ! que
+para%<cnjsub%>:para # ; ! que
 mox%<part%>:mox # ; ! marcador interrogativo
 
 
