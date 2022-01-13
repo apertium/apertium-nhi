@@ -12,6 +12,8 @@ Multichar_Symbols
 %<np%>                                   ! Nombre propio
 %<cnjsub%>                               ! Coordinación subordinada
 
+%<pr%>                                   ! Preposición
+
 %<tv%>                                   ! Transitivo
 %<tv2%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
@@ -31,6 +33,8 @@ Multichar_Symbols
 %<dim%>                                  ! Diminutivo
 
 %<hon%>                                  ! Honorifico
+
+%<barb%>                                 ! Barbarismo (español)
 
 
 %<pres%>   ! tiempo presente
@@ -137,6 +141,7 @@ Pronombres ;
 Determinantes ;
 Propios ;
 Adverbios ;
+Preposiciones ;
 Puntuación ;
 Verb ;
 
@@ -1271,8 +1276,8 @@ LEXICON NoSuff
 
 LEXICON EsSuff
 
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
-%<n%>:0                                             EsPlural ;
+@D.Sa.Pl@%<n%>%<barb%>:@D.Sa.Pl@                           # ;
+%<n%>%<barb%>:0                                             EsPlural ;
 
 !LEXICON Rel
 !
@@ -1307,9 +1312,22 @@ tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
 nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
 yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
+LEXICON Pr
+
+%<pr%>: # ; 
+
+LEXICON Pr-Esp
+
+%<pr%>%<barb%>: # ; 
+
 LEXICON Adv 
 
 %<adv%>: # ; 
+
+LEXICON NP-Ant
+
+%<np%>%<ant%>: # ; 
+
 
 LEXICON NP-Top 
 
@@ -1321,6 +1339,7 @@ LEXICON Miscellaneous
 
 porque%<cnjsub%>:porque # ;
 y%<cnjcoo%>:y # ;
+pero%<cnjcoo%>:pero # ;
 huan%<cnjcoo%>:huan # ;
 
 amo%<neg%>:amo # ;
@@ -1343,6 +1362,8 @@ tleno%<cnjsub%>:tleno # ; ! que
 tlen%<cnjsub%>:tlen # ; ! que
 para%<cnjsub%>:para # ; ! que
 mox%<part%>:mox # ; ! marcador interrogativo
+
+o%<aux%>:o # ; 
 
 
 LEXICON Determinantes 
@@ -1454,6 +1475,7 @@ clase:clase                                     EsSuff ;
 compañero:compañero                             EsSuff ;
 compañera:compañera                             EsSuff ;
 cosa:cosa                                       EsSuff ;
+cosita:cosita                                   EsSuff ;
 escuela:escuela                                 EsSuff ;
 historia:historia                               EsSuff ;
 hora:hora                                       EsSuff ;
@@ -1497,9 +1519,17 @@ patiyo:patiyo            Adj ; !"carx"
 cualli:cualli            Adj ; !"buenx"
 cuali:cuali            Adj ; !"buenx"
 
+pobre:pobre            Adj-Esp-mf ; ! "pobre"
+difícil:difícil        Adj-Esp-mf ; ! "difícil"
+unido:unid             Adj-Esp-m/f ; ! "unido"
+
 LEXICON Propios
 
 México:México            NP-Top ; 
+Estados:Estados           NP-Top ; 
+Unidos:Unidos            NP-Top ; 
+
+Cooper:Cooper           NP-Ant ; 
 
 
 LEXICON AdjCont
@@ -1513,6 +1543,17 @@ LEXICON Adj
 %<adj%>:0  # ;
 
 
+LEXICON Adj-Esp-mf
+%<adj%>%<barb%>:0  # ;
+
+LEXICON Adj-Esp-m/f
+%<adj%>%<barb%>%<m%>:o  # ;
+%<adj%>%<barb%>%<f%>:a  # ;
+%<adj%>%<barb%>%<m%>%<pl%>:os  # ;
+%<adj%>%<barb%>%<f%>%<pl%>:as  # ;
+
+
+
 LEXICON Adverbios 
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
 entonces:entonces            Adv ; 
@@ -1523,8 +1564,6 @@ ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
 xa:xa                        Adv ; ! quizás
 cana:cana                    Adv ; ! quizás
-ya:ya                        Adv ;
-zan:zan                      Adv ; ! solo
 yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
@@ -1546,15 +1585,51 @@ quemen:quemen                  Adv ; ! como
 queni:queni                  Adv ; ! como
 quen:quen                    Adv ; ! como
 
+ya:ya                        Adv ;
+zan:zan                      Adv ; ! solo
+! FIXME: Comprobar
+ya:ye                        Adv ;
+zan:za                       Adv ; ! solo
+
+LEXICON Preposiciones 
+
+de:de                        Pr-Esp ;  ! "de"
+por:por                      Pr-Esp ;  ! "por"
+para:para                    Pr-Esp ;  ! "para"
+ic:ic                        Pr ;  ! "por"
+
 
 LEXICON Puntuación
 
-.%<sent%>:.   # ;
-%;%<sent%>:%; # ;
-%:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
-%¡%<sent%>:%¡ # ;
-,%<cm%>:,     # ;
+%"%<sent%>:%" # ;
+%(%<lpar%>:%( # ;
+%)%<rpar%>:%) # ;
+%-%<guio%>:%- # ;
+%:%<sent%>:%: # ;
+%:%<sent%>:%: # ;
+%;%<sent%>:%; # ;
+%;%<sent%>:%; # ;
 %?%<sent%>:%? # ;
+%?%<sent%>:%? # ;
+%[%<lpar%>:%[ # ;
+%]%<rpar%>:%] # ;
+%¡%<sent%>:%¡ # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%¿%<lquest%>:%¿ # ;
+%–%<guio%>:%– # ;
+%—%<guio%>:%— # ;
+%“%<lquot%>:%“ # ;
+%”%<rquot%>:%” # ;
+,%<cm%>:, # ;
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+/%<sent%>:/ # ;
+\%<sent%>:\ # ;
 …%<sent%>:…   # ;
+…%<sent%>:… # ;
+（%<lpar%>:（ # ;
+）%<rpar%>:） # ;
 
