@@ -1190,6 +1190,7 @@ LEXICON Nominals
 ! pueden llevar posesión
                                                    Nouns ;
                                                    Adjetivos ;
+                                                   Relacionales ;
 
 LEXICON Honorific !TODO: add i -> honorific vowel harmony in .twolc file.
 %<hon%>:on%>                   Possession ;
@@ -1220,6 +1221,11 @@ LEXICON Diminutivo
 %<dim%>:%>tzin                                     # ; 
 %<dim%>%<abs%>@D.Px@:@D.Px@%>tzin%>tli             # ;
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;
+
+LEXICON RelSuff
+
+@R.Px@%<n%>%<rel%>:@R.Px@                          # ;
+
 
 LEXICON Deriv 
                                                    Diminutivo ; 
@@ -1354,6 +1360,12 @@ Personales ;
 !kxi:kxi Rel ; ! FIXME: Orth
 !nacas:nacas Rel ; ! FIXME: Orth
 !jti:jti Rel ; ! FIXME: Orth
+
+LEXICON Relacionales 
+
+huan:huan                                       RelSuff ; ! "con"
+tich:tich                                       RelSuff ; ! "en"
+tich:ch                                         RelSuff ; ! "en"
 
 LEXICON Nouns
 
