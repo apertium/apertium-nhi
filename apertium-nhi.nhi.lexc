@@ -1379,6 +1379,10 @@ para%<cnjsub%>:para # ; ! que
 mox%<part%>:mox # ; ! marcador interrogativo
 
 o%<aux%>:o # ; 
+oc%<aux%>:oc # ; 
+mach%<aux%>:mach # ; 
+ma%<aux%>:ma # ; 
+ma%<aux%>:mo # ; 
 
 LEXICON Numerales 
 
