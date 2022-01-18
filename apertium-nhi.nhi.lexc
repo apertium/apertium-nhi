@@ -84,6 +84,29 @@ Multichar_Symbols
 
 %<all%>                           ! direccional hacia el locutor
 
+%<afirm%>
+%<ant%>
+%<appl%>
+%<aux%>
+%<Cfact%>
+%<cm%>
+%<cnjcoo%>
+%<f%>
+%<guio%>
+%<ij%>
+%<lpar%>
+%<lquest%>
+%<lquot%>
+%<m%>
+%<neg%>
+%<o_sg3_om%>
+%<part%>
+%<refl%>
+%<rel%>
+%<rpar%>
+%<rquot%>
+
+
 %<sent%>                                 ! Final de frase
 
 %{o%}                                    ! o 
@@ -155,7 +178,7 @@ Verb ;
 !
 LEXICON Verb
 @P.PST.ON@:@P.PST.ON@o%>                             VerbalSubject ;
-@P.PST.ON@:@P.PST.ON@y%>o%>                           VerbalSubject ; ! "ya+past"
+@P.PST.ON@ya%<adv%>+:@P.PST.ON@y%>o%>                VerbalSubject ; ! "ya+past"
 
                                                      VerbalSubject ;
 
