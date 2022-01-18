@@ -82,7 +82,7 @@ Multichar_Symbols
 %<o_aa3%>
 %<o_nn3%>
 
-%<all%>                           ! direccional hacia el locutor
+%<lat%>                           ! direccional hacia el locutor
 
 %<afirm%>
 %<ant%>
@@ -227,7 +227,7 @@ LEXICON TV2-DOBJ
 
 LEXICON TV2-Dir
 %<hon%>:on%>                                       TV2-Refl ;
-%<all%>:hual%>                                     TV2-Refl ;
+%<lat%>:hual%>                                     TV2-Refl ;
                                                    TV2-Refl ;
 
 LEXICON TV2-Refl
@@ -258,7 +258,7 @@ LEXICON TV-DOBJ
 
 LEXICON TV-Dir
 %<hon%>:on%>                                       TV-Refl ;
-%<all%>:hual%>                                     TV-Refl ;
+%<lat%>:hual%>                                     TV-Refl ;
                                                    TV-Refl ;
 
 LEXICON TV-Refl
@@ -273,7 +273,7 @@ LEXICON TV-Indef-Obj
 
 LEXICON IV-Dir
 %<hon%>:on%>                                       IV-Stem ;
-%<all%>:hual%>                                     IV-Stem ;
+%<lat%>:hual%>                                     IV-Stem ;
                                                    IV-Stem ;
 LEXICON IrregularVerbs
                   Ca ;
@@ -1171,14 +1171,14 @@ LEXICON Optative
 @D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
 
 LEXICON DirectionToward
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
 
-@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<all%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
-@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<all%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
+@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
 
-@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<all%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
-@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<all%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
 
 
 LEXICON Applicative
