@@ -1194,7 +1194,7 @@ LEXICON NominalSubject
 
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Predicate ;
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
-@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate "weight: 1.0" ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Predicate ;
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
