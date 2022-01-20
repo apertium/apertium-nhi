@@ -1359,6 +1359,11 @@ LEXICON Pr-Esp
 
 %<pr%>%<barb%>: # ; 
 
+LEXICON AdvEs
+
+%<adv%>%<barb%>: # ; 
+
+
 LEXICON Adv 
 
 %<adv%>: # ; 
@@ -1518,9 +1523,12 @@ bachiller:bachiller                             EsSuff ;
 bota:bota                                       EsSuff ;
 cama:cama                                       EsSuff ;
 campo:campo                                     EsSuff ;
+pueblo:pueblo                                   EsSuff ;
+barrio:barrio                                   EsSuff ;
 clase:clase                                     EsSuff ;
 compañero:compañero                             EsSuff ;
 compañera:compañera                             EsSuff ;
+guerra:guerra                                   EsSuff ;
 cosa:cosa                                       EsSuff ;
 cosita:cosita                                   EsSuff ;
 escuela:escuela                                 EsSuff ;
@@ -1611,9 +1619,13 @@ LEXICON Adj-Esp-m/f
 
 LEXICON Adverbios 
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
-entonces:entonces            Adv ; 
-pues:pues                    Adv ; 
-bueno:bueno                  Adv ;
+entonces:entonces            AdvEs ; 
+ahorita:ahorita              AdvEs ; 
+después:después              AdvEs ;
+siempre:siempre              AdvEs ; 
+ahora:ahora                  AdvEs ; 
+pues:pues                    AdvEs ; 
+bueno:bueno                  AdvEs ;
 axan:axan                    Adv ; ! ahora
 ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
@@ -1625,8 +1637,8 @@ cachi:cachi                  Adv ; ! más
 campa:campa                  Adv ; ! donde
 amayic:amayic                Adv ; ! nunca
 cuando:cuando                Adv ;
-hasta:hasta                  Adv ;
-mejor:mejor                  Adv ;
+hasta:hasta                  AdvEs ;
+mejor:mejor                  AdvEs ;
 milahuac:milahuac            Adv ; !de verdad
 nican:nican                  Adv ; ! aquí
 nochi:nochi                  Adv ; ! todo
@@ -1663,6 +1675,8 @@ ic:ic                        Pr ;  ! "por"
 LEXICON Interjecciones 
 
 ay:ay                        INTJ ; ! "ay"
+igual:igual                  INTJ ; ! "igual"
+sí:sí                        INTJ ; ! "sí"
 
 LEXICON Puntuación
 
