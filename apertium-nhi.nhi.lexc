@@ -12,6 +12,8 @@ Multichar_Symbols
 %<np%>                                   ! Nombre propio
 %<cnjsub%>                               ! Coordinación subordinada
 
+%<pr%>                                   ! Preposición
+
 %<tv%>                                   ! Transitivo
 %<tv2%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
@@ -31,6 +33,8 @@ Multichar_Symbols
 %<dim%>                                  ! Diminutivo
 
 %<hon%>                                  ! Honorifico
+
+%<barb%>                                 ! Barbarismo (español)
 
 
 %<pres%>   ! tiempo presente
@@ -78,7 +82,30 @@ Multichar_Symbols
 %<o_aa3%>
 %<o_nn3%>
 
-%<all%>                           ! direccional hacia el locutor
+%<lat%>                           ! direccional hacia el locutor
+
+%<afirm%>
+%<ant%>
+%<appl%>
+%<aux%>
+%<Cfact%>
+%<cm%>
+%<cnjcoo%>
+%<f%>
+%<guio%>
+%<ij%>
+%<lpar%>
+%<lquest%>
+%<lquot%>
+%<m%>
+%<neg%>
+%<o_sg3_om%>
+%<part%>
+%<refl%>
+%<rel%>
+%<rpar%>
+%<rquot%>
+
 
 %<sent%>                                 ! Final de frase
 
@@ -135,10 +162,14 @@ NominalSubject ;
 Miscellaneous ; 
 Pronombres ;
 Determinantes ;
+Numerales ; 
 Propios ;
 Adverbios ;
+Preposiciones ;
 Puntuación ;
+Interjecciones ; 
 Verb ;
+Digits ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -148,7 +179,7 @@ Verb ;
 !
 LEXICON Verb
 @P.PST.ON@:@P.PST.ON@o%>                             VerbalSubject ;
-@P.PST.ON@:@P.PST.ON@y%>o%>                           VerbalSubject ; ! "ya+past"
+@P.PST.ON@ya%<adv%>+:@P.PST.ON@y%>o%>                VerbalSubject ; ! "ya+past"
 
                                                      VerbalSubject ;
 
@@ -205,7 +236,7 @@ LEXICON TV2-DOBJ
 
 LEXICON TV2-Dir
 %<hon%>:on%>                                       TV2-Refl ;
-%<all%>:hual%>                                     TV2-Refl ;
+%<lat%>:hual%>                                     TV2-Refl ;
                                                    TV2-Refl ;
 
 LEXICON TV2-Refl
@@ -236,7 +267,7 @@ LEXICON TV-DOBJ
 
 LEXICON TV-Dir
 %<hon%>:on%>                                       TV-Refl ;
-%<all%>:hual%>                                     TV-Refl ;
+%<lat%>:hual%>                                     TV-Refl ;
                                                    TV-Refl ;
 
 LEXICON TV-Refl
@@ -251,7 +282,7 @@ LEXICON TV-Indef-Obj
 
 LEXICON IV-Dir
 %<hon%>:on%>                                       IV-Stem ;
-%<all%>:hual%>                                     IV-Stem ;
+%<lat%>:hual%>                                     IV-Stem ;
                                                    IV-Stem ;
 LEXICON IrregularVerbs
                   Ca ;
@@ -639,6 +670,14 @@ yolpaqui%<v%>%<iv%>:yolpaqui%>  Base3Suffixes;
 
 
 LEXICON TV-Stem
+!engañar
+cahcayahua%<v%>%<tv%>:cahcayahua%>  PresentTense;
+cahcayahua%<v%>%<tv%>:cahcayahua%>  Imperfect;
+cahcayahua%<v%>%<tv%>:cahcayauh%>  Durative;
+cahcayahua%<v%>%<tv%>:cahcayauh%>  Base2Suffixes;
+cahcayahua%<v%>%<tv%>:cahcayahua%>  Base3Suffixes;
+
+
 !aprender
 aprenderoa%<v%>%<tv%>:aprenderoa%>  PresentTense;
 aprenderoa%<v%>%<tv%>:aprenderoa%>  Imperfect;
@@ -764,13 +803,6 @@ ahci%<v%>%<tv%>:aci%>  Imperfect;
 ahci%<v%>%<tv%>:aci%>  Durative;
 ahci%<v%>%<tv%>:aci%>  Base2Suffixes;
 ahci%<v%>%<tv%>:aci%>  Base3Suffixes;
-
-!engañar
-cahcayahua%<v%>%<tv%>:cahcayahua%>  PresentTense;
-cahcayahua%<v%>%<tv%>:cahcayahua%>  Imperfect;
-cahcayahua%<v%>%<tv%>:cahcayauh%>  Durative;
-cahcayahua%<v%>%<tv%>:cahcayauh%>  Base2Suffixes;
-cahcayahua%<v%>%<tv%>:cahcayahua%>  Base3Suffixes;
 
 
 !dejar
@@ -1174,14 +1206,14 @@ LEXICON Optative
 @D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
 
 LEXICON DirectionToward
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<all%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
 
-@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<all%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
-@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<all%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
+@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
 
-@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<all%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
-@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<all%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
 
 
 LEXICON Applicative
@@ -1199,9 +1231,7 @@ LEXICON NominalSubject
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@in%>                      Predicate ;
 
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@it%>      Predicate ;
-
-@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate "weight: 1.0" ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@it%>                      Predicate ;
 
@@ -1234,6 +1264,7 @@ LEXICON Nominals
 ! pueden llevar posesión
                                                    Nouns ;
                                                    Adjetivos ;
+                                                   Relacionales ;
 
 LEXICON Honorific !TODO: add i -> honorific vowel harmony in .twolc file.
 %<hon%>:on%>                   Possession ;
@@ -1267,6 +1298,11 @@ LEXICON Diminutivo
 %<dim%>%<abs%>@D.Px@:@D.Px@%>tzin%>tli             # ;
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;
 
+LEXICON RelSuff
+
+@R.Px@%<n%>%<rel%>:@R.Px@                          # ;
+
+
 LEXICON Deriv 
                                                    Diminutivo ; 
 LEXICON TlSuff
@@ -1293,7 +1329,9 @@ LEXICON LiSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>li    # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
-%<n%>:%>li                                         Plural ;
+! FIXME: mopilhuan
+!%<n%>:%>li                                         Plural ;
+%<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON InSuff
@@ -1311,8 +1349,8 @@ LEXICON NoSuff
 
 LEXICON EsSuff
 
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
-%<n%>:0                                             EsPlural ;
+@D.Sa.Pl@%<n%>%<barb%>:@D.Sa.Pl@                           # ;
+%<n%>%<barb%>:0                                             EsPlural ;
 
 !LEXICON Rel
 !
@@ -1320,6 +1358,16 @@ LEXICON EsSuff
 !+pan%<n%>%<loc%>:%>pan # ; ! FIXME: Orth
 !+tlan%<n%>%<loc%>:%>tlan # ; ! FIXME: Orth
 !+yan%<n%>%<loc%>:%>yan # ; ! FIXME: Orth
+
+LEXICON NUM
+
+%<num%>: # ; 
+
+
+LEXICON INTJ
+
+%<ij%>: # ; 
+
 
 LEXICON DET
 
@@ -1347,9 +1395,27 @@ tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
 nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
 yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
+LEXICON Pr
+
+%<pr%>: # ; 
+
+LEXICON Pr-Esp
+
+%<pr%>%<barb%>: # ; 
+
+LEXICON AdvEs
+
+%<adv%>%<barb%>: # ; 
+
+
 LEXICON Adv 
 
 %<adv%>: # ; 
+
+LEXICON NP-Ant
+
+%<np%>%<ant%>: # ; 
+
 
 LEXICON NP-Top 
 
@@ -1360,8 +1426,9 @@ LEXICON NP-Top
 LEXICON Miscellaneous
 
 porque%<cnjsub%>:porque # ;
-y%<cnj%>:y # ;
-huan%<cnj%>:huan # ;
+y%<cnjcoo%>:y # ;
+pero%<cnjcoo%>:pero # ;
+huan%<cnjcoo%>:huan # ;
 
 amo%<neg%>:amo # ;
 quema%<afirm%>:quema # ;
@@ -1378,12 +1445,21 @@ nahuen%<num%>%<pl%>:nahuen # ; ! cuatro (plural)
 ome%<num%>:ome # ; ! dos
 veinte%<num%>:veinte # ;
 veintinueve%<num%>:veintinueve # ;
-que%<sconj%>:que # ;
-tleno%<sconj%>:tleno # ; ! que
-tlen%<sconj%>:tlen # ; ! que
-para%<sconj%>:para # ; ! que
+que%<cnjsub%>:que # ;
+tleno%<cnjsub%>:tleno # ; ! que
+tlen%<cnjsub%>:tlen # ; ! que
+para%<cnjsub%>:para # ; ! que
 mox%<part%>:mox # ; ! marcador interrogativo
 
+o%<aux%>:o # ; 
+oc%<aux%>:oc # ; 
+mach%<aux%>:mach # ; 
+ma%<aux%>:ma # ; 
+ma%<aux%>:mo # ; 
+
+LEXICON Numerales 
+
+mahtlactl:mahtlactl                             NUM ; ! ""
 
 LEXICON Determinantes 
 
@@ -1400,6 +1476,13 @@ Personales ;
 !kxi:kxi Rel ; ! FIXME: Orth
 !nacas:nacas Rel ; ! FIXME: Orth
 !jti:jti Rel ; ! FIXME: Orth
+
+LEXICON Relacionales 
+
+huan:huan                                       RelSuff ; ! "con" (persona)
+tich:tich                                       RelSuff ; ! "en"
+tich:ch                                         RelSuff ; ! "en"
+ca:ca                                           RelSuff ; ! "con" (instrumento)
 
 LEXICON Nouns
 
@@ -1580,10 +1663,14 @@ bachiller:bachiller                             EsSuff ;
 bota:bota                                       EsSuff ;
 cama:cama                                       EsSuff ;
 campo:campo                                     EsSuff ;
+pueblo:pueblo                                   EsSuff ;
+barrio:barrio                                   EsSuff ;
 clase:clase                                     EsSuff ;
 compañero:compañero                             EsSuff ;
 compañera:compañera                             EsSuff ;
+guerra:guerra                                   EsSuff ;
 cosa:cosa                                       EsSuff ;
+cosita:cosita                                   EsSuff ;
 escuela:escuela                                 EsSuff ;
 historia:historia                               EsSuff ;
 hora:hora                                       EsSuff ;
@@ -1604,6 +1691,7 @@ semana:semana                                   EsSuff ;
 tarea:tarea                                     EsSuff ;
 trabajo:trabajo                                 EsSuff ;
 vez:ve%{z%}                                     EsSuff ;
+pitbull:pitbull                                 EsSuff ;
 
 
 
@@ -1627,9 +1715,24 @@ patiyo:patiyo            Adj ; !"carx"
 cualli:cualli            Adj ; !"buenx"
 cuali:cuali            Adj ; !"buenx"
 
+pobre:pobre            Adj-Esp-mf ; ! "pobre"
+difícil:difícil        Adj-Esp-mf ; ! "difícil"
+unido:unid             Adj-Esp-m/f ; ! "unido"
+chistoso:chistos       Adj-Esp-m/f ; ! "chistoso"
+
 LEXICON Propios
 
 México:México            NP-Top ; 
+Sonora:Sonora            NP-Top ; 
+Estados:Estados           NP-Top ; 
+Unidos:Unidos            NP-Top ; 
+Zacatlán:Zacatlán            NP-Top ; 
+Omitlán:Omitlán NP-Top ; 
+Zaloncuatlauhco:Zaloncuatlauhco            NP-Top ; 
+
+Cooper:Cooper           NP-Ant ; 
+Darío:Darío           NP-Ant ; 
+Mariana:Mariana NP-Ant ; 
 
 
 LEXICON AdjCont
@@ -1643,26 +1746,39 @@ LEXICON Adj
 %<adj%>:0  # ;
 
 
+LEXICON Adj-Esp-mf
+%<adj%>%<barb%>:0  # ;
+
+LEXICON Adj-Esp-m/f
+%<adj%>%<barb%>%<m%>:o  # ;
+%<adj%>%<barb%>%<f%>:a  # ;
+%<adj%>%<barb%>%<m%>%<pl%>:os  # ;
+%<adj%>%<barb%>%<f%>%<pl%>:as  # ;
+
+
+
 LEXICON Adverbios 
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
-entonces:entonces            Adv ; 
-pues:pues                    Adv ; 
-bueno:bueno                  Adv ;
+entonces:entonces            AdvEs ; 
+ahorita:ahorita              AdvEs ; 
+después:después              AdvEs ;
+siempre:siempre              AdvEs ; 
+ahora:ahora                  AdvEs ; 
+pues:pues                    AdvEs ; 
+bueno:bueno                  AdvEs ;
 axan:axan                    Adv ; ! ahora
 ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
 xa:xa                        Adv ; ! quizás
 cana:cana                    Adv ; ! quizás
-ya:ya                        Adv ;
-zan:zan                      Adv ; ! solo
 yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
 campa:campa                  Adv ; ! donde
 amayic:amayic                Adv ; ! nunca
 cuando:cuando                Adv ;
-hasta:hasta                  Adv ;
-mejor:mejor                  Adv ;
+hasta:hasta                  AdvEs ;
+mejor:mejor                  AdvEs ;
 milahuac:milahuac            Adv ; !de verdad
 nican:nican                  Adv ; ! aquí
 nochi:nochi                  Adv ; ! todo
@@ -1676,15 +1792,70 @@ quemen:quemen                  Adv ; ! como
 queni:queni                  Adv ; ! como
 quen:quen                    Adv ; ! como
 
+ya:ya                        Adv ;
+zan:zan                      Adv ; ! solo
+! FIXME: Comprobar
+ya:ye                        Adv ;
+zan:za                       Adv ; ! solo
+
+cimi:cimi                    Adv ; ! 
+
+LEXICON Preposiciones 
+
+de:de                        Pr-Esp ;  ! "de"
+a:a                          Pr-Esp ;  ! "a"
+por:por                      Pr-Esp ;  ! "por"
+en:en                      Pr-Esp ;  ! "en"
+desde:desde                      Pr-Esp ;  ! "desde"
+para:para                    Pr-Esp ;  ! "para"
+sin:sin                      Pr-Esp ; ! "sin"
+
+ic:ic                        Pr ;  ! "por"
+
+LEXICON Interjecciones 
+
+ay:ay                        INTJ ; ! "ay"
+igual:igual                  INTJ ; ! "igual"
+sí:sí                        INTJ ; ! "sí"
 
 LEXICON Puntuación
 
-.%<sent%>:.   # ;
-%;%<sent%>:%; # ;
-%:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
-%¡%<sent%>:%¡ # ;
-,%<cm%>:,     # ;
+%"%<sent%>:%" # ;
+%(%<lpar%>:%( # ;
+%)%<rpar%>:%) # ;
+%-%<guio%>:%- # ;
+%:%<sent%>:%: # ;
+%:%<sent%>:%: # ;
+%;%<sent%>:%; # ;
+%;%<sent%>:%; # ;
 %?%<sent%>:%? # ;
+%?%<sent%>:%? # ;
+%[%<lpar%>:%[ # ;
+%]%<rpar%>:%] # ;
+%¡%<sent%>:%¡ # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%¿%<lquest%>:%¿ # ;
+%–%<guio%>:%– # ;
+%—%<guio%>:%— # ;
+%“%<lquot%>:%“ # ;
+%”%<rquot%>:%” # ;
+,%<cm%>:, # ;
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+/%<sent%>:/ # ;
+\%<sent%>:\ # ;
 …%<sent%>:…   # ;
+…%<sent%>:… # ;
+（%<lpar%>:（ # ;
+）%<rpar%>:） # ;
+
+
+LEXICON Digits
+
+<[ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]+> NUM ;
+<[ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] [ %, | %. ] [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]+> NUM ;
+
 

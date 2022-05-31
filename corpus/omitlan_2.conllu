@@ -2,7 +2,7 @@
 # text = Neh notoca Mariana.
 # text[spa] = Me llamo Mariana.
 # labels = partial
-1	Neh	neh	PRON	_	_	2	dislocated	2:dislocated	_
+1	Neh	neh	PRON	_	_	2	nmod	2:nmod	_
 2	notoca	toca	NOUN	_	_	0	root	0:root	_
 3	Mariana	Mariana	PROPN	_	_	2	nsubj	2:nsubj	_
 4	.	.	PUNCT	_	_	2	punct	2:punct	_
