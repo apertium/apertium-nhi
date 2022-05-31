@@ -9,7 +9,7 @@ def categorise(token):
 		return (token, token.lower(), 'PRON', '_')
 	if token in '—.,:;()[]?!¡¿"“”':
 		return (token, token, 'PUNCT', 'punct')
-	if token.lower() in ['huan', 'pero']:
+	if token.lower() in ['huan', 'uan', 'pero']:
 		return (token, token.lower(), 'CCONJ', '_')
 	if token.lower() in ['porque', 'tla']:
 		return (token, token.lower(), 'SCONJ', '_')
