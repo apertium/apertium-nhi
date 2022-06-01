@@ -591,11 +591,11 @@ pehua%<v%>%<iv%>:peuh%>  Base2Suffixes;
 pehua%<v%>%<iv%>:pehua%>  Base3Suffixes;
 
 !subir
-ehco%<v%>%<iv%>:ehco%>  PresentTense;
-ehco%<v%>%<iv%>:ehco%>  Imperfect;
-ehco%<v%>%<iv%>:ehco%>  Durative;
-ehco%<v%>%<iv%>:ehcoc%>  Base2Suffixes;
-ehco%<v%>%<iv%>:ehco%>  Base3Suffixes;
+tlehco%<v%>%<iv%>:tlehco%>  PresentTense;
+tlehco%<v%>%<iv%>:tlehco%>  Imperfect;
+tlehco%<v%>%<iv%>:tlehco%>  Durative;
+tlehco%<v%>%<iv%>:tlehcoc%>  Base2Suffixes;
+tlehco%<v%>%<iv%>:tlehco%>  Base3Suffixes;
 
 !bajar
 timoa%<v%>%<iv%>:timoa%>  PresentTense;
@@ -668,6 +668,14 @@ yolpaqui%<v%>%<iv%>:yolpac%>  Durative;
 yolpaqui%<v%>%<iv%>:yolpac%>  Base2Suffixes;
 yolpaqui%<v%>%<iv%>:yolpaqui%>  Base3Suffixes;
 
+!mojar
+palti%<v%>%<tv%>:palti%>  PresentTense;
+palti%<v%>%<tv%>:palti%>  Imperfect;
+palti%<v%>%<tv%>:palti%>  Durative;
+palti%<v%>%<tv%>:palti%>  Base2Suffixes;
+palti%<v%>%<tv%>:palti%>  Base3Suffixes;
+
+
 
 LEXICON TV-Stem
 !engañar
@@ -698,6 +706,22 @@ itta%<v%>%<tv%>:ita%>     Imperfect ;
 itta%<v%>%<tv%>:itz%>      Durative ;
 itta%<v%>%<tv%>:ita%>     Base2Suffixes ;
 itta%<v%>%<tv%>:ita%>     Base3Suffixes ;
+
+! verse
+motta%<v%>%<tv%>:motta%>     PresentTense ;
+motta%<v%>%<tv%>:motta%>     Imperfect ;
+motta%<v%>%<tv%>:motz%>      Durative ;
+motta%<v%>%<tv%>:motta%>     Base2Suffixes ;
+motta%<v%>%<tv%>:motta%>     Base3Suffixes ;
+
+
+! verse -- alternancia ortográfica
+motta%<v%>%<tv%>:mota%>     PresentTense ;
+motta%<v%>%<tv%>:mota%>     Imperfect ;
+motta%<v%>%<tv%>:motz%>      Durative ;
+motta%<v%>%<tv%>:mota%>     Base2Suffixes ;
+motta%<v%>%<tv%>:mota%>     Base3Suffixes ;
+
 
 ! poner
 tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
@@ -1026,13 +1050,27 @@ nimilia%<v%>%<tv%>:nimilih%>  Durative;
 nimilia%<v%>%<tv%>:nimil%{i%}%{H%}%>  Base2Suffixes;
 nimilia%<v%>%<tv%>:nimili%>  Base3Suffixes;
 
+! lavar (ropa)
+paca%<v%>%<tv%>:paca%>  PresentTense;
+paca%<v%>%<tv%>:paca%>  Imperfect;
+paca%<v%>%<tv%>:paca%>  Durative;
+paca%<v%>%<tv%>:paca%>  Base2Suffixes;
+paca%<v%>%<tv%>:paca%>  Base3Suffixes;
+
+! lavar (trastes)
+pahpaca%<v%>%<tv%>:pahpaca%>  PresentTense;
+pahpaca%<v%>%<tv%>:pahpaca%>  Imperfect;
+pahpaca%<v%>%<tv%>:pahpaca%>  Durative;
+pahpaca%<v%>%<tv%>:pahpaca%>  Base2Suffixes;
+pahpaca%<v%>%<tv%>:pahpaca%>  Base3Suffixes;
+
 
 !mojar
-palti%<v%>%<tv%>:palti%>  PresentTense;
-palti%<v%>%<tv%>:palti%>  Imperfect;
-palti%<v%>%<tv%>:palti%>  Durative;
-palti%<v%>%<tv%>:palti%>  Base2Suffixes;
-palti%<v%>%<tv%>:palti%>  Base3Suffixes;
+paltilia%<v%>%<tv%>:paltilia%>  PresentTense;
+paltilia%<v%>%<tv%>:paltila%>  Imperfect;
+paltilia%<v%>%<tv%>:paltili%>  Durative;
+paltilia%<v%>%<tv%>:paltil%{i%}%{H%}%>  Base2Suffixes;
+paltilia%<v%>%<tv%>:palti%>  Base3Suffixes;
 
 
 !meter  algo hasta abajo
@@ -1153,6 +1191,14 @@ ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
 ilhuia%<v%>%<tv2%>:ilhuih%> Durative ;
 ilhuia%<v%>%<tv2%>:ilhu%{i%}%{H%}%> Base2Suffixes ;
 ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
+
+! ponerle
+tlalilia%<v%>%<tv2%>:tlalilia%> PresentTense ;
+tlalilia%<v%>%<tv2%>:tlalilia%>  Imperfect ;
+tlalilia%<v%>%<tv2%>:tlalilih%> Durative ;
+tlalilia%<v%>%<tv2%>:tlalil%{i%}%{H%}%> Base2Suffixes ;
+tlalilia%<v%>%<tv2%>:tlalili%>  Base3Suffixes ;
+
 
 LEXICON Base2Suffixes
               Preterite ;
@@ -1705,6 +1751,8 @@ nixtic:nixti             AdjCont ; !"gris"
 tomahuac:tomahua         AdjCont ; !"gordx"
 pitzahuac:pitzahua       AdjCont ; !"delgadx"
 chicactic:chicacti       AdjCont ; !"durx"
+chicahuac:chicahua       AdjCont ; !"fuerte"
+
 papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
 tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
@@ -1785,6 +1833,9 @@ nochi:nochi                  Adv ; ! todo
 nochipa:nochipa              Adv ; ! siempre
 nochten:nochten              Adv ; ! todos
 ohcón:ohcón                  Adv ; ! así
+ohcon:ohcon                  Adv ; ! así
+ihquín:ihquín                Adv ; ! así
+ihquin:ihquin                Adv ; ! así
 ompa:ompa                    Adv ; ! allá
 quemazá:quemazá              Adv ; ! a veces
 queme:queme                  Adv ; ! como
