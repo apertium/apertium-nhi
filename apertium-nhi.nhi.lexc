@@ -675,6 +675,26 @@ palti%<v%>%<tv%>:palti%>  Durative;
 palti%<v%>%<tv%>:palti%>  Base2Suffixes;
 palti%<v%>%<tv%>:palti%>  Base3Suffixes;
 
+! verse
+motta%<v%>%<tv%>:motta%>     PresentTense ;
+motta%<v%>%<tv%>:motta%>     Imperfect ;
+motta%<v%>%<tv%>:motz%>      Durative ;
+motta%<v%>%<tv%>:motta%>     Base2Suffixes ;
+motta%<v%>%<tv%>:motta%>     Base3Suffixes ;
+
+! verse -- alternancia ortográfica
+motta%<v%>%<tv%>:mota%>     PresentTense ;
+motta%<v%>%<tv%>:mota%>     Imperfect ;
+motta%<v%>%<tv%>:motz%>      Durative ;
+motta%<v%>%<tv%>:mota%>     Base2Suffixes ;
+motta%<v%>%<tv%>:mota%>     Base3Suffixes ;
+
+! columpiarse
+mohuiyonia%<v%>%<tv%>:mohuiyonia%>     PresentTense ;
+mohuiyonia%<v%>%<tv%>:mohuiyona%>     Imperfect ;
+mohuiyonia%<v%>%<tv%>:mohuiyoni%>      Durative ;
+mohuiyonia%<v%>%<tv%>:mohuiyon%{i%}%{H%}%>     Base2Suffixes ;
+mohuiyonia%<v%>%<tv%>:mohuiyoni%>     Base3Suffixes ;
 
 
 LEXICON TV-Stem
@@ -707,21 +727,12 @@ itta%<v%>%<tv%>:itz%>      Durative ;
 itta%<v%>%<tv%>:ita%>     Base2Suffixes ;
 itta%<v%>%<tv%>:ita%>     Base3Suffixes ;
 
-! verse
-motta%<v%>%<tv%>:motta%>     PresentTense ;
-motta%<v%>%<tv%>:motta%>     Imperfect ;
-motta%<v%>%<tv%>:motz%>      Durative ;
-motta%<v%>%<tv%>:motta%>     Base2Suffixes ;
-motta%<v%>%<tv%>:motta%>     Base3Suffixes ;
-
-
-! verse -- alternancia ortográfica
-motta%<v%>%<tv%>:mota%>     PresentTense ;
-motta%<v%>%<tv%>:mota%>     Imperfect ;
-motta%<v%>%<tv%>:motz%>      Durative ;
-motta%<v%>%<tv%>:mota%>     Base2Suffixes ;
-motta%<v%>%<tv%>:mota%>     Base3Suffixes ;
-
+! columpiar
+huiyonia%<v%>%<tv%>:huiyonia%>     PresentTense ;
+huiyonia%<v%>%<tv%>:huiyona%>     Imperfect ;
+huiyonia%<v%>%<tv%>:huiyoni%>      Durative ;
+huiyonia%<v%>%<tv%>:huiyon%{i%}%{H%}%>     Base2Suffixes ;
+huiyonia%<v%>%<tv%>:huiyoni%>     Base3Suffixes ;
 
 ! poner
 tlalia%<v%>%<tv%>:tlalia%> PresentTense ;
