@@ -66,6 +66,9 @@ i:0 <=> [n | m | t] o >:> _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z 
 "i -> 0 in /k/ when followed by a V"
 %{i%}:0 <=> >:> %{q%}: %{u%}: _ >:> Vow ;
 
+"Weak /i/ drops after tla"
+i:0 <=> t l a >:> _ h ;
+
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ i m:n >: c a l
@@ -89,7 +92,7 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "i->e present plural"
 i:e <=> Cns _ >:> %{H%}: .#. ;
 
-"drop h after i->e in present plura"
+"drop h after i->e in present plural"
 %{H%}:0 <=> Cns i >:> _ .#. ;
 
 "i->e pret sg"

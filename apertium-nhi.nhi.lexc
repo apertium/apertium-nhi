@@ -229,6 +229,7 @@ LEXICON TV2-IOBJ
 %<i_sg1%>:nech%>                                    TV2-DOBJ ;
 %<i_sg2%>:mitz%>                                    TV2-DOBJ ;
 %<i_sg3%>:%{q%}%{u%}%{i%}%>                         TV2-DOBJ ;
+%<i_sg3%>:qui%>                                     TV2-DOBJ ;
 %<i_pl1%>:tech%>                                    TV2-DOBJ ;
 %<i_pl2%>:mech%>                                    TV2-DOBJ ;
 %<i_pl3%>:qui%{m%}%>                                TV2-DOBJ ;
@@ -258,6 +259,7 @@ LEXICON TV-DOBJ
 %<o_sg1%>:nech%>             TV-Dir ;
 %<o_sg2%>:mitz%>             TV-Dir ;
 %<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
+%<o_sg3%>:qui%>              TV-Dir ;
 
 ! With 3sg obj (and not 3 sbj, and not honorific ), the object prefix can be
 ! omitted optionally. eg "ni-0-piya" "yo lo tengo".
@@ -307,6 +309,9 @@ LEXICON CaPres
 %<s_sg1%>catqui%<v%>m%<iv%>%<pres%>:ni%>ca # ;
 %<s_sg2%>catqui%<v%>%<iv%>%<pres%>:ti%>ca # ;
 %<s_sg3%>catqui%<v%>%<iv%>%<pres%>:catqui # ;
+%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:ca # ;
+%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:cah # ;
+
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cate # ;
 %<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cate # ;
 %<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cate # ;
@@ -451,6 +456,13 @@ quiza%<v%>%<iv%>:quiz%>   Durative ;
 quiza%<v%>%<iv%>:quiz%>   Base2Suffixes ;
 quiza%<v%>%<iv%>:quiza%>  Base3Suffixes ;
 
+! salir de la casa
+chanquiza%<v%>%<iv%>:chanquiza%>  PresentTense ;
+chanquiza%<v%>%<iv%>:chanquiza%>  Imperfect ;
+chanquiza%<v%>%<iv%>:chanquiz%>   Durative ;
+chanquiza%<v%>%<iv%>:chanquiz%>   Base2Suffixes ;
+chanquiza%<v%>%<iv%>:chanquiza%>  Base3Suffixes ;
+
 ! llorar
 choca%<v%>%<iv%>:choca%>  PresentTense ;
 choca%<v%>%<iv%>:choca%>  Imperfect ;
@@ -495,6 +507,13 @@ calaqui%<v%>%<iv%>:calaqui%>  Imperfect;
 calaqui%<v%>%<iv%>:calac%>  Durative;
 calaqui%<v%>%<iv%>:calac%>  Base2Suffixes;
 calaqui%<v%>%<iv%>:calaqui%>  Base3Suffixes;
+
+! entrar 2 (quizá entrar varias veces)
+cahcalaqui%<v%>%<iv%>:cahcalaqui%>  PresentTense;
+cahcalaqui%<v%>%<iv%>:cahcalaqui%>  Imperfect;
+cahcalaqui%<v%>%<iv%>:cahcalac%>  Durative;
+cahcalaqui%<v%>%<iv%>:cahcalac%>  Base2Suffixes;
+cahcalaqui%<v%>%<iv%>:cahcalaqui%>  Base3Suffixes;
 
 
 !cansarse
@@ -659,6 +678,12 @@ patlani%<v%>%<iv%>:patlan%>  Durative;
 patlani%<v%>%<iv%>:patlan%>  Base2Suffixes;
 patlani%<v%>%<iv%>:patlani%>  Base3Suffixes;
 
+! nacer TODO: confirm forms
+tlacati%<v%>%<iv%>:tlacati%>  PresentTense;
+tlacati%<v%>%<iv%>:tlacati%>  Imperfect;
+tlacati%<v%>%<iv%>:tlacat%>  Durative;
+tlacati%<v%>%<iv%>:tlacat%>  Base2Suffixes;
+tlacati%<v%>%<iv%>:tlacati%>  Base3Suffixes;
 
 !empezar
 pehua%<v%>%<iv%>:pehua%>  PresentTense;
@@ -718,6 +743,12 @@ tonalmiqui%<v%>%<iv%>:tonalmic%>  Durative;
 tonalmiqui%<v%>%<iv%>:tonalmic%>  Base2Suffixes;
 tonalmiqui%<v%>%<iv%>:tonalmiqui%>  Base3Suffixes;
 
+! barrer TODO:confirm
+tlachtoca%<v%>%<iv%>:tlachtoca%>  PresentTense;
+tlachtoca%<v%>%<iv%>:tlachtoca%>  Imperfect;
+tlachtoca%<v%>%<iv%>:tlachtoca%>  Durative;
+tlachtoca%<v%>%<iv%>:tlachtoca%>  Base2Suffixes;
+tlachtoca%<v%>%<iv%>:tlachtoca%>  Base3Suffixes;
 
 !ponerse triste
 tlacoya%<v%>%<iv%>:tlacoya%>  PresentTense;
@@ -1063,13 +1094,20 @@ ahci%<v%>%<tv%>:aci%>  Durative;
 ahci%<v%>%<tv%>:aci%>  Base2Suffixes;
 ahci%<v%>%<tv%>:aci%>  Base3Suffixes;
 
-
 !dejar
 cahua%<v%>%<tv%>:cahua%>  PresentTense;
 cahua%<v%>%<tv%>:cahua%>  Imperfect;
 cahua%<v%>%<tv%>:cauh%>  Durative;
 cahua%<v%>%<tv%>:cauh%>  Base2Suffixes;
 cahua%<v%>%<tv%>:cahua%>  Base3Suffixes;
+
+! tomar
+tlahuana%<v%>%<tv%>:tlahuana%>  PresentTense;
+tlahuana%<v%>%<tv%>:tlahuana%>  Imperfect;
+tlahuana%<v%>%<tv%>:tlahuan%>  Durative;
+tlahuana%<v%>%<tv%>:tlahuan%>  Base2Suffixes;
+tlahuana%<v%>%<tv%>:tlahuana%>  Base3Suffixes;
+
 
 !escuchar
 caqui%<v%>%<tv%>:caqui%>  PresentTense;
@@ -1085,6 +1123,26 @@ caxiti%<v%>%<tv%>:caxi%>  Durative;
 caxiti%<v%>%<tv%>:caxit%>  Base2Suffixes;
 caxiti%<v%>%<tv%>:caxiti%>  Base3Suffixes;
 
+!limpiar
+chupahua%<v%>%<tv%>:chupahua%>  PresentTense;
+chupahua%<v%>%<tv%>:chupahua%>  Imperfect;
+chupahua%<v%>%<tv%>:chupauh%>  Durative;
+chupahua%<v%>%<tv%>:chupauh%>  Base2Suffixes;
+chupahua%<v%>%<tv%>:chupahua%>  Base3Suffixes;
+
+!limpiar
+chipahua%<v%>%<tv%>:chipahua%>  PresentTense;
+chipahua%<v%>%<tv%>:chipahua%>  Imperfect;
+chipahua%<v%>%<tv%>:chipauh%>  Durative;
+chipahua%<v%>%<tv%>:chipauh%>  Base2Suffixes;
+chipahua%<v%>%<tv%>:chipahua%>  Base3Suffixes;
+
+!limpiar
+chihchipahua%<v%>%<tv%>:chihchipahua%>  PresentTense;
+chihchipahua%<v%>%<tv%>:chihchipahua%>  Imperfect;
+chihchipahua%<v%>%<tv%>:chihchipauh%>  Durative;
+chihchipahua%<v%>%<tv%>:chihchipauh%>  Base2Suffixes;
+chihchipahua%<v%>%<tv%>:chihchipahua%>  Base3Suffixes;
 
 !limpiar
 chupahuilia%<v%>%<tv%>:chupahuilia%>  PresentTense;
@@ -1429,13 +1487,20 @@ tlahtlanih%<v%>%<tv%>:tlahtlanih%>  Durative;
 tlahtlanih%<v%>%<tv%>:tlahtlanih%>  Base2Suffixes;
 tlahtlanih%<v%>%<tv%>:tlahtlanih%>  Base3Suffixes;
 
-
+! TODO: check tlani and tlami!
 !ganar
 tlani%<v%>%<tv%>:tlani%>  PresentTense;
 tlani%<v%>%<tv%>:tlani%>  Imperfect;
 tlani%<v%>%<tv%>:tlan%>  Durative;
 tlani%<v%>%<tv%>:tlan%>  Base2Suffixes;
 tlani%<v%>%<tv%>:tlani%>  Base3Suffixes;
+
+! terminar
+tlami%<v%>%<tv%>:tlami%>  PresentTense;
+tlami%<v%>%<tv%>:tlani%>  Imperfect;
+tlami%<v%>%<tv%>:tlan%>  Durative;
+tlami%<v%>%<tv%>:tlan%>  Base2Suffixes;
+tlami%<v%>%<tv%>:tlani%>  Base3Suffixes;
 
 ! decidir
 decidiroa%<v%>%<tv%>:decidiroa%>  PresentTense;
@@ -1779,6 +1844,10 @@ nehuatl%<prn%>%<pro%>%<p1%>%<sg%>:neh # ;
 tehuatl%<prn%>%<pro%>%<p2%>%<sg%>:teh # ;
 yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
 
+nehhuatl%<prn%>%<pro%>%<p1%>%<sg%>:neh # ;
+tehhuatl%<prn%>%<pro%>%<p2%>%<sg%>:teh # ;
+yehhuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
+
 !
 ! Formas largas de los pronombres personales singulares.
 !
@@ -1786,12 +1855,19 @@ nehuatl%<prn%>%<pers%>%<p1%>%<sg%>:nehuatl # ;
 tehuatl%<prn%>%<pers%>%<p2%>%<sg%>:tehuatl # ;
 yehuatl%<prn%>%<pers%>%<p3%>%<sg%>:yehuatl # ;
 
+nehhuatl%<prn%>%<pers%>%<p1%>%<sg%>:nehhuatl # ;
+tehhuatl%<prn%>%<pers%>%<p2%>%<sg%>:tehhuatl # ;
+yehhuatl%<prn%>%<pers%>%<p3%>%<sg%>:yehhuatl # ;
 !
 ! Pronombres personales plurales.
 !
 tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
 nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
 yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
+
+tehhuan%<prn%>%<pers%>%<p1%>%<pl%>:tehhuan # ;
+nimehhuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehhuan # ;
+yehhuan%<prn%>%<pers%>%<p3%>%<pl%>:yehhuan # ;
 
 LEXICON Pr
 
@@ -1832,6 +1908,7 @@ amo%<neg%>:amo # ;
 quema%<afirm%>:quema # ;
 
 ce%<det%>:ce # ; ! un(o)
+cada%<det%>%<barb%>:cada #; ! cada
 occe%<det%>:occe # ;  ! otro
 yeyi%<num%>:yeyi # ; ! tres
 yeyen%<num%>%<pl%>:yeyen # ; ! tres (plural)
@@ -1981,7 +2058,11 @@ buhuitl:bu    TlSuff ;
 tinixtl:tinix  TlSuff ;
 tiopantl:tiopan TlSuff ;
 toltitl:tolti  TlSuff ;
+cochiztl:cochiz TlSuff ; ! "el sueño"
+tlazohtl:tlazoh TlSuff ; 
+atentli:aten    TlSuff ;
 
+atentli:aten                                    TliSuff ;
 cintli:cin                                      TliSuff ; ! "maiz"
 chantli:chan                                    TliSuff ; ! "casa"
 itzcuintli:itzcuin                              TliSuff ; ! "perro"
@@ -1992,6 +2073,7 @@ paquiliztli:paquiliz                            TliSuff ; ! "felicidad"
 poctli:poc                                      TliSuff ; ! "humo"
 tahtli:tah                                      TliSuff ; ! "papá"
 tochtli:toch                                    TliSuff ; ! "conejo"
+tlazohtli:tlazoh                                TliSuff ;
 cochiztli:cochiz    TliSuff ;
 tixtli:tix    TliSuff ;
 ichopochtli:ichopoch    TliSuff ;
@@ -2107,6 +2189,8 @@ gobierno:gobierno                               EsSuff ;
 estado:estado                                   EsSuff ;
 naturaleza:naturaleza                           EsSuff ;
 ciudad:ciudad                                   EsSuff ;
+material:material                               EsSuff ;
+consolado:consolado                             EsSuff ;
 
 
 
@@ -2131,12 +2215,14 @@ tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
 tzocotzi:tzocotzi        Adj ; !"pequeñx"
 patiyo:patiyo            Adj ; !"carx"
 cualli:cualli            Adj ; !"buenx"
-cuali:cuali            Adj ; !"buenx"
+cuali:cuali              Adj ; !"buenx"
 
 pobre:pobre            Adj-Esp-mf ; ! "pobre"
 difícil:difícil        Adj-Esp-mf ; ! "difícil"
 unido:unid             Adj-Esp-m/f ; ! "unido"
 chistoso:chistos       Adj-Esp-m/f ; ! "chistoso"
+mexicano:mexican       Adj-Esp-m/f ; ! "unido"
+americano:american     Adj-Esp-m/f ; ! "unido"
 
 
 LEXICON Propios
