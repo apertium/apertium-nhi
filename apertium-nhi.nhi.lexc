@@ -314,9 +314,14 @@ LEXICON CaPres
 %<s_sg3%>catqui%<v%>%<iv%>%<pres%>:cah # ;
 
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cate # ;
+%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ce%>ca # ;
+
 %<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cate # ;
 %<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cate # ;
+
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cateh # ;
+%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ce%>cah # ;
+
 %<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cateh # ;
 %<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cateh # ;
 
@@ -832,6 +837,12 @@ tzahtzi%<v%>%<iv%>:tzahtz%>  Durative;
 tzahtzi%<v%>%<iv%>:tzahtz%>  Base2Suffixes;
 tzahtzi%<v%>%<iv%>:tzahtzi%>  Base3Suffixes;
 
+! sonar (campana)
+tzilini%<v%>%<iv%>:tzilini%>  PresentTense;
+tzilini%<v%>%<iv%>:tzilini%>  Imperfect;
+tzilini%<v%>%<iv%>:tzilin%>  Durative;
+tzilini%<v%>%<iv%>:tzilin%>  Base2Suffixes;
+tzilini%<v%>%<iv%>:tzilini%>  Base3Suffixes;
 
 !nacer
 yoli%<v%>%<iv%>:yoli%>  PresentTense;
@@ -900,6 +911,21 @@ animaroa%<v%>%<tv%>:animaro%>  Durative;
 animaroa%<v%>%<tv%>:animaroh%>  Durative;
 animaroa%<v%>%<tv%>:animaro%>  Base2Suffixes;
 animaroa%<v%>%<tv%>:animaro%>  Base3Suffixes;
+
+!desarmar
+desarmaroa%<v%>%<tv%>:desarmaroa%>  PresentTense;
+desarmaroa%<v%>%<tv%>:desarmaroa%>  Imperfect;
+desarmaroa%<v%>%<tv%>:desarmaro%>  Durative;
+desarmaroa%<v%>%<tv%>:desarmaroh%>  Durative;
+desarmaroa%<v%>%<tv%>:desarmaro%>  Base2Suffixes;
+desarmaroa%<v%>%<tv%>:desarmaro%>  Base3Suffixes;
+
+! lavar con agua
+apaca%<v%>%<tv%>: apaca%> PresentTense ;
+apaca%<v%>%<tv%>: apaca%> Imperfect ;
+apaca%<v%>%<tv%>: apaca%> Durative ;
+apaca%<v%>%<tv%>: apaca%> Base2Suffixes ;
+apaca%<v%>%<tv%>: apaca%> Base3Suffixes ;
 
 ! tomar/beber
 oni%<v%>%<iv%>:oni%>  PresentTense;
@@ -1072,12 +1098,26 @@ palehuia%<v%>%<tv%>:paleuh%>          Durative ;
 palehuia%<v%>%<tv%>:palehu%{i%}%{H%}%> Base2Suffixes ;
 palehuia%<v%>%<tv%>:palehui%>          Base3Suffixes ;
 
+! moler
+payana%<v%>%<tv%>:payana%> PresentTense ;
+payana%<v%>%<tv%>:payana%> Imperfect ;
+payana%<v%>%<tv%>:payana%> Durative ;
+payana%<v%>%<tv%>:payana%> Base2Suffixes ;
+payana%<v%>%<tv%>:payana%> Base3Suffixes ;
+
 ! sacar
 quixtia%<v%>%<tv%>:quixtia%>          PresentTense;
 quixtia%<v%>%<tv%>:quixta%>           Imperfect;
 quixtia%<v%>%<tv%>:quix%>             Durative;
 quixtia%<v%>%<tv%>:quixt%{i%}%{H%}%>  Base2Suffixes;
 quixtia%<v%>%<tv%>:quixti%>           Base3Suffixes;
+
+! sacar del agua
+aquixtia%<v%>%<tv%>:aquixtia%>          PresentTense;
+aquixtia%<v%>%<tv%>:aquixta%>           Imperfect;
+aquixtia%<v%>%<tv%>:aquix%>             Durative;
+aquixtia%<v%>%<tv%>:aquixt%{i%}%{H%}%>  Base2Suffixes;
+aquixtia%<v%>%<tv%>:aquixti%>           Base3Suffixes;
 
 ! querer
 niqui%<v%>%<tv%>:niqui%>  PresentTense;
@@ -1633,6 +1673,15 @@ tlahtlania%<v%>%<tv%>:tlahtlanih%>  Durative;
 tlahtlania%<v%>%<tv%>:tlahtlan%{i%}%{H%}%>  Base2Suffixes;
 tlahtlania%<v%>%<tv%>:tlahtlani%>  Base3Suffixes;
 
+
+!preguntar
+tlatlahtlania%<v%>%<tv%>:tlatlahtlania%>  PresentTense;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlana%>  Imperfect;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlani%>  Durative;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlanih%>  Durative;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlan%{i%}%{H%}%>  Base2Suffixes;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlani%>  Base3Suffixes;
+
 ! TODO: check tlani and tlami!
 !ganar
 tlani%<v%>%<tv%>:tlani%>  PresentTense;
@@ -1677,6 +1726,13 @@ tlazohtla%<v%>%<tv%>:tlazohtla%>  Imperfect;
 tlazohtla%<v%>%<tv%>:tlazohtl%>  Durative;
 tlazohtla%<v%>%<tv%>:tlazohtl%>  Base2Suffixes;
 tlazohtla%<v%>%<tv%>:tlazohtla%>  Base3Suffixes;
+
+! poner (uno por uno)
+tlatlalia%<v%>%<tv2%>:tlatlalia%> PresentTense ;
+tlatlalia%<v%>%<tv2%>:tlatlalia%>  Imperfect ;
+tlatlalia%<v%>%<tv2%>:tlatlalih%> Durative ;
+tlatlalia%<v%>%<tv2%>:tlatlal%{i%}%{H%}%> Base2Suffixes ;
+tlatlalia%<v%>%<tv2%>:tlatlali%>  Base3Suffixes ;
 
 ! sonar (la campana)
 tzilinia%<v%>%<tv%>:tzilinia%>  PresentTense;
@@ -2329,6 +2385,7 @@ maman:maman                                     NoSuff ; ! "mamá"
 mizton:mizton                                   NoSuff ; ! "gato"
 nana:nana                                       NoSuff ; ! "mamá"
 nana:nanah                                      NoSuff ; ! "mamá"
+nixtamal:nixtamal                               NoSuff ; ! "nixtamal"
 papa:papa                                       NoSuff ; ! "papá"
 patox:patox                                     NoSuff ; ! "pato"
 tamal:tamal                                     NoSuff ; ! "tamal"
