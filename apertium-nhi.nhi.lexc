@@ -82,13 +82,14 @@ Multichar_Symbols
 %<o_aa3%>
 %<o_nn3%>
 
-%<lat%>                           ! direccional hacia el locutor
+%<ven%>                           ! direccional hacia el locutor
 
 %<afirm%>
 %<ant%>
 %<appl%>
 %<aux%>
-%<Cfact%>
+%<cfact%>
+%<cni%>
 %<cm%>
 %<cnjcoo%>
 %<f%>
@@ -235,13 +236,16 @@ LEXICON TV2-IOBJ
 %<i_pl2%>:mech%>                                    TV2-DOBJ ;
 %<i_pl3%>:qui%{m%}%>                                TV2-DOBJ ;
 
+! TODO: in the case where there is only an indefinite object, how can we ensure that an object slot is filled? 
+                                                    TV2-DOBJ ;  !
+
 LEXICON TV2-DOBJ
 @P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Dir ;
                                                    TV2-Dir ;
 
 LEXICON TV2-Dir
 %<hon%>:on%>                                       TV2-Refl ;
-%<lat%>:hual%>                                     TV2-Refl ;
+%<ven%>:hual%>                                     TV2-Refl ;
                                                    TV2-Refl ;
 
 LEXICON TV2-Refl
@@ -263,7 +267,9 @@ LEXICON TV-DOBJ
 %<o_sg3%>:qui%>              TV-Dir ;
 
 ! With 3sg obj (and not 3 sbj, and not honorific ), the object prefix can be
-! omitted optionally. eg "ni-0-piya" "yo lo tengo".
+! omitted optionally. eg "ni-0-piya" "yo lo tengo". this is more of a 
+! morphonological phenomenon, and should be updated in the future to be 
+! treated as such. EG only true if stem starts with a consonant. (spell relax?)
 @D.Sa.3@%<o_sg3_om%>:@D.Sa.3@   TV-Refl ;
 
 %<o_pl1%>:tech%>             TV-Dir ;
@@ -447,6 +453,14 @@ quiyohui%<v%>%<iv%>:quiyohui%>  Base3Suffixes ;
 
 
 LEXICON IV-Stem
+
+! llegar
+ahci%<v%>%<iv%>:ahci%>  PresentTense;
+ahci%<v%>%<iv%>:ahci%>  Imperfect;
+ahci%<v%>%<iv%>:ahci%>  Durative;
+ahci%<v%>%<iv%>:ahci%>  Base2Suffixes;
+ahci%<v%>%<iv%>:ahci%>  Base3Suffixes;
+
 ! dormir
 cochi%<v%>%<iv%>:cochi%>  PresentTense ;
 cochi%<v%>%<iv%>:cochi%>  Imperfect ;
@@ -700,6 +714,13 @@ nihnimi%<v%>%<iv%>:nihnin%>  Durative;
 nihnimi%<v%>%<iv%>:nihnin%>  Base2Suffixes;
 nihnimi%<v%>%<iv%>:nihnimi%>  Base3Suffixes;
 
+! platicar
+mononotza%<v%>%<iv%>:mononotza%> PresentTense ;
+mononotza%<v%>%<iv%>:mononotza%> Imperfect ;
+mononotza%<v%>%<iv%>:mononotz%> Durative ;
+monotza%<v%>%<iv%>:mononotz%> Base2Suffixes ; 
+mononotza%<v%>%<iv%>:mononotza%> Base3Suffixes ;
+
 
 !pasar
 panoa%<v%>%<iv%>:panoa%>  PresentTense;
@@ -911,6 +932,14 @@ animaroa%<v%>%<tv%>:animaro%>  Durative;
 animaroa%<v%>%<tv%>:animaroh%>  Durative;
 animaroa%<v%>%<tv%>:animaro%>  Base2Suffixes;
 animaroa%<v%>%<tv%>:animaro%>  Base3Suffixes;
+
+!armar
+armaroa%<v%>%<tv%>:armaroa%>  PresentTense;
+armaroa%<v%>%<tv%>:armaroa%>  Imperfect;
+armaroa%<v%>%<tv%>:armaro%>  Durative;
+armaroa%<v%>%<tv%>:armaroh%>  Durative;
+armaroa%<v%>%<tv%>:armaro%>  Base2Suffixes;
+armaroa%<v%>%<tv%>:armaro%>  Base3Suffixes;
 
 !desarmar
 desarmaroa%<v%>%<tv%>:desarmaroa%>  PresentTense;
@@ -1210,6 +1239,13 @@ cahua%<v%>%<tv%>:cauh%>  Durative;
 cahua%<v%>%<tv%>:cauh%>  Base2Suffixes;
 cahua%<v%>%<tv%>:cahua%>  Base3Suffixes;
 
+! apagar o descansar TODO:confirm paradigm
+cehuia%<v%>%<tv%>:cehuia%> PresentTense ;
+cehuia%<v%>%<tv%>:cehuia%> Imperfect ;
+cehuia%<v%>%<tv%>:cehui%> Durative ;
+cehuia%<v%>%<tv%>:cehu%{i%}%{H%}%> Base2Suffixes ;
+cehuia%<v%>%<tv%>:cehuia%> Base3Suffixes ;
+
 ! tomar
 tlahuana%<v%>%<tv%>:tlahuana%>  PresentTense;
 tlahuana%<v%>%<tv%>:tlahuana%>  Imperfect;
@@ -1290,12 +1326,40 @@ cocoa%<v%>%<tv%>:coco%>  Durative;
 cocoa%<v%>%<tv%>:coco%>  Base2Suffixes;
 cocoa%<v%>%<tv%>:cocoa%>  Base3Suffixes;
 
+! coconserva
+conservaroa%<v%>%<tv%>:conservaroa%>  PresentTense;
+conservaroa%<v%>%<tv%>:conservaroa%>  Imperfect;
+conservaroa%<v%>%<tv%>:conservaroh%>  Durative;
+conservaroa%<v%>%<tv%>:conservaroh%>  Base2Suffixes;
+conservaroa%<v%>%<tv%>:conservaro%>  Base3Suffixes;
+
 ! juntar
 nichicoa%<v%>%<tv%>:nichicoa%>  PresentTense;
 nichicoa%<v%>%<tv%>:nichicoa%>  Imperfect;
 nichicoa%<v%>%<tv%>:nichico%>  Durative;
 nichicoa%<v%>%<tv%>:nichico%>  Base2Suffixes;
 nichicoa%<v%>%<tv%>:nichicoa%>  Base3Suffixes;
+
+! llamar
+notza%<v%>%<tv%>:notza%> PresentTense ;
+notza%<v%>%<tv%>:notza%> Imperfect ;
+notza%<v%>%<tv%>:notz%> Durative ;
+notza%<v%>%<tv%>:notz%> Base2Suffixes ; 
+notza%<v%>%<tv%>:notza%> Base3Suffixes ;
+
+! hablarle a alguien
+nohnotza%<v%>%<tv%>:nohnotza%> PresentTense ;
+nohnotza%<v%>%<tv%>:nohnotza%> Imperfect ;
+nohnotza%<v%>%<tv%>:nohnotz%> Durative ;
+nohnotza%<v%>%<tv%>:nohnotz%> Base2Suffixes ; 
+nohnotza%<v%>%<tv%>:nohnotza%> Base3Suffixes ;
+
+! hablarle a alguien
+nonotza%<v%>%<tv%>:nonotza%> PresentTense ;
+nonotza%<v%>%<tv%>:nonotza%> Imperfect ;
+nonotza%<v%>%<tv%>:nonotz%> Durative ;
+notza%<v%>%<tv%>:nonotz%> Base2Suffixes ; 
+nonotza%<v%>%<tv%>:nonotza%> Base3Suffixes ;
 
 !confiar
 confiaroa%<v%>%<tv%>:confiaroa%>  PresentTense;
@@ -1332,6 +1396,12 @@ cumpliroa%<v%>%<tv%>:cumpliroh%>  Durative;
 cumpliroa%<v%>%<tv%>:cumpliroh%>  Base2Suffixes;
 cumpliroa%<v%>%<tv%>:cumpliro%>  Base3Suffixes;
 
+! ocupar / usar
+cui%<v%>%<tv%>:cui%>  PresentTense;
+cui%<v%>%<tv%>:cui%>  Imperfect;
+cui%<v%>%<tv%>:cui%>  Durative;
+cui%<v%>%<tv%>:cui%>  Base2Suffixes;
+cui%<v%>%<tv%>:cui%>  Base3Suffixes;
 
 !llevar
 cuica%<v%>%<tv%>:cuica%>  PresentTense;
@@ -1781,6 +1851,13 @@ ilhuia%<v%>%<tv2%>:ilhuih%> Durative ;
 ilhuia%<v%>%<tv2%>:ilhu%{i%}%{H%}%> Base2Suffixes ;
 ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
 
+! venderle algo a alguien
+namaquiltia%<v%>%<tv2%>:namaquiltia%>  PresentTense;
+namaquiltia%<v%>%<tv2%>:namaquilta%>  Imperfect;
+namaquiltia%<v%>%<tv2%>:namaquiltih%>  Durative;
+namaquiltia%<v%>%<tv2%>:namaquilt%{i%}%{H%}%>  Base2Suffixes;
+namaquiltia%<v%>%<tv2%>:namaquilti%>  Base3Suffixes;
+
 !enseñarle algo a alguien
 nextilia%<v%>%<tv2%>:nextilia%>  PresentTense;
 nextilia%<v%>%<tv2%>:nextila%>  Imperfect;
@@ -1788,6 +1865,19 @@ nextilia%<v%>%<tv2%>:nextilih%>  Durative;
 nextilia%<v%>%<tv2%>:nextil%{i%}%{H%}%>  Base2Suffixes;
 nextilia%<v%>%<tv2%>:nextili%>  Base3Suffixes;
 
+! ??? hacer que pixquen??
+pixquiltia%<v%>%<tv2%>:pixquiltia%>  PresentTense;
+pixquiltia%<v%>%<tv2%>:pixquilta%>  Imperfect;
+pixquiltia%<v%>%<tv2%>:pixquiltih%>  Durative;
+pixquiltia%<v%>%<tv2%>:pixquilt%{i%}%{H%}%>  Base2Suffixes;
+pixquiltia%<v%>%<tv2%>:pixquilti%>  Base3Suffixes;
+
+! sacarle/quitarle algo
+quixtilia%<v%>%<tv2%>:quixtilia%>  PresentTense;
+quixtilia%<v%>%<tv2%>:quixtila%>  Imperfect;
+quixtilia%<v%>%<tv2%>:quixtilih%>  Durative;
+quixtilia%<v%>%<tv2%>:quixtil%{i%}%{H%}%>  Base2Suffixes;
+quixtilia%<v%>%<tv2%>:quixtili%>  Base3Suffixes;
 
 ! ponerle
 tlalilia%<v%>%<tv2%>:tlalilia%> PresentTense ;
@@ -1831,6 +1921,7 @@ LEXICON Base2Suffixes
 
 LEXICON Base3Suffixes
               Future ;
+              Conditional ;
               Counterfactual ;
               Optative ;
               Applicative ;
@@ -1876,8 +1967,12 @@ LEXICON Future
 
 
 LEXICON Counterfactual
-@D.PST@@D.Sa.Pl@@D.Opt@%<Cfact%>:@D.PST@@D.Sa.Pl@@D.Opt@zquia # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<Cfact%>:@D.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
+@R.PST@@D.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@D.Sa.Pl@@D.Opt@zquia # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
+
+LEXICON Conditional
+@D.PST@@D.Sa.Pl@@D.Opt@%<cni%>:@D.PST@@D.Sa.Pl@@D.Opt@zquia # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<cni%>:@D.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
 
 LEXICON Optative
 @D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
@@ -1907,6 +2002,7 @@ LEXICON DirectionToward
 
 LEXICON Applicative
 %<appl%>:lia # ;
+%<appl%>%<fut%>:li%>z # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Nominals
@@ -2458,6 +2554,7 @@ papel:papel                                     EsSuff ;
 primaria:primaria                               EsSuff ;
 presidente:presidente                           EsSuff ;
 raza:raza                                       EsSuff ;
+refrigerador:refrigerador                       EsSuff ;
 secundaria:secundaria                           EsSuff ;
 semana:semana                                   EsSuff ;
 tarea:tarea                                     EsSuff ;
