@@ -279,7 +279,7 @@ LEXICON TV-DOBJ
 
 LEXICON TV-Dir
 %<hon%>:on%>                                       TV-Refl ;
-%<lat%>:hual%>                                     TV-Refl ;
+%<ven%>:hual%>                                     TV-Refl ;
                                                    TV-Refl ;
 
 LEXICON TV-Refl
@@ -531,6 +531,7 @@ polihui%<v%>%<iv%>:poliuh%>  Durative;
 polihui%<v%>%<iv%>:poliuh%>  Base2Suffixes;
 polihui%<v%>%<iv%>:polihui%>  Base3Suffixes;
 
+
 !tomar agua
 atli%<v%>%<iv%>:atli%>  PresentTense;
 atli%<v%>%<iv%>:atli%>  Imperfect;
@@ -629,6 +630,12 @@ huala%<v%>%<iv%>:hual%>  Durative;
 huala%<v%>%<iv%>:hual%>  Base2Suffixes;
 huala%<v%>%<iv%>:huala%>  Base3Suffixes;
 
+! crecer (tamaño)
+hueyiya%<v%>%<iv%>:hueyiya%> PresentTense ;
+hueyiya%<v%>%<iv%>:hueyiya%> Imperfect ;
+hueyiya%<v%>%<iv%>:hueyix%> Durative ;
+hueyiya%<v%>%<iv%>:hueyix%> Base2Suffixes ; 
+hueyiya%<v%>%<iv%>:hueyiya%> Base3Suffixes ;
 
 !reir
 huihuitzca%<v%>%<iv%>:huihuitzca%>  PresentTense;
@@ -1092,6 +1099,13 @@ itoa%<v%>%<tv%>:itoh%>  Durative ;
 itoa%<v%>%<tv%>:itoh%>  Base2Suffixes ;
 itoa%<v%>%<tv%>:ito%>   Base3Suffixes ;
 
+! perder
+pohpolihui%<v%>%<iv%>:pohpolihui%>  PresentTense;
+pohpolihui%<v%>%<iv%>:pohpolihui%>  Imperfect;
+pohpolihui%<v%>%<iv%>:pohpoliuh%>  Durative;
+pohpolihui%<v%>%<iv%>:pohpoliuh%>  Base2Suffixes;
+pohpolihui%<v%>%<iv%>:pohpolihui%>  Base3Suffixes;
+
 ! tener
 piya%<v%>%<tv%>:piya%>  PresentTense ;
 piya%<v%>%<tv%>:piya%>  Imperfect ;
@@ -1123,7 +1137,7 @@ ihlnamiqui%<v%>%<tv%>:ilnamiqui%>  Base3Suffixes ;
 ! apoyar
 palehuia%<v%>%<tv%>:palehuia%>         PresentTense ;
 palehuia%<v%>%<tv%>:palehua%>          Imperfect ;
-palehuia%<v%>%<tv%>:paleuh%>          Durative ;
+palehuia%<v%>%<tv%>:palehui%>          Durative ;
 palehuia%<v%>%<tv%>:palehu%{i%}%{H%}%> Base2Suffixes ;
 palehuia%<v%>%<tv%>:palehui%>          Base3Suffixes ;
 
@@ -1507,7 +1521,12 @@ hualica%<v%>%<tv%>:hualica%>  Durative;
 hualica%<v%>%<tv%>:hualica%>  Base2Suffixes;
 hualica%<v%>%<tv%>:hualica%>  Base3Suffixes;
 
-
+! convidar
+huantia%<v%>%<tv%>:huantia%>  PresentTense;
+huantia%<v%>%<tv%>:huanta%>  Imperfect;
+huantia%<v%>%<tv%>:huantih%>  Durative;
+huantia%<v%>%<tv%>:huant%{i%}%{H%}%>  Base2Suffixes;
+huantia%<v%>%<tv%>:huanti%>  Base3Suffixes;
 
 
 !olvidar
@@ -1781,6 +1800,12 @@ decidiroa%<v%>%<tv%>:decidiroh%>  Durative;
 decidiroa%<v%>%<tv%>:decidiroh%>  Base2Suffixes;
 decidiroa%<v%>%<tv%>:decidiro%>  Base3Suffixes;
 
+! ssegu
+seguiroa%<v%>%<tv%>:seguiroa%>  PresentTense;
+seguiroa%<v%>%<tv%>:seguiroa%>  Imperfect;
+seguiroa%<v%>%<tv%>:seguiroh%>  Durative;
+seguiroa%<v%>%<tv%>:seguiroh%>  Base2Suffixes;
+seguiroa%<v%>%<tv%>:seguiro%>  Base3Suffixes;
 
 !aprender
 tlazaloa%<v%>%<tv%>:tlazaloa%>  PresentTense;
@@ -1919,6 +1944,7 @@ LEXICON Base2Suffixes
               Preterite ;
               Pluperfect ;
 
+
 LEXICON Base3Suffixes
               Future ;
               Conditional ;
@@ -1927,7 +1953,44 @@ LEXICON Base3Suffixes
               Applicative ;
               DirectionToward ;
               DirectionAway ;
+              
               ! TODO Suffixal Directionals (Perfective/Imperfective/Optative)
+
+LEXICON AuxiliarySuffixes
+AuxContin ;
+AuxRepent ;
+AuxCome ;
+
+LEXICON AuxCome
+@D.Sa.Pl@@D.PST@%<come%>:@D.Sa.Pl@@D.PST@ti%>huitz # ;
+
+
+LEXICON AuxContin ! Auxiliar de continuidad
+@D.Sa.Pl@@D.PST@%<cont%>:@D.Sa.Pl@@D.PST@ti%>nimi # ;
+@D.Sa.Pl@@D.PST@%<cont%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>nimi%>z # ;
+@R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zque # ;
+@R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zqueh # ;
+
+@D.Sa.Pl@@R.PST@%<cont%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>nimi%>ya # ;
+@R.Sa.Pl@@R.PST@%<cont%>%<impf%>:@R.Sa.Pl@@R.PST@ti%>nimi%>yah # ;
+
+
+LEXICON AuxRepent ! Auxiliar de acción repentina/rápida
+@D.Sa.Pl@@D.PST@%<repent%>:@D.Sa.Pl@@D.PST@ti%>quiza # ;
+@R.Sa.Pl@@D.PST@%<repent%>:@R.Sa.Pl@@D.PST@ti%>quizah # ;
+
+@D.Sa.Pl@@D.PST@%<repent%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>quiza%>z # ;
+@R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zque # ;
+@R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zqueh # ;
+
+
+@D.Sa.Pl@@R.PST@%<repent%>%<pret%>:@D.Sa.Pl@@R.PST@ti%>quiz # ;
+@R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>que # ;
+@R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>queh # ;
+
+
+@D.Sa.Pl@@R.PST@%<repent%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>quiza%>ya # ;
+@R.Sa.Pl@@R.PST@%<repent%>%<impf%>:@R.Sa.Pl@@R.PST@ti%>quiza%>yah # ;
 
 
 LEXICON PresentTense
@@ -1945,6 +2008,8 @@ LEXICON Durative
 @D.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@D.Sa.Pl@@D.PST@@D.Opt@to%>z # ;
 @R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zque # ;
 @R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zqueh # ;
+
+AuxiliarySuffixes ;
 
 
 LEXICON Imperfect
@@ -1969,35 +2034,40 @@ LEXICON Future
 LEXICON Counterfactual
 @R.PST@@D.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@D.Sa.Pl@@D.Opt@zquia # ;
 @R.PST@@R.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
+@R.PST@@D.Sa.Pl@@D.Opt@%<impf%>%<cfact%>:@R.PST@@D.Sa.Pl@@D.Opt@zquia%>ya # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<impf%>%<cfact%>:@R.PST@@R.Sa.Pl@@D.Opt@zquia%>yah # ;
 
 LEXICON Conditional
 @D.PST@@D.Sa.Pl@@D.Opt@%<cni%>:@D.PST@@D.Sa.Pl@@D.Opt@zquia # ;
 @D.PST@@R.Sa.Pl@@D.Opt@%<cni%>:@D.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
 
 LEXICON Optative
-@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
-@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
+!@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
+!@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@R.Sa.Pl@@R.Opt@can # ;
+
+@D.PST@@D.Sa.Pl@%<opt%>:@D.PST@@D.Sa.Pl@0   # ;
+@D.PST@@R.Sa.Pl@%<opt%>:@D.PST@@R.Sa.Pl@can # ;
 
 LEXICON DirectionAway
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@D.Sa.Pl@@D.Opt@ti    # ;
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@D.Sa.Pl@@D.Opt@tiuh    # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@R.Sa.Pl@@D.Opt@tihue # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<and%>:@D.PST@@D.Sa.Pl@@D.Opt@ti    # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<and%>:@D.PST@@D.Sa.Pl@@D.Opt@tiuh    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<and%>:@D.PST@@R.Sa.Pl@@D.Opt@tihue # ;
 
-@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@D.Sa.Pl@@D.Opt@to    # ;
-@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@R.Sa.Pl@@D.Opt@toh # ;
+@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<and%>:@R.PST@@D.Sa.Pl@@D.Opt@to    # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<and%>:@R.PST@@R.Sa.Pl@@D.Opt@toh # ;
 
-@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@D.Sa.Pl@@R.Opt@ti    # ;
-@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@R.Sa.Pl@@R.Opt@tican # ;
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<and%>:@D.PST@@D.Sa.Pl@@R.Opt@ti    # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<and%>:@D.PST@@R.Sa.Pl@@R.Opt@tican # ;
 
 LEXICON DirectionToward
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<lat%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<ven%>:@D.PST@@D.Sa.Pl@@D.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<ven%>:@D.PST@@R.Sa.Pl@@D.Opt@quihue # ;
 
-@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
-@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<lat%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
+@R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<ven%>:@R.PST@@D.Sa.Pl@@D.Opt@co    # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<ven%>:@R.PST@@R.Sa.Pl@@D.Opt@coh # ;
 
-@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
-@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<lat%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
+@D.PST@@D.Sa.Pl@@R.Opt@%<opt%>%<ven%>:@D.PST@@D.Sa.Pl@@R.Opt@qui    # ;
+@D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<ven%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
 
 
 LEXICON Applicative
@@ -2521,6 +2591,8 @@ cama:cama                                       EsSuff ;
 campana:campana                                 EsSuff ;
 campo:campo                                     EsSuff ;
 carro:carro                                     EsSuff ;
+carretera:carretera                             EsSuff ;
+cerro:cerro                                     EsSuff ;
 ciudad:ciudad                                   EsSuff ;
 clase:clase                                     EsSuff ;
 compañero:compañero                             EsSuff ;
@@ -2528,10 +2600,13 @@ compañera:compañera                             EsSuff ;
 consolado:consolado                             EsSuff ;
 cosa:cosa                                       EsSuff ;
 cosita:cosita                                   EsSuff ;
-cruz:cruz                                       EsSuff ; 
+cruz:cru%{z%}                                   EsSuff ; 
+cultura:cultura                                 EsSuff ;
 pueblo:pueblo                                   EsSuff ;
 danza:danza                                     EsSuff ;
 difunto:difunto                                 EsSuff ;
+ejemplo:ejemplo                                 EsSuff ;
+fiesta:fiesta                                   EsSuff ;
 gringo:gringo                                   EsSuff ;
 guerra:guerra                                   EsSuff ;
 escuela:escuela                                 EsSuff ;
@@ -2544,6 +2619,7 @@ mamá:mamá                                       EsSuff ;
 masaje:masaje                                   EsSuff ;
 masajista:masajista                             EsSuff ;
 mercado:mercado                                 EsSuff ;
+misa:misa                                       EsSuff ;
 ofrenda:ofrenda                                 EsSuff ;
 oportunidad:oportunidad                         EsSuff ;
 palabra:palabra                                 EsSuff ;
@@ -2551,15 +2627,19 @@ paleta:paleta                                   EsSuff ;
 pan:pan                                         EsSuff ;
 papá:papá                                       EsSuff ;
 papel:papel                                     EsSuff ;
+patrón:patrón                                   EsSuff ;
 primaria:primaria                               EsSuff ;
 presidente:presidente                           EsSuff ;
 raza:raza                                       EsSuff ;
 refrigerador:refrigerador                       EsSuff ;
 secundaria:secundaria                           EsSuff ;
 semana:semana                                   EsSuff ;
+señor:señor                                     EsSuff ;
 tarea:tarea                                     EsSuff ;
 tiempo:tiempo                                   EsSuff ;
 trabajo:trabajo                                 EsSuff ;
+tradición:tradición                             EsSuff ;
+tradicion:tradicion                             EsSuff ;
 vez:ve%{z%}                                     EsSuff ;
 pitbull:pitbull                                 EsSuff ;
 concha:concha                                   EsSuff ;
@@ -2601,6 +2681,7 @@ uhueh:uhueh              Adj ; ! "difícil"
 ohueh:ohueh              Adj ; ! "difícil"
 
 atrasado:atrasado      Adj-Esp-mf ; ! "atrasado"
+reconocido:reconocido  Adj-Esp-mf ; ! "reconocido"
 pobre:pobre            Adj-Esp-mf ; ! "pobre"
 difícil:difícil        Adj-Esp-mf ; ! "difícil"
 unido:unid             Adj-Esp-m/f ; ! "unido"
@@ -2609,6 +2690,7 @@ mexicano:mexican       Adj-Esp-m/f ; ! "mexicano"
 americano:american     Adj-Esp-m/f ; ! "americano"
 frances:frances        Adj-Esp-mf ;  ! "francés"
 español:español        Adj-Esp-mf ; ! "español"
+patronal:patronal      Adj-Esp-mf ; ! "patronal"
 
 
 LEXICON Propios

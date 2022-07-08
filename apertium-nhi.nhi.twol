@@ -21,13 +21,13 @@ Vow   = A E I O U
 
 Cns   = b c d f g h j k l m n p q r s t w x y z ;
 
+
 Rules
 
 "Simple vowel-harmony triggered by honorific"
 i:o <=> [ n | t | x ] _ >:> %{q%}:c %{u%}:0 %{i%}:0 >:> o n >:> ;
 !@ n i:o >:> {q}:c {u}:0 {i}:0 >:> o n >:> i t a
 !@ x i:o >:> {q}:c {u}:0 {i}:0 >:> o n >:> c a q u i
-
 
 "z->c when in plural for spanish nouns e.g. vez -> veces"
 %{z%}:c <=> _ >:> %{e%}: s ;
@@ -61,10 +61,10 @@ i:0 <=> [n | m | t] o >:> _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z 
 %{u%}:0 <=> >:> %{q%}: _ %{i%}: >:> [a | o | u] ;
 
 "i -> 0 in /k/ between V and C"
-%{i%}:0 <=> Vow >:> %{q%}: %{u%}: _ >:> [Cns | i | e] ;
+%{i%}:0 <=> Vow >:> %{q%}: %{u%}: _ >:> Cns ;
 
 "i -> 0 in /k/ when followed by a V"
-%{i%}:0 <=> >:> %{q%}: %{u%}: _ >:> Vow ;
+%{i%}:0 <=> %{q%}: %{u%}: _ >:> Vow ;
 
 "Weak /i/ drops after tla"
 i:0 <=> t l a >:> _ h ;
