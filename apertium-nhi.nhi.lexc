@@ -171,7 +171,7 @@ Preposiciones ;
 Puntuación ;
 Interjecciones ; 
 Verb ;
-Digits ;
+! Digits ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -1950,7 +1950,7 @@ LEXICON Base3Suffixes
               Conditional ;
               Counterfactual ;
               Optative ;
-              Applicative ;
+              ! Applicative ;
               DirectionToward ;
               DirectionAway ;
               
@@ -2070,9 +2070,9 @@ LEXICON DirectionToward
 @D.PST@@R.Sa.Pl@@R.Opt@%<opt%>%<ven%>:@D.PST@@R.Sa.Pl@@R.Opt@quih # ;
 
 
-LEXICON Applicative
-%<appl%>:lia # ;
-%<appl%>%<fut%>:li%>z # ;
+! LEXICON Applicative
+! %<appl%>:lia # ;
+! %<appl%>%<fut%>:li%>z # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Nominals
@@ -2615,7 +2615,6 @@ hora:hora                                       EsSuff ;
 hueso:hueso                                     EsSuff ;
 licencia:licencia                               EsSuff ;
 lugar:lugar                                     EsSuff ;
-mamá:mamá                                       EsSuff ;
 masaje:masaje                                   EsSuff ;
 masajista:masajista                             EsSuff ;
 mercado:mercado                                 EsSuff ;
@@ -2832,9 +2831,9 @@ LEXICON Puntuación
 ）%<rpar%>:） # ;
 
 
-LEXICON Digits
+! LEXICON Digits
 
-<[ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]+> NUM ;
-<[ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] [ %, | %. ] [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]+> NUM ;
+! <[ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]+> NUM ;
+! <[ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] [ %, | %. ] [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]+> NUM ;
 
 
