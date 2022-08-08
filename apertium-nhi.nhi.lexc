@@ -106,7 +106,9 @@ Multichar_Symbols
 %<rel%>
 %<rpar%>
 %<rquot%>
-
+%<bien%>
+%<juntos%>
+%<completamente%>
 
 %<sent%>                                 ! Final de frase
 
@@ -216,7 +218,7 @@ LEXICON VerbalSubject
 @P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@ix%>  Object ;
 
 LEXICON Object
-                                                       IV-Dir ;
+                                                       IV-Honorific ;
 @P.DOBJ.FILLED@:@P.DOBJ.FILLED@                        TV-DOBJ ;
 TV-Refl ;
                                                        TV2-IOBJ ;
@@ -240,18 +242,28 @@ LEXICON TV2-IOBJ
                                                     TV2-DOBJ ;  !
 
 LEXICON TV2-DOBJ
-@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Dir ;
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Honorific ;
+                                                   TV2-Honorific ;
+
+LEXICON TV2-Honorific
+%<hon%>:on%>                                       TV2-Dir ;
                                                    TV2-Dir ;
 
 LEXICON TV2-Dir
-%<hon%>:on%>                                       TV2-Refl ;
 %<ven%>:hual%>                                     TV2-Refl ;
+%<and%>:nal%>                                      TV2-Refl ;
+
                                                    TV2-Refl ;
 
 LEXICON TV2-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Indef-Obj ;
-TV2-Indef-Obj ;
+@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Adv-Pref ;
+TV2-Adv-Pref ;
 
+LEXICON TV2-Adv-Pref
+%<bien%>:yec%> TV2-Indef-Obj ;
+%<juntos%>:cepan%> TV2-Indef-Obj ;
+%<completamente%>:cepa%> TV2-Indef-Obj ;
+TV2-Indef-Obj ;
 
 LEXICON TV2-Indef-Obj
 @D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV2-Stem ;
@@ -261,41 +273,60 @@ TV2-Stem ;
 
 
 LEXICON TV-DOBJ
-%<o_sg1%>:nech%>             TV-Dir ;
-%<o_sg2%>:mitz%>             TV-Dir ;
-%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Dir ;
-%<o_sg3%>:qui%>              TV-Dir ;
+%<o_sg1%>:nech%>             TV-Honorific ;
+%<o_sg2%>:mitz%>             TV-Honorific ;
+%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Honorific ;
+%<o_sg3%>:qui%>              TV-Honorific ;
 
 ! With 3sg obj (and not 3 sbj, and not honorific ), the object prefix can be
 ! omitted optionally. eg "ni-0-piya" "yo lo tengo". this is more of a 
 ! morphonological phenomenon, and should be updated in the future to be 
 ! treated as such. EG only true if stem starts with a consonant. (spell relax?)
-@D.Sa.3@%<o_sg3_om%>:@D.Sa.3@   TV-Refl ;
+@D.Sa.3@%<o_sg3_om%>:@D.Sa.3@   TV-Honorific ;
 
-%<o_pl1%>:tech%>             TV-Dir ;
-%<o_pl2%>:mech%>             TV-Dir ;
-%<o_pl3%>:qui%{m%}%>         TV-Dir ;
+%<o_pl1%>:tech%>             TV-Honorific ;
+%<o_pl2%>:mech%>             TV-Honorific ;
+%<o_pl3%>:qui%{m%}%>         TV-Honorific ;
 
+LEXICON TV-Honorific
+%<hon%>:on%>                                       TV-Dir ;
+                                                   TV-Dir ;
 
 LEXICON TV-Dir
-%<hon%>:on%>                                       TV-Refl ;
+%<and%>:nal%>                                      TV-Refl ;
 %<ven%>:hual%>                                     TV-Refl ;
                                                    TV-Refl ;
 
 LEXICON TV-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Indef-Obj ;
-                                                              TV-Indef-Obj ;
+@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
+                                                              TV-Adv-Pref ;
 
+LEXICON TV-Adv-Pref
+%<bien%>:yec%> TV-Indef-Obj ;
+%<juntos%>:cepan%> TV-Indef-Obj ;
+%<completamente%>:cepa%> TV-Indef-Obj ;
+TV-Indef-Obj ;
 
 LEXICON TV-Indef-Obj
 @D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV-Stem ;
 @D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV-Stem ;
                                                    TV-Stem ;
 
+LEXICON IV-Honorific
+%<hon%>:on%>                                       IV-Dir ;
+                                                   IV-Dir ;
+
 LEXICON IV-Dir
-%<hon%>:on%>                                       IV-Stem ;
-%<lat%>:hual%>                                     IV-Stem ;
-                                                   IV-Stem ;
+%<and%>:and%>                                      IV-Adv-Pref ;
+%<ven%>:hual%>                                     IV-Adv-Pref ;
+                                                   IV-Adv-Pref ;
+
+LEXICON IV-Adv-Pref
+%<bien%>:yec%> IV-Stem ;
+%<juntos%>:cepan%> IV-Stem ;
+%<completamente%>:cepa%> IV-Stem ;
+IV-Stem ;
+
 LEXICON IrregularVerbs
                   Ca ;
                   Yo ;
