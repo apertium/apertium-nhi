@@ -317,7 +317,7 @@ LEXICON IV-Honorific
                                                    IV-Dir ;
 
 LEXICON IV-Dir
-%<and%>:and%>                                      IV-Adv-Pref ;
+%<and%>:nal%>                                      IV-Adv-Pref ;
 %<ven%>:hual%>                                     IV-Adv-Pref ;
                                                    IV-Adv-Pref ;
 
@@ -615,6 +615,12 @@ chanchihua%<v%>%<iv%>:chanchiuh%>  Durative;
 chanchihua%<v%>%<iv%>:chanchiuh%>  Base2Suffixes;
 chanchihua%<v%>%<iv%>:chanchihua%>  Base3Suffixes;
 
+! vivir
+chantia%<v%>%<iv%>:chantia%> PresentTense ;
+chantia%<v%>%<iv%>:chanta%>  Imperfect ;
+chantia%<v%>%<iv%>:chanti%>  Durative ;
+chantia%<v%>%<iv%>:chant%{i%}%{H%}%>  Base2Suffixes ;
+chantia%<v%>%<iv%>:chanti%>  Base3Suffixes ;
 
 !esperar
 chiya%<v%>%<iv%>:chiya%>  PresentTense;
@@ -638,6 +644,14 @@ cochzoloni%<v%>%<iv%>:cochzoloni%>  Imperfect;
 cochzoloni%<v%>%<iv%>:cochzolon%>  Durative;
 cochzoloni%<v%>%<iv%>:cochzolon%>  Base2Suffixes;
 cochzoloni%<v%>%<iv%>:cochzoloni%>  Base3Suffixes;
+
+! confiar
+confiaroa%<v%>%<iv%>:confiaroa%>  PresentTense;
+confiaroa%<v%>%<iv%>:confiaroa%>  Imperfect;
+confiaroa%<v%>%<iv%>:confiaro%>  Durative;
+confiaroa%<v%>%<iv%>:confiaroh%>  Durative;
+confiaroa%<v%>%<iv%>:confiaroh%>  Base2Suffixes;
+confiaroa%<v%>%<iv%>:confiaro%>  Base3Suffixes;
 
 !huir
 choloa%<v%>%<iv%>:choloa%>  PresentTense;
@@ -680,7 +694,7 @@ huihuitzca%<v%>%<iv%>:huihuitzca%>  Base3Suffixes;
 huili%<v%>%<iv%>:huili%>  PresentTense;
 huili%<v%>%<iv%>:huili%>  Imperfect;
 huili%<v%>%<iv%>:huil%>  Durative;
-huili%<v%>%<iv%>:huil%>  Base2Suffixes;
+huili%<v%>%<iv%>:huil%{i%}%{H%}%>  Base2Suffixes;
 huili%<v%>%<iv%>:huili%>  Base3Suffixes;
 
 
@@ -737,6 +751,7 @@ mozcaltia%<v%>%<iv%>:mozcalta%>  Imperfect;
 mozcaltia%<v%>%<iv%>:mozcaltih%>  Durative;
 mozcaltia%<v%>%<iv%>:mozcalt%{i%}%{H%}%>  Base2Suffixes;
 mozcaltia%<v%>%<iv%>:mozcalti%>  Base3Suffixes;
+
 
 ! hacerse escuchar, contestar
 nahuati%<v%>%<iv%>:nahuati%> PresentTense ;
@@ -816,6 +831,13 @@ tzicuini%<v%>%<iv%>:tzicuini%> Imperfect ;
 tzicuini%<v%>%<iv%>:tzicuin%> Durative ;
 tzicuini%<v%>%<iv%>:tzicuin%> Base2Suffixes ;
 tzicuini%<v%>%<iv%>:tzicuini%> Base3Suffixes ;
+
+! brincar
+ahcotzicuini%<v%>%<iv%>:ahcotzicuini%> PresentTense ;
+ahcotzicuini%<v%>%<iv%>:ahcotzicuini%> Imperfect ;
+ahcotzicuini%<v%>%<iv%>:ahcotzicuin%> Durative ;
+ahcotzicuini%<v%>%<iv%>:ahcotzicuin%> Base2Suffixes ;
+ahcotzicuini%<v%>%<iv%>:ahcotzicuini%> Base3Suffixes ;
 
 !tener pena
 pinahui%<v%>%<iv%>:pinahui%>  PresentTense;
@@ -987,6 +1009,14 @@ desarmaroa%<v%>%<tv%>:desarmaroh%>  Durative;
 desarmaroa%<v%>%<tv%>:desarmaro%>  Base2Suffixes;
 desarmaroa%<v%>%<tv%>:desarmaro%>  Base3Suffixes;
 
+!imaginar
+imaginaroa%<v%>%<tv%>:imaginaroa%>  PresentTense;
+imaginaroa%<v%>%<tv%>:imaginaroa%>  Imperfect;
+imaginaroa%<v%>%<tv%>:imaginaro%>  Durative;
+imaginaroa%<v%>%<tv%>:imaginaroh%>  Durative;
+imaginaroa%<v%>%<tv%>:imaginaro%>  Base2Suffixes;
+imaginaroa%<v%>%<tv%>:imaginaro%>  Base3Suffixes;
+
 ! lavar con agua
 apaca%<v%>%<tv%>: apaca%> PresentTense ;
 apaca%<v%>%<tv%>: apaca%> Imperfect ;
@@ -1008,6 +1038,19 @@ cahcayahua%<v%>%<tv%>:cahcayauh%>  Durative;
 cahcayahua%<v%>%<tv%>:cahcayauh%>  Base2Suffixes;
 cahcayahua%<v%>%<tv%>:cahcayahua%>  Base3Suffixes;
 
+! regañar
+ahhua%<v%>%<tv%>:ahhua%>  PresentTense;
+ahhua%<v%>%<tv%>:ahhua%>  Imperfect;
+ahhua%<v%>%<tv%>:ahhua%>  Durative;
+ahhua%<v%>%<tv%>:ahhua%>  Base2Suffixes;
+ahhua%<v%>%<tv%>:ahhua%>  Base3Suffixes;
+
+! regañar 2 (?) todo check this word
+ahhuatia%<v%>%<tv%>:ahhuatia%>          PresentTense;
+ahhuatia%<v%>%<tv%>:ahhuata%>           Imperfect;
+ahhuatia%<v%>%<tv%>:ahhua%>             Durative;
+ahhuatia%<v%>%<tv%>:ahhuat%{i%}%{H%}%>  Base2Suffixes;
+ahhuatia%<v%>%<tv%>:ahhuati%>           Base3Suffixes;
 
 !aprender
 aprenderoa%<v%>%<tv%>:aprenderoa%>  PresentTense;
@@ -1025,7 +1068,16 @@ lograroa%<v%>%<tv%>:lograroh%>  Base2Suffixes;
 lograroa%<v%>%<tv%>:lograro%>  Base2Suffixes;
 lograroa%<v%>%<tv%>:lograro%>  Base3Suffixes;
 
-! apuntar
+! abandonar
+abandonaroa%<v%>%<tv%>:abandonaroa%>  PresentTense;
+abandonaroa%<v%>%<tv%>:abandonaroa%>  Imperfect;
+abandonaroa%<v%>%<tv%>:abandonaroh%>  Durative;
+abandonaroa%<v%>%<tv%>:abandonaro%>  Durative;
+abandonaroa%<v%>%<tv%>:abandonaroh%>  Base2Suffixes;
+abandonaroa%<v%>%<tv%>:abandonaro%>  Base2Suffixes;
+abandonaroa%<v%>%<tv%>:abandonaro%>  Base3Suffixes;
+
+! aparecer
 apareceroa%<v%>%<tv%>:apareceroa%>  PresentTense;
 apareceroa%<v%>%<tv%>:apareceroa%>  Imperfect;
 apareceroa%<v%>%<tv%>:apareceroh%>  Durative;
@@ -1052,6 +1104,24 @@ felicitaroa%<v%>%<tv%>:felicitaroh%>  Base2Suffixes;
 felicitaroa%<v%>%<tv%>:felicitaro%>  Base2Suffixes;
 felicitaroa%<v%>%<tv%>:felicitaro%>  Base3Suffixes;
 
+! conservar
+conservaroa%<v%>%<tv%>:conservaroa%>  PresentTense;
+conservaroa%<v%>%<tv%>:conservaroa%>  Imperfect;
+conservaroa%<v%>%<tv%>:conservaroh%>  Durative;
+conservaroa%<v%>%<tv%>:conservaro%>  Durative;
+conservaroa%<v%>%<tv%>:conservaroh%>  Base2Suffixes;
+conservaroa%<v%>%<tv%>:conservaro%>  Base2Suffixes;
+conservaroa%<v%>%<tv%>:conservaro%>  Base3Suffixes;
+
+! convivir
+conviviroa%<v%>%<tv%>:conviviroa%>  PresentTense;
+conviviroa%<v%>%<tv%>:conviviroa%>  Imperfect;
+conviviroa%<v%>%<tv%>:conviviroh%>  Durative;
+conviviroa%<v%>%<tv%>:conviviro%>  Durative;
+conviviroa%<v%>%<tv%>:conviviroh%>  Base2Suffixes;
+conviviroa%<v%>%<tv%>:conviviro%>  Base2Suffixes;
+conviviroa%<v%>%<tv%>:conviviro%>  Base3Suffixes;
+
 ! ver
 itta%<v%>%<tv%>:itta%>     PresentTense ;
 itta%<v%>%<tv%>:itta%>     Imperfect ;
@@ -1066,6 +1136,13 @@ itta%<v%>%<tv%>:itz%>      Durative ;
 itta%<v%>%<tv%>:ita%>     Base2Suffixes ;
 itta%<v%>%<tv%>:ita%>     Base3Suffixes ;
 
+! ver hacia arriba
+ahcoitta%<v%>%<tv%>:ahcoita%>     PresentTense ;
+ahcoitta%<v%>%<tv%>:ahcoita%>     Imperfect ;
+ahcoitta%<v%>%<tv%>:ahcoitz%>      Durative ;
+ahcoitta%<v%>%<tv%>:ahcoita%>     Base2Suffixes ;
+ahcoitta%<v%>%<tv%>:ahcoita%>     Base3Suffixes ;
+
 !enseñar algo
 nextia%<v%>%<tv%>:nextia%>  PresentTense;
 nextia%<v%>%<tv%>:nexta%>  Imperfect;
@@ -1073,6 +1150,12 @@ nextia%<v%>%<tv%>:nextih%>  Durative;
 nextia%<v%>%<tv%>:next%{i%}%{H%}%>  Base2Suffixes;
 nextia%<v%>%<tv%>:nexti%>  Base3Suffixes;
 
+! extender
+hueyitilia%<v%>%<tv%>:hueyitilia%> PresentTense ;
+hueyitilia%<v%>%<tv%>:hueyitila%>  Imperfect ;
+hueyitilia%<v%>%<tv%>:hueyitili%>  Durative ;
+hueyitilia%<v%>%<tv%>:hueyitil%{i%}%{H%}%>  Base2Suffixes ;
+hueyitilia%<v%>%<tv%>:hueyitili%>  Base3Suffixes ;
 
 ! columpiar
 huiyonia%<v%>%<tv%>:huiyonia%>     PresentTense ;
@@ -1434,6 +1517,13 @@ cua%<v%>%<tv%>:cuah%>  Durative;
 cua%<v%>%<tv%>:cuah%>  Base2Suffixes;
 cua%<v%>%<tv%>:cua%>  Base3Suffixes;
 
+! comer la oreja a alguien
+nacascua%<v%>%<tv%>:nacascua%>  PresentTense;
+nacascua%<v%>%<tv%>:nacascua%>  Imperfect;
+nacascua%<v%>%<tv%>:nacascuah%>  Durative;
+nacascua%<v%>%<tv%>:nacascuah%>  Base2Suffixes;
+nacascua%<v%>%<tv%>:nacascua%>  Base3Suffixes;
+
 ! cumplir
 cumpliroa%<v%>%<tv%>:cumpliroa%>  PresentTense;
 cumpliroa%<v%>%<tv%>:cumpliroa%>  Imperfect;
@@ -1447,6 +1537,13 @@ cui%<v%>%<tv%>:cui%>  Imperfect;
 cui%<v%>%<tv%>:cui%>  Durative;
 cui%<v%>%<tv%>:cui%>  Base2Suffixes;
 cui%<v%>%<tv%>:cui%>  Base3Suffixes;
+
+! levantar
+ahcocui%<v%>%<tv%>:ahcocui%>  PresentTense;
+ahcocui%<v%>%<tv%>:ahcocui%>  Imperfect;
+ahcocui%<v%>%<tv%>:ahcocui%>  Durative;
+ahcocui%<v%>%<tv%>:ahcocui%>  Base2Suffixes;
+ahcocui%<v%>%<tv%>:ahcocui%>  Base3Suffixes;
 
 !llevar
 cuica%<v%>%<tv%>:cuica%>  PresentTense;
@@ -1516,6 +1613,12 @@ estudiaroa%<v%>%<tv%>:estudiaroh%>  Durative;
 estudiaroa%<v%>%<tv%>:estudiaroh%>  Base2Suffixes;
 estudiaroa%<v%>%<tv%>:estudiaro%>  Base3Suffixes;
 
+!visitar
+visitaroa%<v%>%<tv%>:visitaroa%>  PresentTense;
+visitaroa%<v%>%<tv%>:visitaroa%>  Imperfect;
+visitaroa%<v%>%<tv%>:visitaroh%>  Durative;
+visitaroa%<v%>%<tv%>:visitaroh%>  Base2Suffixes;
+visitaroa%<v%>%<tv%>:visitaro%>  Base3Suffixes;
 
 !visitar
 hualita%<v%>%<tv%>:hualita%>  PresentTense;
@@ -1679,6 +1782,13 @@ namaca%<v%>%<tv%>:namaca%>  Durative;
 namaca%<v%>%<tv%>:namaca%>  Base2Suffixes;
 namaca%<v%>%<tv%>:namaca%>  Base3Suffixes;
 
+! dar agua
+amaca%<v%>%<tv%>:amaca%>  PresentTense;
+amaca%<v%>%<tv%>:amaca%>  Imperfect;
+amaca%<v%>%<tv%>:amaca%>  Durative;
+amaca%<v%>%<tv%>:amaca%>  Base2Suffixes;
+amaca%<v%>%<tv%>:amaca%>  Base3Suffixes;
+
 ! poner a trabajar
 tiquitiltia%<v%>%<tv%>:tiquitiltia%>  PresentTense;
 tiquitiltia%<v%>%<tv%>:tiquitilta%>  Imperfect;
@@ -1776,6 +1886,12 @@ tlacamati%<v%>%<tv%>:tlacama%>  Durative;
 tlacamati%<v%>%<tv%>:tlacamat%>  Base2Suffixes;
 tlacamati%<v%>%<tv%>:tlacamati%>  Base3Suffixes;
 
+! entender
+ahcicamati%<v%>%<tv%>:ahcicamati%>  PresentTense;
+ahcicamati%<v%>%<tv%>:ahcicamati%>  Imperfect;
+ahcicamati%<v%>%<tv%>:ahcicama%>  Durative;
+ahcicamati%<v%>%<tv%>:ahcicamat%>  Base2Suffixes;
+ahcicamati%<v%>%<tv%>:ahcicamati%>  Base3Suffixes;
 
 !hacer a medias
 tlahcolcahua%<v%>%<tv%>:tlahcolcahua%>  PresentTense;
@@ -1906,6 +2022,27 @@ ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
 ilhuia%<v%>%<tv2%>:ilhuih%> Durative ;
 ilhuia%<v%>%<tv2%>:ilhu%{i%}%{H%}%> Base2Suffixes ;
 ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
+
+! decir
+ihlhuia%<v%>%<tv2%>:ihlhuia%> PresentTense ;
+ihlhuia%<v%>%<tv2%>:ihlhua%>  Imperfect ;
+ihlhuia%<v%>%<tv2%>:ihlhuih%> Durative ;
+ihlhuia%<v%>%<tv2%>:ihlhu%{i%}%{H%}%> Base2Suffixes ;
+ihlhuia%<v%>%<tv2%>:ihlhui%>  Base3Suffixes ;
+
+! llorarle
+choquilia%<v%>%<tv2%>:choquilia%> PresentTense ;
+choquilia%<v%>%<tv2%>:choquila%>  Imperfect ;
+choquilia%<v%>%<tv2%>:choquilih%> Durative ;
+choquilia%<v%>%<tv2%>:choquil%{i%}%{H%}%> Base2Suffixes ;
+choquilia%<v%>%<tv2%>:choquili%>  Base3Suffixes ;
+
+! coronar, ponerle algo a la cabeza
+cuaquiltia%<v%>%<tv2%>:cuaquiltia%>  PresentTense;
+cuaquiltia%<v%>%<tv2%>:cuaquilta%>  Imperfect;
+cuaquiltia%<v%>%<tv2%>:cuaquiltih%>  Durative;
+cuaquiltia%<v%>%<tv2%>:cuaquilt%{i%}%{H%}%>  Base2Suffixes;
+cuaquiltia%<v%>%<tv2%>:cuaquilti%>  Base3Suffixes;
 
 ! venderle algo a alguien
 namaquiltia%<v%>%<tv2%>:namaquiltia%>  PresentTense;
@@ -2672,6 +2809,8 @@ tradición:tradición                             EsSuff ;
 tradicion:tradicion                             EsSuff ;
 vez:ve%{z%}                                     EsSuff ;
 pitbull:pitbull                                 EsSuff ;
+pájaro:pájaro                                   EsSuff ;
+pajaro:pajaro                                   EsSuff ;
 concha:concha                                   EsSuff ;
 artesania:artesania                             EsSuff ;
 taller:taller                                   EsSuff ;

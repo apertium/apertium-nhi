@@ -95,11 +95,11 @@ i:e <=> Cns _ >:> %{H%}: .#. ;
 "drop h after i->e in present plural"
 %{H%}:0 <=> Cns i >:> _ .#. ;
 
-"i->e pret sg"
-%{i%}:e <=> _ %{H%}: >:> %{c%}: .#. ;
+!"i->e pret sg"
+!%{i%}:e <=> _ %{H%}: >:> %{c%}: .#. ;
 
-"h->0 pret sg"
-%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;
+!"h->0 pret sg"
+!%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;
 
 "Metathesis of -{h}{u} for {h}"
 %{u%}:h <=  _ %{h%}: %>: i t l ;
