@@ -362,6 +362,10 @@ LEXICON CaPres
 %<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cateh # ;
 %<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cateh # ;
 
+! weird one-off from tenango grammar
+%<s_sg3%>ameh%<v%>%<iv%>%<pres%>:ameh # ;
+%<s_pl3%>ameh%<v%>%<iv%>%<pres%>:amehcan # ;
+
 LEXICON CaImpf
 %<s_sg1%>catqui%<v%>%<iv%>%<impf%>:ni%>catca # ;
 %<s_sg2%>catqui%<v%>%<iv%>%<impf%>:ti%>cacta # ;
@@ -675,6 +679,9 @@ huala%<v%>%<iv%>:hual%>  Durative;
 huala%<v%>%<iv%>:hual%>  Base2Suffixes;
 huala%<v%>%<iv%>:huala%>  Base3Suffixes;
 
+!venir
+huitz%<v%>%<iv%>:huitz%>  PresentTense;
+
 ! crecer (tamaño)
 hueyiya%<v%>%<iv%>:hueyiya%> PresentTense ;
 hueyiya%<v%>%<iv%>:hueyiya%> Imperfect ;
@@ -698,7 +705,7 @@ huili%<v%>%<iv%>:huil%{i%}%{H%}%>  Base2Suffixes;
 huili%<v%>%<iv%>:huili%>  Base3Suffixes;
 
 
-!venir
+! caerse
 huitzi%<v%>%<iv%>:huitzi%>  PresentTense;
 huitzi%<v%>%<iv%>:huitzi%>  Imperfect;
 huitzi%<v%>%<iv%>:huitz%>  Durative;
@@ -825,6 +832,13 @@ timoa%<v%>%<iv%>:timo%>  Durative;
 timoa%<v%>%<iv%>:timoc%>  Base2Suffixes;
 timoa%<v%>%<iv%>:timo%>  Base3Suffixes;
 
+! echar tortilla
+tizi%<v%>%<iv%>:tizi%>  PresentTense;
+tizi%<v%>%<iv%>:tizi%>  Imperfect;
+tizi%<v%>%<iv%>:tiz%>  Durative;
+tizi%<v%>%<iv%>:tiz%>  Base2Suffixes;
+tizi%<v%>%<iv%>:tizi%>  Base3Suffixes;
+
 ! correr
 tzicuini%<v%>%<iv%>:tzicuini%> PresentTense ;
 tzicuini%<v%>%<iv%>:tzicuini%> Imperfect ;
@@ -881,6 +895,13 @@ tlacoya%<v%>%<iv%>:tlacoya%>  Imperfect;
 tlacoya%<v%>%<iv%>:tlacox%>  Durative;
 tlacoya%<v%>%<iv%>:tlacox%>  Base2Suffixes;
 tlacoya%<v%>%<iv%>:tlacoya%>  Base3Suffixes;
+
+!ponerse triste
+tlacuya%<v%>%<iv%>:tlacuya%>  PresentTense;
+tlacuya%<v%>%<iv%>:tlacuya%>  Imperfect;
+tlacuya%<v%>%<iv%>:tlacux%>  Durative;
+tlacuya%<v%>%<iv%>:tlacux%>  Base2Suffixes;
+tlacuya%<v%>%<iv%>:tlacuya%>  Base3Suffixes;
 
 !ponerse triste
 tlaocoya%<v%>%<iv%>:tlaocoya%>  PresentTense;
@@ -946,6 +967,13 @@ paqui%<v%>%<iv%>:paqui%>  Imperfect;
 paqui%<v%>%<iv%>:pac%>  Durative;
 paqui%<v%>%<iv%>:pac%>  Base2Suffixes;
 paqui%<v%>%<iv%>:paqui%>  Base3Suffixes;
+
+!estar feliz
+pacqui%<v%>%<iv%>:pacqui%>  PresentTense;
+pacqui%<v%>%<iv%>:pacqui%>  Imperfect;
+pacqui%<v%>%<iv%>:pac%>  Durative;
+pacqui%<v%>%<iv%>:pac%>  Base2Suffixes;
+pacqui%<v%>%<iv%>:pacqui%>  Base3Suffixes;
 
 !mojar
 palti%<v%>%<tv%>:palti%>  PresentTense;
@@ -1038,6 +1066,13 @@ cahcayahua%<v%>%<tv%>:cahcayauh%>  Durative;
 cahcayahua%<v%>%<tv%>:cahcayauh%>  Base2Suffixes;
 cahcayahua%<v%>%<tv%>:cahcayahua%>  Base3Suffixes;
 
+! cansar a alguien
+ciyouhtia%<v%>%<iv%>:ciyauhtia%>  PresentTense;
+ciyouhtia%<v%>%<iv%>:ciyauhtia%>  Imperfect;
+ciyouhtia%<v%>%<iv%>:ciyauh%>  Durative;
+ciyouhtia%<v%>%<iv%>:ciyauht%{i%}%{H%}%>  Base2Suffixes;
+ciyouhtia%<v%>%<iv%>:ciyauhtia%>  Base3Suffixes;
+
 ! regañar
 ahhua%<v%>%<tv%>:ahhua%>  PresentTense;
 ahhua%<v%>%<tv%>:ahhua%>  Imperfect;
@@ -1051,6 +1086,13 @@ ahhuatia%<v%>%<tv%>:ahhuata%>           Imperfect;
 ahhuatia%<v%>%<tv%>:ahhua%>             Durative;
 ahhuatia%<v%>%<tv%>:ahhuat%{i%}%{H%}%>  Base2Suffixes;
 ahhuatia%<v%>%<tv%>:ahhuati%>           Base3Suffixes;
+
+! echarle agua a algo/alguien
+atequia%<v%>%<tv%>:atequia%>          PresentTense;
+atequia%<v%>%<tv%>:ateca%>            Imperfect;
+atequia%<v%>%<tv%>:atequi%>           Durative;
+atequia%<v%>%<tv%>:atequ%{i%}%{H%}%>  Base2Suffixes;
+atequia%<v%>%<tv%>:atequi%>           Base3Suffixes;
 
 !aprender
 aprenderoa%<v%>%<tv%>:aprenderoa%>  PresentTense;
@@ -1367,6 +1409,13 @@ cahua%<v%>%<tv%>:cauh%>  Durative;
 cahua%<v%>%<tv%>:cauh%>  Base2Suffixes;
 cahua%<v%>%<tv%>:cahua%>  Base3Suffixes;
 
+!dejar caer
+cahcahua%<v%>%<tv%>:cahcahua%>  PresentTense;
+cahcahua%<v%>%<tv%>:cahcahua%>  Imperfect;
+cahcahua%<v%>%<tv%>:cahcauh%>  Durative;
+cahcahua%<v%>%<tv%>:cahcauh%>  Base2Suffixes;
+cahcahua%<v%>%<tv%>:cahcahua%>  Base3Suffixes;
+
 ! apagar o descansar TODO:confirm paradigm
 cehuia%<v%>%<tv%>:cehuia%> PresentTense ;
 cehuia%<v%>%<tv%>:cehuia%> Imperfect ;
@@ -1567,6 +1616,13 @@ cuipa%<v%>%<tv%>:cuip%>  Durative;
 cuipa%<v%>%<tv%>:cuip%>  Base2Suffixes;
 cuipa%<v%>%<tv%>:cuipa%>  Base3Suffixes;
 
+! arrepentirse
+yolcuipa%<v%>%<tv%>:yolcuipa%>  PresentTense;
+yolcuipa%<v%>%<tv%>:yolcuipa%>  Imperfect;
+yolcuipa%<v%>%<tv%>:yolcuip%>  Durative;
+yolcuipa%<v%>%<tv%>:yolcuip%>  Base2Suffixes;
+yolcuipa%<v%>%<tv%>:yolcuipa%>  Base3Suffixes;
+
 ! quitarle
 cuilia%<v%>%<tv%>:cuilia%>  PresentTense;
 cuilia%<v%>%<tv%>:cuila%>  Imperfect;
@@ -1633,6 +1689,13 @@ huahhuia%<v%>%<tv%>:huahhua%>  Imperfect;
 huahhuia%<v%>%<tv%>:huahhuih%>  Durative;
 huahhuia%<v%>%<tv%>:huahhu%{i%}%{H%}%>  Base2Suffixes;
 huahhuia%<v%>%<tv%>:huahhui%>  Base3Suffixes;
+
+! ladrarle a alguien
+huahhuitia%<v%>%<tv%>:huahhuitia%>  PresentTense;
+huahhuitia%<v%>%<tv%>:huahhuita%>  Imperfect;
+huahhuitia%<v%>%<tv%>:huahhuitih%>  Durative;
+huahhuitia%<v%>%<tv%>:huahhuit%{i%}%{H%}%>  Base2Suffixes;
+huahhuitia%<v%>%<tv%>:huahhuiti%>  Base3Suffixes;
 
 ! ladrar 2
 huahuia%<v%>%<tv%>:huahuia%>  PresentTense;
@@ -1920,11 +1983,11 @@ tlatlahtlania%<v%>%<tv%>:tlatlahtlani%>  Base3Suffixes;
 
 ! TODO: check tlani and tlami!
 !ganar
-tlani%<v%>%<tv%>:tlani%>  PresentTense;
-tlani%<v%>%<tv%>:tlani%>  Imperfect;
-tlani%<v%>%<tv%>:tlan%>  Durative;
-tlani%<v%>%<tv%>:tlan%>  Base2Suffixes;
-tlani%<v%>%<tv%>:tlani%>  Base3Suffixes;
+tlatlani%<v%>%<tv%>:tlatlani%>  PresentTense;
+tlatlani%<v%>%<tv%>:tlatlani%>  Imperfect;
+tlatlani%<v%>%<tv%>:tlatlan%>  Durative;
+tlatlani%<v%>%<tv%>:tlatlan%>  Base2Suffixes;
+tlatlani%<v%>%<tv%>:tlatlani%>  Base3Suffixes;
 
 ! terminar
 tlami%<v%>%<tv%>:tlami%>  PresentTense;
@@ -1947,7 +2010,7 @@ decidiroa%<v%>%<tv%>:decidiroh%>  Durative;
 decidiroa%<v%>%<tv%>:decidiroh%>  Base2Suffixes;
 decidiroa%<v%>%<tv%>:decidiro%>  Base3Suffixes;
 
-! ssegu
+! seguir
 seguiroa%<v%>%<tv%>:seguiroa%>  PresentTense;
 seguiroa%<v%>%<tv%>:seguiroa%>  Imperfect;
 seguiroa%<v%>%<tv%>:seguiroh%>  Durative;
@@ -1982,6 +2045,21 @@ tzilinia%<v%>%<tv%>:tzilina%>  Imperfect;
 tzilinia%<v%>%<tv%>:tzilinih%>  Durative;
 tzilinia%<v%>%<tv%>:tzilin%{i%}%{H%}%>  Base2Suffixes;
 tzilinia%<v%>%<tv%>:tzilini%>  Base3Suffixes;
+
+! intentar
+yehyecoa%<v%>%<tv%>:yehyecoa%>  PresentTense;
+yehyecoa%<v%>%<tv%>:yehyecoa%>  Imperfect;
+yehyecoa%<v%>%<tv%>:yehyecoh%>  Durative;
+yehyecoa%<v%>%<tv%>:yehyecoh%>  Base2Suffixes;
+yehyecoa%<v%>%<tv%>:yehyeco%>  Base3Suffixes;
+
+! intentar
+yahyacoa%<v%>%<tv%>:yahyacoa%>  PresentTense;
+yahyacoa%<v%>%<tv%>:yahyacoa%>  Imperfect;
+yahyacoa%<v%>%<tv%>:yahyacoh%>  Durative;
+yahyacoa%<v%>%<tv%>:yahyacoh%>  Base2Suffixes;
+yahyacoa%<v%>%<tv%>:yahyaco%>  Base3Suffixes;
+
 
 !acompañar
 yolchicahua%<v%>%<tv%>:yolchicahua%>  PresentTense;
