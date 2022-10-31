@@ -866,6 +866,13 @@ patlani%<v%>%<iv%>:patlan%>  Durative;
 patlani%<v%>%<iv%>:patlan%>  Base2Suffixes;
 patlani%<v%>%<iv%>:patlani%>  Base3Suffixes;
 
+! brillar
+pitlani%<v%>%<iv%>:pitlani%>  PresentTense;
+pitlani%<v%>%<iv%>:pitlani%>  Imperfect;
+pitlani%<v%>%<iv%>:pitlan%>  Durative;
+pitlani%<v%>%<iv%>:pitlan%>  Base2Suffixes;
+pitlani%<v%>%<iv%>:pitlani%>  Base3Suffixes;
+
 ! nacer TODO: confirm forms
 tlacati%<v%>%<iv%>:tlacati%>  PresentTense;
 tlacati%<v%>%<iv%>:tlacati%>  Imperfect;
@@ -1045,12 +1052,34 @@ tzahtzi%<v%>%<iv%>:tzahtz%>  Durative;
 tzahtzi%<v%>%<iv%>:tzahtz%>  Base2Suffixes;
 tzahtzi%<v%>%<iv%>:tzahtzi%>  Base3Suffixes;
 
+!gritar fuerte (como si estuviera en el bosque?)
+cohtzahtzi%<v%>%<iv%>:cohtzahtzi%>  PresentTense;
+cohtzahtzi%<v%>%<iv%>:cohtzahtzi%>  Imperfect;
+cohtzahtzi%<v%>%<iv%>:cohtzahtz%>  Durative;
+cohtzahtzi%<v%>%<iv%>:cohtzahtz%>  Base2Suffixes;
+cohtzahtzi%<v%>%<iv%>:cohtzahtzi%>  Base3Suffixes;
+
+!gritar fuerte (como si estuviera en el bosque?)
+pohtzahtzi%<v%>%<iv%>:pohtzahtzi%>  PresentTense;
+pohtzahtzi%<v%>%<iv%>:pohtzahtzi%>  Imperfect;
+pohtzahtzi%<v%>%<iv%>:pohtzahtz%>  Durative;
+pohtzahtzi%<v%>%<iv%>:pohtzahtz%>  Base2Suffixes;
+pohtzahtzi%<v%>%<iv%>:pohtzahtzi%>  Base3Suffixes;
+
+
 ! hacer noche
 tlayohua%<v%>%<iv%>:tlayohua%>  PresentTense;
 tlayohua%<v%>%<iv%>:tlayohua%>  Imperfect;
 tlayohua%<v%>%<iv%>:tlayohua%>  Durative;
 tlayohua%<v%>%<iv%>:tlayohua%>  Base2Suffixes;
 tlayohua%<v%>%<iv%>:tlayohua%>  Base3Suffixes;
+
+! contar
+tlapohua%<v%>%<iv%>:tlapohua%>  PresentTense;
+tlapohua%<v%>%<iv%>:tlapohua%>  Imperfect;
+tlapohua%<v%>%<iv%>:tlapohua%>  Durative;
+tlapohua%<v%>%<iv%>:tlapohua%>  Base2Suffixes;
+tlapohua%<v%>%<iv%>:tlapohua%>  Base3Suffixes;
 
 ! hacer noche (variante)
 tlayuhua%<v%>%<iv%>:tlayuhua%>  PresentTense;
@@ -1107,6 +1136,7 @@ pacqui%<v%>%<iv%>:pacqui%>  Imperfect;
 pacqui%<v%>%<iv%>:pac%>  Durative;
 pacqui%<v%>%<iv%>:pac%>  Base2Suffixes;
 pacqui%<v%>%<iv%>:pacqui%>  Base3Suffixes;
+
 
 ! regresar
 regresaroa%<v%>%<iv%>:regresaroa%>  PresentTense;
@@ -1242,6 +1272,34 @@ cahcayahua%<v%>%<tv%>:cahcayahua%>  Imperfect;
 cahcayahua%<v%>%<tv%>:cahcayauh%>  Durative;
 cahcayahua%<v%>%<tv%>:cahcayauh%>  Base2Suffixes;
 cahcayahua%<v%>%<tv%>:cahcayahua%>  Base3Suffixes;
+
+! abrazar
+nahua%<v%>%<iv%>:nahua%>  PresentTense;
+nahua%<v%>%<iv%>:nahua%>  Imperfect;
+nahua%<v%>%<iv%>:nahua%>  Durative;
+nahua%<v%>%<iv%>:nahua%>  Base2Suffixes;
+nahua%<v%>%<iv%>:nahua%>  Base3Suffixes;
+
+! abrazar 2
+nahnahua%<v%>%<iv%>:nahnahua%>  PresentTense;
+nahnahua%<v%>%<iv%>:nahnahua%>  Imperfect;
+nahnahua%<v%>%<iv%>:nahnahua%>  Durative;
+nahnahua%<v%>%<iv%>:nahnahua%>  Base2Suffixes;
+nahnahua%<v%>%<iv%>:nahnahua%>  Base3Suffixes;
+
+! abundar
+tlamochihua%<v%>%<tv%>:tlamochihua%>  PresentTense;
+tlamochihua%<v%>%<tv%>:tlamochihua%>  Imperfect;
+tlamochihua%<v%>%<tv%>:tlamochiuh%>   Durative;
+tlamochihua%<v%>%<tv%>:tlamochiuh%>  Base2Suffixes;
+tlamochihua%<v%>%<tv%>:tlamochihua%>  Base3Suffixes;
+
+! soprender
+tetzahuia%<v%>%<tv%>:tetzahuia%>  PresentTense;
+tetzahuia%<v%>%<tv%>:tetzahua%>  Imperfect;
+tetzahuia%<v%>%<tv%>:tetzahuih%>  Durative;
+tetzahuia%<v%>%<tv%>:tetzahu%{i%}%{H%}%>  Base2Suffixes;
+tetzahuia%<v%>%<tv%>:tetzahui%>  Base3Suffixes;
 
 ! construiroa
 construiroa%<v%>%<tv%>:construiroa%>  PresentTense;
@@ -2531,6 +2589,13 @@ mochiyalia%<v%>%<tv%>:mochiyali%>  Durative ;
 mochiyalia%<v%>%<tv%>:mochiyal%{i%}%{H%}%>  Base2Suffixes ;
 mochiyalia%<v%>%<tv%>:mochiyali%>  Base3Suffixes ;
 
+! gritarle a alguien
+tzahtzilia%<v%>%<tv%>:tzahtzilia%> PresentTense ;
+tzahtzilia%<v%>%<tv%>:tzahtzilia%>  Imperfect ;
+tzahtzilia%<v%>%<tv%>:tzahtzili%>  Durative ;
+tzahtzilia%<v%>%<tv%>:tzahtzil%{i%}%{H%}%>  Base2Suffixes ;
+tzahtzilia%<v%>%<tv%>:tzahtzili%>  Base3Suffixes ;
+
 ! dejar saber, avisar
 matiltia%<v%>%<tv%>:matiltia%> PresentTense ;
 matiltia%<v%>%<tv%>:matiltia%>  Imperfect ;
@@ -2681,6 +2746,20 @@ yolchicahua%<v%>%<tv%>:yolchicahua%>  Imperfect;
 yolchicahua%<v%>%<tv%>:yolchicauh%>  Durative;
 yolchicahua%<v%>%<tv%>:yolchicauh%>  Base2Suffixes;
 yolchicahua%<v%>%<tv%>:yolchicahua%>  Base3Suffixes;
+
+!acompañar, hacerse valiente
+yolchichichicahua%<v%>%<tv%>:yolchichichicahua%>  PresentTense;
+yolchichichicahua%<v%>%<tv%>:yolchichichicahua%>  Imperfect;
+yolchichichicahua%<v%>%<tv%>:yolchichichicauh%>  Durative;
+yolchichichicahua%<v%>%<tv%>:yolchichichicauh%>  Base2Suffixes;
+yolchichichicahua%<v%>%<tv%>:yolchichichicahua%>  Base3Suffixes;
+
+!aburrir
+zotlahua%<v%>%<tv%>:zotlahua%>  PresentTense;
+zotlahua%<v%>%<tv%>:zotlahua%>  Imperfect;
+zotlahua%<v%>%<tv%>:zotlauh%>  Durative;
+zotlahua%<v%>%<tv%>:zotlauh%>  Base2Suffixes;
+zotlahua%<v%>%<tv%>:zotlahua%>  Base3Suffixes;
 
 
 !preguntar
