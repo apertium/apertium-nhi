@@ -84,7 +84,7 @@ $(LANG1).rlx.bin: apertium-nhi.nhi.rlx
 	cg-comp $< $@
 
 $(LANG1).autogen.att.gz: .deps/$(LANG1).gen.hfst
-	hfst-fst2txt $< | gzip -9 -c > $@
+	hfst-compose-intersect -1 .deps/nhi.gen.hfst -2 .deps/nhi.mor.twol.hfst | hfst-eliminate-flags  | hfst-fst2txt | gzip -9 -c > $@ 
 
 $(LANG1).automorf.att.gz: .deps/$(LANG1).mor.hfst .deps/nhi.spellrelax.hfst
 	hfst-invert $< |  hfst-compose -F -1 - -2 .deps/nhi.spellrelax.hfst  | hfst-invert | hfst-fst2txt | gzip -9 -c > $@
