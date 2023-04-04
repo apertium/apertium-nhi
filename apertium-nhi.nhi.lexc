@@ -102,7 +102,7 @@ Multichar_Symbols
 %<neg%>
 %<o_sg3_om%>
 %<part%>
-%<refl%>
+%<o_ref%>
 %<rel%>
 %<rpar%>
 %<rquot%>
@@ -256,7 +256,7 @@ LEXICON TV2-Dir
                                                    TV2-Refl ;
 
 LEXICON TV2-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Adv-Pref ;
+@D.DOBJ@@P.DOBJ.FILLED@%<o_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Adv-Pref ;
 TV2-Adv-Pref ;
 
 LEXICON TV2-Adv-Pref
@@ -298,7 +298,7 @@ LEXICON TV-Dir
                                                    TV-Refl ;
 
 LEXICON TV-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<refl%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
+@D.DOBJ@@P.DOBJ.FILLED@%<o_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
                                                               TV-Adv-Pref ;
 
 LEXICON TV-Adv-Pref
