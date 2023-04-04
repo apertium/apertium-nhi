@@ -3424,8 +3424,10 @@ ome%<num%>:ome # ; ! dos
 veinte%<num%>:veinte # ;
 veintinueve%<num%>:veintinueve # ;
 que%<cnjsub%>:que # ;
-tleno%<pron%>:tleno # ; ! que
-tlen%<pron%>:tlen # ; ! que
+
+tleno%<prn%>:tleno # ; ! que
+tlen%<prn%>:tlen # ; ! que
+
 para%<cnjsub%>:para # ; ! que
 mox%<part%>:mox # ; ! marcador interrogativo
 
