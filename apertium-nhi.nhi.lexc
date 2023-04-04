@@ -3584,7 +3584,7 @@ toltitl:tolti  TlSuff ;
 cochiztl:cochiz TlSuff ; ! "el sueño"
 tlazohtl:tlazoh TlSuff ; 
 atentli:aten    TlSuff ;
-
+tlamantl:tlaman TlSuff ;
 cihuitl:cihui   TlSuff ;
 pohuitl:poui   TlSuff ;
 tzohpilotl:tzohpilo   TlSuff ;
@@ -3660,6 +3660,7 @@ icni:icni                                       NoSuff ; ! "hermanx"
 icxi:icxi                                       NoSuff ; ! "pie"
 ixtololo:ixtololo                               NoSuff ; ! "ojo"
 lechon:lechon                                   NoSuff ; ! "puerquito"
+nopal:nopal                                     NoSuff ; ! "nopal"
 mahtlapal:mahtlapal                             NoSuff ; ! "ala"
 mama:mama                                       NoSuff ; ! "mamá"
 maman:maman                                     NoSuff ; ! "mamá"
@@ -4027,7 +4028,7 @@ queme:queme                  Adv ; ! como
 quemen:quemen                  Adv ; ! como
 queni:queni                  Adv ; ! como
 quen:quen                    Adv ; ! como
-
+tipehxicuaco:tipehxicuaco   Adv ; 
 ya:ya                        Adv ;
 zan:zan                      Adv ; ! solo
 ! FIXME: Comprobar
