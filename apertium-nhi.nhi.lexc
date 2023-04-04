@@ -854,8 +854,8 @@ moburlaroa%<v%>%<iv%>:moburlaro%>  Base3Suffixes;
 !pasar
 panoa%<v%>%<iv%>:panoa%>  PresentTense;
 panoa%<v%>%<iv%>:panoa%>  Imperfect;
-panoa%<v%>%<iv%>:panoh%>  Durative;
-panoa%<v%>%<iv%>:panoh%>  Base2Suffixes;
+panoa%<v%>%<iv%>:pano%>  Durative;
+panoa%<v%>%<iv%>:pano%>  Base2Suffixes;
 panoa%<v%>%<iv%>:pano%>  Base3Suffixes;
 
 
@@ -1258,6 +1258,118 @@ apaca%<v%>%<tv%>: apaca%> Imperfect ;
 apaca%<v%>%<tv%>: apaca%> Durative ;
 apaca%<v%>%<tv%>: apaca%> Base2Suffixes ;
 apaca%<v%>%<tv%>: apaca%> Base3Suffixes ;
+
+! hervir (el nixtamal)
+pixquiltia%<v%>%<tv%>:pixquiltia%> PresentTense ;
+pixquiltia%<v%>%<tv%>:pixquiltia%>  Imperfect ;
+pixquiltia%<v%>%<tv%>:pixquilti%>  Durative ;
+pixquiltia%<v%>%<tv%>:pixquilt%{i%}%{H%}%>  Base2Suffixes ;
+pixquiltia%<v%>%<tv%>:pixquilti%>  Base3Suffixes ;
+
+! sacar
+quihquixtania%<v%>%<tv%>:quihquixtania%> PresentTense ;
+quihquixtania%<v%>%<tv%>:quihquixtania%>  Imperfect ;
+quihquixtania%<v%>%<tv%>:quihquixtani%>  Durative ;
+quihquixtania%<v%>%<tv%>:quihquixtan%{i%}%{H%}%>  Base2Suffixes ;
+quihquixtania%<v%>%<tv%>:quihquixtani%>  Base3Suffixes ;
+
+! aguantar?
+pacahyohuia%<v%>%<tv%>:pacahyohuia%> PresentTense ;
+pacahyohuia%<v%>%<tv%>:pacahyohuia%>  Imperfect ;
+pacahyohuia%<v%>%<tv%>:pacahyohui%>  Durative ;
+pacahyohuia%<v%>%<tv%>:pacahyohu%{i%}%{H%}%>  Base2Suffixes ;
+pacahyohuia%<v%>%<tv%>:pacahyohui%>  Base3Suffixes ;
+
+! rebasar, pasar
+panahuia%<v%>%<tv%>:panahuia%> PresentTense ;
+panahuia%<v%>%<tv%>:panahuia%>  Imperfect ;
+panahuia%<v%>%<tv%>:panahui%>  Durative ;
+panahuia%<v%>%<tv%>:panahu%{i%}%{H%}%>  Base2Suffixes ;
+panahuia%<v%>%<tv%>:panahui%>  Base3Suffixes ;
+
+! rebasar, pasar
+panohuia%<v%>%<tv%>:panohuia%> PresentTense ;
+panohuia%<v%>%<tv%>:panohuia%>  Imperfect ;
+panohuia%<v%>%<tv%>:panohui%>  Durative ;
+panohuia%<v%>%<tv%>:panohu%{i%}%{H%}%>  Base2Suffixes ;
+panohuia%<v%>%<tv%>:panohui%>  Base3Suffixes ;
+
+! tirar para abajo
+pantlatihuia%<v%>%<tv%>:pantlatihuia%> PresentTense ;
+pantlatihuia%<v%>%<tv%>:pantlatihuia%>  Imperfect ;
+pantlatihuia%<v%>%<tv%>:pantlatihui%>  Durative ;
+pantlatihuia%<v%>%<tv%>:pantlatihu%{i%}%{H%}%>  Base2Suffixes ;
+pantlatihuia%<v%>%<tv%>:pantlatihui%>  Base3Suffixes ;
+
+! echarle agua a algo
+tequilia%<v%>%<tv%>:tequilia%> PresentTense ;
+tequilia%<v%>%<tv%>:tequilia%>  Imperfect ;
+tequilia%<v%>%<tv%>:tequili%>  Durative ;
+tequilia%<v%>%<tv%>:tequil%{i%}%{H%}%>  Base2Suffixes ;
+tequilia%<v%>%<tv%>:tequili%>  Base3Suffixes ;
+
+! cortar
+tiquilia%<v%>%<tv%>:tiquilia%> PresentTense ;
+tiquilia%<v%>%<tv%>:tiquilia%>  Imperfect ;
+tiquilia%<v%>%<tv%>:tiquili%>  Durative ;
+tiquilia%<v%>%<tv%>:tiquil%{i%}%{H%}%>  Base2Suffixes ;
+tiquilia%<v%>%<tv%>:tiquili%>  Base3Suffixes ;
+
+! jalarle a alguien
+tilanilia%<v%>%<tv%>:tilanilia%> PresentTense ;
+tilanilia%<v%>%<tv%>:tilanilia%>  Imperfect ;
+tilanilia%<v%>%<tv%>:tilanili%>  Durative ;
+tilanilia%<v%>%<tv%>:tilanil%{i%}%{H%}%>  Base2Suffixes ;
+tilanilia%<v%>%<tv%>:tilanili%>  Base3Suffixes ;
+
+! apretar
+tilinia%<v%>%<tv%>:tilinia%> PresentTense ;
+tilinia%<v%>%<tv%>:tilinia%>  Imperfect ;
+tilinia%<v%>%<tv%>:tilini%>  Durative ;
+tilinia%<v%>%<tv%>:tilin%{i%}%{H%}%>  Base2Suffixes ;
+tilinia%<v%>%<tv%>:tilini%>  Base3Suffixes ;
+
+! hacer trabajar
+tiquitiltia%<v%>%<tv%>:tiquitiltia%> PresentTense ;
+tiquitiltia%<v%>%<tv%>:tiquitiltia%>  Imperfect ;
+tiquitiltia%<v%>%<tv%>:tiquitilti%>  Durative ;
+tiquitiltia%<v%>%<tv%>:tiquitilt%{i%}%{H%}%>  Base2Suffixes ;
+tiquitiltia%<v%>%<tv%>:tiquitilti%>  Base3Suffixes ;
+
+! bajar algo
+timohuia%<v%>%<tv%>:timohuia%> PresentTense ;
+timohuia%<v%>%<tv%>:timohuia%>  Imperfect ;
+timohuia%<v%>%<tv%>:timohui%>  Durative ;
+timohuia%<v%>%<tv%>:timohu%{i%}%{H%}%>  Base2Suffixes ;
+timohuia%<v%>%<tv%>:timohui%>  Base3Suffixes ;
+
+! robar
+tlachtikilia%<v%>%<tv%>:tlachtikilia%> PresentTense ;
+tlachtikilia%<v%>%<tv%>:tlachtikilia%>  Imperfect ;
+tlachtikilia%<v%>%<tv%>:tlachtikili%>  Durative ;
+tlachtikilia%<v%>%<tv%>:tlachtikil%{i%}%{H%}%>  Base2Suffixes ;
+tlachtikilia%<v%>%<tv%>:tlachtikili%>  Base3Suffixes ;
+
+! vender 
+tlanamakiltia%<v%>%<tv%>:tlanamakiltia%> PresentTense ;
+tlanamakiltia%<v%>%<tv%>:tlanamakiltia%>  Imperfect ;
+tlanamakiltia%<v%>%<tv%>:tlanamakilti%>  Durative ;
+tlanamakiltia%<v%>%<tv%>:tlanamakilt%{i%}%{H%}%>  Base2Suffixes ;
+tlanamakiltia%<v%>%<tv%>:tlanamakilti%>  Base3Suffixes ;
+
+! adornar
+tlahmachotia%<v%>%<tv%>:tlahmachotia%> PresentTense ;
+tlahmachotia%<v%>%<tv%>:tlahmachotia%>  Imperfect ;
+tlahmachotia%<v%>%<tv%>:tlahmachoti%>  Durative ;
+tlahmachotia%<v%>%<tv%>:tlahmachot%{i%}%{H%}%>  Base2Suffixes ;
+tlahmachotia%<v%>%<tv%>:tlahmachoti%>  Base3Suffixes ;
+
+! ladrar
+tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihtia%> PresentTense ;
+tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihtia%>  Imperfect ;
+tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%>  Durative ;
+tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtiht%{i%}%{H%}%>  Base2Suffixes ;
+tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%>  Base3Suffixes ;
 
 ! tomar/beber
 oni%<v%>%<iv%>:oni%>  PresentTense;
@@ -2893,6 +3005,13 @@ tlalilia%<v%>%<tv2%>:tlalilih%> Durative ;
 tlalilia%<v%>%<tv2%>:tlalil%{i%}%{H%}%> Base2Suffixes ;
 tlalilia%<v%>%<tv2%>:tlalili%>  Base3Suffixes ;
 
+! ponerle algo hacia dentro
+pantlalilia%<v%>%<tv2%>:pantlalilia%> PresentTense ;
+pantlalilia%<v%>%<tv2%>:pantlalilia%>  Imperfect ;
+pantlalilia%<v%>%<tv2%>:pantlalilih%> Durative ;
+pantlalilia%<v%>%<tv2%>:pantlalil%{i%}%{H%}%> Base2Suffixes ;
+pantlalilia%<v%>%<tv2%>:pantlalili%>  Base3Suffixes ;
+
 ! hacer algo por alguien
 chihuilia%<v%>%<tv2%>:chihuilia%> PresentTense ;
 chihuilia%<v%>%<tv2%>:chihuilia%>  Imperfect ;
@@ -3810,6 +3929,8 @@ tzocotzi:tzocotzi        Adj ; !"pequeñx"
 patiyo:patiyo            Adj ; !"carx"
 cualli:cualli            Adj ; !"buenx"
 cuali:cuali              Adj ; !"buenx"
+cuali%<pl%>:cuale        Adj ; !"buenxs"
+
 
 uhue:uhua                Adj ; ! "difícil"
 ohue:ohue                Adj ; ! "difícil"

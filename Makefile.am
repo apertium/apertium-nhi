@@ -48,7 +48,7 @@ TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(L
 
 # notipehuan:no>tipe>huan
 .deps/nhi.seg.hfst: .deps/nhi.mor.hfst .deps/nhi.gen.hfst
-	hfst-compose -1 .deps/nhi.mor.hfst -2 .deps/nhi.gen.hfst -o .deps/nhi.seg.hfst 
+	hfst-compose -F -1 .deps/nhi.mor.hfst -2 .deps/nhi.gen.hfst -o .deps/nhi.seg.hfst 
 
 .deps/nhi.phon.hfst: apertium-nhi.nhi.phon
 	hfst-lexc apertium-nhi.nhi.phon -o $@
@@ -60,7 +60,7 @@ TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(L
 	hfst-regexp2fst -S -o $@ < $<
 
 .deps/nhi-nhi_$(VAR1).phon.hfst: .deps/nhi.phon.hfst .deps/nhi.phon_$(VAR1).hfst
-	hfst-invert .deps/nhi.phon_$(VAR1).hfst | hfst-compose -1 .deps/nhi.phon.hfst -2 - -o $@
+	hfst-invert .deps/nhi.phon_$(VAR1).hfst | hfst-compose -F -1 .deps/nhi.phon.hfst -2 - -o $@
 
 $(LANG1)-$(LANG1)_$(VAR1).autoconv.hfst: .deps/nhi-nhi_$(VAR1).phon.hfst
 	hfst-fst2fst -w $< -o $@
