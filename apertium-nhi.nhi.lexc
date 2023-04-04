@@ -3280,7 +3280,7 @@ LEXICON ItlSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>itl   # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>i%{u%}%{h%}  # ;
-%<n%>:                                             Plural ;
+%<n%>:                                            Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON TliSuff
@@ -3308,7 +3308,7 @@ LEXICON InSuff
 
 LEXICON NoSuff
 
-@D.Sa.Pl@%<n%>:@D.Sa.Pl@                           # ;
+@D.Sa.Pl@%<n%>%<abs%>:@D.Sa.Pl@                    # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
