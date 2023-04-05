@@ -3217,11 +3217,11 @@ LEXICON Possession
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@no%>               Nominals ;
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@mo%>               Nominals ;
 @P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
-@P.Px.Sg@%<px3sg%>:@P.Px.Sg@ni%>                    Nominals ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@ni%>                    Nominals ; ! Dir/LR
 @P.Px.Pl@%<px1pl%>:@P.Px.Pl@to%>               Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@nimo%>             Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@namo%>             Nominals ;
-@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ;
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ; ! Dir/LR
 @P.Px.Pl@%<px3pl%>:@P.Px.Pl@in%>                   Nominals ;
 
 LEXICON Nominals 
