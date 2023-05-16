@@ -1199,6 +1199,13 @@ ehco%<v%>%<iv%>:ehco%>     Base3Suffixes ;
 
 LEXICON TV-Stem
 
+!pasar
+panoa%<v%>%<tv%>:panoa%>  PresentTense;
+panoa%<v%>%<tv%>:panoa%>  Imperfect;
+panoa%<v%>%<tv%>:pano%>  Durative;
+panoa%<v%>%<tv%>:pano%>  Base2Suffixes;
+panoa%<v%>%<tv%>:pano%>  Base3Suffixes;
+
 !animar a alguien
 animaroa%<v%>%<tv%>:animaroa%>  PresentTense;
 animaroa%<v%>%<tv%>:animaroa%>  Imperfect;
@@ -3410,13 +3417,9 @@ huan%<cnjcoo%>:huan # ;
 amo%<neg%>:amo # ;
 quema%<afirm%>:quema # ;
 
-ce%<det%>:ce # ; ! un(o)
-cada%<det%>%<barb%>:cada #; ! cada
-occe%<det%>:occe # ;  ! otro
 yeyi%<num%>:yeyi # ; ! tres
 yeyen%<num%>%<pl%>:yeyen # ; ! tres (plural)
 caxtol%<num%>:caxtol # ; ! quince
-ciqui%<det%>:ciqui # ; ! unos
 diecioochoo%<num%>:dieciocho # ;
 mahctlactl%<num%>:mahctlactl # ; ! diez
 nahuen%<num%>%<pl%>:nahuen # ; ! cuatro (plural)
@@ -3446,6 +3449,12 @@ LEXICON Determinantes
 in:in                                           DET ; ! "a"
 nin:nin                                         DET ; ! "estx"
 non:non                                         DET ; ! "esx"
+ciqui:ciqui                                     DET ; ! "un@s"
+oc+ciqui:occiqui                                DET ; ! "un@s mas"
+ce:ce                                           DET ; ! un(o)
+cada%<barb%>:cada                               DET ; ! cada
+oc+ce:occe                                      DET ;  ! otro
+
 
 LEXICON Pronombres 
 
@@ -4038,6 +4047,9 @@ ya:ye                        Adv ;
 zan:za                       Adv ; ! solo
 
 cimi:cimi                    Adv ; ! 
+no:no                        Adv ; !
+noyohqui:noyohqui            Adv ; !
+
 
 LEXICON Preposiciones 
 
