@@ -3457,6 +3457,13 @@ oc+ce:occe                                      DET ;  ! otro
 
 
 LEXICON Pronombres 
+nin%<pron%>:nin                                         # ; ! "estx"
+non%<pron%>:non                                         # ; ! "esx"
+ciqui%<pron%>:ciqui                                     # ; ! "un@s"
+oc+ciqui%<pron%>:occiqui                                # ; ! "un@s mas"
+ce%<pron%>:ce                                           # ; ! un(o)
+oc+ce%<pron%>:occe                                      # ;  ! otro
+
 
 Personales ; 
 
