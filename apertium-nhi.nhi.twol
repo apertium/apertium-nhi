@@ -39,6 +39,9 @@ i:o <=> [ n | t | x ] _ >:> %{q%}:c %{u%}:0 %{i%}:0 >:> o n >:> ;
 "Nasal assimilation"
 n:0 <=> _ %>: m e ;
 
+"Drop i in subj pref before on-"
+i:0 <=> t _ %>: o n %>: ;
+
 "Nasal elision"
 n:0 <=> _ %>: h u a n ;
 !@ n o >:> i:0 t z c u i n:0 >:> h u a n

@@ -173,6 +173,7 @@ Preposiciones ;
 Puntuación ;
 Interjecciones ; 
 Verb ;
+Conj ;
 ! Digits ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -330,6 +331,7 @@ IV-Stem ;
 LEXICON IrregularVerbs
                   Ca ;
                   Yo ;
+                  HuiquiOpt ;
 
 LEXICON Ca ! estar
 @D.PST@:@D.PST@ CaPres ;
@@ -341,6 +343,10 @@ LEXICON Yo ! ir
 @R.PST@:@R.PST@ YoPret ;
 @R.PST@:@R.PST@ YoImpf ;
 @D.PST@:@D.PST@ YoFut ;
+
+LEXICON HuiquiOpt
+%<s_sg2%>huiqui%<v%>%<iv%>%<pres%>:xi%>huiqui # ;
+%<s_sg2%>huiqui%<v%>%<iv%>%<pres%>:ix%>huiqui # ;
 
 
 LEXICON CaPres
@@ -391,6 +397,10 @@ LEXICON CaFut
 LEXICON YoPres
 %<s_sg1%>yohui%<v%>%<iv%>%<pres%>:ni%>yo # ;
 %<s_sg2%>yohui%<v%>%<iv%>%<pres%>:ti%>yo # ;
+
+%<s_sg2%>yohui%<v%>%<iv%>%<opt%>:xi%>yo # ;
+%<s_sg2%>yohui%<v%>%<iv%>%<opt%>:ti%>yo # ;
+
 %<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yohue # ;
 %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohue # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohue # ;
@@ -668,11 +678,11 @@ chantia%<v%>%<iv%>:chant%{i%}%{H%}%>  Base2Suffixes ;
 chantia%<v%>%<iv%>:chanti%>  Base3Suffixes ;
 
 !esperar
-chiya%<v%>%<iv%>:chiya%>  PresentTense;
-chiya%<v%>%<iv%>:chiya%>  Imperfect;
-chiya%<v%>%<iv%>:chix%>  Durative;
-chiya%<v%>%<iv%>:chix%>  Base2Suffixes;
-chiya%<v%>%<iv%>:chiya%>  Base3Suffixes;
+!chiya%<v%>%<iv%>:chiya%>  PresentTense;
+!chiya%<v%>%<iv%>:chiya%>  Imperfect;
+!chiya%<v%>%<iv%>:chix%>  Durative;
+!chiya%<v%>%<iv%>:chix%>  Base2Suffixes;
+!chiya%<v%>%<iv%>:chiya%>  Base3Suffixes;
 
 
 ! enojarse/estar enojado
@@ -1258,6 +1268,13 @@ cuatiqui%<v%>%<iv%>:cuatiqui%>  Imperfect;
 cuatiqui%<v%>%<iv%>:cuatiqui%>  Durative;
 cuatiqui%<v%>%<iv%>:cuatiqu%{i%}%{H%}%>  Base2Suffixes;
 cuatiqui%<v%>%<iv%>:cuatiqui%>  Base3Suffixes;
+
+!esperar
+chiya%<v%>%<tv%>:chiya%>  PresentTense;
+chiya%<v%>%<tv%>:chiya%>  Imperfect;
+chiya%<v%>%<tv%>:chix%>  Durative;
+chiya%<v%>%<tv%>:chix%>  Base2Suffixes;
+chiya%<v%>%<tv%>:chiya%>  Base3Suffixes;
 
 ! lavar con agua
 apaca%<v%>%<tv%>: apaca%> PresentTense ;
@@ -3533,6 +3550,8 @@ pohuitl:pohui    TlSuff ;
 telpocatl:telpoca    TlSuff ; ! niño
 telpochtl:telpochtl  TlSuff ; ! adolescente
 
+cintitl:cinti        TlSuff ; ! ""
+
 coyotl:coyo    TlSuff ;
 caxitl:caxi    TlSuff ;
 amatl:ama    TlSuff ;
@@ -3667,6 +3686,9 @@ cerahocuilin:cerahocuil                         InSuff ; ! "abeja"
 mapachin:mapach                                 InSuff ; ! "mapache"
 tomin:tom                                       InSuff ; ! "dinero"
 
+
+cuacohue:cuacohue                               NoSuff ; ! "vaca"
+cuacohue:cuapohue                               NoSuff ; ! "vaca"
 
 bohtimohmol:bohtimohmol                         NoSuff ; ! "buho del monte"
 camac:camac                                     NoSuff ; ! "boca"
@@ -3950,6 +3972,9 @@ cualli:cualli            Adj ; !"buenx"
 cuali:cuali              Adj ; !"buenx"
 cuali%<pl%>:cuale        Adj ; !"buenxs"
 
+tempile:tempile          Adj ; ! "beak-haver"
+tempile:tempileh         Adj ; ! "beak-haver"
+
 
 uhue:uhua                Adj ; ! "difícil"
 ohue:ohue                Adj ; ! "difícil"
@@ -4022,6 +4047,8 @@ axan:axan                    Adv ; ! ahora
 ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
 xa:xa                        Adv ; ! quizás
+xamo:xamo                    Adv ; 
+zatepan:zatepan              Adv ;
 cana:cana                    Adv ; ! quizás
 yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
@@ -4057,6 +4084,8 @@ cimi:cimi                    Adv ; !
 no:no                        Adv ; !
 noyohqui:noyohqui            Adv ; !
 
+no:no                        Adv ; !
+ihcuacon:ihcuacon            Adv ; ! then
 
 LEXICON Preposiciones 
 
@@ -4069,6 +4098,11 @@ para:para                    Pr-Esp ;  ! "para"
 sin:sin                      Pr-Esp ; ! "sin"
 
 ic:ic                        Pr ;  ! "por"
+
+LEXICON Conj
+ihcuac%<sconj%>:ihcuac # ;
+tla%<sconj%>:tla # ;
+
 
 LEXICON Interjecciones 
 
