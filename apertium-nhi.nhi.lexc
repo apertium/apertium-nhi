@@ -3328,6 +3328,7 @@ LEXICON InSuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>in    # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
+%<n%>:i                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON NoSuff
@@ -3671,7 +3672,7 @@ chicunautli:chicunau    TliSuff ;
 
 
 calli:cal                                       LiSuff ; ! "casa"
-citlali:citlal                                 LiSuff ; ! "estrella"
+citlalin:citlal                                 InSuff ; ! "estrella"
 pilli:pil                                       LiSuff ; ! "hijo/a"
 milli:mil                                       LiSuff ; ! "milpa"
 
@@ -3693,7 +3694,7 @@ cuacohue:cuapohue                               NoSuff ; ! "vaca"
 bohtimohmol:bohtimohmol                         NoSuff ; ! "buho del monte"
 camac:camac                                     NoSuff ; ! "boca"
 caxtil:caxtil                                   NoSuff ; ! "gallina"
-citlali:citlali                                 NoSuff ; ! "star (can have a ew pluraliztions so included multiple times)"
+! citlali:citlali                                 NoSuff ; ! "star (can have a ew pluraliztions so included multiple times)"
 cualcan:cualcan                                 NoSuff ; ! "mañana"
 ichtic:ichtic                                   NoSuff ; ! "ladrón"
 icni:icni                                       NoSuff ; ! "hermanx"
