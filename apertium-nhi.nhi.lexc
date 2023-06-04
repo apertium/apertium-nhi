@@ -11,9 +11,9 @@ Multichar_Symbols
 %<adv%>                                  ! Adverbio
 %<np%>                                   ! Nombre propio
 %<cnjsub%>                               ! Coordinación subordinada
-
+%<pron%>                                 ! Pronombre
 %<pr%>                                   ! Preposición
-
+%<itg%>                                  ! Interrogativo
 %<tv%>                                   ! Transitivo
 %<tv2%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
@@ -3333,7 +3333,8 @@ LEXICON InSuff
 
 LEXICON NoSuff
 
-@D.Sa.Pl@%<n%>%<abs%>:@D.Sa.Pl@                    # ;
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@        # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
@@ -3414,6 +3415,15 @@ LEXICON Adv
 
 %<adv%>: # ; 
 
+LEXICON AdvInt
+
+%<adv%>%<itg%>: # ;
+
+LEXICON AdvRel
+
+%<adv%>%<rel%>: # ;
+
+
 LEXICON NP-Ant
 
 %<np%>%<ant%>: # ; 
@@ -3431,6 +3441,7 @@ porque%<cnjsub%>:porque # ;
 y%<cnjcoo%>:y # ;
 pero%<cnjcoo%>:pero # ;
 huan%<cnjcoo%>:huan # ;
+o%<cnjcoo%>:o # ;
 
 amo%<neg%>:amo # ;
 quema%<afirm%>:quema # ;
@@ -3468,19 +3479,19 @@ in:in                                           DET ; ! "a"
 nin:nin                                         DET ; ! "estx"
 non:non                                         DET ; ! "esx"
 ciqui:ciqui                                     DET ; ! "un@s"
-oc+ciqui:occiqui                                DET ; ! "un@s mas"
+oc%<adv%>+ciqui:occiqui                         DET ; ! "un@s mas"
 ce:ce                                           DET ; ! un(o)
 cada%<barb%>:cada                               DET ; ! cada
-oc+ce:occe                                      DET ;  ! otro
+oc%<adv%>+ce:occe                               DET ;  ! otro
 
 
 LEXICON Pronombres 
 nin%<pron%>:nin                                         # ; ! "estx"
 non%<pron%>:non                                         # ; ! "esx"
 ciqui%<pron%>:ciqui                                     # ; ! "un@s"
-oc+ciqui%<pron%>:occiqui                                # ; ! "un@s mas"
+oc%<adv%>+ciqui%<pron%>:occiqui                                # ; ! "un@s mas"
 ce%<pron%>:ce                                           # ; ! un(o)
-oc+ce%<pron%>:occe                                      # ;  ! otro
+oc%<adv%>+ce%<pron%>:occe                                      # ;  ! otro
 
 
 Personales ; 
@@ -3501,6 +3512,7 @@ ca:ca                                           RelSuff ; ! "con" (instrumento)
 pan:pan                                         RelSuff ; ! "encima de"
 tlampa:tlampa                                   RelSuff ; ! "abajo"
 nacazco:nacazco                                 RelSuff ; ! "al lado de"
+nacastlan:nacastlan                             RelSuff ; ! "en el lado de"
 cxitlan:cxitlan                                 RelSuff ; ! "abajo de los pies de"
 
 LEXICON Nouns
@@ -3512,6 +3524,7 @@ amelatl: amelatl                                TlSuff ; ! "manantial"
 atl:a                                           TlSuff ; ! "agua"
 cacalotl:cacalo                                 TlSuff ; ! "cuervo"
 cihuatl:cihua                                   TlSuff ; ! "mujer"
+citlalcoatl:citlalcoa                           TlSuff ; ! ""
 conetl:cone                                     TlSuff ; ! "bebe"
 coyotl:coyo                                     TlSuff ; ! "coyote"
 cozamalotl:cozamalo                             TlSuff ; ! "arcoiris"
@@ -3520,6 +3533,7 @@ ichpocaconetl:ichpocacone                       TlSuff ; ! "bebé niña"
 ihuitl:ihui                                     TlSuff ; ! "gallina"
 itl:i                                           TlSuff ; ! "frijol"
 nacatl:naca                                     TlSuff ; ! "carne"
+nacayotl:nacayo                                 TlSuff ; ! "cuerpo/piel"
 oquichtl:oquich                                 TlSuff ; ! "varón"
 quichconetl:quichcone                           TlSuff ; ! "bebé niño"
 paquiliztl:paquiliz                             TlSuff ; ! "felicidad"
@@ -3543,6 +3557,7 @@ cihuitl:cihui    TlSuff ;
 tihlmahtl:tihlmah    TlSuff ;
 icoxpohuitl:icoxpohui    TlSuff ;
 nahuatl:nahua    TlSuff ;
+nimiliztl:nimiliz TlSuff ;
 tlaltitl:tlalti    TlSuff ;
 itzcuincoyotl:itzcuincoyo    TlSuff ;
 mazatl:maza    TlSuff ;
@@ -3566,6 +3581,8 @@ totoltitl:totolti    TlSuff ;
 tiopantl:tiopan    TlSuff ;
 titl:ti    TlSuff ;
 omitl:omi    TlSuff ;
+omiyotl:omiyo TlSuff ;
+
 
 buhuitl:buhui    TlSuff ;
 ahuacabuhuitl:ahuacabuhui TlSuff ;
@@ -3700,6 +3717,7 @@ ichtic:ichtic                                   NoSuff ; ! "ladrón"
 icni:icni                                       NoSuff ; ! "hermanx"
 icxi:icxi                                       NoSuff ; ! "pie"
 ixtololo:ixtololo                               NoSuff ; ! "ojo"
+ilhuicac:ilhuicac                               NoSuff ; ! "cielo"
 lechon:lechon                                   NoSuff ; ! "puerquito"
 nopal:nopal                                     NoSuff ; ! "nopal"
 mahtlapal:mahtlapal                             NoSuff ; ! "ala"
@@ -3716,7 +3734,9 @@ teco:teco                                       NoSuff ; ! "dueñ@"
 tempil:tempil                                   NoSuff ; ! "pico"
 tlacual:tlacual                                 NoSuff ; ! "comida"
 tlahuical:tlahuical                             NoSuff ; ! "esposo"
+tlahuil:tlahuil                                 NoSuff ; ! "luz"
 tlahtol:tlahtol                                 NoSuff ; ! "palabra"
+tlalticpac:tlalticpac                           NoSuff ; ! "tierra"
 tlamahuil:tlamahuil                             NoSuff ; ! ""
 tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
 tlapohual:tlapohual                             NoSuff ; ! "mes"
@@ -3734,12 +3754,14 @@ tlapahtani:tlapahtani                           NoSuff ; ! "doctor"
 
 
 caxitl:cax                                      ItlSuff ; ! "plato"
+cohuitl:coh                                     ItlSuff ; ! "árbol/madera/monte"
 chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
 xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
 
 amigo:amiga                                     EsSuff ;
 amigo:amigo                                     EsSuff ;
 año:año                                         EsSuff ;
+átomo:átomo                                     EsSuff ;
 bachiller:bachiller                             EsSuff ;
 barrio:barrio                                   EsSuff ;
 bota:bota                                       EsSuff ;
@@ -3764,6 +3786,7 @@ danza:danza                                     EsSuff ;
 difunto:difunto                                 EsSuff ;
 ejemplo:ejemplo                                 EsSuff ;
 fiesta:fiesta                                   EsSuff ;
+galaxia:galaxia                                 EsSuff ;
 gringo:gringo                                   EsSuff ;
 guerra:guerra                                   EsSuff ;
 escuela:escuela                                 EsSuff ;
@@ -3775,7 +3798,9 @@ lugar:lugar                                     EsSuff ;
 masaje:masaje                                   EsSuff ;
 masajista:masajista                             EsSuff ;
 mercado:mercado                                 EsSuff ;
+microscópio:microscópio                         EsSuff ;
 misa:misa                                       EsSuff ;
+molecula:molecula                               EsSuff ;
 ofrenda:ofrenda                                 EsSuff ;
 oportunidad:oportunidad                         EsSuff ;
 palabra:palabra                                 EsSuff ;
@@ -3786,7 +3811,9 @@ papel:papel                                     EsSuff ;
 patrón:patrón                                   EsSuff ;
 primaria:primaria                               EsSuff ;
 presidente:presidente                           EsSuff ;
+radiografía:radiografía                         EsSuff ;
 raza:raza                                       EsSuff ;
+rayo:rayo                                       EsSuff ;
 refrigerador:refrigerador                       EsSuff ;
 secundaria:secundaria                           EsSuff ;
 semana:semana                                   EsSuff ;
@@ -3966,9 +3993,13 @@ papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
 tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
 
-tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
-tzocotzi:tzocotzi        Adj ; !"pequeñx"
-patiyo:patiyo            Adj ; !"carx"
+tzoco:tzoco             AdjCont ; ! "poco"
+tzotzoco:tzo%>tzoco       AdjCont ; ! "pequeño"
+
+! tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
+! tzocotzi:tzocotzi        Adj ; !"pequeñx"
+
+patiyo:patiyo            AdjCont ; !"carx"
 cualli:cualli            Adj ; !"buenx"
 cuali:cuali              Adj ; !"buenx"
 cuali%<pl%>:cuale        Adj ; !"buenxs"
@@ -4054,7 +4085,12 @@ cana:cana                    Adv ; ! quizás
 yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
-campa:campa                  Adv ; ! donde
+
+campa:campa                  AdvRel ; ! donde
+cani:cani                    AdvInt ; ! donde
+
+ne:ne                        Adv ; ! ahí
+
 amayic:amayic                Adv ; ! nunca
 cuando:cuando                Adv ;
 hasta:hasta                  AdvEs ;
@@ -4071,10 +4107,11 @@ ihquin:ihquin                Adv ; ! así
 ompa:ompa                    Adv ; ! allá
 quemazá:quemazá              Adv ; ! a veces
 queme:queme                  Adv ; ! como
-quemen:quemen                  Adv ; ! como
-queni:queni                  Adv ; ! como
+quemen:quemen                Adv ; ! como
+queni:queni                  AdvRel ; ! como
+queni:queni                  AdvInt ; ! como
 quen:quen                    Adv ; ! como
-tipehxicuaco:tipehxicuaco   Adv ; 
+tipehxicuaco:tipehxicuaco    Adv ; 
 ya:ya                        Adv ;
 zan:zan                      Adv ; ! solo
 ! FIXME: Comprobar
