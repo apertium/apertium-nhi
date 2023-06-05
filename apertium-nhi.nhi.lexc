@@ -244,7 +244,7 @@ LEXICON TV2-IOBJ
 
 LEXICON TV2-DOBJ
 @P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Honorific ;
-                                                   TV2-Honorific ;
+%<o_sg3%>:0                                        TV2-Honorific ;
 
 LEXICON TV2-Honorific
 %<hon%>:on%>                                       TV2-Dir ;
@@ -3331,6 +3331,13 @@ LEXICON InSuff
 %<n%>:i                                             Plural ;
 %<n%>:                                             Deriv ;
 
+LEXICON NiSuff
+@D.Px@@D.Sa.Pl@%<n%>:@D.Px@@D.Sa.Pl@%>    # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>    # ;
+%<n%>:h                                   Plural ;
+%<n%>:                                    Deriv ;
+
+
 LEXICON NoSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@        # ;
@@ -3512,7 +3519,7 @@ ca:ca                                           RelSuff ; ! "con" (instrumento)
 pan:pan                                         RelSuff ; ! "encima de"
 tlampa:tlampa                                   RelSuff ; ! "abajo"
 nacazco:nacazco                                 RelSuff ; ! "al lado de"
-nacastlan:nacastlan                             RelSuff ; ! "en el lado de"
+nacaztlan:nacaztlan                             RelSuff ; ! "en el lado de"
 cxitlan:cxitlan                                 RelSuff ; ! "abajo de los pies de"
 
 LEXICON Nouns
@@ -3705,9 +3712,13 @@ mapachin:mapach                                 InSuff ; ! "mapache"
 tomin:tom                                       InSuff ; ! "dinero"
 
 
+tepahtani:tepahtani                             NiSuff ; ! "doctor"
+tlapahtani:tlapahtani                           NiSuff ; ! "doctor"
+tecuani:tecuani                                 NiSuff ; ! "león"
+tlacuani:tlacuani                               NiSuff ; ! "comedor, alguien que come mucho"
+
 cuacohue:cuacohue                               NoSuff ; ! "vaca"
 cuacohue:cuapohue                               NoSuff ; ! "vaca"
-
 bohtimohmol:bohtimohmol                         NoSuff ; ! "buho del monte"
 camac:camac                                     NoSuff ; ! "boca"
 caxtil:caxtil                                   NoSuff ; ! "gallina"
@@ -3733,6 +3744,7 @@ tamal:tamal                                     NoSuff ; ! "tamal"
 teco:teco                                       NoSuff ; ! "dueñ@"
 tempil:tempil                                   NoSuff ; ! "pico"
 tlacual:tlacual                                 NoSuff ; ! "comida"
+tlahco:tlahco                                   NoSuff ; ! "mitad"
 tlahuical:tlahuical                             NoSuff ; ! "esposo"
 tlahuil:tlahuil                                 NoSuff ; ! "luz"
 tlahtol:tlahtol                                 NoSuff ; ! "palabra"
