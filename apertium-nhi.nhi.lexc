@@ -841,6 +841,14 @@ nihnimi%<v%>%<iv%>:nihnin%>  Durative;
 nihnimi%<v%>%<iv%>:nihnin%>  Base2Suffixes;
 nihnimi%<v%>%<iv%>:nihnimi%>  Base3Suffixes;
 
+! brillar (la luna)
+tlametztona%<v%>%<iv%>:tlametztona%> PresentTense ;
+tlametztona%<v%>%<iv%>:tlametztona%> Imperfect ;
+tlametztona%<v%>%<iv%>:tlametzton%> Durative ;
+tlametztona%<v%>%<iv%>:tlametzton%> Base2Suffixes ;
+tlametztona%<v%>%<iv%>:tlametzton%> Base3Suffixes ;
+
+
 ! platicar
 mononotza%<v%>%<iv%>:mononotza%> PresentTense ;
 mononotza%<v%>%<iv%>:mononotza%> Imperfect ;
@@ -3512,15 +3520,21 @@ oc%<adv%>+ciqui:occiqui                         DET ; ! "un@s mas"
 ce:ce                                           DET ; ! un(o)
 cada%<barb%>:cada                               DET ; ! cada
 oc%<adv%>+ce:occe                               DET ;  ! otro
-
+miac%<det%>:miac                                # ; ! mucho
+miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos
+miac%<det%>%<pl%>:miqu%>eh                      # ; ! muchos
 
 LEXICON Pronombres 
 nin%<pron%>:nin                                         # ; ! "estx"
 non%<pron%>:non                                         # ; ! "esx"
 ciqui%<pron%>:ciqui                                     # ; ! "un@s"
 oc%<adv%>+ciqui%<pron%>:occiqui                                # ; ! "un@s mas"
-ce%<pron%>:ce                                           # ; ! un(o)
+ce%<pron%>:ce                                                  # ; ! un(o)
 oc%<adv%>+ce%<pron%>:occe                                      # ;  ! otro
+
+miac%<pron%>:miac                                             # ; ! mucho
+miac%<pron%>%<pl%>:miaqu%>eh                                  # ; ! muchos
+miac%<pron%>%<pl%>:miqu%>eh                                   # ; ! muchos
 
 
 Personales ; 
