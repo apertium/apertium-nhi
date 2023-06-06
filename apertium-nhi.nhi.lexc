@@ -3712,6 +3712,7 @@ calli:cal                                       LiSuff ; ! "casa"
 citlalin:citlal                                 InSuff ; ! "estrella"
 pilli:pil                                       LiSuff ; ! "hijo/a"
 milli:mil                                       LiSuff ; ! "milpa"
+tlalli:tlal                                     LiSuff ; ! "tierra/terreno"
 
 ayotochin:ayotoch                               InSuff ; ! "armadillo"
 chacalin:chacal                                 InSuff ; ! "gusano"
@@ -4025,7 +4026,10 @@ tzotzoco:tzo%>tzoco       AdjCont ; ! "pequeño"
 ! tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
 ! tzocotzi:tzocotzi        Adj ; !"pequeñx"
 huaqui:huaqui           Adj ;
-hueyi:hueyi              Adj ;
+
+hueyi:hueyi              Adj ; ! "grande"
+hueyi%<adj%>%<pl%>:hueyhueyen         # ;
+
 patiyo:patiyo            AdjCont ; !"carx"
 cualli:cualli            Adj ; !"buenx"
 cuali:cuali              Adj ; !"buenx"
