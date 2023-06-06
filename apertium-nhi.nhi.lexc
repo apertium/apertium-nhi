@@ -3330,7 +3330,7 @@ LEXICON InSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>in    # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
-%<n%>:                                             Plural ;
+%<n%>:                                             Plural ; ! Dir/LR
 %<n%>:i                                             Plural ;
 %<n%>:                                             Deriv ;
 
@@ -3463,6 +3463,8 @@ huan%<cnjcoo%>:huan # ;
 o%<cnjcoo%>:o # ;
 
 amo%<neg%>:amo # ;
+amo%<adv%>:amo # ;
+
 quema%<afirm%>:quema # ;
 
 yeyi%<num%>:yeyi # ; ! tres
@@ -3489,8 +3491,16 @@ ma%<aux%>:ma # ;
 ma%<aux%>:mo # ; 
 
 LEXICON Numerales 
-
-mahtlactl:mahtlactl                             NUM ; ! ""
+ce:ce                                           NUM ; ! "uno"
+ome:ome                                         NUM ; ! "dos"
+yeyi:yeyi                                       NUM ; ! "tres"
+nahui:nahui                                     NUM ; ! "cuatro"
+macuil:macuil                                   NUM ; ! "cinco"
+chicuace:chicuace                               NUM ; ! "seis"
+chicome:chicome                                 NUM ; ! "siete"
+chicueyi:chicueyi                               NUM ; ! "ocho"
+chicnahui:chicnahui                             NUM ; ! "nueve"
+mahtlactl:mahtlactl                             NUM ; ! "diez"
 
 LEXICON Determinantes 
 
@@ -3587,6 +3597,9 @@ telpocatl:telpoca    TlSuff ; ! niño
 telpochtl:telpochtl  TlSuff ; ! adolescente
 
 cintitl:cinti        TlSuff ; ! ""
+ehpotoctl:ehpotoc    TlSuff ; ! "vapor"
+
+tlatoponiliztl:tlatoponiliz   TlSuff ; ! "explosión"
 
 coyotl:coyo    TlSuff ;
 caxitl:caxi    TlSuff ;
@@ -3617,6 +3630,7 @@ ahuacapuhuitl:ahuacapuhui TlSuff ;
 pohuitl:pohui    TlSuff ;
 ahuacapohuitl:ahuacapohui TlSuff ;
 
+azcatl:azca   TlSuff ;
 maitl:mai    TlSuff ;
 ayatl:aya    TlSuff ;
 tlalticpactlacatl:tlalticpactlaca    TlSuff ;
@@ -4171,7 +4185,7 @@ ic:ic                        Pr ;  ! "por"
 LEXICON Conj
 ihcuac%<sconj%>:ihcuac # ;
 tla%<sconj%>:tla # ;
-
+queman%<sconj%>:queman # ;
 
 LEXICON Interjecciones 
 
