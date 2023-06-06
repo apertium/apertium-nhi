@@ -3526,7 +3526,7 @@ LEXICON Relacionales
 
 huan:huan                                       RelSuff ; ! "con" (persona)
 tich:tich                                       RelSuff ; ! "en"
-tich:ch                                         RelSuff ; ! "en"
+tich:ch                                         RelSuff ; ! "en" ! Dir/LR
 ca:ca                                           RelSuff ; ! "con" (instrumento)
 pan:pan                                         RelSuff ; ! "encima de"
 tlampa:tlampa                                   RelSuff ; ! "abajo"

@@ -33,14 +33,20 @@ TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(L
 	hfst-compose-intersect -1 .deps/nhi.gen.hfst -2 .deps/nhi.mor.twol.hfst | hfst-minimise | hfst-invert -o $@
 
 # amatl<n><dim><pl>:ama>tzi>tzin
-.deps/nhi.gen.hfst: .deps/nhi.lexc.hfst .deps/nhi.twol.hfst
-	hfst-compose-intersect -1 .deps/nhi.lexc.hfst -2 .deps/nhi.twol.hfst | hfst-minimise  -o $@
+.deps/nhi.gen.hfst: .deps/nhi.RL.lexc.hfst .deps/nhi.twol.hfst
+	hfst-compose-intersect -1 .deps/nhi.RL.lexc.hfst -2 .deps/nhi.twol.hfst | hfst-minimise  -o $@
 
 .deps/nhi.twol.hfst: apertium-nhi.nhi.twol
 	hfst-twolc $< -o $@
 
 # <px2sg>metztli<n><pl>:m{o}>metz>huan
 .deps/nhi.lexc.hfst: apertium-nhi.nhi.lexc .deps/.d
+	hfst-lexc -A --Werror $< -o $@
+
+.deps/nhi.RL.lexc: apertium-nhi.nhi.lexc .deps/.d
+	cat $< | grep -v "Dir/LR" > $@
+
+.deps/nhi.RL.lexc.hfst: .deps/nhi.RL.lexc .deps/.d
 	hfst-lexc -A --Werror $< -o $@
 
 .deps/nhi.mor.twol.hfst: apertium-nhi.nhi.mor.twol
