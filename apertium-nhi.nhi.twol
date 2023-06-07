@@ -2,7 +2,7 @@ Alphabet
  
  A B C D E F G H I J K L M N O P Q R S T U W X Y Z
  a b c d e f g h i j k l m n o p q r s t u w x y z
- %{i%}:i %{i%}:0 %{i%}:e
+ %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u %{H%}:0 %{H%}:h
  %{u%}:u %{u%}:h
  %{u%}:0
@@ -79,7 +79,6 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "delete preterite 'c' ending when preceded by a cons"
 %{c%}:0 <=> [Cns: | %{H%}: ] >:> _ .#. ;
 
-!@ i l h u {i}:e {H}:0 >:> {c}:0
 
 "delete h before preterite plural que"
 %{H%}:0 <=> _ >:> q u e .#. ;
@@ -98,8 +97,6 @@ i:e <=> Cns _ >:> %{H%}: .#. ;
 "drop h after i->e in present plural"
 %{H%}:0 <=> Cns i >:> _ .#. ;
 
-!"i->e pret sg"
-!%{i%}:e <=> _ %{H%}: >:> %{c%}: .#. ;
 
 !"h->0 pret sg"
 !%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;

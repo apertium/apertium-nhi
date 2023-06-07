@@ -4147,7 +4147,7 @@ cachi:cachi                  Adv ; ! más
 
 campa:campa                  AdvRel ; ! donde
 cani:cani                    AdvInt ; ! donde
-
+tlahtic:tlahtic              Adv ;
 ne:ne                        Adv ; ! ahí
 
 amayic:amayic                Adv ; ! nunca
@@ -4197,9 +4197,9 @@ sin:sin                      Pr-Esp ; ! "sin"
 ic:ic                        Pr ;  ! "por"
 
 LEXICON Conj
-ihcuac%<sconj%>:ihcuac # ;
-tla%<sconj%>:tla # ;
-queman%<sconj%>:queman # ;
+ihcuac%<cnjsub%>:ihcuac # ;
+tla%<cnjsub%>:tla # ;
+queman%<cnjsub%>:queman # ;
 
 LEXICON Interjecciones 
 
