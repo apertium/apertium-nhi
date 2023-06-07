@@ -23,7 +23,12 @@ Multichar_Symbols
 
 %<pl%>                                   ! Plural
 %<sg%>                                   ! Singular
-
+%<sg1%>
+%<sg2%>
+%<sg3%>
+%<pl1%>
+%<pl2%>
+%<pl3%>      
 %<abs%>                                  ! Absolutivo
 
 %<loc%>                                  ! Locativo
@@ -198,10 +203,10 @@ LEXICON VerbalSubject
                                                       IrregularVerbs ;
 
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Object ;
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@in%>                      Object ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@in%>                      Object ; ! Dir/LR
 
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Object ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@it%>      Object ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@it%>      Object ; ! Dir/LR
 
 @P.Sa.Sg@@P.Sa.3@%<s_sg3%>:@P.Sa.Sg@@P.Sa.3@          Object ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
@@ -212,14 +217,14 @@ LEXICON VerbalSubject
 @P.Sa.Sg@%<s_pl1%>:@P.Sa.Sg@ce%>                      Object ;
 
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@in%>                      Object ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@in%>                      Object ; ! Dir/LR
 
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
 
 @P.Sa.Sg@@P.Opt.ON@%<s_sg2%>:@P.Sa.Sg@@P.Opt.ON@xi%>  Object ;
 @P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@xi%>  Object ;
-@P.Sa.Sg@@P.Opt.ON@%<s_sg2%>:@P.Sa.Sg@@P.Opt.ON@ix%>  Object ;
-@P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@ix%>  Object ;
+@P.Sa.Sg@@P.Opt.ON@%<s_sg2%>:@P.Sa.Sg@@P.Opt.ON@ix%>  Object ; ! Dir/LR
+@P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@ix%>  Object ; ! Dir/LR
 
 LEXICON Object
                                                        IV-Honorific ;
@@ -900,6 +905,13 @@ tlacati%<v%>%<iv%>:tlacati%>  Imperfect;
 tlacati%<v%>%<iv%>:tlacat%>  Durative;
 tlacati%<v%>%<iv%>:tlacat%>  Base2Suffixes;
 tlacati%<v%>%<iv%>:tlacati%>  Base3Suffixes;
+
+! explotar
+tlatoponi%<v%>%<iv%>:tlatoponi%>  PresentTense;
+tlatoponi%<v%>%<iv%>:tlatoponi%>  Imperfect;
+tlatoponi%<v%>%<iv%>:tlatopon%>  Durative;
+tlatoponi%<v%>%<iv%>:tlatopon%>  Base2Suffixes;
+tlatoponi%<v%>%<iv%>:tlatoponi%>  Base3Suffixes;
 
 !empezar
 pehua%<v%>%<iv%>:pehua%>  PresentTense;
@@ -2827,6 +2839,13 @@ tlazaloa%<v%>%<tv%>:tlazaloh%>  Durative;
 tlazaloa%<v%>%<tv%>:tlazaloh%>  Base2Suffixes;
 tlazaloa%<v%>%<tv%>:tlazalo%>  Base3Suffixes;
 
+! hacer trabajar
+tiquitiltia%<v%>%<tv2%>:tiquitiltia%>  PresentTense;
+tiquitiltia%<v%>%<tv2%>:tiquitilta%>  Imperfect;
+tiquitiltia%<v%>%<tv2%>:tiquitiltih%>  Durative;
+tiquitiltia%<v%>%<tv2%>:tiquitilt%{i%}%{H%}%>  Base2Suffixes;
+tiquitiltia%<v%>%<tv2%>:tiquitilti%>  Base3Suffixes;
+
 
 !amar
 tlazohtla%<v%>%<tv%>:tlazohtla%>  PresentTense;
@@ -3364,10 +3383,14 @@ LEXICON NoSuff
 LEXICON EsSuffM
 @D.Sa.Pl@%<n%>%<barb%>%<m%>%<sg%>:@D.Sa.Pl@                           # ;
 %<n%>%<barb%>%<m%>:0                                             EsPlural ;
+@D.Sa.Pl@%<n%>%<m%>%<sg%>:@D.Sa.Pl@                           # ;
+%<n%>%<m%>:0                                             EsPlural ;
 
 LEXICON EsSuffF
 @D.Sa.Pl@%<n%>%<barb%>%<f%>%<sg%>:@D.Sa.Pl@                           # ;
 %<n%>%<barb%>%<f%>:0                                             EsPlural ;
+@D.Sa.Pl@%<n%>%<f%>%<sg%>:@D.Sa.Pl@                           # ;
+%<n%>%<f%>:0                                             EsPlural ;
 
 
 !LEXICON Rel
@@ -3395,35 +3418,35 @@ LEXICON Personales
 !
 ! Formas cortas de los pronombres personales singulares.
 !
-nehhuatl%<prn%>%<pro%>%<p1%>%<sg%>:neh # ;
-tehhuatl%<prn%>%<pro%>%<p2%>%<sg%>:teh # ;
-yehhuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
+nehhuatl%<prn%>%<pro%>%<sg1%>:neh # ;
+tehhuatl%<prn%>%<pro%>%<sg2%>:teh # ;
+yehhuatl%<prn%>%<pro%>%<sg3%>:yeh # ;
 
 !
 ! Formas largas de los pronombres personales singulares.
 !
-nehhuatl%<prn%>%<pers%>%<p1%>%<sg%>:nehuatl # ;
-tehhuatl%<prn%>%<pers%>%<p2%>%<sg%>:tehuatl # ;
-yehhuatl%<prn%>%<pers%>%<p3%>%<sg%>:yehuatl # ;
+nehhuatl%<prn%>%<pers%>%<sg1%>:nehuatl # ;
+tehhuatl%<prn%>%<pers%>%<sg2%>:tehuatl # ;
+yehhuatl%<prn%>%<pers%>%<sg3%>:yehuatl # ;
 
-tehhuatzin%<prn%>%<pers%>%<p2%>%<sg%>%<hon%>:tohuatzin # ;
-tehhuatzin%<prn%>%<pers%>%<p2%>%<sg%>%<hon%>:tehuatzin # ;
-tehhuatzin%<prn%>%<pers%>%<p2%>%<sg%>%<hon%>:tehhuatzin # ;
+tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tohuatzin # ;
+tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tehuatzin # ;
+tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tehhuatzin # ;
 
 
-nehhuatl%<prn%>%<pers%>%<p1%>%<sg%>:nehhuatl # ;
-tehhuatl%<prn%>%<pers%>%<p2%>%<sg%>:tehhuatl # ;
-yehhuatl%<prn%>%<pers%>%<p3%>%<sg%>:yehhuatl # ;
+nehhuatl%<prn%>%<pers%>%<sg1%>:nehhuatl # ;
+tehhuatl%<prn%>%<pers%>%<sg2%>:tehhuatl # ;
+yehhuatl%<prn%>%<pers%>%<sg3%>:yehhuatl # ;
 !
 ! Pronombres personales plurales.
 !
-tehhuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
-nimehhuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
-yehhuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
+tehhuan%<prn%>%<pers%>%<pl1%>:tehuan # ;
+nimehhuan%<prn%>%<pers%>%<pl2%>:nimehuan # ;
+yehhuan%<prn%>%<pers%>%<pl3%>:yehuan # ;
 
-tehhuan%<prn%>%<pers%>%<p1%>%<pl%>:tehhuan # ;
-nimehhuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehhuan # ;
-yehhuan%<prn%>%<pers%>%<p3%>%<pl%>:yehhuan # ;
+tehhuan%<prn%>%<pers%>%<pl1%>:tehhuan # ;
+nimehhuan%<prn%>%<pers%>%<pl2%>:nimehhuan # ;
+yehhuan%<prn%>%<pers%>%<pl3%>:yehhuan # ;
 
 LEXICON Pr
 
@@ -3432,10 +3455,12 @@ LEXICON Pr
 LEXICON Pr-Esp
 
 %<pr%>%<barb%>: # ; 
+%<pr%>: # ;
 
 LEXICON AdvEs
 
 %<adv%>%<barb%>: # ; 
+%<adv%>: # ;
 
 
 LEXICON Adv 
@@ -3858,6 +3883,7 @@ misa:misa                                       EsSuffF ;
 molecula:molecula                               EsSuffF ;
 ofrenda:ofrenda                                 EsSuffF ;
 oportunidad:oportunidad                         EsSuffF ;
+celular:celular                                 EsSuffM ;
 palabra:palabra                                 EsSuffF ;
 paleta:paleta                                   EsSuffF ;
 pan:pan                                         EsSuffM ;
@@ -4029,7 +4055,8 @@ bailar:bailar                                   EsSuffM ;
 lado:lado                                       EsSuffM ;
 pohyoh:pohyoh                                   EsSuffM ;
 gente:gente                                     EsSuffF ;
-
+horno:horno                                     EsSuffM ;
+microondas:microondas                           EsSuffM ;
 
 
 LEXICON Adjetivos

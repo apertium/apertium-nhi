@@ -4,7 +4,7 @@ Alphabet
  a b c d e f g h i j k l m n o p q r s t u w x y z
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u %{H%}:0 %{H%}:h
- %{u%}:u %{u%}:h
+ %{u%}:u
  %{u%}:0
  %{q%}:q %{q%}:c
  %{m%}:m %{m%}:n
