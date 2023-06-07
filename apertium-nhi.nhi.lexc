@@ -3273,8 +3273,8 @@ LEXICON Honorific !TODO: add i -> honorific vowel harmony in .twolc file.
 
 LEXICON PlainPlural
 
-@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>me                # ; ! Las casas
-@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>me          # ; ! Ellos son las casas
+@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>me                # ; ! Las casas ! Dir/LR
+@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>me          # ; ! Ellos son las casas ! Dir/LR
 @D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>meh                # ; ! Las casas
 @D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>meh          # ; ! Ellos son las casas
 
@@ -3521,8 +3521,8 @@ ce:ce                                           DET ; ! un(o)
 cada%<barb%>:cada                               DET ; ! cada
 oc%<adv%>+ce:occe                               DET ;  ! otro
 miac%<det%>:miac                                # ; ! mucho
-miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos
-miac%<det%>%<pl%>:miqu%>eh                      # ; ! muchos
+miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos 
+miac%<det%>%<pl%>:miqu%>eh                      # ; ! muchos ! Dir/LR
 
 LEXICON Pronombres 
 nin%<pron%>:nin                                         # ; ! "estx"
