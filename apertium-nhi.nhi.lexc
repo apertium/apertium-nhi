@@ -17,7 +17,7 @@ Multichar_Symbols
 %<tv%>                                   ! Transitivo
 %<tv2%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
-
+%<cop%>
 %<m%>
 %<f%>
 
@@ -87,8 +87,8 @@ Multichar_Symbols
 %<i_pl2%>
 %<i_pl3%>
 
-%<o_aa3%>
-%<o_nn3%>
+%<o_aa%>
+%<o_nn%>
 
 %<ven%>                           ! direccional hacia el locutor
 
@@ -275,8 +275,8 @@ LEXICON TV2-Adv-Pref
 TV2-Indef-Obj ;
 
 LEXICON TV2-Indef-Obj
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV2-Stem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV2-Stem ;
+@D.DOBJ@%<o_aa%>:@D.DOBJ@te%>                     TV2-Stem ;
+@D.DOBJ@%<o_nn%>:@D.DOBJ@tla%>                    TV2-Stem ;
 !@R.DOBJ@:@R.DOBJ@                                  TV2-Stem ;
 TV2-Stem ;
 
@@ -317,8 +317,8 @@ LEXICON TV-Adv-Pref
 TV-Indef-Obj ;
 
 LEXICON TV-Indef-Obj
-@D.DOBJ@%<o_aa3%>:@D.DOBJ@te%>                     TV-Stem ;
-@D.DOBJ@%<o_nn3%>:@D.DOBJ@tla%>                    TV-Stem ;
+@D.DOBJ@%<o_aa%>:@D.DOBJ@te%>                     TV-Stem ;
+@D.DOBJ@%<o_nn%>:@D.DOBJ@tla%>                    TV-Stem ;
                                                    TV-Stem ;
 
 LEXICON IV-Honorific
@@ -358,49 +358,49 @@ LEXICON HuiquiOpt
 
 
 LEXICON CaPres
-%<s_sg1%>catqui%<v%>m%<iv%>%<pres%>:ni%>ca # ;
-%<s_sg2%>catqui%<v%>%<iv%>%<pres%>:ti%>ca # ;
-%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:catqui # ;
-%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:ca # ;
-%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:cah # ;
+%<s_sg1%>catqui%<cop%>%<pres%>:ni%>ca # ;
+%<s_sg2%>catqui%<cop%>%<pres%>:ti%>ca # ;
+%<s_sg3%>catqui%<cop%>%<pres%>:catqui # ;
+%<s_sg3%>catqui%<cop%>%<pres%>:ca # ;
+%<s_sg3%>catqui%<cop%>%<pres%>:cah # ;
 
-%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cate # ;
-%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ce%>ca # ;
+%<s_pl1%>catqui%<cop%>%<pres%>:ti%>cate # ;
+%<s_pl1%>catqui%<cop%>%<pres%>:ce%>ca # ;
 
-%<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cate # ;
-%<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cate # ;
+%<s_pl2%>catqui%<cop%>%<pres%>:ni%>cate # ;
+%<s_pl3%>catqui%<cop%>%<pres%>:cate # ;
 
-%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cateh # ;
-%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ce%>cah # ;
+%<s_pl1%>catqui%<cop%>%<pres%>:ti%>cateh # ;
+%<s_pl1%>catqui%<cop%>%<pres%>:ce%>cah # ;
 
-%<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cateh # ;
-%<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cateh # ;
+%<s_pl2%>catqui%<cop%>%<pres%>:ni%>cateh # ;
+%<s_pl3%>catqui%<cop%>%<pres%>:cateh # ;
 
 ! weird one-off from tenango grammar
-%<s_sg3%>ameh%<v%>%<iv%>%<pres%>:ameh # ;
-%<s_pl3%>ameh%<v%>%<iv%>%<pres%>:amehcan # ;
+%<s_sg3%>ameh%<cop%>%<pres%>:ameh # ;
+%<s_pl3%>ameh%<cop%>%<pres%>:amehcan # ;
 
 LEXICON CaImpf
-%<s_sg1%>catqui%<v%>%<iv%>%<impf%>:ni%>catca # ;
-%<s_sg2%>catqui%<v%>%<iv%>%<impf%>:ti%>cacta # ;
-%<s_sg3%>catqui%<v%>%<iv%>%<impf%>:catca # ;
-%<s_pl1%>catqui%<v%>%<iv%>%<impf%>:ti%>catca # ;
-%<s_pl2%>catqui%<v%>%<iv%>%<impf%>:ni%>catca # ;
-%<s_pl3%>catqui%<v%>%<iv%>%<impf%>:catca # ;
-%<s_pl1%>catqui%<v%>%<iv%>%<impf%>:ti%>catcah # ;
-%<s_pl2%>catqui%<v%>%<iv%>%<impf%>:ni%>catcah # ;
-%<s_pl3%>catqui%<v%>%<iv%>%<impf%>:catcah # ;
+%<s_sg1%>catqui%<cop%>%<impf%>:ni%>catca # ;
+%<s_sg2%>catqui%<cop%>%<impf%>:ti%>cacta # ;
+%<s_sg3%>catqui%<cop%>%<impf%>:catca # ;
+%<s_pl1%>catqui%<cop%>%<impf%>:ti%>catca # ;
+%<s_pl2%>catqui%<cop%>%<impf%>:ni%>catca # ;
+%<s_pl3%>catqui%<cop%>%<impf%>:catca # ;
+%<s_pl1%>catqui%<cop%>%<impf%>:ti%>catcah # ;
+%<s_pl2%>catqui%<cop%>%<impf%>:ni%>catcah # ;
+%<s_pl3%>catqui%<cop%>%<impf%>:catcah # ;
 
 LEXICON CaFut
-%<s_sg1%>catqui%<v%>%<iv%>%<fut%>:ni%>izqui # ;
-%<s_sg2%>catqui%<v%>%<iv%>%<fut%>:ti%>izqui # ;
-%<s_sg3%>catqui%<v%>%<iv%>%<fut%>:izqui # ;
-%<s_pl1%>catqui%<v%>%<iv%>%<fut%>:ti%>izque # ;
-%<s_pl2%>catqui%<v%>%<iv%>%<fut%>:ni%>izque # ;
-%<s_pl3%>catqui%<v%>%<iv%>%<fut%>:izque # ;
-%<s_pl1%>catqui%<v%>%<iv%>%<fut%>:ti%>izqueh # ;
-%<s_pl2%>catqui%<v%>%<iv%>%<fut%>:ni%>izqueh # ;
-%<s_pl3%>catqui%<v%>%<iv%>%<fut%>:izqueh # ;
+%<s_sg1%>catqui%<cop%>%<fut%>:ni%>izqui # ;
+%<s_sg2%>catqui%<cop%>%<fut%>:ti%>izqui # ;
+%<s_sg3%>catqui%<cop%>%<fut%>:izqui # ;
+%<s_pl1%>catqui%<cop%>%<fut%>:ti%>izque # ;
+%<s_pl2%>catqui%<cop%>%<fut%>:ni%>izque # ;
+%<s_pl3%>catqui%<cop%>%<fut%>:izque # ;
+%<s_pl1%>catqui%<cop%>%<fut%>:ti%>izqueh # ;
+%<s_pl2%>catqui%<cop%>%<fut%>:ni%>izqueh # ;
+%<s_pl3%>catqui%<cop%>%<fut%>:izqueh # ;
 
 LEXICON YoPres
 %<s_sg1%>yohui%<v%>%<iv%>%<pres%>:ni%>yo # ;
@@ -3317,6 +3317,11 @@ LEXICON Diminutivo
 %<dim%>%<abs%>@D.Px@:@D.Px@%>tzin%>tli             # ;
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;
 
+%<hon%>:%>tzin                                     # ;
+%<hon%>%<abs%>@D.Px@:@D.Px@%>tzin%>tli             # ;
+%<hon%>%<pl%>:%>tzi%>tzin                          # ;
+
+
 LEXICON RelSuff
 
 @R.Px@%<n%>%<rel%>:@R.Px@                          # ;
@@ -3539,6 +3544,7 @@ LEXICON Determinantes
 
 in:in                                           DET ; ! "a"
 nin:nin                                         DET ; ! "estx"
+nochi:nochi                                     DET ; ! "todo"
 non:non                                         DET ; ! "esx"
 ciqui:ciqui                                     DET ; ! "un@s"
 oc%<adv%>+ciqui:occiqui                         DET ; ! "un@s mas"
@@ -4063,6 +4069,7 @@ LEXICON Adjetivos
 iztac:izta               AdjCont ; !"blancx"  #TODO: i-deletion no ocurre aquí p.ej. "no+iztac" => noiztac, *noztac
 xopiyahuac:xopiyahua     AdjCont ; !"verde"
 tliltic:tlilti           AdjCont ; !"negrx"
+yolic:yoli               AdjCont ; ! "despacio"
 chichiltic:chichilti     AdjCont ; !"rojx"
 copitztic:copitzti       AdjCont ; !"tiesx"
 nixtic:nixti             AdjCont ; !"gris"
@@ -4075,15 +4082,15 @@ papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
 tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
 
-tzoco:tzoco             AdjCont ; ! "poco"
-tzotzoco:tzo%>tzoco       AdjCont ; ! "pequeño"
+tzoco:tzoco             AdjDim ; ! "poco"
+tzotzoco:tzo%>tzoco       AdjDim ; ! "pequeño"
 
 ! tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
 ! tzocotzi:tzocotzi        Adj ; !"pequeñx"
 huaqui:huaqui           Adj ;
 
 hueyi:hueyi              Adj ; ! "grande"
-hueyi%<adj%>%<pl%>:hueyhueyen         # ;
+hueyi%<adj%>%<pl%>:huehhueyen         # ;
 
 patiyo:patiyo            AdjCont ; !"carx"
 cualli:cualli            Adj ; !"buenx"
@@ -4136,6 +4143,8 @@ LEXICON AdjCont
 @D.Sa@%<adj%>:@D.Sa@c                   #;
 @D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
 
+LEXICON AdjDim
+%<adj%>:0                               Diminutivo ;
 
 LEXICON Adj
 %<adj%>:0  # ;
