@@ -20,6 +20,7 @@ Multichar_Symbols
 %<cop%>
 %<m%>
 %<f%>
+%<s_ind%>
 
 %<pl%>                                   ! Plural
 %<sg%>                                   ! Singular
@@ -182,10 +183,13 @@ Puntuación ;
 Interjecciones ; 
 Verb ;
 Conj ;
+Otro ;
 ! Digits ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON Otro
+x%<x%>:x #;
 
 !
 ! Verbs
@@ -215,6 +219,7 @@ LEXICON VerbalSubject
 ! ce- subj prefix is 1pl but takes singular subject tense/aspect agreement.
 !
 @P.Sa.Sg@%<s_pl1%>:@P.Sa.Sg@ce%>                      Object ;
+@P.Sa.Sg@%<s_ind%>:@P.Sa.Sg@ce%>                      Object ;
 
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@in%>                      Object ; ! Dir/LR
@@ -362,13 +367,13 @@ LEXICON CaPres
 %<s_sg2%>catqui%<cop%>%<pres%>:ti%>ca # ;
 %<s_sg3%>catqui%<cop%>%<pres%>:catqui # ;
 %<s_sg3%>catqui%<cop%>%<pres%>:ca # ;
-%<s_sg3%>catqui%<cop%>%<pres%>:cah # ;
+%<s_sg3%>catqui%<cop%>%<pres%>:cah # ;! Dir/LR
 
-%<s_pl1%>catqui%<cop%>%<pres%>:ti%>cate # ;
+%<s_pl1%>catqui%<cop%>%<pres%>:ti%>cate # ;! Dir/LR
 %<s_pl1%>catqui%<cop%>%<pres%>:ce%>ca # ;
 
-%<s_pl2%>catqui%<cop%>%<pres%>:ni%>cate # ;
-%<s_pl3%>catqui%<cop%>%<pres%>:cate # ;
+%<s_pl2%>catqui%<cop%>%<pres%>:ni%>cate # ;! Dir/LR
+%<s_pl3%>catqui%<cop%>%<pres%>:cate # ;! Dir/LR
 
 %<s_pl1%>catqui%<cop%>%<pres%>:ti%>cateh # ;
 %<s_pl1%>catqui%<cop%>%<pres%>:ce%>cah # ;
@@ -376,7 +381,7 @@ LEXICON CaPres
 %<s_pl2%>catqui%<cop%>%<pres%>:ni%>cateh # ;
 %<s_pl3%>catqui%<cop%>%<pres%>:cateh # ;
 
-! weird one-off from tenango grammar
+! one-off from tenango grammar
 %<s_sg3%>ameh%<cop%>%<pres%>:ameh # ;
 %<s_pl3%>ameh%<cop%>%<pres%>:amehcan # ;
 
@@ -384,9 +389,9 @@ LEXICON CaImpf
 %<s_sg1%>catqui%<cop%>%<impf%>:ni%>catca # ;
 %<s_sg2%>catqui%<cop%>%<impf%>:ti%>cacta # ;
 %<s_sg3%>catqui%<cop%>%<impf%>:catca # ;
-%<s_pl1%>catqui%<cop%>%<impf%>:ti%>catca # ;
-%<s_pl2%>catqui%<cop%>%<impf%>:ni%>catca # ;
-%<s_pl3%>catqui%<cop%>%<impf%>:catca # ;
+%<s_pl1%>catqui%<cop%>%<impf%>:ti%>catca # ;! Dir/LR
+%<s_pl2%>catqui%<cop%>%<impf%>:ni%>catca # ;! Dir/LR
+%<s_pl3%>catqui%<cop%>%<impf%>:catca # ;! Dir/LR
 %<s_pl1%>catqui%<cop%>%<impf%>:ti%>catcah # ;
 %<s_pl2%>catqui%<cop%>%<impf%>:ni%>catcah # ;
 %<s_pl3%>catqui%<cop%>%<impf%>:catcah # ;
@@ -396,8 +401,8 @@ LEXICON CaFut
 %<s_sg2%>catqui%<cop%>%<fut%>:ti%>izqui # ;
 %<s_sg3%>catqui%<cop%>%<fut%>:izqui # ;
 %<s_pl1%>catqui%<cop%>%<fut%>:ti%>izque # ;
-%<s_pl2%>catqui%<cop%>%<fut%>:ni%>izque # ;
-%<s_pl3%>catqui%<cop%>%<fut%>:izque # ;
+%<s_pl2%>catqui%<cop%>%<fut%>:ni%>izque # ; ! Dir/LR
+%<s_pl3%>catqui%<cop%>%<fut%>:izque # ;  ! Dir/LR
 %<s_pl1%>catqui%<cop%>%<fut%>:ti%>izqueh # ;
 %<s_pl2%>catqui%<cop%>%<fut%>:ni%>izqueh # ;
 %<s_pl3%>catqui%<cop%>%<fut%>:izqueh # ;
@@ -411,33 +416,33 @@ LEXICON YoPres
 
 %<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yohue # ;
 %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohue # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohue # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohue # ;
+%<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohue # ;! Dir/LR
+%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohue # ; ! Dir/LR
 %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohueh # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohueh # ;
 %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohueh # ;
 
 
-%<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yuhue # ;
-%<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yuhue # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yuhue # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yuhue # ;
-%<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yuhueh # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yuhueh # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yuhueh # ;
+%<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yuhue # ;! Dir/LR
+%<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yuhue # ;! Dir/LR
+%<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yuhue # ;! Dir/LR
+%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yuhue # ;! Dir/LR
+%<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yuhueh # ;! Dir/LR
+%<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yuhueh # ;! Dir/LR
+%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yuhueh # ;! Dir/LR
 
 LEXICON YoPret
 %<s_sg1%>yohui%<v%>%<iv%>%<pret%>:ni%>ya # ;
 %<s_sg2%>yohui%<v%>%<iv%>%<pret%>:ti%>ya # ;
 %<s_sg3%>yohui%<v%>%<iv%>%<pret%>:ya # ;
 
-%<s_sg1%>yohui%<v%>%<iv%>%<pret%>:ni%>yah # ;
-%<s_sg2%>yohui%<v%>%<iv%>%<pret%>:ti%>yah # ;
-%<s_sg3%>yohui%<v%>%<iv%>%<pret%>:yah # ;
+%<s_sg1%>yohui%<v%>%<iv%>%<pret%>:ni%>yah # ;! Dir/LR
+%<s_sg2%>yohui%<v%>%<iv%>%<pret%>:ti%>yah # ;! Dir/LR
+%<s_sg3%>yohui%<v%>%<iv%>%<pret%>:yah # ;! Dir/LR
 
-%<s_pl1%>yohui%<v%>%<iv%>%<pret%>:ti%>yahque # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<pret%>:ni%>yahque # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<pret%>:yahque # ;
+%<s_pl1%>yohui%<v%>%<iv%>%<pret%>:ti%>yahque # ;! Dir/LR
+%<s_pl2%>yohui%<v%>%<iv%>%<pret%>:ni%>yahque # ;! Dir/LR
+%<s_pl3%>yohui%<v%>%<iv%>%<pret%>:yahque # ;! Dir/LR
 
 %<s_pl1%>yohui%<v%>%<iv%>%<pret%>:ti%>yahqueh # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<pret%>:ni%>yahqueh # ;
@@ -447,9 +452,9 @@ LEXICON YoImpf
 %<s_sg1%>yohui%<v%>%<iv%>%<impf%>:ni%>yaya # ;
 %<s_sg2%>yohui%<v%>%<iv%>%<impf%>:ti%>yaya # ;
 %<s_sg3%>yohui%<v%>%<iv%>%<impf%>:yaya # ;
-%<s_pl1%>yohui%<v%>%<iv%>%<impf%>:ti%>yaya # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<impf%>:ni%>yaya # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<impf%>:yaya # ;
+%<s_pl1%>yohui%<v%>%<iv%>%<impf%>:ti%>yaya # ;! Dir/LR
+%<s_pl2%>yohui%<v%>%<iv%>%<impf%>:ni%>yaya # ;! Dir/LR
+%<s_pl3%>yohui%<v%>%<iv%>%<impf%>:yaya # ;! Dir/LR
 %<s_pl1%>yohui%<v%>%<iv%>%<impf%>:ti%>yayah # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<impf%>:ni%>yayah # ;
 %<s_pl3%>yohui%<v%>%<iv%>%<impf%>:yayah # ;
@@ -458,9 +463,9 @@ LEXICON YoFut
 %<s_sg1%>yohui%<v%>%<iv%>%<fut%>:ni%>yaz # ;
 %<s_sg2%>yohui%<v%>%<iv%>%<fut%>:ti%>yaz # ;
 %<s_sg3%>yohui%<v%>%<iv%>%<fut%>:yaz # ;
-%<s_pl1%>yohui%<v%>%<iv%>%<fut%>:ti%>yazque # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<fut%>:ni%>yazque # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<fut%>:yazque # ;
+%<s_pl1%>yohui%<v%>%<iv%>%<fut%>:ti%>yazque # ;! Dir/LR
+%<s_pl2%>yohui%<v%>%<iv%>%<fut%>:ni%>yazque # ;! Dir/LR
+%<s_pl3%>yohui%<v%>%<iv%>%<fut%>:yazque # ;! Dir/LR
 %<s_pl1%>yohui%<v%>%<iv%>%<fut%>:ti%>yazqueh # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<fut%>:ni%>yazqueh # ;
 %<s_pl3%>yohui%<v%>%<iv%>%<fut%>:yazqueh # ;
@@ -562,6 +567,14 @@ choca%<v%>%<iv%>:choca%>  Imperfect ;
 choca%<v%>%<iv%>:choca%>  Durative ;
 choca%<v%>%<iv%>:choca%>  Base2Suffixes ;
 choca%<v%>%<iv%>:choca%>  Base3Suffixes ;
+
+! prender
+xotla%<v%>%<iv%>:xotla%>  PresentTense ;
+xotla%<v%>%<iv%>:xotla%>  Imperfect ;
+xotla%<v%>%<iv%>:xotla%>  Durative ;
+xotla%<v%>%<iv%>:xotla%>  Base2Suffixes ;
+xotla%<v%>%<iv%>:xotla%>  Base3Suffixes ;
+
 
 ! trabajar
 tiquiti%<v%>%<iv%>:tiquiti%>  PresentTense;
@@ -838,6 +851,13 @@ nahuati%<v%>%<iv%>:nahuati%> Imperfect ;
 nahuati%<v%>%<iv%>:nahuat%> Durative ;
 nahuati%<v%>%<iv%>:nahuat%> Base2Suffixes ;
 nahuati%<v%>%<iv%>:nahuati%> Base3Suffixes ;
+
+!andar/vivir
+nimi%<v%>%<iv%>:nimi%>  PresentTense;
+nimi%<v%>%<iv%>:nimi%>  Imperfect;
+nimi%<v%>%<iv%>:nin%>  Durative;
+nimi%<v%>%<iv%>:nin%>  Base2Suffixes;
+nimi%<v%>%<iv%>:nimi%>  Base3Suffixes;
 
 !caminar
 nihnimi%<v%>%<iv%>:nihnimi%>  PresentTense;
@@ -1214,6 +1234,13 @@ motta%<v%>%<iv%>:mota%>     Imperfect ;
 motta%<v%>%<iv%>:motz%>      Durative ;
 motta%<v%>%<iv%>:mota%>     Base2Suffixes ;
 motta%<v%>%<iv%>:mota%>     Base3Suffixes ;
+
+! moverse
+molinia%<v%>%<tv%>:molinia%> PresentTense ;
+molinia%<v%>%<tv%>:molinia%>  Imperfect ;
+molinia%<v%>%<tv%>:molini%>  Durative ;
+molinia%<v%>%<tv%>:molin%{i%}%{H%}%>  Base2Suffixes ;
+molinia%<v%>%<tv%>:molini%>  Base3Suffixes ;
 
 ! columpiarse
 mohuiyonia%<v%>%<iv%>:mohuiyonia%>     PresentTense ;
@@ -1666,6 +1693,13 @@ pahtia%<v%>%<tv%>:pahtia%>  Imperfect ;
 pahtia%<v%>%<tv%>:pahti%>  Durative ;
 pahtia%<v%>%<tv%>:paht%{i%}%{H%}%>  Base2Suffixes ;
 pahtia%<v%>%<tv%>:pahti%>  Base3Suffixes ;
+
+! mover
+olinia%<v%>%<tv%>:olinia%> PresentTense ;
+olinia%<v%>%<tv%>:olinia%>  Imperfect ;
+olinia%<v%>%<tv%>:olini%>  Durative ;
+olinia%<v%>%<tv%>:olin%{i%}%{H%}%>  Base2Suffixes ;
+olinia%<v%>%<tv%>:olini%>  Base3Suffixes ;
 
 ! mandar / enviar
 waltia%<v%>%<tv%>:waltia%> PresentTense ;
@@ -3130,7 +3164,7 @@ LEXICON AuxCome
 LEXICON AuxContin ! Auxiliar de continuidad
 @D.Sa.Pl@@D.PST@%<cont%>:@D.Sa.Pl@@D.PST@ti%>nimi # ;
 @D.Sa.Pl@@D.PST@%<cont%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>nimi%>z # ;
-@R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zque # ;
+@R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zque # ;! Dir/LR
 @R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zqueh # ;
 
 @D.Sa.Pl@@R.PST@%<cont%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>nimi%>ya # ;
@@ -3142,12 +3176,12 @@ LEXICON AuxRepent ! Auxiliar de acción repentina/rápida
 @R.Sa.Pl@@D.PST@%<repent%>:@R.Sa.Pl@@D.PST@ti%>quizah # ;
 
 @D.Sa.Pl@@D.PST@%<repent%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>quiza%>z # ;
-@R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zque # ;
+@R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zque # ;! Dir/LR
 @R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zqueh # ;
 
 
 @D.Sa.Pl@@R.PST@%<repent%>%<pret%>:@D.Sa.Pl@@R.PST@ti%>quiz # ;
-@R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>que # ;
+@R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>que # ;! Dir/LR
 @R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>queh # ;
 
 
@@ -3161,14 +3195,14 @@ LEXICON PresentTense
 
 LEXICON Durative
 @D.Sa.Pl@@D.PST@@D.Opt@%<pres%>%<dur%>:@D.Sa.Pl@@D.PST@@D.Opt@toc # ;
-@R.Sa.Pl@@D.PST@@D.Opt@%<pres%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@toque # ;
+@R.Sa.Pl@@D.PST@@D.Opt@%<pres%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@toque # ;! Dir/LR
 @R.Sa.Pl@@D.PST@@D.Opt@%<pres%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@toqueh # ;
 
 @D.Sa.Pl@@R.PST@@D.Opt@%<pst%>%<dur%>:@D.Sa.Pl@@R.PST@@D.Opt@to%>ya # ;
 @R.Sa.Pl@@R.PST@@D.Opt@%<pst%>%<dur%>:@R.Sa.Pl@@R.PST@@D.Opt@to%>yah # ;
 
 @D.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@D.Sa.Pl@@D.PST@@D.Opt@to%>z # ;
-@R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zque # ;
+@R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zque # ;! Dir/LR
 @R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zqueh # ;
 
 AuxiliarySuffixes ;
@@ -3180,7 +3214,7 @@ LEXICON Imperfect
 
 LEXICON Preterite
 @D.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@D.Sa.Pl@@D.Opt@@R.PST@%{c%}  # ;
-@R.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@R.Sa.Pl@@D.Opt@@R.PST@que # ;
+@R.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@R.Sa.Pl@@D.Opt@@R.PST@que # ;! Dir/LR
 @R.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@R.Sa.Pl@@D.Opt@@R.PST@queh # ;
 
 LEXICON Pluperfect
@@ -3189,7 +3223,7 @@ LEXICON Pluperfect
 
 LEXICON Future
 @D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z    # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zque # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zque # ;! Dir/LR
 @D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zqueh # ;
 
 
@@ -3369,7 +3403,7 @@ LEXICON InSuff
 LEXICON NiSuff
 @D.Px@@D.Sa.Pl@%<n%>:@D.Px@@D.Sa.Pl@%>    # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>    # ;
-%<n%>:h                                   Plural ;
+%<n%>%<pl%>:h                             # ;
 %<n%>:                                    Deriv ;
 
 
@@ -3495,6 +3529,8 @@ LEXICON NP-Top
 LEXICON Miscellaneous
 
 porque%<cnjsub%>:porque # ;
+que%<cnjsub%>:que # ;
+
 y%<cnjcoo%>:y # ;
 pero%<cnjcoo%>:pero # ;
 huan%<cnjcoo%>:huan # ;
@@ -3591,6 +3627,9 @@ cxitlan:cxitlan                                 RelSuff ; ! "abajo de los pies d
 
 LEXICON Nouns
 
+! TODO: qhat do we do about spelling...is this the only -u- word??
+achupahualiztl:achupahualiz                     TlSuff ; ! "limpieza del atl"
+
 altepetl:altepe                                 TlSuff ; ! "ciudad"
 altipetl:altipe                                 TlSuff ; ! "ciudad"
 amatl:ama                                       TlSuff ; ! "papel, libro"
@@ -3679,6 +3718,7 @@ azcatl:azca   TlSuff ;
 maitl:mai    TlSuff ;
 ayatl:aya    TlSuff ;
 tlalticpactlacatl:tlalticpactlaca    TlSuff ;
+cocoliztl:cocoliz      TlSuff ;
 pomaitl:pomai    TlSuff ;
 tilmahtl:tilmah    TlSuff ;
 tihuilotl:tihuilo    TlSuff ;
@@ -3725,11 +3765,14 @@ tzohpilotl:tzohpilo   TlSuff ;
 buitl:bui   TlSuff ;
 monamictililuitl:monamictililui   TlSuff ;
 tipitl:tipi   TlSuff ;
+chicahualiztl:chicahualiz TlSuff ; !"fuerza"
+chupahuacatl:chupahuaca   TlSuff ; ! "agua limpia"
 
 atentli:aten                                    TliSuff ;
 cintli:cin                                      TliSuff ; ! "maiz"
 chantli:chan                                    TliSuff ; ! "casa"
 itzcuintli:itzcuin                              TliSuff ; ! "perro"
+chicahualiztli:chicahualiz                      TliSuff ; ! "fuerza"
 metztli:metz                                    TliSuff ; ! "luna"
 mixtli:mix                                      TliSuff ; ! "nube
 pahtli:pah                                      TliSuff ; ! "medicina"
@@ -3810,6 +3853,7 @@ maman:maman                                     NoSuff ; ! "mamá"
 mizton:mizton                                   NoSuff ; ! "gato"
 nana:nana                                       NoSuff ; ! "mamá"
 nana:nanah                                      NoSuff ; ! "mamá"
+nechicol:nechicol                               NoSuff ; ! "comunidad"
 nixtamal:nixtamal                               NoSuff ; ! "nixtamal"
 papa:papa                                       NoSuff ; ! "papá"
 patox:patox                                     NoSuff ; ! "pato"
@@ -3854,6 +3898,7 @@ caballo:caballo                                 EsSuffM ;
 cama:cama                                       EsSuffF ;
 campana:campana                                 EsSuffF ;
 campo:campo                                     EsSuffM ;
+cáncer:cáncer                                   EsSuffM ;
 carro:carro                                     EsSuffM ;
 carretera:carretera                             EsSuffF ;
 célula:célula                                   EsSuffF ;
@@ -3872,10 +3917,12 @@ danza:danza                                     EsSuffF ;
 difunto:difunto                                 EsSuffM ;
 ejemplo:ejemplo                                 EsSuffM ;
 fiesta:fiesta                                   EsSuffF ;
+fusion:fusion                                   EsSuffF ;
 galaxia:galaxia                                 EsSuffF ;
 gringo:gringo                                   EsSuffM ;
 guerra:guerra                                   EsSuffF ;
 escuela:escuela                                 EsSuffF ;
+hidrógeno:hidrógeno                             EsSuffM ;
 historia:historia                               EsSuffF ;
 hora:hora                                       EsSuffF ;
 hueso:hueso                                     EsSuffM ;
@@ -3886,7 +3933,8 @@ masajista:masajista                             EsSuffM ;
 mercado:mercado                                 EsSuffM ;
 microscópio:microscópio                         EsSuffM ;
 misa:misa                                       EsSuffF ;
-molecula:molecula                               EsSuffF ;
+molécula:molécula                               EsSuffF ;
+nanómetro:nanómetro                             EsSuffM ;
 ofrenda:ofrenda                                 EsSuffF ;
 oportunidad:oportunidad                         EsSuffF ;
 celular:celular                                 EsSuffM ;
@@ -3906,6 +3954,9 @@ secundaria:secundaria                           EsSuffF ;
 semana:semana                                   EsSuffF ;
 señor:señor                                     EsSuffM ;
 tarea:tarea                                     EsSuffF ;
+teléfono:teléfono                               EsSuffM ;
+televisión:televisión                           EsSuffF ;
+
 tiempo:tiempo                                   EsSuffM ;
 trabajo:trabajo                                 EsSuffM ;
 tradición:tradición                             EsSuffF ;
@@ -4063,19 +4114,22 @@ pohyoh:pohyoh                                   EsSuffM ;
 gente:gente                                     EsSuffF ;
 horno:horno                                     EsSuffM ;
 microondas:microondas                           EsSuffM ;
+investigación:investigación                     EsSuffF ;
+invernadero:invernadero                         EsSuffM ;
 
 
 LEXICON Adjetivos
 iztac:izta               AdjCont ; !"blancx"  #TODO: i-deletion no ocurre aquí p.ej. "no+iztac" => noiztac, *noztac
 xopiyahuac:xopiyahua     AdjCont ; !"verde"
 tliltic:tlilti           AdjCont ; !"negrx"
-yolic:yoli               AdjCont ; ! "despacio"
+yolic:yoli               AdjCont ; !"despacio"
 chichiltic:chichilti     AdjCont ; !"rojx"
 copitztic:copitzti       AdjCont ; !"tiesx"
 nixtic:nixti             AdjCont ; !"gris"
 tomahuac:tomahua         AdjCont ; !"gordx"
 pitzahuac:pitzahua       AdjCont ; !"delgadx"
 chicactic:chicacti       AdjCont ; !"durx"
+yancuic:yancui           AdjCont ; !"nuev@"
 chicahuac:chicahua       AdjCont ; !"fuerte"
 
 papatztic:papatzti       AdjCont ; !"suave"
@@ -4113,11 +4167,13 @@ difícil:difícil        Adj-Esp-mf ; ! "difícil"
 unido:unid             Adj-Esp-m/f ; ! "unido"
 chistoso:chistos       Adj-Esp-m/f ; ! "chistoso"
 mexicano:mexican       Adj-Esp-m/f ; ! "mexicano"
+nuclear:nuclear        Adj-Esp-mf  ; ! "nuclear
 americano:american     Adj-Esp-m/f ; ! "americano"
 frances:frances        Adj-Esp-mf ;  ! "francés"
 español:español        Adj-Esp-mf ; ! "español"
 patronal:patronal      Adj-Esp-mf ; ! "patronal"
-
+electromagnética:electromagnétic Adj-Esp-m/f ;
+espacial:espacial      Adj-Esp-m/f ;
 
 LEXICON Propios
 
@@ -4130,7 +4186,7 @@ Omitlán:Omitlán NP-Top ;
 Zaloncuatlauhco:Zaloncuatlauhco            NP-Top ; 
 tlaxcala:tlaxcala          NP-Top ;
 chiapas:chiapas          NP-Top ;
-
+Próxima:próxima          NP-Top ;
 
 Cooper:Cooper           NP-Ant ; 
 Darío:Darío           NP-Ant ; 
@@ -4144,7 +4200,7 @@ LEXICON AdjCont
 @D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
 
 LEXICON AdjDim
-%<adj%>:0                               Diminutivo ;
+%<adj%>:                               Diminutivo ;
 
 LEXICON Adj
 %<adj%>:0  # ;
