@@ -3870,9 +3870,9 @@ tlamahuil:tlamahuil                             NoSuff ; ! ""
 tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
 tlapohual:tlapohual                             NoSuff ; ! "mes"
 tlaxcal:tlaxcal                                 NoSuff ; ! "tortilla"
-toca:tooca                                      NoSuff ; ! "nombre"
-toca:toocaa                                     NoSuff ; ! "nombre"
-toca:toca                                       NoSuff ; ! "nombre"
+toca:toca                                       NoSuff ; ! "nombre" 
+toca:tooca                                      NoSuff ; ! "nombre" ! Dir/LR
+toca:toocaa                                     NoSuff ; ! "nombre" ! Dir/LR
 tomen:tomen                                     NoSuff ; ! "dinero"
 tonal:tonal                                     NoSuff ; ! "día, sol"
 tona:tona                                       NoSuff ; ! "día, sol"
