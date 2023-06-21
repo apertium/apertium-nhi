@@ -350,6 +350,7 @@ LEXICON Ca ! estar
 @D.PST@:@D.PST@ CaPres ;
 @R.PST@:@R.PST@ CaImpf ;
 @D.PST@:@D.PST@ CaFut ;
+CaCni ;
 
 LEXICON Yo ! ir
 @D.PST@:@D.PST@ YoPres ;
@@ -400,12 +401,23 @@ LEXICON CaFut
 %<s_sg1%>catqui%<cop%>%<fut%>:ni%>izqui # ;
 %<s_sg2%>catqui%<cop%>%<fut%>:ti%>izqui # ;
 %<s_sg3%>catqui%<cop%>%<fut%>:izqui # ;
-%<s_pl1%>catqui%<cop%>%<fut%>:ti%>izque # ;
+%<s_pl1%>catqui%<cop%>%<fut%>:ti%>izque # ; ! Dir/LR
 %<s_pl2%>catqui%<cop%>%<fut%>:ni%>izque # ; ! Dir/LR
 %<s_pl3%>catqui%<cop%>%<fut%>:izque # ;  ! Dir/LR
 %<s_pl1%>catqui%<cop%>%<fut%>:ti%>izqueh # ;
 %<s_pl2%>catqui%<cop%>%<fut%>:ni%>izqueh # ;
 %<s_pl3%>catqui%<cop%>%<fut%>:izqueh # ;
+
+LEXICON CaCni
+%<s_sg1%>catqui%<cop%>%<cni%>:ni%>izquia # ;
+%<s_sg2%>catqui%<cop%>%<cni%>:ti%>izquia # ;
+%<s_sg3%>catqui%<cop%>%<cni%>:izquia # ;
+%<s_pl1%>catqui%<cop%>%<cni%>:ti%>izquia # ; !Dir/LR
+%<s_pl2%>catqui%<cop%>%<cni%>:ni%>izquia # ; ! Dir/LR
+%<s_pl3%>catqui%<cop%>%<cni%>:izquia # ;  ! Dir/LR
+%<s_pl1%>catqui%<cop%>%<cni%>:ti%>izquiah # ;
+%<s_pl2%>catqui%<cop%>%<cni%>:ni%>izquiah # ;
+%<s_pl3%>catqui%<cop%>%<cni%>:izquiah # ;
 
 LEXICON YoPres
 %<s_sg1%>yohui%<v%>%<iv%>%<pres%>:ni%>yo # ;
@@ -866,6 +878,13 @@ nihnimi%<v%>%<iv%>:nihnin%>  Durative;
 nihnimi%<v%>%<iv%>:nihnin%>  Base2Suffixes;
 nihnimi%<v%>%<iv%>:nihnimi%>  Base3Suffixes;
 
+! hacer sol
+tona%<v%>%<iv%>:tona%> PresentTense ;
+tona%<v%>%<iv%>:tona%> Imperfect ;
+tona%<v%>%<iv%>:ton%> Durative ;
+tona%<v%>%<iv%>:ton%> Base2Suffixes ;
+tona%<v%>%<iv%>:ton%> Base3Suffixes ;
+
 ! brillar (la luna)
 tlametztona%<v%>%<iv%>:tlametztona%> PresentTense ;
 tlametztona%<v%>%<iv%>:tlametztona%> Imperfect ;
@@ -1298,6 +1317,13 @@ imaginaroa%<v%>%<tv%>:imaginaroh%>  Durative;
 imaginaroa%<v%>%<tv%>:imaginaro%>  Base2Suffixes;
 imaginaroa%<v%>%<tv%>:imaginaro%>  Base3Suffixes;
 
+! criar
+izcaltia%<v%>%<iv%>:izcaltia%>  PresentTense;
+izcaltia%<v%>%<iv%>:izcalta%>  Imperfect;
+izcaltia%<v%>%<iv%>:izcaltih%>  Durative;
+izcaltia%<v%>%<iv%>:izcalt%{i%}%{H%}%>  Base2Suffixes;
+izcaltia%<v%>%<iv%>:izcalti%>  Base3Suffixes;
+
 ! cortar
 tiqui%<v%>%<iv%>:tiqui%>  PresentTense;
 tiqui%<v%>%<iv%>:tiqui%>  Imperfect;
@@ -1339,6 +1365,21 @@ pixquiltia%<v%>%<tv%>:pixquiltia%>  Imperfect ;
 pixquiltia%<v%>%<tv%>:pixquilti%>  Durative ;
 pixquiltia%<v%>%<tv%>:pixquilt%{i%}%{H%}%>  Base2Suffixes ;
 pixquiltia%<v%>%<tv%>:pixquilti%>  Base3Suffixes ;
+
+! calentar TODO: check pret
+totonia%<v%>%<tv%>:totonia%> PresentTense ;
+totonia%<v%>%<tv%>:totonia%>  Imperfect ;
+totonia%<v%>%<tv%>:totoni%>  Durative ;
+totonia%<v%>%<tv%>:toton%{i%}%{H%}%>  Base2Suffixes ;
+totonia%<v%>%<tv%>:totoni%>  Base3Suffixes ;
+
+! ?
+ololoa%<v%>%<iv%>:ololoa%>  PresentTense;
+ololoa%<v%>%<iv%>:ololoa%>  Imperfect;
+ololoa%<v%>%<iv%>:ololo%>  Durative;
+ololoa%<v%>%<iv%>:ololoh%>  Durative;
+ololoa%<v%>%<iv%>:ololoh%>  Base2Suffixes;
+ololoa%<v%>%<iv%>:ololo%>  Base3Suffixes;
 
 ! sacar
 quihquixtania%<v%>%<tv%>:quihquixtania%> PresentTense ;
@@ -3561,7 +3602,7 @@ mox%<part%>:mox # ; ! marcador interrogativo
 o%<aux%>:o # ; 
 oc%<aux%>:oc # ; 
 mach%<aux%>:mach # ; 
-ma%<aux%>:ma # ; 
+ma%<aux%>:ma # ; ! Dir/LR
 ma%<aux%>:mo # ; 
 
 LEXICON Numerales 
@@ -3583,13 +3624,16 @@ nin:nin                                         DET ; ! "estx"
 nochi:nochi                                     DET ; ! "todo"
 non:non                                         DET ; ! "esx"
 ciqui:ciqui                                     DET ; ! "un@s"
-oc%<adv%>+ciqui:occiqui                         DET ; ! "un@s mas"
+oc%<adv%>+ciqui:oc%>ciqui                       DET ; ! "un@s mas"
 ce:ce                                           DET ; ! un(o)
 cada%<barb%>:cada                               DET ; ! cada
-oc%<adv%>+ce:occe                               DET ;  ! otro
+oc%<adv%>+ce:oc%>ce                             DET ;  ! otro
 miac%<det%>:miac                                # ; ! mucho
 miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos 
 miac%<det%>%<pl%>:miqu%>eh                      # ; ! muchos ! Dir/LR
+catliye%<det%>:catliye                          # ; ! cual
+catliye%<det%>%<pl%>:catliya%>queh                 # ; ! cual
+
 
 LEXICON Pronombres 
 nin%<pron%>:nin                                         # ; ! "estx"
@@ -3887,6 +3931,7 @@ cohuitl:coh                                     ItlSuff ; ! "árbol/madera/monte
 chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
 xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
 
+agosto:agosto                                   EsSuffM ;
 amigo:amiga                                     EsSuffF ;
 amigo:amigo                                     EsSuffM ;
 año:año                                         EsSuffM ;
@@ -4113,7 +4158,8 @@ lado:lado                                       EsSuffM ;
 pohyoh:pohyoh                                   EsSuffM ;
 gente:gente                                     EsSuffF ;
 horno:horno                                     EsSuffM ;
-microondas:microondas                           EsSuffM ;
+microondas%<n%>%<sg%>:microondas                      # ;
+microondas%<n%>%<pl%>:microondas                      # ;
 investigación:investigación                     EsSuffF ;
 invernadero:invernadero                         EsSuffM ;
 
@@ -4135,6 +4181,8 @@ chicahuac:chicahua       AdjCont ; !"fuerte"
 papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
 tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
+
+tolontic:tolonti         AdjCont ; ! "redondo"
 
 tzoco:tzoco             AdjDim ; ! "poco"
 tzotzoco:tzo%>tzoco       AdjDim ; ! "pequeño"
@@ -4242,6 +4290,7 @@ cani:cani                    AdvInt ; ! donde
 tlahtic:tlahtic              Adv ;
 ne:ne                        Adv ; ! ahí
 
+tlatlahco:tlatlahco          Adv ; ! "en medio"
 amayic:amayic                Adv ; ! nunca
 cuando:cuando                Adv ;
 hasta:hasta                  AdvEs ;
