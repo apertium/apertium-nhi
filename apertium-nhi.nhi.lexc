@@ -189,7 +189,9 @@ Otro ;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Otro
-x%<x%>:x #;
+X%<x%>:X #;
+B%<x%>:B                                           # ;
+
 
 !
 ! Verbs
@@ -1255,11 +1257,11 @@ motta%<v%>%<iv%>:mota%>     Base2Suffixes ;
 motta%<v%>%<iv%>:mota%>     Base3Suffixes ;
 
 ! moverse
-molinia%<v%>%<tv%>:molinia%> PresentTense ;
-molinia%<v%>%<tv%>:molinia%>  Imperfect ;
-molinia%<v%>%<tv%>:molini%>  Durative ;
-molinia%<v%>%<tv%>:molin%{i%}%{H%}%>  Base2Suffixes ;
-molinia%<v%>%<tv%>:molini%>  Base3Suffixes ;
+molinia%<v%>%<iv%>:molinia%> PresentTense ;
+molinia%<v%>%<iv%>:molinia%>  Imperfect ;
+molinia%<v%>%<iv%>:molini%>  Durative ;
+molinia%<v%>%<iv%>:molin%{i%}%{H%}%>  Base2Suffixes ;
+molinia%<v%>%<iv%>:molini%>  Base3Suffixes ;
 
 ! columpiarse
 mohuiyonia%<v%>%<iv%>:mohuiyonia%>     PresentTense ;
@@ -1318,11 +1320,11 @@ imaginaroa%<v%>%<tv%>:imaginaro%>  Base2Suffixes;
 imaginaroa%<v%>%<tv%>:imaginaro%>  Base3Suffixes;
 
 ! criar
-izcaltia%<v%>%<iv%>:izcaltia%>  PresentTense;
-izcaltia%<v%>%<iv%>:izcalta%>  Imperfect;
-izcaltia%<v%>%<iv%>:izcaltih%>  Durative;
-izcaltia%<v%>%<iv%>:izcalt%{i%}%{H%}%>  Base2Suffixes;
-izcaltia%<v%>%<iv%>:izcalti%>  Base3Suffixes;
+izcaltia%<v%>%<tv%>:izcaltia%>  PresentTense;
+izcaltia%<v%>%<tv%>:izcalta%>  Imperfect;
+izcaltia%<v%>%<tv%>:izcaltih%>  Durative;
+izcaltia%<v%>%<tv%>:izcalt%{i%}%{H%}%>  Base2Suffixes;
+izcaltia%<v%>%<tv%>:izcalti%>  Base3Suffixes;
 
 ! cortar
 tiqui%<v%>%<iv%>:tiqui%>  PresentTense;
@@ -1854,7 +1856,14 @@ itoa%<v%>%<tv%>:itoh%>  Durative ;
 itoa%<v%>%<tv%>:itoh%>  Base2Suffixes ;
 itoa%<v%>%<tv%>:ito%>   Base3Suffixes ;
 
-! perder
+! perder/hacer faltar ?
+pohpoloa%<v%>%<tv%>:pohpoloa%>  PresentTense ;
+pohpoloa%<v%>%<tv%>:pohpoloa%>  Imperfect ;
+pohpoloa%<v%>%<tv%>:pohpoloh%>  Durative ;
+pohpoloa%<v%>%<tv%>:pohpoloh%>  Base2Suffixes ;
+pohpoloa%<v%>%<tv%>:pohpolo%>   Base3Suffixes ;
+
+! desaparecer
 pohpolihui%<v%>%<tv%>:pohpolihui%>  PresentTense;
 pohpolihui%<v%>%<tv%>:pohpolihui%>  Imperfect;
 pohpolihui%<v%>%<tv%>:pohpoliuh%>  Durative;
@@ -3200,6 +3209,8 @@ AuxCome ;
 
 LEXICON AuxCome
 @D.Sa.Pl@@D.PST@%<come%>:@D.Sa.Pl@@D.PST@ti%>huitz # ;
+@R.Sa.Pl@@D.PST@%<come%>:@R.Sa.Pl@@D.PST@ti%>huitz%>queh # ;
+@R.Sa.Pl@@D.PST@%<come%>:@R.Sa.Pl@@D.PST@ti%>huitz%>que # ; ! Dir/LR 
 
 
 LEXICON AuxContin ! Auxiliar de continuidad
@@ -3700,7 +3711,7 @@ ticactl:ticac                                   TlSuff ; ! "zapato"
 ticolotl:ticolo                                 TlSuff ; ! "búho"
 cohticolotl:cohticolo                                 TlSuff ; ! "búho"
 tihlmahtl:tihlmah                               TlSuff ; ! "ropa/prenda"
-
+tlamatiliztl:tlamatiliztl                       TlSuff ; ! "conocimiento?"
 tipetl:tipe                                     TlSuff ; ! "cerro"
 tipoztl:tipoz                                   TlSuff ; ! "carro/algo metálico"
 tiquitl:tiqui                                   TlSuff ; ! "trabajo"
@@ -3789,6 +3800,7 @@ huehxolotl:huehxolo    TlSuff ;
 ilhuitl:ilhui    TlSuff ;
 tapalcatihuilotl:tapalcatihuilo    TlSuff ;
 tlaltlitl:tlaltli    TlSuff ;
+tlitl:tli    TlSuff ; ! 
 tlacatl:tlaca    TlSuff ;
 ocotzotl:ocotzo    TlSuff ;
 chiquihuitl:chiquihui    TlSuff ;
@@ -3811,6 +3823,7 @@ monamictililuitl:monamictililui   TlSuff ;
 tipitl:tipi   TlSuff ;
 chicahualiztl:chicahualiz TlSuff ; !"fuerza"
 chupahuacatl:chupahuaca   TlSuff ; ! "agua limpia"
+mixcoatl:mixcoa TlSuff ; ! "galaxia ?"
 
 atentli:aten                                    TliSuff ;
 cintli:cin                                      TliSuff ; ! "maiz"
@@ -3876,6 +3889,7 @@ tepahtani:tepahtani                             NiSuff ; ! "doctor"
 tlapahtani:tlapahtani                           NiSuff ; ! "doctor"
 tecuani:tecuani                                 NiSuff ; ! "león"
 tlacuani:tlacuani                               NiSuff ; ! "comedor, alguien que come mucho"
+tlahtolehualoni:tlahtolehualoni                 NiSuff ; ! "Glosario"
 
 cuacohue:cuacohue                               NoSuff ; ! "vaca"
 cuacohue:cuapohue                               NoSuff ; ! "vaca"
@@ -3994,6 +4008,8 @@ presidente:presidente                           EsSuffM ;
 radiografía:radiografía                         EsSuffF ;
 raza:raza                                       EsSuffF ;
 rayo:rayo                                       EsSuffM ;
+radio:radio                                     EsSuffM ;
+
 refrigerador:refrigerador                       EsSuffM ;
 secundaria:secundaria                           EsSuffF ;
 semana:semana                                   EsSuffF ;
@@ -4235,6 +4251,7 @@ Zaloncuatlauhco:Zaloncuatlauhco            NP-Top ;
 tlaxcala:tlaxcala          NP-Top ;
 chiapas:chiapas          NP-Top ;
 Próxima:próxima          NP-Top ;
+Centauri:Centauri        NP-Top ;
 
 Cooper:Cooper           NP-Ant ; 
 Darío:Darío           NP-Ant ; 
