@@ -751,6 +751,22 @@ choloa%<v%>%<iv%>:choloh%>  Durative;
 choloa%<v%>%<iv%>:choloh%>  Base2Suffixes;
 choloa%<v%>%<iv%>:cholo%>  Base3Suffixes;
 
+! rodear
+yahualoa%<v%>%<iv%>:yahualoa%>  PresentTense;
+yahualoa%<v%>%<iv%>:yahualoa%>  Imperfect;
+yahualoa%<v%>%<iv%>:yahualo%>  Durative;
+yahualoa%<v%>%<iv%>:yahualoh%>  Durative;
+yahualoa%<v%>%<iv%>:yahualoh%>  Base2Suffixes;
+yahualoa%<v%>%<iv%>:yahualo%>  Base3Suffixes;
+
+! juntar/acercar
+nitichoa%<v%>%<iv%>:nitichoa%>  PresentTense;
+nitichoa%<v%>%<iv%>:nitichoa%>  Imperfect;
+nitichoa%<v%>%<iv%>:niticho%>  Durative;
+nitichoa%<v%>%<iv%>:nitichoh%>  Durative;
+nitichoa%<v%>%<iv%>:nitichoh%>  Base2Suffixes;
+nitichoa%<v%>%<iv%>:niticho%>  Base3Suffixes;
+
 !huir (muchos? muchas veces? lejos?)
 chohcholoa%<v%>%<iv%>:chohcholoa%>  PresentTense;
 chohcholoa%<v%>%<iv%>:chohcholoa%>  Imperfect;
@@ -1294,6 +1310,7 @@ animaroa%<v%>%<tv%>:animaro%>  Durative;
 animaroa%<v%>%<tv%>:animaroh%>  Durative;
 animaroa%<v%>%<tv%>:animaro%>  Base2Suffixes;
 animaroa%<v%>%<tv%>:animaro%>  Base3Suffixes;
+
 
 !armar
 armaroa%<v%>%<tv%>:armaroa%>  PresentTense;
@@ -2689,6 +2706,13 @@ tlacamati%<v%>%<tv%>:tlacama%>  Durative;
 tlacamati%<v%>%<tv%>:tlacamat%>  Base2Suffixes;
 tlacamati%<v%>%<tv%>:tlacamati%>  Base3Suffixes;
 
+!
+ahcicamati%<v%>%<tv%>:ahcicamati%>  PresentTense;
+ahcicamati%<v%>%<tv%>:ahcicamati%>  Imperfect;
+ahcicamati%<v%>%<tv%>:ahcicama%>  Durative;
+ahcicamati%<v%>%<tv%>:ahcicamat%>  Base2Suffixes;
+ahcicamati%<v%>%<tv%>:ahcicamati%>  Base3Suffixes;
+
 ! entender
 ahcicamati%<v%>%<tv%>:ahcicamati%>  PresentTense;
 ahcicamati%<v%>%<tv%>:ahcicamati%>  Imperfect;
@@ -3694,7 +3718,8 @@ cacalotl:cacalo                                 TlSuff ; ! "cuervo"
 cihuatl:cihua                                   TlSuff ; ! "mujer"
 citlalcoatl:citlalcoa                           TlSuff ; ! ""
 conetl:cone                                     TlSuff ; ! "bebe"
-coatl:coa                                       TlSuff ; ! "serpiente"
+conetl:cone                                     TlSuff ; ! "bebe"
+caltentl:calten                                 TlSuff ; ! "puerta"
 coyotl:coyo                                     TlSuff ; ! "coyote"
 cozamalotl:cozamalo                             TlSuff ; ! "arcoiris"
 ichcatl:ichca                                   TlSuff ; ! "borrego"
@@ -4009,7 +4034,7 @@ radiografía:radiografía                         EsSuffF ;
 raza:raza                                       EsSuffF ;
 rayo:rayo                                       EsSuffM ;
 radio:radio                                     EsSuffM ;
-
+radiación:radiación                             EsSuffF ;
 refrigerador:refrigerador                       EsSuffM ;
 secundaria:secundaria                           EsSuffF ;
 semana:semana                                   EsSuffF ;
@@ -4017,7 +4042,7 @@ señor:señor                                     EsSuffM ;
 tarea:tarea                                     EsSuffF ;
 teléfono:teléfono                               EsSuffM ;
 televisión:televisión                           EsSuffF ;
-
+dispositivo:dispositivo                         EsSuffM ;
 tiempo:tiempo                                   EsSuffM ;
 trabajo:trabajo                                 EsSuffM ;
 tradición:tradición                             EsSuffF ;
@@ -4224,11 +4249,11 @@ ohue:ohue                Adj ; ! "difícil"
 uhueh:uhueh              Adj ; ! "difícil"
 ohueh:ohueh              Adj ; ! "difícil"
 
-atrasado:atrasado      Adj-Esp-mf ; ! "atrasado"
-reconocido:reconocido  Adj-Esp-mf ; ! "reconocido"
-pobre:pobre            Adj-Esp-mf ; ! "pobre"
-difícil:difícil        Adj-Esp-mf ; ! "difícil"
-unido:unid             Adj-Esp-m/f ; ! "unido"
+atrasado:atrasad      Adj-Esp-m/f ; ! "atrasado"
+reconocido:reconocid  Adj-Esp-m/f ; ! "reconocido"
+pobre:pobre           Adj-Esp-mf ; ! "pobre"
+difícil:difícil       Adj-Esp-mf ; ! "difícil"
+unido:unid            Adj-Esp-m/f ; ! "unido"
 chistoso:chistos       Adj-Esp-m/f ; ! "chistoso"
 mexicano:mexican       Adj-Esp-m/f ; ! "mexicano"
 nuclear:nuclear        Adj-Esp-mf  ; ! "nuclear
@@ -4301,6 +4326,7 @@ cana:cana                    Adv ; ! quizás
 yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
+oc:oc                        Adv ; ! más
 
 campa:campa                  AdvRel ; ! donde
 cani:cani                    AdvInt ; ! donde
