@@ -1357,6 +1357,13 @@ tiquipanoa%<v%>%<iv%>:tiquipanoh%>  Durative;
 tiquipanoa%<v%>%<iv%>:tiquipanoh%>  Base2Suffixes;
 tiquipanoa%<v%>%<iv%>:tiquipano%>  Base3Suffixes;
 
+! recoger
+ololoa%<v%>%<iv%>:ololoa%>  PresentTense;
+ololoa%<v%>%<iv%>:ololoa%>  Imperfect;
+ololoa%<v%>%<iv%>:ololoh%>  Durative;
+ololoa%<v%>%<iv%>:ololoh%>  Base2Suffixes;
+ololoa%<v%>%<iv%>:ololo%>  Base3Suffixes;
+
 ! cortar la cabeza
 cuatiqui%<v%>%<iv%>:cuatiqui%>  PresentTense;
 cuatiqui%<v%>%<iv%>:cuatiqui%>  Imperfect;
@@ -1392,13 +1399,6 @@ totonia%<v%>%<tv%>:totoni%>  Durative ;
 totonia%<v%>%<tv%>:toton%{i%}%{H%}%>  Base2Suffixes ;
 totonia%<v%>%<tv%>:totoni%>  Base3Suffixes ;
 
-! ?
-ololoa%<v%>%<iv%>:ololoa%>  PresentTense;
-ololoa%<v%>%<iv%>:ololoa%>  Imperfect;
-ololoa%<v%>%<iv%>:ololo%>  Durative;
-ololoa%<v%>%<iv%>:ololoh%>  Durative;
-ololoa%<v%>%<iv%>:ololoh%>  Base2Suffixes;
-ololoa%<v%>%<iv%>:ololo%>  Base3Suffixes;
 
 ! sacar
 quihquixtania%<v%>%<tv%>:quihquixtania%> PresentTense ;
@@ -1511,6 +1511,13 @@ oni%<v%>%<iv%>:oni%>  Imperfect;
 oni%<v%>%<iv%>:oni%>  Durative;
 oni%<v%>%<iv%>:oni%>  Base2Suffixes;
 oni%<v%>%<iv%>:oni%>  Base3Suffixes;
+
+! spread
+moyohua%<v%>%<tv%>:moyohua%>  PresentTense;
+moyohua%<v%>%<tv%>:moyohua%>  Imperfect;
+moyohua%<v%>%<tv%>:moyouh%>  Durative;
+moyohua%<v%>%<tv%>:moyouh%>  Base2Suffixes;
+moyohua%<v%>%<tv%>:moyohua%>  Base3Suffixes;
 
 !engañar
 cahcayahua%<v%>%<tv%>:cahcayahua%>  PresentTense;
@@ -1642,6 +1649,13 @@ aprenderoa%<v%>%<tv%>:aprenderoh%>  Durative;
 aprenderoa%<v%>%<tv%>:aprenderoh%>  Base2Suffixes;
 aprenderoa%<v%>%<tv%>:aprendero%>  Base3Suffixes;
 
+! juntar/acercar a algo
+nitichoa%<v%>%<tv%>:nitichoa%>  PresentTense;
+nitichoa%<v%>%<tv%>:nitichoa%>  Imperfect;
+nitichoa%<v%>%<tv%>:niticho%>  Durative;
+nitichoa%<v%>%<tv%>:nitichoh%>  Durative;
+nitichoa%<v%>%<tv%>:nitichoh%>  Base2Suffixes;
+nitichoa%<v%>%<tv%>:niticho%>  Base3Suffixes;
 ! lograr
 lograroa%<v%>%<tv%>:lograroa%>  PresentTense;
 lograroa%<v%>%<tv%>:lograroa%>  Imperfect;
@@ -1873,7 +1887,7 @@ itoa%<v%>%<tv%>:itoh%>  Durative ;
 itoa%<v%>%<tv%>:itoh%>  Base2Suffixes ;
 itoa%<v%>%<tv%>:ito%>   Base3Suffixes ;
 
-! perder/hacer faltar ?
+! destruir / borrar ?
 pohpoloa%<v%>%<tv%>:pohpoloa%>  PresentTense ;
 pohpoloa%<v%>%<tv%>:pohpoloa%>  Imperfect ;
 pohpoloa%<v%>%<tv%>:pohpoloh%>  Durative ;
@@ -3281,6 +3295,12 @@ LEXICON Durative
 @R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zque # ;! Dir/LR
 @R.Sa.Pl@@D.PST@@D.Opt@%<fut%>%<dur%>:@R.Sa.Pl@@D.PST@@D.Opt@to%>zqueh # ;
 
+@R.PST@@D.Sa.Pl@@D.Opt@%<cfact%>%<dur%>:@R.PST@@D.Sa.Pl@@D.Opt@to%>zquia # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<cfact%>%<dur%>:@R.PST@@R.Sa.Pl@@D.Opt@to%>zquiah # ;
+
+@D.PST@@D.Sa.Pl@@D.Opt@%<cni%>%<dur%>:@D.PST@@D.Sa.Pl@@D.Opt@to%>zquia # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<cni%>%<dur%>:@D.PST@@R.Sa.Pl@@D.Opt@to%>zquiah # ;
+
 AuxiliarySuffixes ;
 
 
@@ -3849,6 +3869,7 @@ tipitl:tipi   TlSuff ;
 chicahualiztl:chicahualiz TlSuff ; !"fuerza"
 chupahuacatl:chupahuaca   TlSuff ; ! "agua limpia"
 mixcoatl:mixcoa TlSuff ; ! "galaxia ?"
+tlacayotl:tlacayo   TlSuff ; ! "cuerpo"
 
 atentli:aten                                    TliSuff ;
 cintli:cin                                      TliSuff ; ! "maiz"
@@ -3931,6 +3952,7 @@ ilhuicac:ilhuicac                               NoSuff ; ! "cielo"
 lechon:lechon                                   NoSuff ; ! "puerquito"
 nopal:nopal                                     NoSuff ; ! "nopal"
 mahtlapal:mahtlapal                             NoSuff ; ! "ala"
+tlapal:tlapal                                   NoSuff ; ! "pintura"
 mama:mama                                       NoSuff ; ! "mamá"
 maman:maman                                     NoSuff ; ! "mamá"
 mizton:mizton                                   NoSuff ; ! "gato"
@@ -4062,6 +4084,8 @@ vida:vida                                       EsSuffF ;
 libro:libro                                     EsSuffM ;
 mar:mar                                         EsSuffM ;
 día:día                                         EsSuffM ;
+foto:foto                                       EsSuffF ;
+fotografía:fotografía                           EsSuffF ;
 lunez:lunez                                     EsSuffM ;
 cultural:cultural                               EsSuffM ;
 plaztico:plaztico                               EsSuffM ;
@@ -4091,6 +4115,7 @@ rana:rana                                       EsSuffM ;
 medio:medio                                     EsSuffM ;
 rrefrezko:rrefrezko                             EsSuffM ;
 violín:violín                                   EsSuffM ;
+galaxia:galaxia                                 EsSuffF ;
 país:país                                       EsSuffM ;
 vicita:vicita                                   EsSuffF ;
 edad:edad                                       EsSuffF ;
@@ -4203,6 +4228,7 @@ microondas%<n%>%<sg%>:microondas                      # ;
 microondas%<n%>%<pl%>:microondas                      # ;
 investigación:investigación                     EsSuffF ;
 invernadero:invernadero                         EsSuffM ;
+vía:vía                                         EsSuffF ;
 
 
 LEXICON Adjetivos
@@ -4250,6 +4276,8 @@ uhueh:uhueh              Adj ; ! "difícil"
 ohueh:ohueh              Adj ; ! "difícil"
 
 atrasado:atrasad      Adj-Esp-m/f ; ! "atrasado"
+lácteo:lácte          Adj-Esp-m/f ; ! "milky"
+
 reconocido:reconocid  Adj-Esp-m/f ; ! "reconocido"
 pobre:pobre           Adj-Esp-mf ; ! "pobre"
 difícil:difícil       Adj-Esp-mf ; ! "difícil"
@@ -4276,10 +4304,11 @@ Zaloncuatlauhco:Zaloncuatlauhco            NP-Top ;
 tlaxcala:tlaxcala          NP-Top ;
 chiapas:chiapas          NP-Top ;
 Próxima:próxima          NP-Top ;
-Centauri:Centauri        NP-Top ;
+Centauri:centauri        NP-Top ;
 
 Cooper:Cooper           NP-Ant ; 
 Darío:Darío           NP-Ant ; 
+
 Mariana:Mariana NP-Ant ; 
 
 
@@ -4327,6 +4356,7 @@ yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
 oc:oc                        Adv ; ! más
+tipitzin:tipitzin            Adv ; ! justo después
 
 campa:campa                  AdvRel ; ! donde
 cani:cani                    AdvInt ; ! donde
