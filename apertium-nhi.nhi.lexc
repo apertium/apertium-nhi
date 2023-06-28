@@ -1971,12 +1971,12 @@ niqui%<v%>%<tv%>:nic%>  Durative;
 niqui%<v%>%<tv%>:nic%>  Base2Suffixes;
 niqui%<v%>%<tv%>:niqui%>  Base3Suffixes;
 
-! querer decir
-ihtozniqui%<v%>%<tv%>:ihtozniqui%>  PresentTense;
-ihtozniqui%<v%>%<tv%>:ihtozniqui%>  Imperfect;
-ihtozniqui%<v%>%<tv%>:ihtoznic%>  Durative;
-ihtozniqui%<v%>%<tv%>:ihtoznic%>  Base2Suffixes;
-ihtozniqui%<v%>%<tv%>:ihtozniqui%>  Base3Suffixes;
+! ! querer decir
+! ihtozniqui%<v%>%<tv%>:ihtozniqui%>  PresentTense;
+! ihtozniqui%<v%>%<tv%>:ihtozniqui%>  Imperfect;
+! ihtozniqui%<v%>%<tv%>:ihtoznic%>  Durative;
+! ihtozniqui%<v%>%<tv%>:ihtoznic%>  Base2Suffixes;
+! ihtozniqui%<v%>%<tv%>:ihtozniqui%>  Base3Suffixes;
 
 ! querer decir
 itozniqui%<v%>%<tv%>:itozniqui%>  PresentTense;
@@ -2399,6 +2399,13 @@ cauhtehua%<v%>%<tv%>:cauhteuh%>  Durative;
 cauhtehua%<v%>%<tv%>:cauhteuh%>  Base2Suffixes;
 cauhtehua%<v%>%<tv%>:cauhtehua%>  Base3Suffixes;
 
+! hablar de...
+tenehua%<v%>%<tv%>:tenehua%>  PresentTense;
+tenehua%<v%>%<tv%>:tenehua%>  Imperfect;
+tenehua%<v%>%<tv%>:teneuh%>  Durative;
+tenehua%<v%>%<tv%>:teneuh%>  Base2Suffixes;
+tenehua%<v%>%<tv%>:tenehua%>  Base3Suffixes;
+
 !entender
 entenderoa%<v%>%<tv%>:entenderoa%>  PresentTense;
 entenderoa%<v%>%<tv%>:entenderoa%>  Imperfect;
@@ -2720,7 +2727,7 @@ tlacamati%<v%>%<tv%>:tlacama%>  Durative;
 tlacamati%<v%>%<tv%>:tlacamat%>  Base2Suffixes;
 tlacamati%<v%>%<tv%>:tlacamati%>  Base3Suffixes;
 
-!
+! entender
 ahcicamati%<v%>%<tv%>:ahcicamati%>  PresentTense;
 ahcicamati%<v%>%<tv%>:ahcicamati%>  Imperfect;
 ahcicamati%<v%>%<tv%>:ahcicama%>  Durative;
@@ -2939,6 +2946,20 @@ huelilia%<v%>%<tv%>:huelilia%>  Imperfect ;
 huelilia%<v%>%<tv%>:huelili%>  Durative ;
 huelilia%<v%>%<tv%>:huelil%{i%}%{H%}%>  Base2Suffixes ;
 huelilia%<v%>%<tv%>:huelili%>  Base3Suffixes ;
+
+! hacer algo chiquito
+tzocotintilia%<v%>%<tv%>:tzocotintilia%> PresentTense ;
+tzocotintilia%<v%>%<tv%>:tzocotintilia%>  Imperfect ;
+tzocotintilia%<v%>%<tv%>:tzocotintili%>  Durative ;
+tzocotintilia%<v%>%<tv%>:tzocotintil%{i%}%{H%}%>  Base2Suffixes ;
+tzocotintilia%<v%>%<tv%>:tzocotintili%>  Base3Suffixes ;
+
+! hacer algo grande
+hueyitilia%<v%>%<tv%>:hueyitilia%> PresentTense ;
+hueyitilia%<v%>%<tv%>:hueyitilia%>  Imperfect ;
+hueyitilia%<v%>%<tv%>:hueyitili%>  Durative ;
+hueyitilia%<v%>%<tv%>:hueyitil%{i%}%{H%}%>  Base2Suffixes ;
+hueyitilia%<v%>%<tv%>:hueyitili%>  Base3Suffixes ;
 
 ! seguir
 seguiroa%<v%>%<tv%>:seguiroa%>  PresentTense;
@@ -3246,37 +3267,41 @@ AuxRepent ;
 AuxCome ;
 
 LEXICON AuxCome
-@D.Sa.Pl@@D.PST@%<come%>:@D.Sa.Pl@@D.PST@ti%>huitz # ;
-@R.Sa.Pl@@D.PST@%<come%>:@R.Sa.Pl@@D.PST@ti%>huitz%>queh # ;
-@R.Sa.Pl@@D.PST@%<come%>:@R.Sa.Pl@@D.PST@ti%>huitz%>que # ; ! Dir/LR 
+@D.Sa.Pl@@D.PST@+huitz%<vaux%>:@D.Sa.Pl@@D.PST@ti%>huitz # ;
+@R.Sa.Pl@@D.PST@+huitz%<vaux%>:@R.Sa.Pl@@D.PST@ti%>huitz%>queh # ;
+@R.Sa.Pl@@D.PST@+huitz%<vaux%>:@R.Sa.Pl@@D.PST@ti%>huitz%>que # ; ! Dir/LR 
 
+LEXICON AuxNiqui
+@D.Sa.Pl@@D.PST@+niqui%<vaux%>:@D.Sa.Pl@@D.PST@niqui # ;
+@R.Sa.Pl@@D.PST@+niqui%<vaux%>:@R.Sa.Pl@@D.PST@niqui%>h # ;
+@R.Sa.Pl@@D.PST@+niqui%<vaux%>:@R.Sa.Pl@@D.PST@niqui%> # ; ! Dir/LR
 
 LEXICON AuxContin ! Auxiliar de continuidad
-@D.Sa.Pl@@D.PST@%<cont%>:@D.Sa.Pl@@D.PST@ti%>nimi # ;
-@D.Sa.Pl@@D.PST@%<cont%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>nimi%>z # ;
-@R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zque # ;! Dir/LR
-@R.Sa.Pl@@D.PST@%<cont%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zqueh # ;
+@D.Sa.Pl@@D.PST@+nimi%<vaux%>:@D.Sa.Pl@@D.PST@ti%>nimi # ;
+@D.Sa.Pl@@D.PST@+nimi%<vaux%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>nimi%>z # ;
+@R.Sa.Pl@@D.PST@+nimi%<vaux%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zque # ;! Dir/LR
+@R.Sa.Pl@@D.PST@+nimi%<vaux%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>nimi%>zqueh # ;
 
-@D.Sa.Pl@@R.PST@%<cont%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>nimi%>ya # ;
-@R.Sa.Pl@@R.PST@%<cont%>%<impf%>:@R.Sa.Pl@@R.PST@ti%>nimi%>yah # ;
+@D.Sa.Pl@@R.PST@+nimi%<vaux%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>nimi%>ya # ;
+@R.Sa.Pl@@R.PST@+nimi%<vaux%>%<impf%>:@R.Sa.Pl@@R.PST@ti%>nimi%>yah # ;
 
 
 LEXICON AuxRepent ! Auxiliar de acción repentina/rápida
-@D.Sa.Pl@@D.PST@%<repent%>:@D.Sa.Pl@@D.PST@ti%>quiza # ;
-@R.Sa.Pl@@D.PST@%<repent%>:@R.Sa.Pl@@D.PST@ti%>quizah # ;
+@D.Sa.Pl@@D.PST@+quiza%<vaux%>:@D.Sa.Pl@@D.PST@ti%>quiza # ;
+@R.Sa.Pl@@D.PST@+quiza%<vaux%>:@R.Sa.Pl@@D.PST@ti%>quizah # ;
 
-@D.Sa.Pl@@D.PST@%<repent%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>quiza%>z # ;
-@R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zque # ;! Dir/LR
-@R.Sa.Pl@@D.PST@%<repent%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zqueh # ;
-
-
-@D.Sa.Pl@@R.PST@%<repent%>%<pret%>:@D.Sa.Pl@@R.PST@ti%>quiz # ;
-@R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>que # ;! Dir/LR
-@R.Sa.Pl@@R.PST@%<repent%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>queh # ;
+@D.Sa.Pl@@D.PST@+quiza%<vaux%>%<fut%>:@D.Sa.Pl@@D.PST@ti%>quiza%>z # ;
+@R.Sa.Pl@@D.PST@+quiza%<vaux%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zque # ;! Dir/LR
+@R.Sa.Pl@@D.PST@+quiza%<vaux%>%<fut%>:@R.Sa.Pl@@D.PST@ti%>quiza%>zqueh # ;
 
 
-@D.Sa.Pl@@R.PST@%<repent%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>quiza%>ya # ;
-@R.Sa.Pl@@R.PST@%<repent%>%<impf%>:@R.Sa.Pl@@R.PST@ti%>quiza%>yah # ;
+@D.Sa.Pl@@R.PST@+quiza%<vaux%>%<pret%>:@D.Sa.Pl@@R.PST@ti%>quiz # ;
+@R.Sa.Pl@@R.PST@+quiza%<vaux%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>que # ;! Dir/LR
+@R.Sa.Pl@@R.PST@+quiza%<vaux%>%<pret%>:@R.Sa.Pl@@R.PST@ti%>quiz%>queh # ;
+
+
+@D.Sa.Pl@@R.PST@+quiza%<vaux%>%<impf%>:@D.Sa.Pl@@R.PST@ti%>quiza%>ya # ;
+@R.Sa.Pl@@R.PST@+quiza%<vaux%>%<impf%>:@R.Sa.Pl@@R.PST@ti%>quiza%>yah # ;
 
 
 LEXICON PresentTense
@@ -3321,6 +3346,8 @@ LEXICON Future
 @D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z    # ;
 @D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zque # ;! Dir/LR
 @D.PST@@R.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@R.Sa.Pl@@D.Opt@zqueh # ;
+
+@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z   AuxNiqui;
 
 
 LEXICON Counterfactual
@@ -3723,6 +3750,7 @@ tlampa:tlampa                                   RelSuff ; ! "abajo"
 nacazco:nacazco                                 RelSuff ; ! "al lado de"
 nacaztlan:nacaztlan                             RelSuff ; ! "en el lado de"
 cxitlan:cxitlan                                 RelSuff ; ! "abajo de los pies de"
+tzalan:tzalan                                   RelSuff ; ! "entre"
 
 LEXICON Nouns
 
@@ -3754,7 +3782,7 @@ paquiliztl:paquiliz                             TlSuff ; ! "felicidad"
 tapalcatihuilotl:tapalcatihuilo                 TlSuff ; ! "contenedor de agua"
 ticactl:ticac                                   TlSuff ; ! "zapato"
 ticolotl:ticolo                                 TlSuff ; ! "búho"
-cohticolotl:cohticolo                                 TlSuff ; ! "búho"
+cohticolotl:cohticolo                           TlSuff ; ! "búho"
 tihlmahtl:tihlmah                               TlSuff ; ! "ropa/prenda"
 tlamatiliztl:tlamatiliztl                       TlSuff ; ! "conocimiento?"
 tipetl:tipe                                     TlSuff ; ! "cerro"
@@ -3764,112 +3792,106 @@ tlacatl:tlaca                                   TlSuff ; ! "hombre"
 tlaltitl:tlalti                                 TlSuff ; ! "piedra de tierra"
 tototl:toto                                     TlSuff ; ! "pájaro"
 yolotl:yolo                                     TlSuff ; ! "corazon"
-cohuatl:cohua    TlSuff ;
-coatl:coatl      TlSuff ;
-cozamalotl:cozamalo    TlSuff ;
-cihuitl:cihui    TlSuff ;
-tihlmahtl:tihlmah    TlSuff ;
-icoxpohuitl:icoxpohui    TlSuff ;
-nahuatl:nahua    TlSuff ;
-nimiliztl:nimiliz TlSuff ;
-tlaltitl:tlalti    TlSuff ;
-itzcuincoyotl:itzcuincoyo    TlSuff ;
-mazatl:maza    TlSuff ;
-pohuitl:pohui    TlSuff ;
-
-telpocatl:telpoca    TlSuff ; ! niño
-telpochtl:telpochtl  TlSuff ; ! adolescente
-
-cintitl:cinti        TlSuff ; ! ""
-ehpotoctl:ehpotoc    TlSuff ; ! "vapor"
-
-tlatoponiliztl:tlatoponiliz   TlSuff ; ! "explosión"
-
-coyotl:coyo    TlSuff ;
-caxitl:caxi    TlSuff ;
-amatl:ama    TlSuff ;
-nixcomitl:nixcomi    TlSuff ;
-tzicahuaztl:tzicahuaz    TlSuff ;
-cacalotl:cacalo    TlSuff ;
-xocotl:xoco    TlSuff ;
-tlaquemitl:tlaquemi    TlSuff ;
-xochitl:xochi    TlSuff ;
-totoltitl:totolti    TlSuff ;
-tiopantl:tiopan    TlSuff ;
-titl:ti    TlSuff ;
-omitl:omi    TlSuff ;
-omiyotl:omiyo TlSuff ;
-
-
-buhuitl:buhui    TlSuff ;
-ahuacabuhuitl:ahuacabuhui TlSuff ;
-bohuitl:bohui    TlSuff ;
-ahuacabohuitl:ahuacabohui TlSuff ;
-cuhuitl:cuhui    TlSuff ;
-ahuacacuhuitl:ahuacacuhui TlSuff ;
-cohuitl:cohui    TlSuff ;
-ahuacacohuitl:ahuacacohui TlSuff ;
-puhuitl:puhui    TlSuff ;
-ahuacapuhuitl:ahuacapuhui TlSuff ;
-pohuitl:pohui    TlSuff ;
-ahuacapohuitl:ahuacapohui TlSuff ;
-
-azcatl:azca   TlSuff ;
-maitl:mai    TlSuff ;
-ayatl:aya    TlSuff ;
-tlalticpactlacatl:tlalticpactlaca    TlSuff ;
-cocoliztl:cocoliz      TlSuff ;
-pomaitl:pomai    TlSuff ;
-tilmahtl:tilmah    TlSuff ;
-tihuilotl:tihuilo    TlSuff ;
-titquitl:titqui    TlSuff ;
-xochicozcatl:xochicozca    TlSuff ;
-iztatl:izta    TlSuff ;
-toltitl:tolti    TlSuff ;
-tipetl:tipe    TlSuff ;
-hueyatl:hueya    TlSuff ;
-ichpocaconetl:ichpocacone    TlSuff ;
-atl:a    TlSuff ;
-tiquitl:tiqui    TlSuff ;
-papalotl:papalo    TlSuff ;
-ichcatl:ichca    TlSuff ;
-mohcayotl:mohcayo    TlSuff ;
-acahualxochitl:acahualxochi    TlSuff ;
-tonahuatl:tonahua    TlSuff ;
-tichalotl:tichalo    TlSuff ;
-xihuitl:xihui    TlSuff ;
-comitl:comi    TlSuff ;
-itl:i    TlSuff ;
-cetlacatl:cetlaca    TlSuff ;
-huehxolotl:huehxolo    TlSuff ;
-ilhuitl:ilhui    TlSuff ;
-tapalcatihuilotl:tapalcatihuilo    TlSuff ;
-tlaltlitl:tlaltli    TlSuff ;
-tlitl:tli    TlSuff ; ! 
-tlacatl:tlaca    TlSuff ;
-ocotzotl:ocotzo    TlSuff ;
-chiquihuitl:chiquihui    TlSuff ;
-mitlatl:mitla    TlSuff ;
-elotl:elo    TlSuff ;
-telpucatl:telpuca    TlSuff ;
-buhuitl:bu    TlSuff ;
-tinixtl:tinix  TlSuff ;
-tiopantl:tiopan TlSuff ;
-toltitl:tolti  TlSuff ;
-cochiztl:cochiz TlSuff ; ! "el sueño"
-tlazohtl:tlazoh TlSuff ; 
-atentli:aten    TlSuff ;
-tlamantl:tlaman TlSuff ;
-cihuitl:cihui   TlSuff ;
-pohuitl:poui   TlSuff ;
-tzohpilotl:tzohpilo   TlSuff ;
-buitl:bui   TlSuff ;
-monamictililuitl:monamictililui   TlSuff ;
-tipitl:tipi   TlSuff ;
-chicahualiztl:chicahualiz TlSuff ; !"fuerza"
-chupahuacatl:chupahuaca   TlSuff ; ! "agua limpia"
-mixcoatl:mixcoa TlSuff ; ! "galaxia ?"
-tlacayotl:tlacayo   TlSuff ; ! "cuerpo"
+cohuatl:cohua                                   TlSuff ;
+coatl:coatl                                     TlSuff ;
+cozamalotl:cozamalo                             TlSuff ;
+cihuitl:cihui                                   TlSuff ;
+tihlmahtl:tihlmah                               TlSuff ;
+icoxpohuitl:icoxpohui                           TlSuff ;
+nahuatl:nahua                                   TlSuff ;
+nimiliztl:nimiliz                               TlSuff ;
+tlaltitl:tlalti                                 TlSuff ;
+itzcuincoyotl:itzcuincoyo                       TlSuff ;
+mazatl:maza                                     TlSuff ;
+pohuitl:pohui                                   TlSuff ;
+telpocatl:telpoca                               TlSuff ; ! niño
+telpochtl:telpochtl                             TlSuff ; ! adolescente
+cintitl:cinti                                   TlSuff ; ! ""
+ehpotoctl:ehpotoc                               TlSuff ; ! "vapor"
+tlatoponiliztl:tlatoponiliz                     TlSuff ; ! "explosión"
+coyotl:coyo                                     TlSuff ;
+caxitl:caxi                                     TlSuff ;
+amatl:ama                                       TlSuff ;
+nixcomitl:nixcomi                               TlSuff ;
+tzicahuaztl:tzicahuaz                           TlSuff ;
+cacalotl:cacalo                                 TlSuff ;
+xocotl:xoco                                     TlSuff ;
+tlaquemitl:tlaquemi                             TlSuff ;
+xochitl:xochi                                   TlSuff ;
+totoltitl:totolti                               TlSuff ;
+tiopantl:tiopan                                 TlSuff ;
+titl:ti                                         TlSuff ;
+omitl:omi                                       TlSuff ;
+omiyotl:omiyo                                   TlSuff ;
+buhuitl:buhui                                   TlSuff ;
+ahuacabuhuitl:ahuacabuhui                       TlSuff ;
+bohuitl:bohui                                   TlSuff ;
+ahuacabohuitl:ahuacabohui                       TlSuff ;
+cuhuitl:cuhui                                   TlSuff ;
+ahuacacuhuitl:ahuacacuhui                       TlSuff ;
+cohuitl:cohui                                   TlSuff ;
+ahuacacohuitl:ahuacacohui                       TlSuff ;
+puhuitl:puhui                                   TlSuff ;
+ahuacapuhuitl:ahuacapuhui                       TlSuff ;
+pohuitl:pohui                                   TlSuff ;
+ahuacapohuitl:ahuacapohui                       TlSuff ;
+azcatl:azca                                     TlSuff ;
+maitl:mai                                       TlSuff ;
+ayatl:aya                                       TlSuff ;
+tlalticpactlacatl:tlalticpactlaca               TlSuff ;
+cocoliztl:cocoliz                               TlSuff ;
+pomaitl:pomai                                   TlSuff ;
+tilmahtl:tilmah                                 TlSuff ;
+tihuilotl:tihuilo                               TlSuff ;
+titquitl:titqui                                 TlSuff ;
+xochicozcatl:xochicozca                         TlSuff ;
+iztatl:izta                                     TlSuff ;
+toltitl:tolti                                   TlSuff ;
+tipetl:tipe                                     TlSuff ;
+hueyatl:hueya                                   TlSuff ;
+ichpocaconetl:ichpocacone                       TlSuff ;
+atl:a                                           TlSuff ;
+tiquitl:tiqui                                   TlSuff ;
+papalotl:papalo                                 TlSuff ;
+ichcatl:ichca                                   TlSuff ;
+mohcayotl:mohcayo                               TlSuff ;
+totoniliztl:totoniliz                           TlSuff ; ! "ardor, calor"
+acahualxochitl:acahualxochi                     TlSuff ;
+tonahuatl:tonahua                               TlSuff ;
+tichalotl:tichalo                               TlSuff ;
+xihuitl:xihui                                   TlSuff ;
+comitl:comi                                     TlSuff ;
+itl:i                                           TlSuff ;
+cetlacatl:cetlaca                               TlSuff ;
+huehxolotl:huehxolo                             TlSuff ;
+ilhuitl:ilhui                                   TlSuff ;
+tapalcatihuilotl:tapalcatihuilo                 TlSuff ;
+tlaltlitl:tlaltli                               TlSuff ;
+tlitl:tli                                       TlSuff ; ! 
+tlacatl:tlaca                                   TlSuff ;
+ocotzotl:ocotzo                                 TlSuff ;
+chiquihuitl:chiquihui                           TlSuff ;
+mitlatl:mitla                                   TlSuff ;
+elotl:elo                                       TlSuff ;
+telpucatl:telpuca                               TlSuff ;
+buhuitl:bu                                      TlSuff ;
+tinixtl:tinix                                   TlSuff ;
+tiopantl:tiopan                                 TlSuff ;
+toltitl:tolti                                   TlSuff ;
+cochiztl:cochiz                                 TlSuff ; ! "el sueño"
+tlazohtl:tlazoh                                 TlSuff ; 
+atentli:aten                                    TlSuff ;
+tlamantl:tlaman                                 TlSuff ;
+cihuitl:cihui                                   TlSuff ;
+pohuitl:poui                                    TlSuff ;
+tzohpilotl:tzohpilo                             TlSuff ;
+buitl:bui                                       TlSuff ;
+monamictililuitl:monamictililui                 TlSuff ;
+tipitl:tipi                                     TlSuff ;
+chicahualiztl:chicahualiz                       TlSuff ; !"fuerza"
+chupahuacatl:chupahuaca                         TlSuff ; ! "agua limpia"
+mixcoatl:mixcoa                                 TlSuff ; ! "galaxia ?"
+tlacayotl:tlacayo                               TlSuff ; ! "cuerpo"
 
 atentli:aten                                    TliSuff ;
 cintli:cin                                      TliSuff ; ! "maiz"
@@ -3884,33 +3906,32 @@ poctli:poc                                      TliSuff ; ! "humo"
 tahtli:tah                                      TliSuff ; ! "papá"
 tochtli:toch                                    TliSuff ; ! "conejo"
 tlazohtli:tlazoh                                TliSuff ;
-cochiztli:cochiz    TliSuff ;
-tixtli:tix    TliSuff ;
-ichopochtli:ichopoch    TliSuff ;
-ohtli:oh    TliSuff ;
-mayantli:mayan    TliSuff ;
-tlahuitontli:tlahuiton    TliSuff ;
-natentli:naten    TliSuff ;
-ixtli:ix    TliSuff ;
-itlazohtzintli:itlazohtzin    TliSuff ;
-iztcuintli:iztcuin    TliSuff ;
-metztli:metz    TliSuff ;
-itzcuintli:itzcuin    TliSuff ;
-itzcuitli:itzcui    TliSuff ;
-tahtli:tah    TliSuff ;
-paquiliztli:paquiliz    TliSuff ;
-atlautli:atlau    TliSuff ;
-chantli:chan    TliSuff ;
-tochtli:toch    TliSuff ;
-tonehualiztli:tonehualiz    TliSuff ;
-tlalticpactli:tlalticpac    TliSuff ;
-ichtli:ich    TliSuff ;
-comalehtzintli:comalehtzin    TliSuff ;
-cintli:cin    TliSuff ;
-izcuintli:izcuin    TliSuff ;
-tipoztli:tipoz    TliSuff ;
-paciliztli:paciliz    TliSuff ;
-chicunautli:chicunau    TliSuff ;
+cochiztli:cochiz                                TliSuff ;
+tixtli:tix                                      TliSuff ;
+ichopochtli:ichopoch                            TliSuff ;
+ohtli:oh                                        TliSuff ;
+mayantli:mayan                                  TliSuff ;
+tlahuitontli:tlahuiton                          TliSuff ;
+natentli:naten                                  TliSuff ;
+ixtli:ix                                        TliSuff ;
+itlazohtzintli:itlazohtzin                      TliSuff ;
+iztcuintli:iztcuin                              TliSuff ;
+metztli:metz                                    TliSuff ;
+itzcuintli:itzcuin                              TliSuff ;
+itzcuitli:itzcui                                TliSuff ;
+tahtli:tah                                      TliSuff ;
+paquiliztli:paquiliz                            TliSuff ;
+atlautli:atlau                                  TliSuff ;
+chantli:chan                                    TliSuff ;
+tochtli:toch                                    TliSuff ;
+tonehualiztli:tonehualiz                        TliSuff ;
+tlalticpactli:tlalticpac                        TliSuff ;
+ichtli:ich                                      TliSuff ;
+cintli:cin                                      TliSuff ;
+izcuintli:izcuin                                TliSuff ;
+tipoztli:tipoz                                  TliSuff ;
+paciliztli:paciliz                              TliSuff ;
+chicunautli:chicunau                            TliSuff ;
 
 
 calli:cal                                       LiSuff ; ! "casa"
@@ -3928,6 +3949,7 @@ quimichin:quimich                               InSuff ; ! "ratón"
 ceraocuilin:ceraocuil                           InSuff ; ! "abeja"
 cerahocuilin:cerahocuil                         InSuff ; ! "abeja"
 mapachin:mapach                                 InSuff ; ! "mapache"
+michin:michin                                   InSuff ; ! "pez"
 tomin:tom                                       InSuff ; ! "dinero"
 
 
@@ -3937,13 +3959,16 @@ tecuani:tecuani                                 NiSuff ; ! "león"
 tlacuani:tlacuani                               NiSuff ; ! "comedor, alguien que come mucho"
 tlahtolehualoni:tlahtolehualoni                 NiSuff ; ! "Glosario"
 
+comaleh:comaleh                                 NoSuff ; ! "comadre"
 cuacohue:cuacohue                               NoSuff ; ! "vaca"
 cuacohue:cuapohue                               NoSuff ; ! "vaca"
 bohtimohmol:bohtimohmol                         NoSuff ; ! "buho del monte"
 camac:camac                                     NoSuff ; ! "boca"
 caxtil:caxtil                                   NoSuff ; ! "gallina"
-! citlali:citlali                                 NoSuff ; ! "star (can have a ew pluraliztions so included multiple times)"
+! citlali:citlali                                 NoSuff ; ! "star (can have a few pluraliztions so included multiple times)"
 cualcan:cualcan                                 NoSuff ; ! "mañana"
+caltlamachtiloyan:caltlamachtiloyan             NoSuff ; ! "escuela"
+caltepahtiloyan:caltepahtiloyan                 NoSuff ; ! "hospital"
 ichtic:ichtic                                   NoSuff ; ! "ladrón"
 icni:icni                                       NoSuff ; ! "hermanx"
 icxi:icxi                                       NoSuff ; ! "pie"
@@ -3953,6 +3978,9 @@ lechon:lechon                                   NoSuff ; ! "puerquito"
 nopal:nopal                                     NoSuff ; ! "nopal"
 mahtlapal:mahtlapal                             NoSuff ; ! "ala"
 tlapal:tlapal                                   NoSuff ; ! "pintura"
+tlamachtil:tlamachtil                           NoSuff ; ! "estudio"
+tamachiuhqui:tamachiuhqui                       NoSuff ; ! "medida"
+macpal:macpal                                   NoSuff ; ! "palma (de la mano)"
 mama:mama                                       NoSuff ; ! "mamá"
 maman:maman                                     NoSuff ; ! "mamá"
 mizton:mizton                                   NoSuff ; ! "gato"
@@ -4196,6 +4224,7 @@ alarma:alarma                                   EsSuffF ;
 pollito:pollito                                 EsSuffM ;
 rancho:rancho                                   EsSuffM ;
 programa:programa                               EsSuffM ;
+nano-robot:nano-robot                           EsSuffM ;
 abhuelo:abhuelo                                 EsSuffM ;
 bola:bola                                       EsSuffF ;
 col:col                                         EsSuffF ;
@@ -4229,6 +4258,9 @@ microondas%<n%>%<pl%>:microondas                      # ;
 investigación:investigación                     EsSuffF ;
 invernadero:invernadero                         EsSuffM ;
 vía:vía                                         EsSuffF ;
+universo:universo                               EsSuffM ;
+nanotecnología:nanotecnología                   EsSuffF ;
+
 
 
 LEXICON Adjetivos
@@ -4278,10 +4310,11 @@ ohueh:ohueh              Adj ; ! "difícil"
 atrasado:atrasad      Adj-Esp-m/f ; ! "atrasado"
 lácteo:lácte          Adj-Esp-m/f ; ! "milky"
 
-reconocido:reconocid  Adj-Esp-m/f ; ! "reconocido"
-pobre:pobre           Adj-Esp-mf ; ! "pobre"
-difícil:difícil       Adj-Esp-mf ; ! "difícil"
-unido:unid            Adj-Esp-m/f ; ! "unido"
+reconocido:reconocid   Adj-Esp-m/f ; ! "reconocido"
+cancerígeno:cancerígen Adj-Esp-m/f ; ! ""
+pobre:pobre            Adj-Esp-mf ; ! "pobre"
+difícil:difícil        Adj-Esp-mf ; ! "difícil"
+unido:unid             Adj-Esp-m/f ; ! "unido"
 chistoso:chistos       Adj-Esp-m/f ; ! "chistoso"
 mexicano:mexican       Adj-Esp-m/f ; ! "mexicano"
 nuclear:nuclear        Adj-Esp-mf  ; ! "nuclear
@@ -4290,7 +4323,8 @@ frances:frances        Adj-Esp-mf ;  ! "francés"
 español:español        Adj-Esp-mf ; ! "español"
 patronal:patronal      Adj-Esp-mf ; ! "patronal"
 electromagnética:electromagnétic Adj-Esp-m/f ;
-espacial:espacial      Adj-Esp-m/f ;
+espacial:espacial      Adj-Esp-mf ;
+nanométrico:nanométric Adj-Esp-m/f ;
 
 LEXICON Propios
 
@@ -4346,6 +4380,7 @@ ahora:ahora                  AdvEs ;
 pues:pues                    AdvEs ; 
 bueno:bueno                  AdvEs ;
 axan:axan                    Adv ; ! ahora
+achto:achto                  Adv ; ! primero/antes
 ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
 xa:xa                        Adv ; ! quizás
@@ -4392,11 +4427,16 @@ ya:ye                        Adv ;
 zan:za                       Adv ; ! solo
 
 cimi:cimi                    Adv ; ! 
+tlahuel:tlahuel              Adv ; ! 
+
 no:no                        Adv ; !
 noyohqui:noyohqui            Adv ; !
 
 no:no                        Adv ; !
 ihcuacon:ihcuacon            Adv ; ! then
+
+zancican:zancican            Adv ; ! junto (en un solo lugar)
+
 
 LEXICON Preposiciones 
 
