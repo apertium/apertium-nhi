@@ -278,6 +278,7 @@ TV2-Adv-Pref ;
 LEXICON TV2-Adv-Pref
 %<bien%>:yec%> TV2-Indef-Obj ;
 %<juntos%>:cepan%> TV2-Indef-Obj ;
+%<juntos%>:cin%> TV2-Indef-Obj ;
 %<completamente%>:cepa%> TV2-Indef-Obj ;
 TV2-Indef-Obj ;
 
@@ -320,6 +321,7 @@ LEXICON TV-Refl
 LEXICON TV-Adv-Pref
 %<bien%>:yec%> TV-Indef-Obj ;
 %<juntos%>:cepan%> TV-Indef-Obj ;
+%<juntos%>:cin%> TV-Indef-Obj ;
 %<completamente%>:cepa%> TV-Indef-Obj ;
 TV-Indef-Obj ;
 
@@ -1128,6 +1130,7 @@ ixtlamati%<v%>%<iv%>:ixtlama%>  Durative;
 ixtlamati%<v%>%<iv%>:ixtlamat%>  Base2Suffixes;
 ixtlamati%<v%>%<iv%>:ixtlamati%>  Base3Suffixes;
 
+
 ! dormir fuertamente
 cochtlamilahua%<v%>%<iv%>:cochtlamilahua%>  PresentTense;
 cochtlamilahua%<v%>%<iv%>:cochtlamilahua%>  Imperfect;
@@ -1199,12 +1202,19 @@ yoli%<v%>%<iv%>:yol%>  Durative;
 yoli%<v%>%<iv%>:yol%>  Base2Suffixes;
 yoli%<v%>%<iv%>:yoli%>  Base3Suffixes;
 
-!nacer
+!hacerse fuerte
 chicahui%<v%>%<iv%>:chicahui%>  PresentTense;
 chicahui%<v%>%<iv%>:chicahui%>  Imperfect;
 chicahui%<v%>%<iv%>:chicauh%>  Durative;
 chicahui%<v%>%<iv%>:chicauh%>  Base2Suffixes;
 chicahui%<v%>%<iv%>:chicahui%>  Base3Suffixes;
+
+! pertencer
+pohui%<v%>%<iv%>:pohui%>  PresentTense;
+pohui%<v%>%<iv%>:pohui%>  Imperfect;
+pohui%<v%>%<iv%>:pouh%>  Durative;
+pohui%<v%>%<iv%>:pouh%>  Base2Suffixes;
+pohui%<v%>%<iv%>:pohui%>  Base3Suffixes;
 
 !estar contenta en el alma
 yolpaqui%<v%>%<iv%>:yolpaqui%>  PresentTense;
@@ -1342,6 +1352,14 @@ izcaltia%<v%>%<tv%>:izcalta%>  Imperfect;
 izcaltia%<v%>%<tv%>:izcaltih%>  Durative;
 izcaltia%<v%>%<tv%>:izcalt%{i%}%{H%}%>  Base2Suffixes;
 izcaltia%<v%>%<tv%>:izcalti%>  Base3Suffixes;
+
+! ponerle nombre a alguien
+tecayotia%<v%>%<tv%>:tecayotia%>  PresentTense;
+tecayotia%<v%>%<tv%>:tecayota%>  Imperfect;
+tecayotia%<v%>%<tv%>:tecayotih%>  Durative;
+tecayotia%<v%>%<tv%>:tecayot%{i%}%{H%}%>  Base2Suffixes;
+tecayotia%<v%>%<tv%>:tecayoti%>  Base3Suffixes;
+
 
 ! cortar
 tiqui%<v%>%<iv%>:tiqui%>  PresentTense;
@@ -1491,6 +1509,13 @@ tlanamakiltia%<v%>%<tv%>:tlanamakilti%>  Durative ;
 tlanamakiltia%<v%>%<tv%>:tlanamakilt%{i%}%{H%}%>  Base2Suffixes ;
 tlanamakiltia%<v%>%<tv%>:tlanamakilti%>  Base3Suffixes ;
 
+! sudar
+itonia%<v%>%<tv%>:%{i%}tonia%> PresentTense ;
+itonia%<v%>%<tv%>:%{i%}tonia%>  Imperfect ;
+itonia%<v%>%<tv%>:%{i%}toni%>  Durative ;
+itonia%<v%>%<tv%>:%{i%}ton%{i%}%{H%}%>  Base2Suffixes ;
+itonia%<v%>%<tv%>:%{i%}toni%>  Base3Suffixes ;
+
 ! adornar
 tlahmachotia%<v%>%<tv%>:tlahmachotia%> PresentTense ;
 tlahmachotia%<v%>%<tv%>:tlahmachotia%>  Imperfect ;
@@ -1504,6 +1529,13 @@ tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihtia%>  Imperfect ;
 tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%>  Durative ;
 tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtiht%{i%}%{H%}%>  Base2Suffixes ;
 tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%>  Base3Suffixes ;
+
+! sembrar
+toca%<v%>%<tv%>:toca%>  PresentTense;
+toca%<v%>%<tv%>:toca%>  Imperfect;
+toca%<v%>%<tv%>:toca%>  Durative;
+toca%<v%>%<tv%>:toca%>  Base2Suffixes;
+toca%<v%>%<tv%>:toca%>  Base3Suffixes;
 
 ! tomar/beber
 oni%<v%>%<iv%>:oni%>  PresentTense;
@@ -2026,6 +2058,13 @@ tamachihua%<v%>%<tv%>:tamachihua%>  Imperfect;
 tamachihua%<v%>%<tv%>:tamachiuh%>   Durative;
 tamachihua%<v%>%<tv%>:tamachiuh%>  Base2Suffixes;
 tamachihua%<v%>%<tv%>:tamachihua%>  Base3Suffixes;
+
+! distinguir
+tlamanchihua%<v%>%<tv%>:tlamanchihua%>  PresentTense;
+tlamanchihua%<v%>%<tv%>:tlamanchihua%>  Imperfect;
+tlamanchihua%<v%>%<tv%>:tlamanchiuh%>   Durative;
+tlamanchihua%<v%>%<tv%>:tlamanchiuh%>  Base2Suffixes;
+tlamanchihua%<v%>%<tv%>:tlamanchihua%>  Base3Suffixes;
 
 ! hacer
 chihua%<v%>%<tv%>:chihua%>  PresentTense;
@@ -2712,6 +2751,13 @@ temoa%<v%>%<tv%>:temoa%>  Imperfect;
 temoa%<v%>%<tv%>:temoh%>  Durative;
 temoa%<v%>%<tv%>:temoh%>  Base2Suffixes;
 temoa%<v%>%<tv%>:temo%>  Base3Suffixes;
+
+!buscar (con la mano)
+matemoa%<v%>%<tv%>:matemoa%>  PresentTense;
+matemoa%<v%>%<tv%>:matemoa%>  Imperfect;
+matemoa%<v%>%<tv%>:matemoh%>  Durative;
+matemoa%<v%>%<tv%>:matemoh%>  Base2Suffixes;
+matemoa%<v%>%<tv%>:matemo%>  Base3Suffixes;
 
 ! acostar ( a algo/alguien)
 teca%<v%>%<tv%>:teca%>  PresentTense;
@@ -3658,6 +3704,7 @@ y%<cnjcoo%>:y # ;
 pero%<cnjcoo%>:pero # ;
 huan%<cnjcoo%>:huan # ;
 o%<cnjcoo%>:o # ;
+mas%<cnjcoo%>:mas # ;
 
 amo%<neg%>:amo # ;
 amo%<adv%>:amo # ;
@@ -3768,6 +3815,7 @@ citlalcoatl:citlalcoa                           TlSuff ; ! ""
 conetl:cone                                     TlSuff ; ! "bebe"
 conetl:cone                                     TlSuff ; ! "bebe"
 caltentl:calten                                 TlSuff ; ! "puerta"
+chupahuacatl:chupahuaca                         TlSuff ; ! "agua limpia"
 coyotl:coyo                                     TlSuff ; ! "coyote"
 cozamalotl:cozamalo                             TlSuff ; ! "arcoiris"
 ichcatl:ichca                                   TlSuff ; ! "borrego"
@@ -3883,13 +3931,11 @@ tlazohtl:tlazoh                                 TlSuff ;
 atentli:aten                                    TlSuff ;
 tlamantl:tlaman                                 TlSuff ;
 cihuitl:cihui                                   TlSuff ;
-pohuitl:poui                                    TlSuff ;
 tzohpilotl:tzohpilo                             TlSuff ;
 buitl:bui                                       TlSuff ;
 monamictililuitl:monamictililui                 TlSuff ;
 tipitl:tipi                                     TlSuff ;
 chicahualiztl:chicahualiz                       TlSuff ; !"fuerza"
-chupahuacatl:chupahuaca                         TlSuff ; ! "agua limpia"
 mixcoatl:mixcoa                                 TlSuff ; ! "galaxia ?"
 tlacayotl:tlacayo                               TlSuff ; ! "cuerpo"
 
@@ -3983,6 +4029,7 @@ tamachiuhqui:tamachiuhqui                       NoSuff ; ! "medida"
 macpal:macpal                                   NoSuff ; ! "palma (de la mano)"
 mama:mama                                       NoSuff ; ! "mamá"
 maman:maman                                     NoSuff ; ! "mamá"
+mayolix:mayolix                                 NoSuff ; ! "palma de la mano"
 mizton:mizton                                   NoSuff ; ! "gato"
 nana:nana                                       NoSuff ; ! "mamá"
 nana:nanah                                      NoSuff ; ! "mamá"
@@ -3993,6 +4040,7 @@ patox:patox                                     NoSuff ; ! "pato"
 tamal:tamal                                     NoSuff ; ! "tamal"
 teco:teco                                       NoSuff ; ! "dueñ@"
 tempil:tempil                                   NoSuff ; ! "pico"
+ticol:ticol                                     NoSuff ; ! "flama/fuego"
 tlacual:tlacual                                 NoSuff ; ! "comida"
 tlahco:tlahco                                   NoSuff ; ! "mitad"
 tlahuical:tlahuical                             NoSuff ; ! "esposo"
@@ -4260,6 +4308,7 @@ invernadero:invernadero                         EsSuffM ;
 vía:vía                                         EsSuffF ;
 universo:universo                               EsSuffM ;
 nanotecnología:nanotecnología                   EsSuffF ;
+observatorio:observatorio                       EsSuffM ;
 
 
 
@@ -4322,6 +4371,7 @@ americano:american     Adj-Esp-m/f ; ! "americano"
 frances:frances        Adj-Esp-mf ;  ! "francés"
 español:español        Adj-Esp-mf ; ! "español"
 patronal:patronal      Adj-Esp-mf ; ! "patronal"
+austral:austral        Adj-Esp-mf ; ! ""
 electromagnética:electromagnétic Adj-Esp-m/f ;
 espacial:espacial      Adj-Esp-mf ;
 nanométrico:nanométric Adj-Esp-m/f ;
@@ -4360,7 +4410,7 @@ LEXICON Adj
 
 
 LEXICON Adj-Esp-mf
-%<adj%>%<barb%>:0  # ;
+%<adj%>%<mf%>%<barb%>:0  # ;
 
 LEXICON Adj-Esp-m/f
 %<adj%>%<barb%>%<m%>:o  # ;
@@ -4392,6 +4442,8 @@ casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
 oc:oc                        Adv ; ! más
 tipitzin:tipitzin            Adv ; ! justo después
+
+citlalcopa:citlal%>copa        Adv ; ! 
 
 campa:campa                  AdvRel ; ! donde
 cani:cani                    AdvInt ; ! donde

@@ -42,6 +42,13 @@ n:0 <=> _ %>: m e ;
 "Drop i in subj pref before on-"
 i:0 <=> t _ %>: o n %>: ;
 
+"stem-initial i deletes preceding o from reflexive mo (1)"
+%{i%}:i <=> m o %>: _ ;
+
+"stem-initial i deletes preceding o from reflexive mo (2)"
+o:0 <=> m _ %>: %{i%}:i  ;
+!@ m o:0 >:> i:i t o n i a
+
 "Nasal elision"
 n:0 <=> _ %>: h u a n ;
 !@ n o >:> i:0 t z c u i n:0 >:> h u a n
