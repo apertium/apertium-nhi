@@ -46,6 +46,12 @@ Multichar_Symbols
 %<barb%>                                 ! Barbarismo (español)
 
 
+%<yec%>
+%<cepan%>
+%<cin%>
+%<cepa%>
+%<tlahuel%>
+
 %<pres%>   ! tiempo presente
 %<pret%>   ! pretérito
 %<perf%>   ! perfectivo
@@ -111,7 +117,7 @@ Multichar_Symbols
 %<neg%>
 %<o_sg3_om%>
 %<part%>
-%<o_ref%>
+%<i_ref%>
 %<rel%>
 %<rpar%>
 %<rquot%>
@@ -272,14 +278,16 @@ LEXICON TV2-Dir
                                                    TV2-Refl ;
 
 LEXICON TV2-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<o_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Adv-Pref ;
+@D.DOBJ@@P.DOBJ.FILLED@%<i_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>     TV2-Adv-Pref ;
 TV2-Adv-Pref ;
 
 LEXICON TV2-Adv-Pref
-%<bien%>:yec%> TV2-Indef-Obj ;
-%<juntos%>:cepan%> TV2-Indef-Obj ;
-%<juntos%>:cin%> TV2-Indef-Obj ;
-%<completamente%>:cepa%> TV2-Indef-Obj ;
+%<yec%>:yec%> TV2-Indef-Obj ; ! bien
+%<cepan%>:cepan%> TV2-Indef-Obj ; ! junto
+%<cin%>:cin%> TV2-Indef-Obj ; ! junto
+%<cepa%>:cepa%> TV2-Indef-Obj ; ! completamente
+%<tlahuel%>:tlahuel%> TV2-Indef-Obj ; ! completamente
+
 TV2-Indef-Obj ;
 
 LEXICON TV2-Indef-Obj
@@ -315,14 +323,15 @@ LEXICON TV-Dir
                                                    TV-Refl ;
 
 LEXICON TV-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<o_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
+@D.DOBJ@@P.DOBJ.FILLED@%<i_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
                                                               TV-Adv-Pref ;
 
 LEXICON TV-Adv-Pref
-%<bien%>:yec%> TV-Indef-Obj ;
-%<juntos%>:cepan%> TV-Indef-Obj ;
-%<juntos%>:cin%> TV-Indef-Obj ;
-%<completamente%>:cepa%> TV-Indef-Obj ;
+%<yec%>:yec%> TV-Indef-Obj ; ! bien
+%<cepan%>:cepan%> TV-Indef-Obj ; ! junto
+%<cin%>:cin%> TV-Indef-Obj ; ! junto
+%<cepa%>:cepa%> TV-Indef-Obj ; ! completamente
+%<tlahuel%>:tlahuel%> TV-Indef-Obj ; ! completamente
 TV-Indef-Obj ;
 
 LEXICON TV-Indef-Obj
@@ -1253,8 +1262,14 @@ mihmiloa%<v%>%<tv%>:mihmiloh%>  Durative;
 mihmiloa%<v%>%<tv%>:mihmiloh%>  Base2Suffixes;
 mihmiloa%<v%>%<tv%>:mihmilo%>  Base3Suffixes;
 
+! despejar
+tlacualcanti%<v%>%<iv%>:tlacualcanti%>  PresentTense;
+tlacualcanti%<v%>%<iv%>:tlacualcanti%>  Imperfect;
+tlacualcanti%<v%>%<iv%>:tlacualcanti%>  Durative;
+tlacualcanti%<v%>%<iv%>:tlacualcant%{i%}%{H%}%>  Base2Suffixes;
+tlacualcanti%<v%>%<iv%>:tlacualcanti%>  Base3Suffixes;
 
-!mojar
+! mojar / estar mojado
 palti%<v%>%<iv%>:palti%>  PresentTense;
 palti%<v%>%<iv%>:palti%>  Imperfect;
 palti%<v%>%<iv%>:palti%>  Durative;
@@ -1288,6 +1303,14 @@ molinia%<v%>%<iv%>:molinia%>  Imperfect ;
 molinia%<v%>%<iv%>:molini%>  Durative ;
 molinia%<v%>%<iv%>:molin%{i%}%{H%}%>  Base2Suffixes ;
 molinia%<v%>%<iv%>:molini%>  Base3Suffixes ;
+
+! bailar
+mihtotia%<v%>%<iv%>:mihtotia%> PresentTense ;
+mihtotia%<v%>%<iv%>:mihtotia%>  Imperfect ;
+mihtotia%<v%>%<iv%>:mihtoti%>  Durative ;
+mihtotia%<v%>%<iv%>:mihtot%{i%}%{H%}%>  Base2Suffixes ;
+mihtotia%<v%>%<iv%>:mihtoti%>  Base3Suffixes ;
+
 
 ! columpiarse
 mohuiyonia%<v%>%<iv%>:mohuiyonia%>     PresentTense ;
@@ -1337,6 +1360,13 @@ desarmaroa%<v%>%<tv%>:desarmaro%>  Durative;
 desarmaroa%<v%>%<tv%>:desarmaroh%>  Durative;
 desarmaroa%<v%>%<tv%>:desarmaro%>  Base2Suffixes;
 desarmaroa%<v%>%<tv%>:desarmaro%>  Base3Suffixes;
+
+! bailar a algo/alguien
+ihtotia%<v%>%<iv%>:ihtotia%> PresentTense ;
+ihtotia%<v%>%<iv%>:ihtotia%>  Imperfect ;
+ihtotia%<v%>%<iv%>:ihtoti%>  Durative ;
+ihtotia%<v%>%<iv%>:ihtot%{i%}%{H%}%>  Base2Suffixes ;
+ihtotia%<v%>%<iv%>:ihtoti%>  Base3Suffixes ;
 
 !imaginar
 imaginaroa%<v%>%<tv%>:imaginaroa%>  PresentTense;
@@ -2994,11 +3024,11 @@ huelilia%<v%>%<tv%>:huelil%{i%}%{H%}%>  Base2Suffixes ;
 huelilia%<v%>%<tv%>:huelili%>  Base3Suffixes ;
 
 ! hacer algo chiquito
-tzocotintilia%<v%>%<tv%>:tzocotintilia%> PresentTense ;
-tzocotintilia%<v%>%<tv%>:tzocotintilia%>  Imperfect ;
-tzocotintilia%<v%>%<tv%>:tzocotintili%>  Durative ;
-tzocotintilia%<v%>%<tv%>:tzocotintil%{i%}%{H%}%>  Base2Suffixes ;
-tzocotintilia%<v%>%<tv%>:tzocotintili%>  Base3Suffixes ;
+tzocotzintilia%<v%>%<tv%>:tzocotzintilia%> PresentTense ;
+tzocotzintilia%<v%>%<tv%>:tzocotzintilia%>  Imperfect ;
+tzocotzintilia%<v%>%<tv%>:tzocotzintili%>  Durative ;
+tzocotzintilia%<v%>%<tv%>:tzocotzintil%{i%}%{H%}%>  Base2Suffixes ;
+tzocotzintilia%<v%>%<tv%>:tzocotzintili%>  Base3Suffixes ;
 
 ! hacer algo grande
 hueyitilia%<v%>%<tv%>:hueyitilia%> PresentTense ;
@@ -3065,6 +3095,13 @@ tlatlalia%<v%>%<tv2%>:tlatlalia%>  Imperfect ;
 tlatlalia%<v%>%<tv2%>:tlatlalih%> Durative ;
 tlatlalia%<v%>%<tv2%>:tlatlal%{i%}%{H%}%> Base2Suffixes ;
 tlatlalia%<v%>%<tv2%>:tlatlali%>  Base3Suffixes ;
+
+! mandar algo a alguien
+titlanilia%<v%>%<tv2%>:titlanilia%> PresentTense ;
+titlanilia%<v%>%<tv2%>:titlanilia%>  Imperfect ;
+titlanilia%<v%>%<tv2%>:titlanilih%> Durative ;
+titlanilia%<v%>%<tv2%>:titlanil%{i%}%{H%}%> Base2Suffixes ;
+titlanilia%<v%>%<tv2%>:titlanili%>  Base3Suffixes ;
 
 ! poner en alto
 huehcapantlalia%<v%>%<tv2%>:huehcapantlalia%> PresentTense ;
@@ -3750,12 +3787,18 @@ LEXICON Determinantes
 
 in:in                                           DET ; ! "a"
 nin:nin                                         DET ; ! "estx"
+el%<det%>%<m%>:el                               #; ! ""
+el%<det%>%<f%>:la                               #; ! ""
+el%<det%>%<pl%>%<m%>:las                        #; ! ""
+el%<det%>%<pl%>%<f%>:las                        #; ! ""
+
 nochi:nochi                                     DET ; ! "todo"
 non:non                                         DET ; ! "esx"
 ciqui:ciqui                                     DET ; ! "un@s"
 oc%<adv%>+ciqui:oc%>ciqui                       DET ; ! "un@s mas"
 ce:ce                                           DET ; ! un(o)
 cada%<barb%>:cada                               DET ; ! cada
+cada:cada                                       DET ; ! cada
 oc%<adv%>+ce:oc%>ce                             DET ;  ! otro
 miac%<det%>:miac                                # ; ! mucho
 miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos 
@@ -3809,6 +3852,9 @@ altipetl:altipe                                 TlSuff ; ! "ciudad"
 amatl:ama                                       TlSuff ; ! "papel, libro"
 amelatl: amelatl                                TlSuff ; ! "manantial"
 atl:a                                           TlSuff ; ! "agua"
+istagatl:istaga                                 TlSuff ; ! "agua salada"
+hueyiistagatl:hueyiistaga                       TlSuff ; ! "agua del mar"
+
 cacalotl:cacalo                                 TlSuff ; ! "cuervo"
 cihuatl:cihua                                   TlSuff ; ! "mujer"
 citlalcoatl:citlalcoa                           TlSuff ; ! ""
@@ -3978,6 +4024,7 @@ izcuintli:izcuin                                TliSuff ;
 tipoztli:tipoz                                  TliSuff ;
 paciliztli:paciliz                              TliSuff ;
 chicunautli:chicunau                            TliSuff ;
+tzontli:tzon                                    TliSuff ;
 
 
 calli:cal                                       LiSuff ; ! "casa"
@@ -4031,6 +4078,7 @@ mama:mama                                       NoSuff ; ! "mamá"
 maman:maman                                     NoSuff ; ! "mamá"
 mayolix:mayolix                                 NoSuff ; ! "palma de la mano"
 mizton:mizton                                   NoSuff ; ! "gato"
+macehual:macehual                               NoSuff ; ! "indígena"
 nana:nana                                       NoSuff ; ! "mamá"
 nana:nanah                                      NoSuff ; ! "mamá"
 nechicol:nechicol                               NoSuff ; ! "comunidad"
@@ -4061,6 +4109,8 @@ xarro:xarro                                     NoSuff ; ! "taza"
 yohual:yohual                                   NoSuff ; ! "noche"
 tiachcah:tiachcah                               NoSuff ; ! "alcalde"
 tlapahtani:tlapahtani                           NoSuff ; ! "doctor"
+
+tlanamacaloyan:tlanamacaloyan                   NoSuff ; ! "mercado(tienda"
 
 
 caxitl:cax                                      ItlSuff ; ! "plato"
@@ -4215,6 +4265,8 @@ tepache:tepache                                 EsSuffM ;
 arpa:arpa                                       EsSuffF ;
 morral:morral                                   EsSuffM ;
 corral:corral                                   EsSuffM ;
+quetzal:quetzal                                 EsSuffM ;
+
 iglesia:iglesia                                 EsSuffF ;
 viahe:viahe                                     EsSuffM ;
 serbeza:serbeza                                 EsSuffF ;
@@ -4325,6 +4377,7 @@ pitzahuac:pitzahua       AdjCont ; !"delgadx"
 chicactic:chicacti       AdjCont ; !"durx"
 yancuic:yancui           AdjCont ; !"nuev@"
 chicahuac:chicahua       AdjCont ; !"fuerte"
+piciltic:picilti         AdjCont ; !"pequeñ@, fin@"
 
 papatztic:papatzti       AdjCont ; !"suave"
 xaxacuachtic:xaxacuachti AdjCont ; !"suave"
@@ -4380,6 +4433,7 @@ LEXICON Propios
 
 México:México            NP-Top ; 
 Sonora:Sonora            NP-Top ; 
+Puebla:Puebla            NP-Top ;
 Estados:Estados           NP-Top ; 
 Unidos:Unidos               NP-Top ; 
 Zacatlán:Zacatlán            NP-Top ; 
@@ -4476,7 +4530,7 @@ ya:ya                        Adv ;
 zan:zan                      Adv ; ! solo
 ! FIXME: Comprobar
 ya:ye                        Adv ;
-zan:za                       Adv ; ! solo
+zan:za                       Adv ; ! solo Dir/LR
 
 cimi:cimi                    Adv ; ! 
 tlahuel:tlahuel              Adv ; ! 
