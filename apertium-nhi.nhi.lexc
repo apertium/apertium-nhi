@@ -117,7 +117,10 @@ Multichar_Symbols
 %<neg%>
 %<o_sg3_om%>
 %<part%>
+
 %<i_ref%>
+%<o_ref%>
+
 %<rel%>
 %<rpar%>
 %<rquot%>
@@ -323,8 +326,8 @@ LEXICON TV-Dir
                                                    TV-Refl ;
 
 LEXICON TV-Refl
-@D.DOBJ@@P.DOBJ.FILLED@%<i_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
-                                                              TV-Adv-Pref ;
+@D.DOBJ@@P.DOBJ.FILLED@%<o_ref%>:@D.DOBJ@@P.DOBJ.FILLED@mo%>   TV-Adv-Pref ;
+                                                               TV-Adv-Pref ;
 
 LEXICON TV-Adv-Pref
 %<yec%>:yec%> TV-Indef-Obj ; ! bien
@@ -3311,7 +3314,7 @@ chupahuilia%<v%>%<tv2%>:chupahuili%>  Base3Suffixes;
 
 ! ponerle
 tlalilia%<v%>%<tv2%>:tlalilia%> PresentTense ;
-tlalilia%<v%>%<tv2%>:tlalilia%>  Imperfect ;
+tlalilia%<v%>%<tv2%>:tlalila%>  Imperfect ;
 tlalilia%<v%>%<tv2%>:tlalilih%> Durative ;
 tlalilia%<v%>%<tv2%>:tlalil%{i%}%{H%}%> Base2Suffixes ;
 tlalilia%<v%>%<tv2%>:tlalili%>  Base3Suffixes ;
@@ -3969,6 +3972,11 @@ chichilticcozcatl:chichilticcozca               TlSuff ; ! "collar rojo"
 pomaitl:pomai                                   TlSuff ;
 tilmahtl:tilmah                                 TlSuff ;
 tihuilotl:tihuilo                               TlSuff ;
+
+nezcatl:nezca                                   TlSuff ; ! "imagen"
+ilpicatl:ilpica                                 TlSuff ; ! "cinturón"
+chichilticilpicatl:chichilticilpica             TlSuff ; ! "cinturón rojo"
+
 titquitl:titqui                                 TlSuff ;
 xochicozcatl:xochicozca                         TlSuff ;
 iztatl:izta                                     TlSuff ;
@@ -4286,6 +4294,7 @@ edad:edad                                       EsSuffF ;
 cajita:cajita                                   EsSuffF ;
 pera:pera                                       EsSuffF ;
 centro:centro                                   EsSuffM ;
+sombrero:sombrero                               EsSuffM ;
 panadería:panadería                             EsSuffF ;
 torrero:torrero                                 EsSuffM ;
 diamante:diamante                               EsSuffM ;
@@ -4433,10 +4442,12 @@ huaqui:huaqui           Adj ;
 hueyi:hueyi              Adj ; ! "grande"
 hueyi%<adj%>%<pl%>:huehhueyen         # ;
 
-patiyo:patiyo            AdjCont ; !"carx"
-cualli:cualli            Adj ; !"buenx"
-cuali:cuali              Adj ; !"buenx"
-cuali%<pl%>:cuale        Adj ; !"buenxs"
+patiyo:patiyo                   AdjCont ; !"carx"
+cualli:cualli                   Adj ; !"buenx"
+cuali:cuali                     Adj ; !"buenx"
+cuali%<adj%>%<dim%>:cual%>tzin  # ;
+cuali%<adj%>%<hon%>:cual%>tzin  # ;
+cuali%<pl%>:cuale               Adj ; !"buenxs"
 
 tempile:tempile          Adj ; ! "beak-haver"
 tempile:tempileh         Adj ; ! "beak-haver"
@@ -4535,6 +4546,10 @@ casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
 oc:oc                        Adv ; ! más
 tipitzin:tipitzin            Adv ; ! justo después
+
+huehcauh:huehcauh            Adv ; ! lejos, hace mucho"
+huehcauh:huehca              Adv ; ! lejos, hace mucho" Dir/LR
+
 
 citlalcopa:citlal%>copa        Adv ; ! 
 
