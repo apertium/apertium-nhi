@@ -11,7 +11,7 @@ Alphabet
  %{c%}:c %{c%}:0
  %{e%}:e %{e%}:0
  %{z%}:z %{z%}:c
- %>:%> ;
+ %>:%> %{P%}:0 ;
 
 
 Sets
@@ -58,6 +58,13 @@ i:0 <=> [n | m | t] o >:> _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z 
 !@ n o >:> i t z i n
 !@ n o >:> i:0 t z c u i n
 
+"delete preterite 'c' ending when preceded by a cons"
+%{c%}:0 <=> [Cns: | %{H%}: | %{P%}:0] >:> _ .#. ;
+
+"ih -> e in preterite (1)"
+i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
+
+
 "'q' -> 'c' in /k/ between a V and a C "
 %{q%}:c <=> Vow >:> _ %{u%}: %{i%}: >:> Cns ;
 
@@ -83,12 +90,15 @@ i:0 <=> t l a >:> _ h ;
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ i m:n >: c a l
 
-"delete preterite 'c' ending when preceded by a cons"
-%{c%}:0 <=> [Cns: | %{H%}: ] >:> _ .#. ;
 
+! "delete h before preterite plural que"
+! %{H%}:0 <=> _ >:> q u e .#. ;
 
-"delete h before preterite plural que"
-%{H%}:0 <=> _ >:> q u e .#. ;
+! "delete word final h in preterite ending"
+! %{H%}:0 <=> %{i%}:e _ >:> .#. ;
+
+! "ih -> e in preterite ending"
+! %{i%}:e <=> _ %{H%}: >:> .#. ;
 
 "Possessive ending [w] after vowel"
 %{u%}:0 <=> Cns %>: _ %{h%}: .#. ;
@@ -98,11 +108,11 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
  
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 
-"i->e present plural"
-i:e <=> Cns _ >:> %{H%}: .#. ;
+! "i->e present plural"
+! i:e <=> Cns _ >:> %{H%}: .#. ;
 
-"drop h after i->e in present plural"
-%{H%}:0 <=> Cns i >:> _ .#. ;
+! "drop h after i->e in present plural"
+! %{H%}:0 <=> Cns i >:> _ .#. ;
 
 
 !"h->0 pret sg"
