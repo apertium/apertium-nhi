@@ -90,15 +90,8 @@ i:0 <=> t l a >:> _ h ;
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ i m:n >: c a l
 
-
-! "delete h before preterite plural que"
-! %{H%}:0 <=> _ >:> q u e .#. ;
-
-! "delete word final h in preterite ending"
-! %{H%}:0 <=> %{i%}:e _ >:> .#. ;
-
-! "ih -> e in preterite ending"
-! %{i%}:e <=> _ %{H%}: >:> .#. ;
+"nasal place assimilation in object prefix"
+ %{m%}:m <=> _ %>: [Vow | p: | b: | m:];
 
 "Possessive ending [w] after vowel"
 %{u%}:0 <=> Cns %>: _ %{h%}: .#. ;
@@ -126,6 +119,6 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ n o >:> x i {u}:u {h}:h
 
 "Metathesis of -{h}{u} for {u}"
-%{h%}:u <=> %{u%}:h _ ; 
+%{h%}:u <=> %{u%}:h _ [Cns | .#.]; 
 
 

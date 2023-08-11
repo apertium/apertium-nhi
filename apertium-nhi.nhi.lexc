@@ -1656,11 +1656,11 @@ toca%<v%>%<tv%>:toca%>  Base2Suffixes;
 toca%<v%>%<tv%>:toca%>  Base3Suffixes;
 
 ! tomar/beber
-oni%<v%>%<iv%>:oni%>  PresentTense;
-oni%<v%>%<iv%>:oni%>  Imperfect;
-oni%<v%>%<iv%>:oni%>  Durative;
-oni%<v%>%<iv%>:oni%>  Base2Suffixes;
-oni%<v%>%<iv%>:oni%>  Base3Suffixes;
+oni%<v%>%<tv%>:oni%>  PresentTense;
+oni%<v%>%<tv%>:oni%>  Imperfect;
+oni%<v%>%<tv%>:oni%>  Durative;
+oni%<v%>%<tv%>:oni%>  Base2Suffixes;
+oni%<v%>%<tv%>:oni%>  Base3Suffixes;
 
 ! spread
 moyohua%<v%>%<tv%>:moyohua%>  PresentTense;
@@ -2081,12 +2081,6 @@ namiqui%<v%>%<tv%>:namic%>    Durative ;
 namiqui%<v%>%<tv%>:namic%>  Base2Suffixes ;
 namiqui%<v%>%<tv%>:namiqui%>  Base3Suffixes ;
 
-! recordar
-ilnamiqui%<v%>%<tv%>:ihlnamiqui%>  PresentTense ;
-ilnamiqui%<v%>%<tv%>:ihlnamiqui%>  Imperfect ;
-ilnamiqui%<v%>%<tv%>:ihlnamic%>    Durative ;
-ilnamiqui%<v%>%<tv%>:ihlnamic%>  Base2Suffixes ;
-ilnamiqui%<v%>%<tv%>:ihlnamiqui%>  Base3Suffixes ;
 
 ! recordar II - alternancia ortográfica
 ilnamiqui%<v%>%<tv%>:ilnamiqui%>  PresentTense ;
@@ -3105,13 +3099,6 @@ hueyilia%<v%>%<tv%>:hueyili%>  Durative ;
 hueyilia%<v%>%<tv%>:hueyili%{H%}%{P%}%>  Base2Suffixes ;
 hueyilia%<v%>%<tv%>:hueyili%>  Base3Suffixes ;
 
-! crece
-titlania%<v%>%<tv%>:titlania%> PresentTense ;
-titlania%<v%>%<tv%>:titlania%>  Imperfect ;
-titlania%<v%>%<tv%>:titlani%>  Durative ;
-titlania%<v%>%<tv%>:titlani%{H%}%{P%}%>  Base2Suffixes ;
-titlania%<v%>%<tv%>:titlani%>  Base3Suffixes ;
-
 ! hacer crecer
 hueyilihtia%<v%>%<tv%>:hueyilihtia%> PresentTense ;
 hueyilihtia%<v%>%<tv%>:hueyilihtia%>  Imperfect ;
@@ -3153,6 +3140,13 @@ hueyitilia%<v%>%<tv%>:hueyitilia%>  Imperfect ;
 hueyitilia%<v%>%<tv%>:hueyitili%>  Durative ;
 hueyitilia%<v%>%<tv%>:hueyitili%{H%}%{P%}%>  Base2Suffixes ;
 hueyitilia%<v%>%<tv%>:hueyitili%>  Base3Suffixes ;
+
+! hacer algo chiquito
+huantia%<v%>%<tv%>:huantia%> PresentTense ;
+huantia%<v%>%<tv%>:huantia%>  Imperfect ;
+huantia%<v%>%<tv%>:huanti%>  Durative ;
+huantia%<v%>%<tv%>:huanti%{H%}%{P%}%>  Base2Suffixes ;
+huantia%<v%>%<tv%>:huanti%>  Base3Suffixes ;
 
 ! seguir
 seguiroa%<v%>%<tv%>:seguiroa%>  PresentTense;
@@ -3298,6 +3292,12 @@ pohui%<v%>%<tv2%>:pouh%>  Durative;
 pohui%<v%>%<tv2%>:pouh%>  Base2Suffixes;
 pohui%<v%>%<tv2%>:pohui%>  Base3Suffixes;
 
+! mandarle algo a alguien
+titlania%<v%>%<tv2%>:titlania%> PresentTense ;
+titlania%<v%>%<tv2%>:titlania%>  Imperfect ;
+titlania%<v%>%<tv2%>:titlani%>  Durative ;
+titlania%<v%>%<tv2%>:titlani%{H%}%{P%}%>  Base2Suffixes ;
+titlania%<v%>%<tv2%>:titlani%>  Base3Suffixes ;
 
 ! poner en alto
 huehcapantlalia%<v%>%<tv2%>:huehcapantlalia%> PresentTense ;
@@ -3315,11 +3315,11 @@ ilhuia%<v%>%<tv2%>:ilhui%{H%}%{P%}%> Base2Suffixes ;
 ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
 
 ! decir
-ihlhuia%<v%>%<tv2%>:ihlhuia%> PresentTense ;
-ihlhuia%<v%>%<tv2%>:ihlhua%>  Imperfect ;
-ihlhuia%<v%>%<tv2%>:ihlhuih%> Durative ;
-ihlhuia%<v%>%<tv2%>:ihlhui%{H%}%{P%}%> Base2Suffixes ;
-ihlhuia%<v%>%<tv2%>:ihlhui%>  Base3Suffixes ;
+ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
+ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
+ilhuia%<v%>%<tv2%>:ilhuih%> Durative ;
+ilhuia%<v%>%<tv2%>:ilhui%{H%}%{P%}%> Base2Suffixes ;
+ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
 
 ! llorarle
 choquilia%<v%>%<tv2%>:choquilia%> PresentTense ;
@@ -3580,9 +3580,9 @@ LEXICON Optative
 @D.PST@@R.Sa.Pl@%<opt%>:@D.PST@@R.Sa.Pl@can # ;
 
 LEXICON DirectionAway
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<and%>:@D.PST@@D.Sa.Pl@@D.Opt@ti    # ;
-@D.PST@@D.Sa.Pl@@D.Opt@%<fut%>%<and%>:@D.PST@@D.Sa.Pl@@D.Opt@tiuh    # ;
-@D.PST@@R.Sa.Pl@@D.Opt@%<fut%>%<and%>:@D.PST@@R.Sa.Pl@@D.Opt@tihue # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<and%>:@D.PST@@D.Sa.Pl@@D.Opt@ti    # ;
+@D.PST@@D.Sa.Pl@@D.Opt@%<and%>:@D.PST@@D.Sa.Pl@@D.Opt@tiuh    # ;
+@D.PST@@R.Sa.Pl@@D.Opt@%<and%>:@D.PST@@R.Sa.Pl@@D.Opt@tihue # ;
 
 @R.PST@@D.Sa.Pl@@D.Opt@%<pst%>%<and%>:@R.PST@@D.Sa.Pl@@D.Opt@to    # ;
 @R.PST@@R.Sa.Pl@@D.Opt@%<pst%>%<and%>:@R.PST@@R.Sa.Pl@@D.Opt@toh # ;
@@ -3633,6 +3633,7 @@ LEXICON Predicate
 @R.Sa.2@:@R.Sa.2@                                     Honorific ;
                                                       Possession ;
                                                       Nominals ;
+                                                      Numerales ;
 
 
 LEXICON Possession
@@ -4289,6 +4290,7 @@ cultura:cultura                                 EsSuffF ;
 pueblo:pueblo                                   EsSuffM ;
 danza:danza                                     EsSuffF ;
 difunto:difunto                                 EsSuffM ;
+nombre:nombre                                   EsSuffM ;
 ejemplo:ejemplo                                 EsSuffM ;
 fiesta:fiesta                                   EsSuffF ;
 fusion:fusion                                   EsSuffF ;
@@ -4372,6 +4374,9 @@ burro:burro                                     EsSuffM ;
 ballet:ballet                                   EsSuffM ;
 piztola:piztola                                 EsSuffF ;
 segeta:segeta                                   EsSuffF ;
+chela:chela                                     EsSuffF ;
+cerveza:cerveza                                 EsSuffF ;
+
 dizco:dizco                                     EsSuffM ;
 punto:punto                                     EsSuffF ;
 parte:parte                                     EsSuffF ;
@@ -4450,6 +4455,7 @@ refrezco:refrezco                               EsSuffM ;
 consulado:consulado                             EsSuffM ;
 ezpañol:ezpañol                                 EsSuffM ;
 jefe:jefe                                       EsSuffM ;
+traje:traje                                       EsSuffM ;
 lija:lija                                       EsSuffF ;
 maíz:maíz                                       EsSuffM ;
 mama:mama                                       EsSuffF ;
@@ -4487,6 +4493,8 @@ lechuga:lechuga                                 EsSuffF ;
 pazador:pazador                                 EsSuffM ;
 contrato:contrato                               EsSuffM ;
 precidente:precidente                           EsSuffM ;
+presidente:presidente                           EsSuffM ;
+pulque:pulque                                   EsSuffM ;
 rato:rato                                       EsSuffM ;
 pulga:pulga                                     EsSuffF ;
 municipio:municipio                             EsSuffM ;
@@ -4557,6 +4565,7 @@ ohueh:ohueh              Adj ; ! "difícil"
 atrasado:atrasad      Adj-Esp-m/f ; ! "atrasado"
 lácteo:lácte          Adj-Esp-m/f ; ! "milky"
 
+originario:originari   Adj-Esp-m/f ; ! "originating"
 reconocido:reconocid   Adj-Esp-m/f ; ! "reconocido"
 cancerígeno:cancerígen Adj-Esp-m/f ; ! ""
 pobre:pobre            Adj-Esp-mf ; ! "pobre"
@@ -4621,13 +4630,14 @@ LEXICON Adj-Esp-m/f
 
 LEXICON Adverbios 
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
-entonces:entonces            AdvEs ; 
-ahorita:ahorita              AdvEs ; 
-después:después              AdvEs ;
-siempre:siempre              AdvEs ; 
-ahora:ahora                  AdvEs ; 
-pues:pues                    AdvEs ; 
-bueno:bueno                  AdvEs ;
+entonces:entonces               AdvEs ; 
+aproximádamente:aproximádamente AdvEs ;
+ahorita:ahorita                 AdvEs ; 
+después:después                 AdvEs ;
+siempre:siempre                 AdvEs ; 
+ahora:ahora                     AdvEs ; 
+pues:pues                       AdvEs ; 
+bueno:bueno                     AdvEs ;
 axan:axan                    Adv ; ! ahora
 achto:achto                  Adv ; ! primero/antes
 ayamo:ayamo                  Adv ; ! todavía no
@@ -4703,13 +4713,14 @@ en:en                      Pr-Esp ;  ! "en"
 desde:desde                      Pr-Esp ;  ! "desde"
 para:para                    Pr-Esp ;  ! "para"
 sin:sin                      Pr-Esp ; ! "sin"
-
+hasta:hasta                  Pr-Esp ; ! ""
 ic:ic                        Pr ;  ! "por"
 
 LEXICON Conj
 ihcuac%<cnjsub%>:ihcuac # ;
 tla%<cnjsub%>:tla # ;
 queman%<cnjsub%>:queman # ;
+hasta%<cnjsub%>:hasta # ;
 
 LEXICON Interjecciones 
 
@@ -4717,6 +4728,9 @@ ay:ay                        INTJ ; ! "ay"
 aaa:aaa                      INTJ ; ! "aaa"
 igual:igual                  INTJ ; ! "igual"
 sí:sí                        INTJ ; ! "sí"
+mm:mm                        INTJ ; ! "mmm"
+eh:eh                        INTJ ; ! " eh"
+este:este                    INTJ ; ! ""
 
 LEXICON Puntuación
 
