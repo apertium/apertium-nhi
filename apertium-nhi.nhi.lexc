@@ -3299,6 +3299,13 @@ titlania%<v%>%<tv2%>:titlani%>  Durative ;
 titlania%<v%>%<tv2%>:titlani%{H%}%{P%}%>  Base2Suffixes ;
 titlania%<v%>%<tv2%>:titlani%>  Base3Suffixes ;
 
+! echarle
+echarhuilia%<v%>%<tv2%>:echarhuilia%> PresentTense ;
+echarhuilia%<v%>%<tv2%>:echarhuilia%>  Imperfect ;
+echarhuilia%<v%>%<tv2%>:echarhuili%>  Durative ;
+echarhuilia%<v%>%<tv2%>:echarhuili%{H%}%{P%}%>  Base2Suffixes ;
+echarhuilia%<v%>%<tv2%>:echarhuili%>  Base3Suffixes ;
+
 ! poner en alto
 huehcapantlalia%<v%>%<tv2%>:huehcapantlalia%> PresentTense ;
 huehcapantlalia%<v%>%<tv2%>:huehcapantlalia%>  Imperfect ;
@@ -4653,6 +4660,8 @@ cachi:cachi                  Adv ; ! más
 oc:oc                        Adv ; ! más
 tipitzin:tipitzin            Adv ; ! justo después
 
+como:como                    Adv ; ! justo después
+
 huehcauh:huehcauh            Adv ; ! lejos, hace mucho"
 huehcauh:huehca              Adv ; ! lejos, hace mucho" Dir/LR
 
@@ -4712,8 +4721,10 @@ por:por                      Pr-Esp ;  ! "por"
 en:en                      Pr-Esp ;  ! "en"
 desde:desde                      Pr-Esp ;  ! "desde"
 para:para                    Pr-Esp ;  ! "para"
+por:por                    Pr-Esp ;  ! "para"
 sin:sin                      Pr-Esp ; ! "sin"
 hasta:hasta                  Pr-Esp ; ! ""
+como:como                        Pr-Esp ;  ! "por"
 ic:ic                        Pr ;  ! "por"
 
 LEXICON Conj
