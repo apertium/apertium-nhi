@@ -3574,8 +3574,8 @@ LEXICON Pluperfect
 @D.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@D.Sa.Pl@@D.Opt@@R.PST@ca   # ;
 @R.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@R.Sa.Pl@@D.Opt@@R.PST@cah  # ;
 
-@D.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@D.Sa.Pl@@D.Opt@@R.PST@ca   # ; ! Dir/LR
-@R.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@R.Sa.Pl@@D.Opt@@R.PST@cah  # ; ! Dir/LR
+@D.Sa.Pl@@D.Opt@%<plu%>:@D.Sa.Pl@@D.Opt@ca   # ; ! Dir/LR
+@R.Sa.Pl@@D.Opt@%<plu%>:@R.Sa.Pl@@D.Opt@cah  # ; ! Dir/LR
 
 LEXICON Future
 @D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z    # ;

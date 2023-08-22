@@ -79,6 +79,9 @@ i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
 "%{H%} -> h in plural preterite"
 %{H%}:h <=> Vow _ %{P%}:0 >:> q: u: e: ;
 
+"%{H%} -> h in pluperfect"
+%{H%}:h <=> Vow _ %{P%}:0 >:> c: a: ;
+
 
 "q:q at beginning of word in qui"
 %{q%}:q <=> .#. _ %{U%}: %{i%}: >:> Cns ;
@@ -107,10 +110,10 @@ i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
 "'q' -> 'q' in /k/ before front vowel "
 %{q%}:q <=> _ %{U%}: %{i%}: >:> [i | e] ;
 
-"u -> u in /k/ before front vowel"
+"u -> u in /k/ before i"
 %{U%}:u <=> %{q%}: _ %{i%}: >:> [i | e] ;
 
-"i -> 0 in /k/ before front vowel"
+"i -> 0 in /k/ before i"
 %{i%}:0 <=> %{q%}: %{U%}: _ >:> [i | e] ;
 
 
