@@ -136,6 +136,7 @@ Multichar_Symbols
 %{e%}                                    ! e / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
+%{U%}                                    ! u in "qui"
 %{H%}
 %{m%}                                    ! m / n
 %{q%}
@@ -261,8 +262,8 @@ LEXICON TV2-IOBJ
 
 %<i_sg1%>:nech%>                                    TV2-DOBJ ;
 %<i_sg2%>:mitz%>                                    TV2-DOBJ ;
-%<i_sg3%>:%{q%}%{u%}%{i%}%>                         TV2-DOBJ ;
-%<i_sg3%>:qui%>                                     TV2-DOBJ ;
+%<i_sg3%>:%{q%}%{U%}%{i%}%>                         TV2-DOBJ ;
+! %<i_sg3%>:qui%>                                     TV2-DOBJ ;
 %<i_pl1%>:tech%>                                    TV2-DOBJ ;
 %<i_pl2%>:mech%>                                    TV2-DOBJ ;
 %<i_pl3%>:qui%{m%}%>                                TV2-DOBJ ;
@@ -310,8 +311,8 @@ TV2-Stem ;
 LEXICON TV-DOBJ
 %<o_sg1%>:nech%>             TV-Honorific ;
 %<o_sg2%>:mitz%>             TV-Honorific ;
-%<o_sg3%>:%{q%}%{u%}%{i%}%>  TV-Honorific ;
-%<o_sg3%>:qui%>              TV-Honorific ;
+%<o_sg3%>:%{q%}%{U%}%{i%}%>  TV-Honorific ;
+! %<o_sg3%>:qui%>              TV-Honorific ;
 
 ! With 3sg obj (and not 3 sbj, and not honorific ), the object prefix can be
 ! omitted optionally. eg "ni-0-piya" "yo lo tengo". this is more of a 
@@ -3715,8 +3716,8 @@ LEXICON TlSuff
 LEXICON ItlSuff
 
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>itl   # ;
-@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>i%{u%}%{h%}  # ;
-%<n%>:                                            Plural ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
+%<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
 LEXICON TliSuff
@@ -4096,7 +4097,6 @@ totoniliztl:totoniliz                           TlSuff ; ! "ardor, calor"
 acahualxochitl:acahualxochi                     TlSuff ;
 tonahuatl:tonahua                               TlSuff ;
 tichalotl:tichalo                               TlSuff ;
-xihuitl:xihui                                   TlSuff ;
 comitl:comi                                     TlSuff ;
 itl:i                                           TlSuff ;
 cetlacatl:cetlaca                               TlSuff ;
@@ -4263,7 +4263,7 @@ tlanamacaloyan:tlanamacaloyan                   NoSuff ; ! "mercado(tienda"
 caxitl:cax                                      ItlSuff ; ! "plato"
 cohuitl:coh                                     ItlSuff ; ! "árbol/madera/monte"
 chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
-xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
+xihuitl:xi%{h%}%{u%}                            ItlSuff ; ! "hierba, año"
 cueyitl:cuey                                    ItlSuff ; ! "falda"
 iztaccueyitl:iztaccuey                          ItlSuff ; ! "falda"
 tlilticcueyitl:tlilticcuey                      ItlSuff ; ! "falda"

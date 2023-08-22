@@ -4,8 +4,8 @@ Alphabet
  a b c d e f g h i j k l m n o p q r s t u w x y z
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u %{H%}:0 %{H%}:h
- %{u%}:u
- %{u%}:0
+ %{u%}:u %{u%}:h
+ %{U%}:u %{U%}:0
  %{q%}:q %{q%}:c
  %{m%}:m %{m%}:n
  %{c%}:c %{c%}:0
@@ -64,24 +64,34 @@ i:0 <=> [n | m | t] o >:> _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z 
 "ih -> e in preterite (1)"
 i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
 
+"q:q at beginning of word in qui"
+%{q%}:q <=> .#. _ %{U%}: %{i%}: >:> Cns ;
+
+"u:u at beginning of word in qui"
+%{U%}:u <=> .#. %{q%}:q _ %{i%}: >:> Cns ;
+
+"i:i at beginning of word in qui"
+%{i%}:i <=> .#. %{q%}:q %{U%}:u _ >:> Cns ;
+
 
 "'q' -> 'c' in /k/ between a V and a C "
-%{q%}:c <=> Vow >:> _ %{u%}: %{i%}: >:> Cns ;
+%{q%}:c <=> Vow >:> _ %{U%}: %{i%}: >:> Cns ;
 
 "'q' -> 'c' in /k/ when followed by a V "
-%{q%}:c <=> >:> _ %{u%}: %{i%}: >:> [a | o | u] ;
+%{q%}:c <=> >:> _ %{U%}: %{i%}: >:> [a | o | u] ;
 
 "u -> 0 in /k/ between V and C"
-%{u%}:0 <=> Vow >:> %{q%}: _ %{i%}: >:> Cns ;
+%{U%}:0 <=> Vow >:> %{q%}: _ %{i%}: >:> Cns ;
 
 "u -> 0 in /k/ when followed by a V"
-%{u%}:0 <=> >:> %{q%}: _ %{i%}: >:> [a | o | u] ;
+%{U%}:0 <=> >:> %{q%}: _ %{i%}: >:> [a | o | u] ;
 
 "i -> 0 in /k/ between V and C"
-%{i%}:0 <=> Vow >:> %{q%}: %{u%}: _ >:> Cns ;
+%{i%}:0 <=> Vow >:> %{q%}: %{U%}: _ >:> Cns ;
+
 
 "i -> 0 in /k/ when followed by a V"
-%{i%}:0 <=> %{q%}: %{u%}: _ >:> Vow ;
+%{i%}:0 <=> %{q%}: %{U%}: _ >:> Vow ;
 
 "Weak /i/ drops after tla"
 i:0 <=> t l a >:> _ h ;
@@ -112,13 +122,18 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;
 
 "Metathesis of -{h}{u} for {h}"
-%{u%}:h <=  _ %{h%}: %>: i t l ;
+%{u%}:h <= %{h%}:u _ [Cns | .#.];
 
-!@ x i {u}:h {h}:u >:> i t l
-!@ x i {u}:h {h}:u >:> i t l 
 !@ n o >:> x i {u}:u {h}:h
 
 "Metathesis of -{h}{u} for {u}"
-%{h%}:u <=> %{u%}:h _ [Cns | .#.]; 
+%{h%}:u <=> _ %{u%}:h [Cns | .#.]; 
 
 
+"inv. Metathesis of -{h}{u} for {h}"
+%{u%}:u <= %{h%}:h _ [Vow | >:];
+
+!@ n o >:> x i {u}:u {h}:h
+
+"inv. Metathesis of -{h}{u} for {u}"
+%{h%}:h <=> _ %{u%}:u [Vow | >:]; 
