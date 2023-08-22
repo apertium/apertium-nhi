@@ -1506,13 +1506,6 @@ cuatiqui%<v%>%<iv%>:cuatiqui%>  Durative;
 cuatiqui%<v%>%<iv%>:cuatiqui%{H%}%{P%}%>  Base2Suffixes;
 cuatiqui%<v%>%<iv%>:cuatiqui%>  Base3Suffixes;
 
-! tejer
-ihquiti%<v%>%<iv%>:ihquiti%>  PresentTense;
-ihquiti%<v%>%<iv%>:ihquiti%>  Imperfect;
-ihquiti%<v%>%<iv%>:ihqui%>   Durative;
-ihquiti%<v%>%<iv%>:ihquit%>   Base2Suffixes;
-ihquiti%<v%>%<iv%>:ihquiti%>  Base3Suffixes;
-
 !esperar
 chiya%<v%>%<tv%>:chiya%>  PresentTense;
 chiya%<v%>%<tv%>:chiya%>  Imperfect;
@@ -1845,6 +1838,13 @@ abandonaroa%<v%>%<tv%>:abandonaro%>  Durative;
 abandonaroa%<v%>%<tv%>:abandonaroh%>  Base2Suffixes;
 abandonaroa%<v%>%<tv%>:abandonaro%>  Base2Suffixes;
 abandonaroa%<v%>%<tv%>:abandonaro%>  Base3Suffixes;
+
+! tejer
+ihquiti%<v%>%<tv%>:ihquiti%>  PresentTense;
+ihquiti%<v%>%<tv%>:ihquiti%>  Imperfect;
+ihquiti%<v%>%<tv%>:ihqui%>   Durative;
+ihquiti%<v%>%<tv%>:ihquit%>   Base2Suffixes;
+ihquiti%<v%>%<tv%>:ihquiti%>  Base3Suffixes;
 
 ! aparecer
 apareceroa%<v%>%<tv%>:apareceroa%>  PresentTense;
@@ -3902,6 +3902,8 @@ mas%<cnjcoo%>:mas # ;
 amo%<neg%>:amo # ;
 amo%<adv%>:amo # ;
 
+%<px3sg%>tech%<n%>%<rel%>: ich # ; 
+
 quema%<afirm%>:quema # ;
 
 yeyi%<num%>:yeyi # ; ! tres
@@ -3978,7 +3980,7 @@ ciqui%<prn%>:ciqui                                     # ; ! "un@s"
 oc%<adv%>+ciqui%<prn%>:occiqui                                # ; ! "un@s mas"
 ce%<prn%>:ce                                                  # ; ! un(o)
 oc%<adv%>+ce%<prn%>:occe                                      # ;  ! otro
-
+tlenza%<prn%>:tlenza                                          # ; ! lo que sea
 miac%<prn%>:miac                                             # ; ! mucho
 miac%<prn%>%<pl%>:miaqu%>eh                                  # ; ! muchos
 miac%<prn%>%<pl%>:miqu%>eh                                   # ; ! muchos
@@ -4018,6 +4020,8 @@ amelatl: amelatl                                TlSuff ; ! "manantial"
 atl:a                                           TlSuff ; ! "agua"
 istagatl:istaga                                 TlSuff ; ! "agua salada"
 hueyiistagatl:hueyiistaga                       TlSuff ; ! "agua del mar"
+nezcayotl:nezcayo                               TlSuff ; ! "imagen"
+
 
 cacalotl:cacalo                                 TlSuff ; ! "cuervo"
 cihuatl:cihua                                   TlSuff ; ! "mujer"
@@ -4657,7 +4661,7 @@ LEXICON AdjDim
 %<adj%>:                               Diminutivo ;
 
 LEXICON Adj
-%<adj%>:0  # ;
+%<adj%>%<sg%>:0  # ;
 
 
 LEXICON Adj-Esp-mf

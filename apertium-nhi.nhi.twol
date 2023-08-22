@@ -139,11 +139,19 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "nasal place assimilation in object prefix"
  %{m%}:m <=> _ %>: [Vow | p: | b: | m:];
 
+
+
+"Possessive ending [w] after cons"
+%{u%}:0 <=> Cns %>: _ %{h%}:0 .#. ;
+
+"Possessive ending [w] after cons second component"
+%{h%}:0 <=> Cns %>: %{u%}:0 _ .#. ;
+
 "Possessive ending [w] after vowel"
-%{u%}:0 <=> Cns %>: _ %{h%}: .#. ;
+%{u%}:u <=> Vow %>: _ %{h%}:h .#. ;
 
 "Possessive ending [w] after vowel second component"
-%{h%}:0 <=> Cns %>: %{u%}:0 _ .#. ;
+%{h%}:h <=> Vow %>: %{u%}:u _ .#. ;
  
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 
@@ -173,3 +181,4 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 
 "inv. Metathesis of -{h}{u} for {u}"
 %{h%}:h <=> _ %{u%}:u [Vow | >:]; 
+
