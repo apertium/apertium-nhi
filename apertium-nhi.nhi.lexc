@@ -1814,6 +1814,13 @@ aprenderoa%<v%>%<tv%>:aprenderoh%>  Durative;
 aprenderoa%<v%>%<tv%>:aprenderoh%>  Base2Suffixes;
 aprenderoa%<v%>%<tv%>:aprendero%>  Base3Suffixes;
 
+!invitar
+invitaroa%<v%>%<tv%>:invitaroa%>  PresentTense;
+invitaroa%<v%>%<tv%>:invitaroa%>  Imperfect;
+invitaroa%<v%>%<tv%>:invitaroh%>  Durative;
+invitaroa%<v%>%<tv%>:invitaroh%>  Base2Suffixes;
+invitaroa%<v%>%<tv%>:invitaro%>  Base3Suffixes;
+
 ! juntar/acercar a algo
 nitichoa%<v%>%<tv%>:nitichoa%>  PresentTense;
 nitichoa%<v%>%<tv%>:nitichoa%>  Imperfect;
@@ -1885,11 +1892,11 @@ conviviroa%<v%>%<tv%>:conviviro%>  Base2Suffixes;
 conviviroa%<v%>%<tv%>:conviviro%>  Base3Suffixes;
 
 ! ver
-itta%<v%>%<tv%>:itta%>     PresentTense ;
-itta%<v%>%<tv%>:itta%>     Imperfect ;
-itta%<v%>%<tv%>:itz%>      Durative ;
-itta%<v%>%<tv%>:itta%>     Base2Suffixes ;
-itta%<v%>%<tv%>:itta%>     Base3Suffixes ;
+itta%<v%>%<tv%>:itta%>     PresentTense ; !Dir/LR
+itta%<v%>%<tv%>:itta%>     Imperfect ;!Dir/LR
+itta%<v%>%<tv%>:itz%>      Durative ;!Dir/LR
+itta%<v%>%<tv%>:itta%>     Base2Suffixes ;!Dir/LR
+itta%<v%>%<tv%>:itta%>     Base3Suffixes ;!Dir/LR
 
 ! ver -- alternancia ortográfica
 itta%<v%>%<tv%>:ita%>     PresentTense ;
@@ -3670,6 +3677,7 @@ LEXICON Nominals
                                                    Nouns ;
                                                    Adjetivos ;
                                                    Relacionales ;
+                                                   Numerales ;
 
 LEXICON Honorific !TODO: add i -> honorific vowel harmony in .twolc file.
 %<hon%>:on%>                   Possession ;
@@ -3772,9 +3780,10 @@ LEXICON NoSuff
 !%<n%>%<barb%>:0                                             EsPlural ;
 
 LEXICON EsSuffM
-@D.Sa.Pl@%<n%>%<barb%>%<m%>%<sg%>:@D.Sa.Pl@                           # ;
-%<n%>%<barb%>%<m%>:0                                             EsPlural ;
-@D.Sa.Pl@%<n%>%<m%>%<sg%>:@D.Sa.Pl@                           # ;
+@D.Sa.Pl@%<n%>%<barb%>%<m%>%<sg%>:@D.Sa.Pl@              # ;
+%<n%>%<barb%>%<m%>:0                                     EsPlural ;
+
+@D.Sa.Pl@%<n%>%<m%>%<sg%>:@D.Sa.Pl@                      # ;
 %<n%>%<m%>:0                                             EsPlural ;
 
 LEXICON EsSuffF
@@ -3928,6 +3937,13 @@ chicome:chicome                                 NUM ; ! "siete"
 chicueyi:chicueyi                               NUM ; ! "ocho"
 chicnahui:chicnahui                             NUM ; ! "nueve"
 mahtlactl:mahtlactl                             NUM ; ! "diez"
+mahtlactl:mahtlactli                             NUM ; ! "diez" Dir/LR
+
+caxtol:caxtol                                   NUM ; 
+cempoal:cempoal                                 NUM ; 
+veinte:veinte                                   NUM ; !
+
+
 
 LEXICON Determinantes 
 
@@ -4308,6 +4324,7 @@ danza:danza                                     EsSuffF ;
 difunto:difunto                                 EsSuffM ;
 nombre:nombre                                   EsSuffM ;
 ejemplo:ejemplo                                 EsSuffM ;
+tenacho:tenacho                                 EsSuffM ;
 fiesta:fiesta                                   EsSuffF ;
 fusion:fusion                                   EsSuffF ;
 galaxia:galaxia                                 EsSuffF ;
@@ -4476,7 +4493,7 @@ refrezco:refrezco                               EsSuffM ;
 consulado:consulado                             EsSuffM ;
 ezpañol:ezpañol                                 EsSuffM ;
 jefe:jefe                                       EsSuffM ;
-traje:traje                                       EsSuffM ;
+traje:traje                                     EsSuffM ;
 lija:lija                                       EsSuffF ;
 maíz:maíz                                       EsSuffM ;
 mama:mama                                       EsSuffF ;
@@ -4587,6 +4604,7 @@ atrasado:atrasad      Adj-Esp-m/f ; ! "atrasado"
 lácteo:lácte          Adj-Esp-m/f ; ! "milky"
 
 originario:originari   Adj-Esp-m/f ; ! "originating"
+borracho:borrach       Adj-Esp-m/f ; ! 
 reconocido:reconocid   Adj-Esp-m/f ; ! "reconocido"
 cancerígeno:cancerígen Adj-Esp-m/f ; ! ""
 pobre:pobre            Adj-Esp-mf ; ! "pobre"
