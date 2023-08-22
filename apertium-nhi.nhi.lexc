@@ -274,7 +274,9 @@ LEXICON TV2-IOBJ
 LEXICON TV2-DOBJ
 @P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Honorific ;
 @P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@0          TV2-Honorific ;
+@P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@0          TV2-Honorific ;
 TV2-Honorific ;
+
 
 LEXICON TV2-Honorific
 %<hon%>:on%>                                       TV2-Dir ;
@@ -3297,6 +3299,12 @@ maca%<v%>%<tv%>:maca%> Durative ;
 maca%<v%>%<tv%>:maca%> Base2Suffixes ;
 maca%<v%>%<tv%>:maca%> Base3Suffixes ;
 
+! mandar algo a alguien
+titlanilia%<v%>%<tv%>:titlanilia%> PresentTense ;
+titlanilia%<v%>%<tv%>:titlanilia%>  Imperfect ;
+titlanilia%<v%>%<tv%>:titlanilih%> Durative ;
+titlanilia%<v%>%<tv%>:titlanili%{H%}%{P%}%> Base2Suffixes ;
+titlanilia%<v%>%<tv%>:titlanili%>  Base3Suffixes ;
 
 ! pertencer
 pohui%<v%>%<tv%>:pohui%>  PresentTense;
