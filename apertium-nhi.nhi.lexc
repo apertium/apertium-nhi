@@ -15,7 +15,7 @@ Multichar_Symbols
 %<pr%>                                   ! Preposición
 %<itg%>                                  ! Interrogativo
 %<tv%>                                   ! Transitivo
-%<tv2%>                                  ! Bitransitivo
+%<tv%>                                  ! Bitransitivo
 %<iv%>                                   ! Intransitivo
 %<cop%>
 %<m%>
@@ -514,6 +514,11 @@ LEXICON YoPres
 %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohueh # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohueh # ;
 %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohueh # ;
+
+
+%<s_pl1%>yohui%<v%>%<iv%>%<opt%>:ti%>ya%>can # ;
+%<s_pl2%>yohui%<v%>%<iv%>%<opt%>:xi%>ya%>can # ;
+%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:ya%>can # ;
 
 
 %<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yuhui # ;! Dir/LR
@@ -3171,11 +3176,11 @@ tlazaloa%<v%>%<tv%>:tlazaloh%>  Base2Suffixes;
 tlazaloa%<v%>%<tv%>:tlazalo%>  Base3Suffixes;
 
 ! hacer trabajar
-tiquitiltia%<v%>%<tv2%>:tiquitiltia%>  PresentTense;
-tiquitiltia%<v%>%<tv2%>:tiquitilta%>  Imperfect;
-tiquitiltia%<v%>%<tv2%>:tiquitiltih%>  Durative;
-tiquitiltia%<v%>%<tv2%>:tiquitilti%{H%}%{P%}%>  Base2Suffixes;
-tiquitiltia%<v%>%<tv2%>:tiquitilti%>  Base3Suffixes;
+tiquitiltia%<v%>%<tv%>:tiquitiltia%>  PresentTense;
+tiquitiltia%<v%>%<tv%>:tiquitilta%>  Imperfect;
+tiquitiltia%<v%>%<tv%>:tiquitiltih%>  Durative;
+tiquitiltia%<v%>%<tv%>:tiquitilti%{H%}%{P%}%>  Base2Suffixes;
+tiquitiltia%<v%>%<tv%>:tiquitilti%>  Base3Suffixes;
 
 
 !amar
@@ -3202,18 +3207,18 @@ trataroa%<v%>%<tv%>:trataro%>  Base2Suffixes;
 trataroa%<v%>%<tv%>:trataro%>  Base3Suffixes;
 
 ! poner (uno por uno)
-tlatlalia%<v%>%<tv2%>:tlatlalia%> PresentTense ;
-tlatlalia%<v%>%<tv2%>:tlatlalia%>  Imperfect ;
-tlatlalia%<v%>%<tv2%>:tlatlalih%> Durative ;
-tlatlalia%<v%>%<tv2%>:tlatlali%{H%}%{P%}%> Base2Suffixes ;
-tlatlalia%<v%>%<tv2%>:tlatlali%>  Base3Suffixes ;
+tlatlalia%<v%>%<tv%>:tlatlalia%> PresentTense ;
+tlatlalia%<v%>%<tv%>:tlatlalia%>  Imperfect ;
+tlatlalia%<v%>%<tv%>:tlatlalih%> Durative ;
+tlatlalia%<v%>%<tv%>:tlatlali%{H%}%{P%}%> Base2Suffixes ;
+tlatlalia%<v%>%<tv%>:tlatlali%>  Base3Suffixes ;
 
 ! mandar algo a alguien
-titlanilia%<v%>%<tv2%>:titlanilia%> PresentTense ;
-titlanilia%<v%>%<tv2%>:titlanilia%>  Imperfect ;
-titlanilia%<v%>%<tv2%>:titlanilih%> Durative ;
-titlanilia%<v%>%<tv2%>:titlanili%{H%}%{P%}%> Base2Suffixes ;
-titlanilia%<v%>%<tv2%>:titlanili%>  Base3Suffixes ;
+titlanilia%<v%>%<tv%>:titlanilia%> PresentTense ;
+titlanilia%<v%>%<tv%>:titlanilia%>  Imperfect ;
+titlanilia%<v%>%<tv%>:titlanilih%> Durative ;
+titlanilia%<v%>%<tv%>:titlanili%{H%}%{P%}%> Base2Suffixes ;
+titlanilia%<v%>%<tv%>:titlanili%>  Base3Suffixes ;
 
 
 ! sonar (la campana)
@@ -3279,190 +3284,190 @@ zazaca%<v%>%<tv%>:zazaca%>  Base3Suffixes;
 
 LEXICON TV2-Stem
 ! dar
-maca%<v%>%<tv2%>:maca%> PresentTense ;
-maca%<v%>%<tv2%>:maca%> Imperfect ;
-maca%<v%>%<tv2%>:maca%> Durative ;
-maca%<v%>%<tv2%>:maca%> Base2Suffixes ;
-maca%<v%>%<tv2%>:maca%> Base3Suffixes ;
+maca%<v%>%<tv%>:maca%> PresentTense ;
+maca%<v%>%<tv%>:maca%> Imperfect ;
+maca%<v%>%<tv%>:maca%> Durative ;
+maca%<v%>%<tv%>:maca%> Base2Suffixes ;
+maca%<v%>%<tv%>:maca%> Base3Suffixes ;
 
 
 ! pertencer
-pohui%<v%>%<tv2%>:pohui%>  PresentTense;
-pohui%<v%>%<tv2%>:pohui%>  Imperfect;
-pohui%<v%>%<tv2%>:pouh%>  Durative;
-pohui%<v%>%<tv2%>:pouh%>  Base2Suffixes;
-pohui%<v%>%<tv2%>:pohui%>  Base3Suffixes;
+pohui%<v%>%<tv%>:pohui%>  PresentTense;
+pohui%<v%>%<tv%>:pohui%>  Imperfect;
+pohui%<v%>%<tv%>:pouh%>  Durative;
+pohui%<v%>%<tv%>:pouh%>  Base2Suffixes;
+pohui%<v%>%<tv%>:pohui%>  Base3Suffixes;
 
 ! mandarle algo a alguien
-titlania%<v%>%<tv2%>:titlania%> PresentTense ;
-titlania%<v%>%<tv2%>:titlania%>  Imperfect ;
-titlania%<v%>%<tv2%>:titlani%>  Durative ;
-titlania%<v%>%<tv2%>:titlani%{H%}%{P%}%>  Base2Suffixes ;
-titlania%<v%>%<tv2%>:titlani%>  Base3Suffixes ;
+titlania%<v%>%<tv%>:titlania%> PresentTense ;
+titlania%<v%>%<tv%>:titlania%>  Imperfect ;
+titlania%<v%>%<tv%>:titlani%>  Durative ;
+titlania%<v%>%<tv%>:titlani%{H%}%{P%}%>  Base2Suffixes ;
+titlania%<v%>%<tv%>:titlani%>  Base3Suffixes ;
 
 ! echarle
-echarhuilia%<v%>%<tv2%>:echarhuilia%> PresentTense ;
-echarhuilia%<v%>%<tv2%>:echarhuilia%>  Imperfect ;
-echarhuilia%<v%>%<tv2%>:echarhuili%>  Durative ;
-echarhuilia%<v%>%<tv2%>:echarhuili%{H%}%{P%}%>  Base2Suffixes ;
-echarhuilia%<v%>%<tv2%>:echarhuili%>  Base3Suffixes ;
+echarhuilia%<v%>%<tv%>:echarhuilia%> PresentTense ;
+echarhuilia%<v%>%<tv%>:echarhuilia%>  Imperfect ;
+echarhuilia%<v%>%<tv%>:echarhuili%>  Durative ;
+echarhuilia%<v%>%<tv%>:echarhuili%{H%}%{P%}%>  Base2Suffixes ;
+echarhuilia%<v%>%<tv%>:echarhuili%>  Base3Suffixes ;
 
 ! poner en alto
-huehcapantlalia%<v%>%<tv2%>:huehcapantlalia%> PresentTense ;
-huehcapantlalia%<v%>%<tv2%>:huehcapantlalia%>  Imperfect ;
-huehcapantlalia%<v%>%<tv2%>:huehcapantlalih%> Durative ;
-huehcapantlalia%<v%>%<tv2%>:huehcapantlali%{H%}%{P%}%> Base2Suffixes ;
-huehcapantlalia%<v%>%<tv2%>:huehcapantlali%>  Base3Suffixes ;
+huehcapantlalia%<v%>%<tv%>:huehcapantlalia%> PresentTense ;
+huehcapantlalia%<v%>%<tv%>:huehcapantlalia%>  Imperfect ;
+huehcapantlalia%<v%>%<tv%>:huehcapantlalih%> Durative ;
+huehcapantlalia%<v%>%<tv%>:huehcapantlali%{H%}%{P%}%> Base2Suffixes ;
+huehcapantlalia%<v%>%<tv%>:huehcapantlali%>  Base3Suffixes ;
 
 
 ! decir
-ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
-ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
-ilhuia%<v%>%<tv2%>:ilhuih%> Durative ;
-ilhuia%<v%>%<tv2%>:ilhui%{H%}%{P%}%> Base2Suffixes ;
-ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
+ilhuia%<v%>%<tv%>:ilhuia%> PresentTense ;
+ilhuia%<v%>%<tv%>:ilhua%>  Imperfect ;
+ilhuia%<v%>%<tv%>:ilhuih%> Durative ;
+ilhuia%<v%>%<tv%>:ilhui%{H%}%{P%}%> Base2Suffixes ;
+ilhuia%<v%>%<tv%>:ilhui%>  Base3Suffixes ;
 
 ! decir
-ilhuia%<v%>%<tv2%>:ilhuia%> PresentTense ;
-ilhuia%<v%>%<tv2%>:ilhua%>  Imperfect ;
-ilhuia%<v%>%<tv2%>:ilhuih%> Durative ;
-ilhuia%<v%>%<tv2%>:ilhui%{H%}%{P%}%> Base2Suffixes ;
-ilhuia%<v%>%<tv2%>:ilhui%>  Base3Suffixes ;
+ilhuia%<v%>%<tv%>:ilhuia%> PresentTense ;
+ilhuia%<v%>%<tv%>:ilhua%>  Imperfect ;
+ilhuia%<v%>%<tv%>:ilhuih%> Durative ;
+ilhuia%<v%>%<tv%>:ilhui%{H%}%{P%}%> Base2Suffixes ;
+ilhuia%<v%>%<tv%>:ilhui%>  Base3Suffixes ;
 
 ! llorarle
-choquilia%<v%>%<tv2%>:choquilia%> PresentTense ;
-choquilia%<v%>%<tv2%>:choquila%>  Imperfect ;
-choquilia%<v%>%<tv2%>:choquilih%> Durative ;
-choquilia%<v%>%<tv2%>:choquili%{H%}%{P%}%> Base2Suffixes ;
-choquilia%<v%>%<tv2%>:choquili%>  Base3Suffixes ;
+choquilia%<v%>%<tv%>:choquilia%> PresentTense ;
+choquilia%<v%>%<tv%>:choquila%>  Imperfect ;
+choquilia%<v%>%<tv%>:choquilih%> Durative ;
+choquilia%<v%>%<tv%>:choquili%{H%}%{P%}%> Base2Suffixes ;
+choquilia%<v%>%<tv%>:choquili%>  Base3Suffixes ;
 
 ! quitarle algo a alguien
-cuilia%<v%>%<tv2%>:cuilia%> PresentTense ;
-cuilia%<v%>%<tv2%>:cuila%>  Imperfect ;
-cuilia%<v%>%<tv2%>:cuilih%> Durative ;
-cuilia%<v%>%<tv2%>:cuili%{H%}%{P%}%> Base2Suffixes ;
-cuilia%<v%>%<tv2%>:cuili%>  Base3Suffixes ;
+cuilia%<v%>%<tv%>:cuilia%> PresentTense ;
+cuilia%<v%>%<tv%>:cuila%>  Imperfect ;
+cuilia%<v%>%<tv%>:cuilih%> Durative ;
+cuilia%<v%>%<tv%>:cuili%{H%}%{P%}%> Base2Suffixes ;
+cuilia%<v%>%<tv%>:cuili%>  Base3Suffixes ;
 
 ! coronar, ponerle algo a la cabeza
-cuaquiltia%<v%>%<tv2%>:cuaquiltia%>  PresentTense;
-cuaquiltia%<v%>%<tv2%>:cuaquilta%>  Imperfect;
-cuaquiltia%<v%>%<tv2%>:cuaquiltih%>  Durative;
-cuaquiltia%<v%>%<tv2%>:cuaquilti%{H%}%{P%}%>  Base2Suffixes;
-cuaquiltia%<v%>%<tv2%>:cuaquilti%>  Base3Suffixes;
+cuaquiltia%<v%>%<tv%>:cuaquiltia%>  PresentTense;
+cuaquiltia%<v%>%<tv%>:cuaquilta%>  Imperfect;
+cuaquiltia%<v%>%<tv%>:cuaquiltih%>  Durative;
+cuaquiltia%<v%>%<tv%>:cuaquilti%{H%}%{P%}%>  Base2Suffixes;
+cuaquiltia%<v%>%<tv%>:cuaquilti%>  Base3Suffixes;
 
 ! venderle algo a alguien
-namaquiltia%<v%>%<tv2%>:namaquiltia%>  PresentTense;
-namaquiltia%<v%>%<tv2%>:namaquilta%>  Imperfect;
-namaquiltia%<v%>%<tv2%>:namaquiltih%>  Durative;
-namaquiltia%<v%>%<tv2%>:namaquilti%{H%}%{P%}%>  Base2Suffixes;
-namaquiltia%<v%>%<tv2%>:namaquilti%>  Base3Suffixes;
+namaquiltia%<v%>%<tv%>:namaquiltia%>  PresentTense;
+namaquiltia%<v%>%<tv%>:namaquilta%>  Imperfect;
+namaquiltia%<v%>%<tv%>:namaquiltih%>  Durative;
+namaquiltia%<v%>%<tv%>:namaquilti%{H%}%{P%}%>  Base2Suffixes;
+namaquiltia%<v%>%<tv%>:namaquilti%>  Base3Suffixes;
 
 ! entregarle algo a alguien
-mactia%<v%>%<tv2%>:mactia%>  PresentTense;
-mactia%<v%>%<tv2%>:macta%>  Imperfect;
-mactia%<v%>%<tv2%>:mactih%>  Durative;
-mactia%<v%>%<tv2%>:macti%{H%}%{P%}%>  Base2Suffixes;
-mactia%<v%>%<tv2%>:macti%>  Base3Suffixes;
+mactia%<v%>%<tv%>:mactia%>  PresentTense;
+mactia%<v%>%<tv%>:macta%>  Imperfect;
+mactia%<v%>%<tv%>:mactih%>  Durative;
+mactia%<v%>%<tv%>:macti%{H%}%{P%}%>  Base2Suffixes;
+mactia%<v%>%<tv%>:macti%>  Base3Suffixes;
 
 
 ! comprarle algo a alguien
-cohuia%<v%>%<tv2%>:cohuia%>  PresentTense;
-cohuia%<v%>%<tv2%>:cohua%>  Imperfect;
-cohuia%<v%>%<tv2%>:cohuih%>  Durative;
-cohuia%<v%>%<tv2%>:cohui%{H%}%{P%}%>  Base2Suffixes;
-cohuia%<v%>%<tv2%>:cohui%>  Base3Suffixes;
+cohuia%<v%>%<tv%>:cohuia%>  PresentTense;
+cohuia%<v%>%<tv%>:cohua%>  Imperfect;
+cohuia%<v%>%<tv%>:cohuih%>  Durative;
+cohuia%<v%>%<tv%>:cohui%{H%}%{P%}%>  Base2Suffixes;
+cohuia%<v%>%<tv%>:cohui%>  Base3Suffixes;
 
 ! comprarle algo a alguien
-cohuilia%<v%>%<tv2%>:cohuilia%>  PresentTense;
-cohuilia%<v%>%<tv2%>:cohuila%>  Imperfect;
-cohuilia%<v%>%<tv2%>:cohuilih%>  Durative;
-cohuilia%<v%>%<tv2%>:cohuili%{H%}%{P%}%>  Base2Suffixes;
-cohuilia%<v%>%<tv2%>:cohuili%>  Base3Suffixes;
+cohuilia%<v%>%<tv%>:cohuilia%>  PresentTense;
+cohuilia%<v%>%<tv%>:cohuila%>  Imperfect;
+cohuilia%<v%>%<tv%>:cohuilih%>  Durative;
+cohuilia%<v%>%<tv%>:cohuili%{H%}%{P%}%>  Base2Suffixes;
+cohuilia%<v%>%<tv%>:cohuili%>  Base3Suffixes;
 
 !enseñarle algo a alguien
-nextilia%<v%>%<tv2%>:nextilia%>  PresentTense;
-nextilia%<v%>%<tv2%>:nextila%>  Imperfect;
-nextilia%<v%>%<tv2%>:nextilih%>  Durative;
-nextilia%<v%>%<tv2%>:nextili%{H%}%{P%}%>  Base2Suffixes;
-nextilia%<v%>%<tv2%>:nextili%>  Base3Suffixes;
+nextilia%<v%>%<tv%>:nextilia%>  PresentTense;
+nextilia%<v%>%<tv%>:nextila%>  Imperfect;
+nextilia%<v%>%<tv%>:nextilih%>  Durative;
+nextilia%<v%>%<tv%>:nextili%{H%}%{P%}%>  Base2Suffixes;
+nextilia%<v%>%<tv%>:nextili%>  Base3Suffixes;
 
 !enseñarle algo a alguien
-nixtilia%<v%>%<tv2%>:nixtilia%>  PresentTense;
-nixtilia%<v%>%<tv2%>:nixtila%>  Imperfect;
-nixtilia%<v%>%<tv2%>:nixtilih%>  Durative;
-nixtilia%<v%>%<tv2%>:nixtili%{H%}%{P%}%>  Base2Suffixes;
-nixtilia%<v%>%<tv2%>:nixtili%>  Base3Suffixes;
+nixtilia%<v%>%<tv%>:nixtilia%>  PresentTense;
+nixtilia%<v%>%<tv%>:nixtila%>  Imperfect;
+nixtilia%<v%>%<tv%>:nixtilih%>  Durative;
+nixtilia%<v%>%<tv%>:nixtili%{H%}%{P%}%>  Base2Suffixes;
+nixtilia%<v%>%<tv%>:nixtili%>  Base3Suffixes;
 
 ! ??? hacer que pixquen??
-pixquiltia%<v%>%<tv2%>:pixquiltia%>  PresentTense;
-pixquiltia%<v%>%<tv2%>:pixquilta%>  Imperfect;
-pixquiltia%<v%>%<tv2%>:pixquiltih%>  Durative;
-pixquiltia%<v%>%<tv2%>:pixquilti%{H%}%{P%}%>  Base2Suffixes;
-pixquiltia%<v%>%<tv2%>:pixquilti%>  Base3Suffixes;
+pixquiltia%<v%>%<tv%>:pixquiltia%>  PresentTense;
+pixquiltia%<v%>%<tv%>:pixquilta%>  Imperfect;
+pixquiltia%<v%>%<tv%>:pixquiltih%>  Durative;
+pixquiltia%<v%>%<tv%>:pixquilti%{H%}%{P%}%>  Base2Suffixes;
+pixquiltia%<v%>%<tv%>:pixquilti%>  Base3Suffixes;
 
 ! sacarle/quitarle algo
-quixtilia%<v%>%<tv2%>:quixtilia%>  PresentTense;
-quixtilia%<v%>%<tv2%>:quixtila%>  Imperfect;
-quixtilia%<v%>%<tv2%>:quixtilih%>  Durative;
-quixtilia%<v%>%<tv2%>:quixtili%{H%}%{P%}%>  Base2Suffixes;
-quixtilia%<v%>%<tv2%>:quixtili%>  Base3Suffixes;
+quixtilia%<v%>%<tv%>:quixtilia%>  PresentTense;
+quixtilia%<v%>%<tv%>:quixtila%>  Imperfect;
+quixtilia%<v%>%<tv%>:quixtilih%>  Durative;
+quixtilia%<v%>%<tv%>:quixtili%{H%}%{P%}%>  Base2Suffixes;
+quixtilia%<v%>%<tv%>:quixtili%>  Base3Suffixes;
 
 !limpiar
-chupahuilia%<v%>%<tv2%>:chupahuilia%>  PresentTense;
-chupahuilia%<v%>%<tv2%>:chupahuila%>  Imperfect;
-chupahuilia%<v%>%<tv2%>:chupahuilih%>  Durative;
-chupahuilia%<v%>%<tv2%>:chupahuili%{H%}%{P%}%>  Base2Suffixes;
-chupahuilia%<v%>%<tv2%>:chupahuili%>  Base3Suffixes;
+chupahuilia%<v%>%<tv%>:chupahuilia%>  PresentTense;
+chupahuilia%<v%>%<tv%>:chupahuila%>  Imperfect;
+chupahuilia%<v%>%<tv%>:chupahuilih%>  Durative;
+chupahuilia%<v%>%<tv%>:chupahuili%{H%}%{P%}%>  Base2Suffixes;
+chupahuilia%<v%>%<tv%>:chupahuili%>  Base3Suffixes;
 
 ! ponerle
-tlalilia%<v%>%<tv2%>:tlalilia%> PresentTense ;
-tlalilia%<v%>%<tv2%>:tlalila%>  Imperfect ;
-tlalilia%<v%>%<tv2%>:tlalilih%> Durative ;
-tlalilia%<v%>%<tv2%>:tlalili%{H%}%{P%}%> Base2Suffixes ;
-tlalilia%<v%>%<tv2%>:tlalili%>  Base3Suffixes ;
+tlalilia%<v%>%<tv%>:tlalilia%> PresentTense ;
+tlalilia%<v%>%<tv%>:tlalila%>  Imperfect ;
+tlalilia%<v%>%<tv%>:tlalilih%> Durative ;
+tlalilia%<v%>%<tv%>:tlalili%{H%}%{P%}%> Base2Suffixes ;
+tlalilia%<v%>%<tv%>:tlalili%>  Base3Suffixes ;
 
 ! ponerle algo hacia dentro
-pantlalilia%<v%>%<tv2%>:pantlalilia%> PresentTense ;
-pantlalilia%<v%>%<tv2%>:pantlalilia%>  Imperfect ;
-pantlalilia%<v%>%<tv2%>:pantlalilih%> Durative ;
-pantlalilia%<v%>%<tv2%>:pantlalili%{H%}%{P%}%> Base2Suffixes ;
-pantlalilia%<v%>%<tv2%>:pantlalili%>  Base3Suffixes ;
+pantlalilia%<v%>%<tv%>:pantlalilia%> PresentTense ;
+pantlalilia%<v%>%<tv%>:pantlalilia%>  Imperfect ;
+pantlalilia%<v%>%<tv%>:pantlalilih%> Durative ;
+pantlalilia%<v%>%<tv%>:pantlalili%{H%}%{P%}%> Base2Suffixes ;
+pantlalilia%<v%>%<tv%>:pantlalili%>  Base3Suffixes ;
 
 ! hacer algo por alguien
-chihuilia%<v%>%<tv2%>:chihuilia%> PresentTense ;
-chihuilia%<v%>%<tv2%>:chihuilia%>  Imperfect ;
-chihuilia%<v%>%<tv2%>:chihuilih%> Durative ;
-chihuilia%<v%>%<tv2%>:chihuili%{H%}%{P%}%> Base2Suffixes ;
-!chihuilia%<v%>%<tv2%>:chihuili%{H%}%{P%}%> Base2Suffixes ;
-chihuilia%<v%>%<tv2%>:chihuili%>  Base3Suffixes ;
+chihuilia%<v%>%<tv%>:chihuilia%> PresentTense ;
+chihuilia%<v%>%<tv%>:chihuilia%>  Imperfect ;
+chihuilia%<v%>%<tv%>:chihuilih%> Durative ;
+chihuilia%<v%>%<tv%>:chihuili%{H%}%{P%}%> Base2Suffixes ;
+!chihuilia%<v%>%<tv%>:chihuili%{H%}%{P%}%> Base2Suffixes ;
+chihuilia%<v%>%<tv%>:chihuili%>  Base3Suffixes ;
 
 ! limpiarle algo
-chupahuilia%<v%>%<tv2%>:chupahuilia%> PresentTense ;
-chupahuilia%<v%>%<tv2%>:chupahuilia%>  Imperfect ;
-chupahuilia%<v%>%<tv2%>:chupahuilih%> Durative ;
-chupahuilia%<v%>%<tv2%>:chupahuili%{H%}%{P%}%> Base2Suffixes ;
-chupahuilia%<v%>%<tv2%>:chupahuili%>  Base3Suffixes ;
+chupahuilia%<v%>%<tv%>:chupahuilia%> PresentTense ;
+chupahuilia%<v%>%<tv%>:chupahuilia%>  Imperfect ;
+chupahuilia%<v%>%<tv%>:chupahuilih%> Durative ;
+chupahuilia%<v%>%<tv%>:chupahuili%{H%}%{P%}%> Base2Suffixes ;
+chupahuilia%<v%>%<tv%>:chupahuili%>  Base3Suffixes ;
 
 ! cumplirle a alguien
-uilia%<v%>%<tv2%>:uilia%> PresentTense ;
-uilia%<v%>%<tv2%>:uilia%>  Imperfect ;
-uilia%<v%>%<tv2%>:uilih%> Durative ;
-uilia%<v%>%<tv2%>:uili%{H%}%{P%}%> Base2Suffixes ;
-uilia%<v%>%<tv2%>:uili%>  Base3Suffixes ;
+uilia%<v%>%<tv%>:uilia%> PresentTense ;
+uilia%<v%>%<tv%>:uilia%>  Imperfect ;
+uilia%<v%>%<tv%>:uilih%> Durative ;
+uilia%<v%>%<tv%>:uili%{H%}%{P%}%> Base2Suffixes ;
+uilia%<v%>%<tv%>:uili%>  Base3Suffixes ;
 
 ! llevarle
-huiquilia%<v%>%<tv2%>:huiquilia%> PresentTense ;
-huiquilia%<v%>%<tv2%>:huiquilia%>  Imperfect ;
-huiquilia%<v%>%<tv2%>:huiquilih%> Durative ;
-huiquilia%<v%>%<tv2%>:huiquili%{H%}%{P%}%> Base2Suffixes ;
-huiquilia%<v%>%<tv2%>:huiquili%>  Base3Suffixes ;
+huiquilia%<v%>%<tv%>:huiquilia%> PresentTense ;
+huiquilia%<v%>%<tv%>:huiquilia%>  Imperfect ;
+huiquilia%<v%>%<tv%>:huiquilih%> Durative ;
+huiquilia%<v%>%<tv%>:huiquili%{H%}%{P%}%> Base2Suffixes ;
+huiquilia%<v%>%<tv%>:huiquili%>  Base3Suffixes ;
 
 ! traerle
-hualiquilia%<v%>%<tv2%>:hualiquilia%> PresentTense ;
-hualiquilia%<v%>%<tv2%>:hualiquilia%>  Imperfect ;
-hualiquilia%<v%>%<tv2%>:hualiquilih%> Durative ;
-hualiquilia%<v%>%<tv2%>:hualiquili%{H%}%{P%}%> Base2Suffixes ;
-hualiquilia%<v%>%<tv2%>:hualiquili%>  Base3Suffixes ;
+hualiquilia%<v%>%<tv%>:hualiquilia%> PresentTense ;
+hualiquilia%<v%>%<tv%>:hualiquilia%>  Imperfect ;
+hualiquilia%<v%>%<tv%>:hualiquilih%> Durative ;
+hualiquilia%<v%>%<tv%>:hualiquili%{H%}%{P%}%> Base2Suffixes ;
+hualiquilia%<v%>%<tv%>:hualiquili%>  Base3Suffixes ;
 
 
 LEXICON Base2Suffixes
@@ -4274,6 +4279,7 @@ tlilticcueyitl:tlilticcuey                      ItlSuff ; ! "falda"
 agosto:agosto                                   EsSuffM ;
 amigo:amiga                                     EsSuffF ;
 amigo:amigo                                     EsSuffM ;
+ganso:ganso                                     EsSuffM ;
 año:año                                         EsSuffM ;
 átomo:átomo                                     EsSuffM ;
 bachiller:bachiller                             EsSuffM ;
@@ -4656,6 +4662,7 @@ LEXICON Adj-Esp-m/f
 LEXICON Adverbios 
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
 entonces:entonces               AdvEs ; 
+aparte:aparte               AdvEs ; 
 aproximádamente:aproximádamente AdvEs ;
 ahorita:ahorita                 AdvEs ; 
 después:después                 AdvEs ;
