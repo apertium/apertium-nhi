@@ -3825,28 +3825,29 @@ yehhuatl%<prn%>%<pers%>%<sg3%>%<short%>:yeh # ;
 !
 ! Formas largas de los pronombres personales singulares.
 !
-nehhuatl%<prn%>%<pers%>%<sg1%>:nehuatl # ;
-tehhuatl%<prn%>%<pers%>%<sg2%>:tehuatl # ;
-yehhuatl%<prn%>%<pers%>%<sg3%>:yehuatl # ;
+nehhuatl%<prn%>%<pers%>%<sg1%>%<abs%>:nehuatl # ;
+tehhuatl%<prn%>%<pers%>%<sg2%>%<abs%>:tehuatl # ;
+yehhuatl%<prn%>%<pers%>%<sg3%>%<abs%>:yehuatl # ;
 
 tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tohuatzin # ;
 tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tehuatzin # ;
 tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tehhuatzin # ;
 
 
-nehhuatl%<prn%>%<pers%>%<sg1%>:nehhuatl # ;
-tehhuatl%<prn%>%<pers%>%<sg2%>:tehhuatl # ;
-yehhuatl%<prn%>%<pers%>%<sg3%>:yehhuatl # ;
+nehhuatl%<prn%>%<pers%>%<sg1%>%<abs%>:nehhuatl # ; ! Dir/LR
+tehhuatl%<prn%>%<pers%>%<sg2%>%<abs%>:tehhuatl # ;  !Dir/LR
+yehhuatl%<prn%>%<pers%>%<sg3%>%<abs%>:yehhuatl # ; ! Dir/LR
 !
 ! Pronombres personales plurales.
 !
-tehhuan%<prn%>%<pers%>%<pl1%>:tehuan # ;
-nimehhuan%<prn%>%<pers%>%<pl2%>:nimehuan # ;
-yehhuan%<prn%>%<pers%>%<pl3%>:yehuan # ;
+! a lo mejor los pronombres plurales no deberian ser abs
+tehhuan%<prn%>%<pers%>%<pl1%>%<abs%>:tehuan # ;
+nimehhuan%<prn%>%<pers%>%<pl2%>%<abs%>:nimehuan # ;
+yehhuan%<prn%>%<pers%>%<pl3%>%<abs%>:yehuan # ;
 
-tehhuan%<prn%>%<pers%>%<pl1%>:tehhuan # ;
-nimehhuan%<prn%>%<pers%>%<pl2%>:nimehhuan # ;
-yehhuan%<prn%>%<pers%>%<pl3%>:yehhuan # ;
+tehhuan%<prn%>%<pers%>%<pl1%>%<abs%>:tehhuan # ;! Dir/LR
+nimehhuan%<prn%>%<pers%>%<pl2%>%<abs%>:nimehhuan # ;! Dir/LR
+yehhuan%<prn%>%<pers%>%<pl3%>%<abs%>:yehhuan # ;! Dir/LR
 
 LEXICON Pr
 
@@ -3959,6 +3960,7 @@ non:non                                         DET ; ! "esx"
 ciqui:ciqui                                     DET ; ! "un@s"
 oc%<adv%>+ciqui:oc%>ciqui                       DET ; ! "un@s mas"
 ce:ce                                           DET ; ! un(o)
+occe:oc%>ce                                     DET ; ! otro
 cada%<barb%>:cada                               DET ; ! cada
 cada:cada                                       DET ; ! cada
 oc%<adv%>+ce:oc%>ce                             DET ;  ! otro
@@ -4073,6 +4075,7 @@ tzicahuaztl:tzicahuaz                           TlSuff ;
 cacalotl:cacalo                                 TlSuff ;
 xocotl:xoco                                     TlSuff ;
 tlaquemitl:tlaquemi                             TlSuff ;
+tlaquentl:tlaquen                               TlSuff ;
 xochitl:xochi                                   TlSuff ;
 totoltitl:totolti                               TlSuff ;
 tiopantl:tiopan                                 TlSuff ;
@@ -4646,8 +4649,8 @@ Mariana:Mariana NP-Ant ;
 
 LEXICON AdjCont
 %<adj%>:c                               Diminutivo ;
-@R.Sa.Sg@%<adj%>:@R.Sa.Sg@c             #;
-@D.Sa@%<adj%>:@D.Sa@c                   #;
+@R.Sa.Sg@%<adj%>%<sg%>:@R.Sa.Sg@c             #;
+@D.Sa@%<adj%>%<sg%>:@D.Sa@c                   #;
 @D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
 
 LEXICON AdjDim
@@ -4658,20 +4661,20 @@ LEXICON Adj
 
 
 LEXICON Adj-Esp-mf
-%<adj%>%<mf%>%<barb%>:0  # ;
-%<adj%>%<mf%>:0  # ;
+%<adj%>%<mf%>%<barb%>%<sg%>:0  # ;
+%<adj%>%<mf%>%<sg%>:0  # ;
 %<adj%>%<mf%>%<barb%>%<pl%>:%>%{e%}s  # ;
 %<adj%>%<mf%>%<pl%>:%>%{e%}s  # ;
 
 
 LEXICON Adj-Esp-m/f
-%<adj%>%<barb%>%<m%>:o  # ;
-%<adj%>%<barb%>%<f%>:a  # ;
+%<adj%>%<barb%>%<m%>%<sg%>:o  # ;
+%<adj%>%<barb%>%<f%>%<sg%>:a  # ;
 %<adj%>%<barb%>%<m%>%<pl%>:os  # ;
 %<adj%>%<barb%>%<f%>%<pl%>:as  # ;
 
-%<adj%>%<m%>:o  # ;
-%<adj%>%<f%>:a  # ;
+%<adj%>%<m%>%<sg%>:o  # ;
+%<adj%>%<f%>%<sg%>:a  # ;
 %<adj%>%<m%>%<pl%>:os  # ;
 %<adj%>%<f%>%<pl%>:as  # ;
 
@@ -4688,6 +4691,7 @@ siempre:siempre                 AdvEs ;
 ahora:ahora                     AdvEs ; 
 pues:pues                       AdvEs ; 
 bueno:bueno                     AdvEs ;
+ahí:ahí                         AdvEs ;
 axan:axan                    Adv ; ! ahora
 achto:achto                  Adv ; ! primero/antes
 ayamo:ayamo                  Adv ; ! todavía no
@@ -4701,6 +4705,7 @@ yaqui:yaqui                  Adv ; ! apenas
 casi:casi                    Adv ;
 cachi:cachi                  Adv ; ! más
 oc:oc                        Adv ; ! más
+occipa:occipa                Adv ; ! otra vez
 tipitzin:tipitzin            Adv ; ! justo después
 
 como:como                    Adv ; ! justo después
