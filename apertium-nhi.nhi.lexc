@@ -3637,17 +3637,17 @@ LEXICON NominalSubject
 ! pl1: t-S-me / t-poss-S-huan
 
 @P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@ni%>                      Predicate ;
-@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@in%>                      Predicate ;
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@in%>                      Predicate ; ! Dir/LR
 
 @P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@ti%>      Predicate ;
-@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@it%>      Predicate ;
+@P.Sa.Sg@@P.Sa.2@%<s_sg2%>:@P.Sa.Sg@@P.Sa.2@it%>      Predicate ; ! Dir/LR
 
 @P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                          Predicate "weight: 1.0" ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Predicate ;
-@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@it%>                      Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@it%>                      Predicate ; ! Dir/LR
 
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Predicate ;
-@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@in%>                      Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@in%>                      Predicate ; ! Dir/LR
 
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Predicate ;
                                                       Predicate ;
