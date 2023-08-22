@@ -234,7 +234,7 @@ LEXICON VerbalSubject
 !
 ! ce- subj prefix is 1pl but takes singular subject tense/aspect agreement.
 !
-@P.Sa.Sg@%<s_pl1%>:@P.Sa.Sg@ce%>                      Object ;
+@P.Sa.Sg@%<s_pl1%>:@P.Sa.Sg@ce%>                      Object ; ! Dir/LR
 @P.Sa.Sg@%<s_ind%>:@P.Sa.Sg@ce%>                      Object ;
 
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
@@ -4594,7 +4594,7 @@ frances:frances        Adj-Esp-mf ;  ! "francés"
 español:español        Adj-Esp-mf ; ! "español"
 patronal:patronal      Adj-Esp-mf ; ! "patronal"
 austral:austral        Adj-Esp-mf ; ! ""
-principal:principal        Adj-Esp-mf ; ! ""
+principal:principal    Adj-Esp-mf ; ! ""
 electromagnética:electromagnétic Adj-Esp-m/f ;
 espacial:espacial      Adj-Esp-mf ;
 nanométrico:nanométric Adj-Esp-m/f ;
@@ -4635,12 +4635,21 @@ LEXICON Adj
 
 LEXICON Adj-Esp-mf
 %<adj%>%<mf%>%<barb%>:0  # ;
+%<adj%>%<mf%>:0  # ;
+%<adj%>%<mf%>%<barb%>%<pl%>:%>%{e%}s  # ;
+%<adj%>%<mf%>%<pl%>:%>%{e%}s  # ;
+
 
 LEXICON Adj-Esp-m/f
 %<adj%>%<barb%>%<m%>:o  # ;
 %<adj%>%<barb%>%<f%>:a  # ;
 %<adj%>%<barb%>%<m%>%<pl%>:os  # ;
 %<adj%>%<barb%>%<f%>%<pl%>:as  # ;
+
+%<adj%>%<m%>:o  # ;
+%<adj%>%<f%>:a  # ;
+%<adj%>%<m%>%<pl%>:os  # ;
+%<adj%>%<f%>%<pl%>:as  # ;
 
 
 
@@ -4726,6 +4735,7 @@ zancican:zancican            Adv ; ! junto (en un solo lugar)
 LEXICON Preposiciones 
 
 de:de                        Pr-Esp ;  ! "de"
+de%<pr%>%+el%<det%>%<def%>:de%>l #;
 a:a                          Pr-Esp ;  ! "a"
 por:por                      Pr-Esp ;  ! "por"
 en:en                      Pr-Esp ;  ! "en"

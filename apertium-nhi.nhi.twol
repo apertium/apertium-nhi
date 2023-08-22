@@ -3,7 +3,8 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U W X Y Z
  a b c d e f g h i j k l m n o p q r s t u w x y z
  %{i%}:i %{i%}:0
- %{h%}:h %{h%}:u %{H%}:0 %{H%}:h
+ %{h%}:h %{h%}:u 
+ %{H%}:0 %{H%}:h
  %{u%}:u %{u%}:h
  %{U%}:u %{U%}:0
  %{q%}:q %{q%}:c
@@ -34,6 +35,10 @@ i:o <=> [ n | t | x ] _ >:> %{q%}:c %{u%}:0 %{i%}:0 >:> o n >:> ;
 
 "Plural Spanish Nouns"
 %{e%}:0 <=> Vow >:> _ s ;
+!@ n o >:> c o m p a ñ e r o >:> {e}:0 s
+
+"Plural Spanish Nouns after cons"
+%{e%}:e <=> Cns >:> _ s ;
 !@ n o >:> c o m p a ñ e r o >:> {e}:0 s
 
 "Nasal assimilation"
@@ -68,6 +73,12 @@ i:0 <=> [n | m | t] o >:> _ [ [ Cns Cns ] - [ t z | t l | c h ] | t l Cns | t z 
 "ih -> e in preterite (1)"
 i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
 
+"%{H%} -> 0 in i:e h pret"
+%{H%}:0 <=> i:e _ %{P%}:0 >:> %{c%}:0 .#.;
+
+"%{H%} -> h in plural preterite"
+%{H%}:h <=> Vow _ %{P%}:0 >:> q: u: e: ;
+
 
 "q:q at beginning of word in qui"
 %{q%}:q <=> .#. _ %{U%}: %{i%}: >:> Cns ;
@@ -79,23 +90,41 @@ i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
 %{i%}:i <=> .#. %{q%}:q %{U%}:u _ >:> Cns ;
 
 
+
+
 "'q' -> 'c' in /k/ between a V and a C "
 %{q%}:c <=> Vow >:> _ %{U%}: %{i%}: >:> Cns ;
-
-"'q' -> 'c' in /k/ when followed by a V "
-%{q%}:c <=> >:> _ %{U%}: %{i%}: >:> [a | o | u] ;
 
 "u -> 0 in /k/ between V and C"
 %{U%}:0 <=> Vow >:> %{q%}: _ %{i%}: >:> Cns ;
 
-"u -> 0 in /k/ when followed by a V"
-%{U%}:0 <=> >:> %{q%}: _ %{i%}: >:> [a | o | u] ;
-
 "i -> 0 in /k/ between V and C"
 %{i%}:0 <=> Vow >:> %{q%}: %{U%}: _ >:> Cns ;
 
-"i -> 0 in /k/ when followed by a front vowel"
+
+
+
+"'q' -> 'q' in /k/ before front vowel "
+%{q%}:q <=> _ %{U%}: %{i%}: >:> [i | e] ;
+
+"u -> u in /k/ before front vowel"
+%{U%}:u <=> %{q%}: _ %{i%}: >:> [i | e] ;
+
+"i -> 0 in /k/ before front vowel"
 %{i%}:0 <=> %{q%}: %{U%}: _ >:> [i | e] ;
+
+
+
+"'q' -> 'c' in /k/ when followed by a V "
+%{q%}:c <=> >:> _ %{U%}:0 %{i%}:0 >:> [a | o | u] ;
+
+"u -> 0 in /k/ when followed by a V"
+%{U%}:0 <=> >:> %{q%}:c _ %{i%}:0 >:> [a | o | u] ;
+
+"i -> 0 in /k/ when followed by a V"
+%{i%}:0 <=> >: %{q%}:c %{U%}:0 _ >:> [a | o | u]  ;
+
+
 
 "Weak /i/ drops after tla"
 i:0 <=> t l a >:> _ h ;
