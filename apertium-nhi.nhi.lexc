@@ -11,7 +11,7 @@ Multichar_Symbols
 %<adv%>                                  ! Adverbio
 %<np%>                                   ! Nombre propio
 %<cnjsub%>                               ! Coordinación subordinada
-%<pron%>                                 ! Pronombre
+%<prn%>                                 ! Pronombre
 %<pr%>                                   ! Preposición
 %<itg%>                                  ! Interrogativo
 %<tv%>                                   ! Transitivo
@@ -21,7 +21,7 @@ Multichar_Symbols
 %<m%>
 %<f%>
 %<s_ind%>
-
+%<short%>
 %<pl%>                                   ! Plural
 %<sg%>                                   ! Singular
 %<sg1%>
@@ -3559,8 +3559,11 @@ LEXICON Preterite
 @R.Sa.Pl@@D.Opt@@R.PST@%<pret%>:@R.Sa.Pl@@D.Opt@@R.PST@queh # ;
 
 LEXICON Pluperfect
-@D.Sa.Pl@@D.Opt@%<plu%>:@D.Sa.Pl@@D.Opt@ca   # ;
-@R.Sa.Pl@@D.Opt@%<plu%>:@R.Sa.Pl@@D.Opt@cah  # ;
+@D.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@D.Sa.Pl@@D.Opt@@R.PST@ca   # ;
+@R.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@R.Sa.Pl@@D.Opt@@R.PST@cah  # ;
+
+@D.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@D.Sa.Pl@@D.Opt@@R.PST@ca   # ; ! Dir/LR
+@R.Sa.Pl@@D.Opt@@R.PST@%<plu%>:@R.Sa.Pl@@D.Opt@@R.PST@cah  # ; ! Dir/LR
 
 LEXICON Future
 @D.PST@@D.Sa.Pl@@D.Opt@%<fut%>:@D.PST@@D.Sa.Pl@@D.Opt@z    # ;
@@ -3801,9 +3804,9 @@ LEXICON Personales
 !
 ! Formas cortas de los pronombres personales singulares.
 !
-nehhuatl%<prn%>%<pro%>%<sg1%>:neh # ;
-tehhuatl%<prn%>%<pro%>%<sg2%>:teh # ;
-yehhuatl%<prn%>%<pro%>%<sg3%>:yeh # ;
+nehhuatl%<prn%>%<pers%>%<sg1%>%<short%>:neh # ;
+tehhuatl%<prn%>%<pers%>%<sg2%>%<short%>:teh # ;
+yehhuatl%<prn%>%<pers%>%<sg3%>%<short%>:yeh # ;
 
 !
 ! Formas largas de los pronombres personales singulares.
@@ -3946,16 +3949,16 @@ catliye%<det%>%<pl%>:catliya%>queh                 # ; ! cual
 
 
 LEXICON Pronombres 
-nin%<pron%>:nin                                         # ; ! "estx"
-non%<pron%>:non                                         # ; ! "esx"
-ciqui%<pron%>:ciqui                                     # ; ! "un@s"
-oc%<adv%>+ciqui%<pron%>:occiqui                                # ; ! "un@s mas"
-ce%<pron%>:ce                                                  # ; ! un(o)
-oc%<adv%>+ce%<pron%>:occe                                      # ;  ! otro
+nin%<prn%>:nin                                         # ; ! "estx"
+non%<prn%>:non                                         # ; ! "esx"
+ciqui%<prn%>:ciqui                                     # ; ! "un@s"
+oc%<adv%>+ciqui%<prn%>:occiqui                                # ; ! "un@s mas"
+ce%<prn%>:ce                                                  # ; ! un(o)
+oc%<adv%>+ce%<prn%>:occe                                      # ;  ! otro
 
-miac%<pron%>:miac                                             # ; ! mucho
-miac%<pron%>%<pl%>:miaqu%>eh                                  # ; ! muchos
-miac%<pron%>%<pl%>:miqu%>eh                                   # ; ! muchos
+miac%<prn%>:miac                                             # ; ! mucho
+miac%<prn%>%<pl%>:miaqu%>eh                                  # ; ! muchos
+miac%<prn%>%<pl%>:miqu%>eh                                   # ; ! muchos
 
 
 Personales ; 
@@ -4362,6 +4365,11 @@ libro:libro                                     EsSuffM ;
 mar:mar                                         EsSuffM ;
 día:día                                         EsSuffM ;
 foto:foto                                       EsSuffF ;
+integrante:integrante                           EsSuffM ;
+pitero:pitero                                   EsSuffM ;
+maestro:maestro                                 EsSuffM ;
+maestra:maestra                                 EsSuffF ;
+caporal:caporal                                 EsSuffM ;
 fotografía:fotografía                           EsSuffF ;
 lunez:lunez                                     EsSuffM ;
 cultural:cultural                               EsSuffM ;
@@ -4586,6 +4594,7 @@ frances:frances        Adj-Esp-mf ;  ! "francés"
 español:español        Adj-Esp-mf ; ! "español"
 patronal:patronal      Adj-Esp-mf ; ! "patronal"
 austral:austral        Adj-Esp-mf ; ! ""
+principal:principal        Adj-Esp-mf ; ! ""
 electromagnética:electromagnétic Adj-Esp-m/f ;
 espacial:espacial      Adj-Esp-mf ;
 nanométrico:nanométric Adj-Esp-m/f ;
@@ -4698,7 +4707,8 @@ tipehxicuaco:tipehxicuaco    Adv ;
 ya:ya                        Adv ;
 zan:zan                      Adv ; ! solo
 ! FIXME: Comprobar
-ya:ye                        Adv ;
+ya:yi                        Adv ; ! Dir/LR
+
 zan:za                       Adv ; ! solo Dir/LR
 
 cimi:cimi                    Adv ; ! 
