@@ -142,16 +142,26 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 
 
 "Possessive ending [w] after cons"
-%{u%}:0 <=> Cns %>: _ %{h%}:0 .#. ;
+%{u%}:0 <=> Cns %>: _ :0 .#. ;
+      except 
+                    _ %>: ; 
 
 "Possessive ending [w] after cons second component"
-%{h%}:0 <=> Cns %>: %{u%}:0 _ .#. ;
+%{h%}:0 <=> Cns %>: :0 _ .#. ;
+      except 
+                    _ :* %>: ; 
 
-"Possessive ending [w] after vowel"
-%{u%}:u <=> Vow %>: _ %{h%}:h .#. ;
+!"Possessive ending [w] after vowel"
+!%{u%}:u <=> Vow %>: _ :h .#. ;
+!      except 
+!                    _ %>: ; 
 
-"Possessive ending [w] after vowel second component"
-%{h%}:h <=> Vow %>: %{u%}:u _ .#. ;
+!@ x i {h}:h {u}:u > i t l
+
+!"Possessive ending [w] after vowel second component"
+!%{h%}:h <=> Vow %>: :u _ .#. ;
+!      except 
+!                    _ :* %>: ; 
  
 !@ n o >:> t i p o z >:> {u}:0 {h}:0
 
