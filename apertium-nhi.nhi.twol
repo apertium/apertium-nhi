@@ -176,7 +176,7 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;
 
 "Metathesis of -{h}{u} for {h}"
-%{u%}:h <= %{h%}:u _ [Cns | .#.];
+%{u%}:h <=> %{h%}:u _ [Cns | .#.];
 
 !@ n o >:> x i {u}:u {h}:h
 
@@ -190,5 +190,5 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !@ n o >:> x i {u}:u {h}:h
 
 "inv. Metathesis of -{h}{u} for {u}"
-%{h%}:h <=> _ %{u%}:u [Vow | >:]; 
+%{h%}:h <= _ %{u%}:u >:? Vow; 
 
