@@ -32,15 +32,6 @@ Multichar_Symbols
 %<pl3%>      
 %<abs%>                                  ! Absolutivo
 
-%<def%>                         !
-%<mf%>                         !
-%<vaux%>                         !
-%<x%>                         !
-
-
-%<and%>
-%<ven%>
-
 %<loc%>                                  ! Locativo
 
 %<top%>                                  ! Topónimo
@@ -3971,8 +3962,8 @@ in:in                                           DET ; ! "a"
 nin:nin                                         DET ; ! "estx"
 el%<det%>%<m%>:el                               #; ! ""
 el%<det%>%<f%>:la                               #; ! ""
-el%<det%>%<m%>%<pl%>:los                        #; ! ""
-el%<det%>%<f%>%<pl%>:las                        #; ! ""
+el%<det%>%<pl%>%<m%>:las                        #; ! ""
+el%<det%>%<pl%>%<f%>:las                        #; ! ""
 de%<pr%>+el%<det%>%<def%>:del                   #;
 nochi:nochi                                     DET ; ! "todo"
 non:non                                         DET ; ! "esx"
@@ -4630,7 +4621,7 @@ ohueh:ohueh              Adj ; ! "difícil"
 
 atrasado:atrasad      Adj-Esp-m/f ; ! "atrasado"
 lácteo:lácte          Adj-Esp-m/f ; ! "milky"
-
+morado:morad          Adj-Esp-m/f ; ! ""
 originario:originari   Adj-Esp-m/f ; ! "originating"
 borracho:borrach       Adj-Esp-m/f ; ! 
 reconocido:reconocid   Adj-Esp-m/f ; ! "reconocido"
@@ -4686,9 +4677,9 @@ LEXICON Adj
 
 
 LEXICON Adj-Esp-mf
-%<adj%>%<barb%>%<mf%>%<sg%>:0  # ;
+%<adj%>%<mf%>%<barb%>%<sg%>:0  # ;
 %<adj%>%<mf%>%<sg%>:0  # ;
-%<adj%>%<barb%>%<mf%>%<pl%>:%>%{e%}s  # ;
+%<adj%>%<mf%>%<barb%>%<pl%>:%>%{e%}s  # ;
 %<adj%>%<mf%>%<pl%>:%>%{e%}s  # ;
 
 
@@ -4760,7 +4751,6 @@ ohcón:ohcón                  Adv ; ! así
 ohcon:ohcon                  Adv ; ! así
 ihquín:ihquín                Adv ; ! así
 ihquin:ihquin                Adv ; ! así
-así:así                AdvEs ; ! así
 ompa:ompa                    Adv ; ! allá
 quemazá:quemazá              Adv ; ! a veces
 queme:queme                  Adv ; ! como

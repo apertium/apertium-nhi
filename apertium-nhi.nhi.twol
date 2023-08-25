@@ -3,9 +3,11 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U W X Y Z
  a b c d e f g h i j k l m n o p q r s t u w x y z
  %{i%}:i %{i%}:0
- %{h%}:h %{h%}:u 
+ %{h%}:h %{h%}:u
+ %{h%}:0 
  %{H%}:0 %{H%}:h
  %{u%}:u %{u%}:h
+ %{u%}:0
  %{U%}:u %{U%}:0
  %{q%}:q %{q%}:c
  %{m%}:m %{m%}:n
@@ -141,25 +143,30 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 
 
 
-"Possessive ending [w] after cons"
-%{u%}:0 <=> Cns %>: _ :0 .#. ;
-      except 
-                    _ %>: ; 
+! "Possessive ending [w] after cons"
+! %{u%}:0 <=> Cns %>: _ :0 .#. ;
+!       except 
+!                     _ %>: ; 
 
-"Possessive ending [w] after cons second component"
-%{h%}:0 <=> Cns %>: :0 _ .#. ;
-      except 
-                    _ :* %>: ; 
+! "Possessive ending [w] after cons second component"
+! %{h%}:0 <=> Cns %>: :0 _ .#. ;
+!       except 
+!                     _ :* %>: ; 
 
-!"Possessive ending [w] after vowel"
-!%{u%}:u <=> Vow %>: _ :h .#. ;
+"Possessive ending [w] after vowel (u)"
+%{u%}:0 <=> Cns %>: _ %{h%}: .#. ;
+
+"Possessive ending [w] after vowel (h)"
+%{h%}:0 <=> Cns %>: %{u%}: _ .#. ;
+
+! "Possessive ending [w] after vowel"
+! %{u%}:u <=> Vow %>: _ :h .#. ;
 !      except 
 !                    _ %>: ; 
 
-!@ x i {h}:h {u}:u > i t l
 
-!"Possessive ending [w] after vowel second component"
-!%{h%}:h <=> Vow %>: :u _ .#. ;
+! "Possessive ending [w] after vowel second component"
+! %{h%}:h <=> Vow %>: :u _ .#. ;
 !      except 
 !                    _ :* %>: ; 
  
@@ -176,12 +183,12 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !%{H%}:0 <=> %{i%}:e _ >:> %{c%}: .#. ;
 
 "Metathesis of -{h}{u} for {h}"
-%{u%}:h <=> %{h%}:u _ [Cns | .#.];
+%{u%}:h <=> Vow >:? %{h%}:u _ [Cns | .#.];
 
 !@ n o >:> x i {u}:u {h}:h
 
 "Metathesis of -{h}{u} for {u}"
-%{h%}:u <=> _ %{u%}:h [Cns | .#.]; 
+%{h%}:u <=> Vow >:? _ %{u%}:h [Cns | .#.]; 
 
 
 "inv. Metathesis of -{h}{u} for {h}"
