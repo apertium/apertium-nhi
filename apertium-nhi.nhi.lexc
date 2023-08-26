@@ -424,7 +424,7 @@ LEXICON CaPres
 %<s_sg1%>catqui%<v%>%<iv%>%<pres%>:ni%>ca # ;
 %<s_sg2%>catqui%<v%>%<iv%>%<pres%>:ti%>ca # ;
 %<s_sg3%>catqui%<v%>%<iv%>%<pres%>:catqui # ;
-%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:ca # ;
+%<s_sg3%>catqui%<v%>%<iv%>%<pres%>:ca # ; ! Dir/LR
 %<s_sg3%>catqui%<v%>%<iv%>%<pres%>:cah # ;! Dir/LR
 
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cate # ;! Dir/LR
@@ -1487,13 +1487,6 @@ ilpi%<v%>%<iv%>:ilpi%>  Durative;
 ilpi%<v%>%<iv%>:ilpii%{H%}%{P%}%>  Base2Suffixes;
 ilpi%<v%>%<iv%>:ilpi%>  Base3Suffixes;
 
-! cortar
-tiqui%<v%>%<iv%>:tiqui%>  PresentTense;
-tiqui%<v%>%<iv%>:tiqui%>  Imperfect;
-tiqui%<v%>%<iv%>:tiqui%>  Durative;
-tiqui%<v%>%<iv%>:tiqui%{H%}%{P%}%>  Base2Suffixes;
-tiqui%<v%>%<iv%>:tiqui%>  Base3Suffixes;
-
 ! mantener
 tiquipanoa%<v%>%<iv%>:tiquipanoa%>  PresentTense;
 tiquipanoa%<v%>%<iv%>:tiquipanoa%>  Imperfect;
@@ -1656,6 +1649,20 @@ tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%>  Durative ;
 tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%{H%}%{P%}%>  Base2Suffixes ;
 tlahtlawahtihtia%<v%>%<tv%>:tlahtlawahtihti%>  Base3Suffixes ;
 
+! cortar
+tiqui%<v%>%<iv%>:tiqui%>  PresentTense;
+tiqui%<v%>%<iv%>:tiqui%>  Imperfect;
+tiqui%<v%>%<iv%>:tiqui%>  Durative;
+tiqui%<v%>%<iv%>:tiqui%{H%}%{P%}%>  Base2Suffixes;
+tiqui%<v%>%<iv%>:tiqui%>  Base3Suffixes;
+
+! picar en pedazos
+titiqui%<v%>%<iv%>:titiqui%>  PresentTense;
+titiqui%<v%>%<iv%>:titiqui%>  Imperfect;
+titiqui%<v%>%<iv%>:titiqui%>  Durative;
+titiqui%<v%>%<iv%>:titiqui%{H%}%{P%}%>  Base2Suffixes;
+titiqui%<v%>%<iv%>:titiqui%>  Base3Suffixes;
+
 ! sembrar
 toca%<v%>%<tv%>:toca%>  PresentTense;
 toca%<v%>%<tv%>:toca%>  Imperfect;
@@ -1726,6 +1733,14 @@ construiroa%<v%>%<tv%>:construiro%>  Durative;
 construiroa%<v%>%<tv%>:construiroh%>  Durative;
 construiroa%<v%>%<tv%>:construiro%>  Base2Suffixes;
 construiroa%<v%>%<tv%>:construiro%>  Base3Suffixes;
+
+! moler
+cuechoa%<v%>%<tv%>:cuechoa%>  PresentTense;
+cuechoa%<v%>%<tv%>:cuechoa%>  Imperfect;
+cuechoa%<v%>%<tv%>:cuecho%>  Durative;
+cuechoa%<v%>%<tv%>:cuechoh%>  Durative;
+cuechoa%<v%>%<tv%>:cuecho%>  Base2Suffixes;
+cuechoa%<v%>%<tv%>:cuecho%>  Base3Suffixes;
 
 ! pertenecer a ...
 perteneceroa%<v%>%<tv%>:perteneceroa%>  PresentTense;
@@ -2387,6 +2402,28 @@ notza%<v%>%<tv%>:notza%> Imperfect ;
 notza%<v%>%<tv%>:notz%> Durative ;
 notza%<v%>%<tv%>:notz%> Base2Suffixes ; 
 notza%<v%>%<tv%>:notza%> Base3Suffixes ;
+
+! secar
+huatza%<v%>%<tv%>:huatza%> PresentTense ;
+huatza%<v%>%<tv%>:huatza%> Imperfect ;
+huatza%<v%>%<tv%>:huatz%> Durative ;
+huatza%<v%>%<tv%>:huatz%> Base2Suffixes ; 
+huatza%<v%>%<tv%>:huatza%> Base3Suffixes ;
+
+! secar con acción repetitiva
+huahhuatza%<v%>%<tv%>:huahhuatza%> PresentTense ;
+huahhuatza%<v%>%<tv%>:huahhuatza%> Imperfect ;
+huahhuatza%<v%>%<tv%>:huahhuatz%> Durative ;
+huahhuatza%<v%>%<tv%>:huahhuatz%> Base2Suffixes ; 
+huahhuatza%<v%>%<tv%>:huahhuatza%> Base3Suffixes ;
+
+! secar con acción repetitiva (alternativa ortográfica)
+huahhuatza%<v%>%<tv%>:huahuatza%> PresentTense ; ! Dir/LR
+huahhuatza%<v%>%<tv%>:huahuatza%> Imperfect ; ! Dir/LR
+huahhuatza%<v%>%<tv%>:huahuatz%> Durative ; ! Dir/LR
+huahhuatza%<v%>%<tv%>:huahuatz%> Base2Suffixes ; ! Dir/LR
+huahhuatza%<v%>%<tv%>:huahuatza%> Base3Suffixes ;! Dir/LR
+
 
 ! llamar fuertemente TODO: definir lexico de prefijos adverbiales
 chicauhcanotza%<v%>%<tv%>:chicauhcanotza%> PresentTense ;
@@ -3917,7 +3954,7 @@ mas%<cnjcoo%>:mas # ;
 amo%<neg%>:amo # ;
 amo%<adv%>:amo # ;
 
-%<px3sg%>tech%<n%>%<rel%>: ich # ; 
+%<px3sg%>tich%<n%>%<rel%>: ich # ; 
 
 quema%<afirm%>:quema # ;
 
@@ -4078,6 +4115,7 @@ tihlmahtl:tihlmah                               TlSuff ;
 icoxpohuitl:icoxpohui                           TlSuff ;
 nahuatl:nahua                                   TlSuff ;
 nimiliztl:nimiliz                               TlSuff ;
+xonacatl:xonaca                                 TlSuff ; ! "cebolla"
 tlaltitl:tlalti                                 TlSuff ;
 itzcuincoyotl:itzcuincoyo                       TlSuff ;
 mazatl:maza                                     TlSuff ;
@@ -4236,13 +4274,13 @@ mapachin:mapach                                 InSuff ; ! "mapache"
 michin:michin                                   InSuff ; ! "pez"
 tomin:tom                                       InSuff ; ! "dinero"
 
-
+comal:comal                                     NoSuff ; ! "comal"
 tepahtani:tepahtani                             NiSuff ; ! "doctor"
 tlapahtani:tlapahtani                           NiSuff ; ! "doctor"
 tecuani:tecuani                                 NiSuff ; ! "león"
 tlacuani:tlacuani                               NiSuff ; ! "comedor, alguien que come mucho"
 tlahtolehualoni:tlahtolehualoni                 NiSuff ; ! "Glosario"
-
+axno:axno                                       NoSuff ; ! "burro"
 comaleh:comaleh                                 NoSuff ; ! "comadre"
 cuacohue:cuacohue                               NoSuff ; ! "vaca"
 cuacohue:cuapohue                               NoSuff ; ! "vaca"
@@ -4306,6 +4344,8 @@ iztaccamisa:iztaccamisa                         NoSuff ; ! "camisa blanca"
 
 tlanamacaloyan:tlanamacaloyan                   NoSuff ; ! "mercado(tienda"
 tlahtzoncamisa:tlahtzoncamisa                   NoSuff ; ! "camisa bordada"
+
+tzocopintzin%<n%>%<dim%>%<sg%>:tzocopint%>tzin       # ; ! "un poco"
 
 
 caxitl:cax                                      ItlSuff ; ! "plato"
@@ -4526,6 +4566,8 @@ mayo:mayo                                       EsSuffM ;
 mezquite:mezquite                               EsSuffM ;
 dioz:dioz                                       EsSuffM ;
 guaholote:guaholote                             EsSuffM ;
+guaholote:huajolote                             EsSuffM ; ! Dir/LR
+mixiote:mixiote                                 EsSuffM ;
 octubre:octubre                                 EsSuffM ;
 ventana:ventana                                 EsSuffF ;
 mayordomo:mayordomo                             EsSuffM ;
@@ -4732,6 +4774,7 @@ cachi:cachi                  Adv ; ! más
 oc:oc                        Adv ; ! más
 occipa:occipa                Adv ; ! otra vez
 tipitzin:tipitzin            Adv ; ! justo después
+niman:niman                  Adv ; ! pronto
 
 como:como                    Adv ; ! justo después
 
