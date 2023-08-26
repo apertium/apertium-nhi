@@ -394,7 +394,7 @@ LEXICON CaPres
 %<s_sg1%>catqui%<cop%>%<pres%>:ni%>ca # ;
 %<s_sg2%>catqui%<cop%>%<pres%>:ti%>ca # ;
 %<s_sg3%>catqui%<cop%>%<pres%>:catqui # ;
-%<s_sg3%>catqui%<cop%>%<pres%>:ca # ;
+%<s_sg3%>catqui%<cop%>%<pres%>:ca # ; ! Dir/LR
 %<s_sg3%>catqui%<cop%>%<pres%>:cah # ;! Dir/LR
 
 %<s_pl1%>catqui%<cop%>%<pres%>:ti%>cate # ;! Dir/LR
@@ -3962,8 +3962,8 @@ in:in                                           DET ; ! "a"
 nin:nin                                         DET ; ! "estx"
 el%<det%>%<m%>:el                               #; ! ""
 el%<det%>%<f%>:la                               #; ! ""
-el%<det%>%<pl%>%<m%>:los                        #; ! ""
-el%<det%>%<pl%>%<f%>:las                        #; ! ""
+el%<det%>%<m%>%<pl%>:los                        #; ! ""
+el%<det%>%<f%>%<pl%>:las                        #; ! ""
 de%<pr%>+el%<det%>%<def%>:del                   #;
 nochi:nochi                                     DET ; ! "todo"
 non:non                                         DET ; ! "esx"
@@ -4700,6 +4700,7 @@ LEXICON Adverbios
 ! TODO: Marcar con una etiqueta para indicar que son barbarismos/palabras prestadas? 
 entonces:entonces               AdvEs ; 
 aparte:aparte               AdvEs ; 
+así:así               AdvEs ; 
 aproximádamente:aproximádamente AdvEs ;
 ahorita:ahorita                 AdvEs ; 
 después:después                 AdvEs ;
