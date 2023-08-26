@@ -4193,6 +4193,7 @@ tohmitl:tohmi                                   TlSuff ; ! "lana"
 tlitl:tli                                       TlSuff ; ! 
 tlacatl:tlaca                                   TlSuff ;
 ocotzotl:ocotzo                                 TlSuff ;
+ahuacaxihuitl:ahuacaxihui                       TlSuff ; ! "hoja de aguacate"
 chiquihuitl:chiquihui                           TlSuff ;
 mitlatl:mitla                                   TlSuff ;
 elotl:elo                                       TlSuff ;
@@ -4274,7 +4275,6 @@ mapachin:mapach                                 InSuff ; ! "mapache"
 michin:michin                                   InSuff ; ! "pez"
 tomin:tom                                       InSuff ; ! "dinero"
 
-comal:comal                                     NoSuff ; ! "comal"
 tepahtani:tepahtani                             NiSuff ; ! "doctor"
 tlapahtani:tlapahtani                           NiSuff ; ! "doctor"
 tecuani:tecuani                                 NiSuff ; ! "león"
@@ -4287,6 +4287,7 @@ cuacohue:cuapohue                               NoSuff ; ! "vaca"
 bohtimohmol:bohtimohmol                         NoSuff ; ! "buho del monte"
 camac:camac                                     NoSuff ; ! "boca"
 caxtil:caxtil                                   NoSuff ; ! "gallina"
+comal:comal                                     NoSuff ; ! "comal"
 ! citlali:citlali                                 NoSuff ; ! "star (can have a few pluraliztions so included multiple times)"
 cualcan:cualcan                                 NoSuff ; ! "mañana"
 caltlamachtiloyan:caltlamachtiloyan             NoSuff ; ! "escuela"
@@ -4341,11 +4342,12 @@ tiachcah:tiachcah                               NoSuff ; ! "alcalde"
 tlapahtani:tlapahtani                           NoSuff ; ! "doctor"
 iztaccalzon:iztaccalzon                         NoSuff ; ! "calzon blanco"
 iztaccamisa:iztaccamisa                         NoSuff ; ! "camisa blanca"
+tipozbote:tipozbote                             NoSuff ; ! "una olla grande de metal"
 
 tlanamacaloyan:tlanamacaloyan                   NoSuff ; ! "mercado(tienda"
 tlahtzoncamisa:tlahtzoncamisa                   NoSuff ; ! "camisa bordada"
 
-tzocopintzin%<n%>%<dim%>%<sg%>:tzocopint%>tzin       # ; ! "un poco"
+tzocopin%<n%>%<dim%>%<sg%>:tzocopint%>tzin       # ; ! "un poco"
 
 
 caxitl:cax                                      ItlSuff ; ! "plato"
@@ -4377,6 +4379,7 @@ cerro:cerro                                     EsSuffM ;
 ciudad:ciudad                                   EsSuffF ;
 clase:clase                                     EsSuffF ;
 compañero:compañero                             EsSuffM ;
+oregano:oregano                                 EsSuffM ; 
 compañera:compañera                             EsSuffF ;
 consolado:consolado                             EsSuffM ;
 cosa:cosa                                       EsSuffF ;
