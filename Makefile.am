@@ -29,8 +29,8 @@ TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(L
 ###############################################################################
 
 # nimahtlapaltzin:<s_sg1>mahtlapal<n><dim>
-.deps/nhi.mor.hfst: .deps/nhi.gen.hfst .deps/nhi.mor.twol.hfst
-	hfst-compose-intersect -1 .deps/nhi.gen.hfst -2 .deps/nhi.mor.twol.hfst | hfst-minimise | hfst-invert -o $@
+.deps/nhi.mor.hfst: .deps/nhi.LR.gen.hfst .deps/nhi.mor.twol.hfst
+	hfst-compose-intersect -1 .deps/nhi.LR.gen.hfst -2 .deps/nhi.mor.twol.hfst | hfst-minimise | hfst-invert -o $@
 
 # amatl<n><dim><pl>:ama>tzi>tzin
 .deps/nhi.gen.hfst: .deps/nhi.RL.lexc.hfst .deps/nhi.twol.hfst
@@ -48,6 +48,9 @@ TARGETS_INTERMEDIATE = $(LANG1).mor.hfst $(LANG1).seg.hfst $(LANG1).gen.hfst $(L
 
 .deps/nhi.RL.lexc.hfst: .deps/nhi.RL.lexc .deps/.d
 	hfst-lexc -A --Werror $< -o $@
+
+.deps/nhi.LR.gen.hfst: .deps/nhi.lexc.hfst
+	hfst-compose-intersect -1 .deps/nhi.lexc.hfst -2 .deps/nhi.twol.hfst | hfst-minimise  -o $@
 
 .deps/nhi.mor.twol.hfst: apertium-nhi.nhi.mor.twol
 	hfst-twolc apertium-nhi.nhi.mor.twol -o .deps/nhi.mor.twol.hfst
