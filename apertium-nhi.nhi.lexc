@@ -31,7 +31,7 @@ Multichar_Symbols
 %<pl2%>
 %<pl3%>      
 %<abs%>                                  ! Absolutivo
-
+%<px3aa%>
 %<loc%>                                  ! Locativo
 
 %<top%>                                  ! Topónimo
@@ -3715,13 +3715,16 @@ LEXICON Possession
 
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@no%>               Nominals ;
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@mo%>               Nominals ;
-@P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
-@P.Px.Sg@%<px3sg%>:@P.Px.Sg@ni%>                    Nominals ; ! Dir/LR
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                Nominals ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@ni%>               Nominals ; ! Dir/LR
 @P.Px.Pl@%<px1pl%>:@P.Px.Pl@to%>               Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@nimo%>             Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@namo%>             Nominals ;
-@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ; ! Dir/LR
-@P.Px.Pl@%<px3pl%>:@P.Px.Pl@in%>                   Nominals ;
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>               Nominals ; ! Dir/LR
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@in%>               Nominals ;
+
+@P.Px.Sg@%<px3aa%>:@P.Px.Sg@te%>               Nominals ;
+
 
 LEXICON Nominals 
 ! Sustantivos, sustantivos relacionales y otras categorias que
@@ -3901,6 +3904,8 @@ tehhuan%<prn%>%<pers%>%<pl1%>%<abs%>:tehhuan # ;! Dir/LR
 nimehhuan%<prn%>%<pers%>%<pl2%>%<abs%>:nimehhuan # ;! Dir/LR
 yehhuan%<prn%>%<pers%>%<pl3%>%<abs%>:yehhuan # ;! Dir/LR
 
+yehuatl%<prn%>%<pers%>%<sg1%>%<short%>+in%<det%>:ye%>n # ; 
+
 LEXICON Pr
 
 %<pr%>: # ; 
@@ -4002,7 +4007,8 @@ veinte:veinte                                   NUM ; !
 
 LEXICON Determinantes 
 
-in:in                                           DET ; ! "a"
+in:in                                           DET ; ! "el/la"
+in:n                                            DET ; ! "el/la" Dir/LR
 nin:nin                                         DET ; ! "estx"
 el%<det%>%<m%>:el                               #; ! ""
 el%<det%>%<f%>:la                               #; ! ""
@@ -4080,7 +4086,7 @@ cacalotl:cacalo                                 TlSuff ; ! "cuervo"
 cihuatl:cihua                                   TlSuff ; ! "mujer"
 citlalcoatl:citlalcoa                           TlSuff ; ! ""
 conetl:cone                                     TlSuff ; ! "bebe"
-conetl:cone                                     TlSuff ; ! "bebe"
+conetl%<n%>%<pl%>:coconeh                       # ; ! "bebes"
 caltentl:calten                                 TlSuff ; ! "puerta"
 chupahuacatl:chupahuaca                         TlSuff ; ! "agua limpia"
 coyotl:coyo                                     TlSuff ; ! "coyote"
@@ -4763,6 +4769,12 @@ pues:pues                       AdvEs ;
 bueno:bueno                     AdvEs ;
 ahí:ahí                         AdvEs ;
 axan:axan                    Adv ; ! ahora
+moztla:moztla                Adv ; ! mañana
+huiptla:huiptla              Adv ; ! pasado mañana
+hueyopan:heyopan             Adv ; ! en tres dias (el día después de pasado mañana)
+hueyupan:heyupan             Adv ; ! en tres dias (el día después de pasado mañana) Dir/LR
+yalhua:yalhua                Adv ; ! ayer
+yahuiptla:yahuiptla          Adv ; ! anteayer
 achto:achto                  Adv ; ! primero/antes
 ayamo:ayamo                  Adv ; ! todavía no
 acmo:acmo                    Adv ; ! ya no
@@ -4814,6 +4826,11 @@ queni:quenin                  AdvRel ; ! como
 queni:quenin                  AdvInt ; ! como
 quen:quen                    Adv ; ! como
 tipehxicuaco:tipehxicuaco    Adv ; 
+tlanihuic:tlanihuic          Adv ; ! "abajo"
+hualtlanihuic:hualtlanihuic  Adv ; ! "mas abajo de donde está el locutor"
+
+tlacpac:tlacpac              Adv ; ! "arriba"
+
 ya:ya                        Adv ;
 zan:zan                      Adv ; ! solo
 ! FIXME: Comprobar
@@ -4827,6 +4844,8 @@ tlahuel:tlahuel              Adv ; !
 no:no                        Adv ; !
 noyohqui:noyohqui            Adv ; !
 
+quiahuac:quiahuac            Adv ; ! "a fuera"
+
 no:no                        Adv ; !
 ihcuacon:ihcuacon            Adv ; ! then
 
@@ -4837,6 +4856,8 @@ LEXICON Preposiciones
 
 de:de                        Pr-Esp ;  ! "de"
 de%<pr%>%+el%<det%>%<def%>:de%>l #;
+de%<pr%>%+in%<det%>:de%>n #;
+
 a:a                          Pr-Esp ;  ! "a"
 por:por                      Pr-Esp ;  ! "por"
 en:en                      Pr-Esp ;  ! "en"
@@ -4858,11 +4879,15 @@ LEXICON Interjecciones
 
 ay:ay                        INTJ ; ! "ay"
 aaa:aaa                      INTJ ; ! "aaa"
+ah:ah                        INTJ ; ! "ah"
 igual:igual                  INTJ ; ! "igual"
 sí:sí                        INTJ ; ! "sí"
 mm:mm                        INTJ ; ! "mmm"
 eh:eh                        INTJ ; ! " eh"
 este:este                    INTJ ; ! ""
+nen:nen                      INTJ ; ! "este..."
+nene:nene                    INTJ ; ! "este..."
+
 
 LEXICON Puntuación
 
