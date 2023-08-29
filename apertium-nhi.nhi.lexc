@@ -859,22 +859,6 @@ choloa%<v%>%<iv%>:choloh%>  Durative;
 choloa%<v%>%<iv%>:choloh%>  Base2Suffixes;
 choloa%<v%>%<iv%>:cholo%>  Base3Suffixes;
 
-! rodear
-yahualoa%<v%>%<iv%>:yahualoa%>  PresentTense;
-yahualoa%<v%>%<iv%>:yahualoa%>  Imperfect;
-yahualoa%<v%>%<iv%>:yahualo%>  Durative;
-yahualoa%<v%>%<iv%>:yahualoh%>  Durative;
-yahualoa%<v%>%<iv%>:yahualoh%>  Base2Suffixes;
-yahualoa%<v%>%<iv%>:yahualo%>  Base3Suffixes;
-
-! juntar/acercar
-nitichoa%<v%>%<iv%>:nitichoa%>  PresentTense;
-nitichoa%<v%>%<iv%>:nitichoa%>  Imperfect;
-nitichoa%<v%>%<iv%>:niticho%>  Durative;
-nitichoa%<v%>%<iv%>:nitichoh%>  Durative;
-nitichoa%<v%>%<iv%>:nitichoh%>  Base2Suffixes;
-nitichoa%<v%>%<iv%>:niticho%>  Base3Suffixes;
-
 !huir (muchos? muchas veces? lejos?)
 chohcholoa%<v%>%<iv%>:chohcholoa%>  PresentTense;
 chohcholoa%<v%>%<iv%>:chohcholoa%>  Imperfect;
@@ -1581,6 +1565,22 @@ panohuia%<v%>%<tv%>:panohui%>  Durative ;
 panohuia%<v%>%<tv%>:panohui%{H%}%{P%}%>  Base2Suffixes ;
 panohuia%<v%>%<tv%>:panohui%>  Base3Suffixes ;
 
+! rodear
+yahualoa%<v%>%<tv%>:yahualoa%>  PresentTense;
+yahualoa%<v%>%<tv%>:yahualoa%>  Imperfect;
+yahualoa%<v%>%<tv%>:yahualo%>  Durative;
+yahualoa%<v%>%<tv%>:yahualoh%>  Durative;
+yahualoa%<v%>%<tv%>:yahualoh%>  Base2Suffixes;
+yahualoa%<v%>%<tv%>:yahualo%>  Base3Suffixes;
+
+! juntar/acercar
+nitichoa%<v%>%<tv%>:nitichoa%>  PresentTense;
+nitichoa%<v%>%<tv%>:nitichoa%>  Imperfect;
+nitichoa%<v%>%<tv%>:niticho%>  Durative;
+nitichoa%<v%>%<tv%>:nitichoh%>  Durative;
+nitichoa%<v%>%<tv%>:nitichoh%>  Base2Suffixes;
+nitichoa%<v%>%<tv%>:niticho%>  Base3Suffixes;
+
 ! tirar para abajo
 pantlatihuia%<v%>%<tv%>:pantlatihuia%> PresentTense ;
 pantlatihuia%<v%>%<tv%>:pantlatihuia%>  Imperfect ;
@@ -1756,6 +1756,14 @@ construiroa%<v%>%<tv%>:construiro%>  Durative;
 construiroa%<v%>%<tv%>:construiroh%>  Durative;
 construiroa%<v%>%<tv%>:construiro%{P%}%>  Base2Suffixes;
 construiroa%<v%>%<tv%>:construiro%>  Base3Suffixes;
+
+! construiroa
+vaciaroa%<v%>%<tv%>:vaciaroa%>  PresentTense;
+vaciaroa%<v%>%<tv%>:vaciaroa%>  Imperfect;
+vaciaroa%<v%>%<tv%>:vaciaro%>  Durative;
+vaciaroa%<v%>%<tv%>:vaciaroh%>  Durative;
+vaciaroa%<v%>%<tv%>:vaciaro%{P%}%>  Base2Suffixes;
+vaciaroa%<v%>%<tv%>:vaciaro%>  Base3Suffixes;
 
 ! moler
 cuechoa%<v%>%<tv%>:cuechoa%>  PresentTense;
@@ -4058,6 +4066,10 @@ cada%<barb%>:cada                               DET ; ! cada
 cada:cada                                       DET ; ! cada
 oc%<adv%>+ce:oc%>ce                             DET ;  ! otro
 miac%<det%>:miac                                # ; ! mucho
+
+quezqui%<det%>%<pl%>:quezqui                    # ; ! cuanto
+quezqui%<det%>%<pl%>:quezquen                   # ;
+
 miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos 
 miac%<det%>%<pl%>:miqu%>eh                      # ; ! muchos ! Dir/LR
 catliye%<det%>:catliye                          # ; ! cual
@@ -4308,6 +4320,7 @@ citlalin:citlal                                 InSuff ; ! "estrella"
 pilli:pil                                       LiSuff ; ! "hijo/a"
 milli:mil                                       LiSuff ; ! "milpa"
 tlalli:tlal                                     LiSuff ; ! "tierra/terreno"
+chilli:chil                                     LiSuff ; ! "chile"
 
 ayotochin:ayotoch                               InSuff ; ! "armadillo"
 chacalin:chacal                                 InSuff ; ! "gusano"
