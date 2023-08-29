@@ -885,8 +885,8 @@ chohcholoa%<v%>%<iv%>:chohcholo%>  Base3Suffixes;
 !venir
 huala%<v%>%<iv%>:huala%>  PresentTense;
 huala%<v%>%<iv%>:huala%>  Imperfect;
-huala%<v%>%<iv%>:hual%>  Durative;
-huala%<v%>%<iv%>:hual%>  Base2Suffixes;
+huala%<v%>%<iv%>:huala%>  Durative;
+huala%<v%>%<iv%>:huala%>  Base2Suffixes;
 huala%<v%>%<iv%>:huala%>  Base3Suffixes;
 
 !venir
@@ -1084,6 +1084,13 @@ pehua%<v%>%<iv%>:pehua%>  Imperfect;
 pehua%<v%>%<iv%>:peuh%>  Durative;
 pehua%<v%>%<iv%>:peuh%>  Base2Suffixes;
 pehua%<v%>%<iv%>:pehua%>  Base3Suffixes;
+
+!empezar (?)
+pehpehua%<v%>%<iv%>:pehpehua%>  PresentTense;
+pehpehua%<v%>%<iv%>:pehpehua%>  Imperfect;
+pehpehua%<v%>%<iv%>:pehpeuh%>  Durative;
+pehpehua%<v%>%<iv%>:pehpeuh%>  Base2Suffixes;
+pehpehua%<v%>%<iv%>:pehpehua%>  Base3Suffixes;
 
 !empezar (variante de ixquihuacan)
 pehui%<v%>%<iv%>:pehui%>  PresentTense;
@@ -1519,7 +1526,8 @@ chiya%<v%>%<tv%>:chiya%>  Base3Suffixes;
 apaca%<v%>%<tv%>: apaca%> PresentTense ;
 apaca%<v%>%<tv%>: apaca%> Imperfect ;
 apaca%<v%>%<tv%>: apaca%> Durative ;
-apaca%<v%>%<tv%>: apaca%> Base2Suffixes ;
+apaca%<v%>%<tv%>: apaca%> Base2Suffixes ; ! Dir/LR
+apaca%<v%>%<tv%>: apac%> Base2Suffixes ;
 apaca%<v%>%<tv%>: apaca%> Base3Suffixes ;
 
 ! hervir (el nixtamal)
@@ -2874,14 +2882,16 @@ nimilia%<v%>%<tv%>:nimili%>  Base3Suffixes;
 paca%<v%>%<tv%>:paca%>  PresentTense;
 paca%<v%>%<tv%>:paca%>  Imperfect;
 paca%<v%>%<tv%>:paca%>  Durative;
-paca%<v%>%<tv%>:paca%>  Base2Suffixes;
+paca%<v%>%<tv%>:paca%>  Base2Suffixes; !Dir/LR
+paca%<v%>%<tv%>:pac%>  Base2Suffixes;
 paca%<v%>%<tv%>:paca%>  Base3Suffixes;
 
 ! lavar (trastes)
 pahpaca%<v%>%<tv%>:pahpaca%>  PresentTense;
 pahpaca%<v%>%<tv%>:pahpaca%>  Imperfect;
 pahpaca%<v%>%<tv%>:pahpaca%>  Durative;
-pahpaca%<v%>%<tv%>:pahpaca%>  Base2Suffixes;
+pahpaca%<v%>%<tv%>:pahpaca%>  Base2Suffixes; ! Dir/LR
+pahpaca%<v%>%<tv%>:pahpac%>  Base2Suffixes;
 pahpaca%<v%>%<tv%>:pahpaca%>  Base3Suffixes;
 
 ! curar
@@ -4043,6 +4053,11 @@ tlenza%<prn%>:tlenza                                          # ; ! lo que sea
 miac%<prn%>:miac                                             # ; ! mucho
 miac%<prn%>%<pl%>:miaqu%>eh                                  # ; ! muchos
 miac%<prn%>%<pl%>:miqu%>eh                                   # ; ! muchos
+aqui%<prn%>:aquin  # ; 
+aqui%<prn%>:aqui  # ; ! Dir/LR
+aqui%<prn%>%<pl%>:aquihqueh  # ; 
+aqui%<prn%>%<pl%>:aquiqueh  # ; ! Dir/LR 
+
 
 
 Personales ; 
@@ -4511,6 +4526,7 @@ panadería:panadería                             EsSuffF ;
 torrero:torrero                                 EsSuffM ;
 diamante:diamante                               EsSuffM ;
 dólar:dólar                                     EsSuffM ;
+peso:peso                                       EsSuffM ;
 pijama:pijama                                   EsSuffF ;
 puente:puente                                   EsSuffM ;
 prendedor:prendedor                             EsSuffM ;
@@ -4790,12 +4806,16 @@ oc:oc                        Adv ; ! más
 occipa:occipa                Adv ; ! otra vez
 tipitzin:tipitzin            Adv ; ! justo después
 niman:niman                  Adv ; ! pronto
+siquiera:siquiera            Adv ; ! siquiera
 
 como:como                    Adv ; ! justo después
 
 huehcauh:huehcauh            Adv ; ! lejos, hace mucho"
 huehcauh:huehca              Adv ; ! lejos, hace mucho" Dir/LR
 
+yohuac:yohuac                Adv ; ! de noche
+tiotlac:tiotlac              Adv ; ! de tarde
+cualcan:cualcan              Adv ; ! de mañana
 
 citlalcopa:citlal%>copa        Adv ; ! 
 
@@ -4806,7 +4826,8 @@ ne:ne                        Adv ; ! ahí
 
 tlatlahco:tlatlahco          Adv ; ! "en medio"
 amayic:amayic                Adv ; ! nunca
-cuando:cuando                Adv ;
+quemaniyan:quemaniyan        Adv ; ! "cuando"
+cuando:cuando                AdvEs ;
 hasta:hasta                  AdvEs ;
 mejor:mejor                  AdvEs ;
 milahuac:milahuac            Adv ; !de verdad
@@ -4872,6 +4893,7 @@ ic:ic                        Pr ;  ! "por"
 LEXICON Conj
 ihcuac%<cnjsub%>:ihcuac # ;
 tla%<cnjsub%>:tla # ;
+tlamo%<cnjsub%>:tlamo # ; ! "si no"
 queman%<cnjsub%>:queman # ;
 hasta%<cnjsub%>:hasta # ;
 
