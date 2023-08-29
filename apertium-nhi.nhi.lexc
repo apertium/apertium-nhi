@@ -1031,7 +1031,7 @@ moapareceroa%<v%>%<iv%>:moapareceroa%>  PresentTense;
 moapareceroa%<v%>%<iv%>:moapareceroa%>  Imperfect;
 moapareceroa%<v%>%<iv%>:moaparecero%>  Durative;
 moapareceroa%<v%>%<iv%>:moapareceroh%>  Durative;
-moapareceroa%<v%>%<iv%>:moaparecero%>  Base2Suffixes;
+moapareceroa%<v%>%<iv%>:moaparecero%{P%}%>  Base2Suffixes;
 moapareceroa%<v%>%<iv%>:moaparecero%>  Base3Suffixes;
 
 ! burlarse
@@ -1039,7 +1039,7 @@ moburlaroa%<v%>%<iv%>:moburlaroa%>  PresentTense;
 moburlaroa%<v%>%<iv%>:moburlaroa%>  Imperfect;
 moburlaroa%<v%>%<iv%>:moburlaro%>  Durative;
 moburlaroa%<v%>%<iv%>:moburlaroh%>  Durative;
-moburlaroa%<v%>%<iv%>:moburlaro%>  Base2Suffixes;
+moburlaroa%<v%>%<iv%>:moburlaro%{P%}%>  Base2Suffixes;
 moburlaroa%<v%>%<iv%>:moburlaro%>  Base3Suffixes;
 
 !pasar
@@ -1204,7 +1204,7 @@ tlacamparoa%<v%>%<iv%>:tlacamparoa%>  PresentTense;
 tlacamparoa%<v%>%<iv%>:tlacamparoa%>  Imperfect;
 tlacamparoa%<v%>%<iv%>:tlacamparo%>  Durative;
 tlacamparoa%<v%>%<iv%>:tlacamparoh%>  Durative;
-tlacamparoa%<v%>%<iv%>:tlacamparo%>  Base2Suffixes;
+tlacamparoa%<v%>%<iv%>:tlacamparo%{P%}%>  Base2Suffixes;
 tlacamparoa%<v%>%<iv%>:tlacamparo%>  Base3Suffixes;
 
 
@@ -1349,7 +1349,7 @@ regresaroa%<v%>%<iv%>:regresaroa%>  PresentTense;
 regresaroa%<v%>%<iv%>:regresaroa%>  Imperfect;
 regresaroa%<v%>%<iv%>:regresaro%>  Durative;
 regresaroa%<v%>%<iv%>:regresaroh%>  Durative;
-regresaroa%<v%>%<iv%>:regresaro%>  Base2Suffixes;
+regresaroa%<v%>%<iv%>:regresaro%{P%}%>  Base2Suffixes;
 regresaroa%<v%>%<iv%>:regresaro%>  Base3Suffixes;
 
 ! arrastrarse
@@ -1401,6 +1401,13 @@ molinia%<v%>%<iv%>:molini%>  Durative ;
 molinia%<v%>%<iv%>:molini%{H%}%{P%}%>  Base2Suffixes ;
 molinia%<v%>%<iv%>:molini%>  Base3Suffixes ;
 
+! hervir
+moloni%<v%>%<iv%>:moloni%> PresentTense ;
+moloni%<v%>%<iv%>:moloni%>  Imperfect ;
+moloni%<v%>%<iv%>:moloni%>  Durative ;
+moloni%<v%>%<iv%>:moloni%>  Base2Suffixes ;
+moloni%<v%>%<iv%>:moloni%>  Base3Suffixes ;
+
 ! bailar
 mihtotia%<v%>%<iv%>:mihtotia%> PresentTense ;
 mihtotia%<v%>%<iv%>:mihtotia%>  Imperfect ;
@@ -1419,14 +1426,15 @@ mohuiyonia%<v%>%<iv%>:mohuiyoni%>     Base3Suffixes ;
 ! llegar
 ehco%<v%>%<iv%>:ehco%>     PresentTense ;
 ehco%<v%>%<iv%>:ehco%>     Imperfect ;
-! ehco%<v%>%<iv%>:ehco%>      Durative ;
+ehco%<v%>%<iv%>:ehco%>      Durative ;
 ehco%<v%>%<iv%>:ehco%>     Base2Suffixes ;
+ehco%<v%>%<iv%>:ehco%{P%}%> Base2Suffixes ; ! Dir/LR
 ehco%<v%>%<iv%>:ehco%>     Base3Suffixes ;
 
 
 LEXICON TV-Stem
 
-!pasar
+!pasar (TODO: is there realy a transitive panoa? not just panohuia?)
 panoa%<v%>%<tv%>:panoa%>  PresentTense;
 panoa%<v%>%<tv%>:panoa%>  Imperfect;
 panoa%<v%>%<tv%>:pano%>  Durative;
@@ -1438,7 +1446,7 @@ animaroa%<v%>%<tv%>:animaroa%>  PresentTense;
 animaroa%<v%>%<tv%>:animaroa%>  Imperfect;
 animaroa%<v%>%<tv%>:animaro%>  Durative;
 animaroa%<v%>%<tv%>:animaroh%>  Durative;
-animaroa%<v%>%<tv%>:animaro%>  Base2Suffixes;
+animaroa%<v%>%<tv%>:animaro%{P%}%>  Base2Suffixes;
 animaroa%<v%>%<tv%>:animaro%>  Base3Suffixes;
 
 
@@ -1447,7 +1455,7 @@ armaroa%<v%>%<tv%>:armaroa%>  PresentTense;
 armaroa%<v%>%<tv%>:armaroa%>  Imperfect;
 armaroa%<v%>%<tv%>:armaro%>  Durative;
 armaroa%<v%>%<tv%>:armaroh%>  Durative;
-armaroa%<v%>%<tv%>:armaro%>  Base2Suffixes;
+armaroa%<v%>%<tv%>:armaro%{P%}%>  Base2Suffixes;
 armaroa%<v%>%<tv%>:armaro%>  Base3Suffixes;
 
 !desarmar
@@ -1455,7 +1463,7 @@ desarmaroa%<v%>%<tv%>:desarmaroa%>  PresentTense;
 desarmaroa%<v%>%<tv%>:desarmaroa%>  Imperfect;
 desarmaroa%<v%>%<tv%>:desarmaro%>  Durative;
 desarmaroa%<v%>%<tv%>:desarmaroh%>  Durative;
-desarmaroa%<v%>%<tv%>:desarmaro%>  Base2Suffixes;
+desarmaroa%<v%>%<tv%>:desarmaro%{P%}%>  Base2Suffixes;
 desarmaroa%<v%>%<tv%>:desarmaro%>  Base3Suffixes;
 
 ! bailar a algo/alguien
@@ -1470,7 +1478,7 @@ imaginaroa%<v%>%<tv%>:imaginaroa%>  PresentTense;
 imaginaroa%<v%>%<tv%>:imaginaroa%>  Imperfect;
 imaginaroa%<v%>%<tv%>:imaginaro%>  Durative;
 imaginaroa%<v%>%<tv%>:imaginaroh%>  Durative;
-imaginaroa%<v%>%<tv%>:imaginaro%>  Base2Suffixes;
+imaginaroa%<v%>%<tv%>:imaginaro%{P%}%>  Base2Suffixes;
 imaginaroa%<v%>%<tv%>:imaginaro%>  Base3Suffixes;
 
 ! criar
@@ -1579,6 +1587,13 @@ pantlatihuia%<v%>%<tv%>:pantlatihuia%>  Imperfect ;
 pantlatihuia%<v%>%<tv%>:pantlatihui%>  Durative ;
 pantlatihuia%<v%>%<tv%>:pantlatihui%{H%}%{P%}%>  Base2Suffixes ;
 pantlatihuia%<v%>%<tv%>:pantlatihui%>  Base3Suffixes ;
+
+! hervir algo
+moloni%<v%>%<tv%>:moloni%> PresentTense ;
+moloni%<v%>%<tv%>:moloni%>  Imperfect ;
+moloni%<v%>%<tv%>:moloni%>  Durative ;
+moloni%<v%>%<tv%>:moloni%>  Base2Suffixes ;
+moloni%<v%>%<tv%>:moloni%>  Base3Suffixes ;
 
 ! echarle agua a algo
 tequilia%<v%>%<tv%>:tequilia%> PresentTense ;
@@ -1739,7 +1754,7 @@ construiroa%<v%>%<tv%>:construiroa%>  PresentTense;
 construiroa%<v%>%<tv%>:construiroa%>  Imperfect;
 construiroa%<v%>%<tv%>:construiro%>  Durative;
 construiroa%<v%>%<tv%>:construiroh%>  Durative;
-construiroa%<v%>%<tv%>:construiro%>  Base2Suffixes;
+construiroa%<v%>%<tv%>:construiro%{P%}%>  Base2Suffixes;
 construiroa%<v%>%<tv%>:construiro%>  Base3Suffixes;
 
 ! moler
@@ -1747,7 +1762,7 @@ cuechoa%<v%>%<tv%>:cuechoa%>  PresentTense;
 cuechoa%<v%>%<tv%>:cuechoa%>  Imperfect;
 cuechoa%<v%>%<tv%>:cuecho%>  Durative;
 cuechoa%<v%>%<tv%>:cuechoh%>  Durative;
-cuechoa%<v%>%<tv%>:cuecho%>  Base2Suffixes;
+cuechoa%<v%>%<tv%>:cuecho%{P%}%>  Base2Suffixes;
 cuechoa%<v%>%<tv%>:cuecho%>  Base3Suffixes;
 
 ! pertenecer a ...
@@ -1755,7 +1770,7 @@ perteneceroa%<v%>%<tv%>:perteneceroa%>  PresentTense;
 perteneceroa%<v%>%<tv%>:perteneceroa%>  Imperfect;
 perteneceroa%<v%>%<tv%>:pertenecero%>  Durative;
 perteneceroa%<v%>%<tv%>:perteneceroh%>  Durative;
-perteneceroa%<v%>%<tv%>:pertenecero%>  Base2Suffixes;
+perteneceroa%<v%>%<tv%>:pertenecero%{P%}%>  Base2Suffixes;
 perteneceroa%<v%>%<tv%>:pertenecero%>  Base3Suffixes;
 
 ! cansar a alguien
@@ -1777,7 +1792,7 @@ regresaroa%<v%>%<tv%>:regresaroa%>  PresentTense;
 regresaroa%<v%>%<tv%>:regresaroa%>  Imperfect;
 regresaroa%<v%>%<tv%>:regresaro%>  Durative;
 regresaroa%<v%>%<tv%>:regresaroh%>  Durative;
-regresaroa%<v%>%<tv%>:regresaro%>  Base2Suffixes;
+regresaroa%<v%>%<tv%>:regresaro%{P%}%>  Base2Suffixes;
 regresaroa%<v%>%<tv%>:regresaro%>  Base3Suffixes;
 
 ! repartir
@@ -1785,7 +1800,7 @@ repartiroa%<v%>%<tv%>:repartiroa%>  PresentTense;
 repartiroa%<v%>%<tv%>:repartiroa%>  Imperfect;
 repartiroa%<v%>%<tv%>:repartiro%>  Durative;
 repartiroa%<v%>%<tv%>:repartiroh%>  Durative;
-repartiroa%<v%>%<tv%>:repartiro%>  Base2Suffixes;
+repartiroa%<v%>%<tv%>:repartiro%{P%}%>  Base2Suffixes;
 repartiroa%<v%>%<tv%>:repartiro%>  Base3Suffixes;
 
 ! menear
@@ -1793,7 +1808,7 @@ maniloa%<v%>%<tv%>:maniloa%>  PresentTense;
 maniloa%<v%>%<tv%>:maniloa%>  Imperfect;
 maniloa%<v%>%<tv%>:manilo%>  Durative;
 maniloa%<v%>%<tv%>:maniloh%>  Durative;
-maniloa%<v%>%<tv%>:manilo%>  Base2Suffixes;
+maniloa%<v%>%<tv%>:manilo%{P%}%>  Base2Suffixes;
 maniloa%<v%>%<tv%>:manilo%>  Base3Suffixes;
 
 !aprender/conocer
@@ -1836,14 +1851,14 @@ atequia%<v%>%<tv%>:atequi%>           Base3Suffixes;
 aprenderoa%<v%>%<tv%>:aprenderoa%>  PresentTense;
 aprenderoa%<v%>%<tv%>:aprenderoa%>  Imperfect;
 aprenderoa%<v%>%<tv%>:aprenderoh%>  Durative;
-aprenderoa%<v%>%<tv%>:aprenderoh%>  Base2Suffixes;
+aprenderoa%<v%>%<tv%>:aprendero%{P%}%>  Base2Suffixes;
 aprenderoa%<v%>%<tv%>:aprendero%>  Base3Suffixes;
 
 !invitar
 invitaroa%<v%>%<tv%>:invitaroa%>  PresentTense;
 invitaroa%<v%>%<tv%>:invitaroa%>  Imperfect;
 invitaroa%<v%>%<tv%>:invitaroh%>  Durative;
-invitaroa%<v%>%<tv%>:invitaroh%>  Base2Suffixes;
+invitaroa%<v%>%<tv%>:invitaro%{P%}%>  Base2Suffixes;
 invitaroa%<v%>%<tv%>:invitaro%>  Base3Suffixes;
 
 ! juntar/acercar a algo
@@ -1851,7 +1866,7 @@ nitichoa%<v%>%<tv%>:nitichoa%>  PresentTense;
 nitichoa%<v%>%<tv%>:nitichoa%>  Imperfect;
 nitichoa%<v%>%<tv%>:niticho%>  Durative;
 nitichoa%<v%>%<tv%>:nitichoh%>  Durative;
-nitichoa%<v%>%<tv%>:nitichoh%>  Base2Suffixes;
+nitichoa%<v%>%<tv%>:niticho%{P%}%>  Base2Suffixes;
 nitichoa%<v%>%<tv%>:niticho%>  Base3Suffixes;
 ! lograr
 lograroa%<v%>%<tv%>:lograroa%>  PresentTense;
@@ -1859,7 +1874,7 @@ lograroa%<v%>%<tv%>:lograroa%>  Imperfect;
 lograroa%<v%>%<tv%>:lograroh%>  Durative;
 lograroa%<v%>%<tv%>:lograro%>  Durative;
 lograroa%<v%>%<tv%>:lograroh%>  Base2Suffixes;
-lograroa%<v%>%<tv%>:lograro%>  Base2Suffixes;
+lograroa%<v%>%<tv%>:lograro%{P%}%>  Base2Suffixes;
 lograroa%<v%>%<tv%>:lograro%>  Base3Suffixes;
 
 ! abandonar
@@ -1868,7 +1883,7 @@ abandonaroa%<v%>%<tv%>:abandonaroa%>  Imperfect;
 abandonaroa%<v%>%<tv%>:abandonaroh%>  Durative;
 abandonaroa%<v%>%<tv%>:abandonaro%>  Durative;
 abandonaroa%<v%>%<tv%>:abandonaroh%>  Base2Suffixes;
-abandonaroa%<v%>%<tv%>:abandonaro%>  Base2Suffixes;
+abandonaroa%<v%>%<tv%>:abandonaro%{P%}%>  Base2Suffixes;
 abandonaroa%<v%>%<tv%>:abandonaro%>  Base3Suffixes;
 
 ! tejer
@@ -1884,7 +1899,7 @@ apareceroa%<v%>%<tv%>:apareceroa%>  Imperfect;
 apareceroa%<v%>%<tv%>:apareceroh%>  Durative;
 apareceroa%<v%>%<tv%>:aparecero%>  Durative;
 apareceroa%<v%>%<tv%>:apareceroh%>  Base2Suffixes;
-apareceroa%<v%>%<tv%>:aparecero%>  Base2Suffixes;
+apareceroa%<v%>%<tv%>:aparecero%{P%}%>  Base2Suffixes;
 apareceroa%<v%>%<tv%>:aparecero%>  Base3Suffixes;
 
 ! apuntar
@@ -1893,7 +1908,7 @@ apuntaroa%<v%>%<tv%>:apuntaroa%>  Imperfect;
 apuntaroa%<v%>%<tv%>:apuntaroh%>  Durative;
 apuntaroa%<v%>%<tv%>:apuntaro%>  Durative;
 apuntaroa%<v%>%<tv%>:apuntaroh%>  Base2Suffixes;
-apuntaroa%<v%>%<tv%>:apuntaro%>  Base2Suffixes;
+apuntaroa%<v%>%<tv%>:apuntaro%{P%}%>  Base2Suffixes;
 apuntaroa%<v%>%<tv%>:apuntaro%>  Base3Suffixes;
 
 ! felicitar
@@ -1902,7 +1917,7 @@ felicitaroa%<v%>%<tv%>:felicitaroa%>  Imperfect;
 felicitaroa%<v%>%<tv%>:felicitaroh%>  Durative;
 felicitaroa%<v%>%<tv%>:felicitaro%>  Durative;
 felicitaroa%<v%>%<tv%>:felicitaroh%>  Base2Suffixes;
-felicitaroa%<v%>%<tv%>:felicitaro%>  Base2Suffixes;
+felicitaroa%<v%>%<tv%>:felicitaro%{P%}%>  Base2Suffixes;
 felicitaroa%<v%>%<tv%>:felicitaro%>  Base3Suffixes;
 
 ! conservar
@@ -1911,7 +1926,7 @@ conservaroa%<v%>%<tv%>:conservaroa%>  Imperfect;
 conservaroa%<v%>%<tv%>:conservaroh%>  Durative;
 conservaroa%<v%>%<tv%>:conservaro%>  Durative;
 conservaroa%<v%>%<tv%>:conservaroh%>  Base2Suffixes;
-conservaroa%<v%>%<tv%>:conservaro%>  Base2Suffixes;
+conservaroa%<v%>%<tv%>:conservaro%{P%}%>  Base2Suffixes;
 conservaroa%<v%>%<tv%>:conservaro%>  Base3Suffixes;
 
 ! convivir
@@ -1920,7 +1935,7 @@ conviviroa%<v%>%<tv%>:conviviroa%>  Imperfect;
 conviviroa%<v%>%<tv%>:conviviroh%>  Durative;
 conviviroa%<v%>%<tv%>:conviviro%>  Durative;
 conviviroa%<v%>%<tv%>:conviviroh%>  Base2Suffixes;
-conviviroa%<v%>%<tv%>:conviviro%>  Base2Suffixes;
+conviviroa%<v%>%<tv%>:conviviro%{P%}%>  Base2Suffixes;
 conviviroa%<v%>%<tv%>:conviviro%>  Base3Suffixes;
 
 ! ver
@@ -2063,39 +2078,46 @@ mohtia%<v%>%<tv%>:mohti%>  Durative ;
 mohtia%<v%>%<tv%>:mohti%{H%}%{P%}%>  Base2Suffixes ;
 mohtia%<v%>%<tv%>:mohti%>  Base3Suffixes ;
 
+! enviar
+enviaroa%<v%>%<tv%>:enviaroa%>  PresentTense ;
+enviaroa%<v%>%<tv%>:enviaroa%>  Imperfect ;
+enviaroa%<v%>%<tv%>:enviaroh%>  Durative ;
+enviaroa%<v%>%<tv%>:enviaro%{P%}%>  Base2Suffixes ;
+enviaroa%<v%>%<tv%>:enviaro%>   Base3Suffixes ;
+
 ! celebrar
 celebraroa%<v%>%<tv%>:celebraroa%>  PresentTense ;
 celebraroa%<v%>%<tv%>:celebraroa%>  Imperfect ;
 celebraroa%<v%>%<tv%>:celebraroh%>  Durative ;
-celebraroa%<v%>%<tv%>:celebraroh%>  Base2Suffixes ;
+celebraroa%<v%>%<tv%>:celebraro%{P%}%>  Base2Suffixes ;
 celebraroa%<v%>%<tv%>:celebraro%>   Base3Suffixes ;
 
 ! decir
 ihtoa%<v%>%<tv%>:ihtoa%>  PresentTense ;
 ihtoa%<v%>%<tv%>:ihtoa%>  Imperfect ;
 ihtoa%<v%>%<tv%>:ihtoh%>  Durative ;
-ihtoa%<v%>%<tv%>:ihtoh%>  Base2Suffixes ;
+ihtoa%<v%>%<tv%>:ihto%{P%}%>  Base2Suffixes ;
 ihtoa%<v%>%<tv%>:ihto%>   Base3Suffixes ;
 
 ! contar
 ihihtoa%<v%>%<tv%>:ihihtoa%>  PresentTense ;
 ihihtoa%<v%>%<tv%>:ihihtoa%>  Imperfect ;
 ihihtoa%<v%>%<tv%>:ihihtoh%>  Durative ;
-ihihtoa%<v%>%<tv%>:ihihtoh%>  Base2Suffixes ;
+ihihtoa%<v%>%<tv%>:ihihto%{P%}%>  Base2Suffixes ;
 ihihtoa%<v%>%<tv%>:ihihto%>   Base3Suffixes ;
 
 ! decir (alternativa)
 itoa%<v%>%<tv%>:itoa%>  PresentTense ;
 itoa%<v%>%<tv%>:itoa%>  Imperfect ;
 itoa%<v%>%<tv%>:itoh%>  Durative ;
-itoa%<v%>%<tv%>:itoh%>  Base2Suffixes ;
+itoa%<v%>%<tv%>:ito%{P%}%>  Base2Suffixes ;
 itoa%<v%>%<tv%>:ito%>   Base3Suffixes ;
 
 ! destruir / borrar ?
 pohpoloa%<v%>%<tv%>:pohpoloa%>  PresentTense ;
 pohpoloa%<v%>%<tv%>:pohpoloa%>  Imperfect ;
 pohpoloa%<v%>%<tv%>:pohpoloh%>  Durative ;
-pohpoloa%<v%>%<tv%>:pohpoloh%>  Base2Suffixes ;
+pohpoloa%<v%>%<tv%>:pohpolo%{P%}%>  Base2Suffixes ;
 pohpoloa%<v%>%<tv%>:pohpolo%>   Base3Suffixes ;
 
 ! desaparecer
@@ -2300,7 +2322,7 @@ descansaroa%<v%>%<tv%>:descansaroa%>  PresentTense;
 descansaroa%<v%>%<tv%>:descansaroa%>  Imperfect;
 descansaroa%<v%>%<tv%>:descansaro%>  Durative;
 descansaroa%<v%>%<tv%>:descansaroh%>  Durative;
-descansaroa%<v%>%<tv%>:descansaro%>  Base2Suffixes;
+descansaroa%<v%>%<tv%>:descansaro%{P%}%>  Base2Suffixes;
 descansaroa%<v%>%<tv%>:descansaro%>  Base3Suffixes;
 
 ! partar
@@ -2308,7 +2330,7 @@ partaroa%<v%>%<tv%>:partaroa%>  PresentTense;
 partaroa%<v%>%<tv%>:partaroa%>  Imperfect;
 partaroa%<v%>%<tv%>:partaro%>  Durative;
 partaroa%<v%>%<tv%>:partaroh%>  Durative;
-partaroa%<v%>%<tv%>:partaro%>  Base2Suffixes;
+partaroa%<v%>%<tv%>:partaro%{P%}%>  Base2Suffixes;
 partaroa%<v%>%<tv%>:partaro%>  Base3Suffixes;
 
 ! tomar
@@ -2387,21 +2409,21 @@ cohua%<v%>%<tv%>:cohua%>  Base3Suffixes;
 cocoa%<v%>%<tv%>:cocoa%>  PresentTense;
 cocoa%<v%>%<tv%>:cocoa%>  Imperfect;
 cocoa%<v%>%<tv%>:coco%>  Durative;
-cocoa%<v%>%<tv%>:coco%>  Base2Suffixes;
+cocoa%<v%>%<tv%>:coco%{P%}%>  Base2Suffixes;
 cocoa%<v%>%<tv%>:cocoa%>  Base3Suffixes;
 
 ! coconserva
 conservaroa%<v%>%<tv%>:conservaroa%>  PresentTense;
 conservaroa%<v%>%<tv%>:conservaroa%>  Imperfect;
 conservaroa%<v%>%<tv%>:conservaroh%>  Durative;
-conservaroa%<v%>%<tv%>:conservaroh%>  Base2Suffixes;
+conservaroa%<v%>%<tv%>:conservaro%{P%}%>  Base2Suffixes;
 conservaroa%<v%>%<tv%>:conservaro%>  Base3Suffixes;
 
 ! juntar
 nichicoa%<v%>%<tv%>:nichicoa%>  PresentTense;
 nichicoa%<v%>%<tv%>:nichicoa%>  Imperfect;
 nichicoa%<v%>%<tv%>:nichico%>  Durative;
-nichicoa%<v%>%<tv%>:nichico%>  Base2Suffixes;
+nichicoa%<v%>%<tv%>:nichico%{P%}%>  Base2Suffixes;
 nichicoa%<v%>%<tv%>:nichicoa%>  Base3Suffixes;
 
 ! llamar
@@ -2458,14 +2480,14 @@ nonotza%<v%>%<tv%>:nonotza%> Base3Suffixes ;
 confiaroa%<v%>%<tv%>:confiaroa%>  PresentTense;
 confiaroa%<v%>%<tv%>:confiaroa%>  Imperfect;
 confiaroa%<v%>%<tv%>:confiaroh%>  Durative;
-confiaroa%<v%>%<tv%>:confiaroh%>  Base2Suffixes;
+confiaroa%<v%>%<tv%>:confiaro%{P%}%>  Base2Suffixes;
 confiaroa%<v%>%<tv%>:confiaro%>  Base3Suffixes;
 
 !conservar
 conservaroa%<v%>%<tv%>:conservaroa%>  PresentTense;
 conservaroa%<v%>%<tv%>:conservaroa%>  Imperfect;
 conservaroa%<v%>%<tv%>:conservaroh%>  Durative;
-conservaroa%<v%>%<tv%>:conservaroh%>  Base2Suffixes;
+conservaroa%<v%>%<tv%>:conservaro%{P%}%>  Base2Suffixes;
 conservaroa%<v%>%<tv%>:conservaro%>  Base3Suffixes;
 
 ! cerrar
@@ -2514,7 +2536,7 @@ nacascua%<v%>%<tv%>:nacascua%>  Base3Suffixes;
 cumpliroa%<v%>%<tv%>:cumpliroa%>  PresentTense;
 cumpliroa%<v%>%<tv%>:cumpliroa%>  Imperfect;
 cumpliroa%<v%>%<tv%>:cumpliroh%>  Durative;
-cumpliroa%<v%>%<tv%>:cumpliroh%>  Base2Suffixes;
+cumpliroa%<v%>%<tv%>:cumpliro%{P%}%>  Base2Suffixes;
 cumpliroa%<v%>%<tv%>:cumpliro%>  Base3Suffixes;
 
 ! ocupar / usar
@@ -2543,7 +2565,7 @@ levantaroa%<v%>%<tv%>:levantaroa%>  PresentTense;
 levantaroa%<v%>%<tv%>:levantaroa%>  Imperfect;
 levantaroa%<v%>%<tv%>:levantaro%>  Durative;
 levantaroa%<v%>%<tv%>:levantaroh%>  Durative;
-levantaroa%<v%>%<tv%>:levantaro%>  Base2Suffixes;
+levantaroa%<v%>%<tv%>:levantaro%{P%}%>  Base2Suffixes;
 levantaroa%<v%>%<tv%>:levantaro%>  Base3Suffixes;
 
 !manejar
@@ -2551,7 +2573,7 @@ manejaroa%<v%>%<tv%>:manejaroa%>  PresentTense;
 manejaroa%<v%>%<tv%>:manejaroa%>  Imperfect;
 manejaroa%<v%>%<tv%>:manejaro%>  Durative;
 manejaroa%<v%>%<tv%>:manejaroh%>  Durative;
-manejaroa%<v%>%<tv%>:manejaro%>  Base2Suffixes;
+manejaroa%<v%>%<tv%>:manejaro%{P%}%>  Base2Suffixes;
 manejaroa%<v%>%<tv%>:manejaro%>  Base3Suffixes;
 
 !llevar
@@ -3092,7 +3114,7 @@ sobaroa%<v%>%<tv%>:sobaroa%>  PresentTense;
 sobaroa%<v%>%<tv%>:sobaroa%>  Imperfect;
 sobaroa%<v%>%<tv%>:sobaro%>  Durative;
 sobaroa%<v%>%<tv%>:sobaroh%>  Durative;
-sobaroa%<v%>%<tv%>:sobaro%>  Base2Suffixes;
+sobaroa%<v%>%<tv%>:sobaro%{P%}%>  Base2Suffixes;
 sobaroa%<v%>%<tv%>:sobaro%>  Base3Suffixes;
 
 ! poner algo abajo de la casa o cerca para que no se moje
@@ -3100,7 +3122,7 @@ caltichoa%<v%>%<tv%>:caltichoa%>  PresentTense;
 caltichoa%<v%>%<tv%>:caltichoa%>  Imperfect;
 caltichoa%<v%>%<tv%>:calticho%>  Durative;
 caltichoa%<v%>%<tv%>:caltichoh%>  Durative;
-caltichoa%<v%>%<tv%>:calticho%>  Base2Suffixes;
+caltichoa%<v%>%<tv%>:calticho%{P%}%>  Base2Suffixes;
 caltichoa%<v%>%<tv%>:calticho%>  Base3Suffixes;
 
 ! sobarle la panza
@@ -3108,7 +3130,7 @@ pahpachoa%<v%>%<tv%>:pahpachoa%>  PresentTense;
 pahpachoa%<v%>%<tv%>:pahpachoa%>  Imperfect;
 pahpachoa%<v%>%<tv%>:pahpacho%>  Durative;
 pahpachoa%<v%>%<tv%>:pahpachoh%>  Durative;
-pahpachoa%<v%>%<tv%>:pahpacho%>  Base2Suffixes;
+pahpachoa%<v%>%<tv%>:pahpacho%{P%}%>  Base2Suffixes;
 pahpachoa%<v%>%<tv%>:pahpacho%>  Base3Suffixes;
 
 ! arrimar, enterrar
@@ -3116,7 +3138,7 @@ pachoa%<v%>%<tv%>:pachoa%>  PresentTense;
 pachoa%<v%>%<tv%>:pachoa%>  Imperfect;
 pachoa%<v%>%<tv%>:pacho%>  Durative;
 pachoa%<v%>%<tv%>:pachoh%>  Durative;
-pachoa%<v%>%<tv%>:pacho%>  Base2Suffixes;
+pachoa%<v%>%<tv%>:pacho%{P%}%>  Base2Suffixes;
 pachoa%<v%>%<tv%>:pacho%>  Base3Suffixes;
 
 ! mochiya con respeto 
@@ -3258,7 +3280,7 @@ tocaroa%<v%>%<tv%>:tocaroa%>  PresentTense;
 tocaroa%<v%>%<tv%>:tocaroa%>  Imperfect;
 tocaroa%<v%>%<tv%>:tocaro%>  Durative;
 tocaroa%<v%>%<tv%>:tocaroh%>  Durative;
-tocaroa%<v%>%<tv%>:tocaro%>  Base2Suffixes;
+tocaroa%<v%>%<tv%>:tocaro%{P%}%>  Base2Suffixes;
 tocaroa%<v%>%<tv%>:tocaro%>  Base3Suffixes;
 
 ! tratar
@@ -3266,7 +3288,7 @@ trataroa%<v%>%<tv%>:trataroa%>  PresentTense;
 trataroa%<v%>%<tv%>:trataroa%>  Imperfect;
 trataroa%<v%>%<tv%>:trataro%>  Durative;
 trataroa%<v%>%<tv%>:trataroh%>  Durative;
-trataroa%<v%>%<tv%>:trataro%>  Base2Suffixes;
+trataroa%<v%>%<tv%>:trataro%{P%}%>  Base2Suffixes;
 trataroa%<v%>%<tv%>:trataro%>  Base3Suffixes;
 
 ! poner (uno por uno)
@@ -4141,8 +4163,11 @@ tlaltitl:tlalti                                 TlSuff ;
 itzcuincoyotl:itzcuincoyo                       TlSuff ;
 mazatl:maza                                     TlSuff ;
 pohuitl:pohui                                   TlSuff ;
+telpocaconetl:telpocacone                       TlSuff ; ! bebé niño
 telpocatl:telpoca                               TlSuff ; ! niño
-telpochtl:telpochtl                             TlSuff ; ! adolescente
+telpochtl:telpoch                               TlSuff ; ! adolescente
+ichpocatl:ichpoca                               TlSuff ; ! niña
+ichpochtl:ichpoch                               TlSuff ; ! "niña adolescente"
 cintitl:cinti                                   TlSuff ; ! ""
 ehpotoctl:ehpotoc                               TlSuff ; ! "vapor"
 tlatoponiliztl:tlatoponiliz                     TlSuff ; ! "explosión"
@@ -4293,9 +4318,12 @@ quimichin:quimich                               InSuff ; ! "ratón"
 ceraocuilin:ceraocuil                           InSuff ; ! "abeja"
 cerahocuilin:cerahocuil                         InSuff ; ! "abeja"
 mapachin:mapach                                 InSuff ; ! "mapache"
-michin:michin                                   InSuff ; ! "pez"
+michin:mich                                     InSuff ; ! "pez"
+cacapolin:cacapol                               InSuff ; ! "laurel"
+cacapolin:cacapul                               InSuff ; ! "laurel" Dir/LR
 tomin:tom                                       InSuff ; ! "dinero"
 
+axox:axox                                       NoSuff ; ! "ajo"
 tepahtani:tepahtani                             NiSuff ; ! "doctor"
 tlapahtani:tlapahtani                           NiSuff ; ! "doctor"
 tecuani:tecuani                                 NiSuff ; ! "león"
@@ -4368,7 +4396,7 @@ tipozbote:tipozbote                             NoSuff ; ! "una olla grande de m
 tlanamacaloyan:tlanamacaloyan                   NoSuff ; ! "mercado(tienda"
 tlahtzoncamisa:tlahtzoncamisa                   NoSuff ; ! "camisa bordada"
 
-tzocopin%<n%>%<dim%>%<sg%>:tzocopint%>tzin       # ; ! "un poco"
+tzocopin%<n%>%<dim%>%<sg%>:tzocopin%>tzin       # ; ! "un poco"
 
 
 caxitl:cax                                      ItlSuff ; ! "plato"
@@ -4400,7 +4428,10 @@ cerro:cerro                                     EsSuffM ;
 ciudad:ciudad                                   EsSuffF ;
 clase:clase                                     EsSuffF ;
 compañero:compañero                             EsSuffM ;
+canela:canela                                   EsSuffF ;
 oregano:oregano                                 EsSuffM ; 
+comino:comino                                   EsSuffM ; 
+clavo:clavo                                     EsSuffM ;
 compañera:compañera                             EsSuffF ;
 consolado:consolado                             EsSuffM ;
 cosa:cosa                                       EsSuffF ;
@@ -4418,6 +4449,7 @@ fusion:fusion                                   EsSuffF ;
 galaxia:galaxia                                 EsSuffF ;
 gringo:gringo                                   EsSuffM ;
 guerra:guerra                                   EsSuffF ;
+guajillo:guajillo                               EsSuffM ;
 escuela:escuela                                 EsSuffF ;
 hidrógeno:hidrógeno                             EsSuffM ;
 historia:historia                               EsSuffF ;
@@ -4821,6 +4853,8 @@ citlalcopa:citlal%>copa        Adv ; !
 
 campa:campa                  AdvRel ; ! donde
 cani:cani                    AdvInt ; ! donde
+cani:canin                   AdvInt ; ! donde Dir/LR
+
 tlahtic:tlahtic              Adv ;
 ne:ne                        Adv ; ! ahí
 
