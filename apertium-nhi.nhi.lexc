@@ -1433,6 +1433,13 @@ animaroa%<v%>%<tv%>:animaroh%>  Durative;
 animaroa%<v%>%<tv%>:animaro%{P%}%>  Base2Suffixes;
 animaroa%<v%>%<tv%>:animaro%>  Base3Suffixes;
 
+!animar a alguien
+ana%<v%>%<tv%>:ana%>  PresentTense;
+ana%<v%>%<tv%>:ana%>  Imperfect;
+ana%<v%>%<tv%>:ana%>  Durative;
+ana%<v%>%<tv%>:an%>  Base2Suffixes;
+ana%<v%>%<tv%>:ana%>  Base3Suffixes;
+
 
 !armar
 armaroa%<v%>%<tv%>:armaroa%>  PresentTense;
@@ -4067,8 +4074,11 @@ cada:cada                                       DET ; ! cada
 oc%<adv%>+ce:oc%>ce                             DET ;  ! otro
 miac%<det%>:miac                                # ; ! mucho
 
-quezqui%<det%>%<pl%>:quezqui                    # ; ! cuanto
+quezqui%<det%>%<pl%>:quezqui                    # ; ! cuanto (cantidad que no se trata de dinero)
 quezqui%<det%>%<pl%>:quezquen                   # ;
+
+quexquich%<det%>%<pl%>:quexquich                # ; ! cuanto (dinero)
+
 
 miac%<det%>%<pl%>:miaqu%>eh                     # ; ! muchos 
 miac%<det%>%<pl%>:miqu%>eh                      # ; ! muchos ! Dir/LR
@@ -4880,6 +4890,7 @@ mejor:mejor                  AdvEs ;
 milahuac:milahuac            Adv ; !de verdad
 nican:nican                  Adv ; ! aquí
 nochi:nochi                  Adv ; ! todo
+nochi:nochin                  Adv ; ! todo Dir/LR
 nochipa:nochipa              Adv ; ! siempre
 nochten:nochten              Adv ; ! todos
 ohcón:ohcón                  Adv ; ! así
@@ -4896,6 +4907,7 @@ quen:quen                    Adv ; ! como
 tipehxicuaco:tipehxicuaco    Adv ; 
 tlanihuic:tlanihuic          Adv ; ! "abajo"
 hualtlanihuic:hualtlanihuic  Adv ; ! "mas abajo de donde está el locutor"
+hualnican:hualnican          Adv ; ! "hacia acá"
 
 tlacpac:tlacpac              Adv ; ! "arriba"
 
