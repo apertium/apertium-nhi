@@ -40,14 +40,15 @@ i:o <=> [ n | t | x ] _ >:> %{q%}:c %{u%}:0 %{i%}:0 >:> o n >:> ;
 !@ n o >:> c o m p a ñ e r o >:> {e}:0 s
 
 "Plural Spanish Nouns after cons"
-%{e%}:e <=> Cns >:> _ s ;
+%{e%}:e <=> [Cns|%{z%}:] >:> _ s ;
 !@ n o >:> c o m p a ñ e r o >:> {e}:0 s
 
 "Nasal assimilation"
 n:0 <=> _ %>: m e ;
 
 "Drop i in subj pref before on-"
-i:0 <=> t _ %>: o n %>: ;
+i:0 <=> [t | n | x ] _ >:> o n >:> ;
+!@ x i:0 >:> o n >:> c u a l a n i
 
 
 
@@ -60,7 +61,7 @@ o:0 <=> m _ %>: %{i%}:i  ;
 
 
 "Nasal elision"
-n:0 <=> _ %>: h u a n ;
+n:0 <=> _ %>: h u a n .#.;
 !@ n o >:> i:0 t z c u i n:0 >:> h u a n
 
 
@@ -136,12 +137,10 @@ i:e <=> _ %{H%}: %{P%}:0 >:> %{c%}:0 ;
 "Weak /i/ drops after tla"
 i:0 <=> t l a >:> _ h ;
 
-"Possessive nasal assimilation"
-m:n <=> i _ %>: [ c | t | n | s | y ] ;
-!@ i m:n >: c a l
 
-"nasal place assimilation in object prefix"
- %{m%}:m <=> _ %>: [Vow | p: | b: | m:];
+
+! "nasal place assimilation in object prefix and possessive prefix"
+ ! %{m%}:m <=> _ %>: [Vow | p: | b: | m:];
 
 
 

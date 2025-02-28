@@ -227,6 +227,10 @@ LEXICON Verb
 @P.PST.ON@ya%<adv%>+:@P.PST.ON@y%>o%>                ZV-Stem ; ! "ya+past"
                                                      ZV-Stem ;
 
+@P.Opt.ON@:@P.Opt.ON@ma%>                            ZV-Stem ;
+@P.Opt.ON@:@P.Opt.ON@ma%>                            VerbalSubject ;
+
+
 LEXICON VerbalSubject
                                                       IrregularVerbs ;
 
@@ -241,19 +245,20 @@ LEXICON VerbalSubject
 
 @P.Sa.Sg@@P.Sa.3@%<s_sg3%>:@P.Sa.Sg@@P.Sa.3@          Object ;
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@ti%>                      Object ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@it%>                      Object ; ! Dir/LR
 @P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%>                      Object ; ! Dir/LR
 
 !
 ! ce- subj prefix is 1pl but takes singular subject tense/aspect agreement.
 !
 @P.Sa.Sg@%<s_pl1%>:@P.Sa.Sg@ce%>                      Object ; 
-@P.Sa.Sg@%<s_ind%>:@P.Sa.Sg@ce%>                      Object ; ! Dir/LR
+! @P.Sa.Sg@%<s_ind%>:@P.Sa.Sg@ce%>                      Object ; ! Dir/LR
 
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@ni%>                      Object ;
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@nan%>                     Object ; ! Dir/LR
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@na%>                     Object ; ! Dir/LR
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@in%>                      Object ; ! Dir/LR
 @P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%>                       Object ; ! Dir/LR
-
 
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                          Object ;
 
@@ -266,6 +271,13 @@ LEXICON VerbalSubject
 @P.Sa.Pl@@P.Opt.ON@%<s_pl1%>:@P.Sa.Pl@@P.Opt.ON@ma%>ti%>  Object ;
 @P.Sa.Pl@@P.Opt.ON@%<s_pl1%>:@P.Sa.Pl@@P.Opt.ON@ma%>t%>   Object ; ! Dir/LR
 
+@P.Sa.Sg@@P.Opt.ON@%<s_sg1%>:@P.Sa.Sg@@P.Opt.ON@mo%>ni%>  Object ; ! Dir/LR
+@P.Sa.Sg@@P.Opt.ON@%<s_sg1%>:@P.Sa.Sg@@P.Opt.ON@mo%>n%>   Object ; ! Dir/LR
+
+@P.Sa.Sg@@P.Opt.ON@%<s_sg3%>:@P.Sa.Sg@@P.Opt.ON@mo%>      Object ; ! Dir/LR
+@P.Sa.Pl@@P.Opt.ON@%<s_pl1%>:@P.Sa.Pl@@P.Opt.ON@mo%>ti%>  Object ; ! Dir/LR
+@P.Sa.Pl@@P.Opt.ON@%<s_pl1%>:@P.Sa.Pl@@P.Opt.ON@mo%>t%>   Object ; ! Dir/LR
+
 
 @P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@xi%>      Object ;
 @P.Sa.Sg@@P.Opt.ON@%<s_sg2%>:@P.Sa.Sg@@P.Opt.ON@ix%>      Object ; ! Dir/LR
@@ -273,7 +285,7 @@ LEXICON VerbalSubject
 @P.Sa.Pl@@P.Opt.ON@%<s_pl2%>:@P.Sa.Pl@@P.Opt.ON@x%>       Object ; ! Dir/LR
 @P.Sa.Pl@@P.Opt.ON@%<s_sg2%>:@P.Sa.Pl@@P.Opt.ON@x%>       Object ; ! Dir/LR
 
-@P.Sa.Pl@@P.Opt.ON@%<s_pl3%>:@P.Sa.Pl@@P.Opt.ON@ma%>  Object ;
+@P.Sa.Pl@@P.Opt.ON@%<s_pl3%>:@P.Sa.Pl@@P.Opt.ON@ma%>      Object ;
 
 
 
@@ -293,17 +305,21 @@ LEXICON TV2-IOBJ
 %<i_sg1%>:nech%>                                    TV2-DOBJ ;
 %<i_sg2%>:mitz%>                                    TV2-DOBJ ;
 %<i_sg3%>:%{q%}%{U%}%{i%}%>                         TV2-DOBJ ;
-! %<i_sg3%>:qui%>                                     TV2-DOBJ ;
+%<i_sg3%>:ic%>                                      TV2-DOBJ ; ! Dir/LR
+%<i_sg3%>:c%>                                       TV2-DOBJ ; ! Dir/LR
+%<i_sg3%>:qui%>                                     TV2-DOBJ ;
 %<i_sg3%>:i%{q%}%{U%}%>                                      TV2-DOBJ ;
 %<i_pl1%>:tech%>                                    TV2-DOBJ ;
 %<i_pl2%>:mech%>                                    TV2-DOBJ ;
 %<i_pl3%>:qui%{m%}%>                                TV2-DOBJ ;
+%<i_pl3%>:quin%>                                    TV2-DOBJ ;
 
 ! TODO: in the case where there is only an indefinite object, how can we ensure that an object slot is filled? 
                                                     TV2-DOBJ ;  !
 
 LEXICON TV2-DOBJ
 @P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@i%{m%}%>   TV2-Honorific ;
+@P.DOBJ.FILLED@%<o_pl3%>:@P.DOBJ.FILLED@in%>       TV2-Honorific ; ! Dir/LR
 @P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@0          TV2-Honorific ;
 @P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@0          TV2-Honorific ;
 TV2-Honorific ;
@@ -345,9 +361,9 @@ LEXICON TV-DOBJ
 @P.DOBJ.FILLED@%<o_sg1%>:@P.DOBJ.FILLED@nech%>             TV-Honorific ;
 @P.DOBJ.FILLED@%<o_sg2%>:@P.DOBJ.FILLED@mitz%>             TV-Honorific ;
 @P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@%{q%}%{U%}%{i%}%>  TV-Honorific ;
-! %<o_sg3%>:qui%>              TV-Honorific ;
-%<o_sg3%>:i%{q%}%{U%}%>                                    TV-Honorific ;
-
+@P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@qui%>              TV-Honorific ;
+@P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@ic%>               TV-Honorific ; ! Dir/LR
+@P.DOBJ.FILLED@%<o_sg3%>:@P.DOBJ.FILLED@c%>               TV-Honorific ; ! Dir/LR
 ! With 3sg obj (and not 3 sbj, and not honorific ), the object prefix can be
 ! omitted optionally. eg "ni-0-piya" "yo lo tengo". this is more of a 
 ! morphonological phenomenon, and should be updated in the future to be 
@@ -419,6 +435,7 @@ LEXICON Yo ! ir
 @R.PST@:@R.PST@ YoPret ;
 @R.PST@:@R.PST@ YoImpf ;
 @D.PST@:@D.PST@ YoFut ;
+@D.PST@:@D.PST@ YoOpt ;
 
 LEXICON HuiquiOpt
 %<s_sg2%>huiqui%<v%>%<iv%>%<pres%>:xi%>huiqui # ;
@@ -431,20 +448,28 @@ LEXICON HuiquiOpt
 LEXICON CaPres
 %<s_sg1%>catqui%<cop%>%<pres%>:ni%>ca # ;
 %<s_sg2%>catqui%<cop%>%<pres%>:ti%>ca # ;
+
 %<s_sg3%>catqui%<cop%>%<pres%>:catqui # ;
 %<s_sg3%>catqui%<cop%>%<pres%>:ca # ; ! Dir/LR
 %<s_sg3%>catqui%<cop%>%<pres%>:cah # ;! Dir/LR
 
 %<s_pl1%>catqui%<cop%>%<pres%>:ti%>cate # ;! Dir/LR
+%<s_pl1%>catqui%<cop%>%<pres%>:it%>cate # ;! Dir/LR
 %<s_pl1%>catqui%<cop%>%<pres%>:ce%>ca # ;
 
 %<s_pl2%>catqui%<cop%>%<pres%>:ni%>cate # ;! Dir/LR
+%<s_pl2%>catqui%<cop%>%<pres%>:in%>cate # ;! Dir/LR
+
 %<s_pl3%>catqui%<cop%>%<pres%>:cate # ;! Dir/LR
 
 %<s_pl1%>catqui%<cop%>%<pres%>:ti%>cateh # ;
+%<s_pl1%>catqui%<cop%>%<pres%>:it%>cate # ; ! Dir/LR
+
 %<s_pl1%>catqui%<cop%>%<pres%>:ce%>cah # ;
 
 %<s_pl2%>catqui%<cop%>%<pres%>:ni%>cateh # ;
+%<s_pl2%>catqui%<cop%>%<pres%>:in%>cateh # ; ! Dir/LR
+
 %<s_pl3%>catqui%<cop%>%<pres%>:cateh # ;
 
 ! one-off from tenango grammar
@@ -459,15 +484,20 @@ LEXICON CaPres
 %<s_sg3%>catqui%<v%>%<iv%>%<pres%>:cah # ;! Dir/LR
 
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cate # ;! Dir/LR
+%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:it%>cate # ;! Dir/LR
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ce%>ca # ;
 
 %<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cate # ;! Dir/LR
+%<s_pl2%>catqui%<v%>%<iv%>%<pres%>:in%>cate # ;! Dir/LR
 %<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cate # ;! Dir/LR
 
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cateh # ;
+%<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ti%>cate # ; ! Dir/LR
+
 %<s_pl1%>catqui%<v%>%<iv%>%<pres%>:ce%>cah # ;
 
 %<s_pl2%>catqui%<v%>%<iv%>%<pres%>:ni%>cateh # ;
+%<s_pl2%>catqui%<v%>%<iv%>%<pres%>:in%>cateh # ; ! Dir/LR
 %<s_pl3%>catqui%<v%>%<iv%>%<pres%>:cateh # ;
 
 ! one-off from tenango grammar
@@ -477,6 +507,7 @@ LEXICON CaPres
 LEXICON CaImpf
 %<s_sg1%>catqui%<cop%>%<impf%>:ni%>catca # ;
 %<s_sg2%>catqui%<cop%>%<impf%>:ti%>catca # ;
+
 %<s_sg3%>catqui%<cop%>%<impf%>:catca # ;
 %<s_pl1%>catqui%<cop%>%<impf%>:ti%>catca # ;! Dir/LR
 %<s_pl2%>catqui%<cop%>%<impf%>:ni%>catca # ;! Dir/LR
@@ -542,23 +573,19 @@ LEXICON CaCni
 
 LEXICON YoPres
 %<s_sg1%>yohui%<v%>%<iv%>%<pres%>:ni%>yo # ;
+
 %<s_sg2%>yohui%<v%>%<iv%>%<pres%>:ti%>yo # ;
 
-%<s_sg2%>yohui%<v%>%<iv%>%<opt%>:xi%>yo # ;
-%<s_sg2%>yohui%<v%>%<iv%>%<opt%>:ti%>yo # ;
 
 %<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yohui # ;
+%<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yahui # ; ! Dir/LR
+
 %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohue # ; ! Dir/LR
 %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohue # ;! Dir/LR
 %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohue # ; ! Dir/LR
 %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohueh # ;
 %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohueh # ;
 %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohueh # ;
-
-
-%<s_pl1%>yohui%<v%>%<iv%>%<opt%>:ti%>ya%>can # ;
-%<s_pl2%>yohui%<v%>%<iv%>%<opt%>:xi%>ya%>can # ;
-%<s_pl3%>yohui%<v%>%<iv%>%<pres%>:ya%>can # ;
 
 
 %<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yuhui # ;! Dir/LR
@@ -569,20 +596,23 @@ LEXICON YoPres
 %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yuhueh # ;! Dir/LR
 %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yuhueh # ;! Dir/LR
 
-! TODO: optative forms
-! %<s_sg1%>yohui%<v%>%<iv%>%<pres%>:ni%>yo # ;
-! %<s_sg2%>yohui%<v%>%<iv%>%<pres%>:ti%>yo # ;
 
-! %<s_sg2%>yohui%<v%>%<iv%>%<opt%>:xi%>yo # ;
-! %<s_sg2%>yohui%<v%>%<iv%>%<opt%>:ti%>yo # ;
+LEXICON YoOpt
+%<s_sg2%>yohui%<v%>%<iv%>%<opt%>:ma%>ni%>yo # ;
+%<s_sg2%>yohui%<v%>%<iv%>%<opt%>:xi%>yo # ;
+%<s_sg3%>yohui%<v%>%<iv%>%<opt%>:ma%>yohui # ;
 
-! %<s_sg3%>yohui%<v%>%<iv%>%<pres%>:yohui # ;
-! %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohue # ;
-! %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohue # ;! Dir/LR
-! %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohue # ; ! Dir/LR
-! %<s_pl1%>yohui%<v%>%<iv%>%<pres%>:ti%>yohueh # ;
-! %<s_pl2%>yohui%<v%>%<iv%>%<pres%>:ni%>yohueh # ;
-! %<s_pl3%>yohui%<v%>%<iv%>%<pres%>:yohueh # ;
+%<s_pl1%>yohui%<v%>%<iv%>%<opt%>:ma%>ti%>ya%>can # ;
+%<s_pl1%>yohui%<v%>%<iv%>%<opt%>:ti%>ya%>can # ; ! Dir/LR
+
+%<s_pl1%>yohui%<v%>%<iv%>%<opt%>:chohueh # ; ! Dir/LR  ...actually maybe hortative
+%<s_pl1%>yohui%<v%>%<iv%>%<opt%>:chahueh # ; ! Dir/LR
+
+
+%<s_pl2%>yohui%<v%>%<iv%>%<opt%>:xi%>ya%>can # ;
+%<s_pl3%>yohui%<v%>%<iv%>%<opt%>:ma%>ya%>can # ;
+%<s_pl3%>yohui%<v%>%<iv%>%<opt%>:ya%>can # ; ! Dir/LR
+
 
 LEXICON YoPret
 %<s_sg1%>yohui%<v%>%<iv%>%<pret%>:ni%>ya # ;
@@ -686,6 +716,20 @@ cochi%<v%>%<iv%>:coch%>   Durative ;
 cochi%<v%>%<iv%>:coch%>   Base2Suffixes ;
 cochi%<v%>%<iv%>:cochi%>  Base3Suffixes ;
 
+! dormir de noche
+youaccochi%<v%>%<iv%>:youaccochi%>  PresentTense ;
+youaccochi%<v%>%<iv%>:youaccochi%>  Imperfect ;
+youaccochi%<v%>%<iv%>:youaccoch%>   Durative ;
+youaccochi%<v%>%<iv%>:youaccoch%>   Base2Suffixes ;
+youaccochi%<v%>%<iv%>:youaccochi%>  Base3Suffixes ;
+
+! dormir de día
+tlahcacochi%<v%>%<iv%>:tlahcacochi%>  PresentTense ;
+tlahcacochi%<v%>%<iv%>:tlahcacochi%>  Imperfect ;
+tlahcacochi%<v%>%<iv%>:tlahcacoch%>   Durative ;
+tlahcacochi%<v%>%<iv%>:tlahcacoch%>   Base2Suffixes ;
+tlahcacochi%<v%>%<iv%>:tlahcacochi%>  Base3Suffixes ;
+
 ! morir
 miqui%<v%>%<iv%>:miqui%>  PresentTense ;
 miqui%<v%>%<iv%>:miqui%>  Imperfect ;
@@ -771,6 +815,13 @@ polihui%<v%>%<iv%>:polihui%>  Imperfect;
 polihui%<v%>%<iv%>:poliuh%>  Durative;
 polihui%<v%>%<iv%>:poliuh%>  Base2Suffixes;
 polihui%<v%>%<iv%>:polihui%>  Base3Suffixes;
+
+! desaparecer (con reduplicación)
+popolihui%<v%>%<iv%>:po%>polihui%>  PresentTense;
+popolihui%<v%>%<iv%>:po%>polihui%>  Imperfect;
+popolihui%<v%>%<iv%>:po%>poliuh%>  Durative;
+popolihui%<v%>%<iv%>:po%>poliuh%>  Base2Suffixes;
+popolihui%<v%>%<iv%>:po%>polihui%>  Base3Suffixes;
 
 ! ir de frente
 ixihcata%<v%>%<iv%>:ixihcata%>  PresentTense;
@@ -862,9 +913,16 @@ chantia%<v%>%<iv%>:chanti%>  Base3Suffixes ;
 ! enojarse/estar enojado
 cualani%<v%>%<iv%>:cualani%>  PresentTense;
 cualani%<v%>%<iv%>:cualani%>  Imperfect;
-cualani%<v%>%<iv%>:cualanih%>  Durative;
-cualani%<v%>%<iv%>:cualani%{H%}%{P%}%>  Base2Suffixes;
+cualani%<v%>%<iv%>:cualan%>  Durative;
+cualani%<v%>%<iv%>:cualan%>  Base2Suffixes;
 cualani%<v%>%<iv%>:cualani%>  Base3Suffixes;
+
+! enojarse/estar enojado
+mayani%<v%>%<iv%>:mayani%>  PresentTense;
+mayani%<v%>%<iv%>:mayani%>  Imperfect;
+mayani%<v%>%<iv%>:mayan%>  Durative;
+mayani%<v%>%<iv%>:mayani%{H%}%{P%}%>  Base2Suffixes;
+mayani%<v%>%<iv%>:mayani%>  Base3Suffixes;
 
 
 !roncar
@@ -897,6 +955,13 @@ chohcholoa%<v%>%<iv%>:chohcholo%>  Durative;
 chohcholoa%<v%>%<iv%>:chohcholoh%>  Base2Suffixes;
 chohcholoa%<v%>%<iv%>:chohcholo%>  Base3Suffixes;
 
+!hacer viento
+eheca%<v%>%<iv%>:eheca%>  PresentTense;
+eheca%<v%>%<iv%>:eheca%>  Imperfect;
+eheca%<v%>%<iv%>:eheca%>  Durative;
+eheca%<v%>%<iv%>:eheca%>  Base2Suffixes;
+eheca%<v%>%<iv%>:eheca%>  Base3Suffixes;
+
 !venir
 huala%<v%>%<iv%>:huala%>  PresentTense;
 huala%<v%>%<iv%>:huala%>  Imperfect;
@@ -926,9 +991,15 @@ huihuitzca%<v%>%<iv%>:huihuitzca%>  Base3Suffixes;
 huili%<v%>%<iv%>:huili%>  PresentTense;
 huili%<v%>%<iv%>:huili%>  Imperfect;
 huili%<v%>%<iv%>:huil%>  Durative;
-huili%<v%>%<iv%>:huili%{H%}%{P%}%>  Base2Suffixes;
+huili%<v%>%<iv%>:huili%>  Base2Suffixes;
 huili%<v%>%<iv%>:huili%>  Base3Suffixes;
 
+! emborracharse/tomar
+huintia%<v%>%<iv%>:huintia%> PresentTense ;
+huintia%<v%>%<iv%>:huinta%>  Imperfect ;
+huintia%<v%>%<iv%>:huinti%>  Durative ;
+huintia%<v%>%<iv%>:huinti%{H%}%{P%}%>  Base2Suffixes ;
+huintia%<v%>%<iv%>:huinti%>  Base3Suffixes ;
 
 ! caerse
 huitzi%<v%>%<iv%>:huitzi%>  PresentTense;
@@ -1085,6 +1156,13 @@ pitlani%<v%>%<iv%>:pitlani%>  Imperfect;
 pitlani%<v%>%<iv%>:pitlan%>  Durative;
 pitlani%<v%>%<iv%>:pitlan%>  Base2Suffixes;
 pitlani%<v%>%<iv%>:pitlani%>  Base3Suffixes;
+
+! estar lleno o repleto
+temi%<v%>%<iv%>:temi%>  PresentTense;
+temi%<v%>%<iv%>:temi%>  Imperfect;
+temi%<v%>%<iv%>:ten%>  Durative;
+temi%<v%>%<iv%>:ten%>  Base2Suffixes;
+temi%<v%>%<iv%>:temi%>  Base3Suffixes;
 
 ! nacer TODO: confirm forms
 tlacati%<v%>%<iv%>:tlacati%>  PresentTense;
@@ -1310,9 +1388,16 @@ cochtlamilahua%<v%>%<iv%>:cochtlamilahua%>  Base3Suffixes;
 !gritar
 tzahtzi%<v%>%<iv%>:tzahtzi%>  PresentTense;
 tzahtzi%<v%>%<iv%>:tzahtzi%>  Imperfect;
-tzahtzi%<v%>%<iv%>:tzahtz%>  Durative;
-tzahtzi%<v%>%<iv%>:tzahtz%>  Base2Suffixes;
+tzahtzi%<v%>%<iv%>:tzahtzi%>  Durative;
+tzahtzi%<v%>%<iv%>:tzahtz%{H%}%{P%}%>  Base2Suffixes;
 tzahtzi%<v%>%<iv%>:tzahtzi%>  Base3Suffixes;
+
+!toser
+tlatlasi%<v%>%<iv%>:tlatlasi%>  PresentTense;
+tlatlasi%<v%>%<iv%>:tlatlasi%>  Imperfect;
+tlatlasi%<v%>%<iv%>:tlatlas%>  Durative;
+tlatlasi%<v%>%<iv%>:tlatlas%>  Base2Suffixes;
+tlatlasi%<v%>%<iv%>:tlatlasi%>  Base3Suffixes;
 
 
 !gritar fuerte (como si estuviera en el bosque?)
@@ -1351,6 +1436,13 @@ tlayuhua%<v%>%<iv%>:tlayuhua%>  Durative;
 tlayuhua%<v%>%<iv%>:tlayuhua%>  Base2Suffixes;
 tlayuhua%<v%>%<iv%>:tlayuhua%>  Base3Suffixes;
 
+! terminar de comer
+tlamitlacua%<v%>%<iv%>:tlamitlacua%>  PresentTense;
+tlamitlacua%<v%>%<iv%>:tlamitlacua%>  Imperfect;
+tlamitlacua%<v%>%<iv%>:tlamitlacua%>  Durative;
+tlamitlacua%<v%>%<iv%>:tlamitlacua%>  Base2Suffixes;
+tlamitlacua%<v%>%<iv%>:tlamitlacua%>  Base3Suffixes;
+
 ! sonar (campana)
 tzilini%<v%>%<iv%>:tzilini%>  PresentTense;
 tzilini%<v%>%<iv%>:tzilini%>  Imperfect;
@@ -1359,11 +1451,11 @@ tzilini%<v%>%<iv%>:tzilin%>  Base2Suffixes;
 tzilini%<v%>%<iv%>:tzilini%>  Base3Suffixes;
 
 ! pegar las orejas atras
-nacaspichteca%<v%>%<tv%>:nacaspichteca%>  PresentTense;
-nacaspichteca%<v%>%<tv%>:nacaspichteca%>  Imperfect;
-nacaspichteca%<v%>%<tv%>:nacaspichteca%>  Durative;
-nacaspichteca%<v%>%<tv%>:nacaspichteca%>  Base2Suffixes;
-nacaspichteca%<v%>%<tv%>:nacaspichteca%>  Base3Suffixes;
+nacazpichteca%<v%>%<tv%>:nacazpichteca%>  PresentTense;
+nacazpichteca%<v%>%<tv%>:nacazpichteca%>  Imperfect;
+nacazpichteca%<v%>%<tv%>:nacazpichteca%>  Durative;
+nacazpichteca%<v%>%<tv%>:nacazpichteca%>  Base2Suffixes;
+nacazpichteca%<v%>%<tv%>:nacazpichteca%>  Base3Suffixes;
 
 !nacer
 yoli%<v%>%<iv%>:yoli%>  PresentTense;
@@ -1609,6 +1701,20 @@ cuatiqui%<v%>%<iv%>:cuatic%>  Durative;
 cuatiqui%<v%>%<iv%>:cuatic%>  Base2Suffixes;
 cuatiqui%<v%>%<iv%>:cuatiqui%>  Base3Suffixes;
 
+! cortar 
+tiqui%<v%>%<iv%>:tiqui%>  PresentTense;
+tiqui%<v%>%<iv%>:tiqui%>  Imperfect;
+tiqui%<v%>%<iv%>:tic%>  Durative;
+tiqui%<v%>%<iv%>:tic%>  Base2Suffixes;
+tiqui%<v%>%<iv%>:tiqui%>  Base3Suffixes;
+
+! picar/morder?
+titiqui%<v%>%<iv%>:titiqui%>  PresentTense;
+titiqui%<v%>%<iv%>:titiqui%>  Imperfect;
+titiqui%<v%>%<iv%>:titic%>  Durative;
+titiqui%<v%>%<iv%>:titic%>  Base2Suffixes;
+titiqui%<v%>%<iv%>:titiqui%>  Base3Suffixes;
+
 !esperar
 chiya%<v%>%<tv%>:chiya%>  PresentTense;
 chiya%<v%>%<tv%>:chiya%>  Imperfect;
@@ -1637,6 +1743,13 @@ totonia%<v%>%<tv%>:totonia%>  Imperfect ;
 totonia%<v%>%<tv%>:totoni%>  Durative ;
 totonia%<v%>%<tv%>:totoni%{H%}%{P%}%>  Base2Suffixes ;
 totonia%<v%>%<tv%>:totoni%>  Base3Suffixes ;
+
+! hacer enojar
+cualania%<v%>%<tv%>:cualania%> PresentTense ;
+cualania%<v%>%<tv%>:cualania%>  Imperfect ;
+cualania%<v%>%<tv%>:cualani%>  Durative ;
+cualania%<v%>%<tv%>:cualani%{H%}%{P%}%>  Base2Suffixes ;
+cualania%<v%>%<tv%>:cualani%>  Base3Suffixes ;
 
 
 ! sacar
@@ -1674,6 +1787,14 @@ yahualoa%<v%>%<tv%>:yahualo%>  Durative;
 yahualoa%<v%>%<tv%>:yahualoh%>  Durative;
 yahualoa%<v%>%<tv%>:yahualoh%>  Base2Suffixes;
 yahualoa%<v%>%<tv%>:yahualo%>  Base3Suffixes;
+
+! sacudir?
+xaxacualoa%<v%>%<tv%>:xaxacualoa%>  PresentTense;
+xaxacualoa%<v%>%<tv%>:xaxacualoa%>  Imperfect;
+xaxacualoa%<v%>%<tv%>:xaxacualo%>  Durative;
+xaxacualoa%<v%>%<tv%>:xaxacualoh%>  Durative;
+xaxacualoa%<v%>%<tv%>:xaxacualoh%>  Base2Suffixes;
+xaxacualoa%<v%>%<tv%>:xaxacualo%>  Base3Suffixes;
 
 ! juntar/acercar
 nitichoa%<v%>%<tv%>:nitichoa%>  PresentTense;
@@ -2392,6 +2513,13 @@ chihua%<v%>%<tv%>:chiuh%>   Durative;
 chihua%<v%>%<tv%>:chiuh%>  Base2Suffixes;
 chihua%<v%>%<tv%>:chihua%>  Base3Suffixes;
 
+! bendecir
+tiochihua%<v%>%<tv%>:tiochihua%>  PresentTense;
+tiochihua%<v%>%<tv%>:tiochihua%>  Imperfect;
+tiochihua%<v%>%<tv%>:tiochiuh%>   Durative;
+tiochihua%<v%>%<tv%>:tiochiuh%>  Base2Suffixes;
+tiochihua%<v%>%<tv%>:tiochihua%>  Base3Suffixes;
+
 ! preparar/hacer
 chichihua%<v%>%<tv%>:chichihua%>  PresentTense;
 chichihua%<v%>%<tv%>:chichihua%>  Imperfect;
@@ -2426,6 +2554,13 @@ cahua%<v%>%<tv%>:cahua%>  Imperfect;
 cahua%<v%>%<tv%>:cauh%>  Durative;
 cahua%<v%>%<tv%>:cauh%>  Base2Suffixes;
 cahua%<v%>%<tv%>:cahua%>  Base3Suffixes;
+
+!
+tencahua%<v%>%<tv%>:tencahua%>  PresentTense;
+tencahua%<v%>%<tv%>:tencahua%>  Imperfect;
+tencahua%<v%>%<tv%>:tencauh%>  Durative;
+tencahua%<v%>%<tv%>:tencauh%>  Base2Suffixes;
+tencahua%<v%>%<tv%>:tencahua%>  Base3Suffixes;
 
 !dejar caer
 cahcahua%<v%>%<tv%>:cahcahua%>  PresentTense;
@@ -2657,11 +2792,11 @@ tlancua%<v%>%<tv%>:tlancuah%>  Base2Suffixes;
 tlancua%<v%>%<tv%>:tlancua%>  Base3Suffixes;
 
 ! comer la oreja a alguien
-nacascua%<v%>%<tv%>:nacascua%>  PresentTense;
-nacascua%<v%>%<tv%>:nacascua%>  Imperfect;
-nacascua%<v%>%<tv%>:nacascuah%>  Durative;
-nacascua%<v%>%<tv%>:nacascuah%>  Base2Suffixes;
-nacascua%<v%>%<tv%>:nacascua%>  Base3Suffixes;
+nacazcua%<v%>%<tv%>:nacazcua%>  PresentTense;
+nacazcua%<v%>%<tv%>:nacazcua%>  Imperfect;
+nacazcua%<v%>%<tv%>:nacazcuah%>  Durative;
+nacazcua%<v%>%<tv%>:nacazcuah%>  Base2Suffixes;
+nacazcua%<v%>%<tv%>:nacazcua%>  Base3Suffixes;
 
 ! cumplir
 cumpliroa%<v%>%<tv%>:cumpliroa%>  PresentTense;
@@ -2924,6 +3059,13 @@ namictia%<v%>%<tv%>:namictih%>  Durative;
 namictia%<v%>%<tv%>:namicti%{H%}%{P%}%>  Base2Suffixes;
 namictia%<v%>%<tv%>:namicti%>  Base3Suffixes;
 
+! matar
+mictia%<v%>%<tv%>:mictia%>  PresentTense;
+mictia%<v%>%<tv%>:micta%>  Imperfect;
+mictia%<v%>%<tv%>:mictih%>  Durative;
+mictia%<v%>%<tv%>:micti%{H%}%{P%}%>  Base2Suffixes;
+mictia%<v%>%<tv%>:micti%>  Base3Suffixes;
+
 ! pararle las orejas a alguien
 nacazmahmana%<v%>%<tv%>:nacazmahmana%> PresentTense ;
 nacazmahmana%<v%>%<tv%>:nacazmahmana%> Imperfect ;
@@ -3060,6 +3202,13 @@ pahtia%<v%>%<tv%>:pahti%>  Durative;
 pahtia%<v%>%<tv%>:pahti%{H%}%{P%}%>  Base2Suffixes;
 pahtia%<v%>%<tv%>:pahti%>  Base3Suffixes;
 
+! hacer llorar
+choctia%<v%>%<tv%>:choctia%>  PresentTense;
+choctia%<v%>%<tv%>:chocta%>  Imperfect;
+choctia%<v%>%<tv%>:chocti%>  Durative;
+choctia%<v%>%<tv%>:chocti%{H%}%{P%}%>  Base2Suffixes;
+choctia%<v%>%<tv%>:chocti%>  Base3Suffixes;
+
 !mojar
 paltilia%<v%>%<tv%>:paltilia%>  PresentTense;
 paltilia%<v%>%<tv%>:paltila%>  Imperfect;
@@ -3077,11 +3226,11 @@ pancalaqui%<v%>%<tv%>:pancalaqui%>  Base3Suffixes;
 
 
 !poner en algo
-pantlali%<v%>%<tv%>:pantlali%>  PresentTense;
-pantlali%<v%>%<tv%>:pantlali%>  Imperfect;
-pantlali%<v%>%<tv%>:pantlal%>  Durative;
-pantlali%<v%>%<tv%>:pantlal%>  Base2Suffixes;
-pantlali%<v%>%<tv%>:pantlali%>  Base3Suffixes;
+pantlalia%<v%>%<tv%>:pantlalia%>  PresentTense;
+pantlalia%<v%>%<tv%>:pantlala%>  Imperfect;
+pantlalia%<v%>%<tv%>:pantlalih%>  Durative;
+pantlalia%<v%>%<tv%>:pantlali%{H%}%{P%}%>  Base2Suffixes;
+pantlalia%<v%>%<tv%>:pantlali%>  Base3Suffixes;
 
 ! agarrar
 quitzqui%<v%>%<tv%>:quitzqui%>  PresentTense;
@@ -3224,6 +3373,13 @@ tlatlani%<v%>%<tv%>:tlatlani%>  Imperfect;
 tlatlani%<v%>%<tv%>:tlatlan%>  Durative;
 tlatlani%<v%>%<tv%>:tlatlan%>  Base2Suffixes;
 tlatlani%<v%>%<tv%>:tlatlani%>  Base3Suffixes;
+
+!ganar
+tlahtlani%<v%>%<tv%>:tlahtlani%>  PresentTense;
+tlahtlani%<v%>%<tv%>:tlahtlani%>  Imperfect;
+tlahtlani%<v%>%<tv%>:tlahtlan%>  Durative;
+tlahtlani%<v%>%<tv%>:tlahtlan%>  Base2Suffixes;
+tlahtlani%<v%>%<tv%>:tlahtlani%>  Base3Suffixes;
 
 ! ayudar
 matlani%<v%>%<tv%>:matlani%>  PresentTense;
@@ -3433,6 +3589,20 @@ tiquitiltia%<v%>%<tv%>:tiquitiltih%>  Durative;
 tiquitiltia%<v%>%<tv%>:tiquitilti%{H%}%{P%}%>  Base2Suffixes;
 tiquitiltia%<v%>%<tv%>:tiquitilti%>  Base3Suffixes;
 
+! cantar algo (?)
+cuicatia%<v%>%<tv%>:cuicatia%>  PresentTense;
+cuicatia%<v%>%<tv%>:cuicata%>  Imperfect;
+cuicatia%<v%>%<tv%>:cuicatih%>  Durative;
+cuicatia%<v%>%<tv%>:cuicati%{H%}%{P%}%>  Base2Suffixes;
+cuicatia%<v%>%<tv%>:cuicati%>  Base3Suffixes;
+
+! darle hogar
+chantia%<v%>%<tv%>:chantia%>  PresentTense;
+chantia%<v%>%<tv%>:chanta%>  Imperfect;
+chantia%<v%>%<tv%>:chantih%>  Durative;
+chantia%<v%>%<tv%>:chanti%{H%}%{P%}%>  Base2Suffixes;
+chantia%<v%>%<tv%>:chanti%>  Base3Suffixes;
+
 
 !amar
 tlazohtla%<v%>%<tv%>:tlazohtla%>  PresentTense;
@@ -3541,6 +3711,21 @@ maca%<v%>%<tv%>:maca%> Durative ;
 maca%<v%>%<tv%>:maca%> Base2Suffixes ;
 maca%<v%>%<tv%>:maca%> Base3Suffixes ;
 
+! preguntarle algo a alguien
+tlahtlanilia%<v%>%<tv%>:tlahtlanilia%> PresentTense ;
+tlahtlanilia%<v%>%<tv%>:tlahtlanilia%>  Imperfect ;
+tlahtlanilia%<v%>%<tv%>:tlahtlanilih%> Durative ;
+tlahtlanilia%<v%>%<tv%>:tlahtlanili%{H%}%{P%}%> Base2Suffixes ;
+tlahtlanilia%<v%>%<tv%>:tlahtlanili%>  Base3Suffixes ;
+
+!preguntarle algo a alguien (option)
+tlatlahtlania%<v%>%<tv%>:tlatlahtlania%>  PresentTense;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlana%>  Imperfect;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlani%>  Durative;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlanih%>  Durative;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlani%{H%}%{P%}%>  Base2Suffixes;
+tlatlahtlania%<v%>%<tv%>:tlatlahtlani%>  Base3Suffixes;
+
 ! mandar algo a alguien
 titlanilia%<v%>%<tv%>:titlanilia%> PresentTense ;
 titlanilia%<v%>%<tv%>:titlanilia%>  Imperfect ;
@@ -3641,6 +3826,13 @@ cohuilia%<v%>%<tv%>:cohuilih%>  Durative;
 cohuilia%<v%>%<tv%>:cohuili%{H%}%{P%}%>  Base2Suffixes;
 cohuilia%<v%>%<tv%>:cohuili%>  Base3Suffixes;
 
+! estudiarle a algo
+estudiarhuilia%<v%>%<tv%>:estudiarhuilia%>  PresentTense;
+estudiarhuilia%<v%>%<tv%>:estudiarhuila%>  Imperfect;
+estudiarhuilia%<v%>%<tv%>:estudiarhuilih%>  Durative;
+estudiarhuilia%<v%>%<tv%>:estudiarhuili%{H%}%{P%}%>  Base2Suffixes;
+estudiarhuilia%<v%>%<tv%>:estudiarhuili%>  Base3Suffixes;
+
 !enseñarle algo a alguien
 nextilia%<v%>%<tv%>:nextilia%>  PresentTense;
 nextilia%<v%>%<tv%>:nextila%>  Imperfect;
@@ -3669,12 +3861,26 @@ quixtilia%<v%>%<tv%>:quixtilih%>  Durative;
 quixtilia%<v%>%<tv%>:quixtili%{H%}%{P%}%>  Base2Suffixes;
 quixtilia%<v%>%<tv%>:quixtili%>  Base3Suffixes;
 
+! hacerle llorar a alguien por alguien
+choctilia%<v%>%<tv%>:choctilia%>  PresentTense;
+choctilia%<v%>%<tv%>:choctila%>  Imperfect;
+choctilia%<v%>%<tv%>:choctilih%>  Durative;
+choctilia%<v%>%<tv%>:choctili%{H%}%{P%}%>  Base2Suffixes;
+choctilia%<v%>%<tv%>:choctili%>  Base3Suffixes;
+
 !limpiar
 chupahuilia%<v%>%<tv%>:chupahuilia%>  PresentTense;
 chupahuilia%<v%>%<tv%>:chupahuila%>  Imperfect;
 chupahuilia%<v%>%<tv%>:chupahuilih%>  Durative;
 chupahuilia%<v%>%<tv%>:chupahuili%{H%}%{P%}%>  Base2Suffixes;
 chupahuilia%<v%>%<tv%>:chupahuili%>  Base3Suffixes;
+
+!limpiar (variante)
+chipahuilia%<v%>%<tv%>:chipahuilia%>  PresentTense;
+chipahuilia%<v%>%<tv%>:chipahuila%>  Imperfect;
+chipahuilia%<v%>%<tv%>:chipahuilih%>  Durative;
+chipahuilia%<v%>%<tv%>:chipahuili%{H%}%{P%}%>  Base2Suffixes;
+chipahuilia%<v%>%<tv%>:chipahuili%>  Base3Suffixes;
 
 ! ponerle
 tlalilia%<v%>%<tv%>:tlalilia%> PresentTense ;
@@ -3858,12 +4064,17 @@ LEXICON Future
 LEXICON Counterfactual
 @R.PST@@D.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@D.Sa.Pl@@D.Opt@zquia # ;
 @R.PST@@R.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
+
+@R.PST@@D.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@D.Sa.Pl@@D.Opt@ni # ;
+@R.PST@@R.Sa.Pl@@D.Opt@%<cfact%>:@R.PST@@R.Sa.Pl@@D.Opt@nih # ;
+
 @R.PST@@D.Sa.Pl@@D.Opt@%<impf%>%<cfact%>:@R.PST@@D.Sa.Pl@@D.Opt@zquia%>ya # ;
 @R.PST@@R.Sa.Pl@@D.Opt@%<impf%>%<cfact%>:@R.PST@@R.Sa.Pl@@D.Opt@zquia%>yah # ;
 
 LEXICON Conditional
 @D.PST@@D.Sa.Pl@@D.Opt@%<cni%>:@D.PST@@D.Sa.Pl@@D.Opt@zquia # ;
 @D.PST@@R.Sa.Pl@@D.Opt@%<cni%>:@D.PST@@R.Sa.Pl@@D.Opt@zquiah # ;
+
 
 LEXICON Optative
 @D.PST@@D.Sa.Pl@@R.Opt@%<opt%>:@D.PST@@D.Sa.Pl@@R.Opt@0   # ;
@@ -3929,14 +4140,23 @@ LEXICON Predicate
 LEXICON Possession
 
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@no%>               Nominals ;
+@P.Px.Sg@%<px1sg%>:@P.Px.Sg@nu%>               Nominals ; ! Dir/LR
+
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@mo%>               Nominals ;
+@P.Px.Sg@%<px2sg%>:@P.Px.Sg@mu%>               Nominals ; ! Dir/LR
+
 @P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                Nominals ;
 @P.Px.Sg@%<px3sg%>:@P.Px.Sg@ni%>               Nominals ; ! Dir/LR
+
 @P.Px.Pl@%<px1pl%>:@P.Px.Pl@to%>               Nominals ;
+@P.Px.Pl@%<px1pl%>:@P.Px.Pl@tu%>               Nominals ; ! Dir/LR
+
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@nimo%>             Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@namo%>             Nominals ;
-@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>               Nominals ; ! Dir/LR
-@P.Px.Pl@%<px3pl%>:@P.Px.Pl@in%>               Nominals ;
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@i%{m%}%>           Nominals ; 
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@ni%{m%}%>           Nominals ; 
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@in%>               Nominals ; ! Dir/LR
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@nin%>               Nominals ; ! Dir/LR
 
 @P.Px.Sg@%<px3aa%>:@P.Px.Sg@te%>               Nominals ;
 @P.Px.Sg@%<px3nn%>:@P.Px.Sg@tla%>              Nominals ;
@@ -4000,12 +4220,19 @@ LEXICON RelSuff
 
 LEXICON Deriv 
                                                    Diminutivo ; 
+
+LEXICON Locativo
+%<loc%>:co                                        # ;
+%<loc%>:pan                                       # ;
+
 LEXICON TlSuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tl    # ;
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>t     # ; ! Dir/LR
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+%<n%>:                                             Locativo ;
+
 
 LEXICON ItlSuff
 
@@ -4014,6 +4241,8 @@ LEXICON ItlSuff
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+%<n%>:                                             Locativo ;
+
 
 LEXICON TliSuff
 
@@ -4021,6 +4250,8 @@ LEXICON TliSuff
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>%{u%}%{h%}   # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+%<n%>:                                             Locativo ;
+
 
 LEXICON LiSuff
 
@@ -4030,6 +4261,8 @@ LEXICON LiSuff
 !%<n%>:%>li                                         Plural ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+%<n%>:                                             Locativo ;
+
 
 LEXICON InSuff
 
@@ -4055,6 +4288,12 @@ LEXICON NoSuff
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@%>             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+
+@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>ten                # ; ! Las casas Dir/LR
+@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>ten          # ; ! Ellos son las casas  Dir/LR
+
+%<n%>:                                             Locativo ;
+
 
 !LEXICON EsSuff
 
@@ -4110,6 +4349,8 @@ yehhuatl%<prn%>%<pers%>%<sg3%>%<short%>:yeh # ;
 nehhuatl%<prn%>%<pers%>%<sg1%>%<abs%>:nehuatl # ;
 tehhuatl%<prn%>%<pers%>%<sg2%>%<abs%>:tehuatl # ;
 yehhuatl%<prn%>%<pers%>%<sg3%>%<abs%>:yehuatl # ;
+yehhuatl%<prn%>%<pers%>%<sg3%>%<abs%>:yehua # ; ! Dir/LR
+
 
 tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tohuatzin # ;
 tehhuatzin%<prn%>%<pers%>%<sg2%>%<hon%>:tehuatzin # ;
@@ -4177,6 +4418,8 @@ LEXICON Miscellaneous
 porque%<cnjsub%>:porque # ;
 que%<cnjsub%>%<barb%>:que # ;
 tlacah%<cnjsub%>:tlacah # ;
+también%<adv%>:también # ;
+aquí%<adv%>:aquí # ;
 
 queye%<adv%>%<itg%>:queye # ;
 tleca%<adv%>%<itg%>:tleca # ;
@@ -4185,7 +4428,8 @@ tleca%<adv%>%<itg%>:tleca # ;
 amo%<neg%>:amo # ;
 amo%<adv%>:amo # ;
 
-%<px3sg%>tich%<n%>%<rel%>: ich # ; ! Dir/LR
+%<px3sg%>tich%<n%>%<rel%>: ich  # ; ! Dir/LR
+%<px3sg%>tich%<n%>%<rel%>: itch # ; ! Dir/LR
 
 quema%<afirm%>:quema # ;
 
@@ -4228,15 +4472,17 @@ mahtlactl:mahtlactli                             NUM ; ! "diez" Dir/LR
 caxtol:caxtol                                   NUM ; 
 pohual:pohual                                   NUM ; 
 
-veinte:veinte                                   NUM ; !
+! veinte:veinte                                   NUM ; !
 
-
+dos%<num%>%<barb%>:dos # ;
 tres%<num%>%<barb%>:tres # ;
+cuatro%<num%>%<barb%>:cuatro # ;
 ocho%<num%>%<barb%>:ocho # ;
 quince%<num%>%<barb%>:quince # ;
 diecioochoo%<num%>%<barb%>:dieciocho # ;
 veinte%<num%>%<barb%>:veinte # ;
 veintinueve%<num%>%<barb%>:veintinueve # ;
+mil%<num%>%<barb%>:mil # ;
 
 
 LEXICON Determinantes 
@@ -4244,6 +4490,9 @@ LEXICON Determinantes
 in%<det%>:in                                           DET ; ! "el/la"
 in%<det%>:n                                            DET ; ! "el/la" Dir/LR
 nin%<det%>:nin                                         DET ; ! "estx"
+inin%<det%>:inin                                         DET ; ! "estx"
+non%<det%>:non                                         DET ; ! "estx"
+inon%<det%>:inon                                         DET ; ! "estx"
 nion%<det%>:nion                                # ; ! "ni un / siquiera"
 nion%<det%>:dion                                # ; ! "ni un / siquiera" ! Dir/LR
 
@@ -4265,6 +4514,7 @@ oc%<adv%>+ce:oc%>ce                             DET ;  ! otro
 
 quezqui%<det%>%<pl%>:quezqui                    # ; ! cuanto (cantidad que no se trata de dinero)
 quezqui%<det%>%<pl%>:quezquen                   # ;
+quezqui%<det%>%<pl%>:quezquin                   # ; ! Dir/LR
 
 quexquich%<det%>%<pl%>:quexquich                # ; ! cuanto (dinero)
 
@@ -4279,6 +4529,7 @@ catliye%<det%>%<pl%>:catliye%>queh                 # ; ! cual
 neca%<det%>:neca     # ;
 neca%<det%>+in%<det%>:neca%>n     # ;
 neca%<det%>%<pl%>:neca%>teh # ;
+neca%<det%>%<pl%>:neca%>ten # ; ! Dir/LR
 
 
 LEXICON Pronombres 
@@ -4322,24 +4573,25 @@ lo%<prn%>%<barb%>:lo # ;
 Personales ; 
 
 
-!LEXICON Relacionales 
-!
-!kxi:kxi Rel ; ! FIXME: Orth
-!nacas:nacas Rel ; ! FIXME: Orth
-!jti:jti Rel ; ! FIXME: Orth
 
 LEXICON Relacionales 
 
 huan:huan                                       RelSuff ; ! "con" (persona)
 nahuac:nahuac                                   RelSuff ; ! "cerca de / con"
 tich:tich                                       RelSuff ; ! "en"
-tich:ch                                         RelSuff ; ! "en" ! Dir/LR
+caltich:caltich                                 RelSuff ; ! "en la casa"
 tich%<n%>%<rel%>+in%<det%>:chin                 # ; ! Di/LR
 ca:ca                                           RelSuff ; ! "con" (instrumento)
 ca%<n%>%<rel%>+in%<det%>:ca%>n                  # ; ! "con" (instrumento)
 pan:pan                                         RelSuff ; ! "encima de"
 tlampa:tlampa                                   RelSuff ; ! "abajo"
 nacazco:nacazco                                 RelSuff ; ! "al lado de"
+calnacazco:calnacazco                           RelSuff ; ! "al lado de la casa"
+
+tlalcaltichco:caltichco                         RelSuff ; ! "en la casa"
+tlacaltichco:caltichco                         RelSuff ; ! "en la casa" Dir/LR
+
+
 nacaztlan:nacaztlan                             RelSuff ; ! "en el lado de"
 cxitlan:cxitlan                                 RelSuff ; ! "abajo de los pies de"
 tzalan:tzalan                                   RelSuff ; ! "entre"
@@ -4347,8 +4599,10 @@ ihtic:ihtic                                     RelSuff ; ! "a dentro de"
 ihtic:htic                                      RelSuff ; ! Dir/LR
 tzintlan:tzintlan                               RelSuff ; ! "a bajo de"
 icpac:cpac   RelSuff ; ! "arriba"
-
+tenco:tenco  RelSuff ; ! "a la orilla de"
+sel:sel  RelSuff ; ! "oneself"
 calli%<n%>+ihtic%<n%>%<rel%>:cal%>ihtic         # ;
+ixpan:ixpan                                     RelSuff ; ! "en frente de"
 
 
 LEXICON Nouns
@@ -4367,6 +4621,7 @@ nezcayotl:nezcayo                               TlSuff ; ! "imagen"
 ehecatl:eheca                                   TlSuff ; ! " viento"
 zoquitl:zoqui                                   TlSuff ; ! "lodo"
 tocatl:toca                                     TlSuff ; ! "araña"
+micatl:mica                                     TlSuff ; ! "mecate"
 
 
 cacalotl:cacalo                                 TlSuff ; ! "cuervo"
@@ -4374,7 +4629,15 @@ cihuatl:cihua                                   TlSuff ; ! "mujer"
 citlalcoatl:citlalcoa                           TlSuff ; ! ""
 conetl:cone                                     TlSuff ; ! "bebe"
 conetl%<n%>%<pl%>:coconeh                       # ; ! "bebes"
+chicaualistl:chicaualis                         TlSuff ; ! "fuerza"
+chicaualistl:chicaualis                         NoSuff ; ! "fuerza" ! Dir/LR
+
 caltentl:calten                                 TlSuff ; ! "puerta"
+caltentl:calten                                 TliSuff ; ! "puerta"
+tlatzacca:tlatzacca                             NoSuff ; ! "puerta"
+caltentzacutli:caltentzacu                      TliSuff ; ! "puerta"
+caltentzacutl:caltentzacu                       TlSuff ; ! "puerta"
+
 chupahuacatl:chupahuaca                         TlSuff ; ! "agua limpia"
 coyotl:coyo                                     TlSuff ; ! "coyote"
 cozamalotl:cozamalo                             TlSuff ; ! "arcoiris"
@@ -4435,6 +4698,9 @@ tlaquentl:tlaquen                               TlSuff ;
 xochitl:xochi                                   TlSuff ;
 totoltitl:totolti                               TlSuff ;
 tiopantl:tiopan                                 TlSuff ;
+tiopantli:tiopan                                TliSuff ; ! "iglesia y/o centro"
+
+toquistl:toquis                                 TlSuff ; !"el sembrar"
 titl:ti                                         TlSuff ;
 omitl:omi                                       TlSuff ;
 omiyotl:omiyo                                   TlSuff ;
@@ -4457,10 +4723,14 @@ tlalticpactlacatl:tlalticpactlaca               TlSuff ;
 cocoliztl:cocoliz                               TlSuff ;
 chichilticcozcatl:chichilticcozca               TlSuff ; ! "collar rojo"
 pomaitl:pomai                                   TlSuff ;
-tilmahtl:tilmah                                 TlSuff ;
+tilmahtl:tilmah                                 TlSuff ; ! "ropa"
+tilmahtl:tilma                                  TlSuff ; 
+tilmahtli:tilmah                                TliSuff ;
+
 tihuilotl:tihuilo                               TlSuff ;
 zacatl:zaca                                     TlSuff ; ! "pasto"
 
+miquetl:mique                                 TlSuff ; ! "muerto"
 nezcatl:nezca                                   TlSuff ; ! "imagen"
 ilpicatl:ilpica                                 TlSuff ; ! "cinturón"
 chichiltiquilpicatl:chichiltiquilpica           TlSuff ; ! "cinturón rojo"
@@ -4478,7 +4748,7 @@ zahuatl:zahua                                   TlSuff ; ! " grano?"
 zoyatl:zoya                                     TlSuff ; ! "palma"
 tlehcoliztl:tlehcoliz                           TlSuff ; !
 quilitl:quili                                   TlSuff ; ! "hierba comestible"
-coneatl:cone                                    TlSuff ; ! "recién nacido"
+coneatl:conea                                   TlSuff ; ! "recién nacido"
 ocotl:oco                                       TlSuff ; ! "pino"
 oztotl:ozto                                     TlSuff ; ! "zorra o cueva"
 zohpilotl:zohpilo                               TlSuff ; ! "zopilote"
@@ -4533,7 +4803,26 @@ tipitl:tipi                                     TlSuff ;
 chicahualiztl:chicahualiz                       TlSuff ; !"fuerza"
 mixcoatl:mixcoa                                 TlSuff ; ! "galaxia ?"
 tlacayotl:tlacayo                               TlSuff ; ! "cuerpo"
-
+aguacatl:aguaca                                 TlSuff ;
+tlahcoilpicatl:tlahcoilpica                     TlSuff ;
+cueitl:cuei                                     TlSuff ;
+cueitl:cueyi                                    TlSuff ;
+tlacoyocatl:tlacoyoca                           TlSuff ;
+tlatiquiyatl:tlatiquiya                         TlSuff ;
+lechonacatl:lechonaca                           TlSuff ;
+atltipetl:atltipe                               TlSuff ;
+auichtl:auich                                   TlSuff ;
+cuicatl:cuica                                   TlSuff ;
+cuitlaxtl:cuitlax                               TlSuff ;
+isiucayotl:isiucayo                             TlSuff ;
+tlahtlatentl:tlahtlaten                         TlSuff ;
+yolcatl:yolca                                   TlSuff ;
+pomatl:poma                                     TlSuff ;
+tiachcaueyialtipetl:tiachcaueyialtipe           TlSuff ;
+tipamitl:tipami                                 TlSuff ;
+tipantl:tipan                                   TlSuff ;
+tixcoyotl:tixcoyo                               TlSuff ;
+amelatl:amela                                   TlSuff ;
 
 ayohtl:ayoh                                     TliSuff ;
 metztli:mez                                     TliSuff ; ! "Dir/LR"
@@ -4583,9 +4872,18 @@ tipoztli:tipoz                                  TliSuff ;
 paciliztli:paciliz                              TliSuff ;
 chicunautli:chicunau                            TliSuff ;
 tzontli:tzon                                    TliSuff ;
-
+tlatoctli:tlatoc                                TliSuff ; 
+tlatoctli:tlatooc                               TliSuff ; ! Dir/LR 
 cihtli:cih                                      TliSuff ;
-
+cuitlaxtli:cuitlax                              TliSuff ;
+huitzayohtli:huitzayoh                          TliSuff ;
+telpochtli:telpoch                              TliSuff ;
+tlehcolistli:tlehcolis                          TliSuff ;
+yayatistli:yayatis                              TliSuff ;
+tlapichtli:tlapich                              TliSuff ;
+caltentlatzacutli:caltentlatzacu                TliSuff ;
+caltentlatzcutli:caltentlatzcu                  TliSuff ; ! Dir/LR
+caltentlatzacutli:caltentlazacu                 TliSuff ; ! Dir/RL
 
 calli:cal                                       LiSuff ; ! "casa"
 citlalin:citlal                                 InSuff ; ! "estrella"
@@ -4593,6 +4891,8 @@ pilli:pil                                       LiSuff ; ! "hijo/a"
 milli:mil                                       LiSuff ; ! "milpa"
 tlalli:tlal                                     LiSuff ; ! "tierra/terreno"
 chilli:chil                                     LiSuff ; ! "chile"
+
+ticpin:ticp                                     InSuff ; ! "pulga"
 
 ayotochin:ayotoch                               InSuff ; ! "armadillo"
 chacalin:chacal                                 InSuff ; ! "gusano"
@@ -4612,9 +4912,17 @@ nacaztli:nacaz                                  TliSuff ; ! "oreja"
 tenantli:tenan                                  TliSuff ; ! "abuelita"
 tetatli:teta                                    TliSuff ; ! "abuelito" !Dir/LR
 tetatli:tetah                                   TliSuff ; ! "abuelito"
+tlatli:tla                                      TliSuff ; ! "tío"
+ahuitl:ahui                                     TliSuff ; ! "tía"
 
-
+itzonticon:itzonticon                           NoSuff ; ! "cabeza"
+nacaztli:nacaz                                  NoSuff ; ! "oreja" ! Dir/LR
 axox:axox                                       NoSuff ; ! "ajo"
+tatita:tatita                                   NoSuff ; ! "papá"
+tata:tata                                       NoSuff ; ! "papá"
+nanita:nanita                                   NoSuff ; ! "mamá"
+nana:nana                                       NoSuff ; ! "mamá"
+cafen:cafen                                    NoSuff ; ! "café"
 tlapiyal:tlapiyal                              NoSuff ; ! "animal domestico"
 tepahtani:tepahtan                             NiSuff ; ! "doctor"
 tlapahtani:tlapahtan                           NiSuff ; ! "doctor"
@@ -4622,8 +4930,16 @@ tecuani:tecuan                                 NiSuff ; ! "león"
 tlacuani:tlacuan                               NiSuff ; ! "comedor, alguien que come mucho"
 tiquitini:tiquitin                             NiSuff ; ! "trabajador"
 
+tlaniuilil:tlaniuilil                           NoSuff ; ! "mente"
+tlahsol:tlahsol                                 NoSuff ; ! "basura; material orgánico tirado (p ej plantas, hojas, etc.)"
 tlaol:tlaol                                     NoSuff ; ! "maiz"
-tlahtolehualoni:tlahtolehualoni                 NiSuff ; ! "Glosario"
+tlahtolehualoni:tlahtolehualon                 NiSuff ; ! "Glosario"
+tlamachtani:tlamachtan                         NiSuff ; ! "maestr@"
+temachtani:temachtan                           NiSuff ; ! "maestr@"
+
+axca:axca                                       NoSuff ; ! "propiedad"
+yohca:yohca                                     NoSuff ; ! "propiedad"
+
 axno:axno                                       NoSuff ; ! "burro"
 comaleh:comaleh                                 NoSuff ; ! "comadre"
 cuacohue:cuacohue                               NoSuff ; ! "vaca"
@@ -4636,8 +4952,15 @@ cempohual:cempohual                             NoSuff ; ! "mes"
 cempohual:cempoal                               NoSuff ; ! "mes" ! Dir/LR 
 cempohual:cimpohual                             NoSuff ; ! "mes" ! Dir/LR 
 cempohual:cimpoal                               NoSuff ; ! "mes" ! Dir/LR 
+coton:coton                                     NoSuff ; ! "coton"
+cuaecauil:cuaecauil                             NoSuff ; ! "sombrero"
+cuatlaecauil:cuatlaecauil                       NoSuff ; ! "sombrero"
 
+cuitlapil:cuitlapil                             NoSuff ; ! "cola"
+tlanotzal:tlanotzal                             NoSuff ; ! "invitad@"
+tlatzacuil:tlatzacuil                           NoSuff ; ! "castigo"
 tlamilol:tlamilol                               NoSuff ; ! ""
+patiuh:patiuh                                   NoSuff ; ! "valor"
 
 ! citlali:citlali                                 NoSuff ; ! "star (can have a few pluraliztions so included multiple times)"
 cualcan:cualcan                                 NoSuff ; ! "mañana"
@@ -4656,9 +4979,22 @@ mahtlapal:mahtlapal                             NoSuff ; ! "ala"
 tlapal:tlapal                                   NoSuff ; ! "pintura"
 tlamachtil:tlamachtil                           NoSuff ; ! "estudio"
 tamachiuhqui:tamachiuhqui                       NoSuff ; ! "medida"
+maitl:ma                                        NoSuff ; ! "mano"
 macpal:macpal                                   NoSuff ; ! "palma (de la mano)"
 mama:mama                                       NoSuff ; ! "mamá"
 maman:maman                                     NoSuff ; ! "mamá"
+papan:papan                                     NoSuff ; ! "papá"
+santiago:santiago                               NoSuff ; ! "santiago"
+naual:naual                                     NoSuff ; ! "brujo"
+tiopan:tiopan                                   NoSuff ; ! "centro/iglesia"
+tlatzotzonal:tlatzotzonal                       NoSuff ; ! "música"
+tzompil:tzompil                                 NoSuff ; ! "gripe"
+tzonpil:tzonpil                                 NoSuff ; ! "gripe" Dir/LR
+xapo:xapon                                      NoSuff ; ! "jabón" Dir/LR
+xapo:xapo                                       NoSuff ; ! "jabón"
+xapoh:xapoh                                     NoSuff ; ! "jabón" Dir/LR
+xapoh:xapoh                                     TliSuff ; ! "jabón" Dir/LR
+
 mayolix:mayolix                                 NoSuff ; ! "palma de la mano"
 mizton:mizton                                   NoSuff ; ! "gato"
 macehual:macehual                               NoSuff ; ! "indígena"
@@ -4695,9 +5031,24 @@ tlapahtani:tlapahtani                           NoSuff ; ! "doctor"
 iztaccalzon:iztaccalzon                         NoSuff ; ! "calzon blanco"
 iztaccamisa:iztaccamisa                         NoSuff ; ! "camisa blanca"
 tipozbote:tipozbote                             NoSuff ; ! "una olla grande de metal"
-
+tetiachca:tetiachcah                            NoSuff ; ! "alcalde"
 tlanamacaloyan:tlanamacaloyan                   NoSuff ; ! "mercado(tienda"
 tlahtzoncamisa:tlahtzoncamisa                   NoSuff ; ! "camisa bordada"
+machite:machite                                 NoSuff ; ! "machete"
+machite:machiteh                                NoSuff ; ! "machete" Dir/LR
+cochian:cochian                                 NoSuff ; ! "corral"
+
+cohtla%<n%>%<loc%>:cohtla                                  # ; ! "locativo, en el monte"
+cohtla%<n%>%<loc%>:cohtlan                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:cohtlah                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:bohtla                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:bohtlan                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:bohtlah                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:pohtla                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:pohtlan                                  # ; ! "locativo, en el monte" ! Dir/LR
+cohtla%<n%>%<loc%>:pohtlah                                  # ; ! "locativo, en el monte" ! Dir/LR
+
+tianquistl:tianquis                            TlSuff ;
 
 tzocopin%<n%>%<dim%>%<sg%>:tzocopin%>tzin       # ; ! "un poco"
 
@@ -4705,11 +5056,20 @@ tzocopin%<n%>%<dim%>%<sg%>:tzocopin%>tzin       # ; ! "un poco"
 caxitl:cax                                      ItlSuff ; ! "plato"
 chilticaxitl:chilticax                                      ItlSuff ; ! "plato"
 cohuitl:coh                                     ItlSuff ; ! "árbol/madera/monte"
+cohuitl:co                                      ItlSuff ; ! "árbol/madera/monte" Dir/LR
+
 chiquihuitl:chiqui%{u%}%{h%}                    ItlSuff ; ! "canasta"
 xihuitl:xi%{h%}%{u%}                            ItlSuff ; ! "hierba, año"
 cueyitl:cuey                                    ItlSuff ; ! "falda"
 iztaccueyitl:iztaccuey                          ItlSuff ; ! "falda"
 tlilticcueyitl:tlilticcuey                      ItlSuff ; ! "falda"
+
+sopa:sopa                                       EsSuffF ; ! "sopa"
+testigo:testigo                                 EsSuffM ; ! "testigo"
+carreta:carreta                                 EsSuffF ; ! "carreta"
+botella:botella                                 EsSuffF ; ! "botella"
+bolsa:bolsa                                     EsSuffF ;
+zanate:zanate                                   EsSuffM ;
 
 agosto:agosto                                   EsSuffM ;
 amigo:amiga                                     EsSuffF ;
@@ -4724,6 +5084,9 @@ caballo:caballo                                 EsSuffM ;
 cama:cama                                       EsSuffF ;
 campana:campana                                 EsSuffF ;
 campo:campo                                     EsSuffM ;
+camisa:camisa                                   EsSuffF ; 
+camisa:camisah                                  NoSuff ; ! "camisa"
+
 cáncer:cáncer                                   EsSuffM ;
 carro:carro                                     EsSuffM ;
 carretera:carretera                             EsSuffF ;
@@ -4733,6 +5096,8 @@ ciudad:ciudad                                   EsSuffF ;
 clase:clase                                     EsSuffF ;
 compañero:compañero                             EsSuffM ;
 canela:canela                                   EsSuffF ;
+canasta:canasta                                 EsSuffF ;
+costal:costal                                   EsSuffM ;
 oregano:oregano                                 EsSuffM ; 
 comino:comino                                   EsSuffM ; 
 clavo:clavo                                     EsSuffM ;
@@ -4776,6 +5141,7 @@ paleta:paleta                                   EsSuffF ;
 pan:pan                                         EsSuffM ;
 papá:papá                                       EsSuffM ;
 papel:papel                                     EsSuffM ;
+planta:planta                                   EsSuffF ;
 patrón:patrón                                   EsSuffM ;
 primaria:primaria                               EsSuffF ;
 presidente:presidente                           EsSuffM ;
@@ -4838,14 +5204,44 @@ piztola:piztola                                 EsSuffF ;
 segeta:segeta                                   EsSuffF ;
 chela:chela                                     EsSuffF ;
 cerveza:cerveza                                 EsSuffF ;
-
+acta:acta                                       EsSuffF ;
+acuerdo:acuerdo                                 EsSuffM ;
+arroz:arroz                                     EsSuffM ;
+azucar:azucar                                   EsSuffM ;
+baúl:baúl                                       EsSuffM ;
+bolsillo:bolsillo                               EsSuffM ;
+caja:caja                                       EsSuffF ;
+caldo:caldo                                     EsSuffM ;
+capitulo:capitulo                               EsSuffM ;
+cazuela:cazuela                                 EsSuffF ;
+cinturon:cinturon                               EsSuffM ;
+cuarto:cuarto                                   EsSuffM ;
+gorrion:gorrion                                 EsSuffM ;
+abuelo:abuelo                                   EsSuffM ;
+abuela:abuela                                   EsSuffF ;
+ahuelo:ahuelo                                   EsSuffM ; ! Dir/LR 
+ahuela:ahuela                                   EsSuffF ; ! Dir/LR
+promesa:promesa                                 EsSuffF ;
+machete:machete                                 EsSuffM ;
+mango:mango                                     EsSuffM ;
+medico:medico                                   EsSuffM ;
+minuto:minuto                                   EsSuffM ;
+norte:norte                                     EsSuffM ;
+paja:paja                                       EsSuffF ;
+pajaro:pajaro                                   EsSuffM ;
+pastilla:pastilla                               EsSuffF ;
+pez:pez                                         EsSuffM ;
+vaso:vaso                                       EsSuffM ;
+viruela:viruela                                 EsSuffF ;
+adobe:adobe                                     EsSuffM ;
+autobus:autobus                                 EsSuffM ;
 dizco:dizco                                     EsSuffM ;
 punto:punto                                     EsSuffF ;
 parte:parte                                     EsSuffF ;
 pweblo:pweblo                                   EsSuffM ;
 cenicero:cenicero                               EsSuffM ;
 soldado:soldado                                 EsSuffM ;
-mes:me%{z%}                                     EsSuffM ;
+mes:mes                                         EsSuffM ;
 rana:rana                                       EsSuffM ;
 medio:medio                                     EsSuffM ;
 rrefrezko:rrefrezko                             EsSuffM ;
@@ -4869,7 +5265,7 @@ prendedor:prendedor                             EsSuffM ;
 sonido:sonido                                   EsSuffM ;
 pazaje:pazaje                                   EsSuffM ;
 febrero:febrero                                 EsSuffM ;
-francéz:francé%{z%}                             EsSuffM ;
+francés:francés                                 EsSuffM ;
 vecino:vecino                                   EsSuffM ;
 regiztro:regiztro                               EsSuffM ;
 tepache:tepache                                 EsSuffM ;
@@ -4978,10 +5374,15 @@ universo:universo                               EsSuffM ;
 nanotecnología:nanotecnología                   EsSuffF ;
 observatorio:observatorio                       EsSuffM ;
 
-
+topilehqui:topilehqui                          #;
+topilehqui:topilehqueh                         #;
 
 LEXICON Adjetivos
+tlapactic:tlapacti       AdjCont ; ! ""
+cocoxc:cocox             AdjCont ; ! "enfermo"
+cohcoyoctic:cohcoyocti   AdjCont ; ! "agujerado"
 cicic:cici               AdjCont ; ! "frío"
+xoxolochtic:xoxolochti   AdjCont ; ! "arrugado?"
 huelic:hueli             AdjCont ; ! "rico"
 hueyitic:hueyiti         AdjCont ; ! "grande y pesado"
 iztac:izta               AdjCont ; !"blancx"  #TODO: i-deletion no ocurre aquí p.ej. "no+iztac" => noiztac, *noztac
@@ -4998,22 +5399,35 @@ yancuic:yancui           AdjCont ; !"nuev@"
 chicahuac:chicahua       AdjCont ; !"fuerte"
 piciltic:picilti         AdjCont ; !"pequeñ@, fin@"
 coztic:cozti             AdjCont ; ! "amarillo"
-
+uiyac:uiya               AdjCont ; ! "largo"
+uiuiyac:uiuiya           AdjCont ; ! "largo (muchas cosas, como pelo)"
+zoquiyo:zoquiyo          AdjContVowelFinal ; ! "sucio"
+tzopelic:tzopeli         AdjCont ; ! "dulce"
 chupahuac:chupahua       AdjCont ; ! "limpio"
 chipahuac:chipahua       AdjCont ; ! "limpio"
-cilic:cili               AdjCont ; ! ""
-
+cilic:cili               AdjCont ; !
+tolohtoc:tolohtoc        AdjCont ; ! "sentado"
 chihchiuhtoc:chihchiuhto AdjCont ; !"hech@"
 
-papatztic:papatzti       AdjCont ; !"suave"
-xaxacuachtic:xaxacuachti AdjCont ; !"suave"
+papatztic:papatzti         AdjCont ; !"suave"
+xaxacuachtic:xaxacuachti   AdjCont ; !"suave"
 tzahtzayactic:tzahtzayacti AdjCont ; !"rotx"
 
 tolontic:tolonti         AdjCont ; ! "redondo"
+uehcapantic:uehcapanti   AdjCont ; ! "alto"
+uehcapan:uehcapan        Adj ; ! "alto"
 
-tzoco:tzoco             AdjDim ; ! "poco"
-tzotzoco:tzoh%>tzoco       AdjDim ; ! "pequeño"
-tzotzoco:tzo%>tzoco       AdjDim ; ! "pequeño" ! Dir/LR
+tzoco:tzoco              AdjDim ; ! "poco"
+tzotzoco:tzoh%>tzoco     AdjDim ; ! "pequeño"
+tzotzoco:tzo%>tzoco      AdjDim ; ! "pequeño" ! Dir/LR
+
+istac:istac              AdjCont ; ! "blanco"
+istac:istaac              AdjCont ; ! "blanco" ! Dir/LR
+chichiltic:chichilti    AdjCont ; ! "rojo"
+xopiauac:xopiaua        AdjCont ; ! "verde"
+tliltic:tlilti          AdjCont ; ! "negro"
+costic:costi            AdjCont ; ! "amarillo"
+chiltlacostic:chiltlacosti AdjCont ; ! "anaranjado"
 
 
 ! tzotzocotzi:tzotzocotzi  Adj ; !"pequeñitx"
@@ -5022,8 +5436,11 @@ huaqui:huaqui           Adj ;
 
 hueyi:hueyi              Adj ; ! "grande"
 hueyi%<adj%>%<pl%>:huehhueyen         # ;
+hueyi%<adj%>%<pl%>:huehhueyin         # ; ! Dir/LR
+hueyi%<adj%>%<pl%>:huehhueyeh         # ; ! Dir/LR
+hueyi%<adj%>%<pl%>:huehueyeh         # ; ! Dir/LR
 
-patiyo:patiyo                   Adj ; !"carx"
+patiyo:patiyo                   AdjContVowelFinal ; !"carx"
 cualli:cualli                   Adj ; !"buenx"
 cuali:cuali                     Adj ; !"buenx"
 cuali%<adj%>%<dim%>%<sg%>:cual%>tzin  # ;
@@ -5067,6 +5484,8 @@ LEXICON Propios
 
 México:México            NP-Top ; 
 Sonora:Sonora            NP-Top ; 
+Poza:Poza                NP-Top ;
+Rica:Rica                NP-Top ;
 Pachuca:Pachuca          NP-Top ;
 Puebla:Puebla            NP-Top ;
 Estados:Estados           NP-Top ; 
@@ -5078,15 +5497,19 @@ tlaxcala:tlaxcala          NP-Top ;
 chiapas:chiapas          NP-Top ;
 Próxima:próxima          NP-Top ;
 Centauri:centauri        NP-Top ;
+Huamantla:huamantla      NP-Top ; 
+Huamantla:uamantla       NP-Top ; ! DIR/LR
 
 Ticpinitos:Ticpinitos   NP-Ant ; 
 Ticpintzin:Ticpintzin   NP-Ant ;
+Don:Don                 NP-Ant ; 
+Don:don                 NP-Ant ; ! Dir/LR 
 Pedro:Pedro             NP-Ant ;
 Mario:Mario             NP-Ant ;
 Francisco:Francisco     NP-Ant ;
 Gabriel:Gabriel         NP-Ant ;
 Lupita:Lupita           NP-Ant ;
-
+Juana:Juana             NP-Ant ; 
 Lencho:Lencho           NP-Ant ;
 Luis:Luis               NP-Ant ;
 Jesús:Jesus             NP-Ant ;  ! Dir/LR
@@ -5095,6 +5518,12 @@ Everardo:Everardo       NP-Ant ;
 Daniela:Daniela         NP-Ant ;
 Victor:Victor           NP-Ant ;
 Victor:Víctor           NP-Ant ;
+María:María             NP-Ant ;
+María:Maria             NP-Ant ; ! Dir/LR
+María:Marìa             NP-Ant ; ! Dir/LR
+
+Manuel:Manuel           NP-Ant ;
+
 
 Cooper:Cooper           NP-Ant ; 
 Darío:Darío           NP-Ant ; 
@@ -5106,6 +5535,12 @@ LEXICON AdjCont
 %<adj%>:c                               Diminutivo ;
 @R.Sa.Sg@%<adj%>%<sg%>:@R.Sa.Sg@c             #;
 @D.Sa@%<adj%>%<sg%>:@D.Sa@c                   #;
+@D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
+
+LEXICON AdjContVowelFinal
+%<adj%>                               Diminutivo ;
+@R.Sa.Sg@%<adj%>%<sg%>:@R.Sa.Sg@             #;
+@D.Sa@%<adj%>%<sg%>:@D.Sa@                   #;
 @D.Sa.Sg@%<adj%>%<pl%>:@D.Sa.Sg@%>que   # ;
 
 LEXICON AdjDim
@@ -5166,6 +5601,8 @@ xamo:xamo                    Adv ;
 nepa:nepa                    Adv ; ! "allá"
 zatepan:zatepan              Adv ;
 cana:cana                    Adv ; ! quizás
+tlahca:tlahca                Adv ; ! "tarde"
+yahuatzinco:yahuatzinco      Adv ; ! "tarde"
 
 yaqui:yaqui                              Adv ; ! apenas
 yaqui%<adv%>+in%<cnjsub%>:yaqui%>n       Adv ; ! apenas
@@ -5176,6 +5613,7 @@ cachi:ocachi                 Adv ; ! más  ! Dir/LR
 oc:oc                        Adv ; ! más
 occipa:occipa                Adv ; ! otra vez
 cipa:cipa                    Adv ; ! una vez
+quesquipa:quesquipa          Adv ; ! cuántas veces
 opa:opa                      Adv ; ! dos veces
 yexpa:yexpa                  Adv ; ! tres veces
 tipitzin:tipitzin            Adv ; ! justo después
@@ -5254,6 +5692,9 @@ quiahuac:quiyahuac           Adv ; ! "a fuera" Dir/LR
 
 no:no                        Adv ; !
 ihcuacon:ihcuacon            Adv ; ! then
+
+yolic:yolic                  Adv ; ! "despacio"
+yolica:yolica                Adv ; ! "despacio"
 
 zancican:zancican            Adv ; ! junto (en un solo lugar)
 
